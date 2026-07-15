@@ -73,6 +73,22 @@ date+topic).
   refuses to overwrite non-fictional records without `--force`. Once
   Stuart starts entering real records, never re-seed with `--force`.
 
+## The daily automation (ideas bank + posting strategy)
+
+`node scripts/ideas-bank.mjs` is deterministic and safe to run any time:
+it tops up a capped bank of post ideas (content items in `raw-idea`, each
+with `generatedKey` + rationale; archiving one stops regeneration;
+confidential insights never enter) and regenerates `data/strategy.json`
+(7-day channel plan from the real calendar, themes per pillar, gaps,
+verification gates, suggestions). It surfaces on the Today view.
+
+The judgement layer on top is the scheduled Claude run working
+`automation/daily-update.md` (invoked by the `daily-brand-update` GitHub
+Actions workflow when the ANTHROPIC_API_KEY secret is set, and/or a
+Claude Routine). Its contract: sharpen the 3 strongest ideas, append at
+most 3 `claudeNotes` to the strategy doc, commit `data/` only, never
+send or publish, never seed --force.
+
 ## Daily use
 
 ```bash

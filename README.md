@@ -189,6 +189,38 @@ Notes. Parked with reasons: Medium/Quora/Reddit. Each suggestion states
 the evidence that would justify adopting it, so channel expansion is a
 decision, not a default.
 
+## The daily automation
+
+```bash
+node scripts/ideas-bank.mjs      # deterministic: ideas bank + posting strategy
+```
+
+Every run tops up a capped **ideas bank** (post ideas as raw-idea content
+items with provenance and a rationale — sourced from unrouted insights,
+pillar gap-fills via the angle library, repurpose candidates that created
+conversations, dated predictions due a public revisit, and live
+engagement threads; archived ideas never regenerate, confidential
+insights never enter) and regenerates **`data/strategy.json`**: the
+7-day where/what-to-post plan built from the real calendar, themes per
+pillar, channel gaps, verification gates due this week, and channel-watch
+signals. It renders on the Today view.
+
+Two scheduled layers run it automatically:
+
+1. **GitHub Actions** (`.github/workflows/daily-brand-update.yml`, daily
+   06:43 SGT once merged to main): always runs the deterministic pass and
+   commits; additionally runs the Claude judgement layer
+   (`automation/daily-update.md` — sharpens the top ideas in Stuart's
+   voice, appends specific posting recommendations as `claudeNotes`) when
+   the `ANTHROPIC_API_KEY` repo secret is set.
+2. **A Claude Routine** (scheduled cloud session) working the same brief
+   with full judgement; it pushes data-only commits and maintains a single
+   "Daily brand update" PR.
+
+Both layers are additive-only and gated by the same rules: no sending, no
+publishing, no fabrication, no touching real records beyond ideas and
+strategy notes.
+
 ## Known limitations / next build priorities
 
 1. CSV import/export for contacts and opportunities.

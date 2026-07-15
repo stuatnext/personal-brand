@@ -123,6 +123,16 @@ routes.today = async () => {
     </div>
     ${actionsHtml || '<div class="card">Nothing urgent. Capture an insight or work the calendar.</div>'}
     ${TODAY.stopDoing ? `<div class="card stop-card"><strong>Stop doing:</strong> ${esc(TODAY.stopDoing.title)}<div class="small">${esc(TODAY.stopDoing.why)}</div></div>` : ''}
+    ${S.strategy ? `<div class="card">
+      <strong>This week's posting strategy</strong> <span class="badge">auto-refreshed ${esc((S.strategy.generatedAt || '').slice(0, 10))}</span>
+      <div class="small" style="margin:.3rem 0">Themes: ${Object.entries(S.strategy.themeByPillar || {}).map(([p, t]) => `<strong>${esc(p)}</strong> → ${esc(t)}`).join(' · ')}</div>
+      ${(S.strategy.channelPlan || []).slice(0, 5).map((r) => `<div class="small">${esc(r.date)} · ${esc(r.channel)} · ${esc(r.what)}${/unverified|conditional|confirm/.test(r.status || '') ? ' <span class="badge warn">verification gate</span>' : ''}</div>`).join('')}
+      ${(S.strategy.channelPlan || []).length > 5 ? `<div class="small" style="color:var(--muted)">… ${(S.strategy.channelPlan || []).length - 5} more scheduled this week</div>` : ''}
+      ${(S.strategy.gaps || []).map((g) => `<div class="evidence-note"><strong>${esc(g.channel)}</strong>: ${esc(g.suggestion)}</div>`).join('')}
+      ${(S.strategy.suggestions || []).slice(0, 4).map((s) => `<div class="small">· ${esc(s)}</div>`).join('')}
+      ${(S.strategy.claudeNotes || []).slice(0, 3).map((n) => `<div class="evidence-note" style="border-color:var(--accent)"><strong>Claude note (${esc((n.date || '').slice(0, 10))})</strong>: ${esc(n.note)}</div>`).join('')}
+      <div class="small" style="margin-top:.3rem">Ideas bank: ${S.strategy.ideasBank?.open ?? 0} open auto-generated ideas (see Content → raw-idea).</div>
+    </div>` : ''}
     <p class="caveat">Recommendations are derived from the records in this engine and nothing else. They are suggestions, not verdicts.</p>`;
 
   $('#btn-focus').onclick = focusMode;

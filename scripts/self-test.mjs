@@ -222,6 +222,25 @@ console.log('\n== Multi-channel repurposing ==');
   ok(channels.data.items.some((c) => c.status === 'suggested' && c.watchSignal), 'channel strategy library served with adoption watch-signals');
 }
 
+console.log('\n== Ideas bank + posting strategy (the daily automation) ==');
+{
+  const run = () => execFileSync('node', [path.join(ROOT, 'scripts/ideas-bank.mjs')], { encoding: 'utf8' });
+  run();
+  const st = await get('/api/state');
+  const ideas = st.data.content.filter((c) => c.generatedKey && c.stage === 'raw-idea');
+  ok(ideas.length >= 5 && ideas.length <= 10, `ideas bank populated within cap (${ideas.length})`);
+  ok(ideas.every((c) => c.generatedRationale), 'every generated idea explains its rationale');
+  ok(!ideas.some((c) => c.generatedKey === 'insight:ins-s08'), 'confidential insight excluded from the ideas bank');
+  ok(st.data.strategy && st.data.strategy.channelPlan && st.data.strategy.themeByPillar, 'strategy doc generated (channel plan + themes per pillar)');
+  const countBefore = ideas.length;
+  // Archive one idea; a re-run must not resurrect it or duplicate others.
+  await patch(`/api/collections/content/${ideas[0].id}`, { stage: 'archived' });
+  run();
+  const after = (await get('/api/state')).data.content.filter((c) => c.generatedKey && c.stage === 'raw-idea');
+  ok(!after.some((c) => c.generatedKey === ideas[0].generatedKey), 'archived idea is never regenerated');
+  ok(after.length <= countBefore, `dedupe holds on re-run (${after.length} open)`);
+}
+
 console.log('\n== Reviews ==');
 const wk = await action('weekly-review', {});
 ok(wk.status === 200 && wk.data.review.body.recommendedTheme, 'weekly review drafted from records');

@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
+  },
+  "values": {
+    "generatedAt": "2026-07-15T02:28:10.888Z",
+    "weekOf": "2026-07-15",
+    "themeByPillar": {
+      "strait-up-growth": "Pricing and margin discipline",
+      "prediction-markets": "Prediction markets",
+      "igaming": "B2B events and sponsorship"
+    },
+    "channelPlan": [
+      {
+        "date": "2026-07-15",
+        "channel": "X",
+        "what": "US PPI market reaction",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Confirm BLS time and capture the market before and after release."
+      },
+      {
+        "date": "2026-07-15",
+        "channel": "Stuart LinkedIn",
+        "what": "Prediction markets climbing the US App Store",
+        "status": "scheduled",
+        "source": "master schedule",
+        "verification": "Refresh rankings immediately before publication."
+      },
+      {
+        "date": "2026-07-15",
+        "channel": "X",
+        "what": "Prediction markets marketed like sportsbooks",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Capture both 13 July articles and quote the offers exactly. Do not generalise beyond the documented promotion."
+      },
+      {
+        "date": "2026-07-15",
+        "channel": "X",
+        "what": "Second World Cup semi-final",
+        "status": "reactive",
+        "source": "master schedule",
+        "verification": "Verify live prices and market wording."
+      },
+      {
+        "date": "2026-07-16",
+        "channel": "Stuart LinkedIn",
+        "what": "When do prophets profit?",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Confirm paper title, authors, findings and any hedging examples."
+      },
+      {
+        "date": "2026-07-17",
+        "channel": "X",
+        "what": "CFTC deadline: ten-day warning",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use the June 12 Federal Register proposal and quote narrowly."
+      },
+      {
+        "date": "2026-07-17",
+        "channel": "Stuart LinkedIn",
+        "what": "Love Island and the spoiler supply chain",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Use the Vanity Fair reporting carefully. Separate allegations, public rumours and confirmed platform statements."
+      },
+      {
+        "date": "2026-07-17",
+        "channel": "Prediction Markets Forum",
+        "what": "Forecasting, trading and hedging",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Check the final Stuart post so the Forum prompt adds a new question."
+      },
+      {
+        "date": "2026-07-17",
+        "channel": "X",
+        "what": "The Odyssey release",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Confirm the live market, contract wording and official 17 July release."
+      },
+      {
+        "date": "2026-07-18",
+        "channel": "X",
+        "what": "World Cup third-place match",
+        "status": "reactive",
+        "source": "master schedule",
+        "verification": "Check volume and whether the observation is genuinely new."
+      },
+      {
+        "date": "2026-07-19",
+        "channel": "X",
+        "what": "The retention test starts now",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm the final has ended and avoid unverified volume claims."
+      },
+      {
+        "date": "2026-07-20",
+        "channel": "X",
+        "what": "World Cup numbers snapshot",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use original platform or reputable reporting and label reported figures."
+      },
+      {
+        "date": "2026-07-20",
+        "channel": "Prediction Markets Forum",
+        "what": "Prediction prices inside ordinary sports journalism",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Timestamp the quoted market price and note that transfer rumours remain unconfirmed."
+      },
+      {
+        "date": "2026-07-21",
+        "channel": "Stuart LinkedIn",
+        "what": "The World Cup's real result comes after the final",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Refresh post-final data and avoid over-reading first-day movement."
+      },
+      {
+        "date": "2026-07-21",
+        "channel": "X",
+        "what": "Goldman Sachs draws a contract-specific compliance line",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Label this as a policy first reported before 13 July and recirculated during the 13-14 July news cycle. Attribute to the Financial Times/Bloomberg reporting."
+      }
+    ],
+    "gaps": [
+      {
+        "channel": "Substack newsletter",
+        "suggestion": "Nothing scheduled this week. Candidate from the ideas bank: \"Category creation is mostly patience plus vocabulary\"."
+      }
+    ],
+    "suggestions": [
+      "Verification gate due 2026-07-15: \"US PPI market reaction\" must not run without a primary source (Confirm BLS time and capture the market before and after release.).",
+      "Verification gate due 2026-07-17: \"The Odyssey release\" must not run without a primary source (Confirm the live market, contract wording and official 17 July release.).",
+      "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
+      "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane."
+    ],
+    "ideasBank": {
+      "open": 10,
+      "addedThisRun": 1,
+      "cap": 10
+    },
+    "claudeNotes": []
+  }
+}

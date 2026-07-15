@@ -1248,6 +1248,296 @@
       "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
       "createdAt": "2026-07-12T09:00:00.000Z",
       "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "cnt-96a3ea49",
+      "createdAt": "2026-07-15T02:27:37.508Z",
+      "updatedAt": "2026-07-15T02:27:37.508Z",
+      "title": "Three CRMs in five years means the CRM was never the problem",
+      "format": "linkedin-post",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Commercial systems"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s01"
+      ],
+      "evidence": [
+        "insight:ins-s01"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s01",
+      "generatedRationale": "Unrouted insight (relevance 5/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-53dbfe76",
+      "createdAt": "2026-07-15T02:27:37.513Z",
+      "updatedAt": "2026-07-15T02:27:37.513Z",
+      "title": "The founder bottleneck shows up in the CRM before it shows up in revenue",
+      "format": "linkedin-post",
+      "lanes": [
+        "Founder-led operating drag",
+        "Commercial systems"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s05"
+      ],
+      "evidence": [
+        "insight:ins-s05"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s05",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-b4594f0d",
+      "createdAt": "2026-07-15T02:27:37.516Z",
+      "updatedAt": "2026-07-15T02:27:37.516Z",
+      "title": "Sales and marketing alignment is a data contract, not a meeting",
+      "format": "linkedin-post",
+      "lanes": [
+        "Sales and marketing alignment",
+        "CRM and RevOps governance"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s11"
+      ],
+      "evidence": [
+        "insight:ins-s11"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s11",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-75e272a9",
+      "createdAt": "2026-07-15T02:27:37.518Z",
+      "updatedAt": "2026-07-15T02:27:37.518Z",
+      "title": "Fractional leadership fails without a decision framework",
+      "format": "linkedin-post",
+      "lanes": [
+        "Leadership through operating clarity",
+        "Founder-led operating drag"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s14"
+      ],
+      "evidence": [
+        "insight:ins-s14"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s14",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-66af0152",
+      "createdAt": "2026-07-15T02:27:37.521Z",
+      "updatedAt": "2026-07-15T02:27:37.521Z",
+      "title": "Media monetisation: the rate card is a positioning document",
+      "format": "linkedin-post",
+      "lanes": [
+        "B2B media monetisation",
+        "Pricing and margin discipline"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s15"
+      ],
+      "evidence": [
+        "insight:ins-s15"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s15",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-e014d6e1",
+      "createdAt": "2026-07-15T02:27:37.525Z",
+      "updatedAt": "2026-07-15T02:27:37.525Z",
+      "title": "iGaming supplier pricing is where discipline goes to die",
+      "format": "linkedin-post",
+      "lanes": [
+        "iGaming commercial strategy",
+        "Pricing and margin discipline"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s16"
+      ],
+      "evidence": [
+        "insight:ins-s16"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s16",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-93976848",
+      "createdAt": "2026-07-15T02:27:37.529Z",
+      "updatedAt": "2026-07-15T02:27:37.529Z",
+      "title": "Question: what does a \"qualified conversation\" actually mean",
+      "format": "linkedin-post",
+      "lanes": [
+        "GTM execution",
+        "Commercial systems"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s17"
+      ],
+      "evidence": [
+        "insight:ins-s17"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s17",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-1184fd42",
+      "createdAt": "2026-07-15T02:27:37.530Z",
+      "updatedAt": "2026-07-15T02:27:37.530Z",
+      "title": "Speaking works when the talk is a diagnostic in disguise",
+      "format": "linkedin-post",
+      "lanes": [
+        "B2B events and sponsorship",
+        "GTM execution"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s18"
+      ],
+      "evidence": [
+        "insight:ins-s18"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s18",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-cdfd3277",
+      "createdAt": "2026-07-15T02:27:37.533Z",
+      "updatedAt": "2026-07-15T02:27:37.533Z",
+      "title": "Renewal conversations start at onboarding",
+      "format": "linkedin-post",
+      "lanes": [
+        "Commercial systems",
+        "CRM and RevOps governance"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s20"
+      ],
+      "evidence": [
+        "insight:ins-s20"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s20",
+      "generatedRationale": "Unrouted insight (relevance 4/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:27:37.483Z"
+    },
+    {
+      "id": "cnt-61c04ae0",
+      "createdAt": "2026-07-15T02:28:10.893Z",
+      "updatedAt": "2026-07-15T02:28:10.893Z",
+      "title": "Category creation is mostly patience plus vocabulary",
+      "format": "linkedin-post",
+      "lanes": [
+        "Category creation",
+        "Prediction markets"
+      ],
+      "objective": null,
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s12"
+      ],
+      "evidence": [
+        "insight:ins-s12"
+      ],
+      "pov": null,
+      "body": "",
+      "brand": "brand-stuart",
+      "audiences": [],
+      "performance": null,
+      "versions": [],
+      "confidentiality": "public",
+      "generatedKey": "insight:ins-s12",
+      "generatedRationale": "Unrouted insight (relevance 3/5, core pillar lane). Distil, then draft.",
+      "generatedAt": "2026-07-15T02:28:10.888Z"
     }
   ]
 }

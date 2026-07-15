@@ -842,6 +842,94 @@
       "action": "insert",
       "collection": "insights",
       "summary": "NEXTPredict Master Social Schedule, Updated"
+    },
+    {
+      "id": "cnt-96a3ea49",
+      "at": "2026-07-15T02:27:37.512Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Three CRMs in five years means the CRM was never the problem"
+    },
+    {
+      "id": "cnt-53dbfe76",
+      "at": "2026-07-15T02:27:37.514Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "The founder bottleneck shows up in the CRM before it shows up in revenue"
+    },
+    {
+      "id": "cnt-b4594f0d",
+      "at": "2026-07-15T02:27:37.517Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Sales and marketing alignment is a data contract, not a meeting"
+    },
+    {
+      "id": "cnt-75e272a9",
+      "at": "2026-07-15T02:27:37.519Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Fractional leadership fails without a decision framework"
+    },
+    {
+      "id": "cnt-66af0152",
+      "at": "2026-07-15T02:27:37.523Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Media monetisation: the rate card is a positioning document"
+    },
+    {
+      "id": "cnt-e014d6e1",
+      "at": "2026-07-15T02:27:37.528Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "iGaming supplier pricing is where discipline goes to die"
+    },
+    {
+      "id": "cnt-93976848",
+      "at": "2026-07-15T02:27:37.530Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Question: what does a \"qualified conversation\" actually mean"
+    },
+    {
+      "id": "cnt-1184fd42",
+      "at": "2026-07-15T02:27:37.531Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Speaking works when the talk is a diagnostic in disguise"
+    },
+    {
+      "id": "cnt-cdfd3277",
+      "at": "2026-07-15T02:27:37.535Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Renewal conversations start at onboarding"
+    },
+    {
+      "id": "cnt-a496b976",
+      "at": "2026-07-15T02:27:37.540Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "NEXT.io Q3 pipeline detail"
+    },
+    {
+      "id": "cnt-61c04ae0",
+      "at": "2026-07-15T02:28:10.895Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Category creation is mostly patience plus vocabulary"
     }
   ]
 }
