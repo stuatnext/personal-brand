@@ -1,0 +1,935 @@
+{
+  "meta": {
+    "note": "Append-only audit log."
+  },
+  "items": [
+    {
+      "id": "cal-666b12dd",
+      "at": "2026-07-15T02:12:37.737Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Love Island USA and audience expansion"
+    },
+    {
+      "id": "cal-bfac72b3",
+      "at": "2026-07-15T02:12:37.738Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket Clearing rulebook changes"
+    },
+    {
+      "id": "cal-87d3740a",
+      "at": "2026-07-15T02:12:37.739Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets creating jobs"
+    },
+    {
+      "id": "cal-45172368",
+      "at": "2026-07-15T02:12:37.739Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Love Island retention follow-up"
+    },
+    {
+      "id": "cal-b2d3f28f",
+      "at": "2026-07-15T02:12:37.740Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "US CPI market check"
+    },
+    {
+      "id": "cal-fb365c03",
+      "at": "2026-07-15T02:12:37.741Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Weather markets and settlement sources"
+    },
+    {
+      "id": "cal-34a26a44",
+      "at": "2026-07-15T02:12:37.741Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "World Cup semi-final: same probabilities, different product"
+    },
+    {
+      "id": "cal-1952f02c",
+      "at": "2026-07-15T02:12:37.742Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "US PPI market reaction"
+    },
+    {
+      "id": "cal-95cfef6d",
+      "at": "2026-07-15T02:12:37.742Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets climbing the US App Store"
+    },
+    {
+      "id": "cal-43942541",
+      "at": "2026-07-15T02:12:37.743Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets marketed like sportsbooks"
+    },
+    {
+      "id": "cal-6fd7d968",
+      "at": "2026-07-15T02:12:37.743Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Second World Cup semi-final"
+    },
+    {
+      "id": "cal-f568f12c",
+      "at": "2026-07-15T02:12:37.744Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "When do prophets profit?"
+    },
+    {
+      "id": "cal-9225339c",
+      "at": "2026-07-15T02:12:37.744Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "CFTC deadline: ten-day warning"
+    },
+    {
+      "id": "cal-89936b23",
+      "at": "2026-07-15T02:12:37.744Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Love Island and the spoiler supply chain"
+    },
+    {
+      "id": "cal-a1527036",
+      "at": "2026-07-15T02:12:37.745Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Forecasting, trading and hedging"
+    },
+    {
+      "id": "cal-12eb1925",
+      "at": "2026-07-15T02:12:37.745Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Odyssey release"
+    },
+    {
+      "id": "cal-eb58bf54",
+      "at": "2026-07-15T02:12:37.746Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "World Cup third-place match"
+    },
+    {
+      "id": "cal-018b4007",
+      "at": "2026-07-15T02:12:37.746Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The retention test starts now"
+    },
+    {
+      "id": "cal-cf6441c8",
+      "at": "2026-07-15T02:12:37.747Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "World Cup numbers snapshot"
+    },
+    {
+      "id": "cal-cfb56622",
+      "at": "2026-07-15T02:12:37.747Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction prices inside ordinary sports journalism"
+    },
+    {
+      "id": "cal-850fbd9e",
+      "at": "2026-07-15T02:12:37.748Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The World Cup's real result comes after the final"
+    },
+    {
+      "id": "cal-a5b276b3",
+      "at": "2026-07-15T02:12:37.748Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Goldman Sachs draws a contract-specific compliance line"
+    },
+    {
+      "id": "cal-bf57226e",
+      "at": "2026-07-15T02:12:37.749Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Post-tournament behaviour signal"
+    },
+    {
+      "id": "cal-7ecd2cc3",
+      "at": "2026-07-15T02:12:37.750Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "What would prove the World Cup created lasting users?"
+    },
+    {
+      "id": "cal-9d5bc7a5",
+      "at": "2026-07-15T02:12:37.750Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "North Carolina chooses taxation"
+    },
+    {
+      "id": "cal-fbe46194",
+      "at": "2026-07-15T02:12:37.751Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "When the market thinks, how many traders is that?"
+    },
+    {
+      "id": "cal-2ceef98c",
+      "at": "2026-07-15T02:12:37.751Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The CFTC argument now requires actual answers"
+    },
+    {
+      "id": "cal-25108375",
+      "at": "2026-07-15T02:12:37.752Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Blockchain.com embeds Polymarket"
+    },
+    {
+      "id": "cal-c7601bd8",
+      "at": "2026-07-15T02:12:37.752Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NEXTPredict 60 pilot: what did the World Cup leave behind?"
+    },
+    {
+      "id": "cal-50a6c436",
+      "at": "2026-07-15T02:12:37.753Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "CFTC comment-letter observations"
+    },
+    {
+      "id": "cal-3b0c7f23",
+      "at": "2026-07-15T02:12:37.753Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "CFTC prediction-markets comment deadline"
+    },
+    {
+      "id": "cal-1d0b8031",
+      "at": "2026-07-15T02:12:37.754Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "24/7 energy derivatives and perpetuals deadline"
+    },
+    {
+      "id": "cal-20ed5cba",
+      "at": "2026-07-15T02:12:37.754Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket can sit on Lazio's shirt while being blocked in Italy"
+    },
+    {
+      "id": "cal-f33e59e1",
+      "at": "2026-07-15T02:12:37.755Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Probability Citation Tracker"
+    },
+    {
+      "id": "cal-c0f8c760",
+      "at": "2026-07-15T02:12:37.756Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "FOMC market setup"
+    },
+    {
+      "id": "cal-53731515",
+      "at": "2026-07-15T02:12:37.756Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Cross-venue arbitrage dashboards"
+    },
+    {
+      "id": "cal-b244b325",
+      "at": "2026-07-15T02:12:37.757Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "What should an employee prediction-market policy contain?"
+    },
+    {
+      "id": "cal-1d7d3301",
+      "at": "2026-07-15T02:12:37.757Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "FOMC decision market reaction"
+    },
+    {
+      "id": "cal-72a57ffd",
+      "at": "2026-07-15T02:12:37.758Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The exchange-building race"
+    },
+    {
+      "id": "cal-50d4df24",
+      "at": "2026-07-15T02:12:37.758Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi's jobs page reads like three companies being built at once"
+    },
+    {
+      "id": "cal-1dd0f8be",
+      "at": "2026-07-15T02:12:37.759Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Growth forecasts and the Prospect / Foris DAX FCM lead"
+    },
+    {
+      "id": "cal-d5bfdb39",
+      "at": "2026-07-15T02:12:37.759Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Spider-Man and Ariana Grande release day"
+    },
+    {
+      "id": "cal-41dc7ef9",
+      "at": "2026-07-15T02:12:37.760Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Browser-extension distribution signal"
+    },
+    {
+      "id": "cal-c24f0180",
+      "at": "2026-07-15T02:12:37.761Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets are becoming a browser layer over the internet"
+    },
+    {
+      "id": "cal-33474c70",
+      "at": "2026-07-15T02:12:37.761Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "AI crowds may still behave like one crowd"
+    },
+    {
+      "id": "cal-00de76bd",
+      "at": "2026-07-15T02:12:37.762Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who should own prediction-market discovery?"
+    },
+    {
+      "id": "cal-fccdd022",
+      "at": "2026-07-15T02:12:37.763Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket may need to explain that Polymarket is different from Polymarket"
+    },
+    {
+      "id": "cal-1e3953d5",
+      "at": "2026-07-15T02:12:37.763Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Five-minute markets and settlement manipulation"
+    },
+    {
+      "id": "cal-e6ea3fac",
+      "at": "2026-07-15T02:12:37.764Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Should ultra-short markets require different controls?"
+    },
+    {
+      "id": "cal-031e36b5",
+      "at": "2026-07-15T02:12:37.764Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "US jobs report"
+    },
+    {
+      "id": "cal-8815d659",
+      "at": "2026-07-15T02:12:37.765Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The next prediction-market trader may not be human"
+    },
+    {
+      "id": "cal-8fd4e080",
+      "at": "2026-07-15T02:12:37.766Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The exchange may not own discovery"
+    },
+    {
+      "id": "cal-ea263ed9",
+      "at": "2026-07-15T02:12:37.766Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "US CPI market check"
+    },
+    {
+      "id": "cal-263c25fe",
+      "at": "2026-07-15T02:12:37.767Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "LLM confidence is not trading skill"
+    },
+    {
+      "id": "cal-7280b4c9",
+      "at": "2026-07-15T02:12:37.768Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The useful signal is the software appearing around the exchanges"
+    },
+    {
+      "id": "cal-504be5b7",
+      "at": "2026-07-15T02:12:37.768Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Post-World Cup retention check"
+    },
+    {
+      "id": "cal-a368253b",
+      "at": "2026-07-15T02:12:37.769Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NEXTPredict Settlement Ambiguity Index"
+    },
+    {
+      "id": "cal-a1941bc9",
+      "at": "2026-07-15T02:12:37.770Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Price of One Percentage Point"
+    },
+    {
+      "id": "cal-828758fc",
+      "at": "2026-07-15T02:12:37.771Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Reality Gap"
+    },
+    {
+      "id": "cal-74c92c1f",
+      "at": "2026-07-15T02:12:37.771Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Oracle Dependency Map"
+    },
+    {
+      "id": "cal-10a051d1",
+      "at": "2026-07-15T02:12:37.772Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Overtime Tax"
+    },
+    {
+      "id": "cal-13ba2079",
+      "at": "2026-07-15T02:12:37.772Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Contract Question DNA"
+    },
+    {
+      "id": "cal-19908f84",
+      "at": "2026-07-15T02:12:37.773Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Weather Station Arbitrage Atlas"
+    },
+    {
+      "id": "cal-fc783e80",
+      "at": "2026-07-15T02:12:37.774Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Settlement Source Reliability League"
+    },
+    {
+      "id": "cal-4c711ccd",
+      "at": "2026-07-15T02:12:37.775Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Payout Latency League Table"
+    },
+    {
+      "id": "cal-0ff02d25",
+      "at": "2026-07-15T02:12:37.776Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Prediction-Market Change Log"
+    },
+    {
+      "id": "cal-6405ff6a",
+      "at": "2026-07-15T02:12:37.776Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Market Graveyard"
+    },
+    {
+      "id": "cal-89a894fb",
+      "at": "2026-07-15T02:12:37.777Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Probability Half-Life"
+    },
+    {
+      "id": "cal-20a8427b",
+      "at": "2026-07-15T02:12:37.778Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Probability Laundering"
+    },
+    {
+      "id": "cal-f986146c",
+      "at": "2026-07-15T02:12:37.779Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Media-Market Feedback Loop"
+    },
+    {
+      "id": "cal-c01ac5c2",
+      "at": "2026-07-15T02:12:37.779Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Prediction-Market Journalism Audit"
+    },
+    {
+      "id": "cal-3bb81fbb",
+      "at": "2026-07-15T02:12:37.780Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Whale Consensus Illusion"
+    },
+    {
+      "id": "cal-387d4cb7",
+      "at": "2026-07-15T02:12:37.781Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Market-Maker Dependency Score"
+    },
+    {
+      "id": "cal-6904c263",
+      "at": "2026-07-15T02:12:37.782Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Liquidity Family Tree"
+    },
+    {
+      "id": "cal-111c654d",
+      "at": "2026-07-15T02:12:37.782Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Insider Proximity Score"
+    },
+    {
+      "id": "cal-e35f0d55",
+      "at": "2026-07-15T02:12:37.783Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Pre-Announcement Leakage Index"
+    },
+    {
+      "id": "cal-0235effc",
+      "at": "2026-07-15T02:12:37.784Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction Markets in Corporate Filings"
+    },
+    {
+      "id": "cal-5afa9743",
+      "at": "2026-07-15T02:12:37.785Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction Markets Versus Options"
+    },
+    {
+      "id": "cal-e24dddaf",
+      "at": "2026-07-15T02:12:37.786Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Cross-Venue Disagreement Monitor"
+    },
+    {
+      "id": "cal-ea70a54c",
+      "at": "2026-07-15T02:12:37.786Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Probability Tax"
+    },
+    {
+      "id": "cal-d46c8faa",
+      "at": "2026-07-15T02:12:37.787Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Information-Arrival Fingerprint"
+    },
+    {
+      "id": "cal-b86069d1",
+      "at": "2026-07-15T02:12:37.788Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Five-Minute Penalty"
+    },
+    {
+      "id": "cal-9be7d980",
+      "at": "2026-07-15T02:12:37.789Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Outcome Influenceability Index"
+    },
+    {
+      "id": "cal-6b28854f",
+      "at": "2026-07-15T02:12:37.790Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The $100 Contract Supply Chain"
+    },
+    {
+      "id": "cal-f6941fa9",
+      "at": "2026-07-15T02:12:37.791Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Market Before the Market"
+    },
+    {
+      "id": "cal-a9c0cebf",
+      "at": "2026-07-15T02:12:37.791Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-Market Comment Network"
+    },
+    {
+      "id": "cal-81c921de",
+      "at": "2026-07-15T02:12:37.792Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Regulatory Product Atlas"
+    },
+    {
+      "id": "cal-aef6579d",
+      "at": "2026-07-15T02:12:37.793Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "State Regulator Copy-Paste Tracker"
+    },
+    {
+      "id": "cal-1c35dbcb",
+      "at": "2026-07-15T02:12:37.794Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Regulatory Copy Machine"
+    },
+    {
+      "id": "cal-ebb63178",
+      "at": "2026-07-15T02:12:37.795Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Attention-to-Liquidity Conversion Rate"
+    },
+    {
+      "id": "cal-c94c2f26",
+      "at": "2026-07-15T02:12:37.796Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Marketing-to-Liquidity Ratio"
+    },
+    {
+      "id": "cal-7f7e5140",
+      "at": "2026-07-15T02:12:37.797Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Unasked Questions Index"
+    },
+    {
+      "id": "cal-0dceb01c",
+      "at": "2026-07-15T02:12:37.797Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Missing Markets Index"
+    },
+    {
+      "id": "cal-1f791507",
+      "at": "2026-07-15T02:12:37.798Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Outcome-Manipulation Surface"
+    },
+    {
+      "id": "cal-c51d8ad9",
+      "at": "2026-07-15T02:12:37.799Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Morality Premium"
+    },
+    {
+      "id": "cal-c2fe0e47",
+      "at": "2026-07-15T02:12:37.800Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Brand Exposure Before Consent"
+    },
+    {
+      "id": "cal-b0dfb271",
+      "at": "2026-07-15T02:12:37.801Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Price of Official Rights"
+    },
+    {
+      "id": "cal-38199f71",
+      "at": "2026-07-15T02:12:37.802Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Fandom Premium"
+    },
+    {
+      "id": "cal-2739d017",
+      "at": "2026-07-15T02:12:37.803Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Customer-Support Stress Index"
+    },
+    {
+      "id": "cal-ff17af05",
+      "at": "2026-07-15T02:12:37.804Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-Market Dark Patterns Audit"
+    },
+    {
+      "id": "cal-78b0d201",
+      "at": "2026-07-15T02:12:37.804Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Education Debt Index"
+    },
+    {
+      "id": "cal-31ef1861",
+      "at": "2026-07-15T02:12:37.805Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "App-Store Identity Drift"
+    },
+    {
+      "id": "cal-18cf53c4",
+      "at": "2026-07-15T02:12:37.806Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Talent Migration Graph"
+    },
+    {
+      "id": "ins-5df66148",
+      "at": "2026-07-15T02:12:37.886Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "NEXTPredict schedule update, 14 July 2026"
+    },
+    {
+      "id": "ins-2cf63493",
+      "at": "2026-07-15T02:12:45.325Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "NEXTPredict Master Social Schedule, Updated"
+    },
+    {
+      "id": "cnt-96a3ea49",
+      "at": "2026-07-15T02:27:37.512Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Three CRMs in five years means the CRM was never the problem"
+    },
+    {
+      "id": "cnt-53dbfe76",
+      "at": "2026-07-15T02:27:37.514Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "The founder bottleneck shows up in the CRM before it shows up in revenue"
+    },
+    {
+      "id": "cnt-b4594f0d",
+      "at": "2026-07-15T02:27:37.517Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Sales and marketing alignment is a data contract, not a meeting"
+    },
+    {
+      "id": "cnt-75e272a9",
+      "at": "2026-07-15T02:27:37.519Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Fractional leadership fails without a decision framework"
+    },
+    {
+      "id": "cnt-66af0152",
+      "at": "2026-07-15T02:27:37.523Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Media monetisation: the rate card is a positioning document"
+    },
+    {
+      "id": "cnt-e014d6e1",
+      "at": "2026-07-15T02:27:37.528Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "iGaming supplier pricing is where discipline goes to die"
+    },
+    {
+      "id": "cnt-93976848",
+      "at": "2026-07-15T02:27:37.530Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Question: what does a \"qualified conversation\" actually mean"
+    },
+    {
+      "id": "cnt-1184fd42",
+      "at": "2026-07-15T02:27:37.531Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Speaking works when the talk is a diagnostic in disguise"
+    },
+    {
+      "id": "cnt-cdfd3277",
+      "at": "2026-07-15T02:27:37.535Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Renewal conversations start at onboarding"
+    },
+    {
+      "id": "cnt-a496b976",
+      "at": "2026-07-15T02:27:37.540Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "NEXT.io Q3 pipeline detail"
+    },
+    {
+      "id": "cnt-61c04ae0",
+      "at": "2026-07-15T02:28:10.895Z",
+      "actor": "ideas-bank",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Category creation is mostly patience plus vocabulary"
+    }
+  ]
+}

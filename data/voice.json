@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T02:13:30.219Z",
+    "note": "The voice system. Approved rules feed the AI context; proposed rules wait for Stuart. The linter (lib/voice.mjs) enforces the mechanical bits. Full worldview: data/voice/stuart-voice.md."
+  },
+  "rules": [
+    {
+      "id": "vr-01",
+      "status": "approved",
+      "source": "voice bible 2026-07-03",
+      "text": "British English, natural contractions, natural paragraphs. Never em dashes."
+    },
+    {
+      "id": "vr-02",
+      "status": "approved",
+      "source": "voice bible 2026-07-03",
+      "text": "No hype-merchant phrases: game changer, exciting times ahead, fascinating development, great insights, we are witnessing, the next evolution of."
+    },
+    {
+      "id": "vr-03",
+      "status": "approved",
+      "source": "voice bible 2026-07-03",
+      "text": "No negative-parallelism cadence: \"not just X but Y\", \"it is not about X it is about Y\"."
+    },
+    {
+      "id": "vr-04",
+      "status": "approved",
+      "source": "voice bible 2026-07-03",
+      "text": "\"The part/thing I keep coming back to\" is BANNED (Stuart flagged it), despite appearing in older prompt material. The repo linter wins."
+    },
+    {
+      "id": "vr-05",
+      "status": "approved",
+      "source": "voice bible 2026-07-03",
+      "text": "Structure: notice something specific, give the commercial read, connect to the bigger operating question, invite discussion. One ask maximum."
+    },
+    {
+      "id": "vr-06",
+      "status": "approved",
+      "source": "voice bible 2026-07-03",
+      "text": "Comfortable admitting uncertainty (\"I am still forming my own view\"). Participant and operator, never guru or omniscient analyst."
+    },
+    {
+      "id": "vr-07",
+      "status": "approved",
+      "source": "CLAUDE.md nextpredict",
+      "text": "NEXTPredict copy: category vocabulary only. Never betting, gambling, casino, sportsbook, wagering. (iGaming is fine in Stuart/SUG contexts; it is his sector.)"
+    },
+    {
+      "id": "vr-08",
+      "status": "approved",
+      "source": "engine rule",
+      "text": "Credibility before conversion. Not every piece carries a commercial ask; most should not."
+    },
+    {
+      "id": "vr-09",
+      "status": "approved",
+      "source": "engine rule",
+      "text": "Never fabricate statistics, quotes, relationships, experience or client results. Unverified claims are visibly marked unverified."
+    },
+    {
+      "id": "vr-10",
+      "status": "proposed",
+      "source": "ChatGPT product prompt",
+      "text": "Useful openers to keep in rotation: \"The useful question is...\", \"The uncomfortable bit is...\", \"This feels less like hype now and more like build mode.\" (Stuart to approve.)"
+    }
+  ],
+  "examples": [
+    {
+      "id": "vx-01",
+      "type": "comment",
+      "verdict": "reference-only",
+      "source": "voice handoff (paraphrased shape)",
+      "text": "Warm agreement, one observation from operating experience (latency, settlement, provider quality are familiar headaches), move from front-end to backend, end on a category read. No sell.",
+      "note": "Mirror the shape, never the words."
+    },
+    {
+      "id": "vx-02",
+      "type": "post-pattern",
+      "verdict": "reference-only",
+      "source": "voice bible",
+      "text": "1. Odd or unexpected observation. 2. Specific example. 3. The commercial read. 4. The bigger question. 5. Soft brand connection only if it fits. 6. One question if engagement is the goal.",
+      "note": "The canonical post recipe."
+    }
+  ],
+  "pendingExtractions": []
+}

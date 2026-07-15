@@ -1,0 +1,18 @@
+name: ci
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: End-to-end self-test (seeds, drives the API, verifies safety gates)
+        run: node scripts/self-test.mjs
+      - name: Seeded data is clean after tests
+        run: git diff --stat -- data || true

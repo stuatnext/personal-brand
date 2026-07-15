@@ -1,0 +1,847 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T02:04:51.939Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal. ins-s08 exists to demonstrate the confidentiality filter catching employer material."
+  },
+  "items": [
+    {
+      "id": "ins-s01",
+      "title": "Three CRMs in five years means the CRM was never the problem",
+      "raw": "Founder told me she has migrated CRM three times in five years and trusts none of them. Every migration was sold internally as the fix. The actual problem was that sales, marketing and delivery never agreed what a qualified deal was. The tool keeps taking the blame for a definitions problem.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-13",
+      "type": "client-pattern",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-13T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s02",
+      "title": "Discount authority is a leadership instrument, not a finance rule",
+      "raw": "Watched a deal review where a rep discounted 22% to close by quarter end. Nobody could say who approved it. Where discount tiers exist and are enforced, margin holds and negotiations get shorter, because the seller stops negotiating against themselves.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-12",
+      "type": "commercial-lesson",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Commercial negotiation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-12T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s03",
+      "title": "Sponsors renew on outcomes they can show their boss",
+      "raw": "Sponsorship renewal conversations keep failing when the package was logo placement. The renewals that close themselves are the ones where the sponsor walked away with a number they could put in their own board deck.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-11",
+      "type": "commercial-lesson",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-11T09:00:00.000Z",
+      "updatedAt": "2026-07-11T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s04",
+      "title": "AI pilots die where the workflow was never mapped",
+      "raw": "Every stalled AI adoption story I hear in Singapore SME circles has the same shape: tool bought, prompt shared in Slack, nobody changed the workflow. The teams getting value mapped the workflow first and slotted AI into named steps with an owner.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-10",
+      "type": "client-pattern",
+      "lanes": [
+        "Practical AI implementation",
+        "Singapore & SEA commercial growth"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-10T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s05",
+      "title": "The founder bottleneck shows up in the CRM before it shows up in revenue",
+      "raw": "In founder-led businesses the tell is deals sitting in \"waiting on founder\" stages. Operating drag is measurable months before the revenue line feels it.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-09",
+      "type": "framework",
+      "lanes": [
+        "Founder-led operating drag",
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-09T09:00:00.000Z",
+      "updatedAt": "2026-07-09T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s06",
+      "title": "Pipeline reviews that read the dashboard aloud are theatre",
+      "raw": "Sat through a review where the leader read the dashboard to the room. No decision was taken. A pipeline review should end with stage moves, kills and next actions or it is a weather report.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-07",
+      "type": "contrarian-opinion",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Leadership through operating clarity"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-07T09:00:00.000Z",
+      "updatedAt": "2026-07-07T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s07",
+      "title": "Event P&Ls hide the media asset inside them",
+      "raw": "Most event businesses sit on an audience asset they only monetise two days a year. The media layer (newsletter, podcast, research) is the recurring revenue nobody staffs.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-06",
+      "type": "commercial-lesson",
+      "lanes": [
+        "B2B events and sponsorship",
+        "B2B media monetisation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-06T09:00:00.000Z",
+      "updatedAt": "2026-07-06T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s08",
+      "title": "NEXT.io Q3 pipeline detail",
+      "raw": "Internal pipeline and margin discussion notes from the quarter. Contains named deals, figures and a pricing disagreement. Useful operating lessons but the specifics are employer-confidential.",
+      "source": "internal meeting (fictional)",
+      "date": "2026-07-05",
+      "type": "meeting-note",
+      "lanes": [
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 3,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "private-operating-lesson",
+        "score": 3,
+        "reasons": [
+          "Explicitly marked as not public."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-05T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s09",
+      "title": "Prediction markets are hiring compliance before marketing",
+      "raw": "Noticeable pattern in the category: the serious venues staff market integrity and compliance roles before they staff growth. That ordering tells you who plans to be around in five years.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-03",
+      "type": "event-observation",
+      "lanes": [
+        "Prediction markets",
+        "Category creation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-03T09:00:00.000Z",
+      "updatedAt": "2026-07-03T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s10",
+      "title": "Singapore SMEs buy outcomes, not AI",
+      "raw": "Founder dinner conversation: nobody asked which model anyone uses. Every question was some version of \"what stopped being painful\". The AI-first pitch is talking to itself.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-01",
+      "type": "event-observation",
+      "lanes": [
+        "Singapore & SEA commercial growth",
+        "Practical AI implementation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "updatedAt": "2026-07-01T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s11",
+      "title": "Sales and marketing alignment is a data contract, not a meeting",
+      "raw": "Alignment fails as a standing meeting and works as a shared definition set: one lifecycle, one MQL definition, one routing rule, reviewed quarterly. The meeting is the symptom.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-29",
+      "type": "framework",
+      "lanes": [
+        "Sales and marketing alignment",
+        "CRM and RevOps governance"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-29T09:00:00.000Z",
+      "updatedAt": "2026-06-29T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s12",
+      "title": "Category creation is mostly patience plus vocabulary",
+      "raw": "Watching a new category form: the winners repeat a small stable vocabulary until the market adopts it. The losers rebrand their language every quarter.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-27",
+      "type": "contrarian-opinion",
+      "lanes": [
+        "Category creation",
+        "Prediction markets"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 3,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-27T09:00:00.000Z",
+      "updatedAt": "2026-06-27T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s13",
+      "title": "The diagnostic is the product",
+      "raw": "Advisory conversations keep proving it: the paid diagnostic that names the problem precisely is worth more to the buyer than the fix, because it converts anxiety into a plan.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-25",
+      "type": "offer-insight",
+      "lanes": [
+        "Commercial systems",
+        "GTM execution"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-25T09:00:00.000Z",
+      "updatedAt": "2026-06-25T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s14",
+      "title": "Fractional leadership fails without a decision framework",
+      "raw": "Fractional roles collapse when every decision still routes through the founder. The fix is a written decision framework in week one: what the fractional leader decides alone, consults on, or escalates.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-23",
+      "type": "commercial-lesson",
+      "lanes": [
+        "Leadership through operating clarity",
+        "Founder-led operating drag"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-06-23T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s15",
+      "title": "Media monetisation: the rate card is a positioning document",
+      "raw": "A publisher raising prices found the objection was never budget, it was comparison. Reframed the rate card around outcomes and categories they owned; the same numbers stopped being questioned.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-20",
+      "type": "client-pattern",
+      "lanes": [
+        "B2B media monetisation",
+        "Pricing and margin discipline"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-20T09:00:00.000Z",
+      "updatedAt": "2026-06-20T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s16",
+      "title": "iGaming supplier pricing is where discipline goes to die",
+      "raw": "Supplier deals in iGaming still run on relationship pricing and side letters. The first supplier to run clean tiered packaging will look expensive and win anyway, because procurement can finally compare.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-17",
+      "type": "contrarian-opinion",
+      "lanes": [
+        "iGaming commercial strategy",
+        "Pricing and margin discipline"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-17T09:00:00.000Z",
+      "updatedAt": "2026-06-17T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s17",
+      "title": "Question: what does a \"qualified conversation\" actually mean",
+      "raw": "If the whole engine optimises for qualified conversations, the definition needs to be written down: right person, real problem, honest interest in discussing it. Otherwise the metric inflates like impressions did.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-15",
+      "type": "question",
+      "lanes": [
+        "GTM execution",
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-06-15T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s18",
+      "title": "Speaking works when the talk is a diagnostic in disguise",
+      "raw": "The talks that generate conversations are the ones where the audience self-diagnoses while listening. Teaching the checklist beats telling the story.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-10",
+      "type": "speaking-idea",
+      "lanes": [
+        "B2B events and sponsorship",
+        "GTM execution"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "updatedAt": "2026-06-10T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s19",
+      "title": "Prediction: SME AI budgets consolidate to two tools by 2027",
+      "raw": "Prediction, low confidence: the ten-tool AI stack SMEs assembled in 2025 consolidates to two by 2027, and the survivors are the ones embedded in a workflow with an owner. [unverified prediction]",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-07",
+      "type": "prediction",
+      "lanes": [
+        "Singapore & SEA commercial growth",
+        "Practical AI implementation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 3,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-07T09:00:00.000Z",
+      "updatedAt": "2026-06-07T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s20",
+      "title": "Renewal conversations start at onboarding",
+      "raw": "The renewal rate was decided in the first thirty days: whether the client got a named outcome and a cadence. Everything after is commentary.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-03",
+      "type": "commercial-lesson",
+      "lanes": [
+        "Commercial systems",
+        "CRM and RevOps governance"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-03T09:00:00.000Z",
+      "updatedAt": "2026-06-03T09:00:00.000Z"
+    },
+    {
+      "id": "ins-5df66148",
+      "createdAt": "2026-07-15T02:12:37.885Z",
+      "updatedAt": "2026-07-15T02:12:37.885Z",
+      "title": "NEXTPredict schedule update, 14 July 2026",
+      "raw": "NEXTPredict schedule update, 14 July 2026\n\nAdded nine items from the final 13-14 July research sweep.\n\nVerified / ready:\n- New York Post promotion comparison: Kalshi and Polymarket marketed with NYPMAX\n- Love Island spoiler supply chain\n- LeBron / Axios and prediction prices in sports journalism\n- Goldman employee compliance framing\n- UC Berkeley / MarketWatch whale-effect discussion\n\nNew proprietary projects:\n- The Spoiler Supply Chain\n- The Probability Citation Tracker\n\nVerification-gated watches:\n- Blockchain.com embeds Polymarket\n- StartupHub.ai cross-venue arbitrage dashboards\n- Prospect Prediction Markets / Foris DAX FCM LOI and growth projections\n\nTotal calendar items: 103\nTotal proprietary data-journalism projects: 49",
+      "source": "NEXTPredict master schedule pack 2026-07-14",
+      "sourceUrl": null,
+      "date": "2026-07-15",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Practical AI implementation",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "a710d0f91f76a7a53fc9c68418cf707191e1245a"
+    },
+    {
+      "id": "ins-2cf63493",
+      "createdAt": "2026-07-15T02:12:45.324Z",
+      "updatedAt": "2026-07-15T02:12:45.324Z",
+      "title": "NEXTPredict Master Social Schedule, Updated",
+      "raw": "# NEXTPredict Master Social Schedule, Updated\n\nThe workbook contains 103 calendar items, including 49 proprietary data-journalism projects and nine additions from the final 13-14 July research sweep.\n\n## Added from the final 13-14 July research sweep\n\n| Date | Channel | Topic | Status | Verification note |\n|---|---|---|---|---|\n| 15 Jul 2026 | X | Prediction markets marketed like sportsbooks | Ready | Based on two New York Post promotions using the same NYPMAX code |\n| 17 Jul 2026 | Stuart LinkedIn | Love Island and the spoiler supply chain | Ready | Separate reported concerns, public rumours and confirmed statements |\n| 20 Jul 2026 | Prediction Markets Forum | Prediction prices inside ordinary sports journalism | Ready | Timestamp the market and treat transfer reports as rumours |\n| 21 Jul 2026 | X | Goldman Sachs draws a contract-specific compliance line | Ready | Policy predates the sweep; do not frame recirculation as a new 13 July announcement |\n| 23 Jul 2026 | Prediction Markets Forum | When the market thinks, how many traders is that? | Ready | Read the underlying UC Berkeley paper before publication |\n| 24 Jul 2026 | X | Blockchain.com embeds Polymarket | Unverified watch | No official source found |\n| 28 Jul 2026 | Stuart LinkedIn | The Probability Citation Tracker | Planned | Publish the scoring rubric before naming or ranking outlets |\n| 29 Jul 2026 | X | Cross-venue arbitrage dashboards | Unverified watch | Prove both legs were executable after fees and rule alignment |\n| 31 Jul 2026 | X | Growth forecasts and Prospect / Foris DAX FCM lead | Unverified watch | Require an official filing, signed LOI or company release |\n\n### Verification rule\n\nThe three unverified items are intentionally present in the operating schedule as monitoring tasks. They are not approved claims and should not be posted until a primary source, filing or direct product evidence is captured.\n\n## Proprietary data journalism schedule\n\n| Date | Channel | Topic | Working headline | Priority |\n|---|---|---|---|---|\n| 17 Aug 2026 | Stuart LinkedIn | NEXTPredict Settlement Ambiguity Index | The prediction markets most likely to cause an argument | Critical |\n| 19 Aug 2026 | X | The Price of One Percentage Point | It cost $1,840 to make the market change its mind | Critical |\n| 21 Aug 2026 | Prediction Markets Forum | The Reality Gap | When reality happened, but the contract still lost | Critical |\n| 24 Aug 2026 | Stuart LinkedIn | Oracle Dependency Map | The organisations quietly deciding billions in prediction markets | Critical |\n| 26 Aug 2026 | X | The Overtime Tax | How much does one sentence about extra time cost users? | High |\n| 28 Aug 2026 | Prediction Markets Forum | Contract Question DNA | The wording patterns hiding inside prediction markets | High |\n| 31 Aug 2026 | Stuart LinkedIn | Weather Station Arbitrage Atlas | You are not trading New York weather. You are trading one sensor near an airport. | Critical |\n| 02 Sep 2026 | X | Settlement Source Reliability League | What happens when the source of truth goes offline? | High |\n| 04 Sep 2026 | Prediction Markets Forum | Payout Latency League Table | Which markets pay fastest after the answer is known? | High |\n| 07 Sep 2026 | Stuart LinkedIn | The Prediction-Market Change Log | The rules you bought were not the rules that settled | Critical |\n| 09 Sep 2026 | X | The Market Graveyard | The prediction markets that quietly disappeared | High |\n| 11 Sep 2026 | Prediction Markets Forum | Probability Half-Life | The internet is full of dead probabilities | High |\n| 14 Sep 2026 | Stuart LinkedIn | Probability Laundering | How one trade became a global news story | Critical |\n| 16 Sep 2026 | X | The Media-Market Feedback Loop | Did the market predict the news, or did the news create the market? | Critical |\n| 18 Sep 2026 | Prediction Markets Forum | The Prediction-Market Journalism Audit | Which newsrooms use prediction markets properly? | High |\n| 21 Sep 2026 | Stuart LinkedIn | The Whale Consensus Illusion | When the market thinks actually means one wallet thinks | Critical |\n| 23 Sep 2026 | X | Market-Maker Dependency Score | How many markets are liquid only while one participant is present? | Critical |\n| 25 Sep 2026 | Prediction Markets Forum | The Liquidity Family Tree | Ten prediction-market apps, three actual sources of liquidity | Critical |\n| 28 Sep 2026 | Stuart LinkedIn | The Insider Proximity Score | Which markets have the largest invisible insider population? | Critical |\n| 30 Sep 2026 | X | Pre-Announcement Leakage Index | What did prediction markets know before the company told the SEC? | Critical |\n| 02 Oct 2026 | Prediction Markets Forum | Prediction Markets in Corporate Filings | Which public companies are quietly putting prediction markets into their risk factors? | High |\n| 05 Oct 2026 | Stuart LinkedIn | Prediction Markets Versus Options | Two markets pricing the same future disagree. Who is wrong? | Critical |\n| 07 Oct 2026 | X | Cross-Venue Disagreement Monitor | Where do prediction markets, sportsbooks, polls and options disagree most? | Critical |\n| 09 Oct 2026 | Prediction Markets Forum | The Probability Tax | A 50-cent probability does not cost 50 cents | High |\n| 12 Oct 2026 | Stuart LinkedIn | The Information-Arrival Fingerprint | Every prediction market has a different heartbeat | High |\n| 14 Oct 2026 | X | The Five-Minute Penalty | How short is too short for a prediction market? | High |\n| 16 Oct 2026 | Prediction Markets Forum | The Outcome Influenceability Index | The markets where traders can bet on an outcome and then help cause it | Critical |\n| 19 Oct 2026 | Stuart LinkedIn | The $100 Contract Supply Chain | Who gets paid when you buy a $100 prediction contract? | Critical |\n| 21 Oct 2026 | X | Market Before the Market | The companies quietly building prediction-market products | Critical |\n| 23 Oct 2026 | Prediction Markets Forum | Prediction-Market Comment Network | Who is trying to shape the rules, and whose language travels? | High |\n| 26 Oct 2026 | Stuart LinkedIn | The Regulatory Product Atlas | The same contract changes identity depending on where you stand | Critical |\n| 28 Oct 2026 | X | State Regulator Copy-Paste Tracker | Why are multiple states using almost the same words? | High |\n| 30 Oct 2026 | Prediction Markets Forum | The Regulatory Copy Machine | Why five jurisdictions are using almost exactly the same words | High |\n| 02 Nov 2026 | Stuart LinkedIn | Attention-to-Liquidity Conversion Rate | Love Island creates conversation. Does it create liquidity? | High |\n| 04 Nov 2026 | X | The Marketing-to-Liquidity Ratio | Prediction markets have a customer-acquisition problem nobody is measuring | High |\n| 06 Nov 2026 | Prediction Markets Forum | The Unasked Questions Index | What major events do prediction markets refuse to list? | High |\n| 09 Nov 2026 | Stuart LinkedIn | The Missing Markets Index | What prediction markets refuse to predict | High |\n| 11 Nov 2026 | X | Outcome-Manipulation Surface | Which outcomes can traders help cause? | Critical |\n| 13 Nov 2026 | Prediction Markets Forum | The Morality Premium | Do markets on death, conflict and disaster trade differently? | Medium |\n| 16 Nov 2026 | Stuart LinkedIn | Brand Exposure Before Consent | Prediction markets are pricing brands before brands have a position | High |\n| 18 Nov 2026 | X | The Price of Official Rights | What changes when a market becomes official? | High |\n| 20 Nov 2026 | Prediction Markets Forum | The Fandom Premium | Do fans overprice the people they love? | High |\n| 23 Nov 2026 | Stuart LinkedIn | Customer-Support Stress Index | What breaks when markets get busy? | Medium |\n| 25 Nov 2026 | X | Prediction-Market Dark Patterns Audit | Where does product design push users harder than the odds do? | High |\n| 27 Nov 2026 | Prediction Markets Forum | The Education Debt Index | How quickly can users deposit, and how long until they understand the rules? | High |\n| 30 Nov 2026 | Stuart LinkedIn | App-Store Identity Drift | Is this app selling trading, sport, forecasting or entertainment? | Medium |\n| 02 Dec 2026 | X | The Talent Migration Graph | Where is prediction-market expertise actually coming from? | Medium |\n\n## Workbook sheets\n\n- Dashboard\n- Master Calendar\n- Trigger Dates\n- Content Bank\n- Data Journalism Pipeline\n- Recurring Formats\n- Production Board\n- Platform Rules\n- Sources",
+      "source": "NEXTPredict master schedule pack 2026-07-14",
+      "sourceUrl": null,
+      "date": "2026-07-15",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "B2B events and sponsorship",
+        "Sports betting & sportsbook strategy"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public-after-anonymisation",
+        "score": 2,
+        "reasons": [
+          "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "anonymisationChecklist": [
+          "Company names replaced with a role description (e.g. \"a B2B events business\").",
+          "Individual names removed or replaced with roles.",
+          "Exact commercial figures bucketed (\"six figures\", \"double-digit uplift\") or removed.",
+          "Identifying project details generalised.",
+          "Private internal decisions and disagreements removed.",
+          "Sensitive timings blurred (\"recently\", \"last year\").",
+          "Deal terms and counterparties removed."
+        ],
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "5b69426052d18219f24af539e3b45c6f0b12f9b2"
+    }
+  ]
+}

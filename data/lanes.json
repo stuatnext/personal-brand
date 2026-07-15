@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T02:13:30.219Z",
+    "note": "The authority taxonomy, tiered around the three pillars: Strait Up Growth (AI / commercial & marketing strategy / operational efficiency, Singapore & SEA), prediction markets, and iGaming & sports betting (the NEXT.io positioning; its events/media lanes are supporting context). core lanes are weighted up in scoring, Today and the neglect warnings. NOTE the brand boundary: iGaming/sportsbook vocabulary is fine in Stuart-personal and NEXT.io content and stays BANNED in NEXTPredict copy (linter-enforced)."
+  },
+  "items": [
+    {
+      "id": "lane-01",
+      "name": "Commercial systems",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-02",
+      "name": "CRM and RevOps governance",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-03",
+      "name": "Pricing and margin discipline",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-04",
+      "name": "Practical AI implementation",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-05",
+      "name": "Operational efficiency",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-06",
+      "name": "Sales and marketing alignment",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-07",
+      "name": "GTM execution",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-08",
+      "name": "Founder-led operating drag",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-09",
+      "name": "Singapore & SEA commercial growth",
+      "tier": "core",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-10",
+      "name": "Prediction markets",
+      "tier": "core",
+      "pillar": "prediction-markets",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-11",
+      "name": "Category creation",
+      "tier": "supporting",
+      "pillar": "prediction-markets",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-12",
+      "name": "iGaming commercial strategy",
+      "tier": "core",
+      "pillar": "igaming",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-13",
+      "name": "Sports betting & sportsbook strategy",
+      "tier": "core",
+      "pillar": "igaming",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-14",
+      "name": "B2B events and sponsorship",
+      "tier": "supporting",
+      "pillar": "igaming",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-15",
+      "name": "B2B media monetisation",
+      "tier": "supporting",
+      "pillar": "igaming",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-16",
+      "name": "Commercial negotiation",
+      "tier": "supporting",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    },
+    {
+      "id": "lane-17",
+      "name": "Leadership through operating clarity",
+      "tier": "supporting",
+      "pillar": "strait-up-growth",
+      "createdAt": "2026-07-15T02:13:30.219Z",
+      "updatedAt": "2026-07-15T02:13:30.219Z"
+    }
+  ]
+}

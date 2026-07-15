@@ -1,0 +1,935 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T02:04:51.939Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal. out-s06 is deliberately weak and out-s11 deliberately suppressed, to demonstrate the qualification gates."
+  },
+  "items": [
+    {
+      "id": "out-s01",
+      "contactId": "con-s01",
+      "purpose": "follow-up-after-meeting",
+      "stage": "conversation",
+      "trigger": "Mabel asked for a scoping outline after the intro call",
+      "valueToRecipient": "A one-page scoping outline for the audit she asked about",
+      "evidence": [
+        "int-s01: intro call notes",
+        "eng-s12: replied to the diagnostic newsletter asking to talk scoping"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Mabel,\n\nGood to talk last week. You asked for a scoping outline for the commercial systems piece, so here it is, one page as promised.\n\nThe short version: two weeks of looking at how deals actually move through Harbourline, then a prioritised plan you could hand to the team. If the shape looks right, happy to walk through it on a short call.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "Commercial systems",
+        "Founder-led operating drag"
+      ],
+      "approval": {
+        "status": "approved",
+        "approvedBy": "stuart",
+        "approvedAt": "2026-07-05T09:00:00.000Z"
+      },
+      "sentAt": "2026-07-10T09:00:00.000Z",
+      "reply": {
+        "text": "This looks right. Can we do Thursday?",
+        "sentiment": "positive",
+        "date": "2026-07-11T09:00:00.000Z"
+      },
+      "followUpDate": "2026-07-16",
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 87,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 7,
+            "why": "warm (47/100): Spoke within the last two weeks (reply, 2026-07-09)."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Mabel asked for a scoping outline after the intro call"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A one-page scoping outline for the audit she asked about"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: Commercial systems, Founder-led operating drag"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "2 evidence item(s): int-s01: intro call notes"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (87/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "warm (47/100): Spoke within the last two weeks (reply, 2026-07-09)."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s02",
+      "contactId": "con-s04",
+      "purpose": "podcast-pitch",
+      "stage": "meeting",
+      "trigger": "Dominic asked about September availability",
+      "valueToRecipient": "A guest episode on turning commercial chaos into systems, with practical material his audience can use",
+      "evidence": [
+        "int-s07: host asked about availability",
+        "eng-s11: producer confirmed September slots"
+      ],
+      "channel": "email",
+      "message": "Hi Dominic,\n\nSeptember works. The angle I'd bring: why commercial systems break in founder-led businesses, told through specifics rather than frameworks. Three stories, each with the fix.\n\nIf that fits the show, Aisyah mentioned the 10th or the 17th.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "Commercial systems",
+        "B2B media monetisation"
+      ],
+      "approval": {
+        "status": "approved",
+        "approvedBy": "stuart",
+        "approvedAt": "2026-07-05T09:00:00.000Z"
+      },
+      "sentAt": "2026-06-25T09:00:00.000Z",
+      "reply": {
+        "text": "Booked for the 17th.",
+        "sentiment": "positive",
+        "date": "2026-06-27T09:00:00.000Z"
+      },
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 83,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 3,
+            "why": "thin (21/100): Interaction within six weeks (message, 2026-06-20)."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Dominic asked about September availability"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A guest episode on turning commercial chaos into systems, with practical material his audience can use"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: Commercial systems, B2B media monetisation"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "2 evidence item(s): int-s07: host asked about availability"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (83/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "thin (21/100): Interaction within six weeks (message, 2026-06-20)."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s03",
+      "contactId": "con-s02",
+      "purpose": "new-business-conversation",
+      "stage": "replied",
+      "trigger": "Rory mentioned flat sponsorship renewals three years running",
+      "valueToRecipient": "The sponsor outcome map exercise, which he can run internally even if we never work together",
+      "evidence": [
+        "int-s03: coffee meeting notes"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Rory,\n\nBeen thinking about the flat-renewals point since our coffee. One exercise that might be useful regardless of anything else: map what each sponsor could claim internally after the event. If the answer is thin, the renewal conversation was lost before it started.\n\nHappy to talk through how I'd run that if useful.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "approval": {
+        "status": "approved",
+        "approvedBy": "stuart",
+        "approvedAt": "2026-07-05T09:00:00.000Z"
+      },
+      "sentAt": "2026-06-30T09:00:00.000Z",
+      "reply": {
+        "text": "Interesting. Send me the shape of it.",
+        "sentiment": "positive",
+        "date": "2026-07-02T09:00:00.000Z"
+      },
+      "followUpDate": "2026-07-13",
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 87,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 7,
+            "why": "warm (44/100): Interaction within six weeks (meeting, 2026-06-05)."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Rory mentioned flat sponsorship renewals three years running"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: The sponsor outcome map exercise, which he can run internally even if we never work together"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: B2B events and sponsorship"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "1 evidence item(s): int-s03: coffee meeting notes"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (87/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "warm (44/100): Interaction within six weeks (meeting, 2026-06-05)."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s04",
+      "contactId": "con-s09",
+      "purpose": "follow-up-after-content-engagement",
+      "stage": "approved",
+      "trigger": "Annelies asked about sponsor measurement plans under the renewals post",
+      "valueToRecipient": "A concrete answer to the measurement question she raised publicly",
+      "evidence": [
+        "eng-s07: her comment on cnt-s03"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Annelies,\n\nYour question under my sponsorship post deserved a longer answer than a comment. The measurement plan I use has three layers: what the sponsor claims internally, what the audience did, and what renewed. Happy to share the one-pager.\n\nNo agenda beyond that; the question was a good one.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Category creation"
+      ],
+      "approval": {
+        "status": "approved",
+        "approvedBy": "stuart",
+        "approvedAt": "2026-07-05T09:00:00.000Z"
+      },
+      "sentAt": null,
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 80,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 0,
+            "why": "cold (0/100): No interactions on record."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Annelies asked about sponsor measurement plans under the renewals post"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A concrete answer to the measurement question she raised publicly"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: B2B events and sponsorship, Category creation"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "1 evidence item(s): eng-s07: her comment on cnt-s03"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (80/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "cold (0/100): No interactions on record."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s05",
+      "contactId": "con-s13",
+      "purpose": "follow-up-after-content-engagement",
+      "stage": "drafted",
+      "trigger": "Third meaningful engagement in a fortnight, latest on renewals and churn",
+      "valueToRecipient": "A direct exchange on the discount-authority question he keeps raising",
+      "evidence": [
+        "eng-s03, eng-s04, eng-s05: three comments in two weeks"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Tom,\n\nYou've asked two of the sharpest questions under my pricing posts recently, and the churn point today made me want to take it out of the comments.\n\nHow are you handling discount authority at Parallax today? Asking because the below-20-staff version is genuinely different and I'm still testing my own answer.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "GTM execution",
+        "Pricing and margin discipline"
+      ],
+      "approval": {
+        "status": "pending"
+      },
+      "sentAt": null,
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 85,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 5,
+            "why": "warm (34/100): Spoke within the last two weeks (comment, 2026-07-13)."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Third meaningful engagement in a fortnight, latest on renewals and churn"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A direct exchange on the discount-authority question he keeps raising"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: GTM execution, Pricing and margin discipline"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "1 evidence item(s): eng-s03, eng-s04, eng-s05: three comments in two weeks"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (85/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "warm (34/100): Spoke within the last two weeks (comment, 2026-07-13)."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s06",
+      "contactId": "con-s19",
+      "purpose": "reconnect",
+      "stage": "drafted",
+      "trigger": "None recorded",
+      "valueToRecipient": null,
+      "evidence": [],
+      "channel": "linkedin-dm",
+      "message": "Hi Marcus,\n\n[No live trigger on record. The engine flagged this draft as weak: no reason to write now, no stated value. Find a real trigger or do not send.]\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "approval": {
+        "status": "pending"
+      },
+      "sentAt": null,
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 44,
+        "verdict": "do-not-send",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 2,
+            "why": "thin (14/100): No interaction for 160 days. Cold."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 12,
+            "why": "Trigger: None recorded"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 0,
+            "why": "No value exchange stated."
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: B2B events and sponsorship"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 0,
+            "why": "No evidence the recipient cares. Do not invent it."
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Do not send (44/100). Value to recipient is the biggest gap: No value exchange stated.",
+        "fastestImprovement": {
+          "key": "valueToRecipient",
+          "label": "Value to recipient",
+          "why": "No value exchange stated."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s07",
+      "contactId": "con-s17",
+      "purpose": "speaking-outreach",
+      "stage": "drafted",
+      "trigger": "Northlight programmes autumn summits around now (fictional)",
+      "valueToRecipient": "A talk where the audience self-diagnoses their commercial systems, which fits his practitioner-track brief",
+      "evidence": [
+        "int-s17: Pieter conversation referenced the autumn programme"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Oliver,\n\nPieter mentioned you're shaping the autumn programme. I have a talk that's been landing well in founder rooms: the commercial systems audit as a live exercise, where the audience diagnoses their own operation while listening.\n\nIf the practitioner track has space, happy to send the abstract.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "approval": {
+        "status": "pending"
+      },
+      "sentAt": null,
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 80,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 0,
+            "why": "cold (0/100): No interactions on record."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Northlight programmes autumn summits around now (fictional)"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A talk where the audience self-diagnoses their commercial systems, which fits his practitioner-track brief"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: B2B events and sponsorship"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "1 evidence item(s): int-s17: Pieter conversation referenced the autumn programme"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (80/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "cold (0/100): No interactions on record."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s08",
+      "contactId": "con-s08",
+      "purpose": "partnership-conversation",
+      "stage": "sent",
+      "trigger": "Second joint scoping call completed",
+      "valueToRecipient": "A concrete pilot shape both sides can take to one client each",
+      "evidence": [
+        "int-s10: partnership scoping call",
+        "int-s18: second call on pilot shape"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Josh,\n\nFollowing our call: the pilot shape that makes sense to me is one client each, same diagnostic format, then we sit down and see what the data layer needs to feed it.\n\nIf that still works for you, I'll draft the one-pager this week.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Practical AI implementation"
+      ],
+      "approval": {
+        "status": "approved",
+        "approvedBy": "stuart",
+        "approvedAt": "2026-07-05T09:00:00.000Z"
+      },
+      "sentAt": "2026-07-07T09:00:00.000Z",
+      "reply": null,
+      "followUpDate": "2026-07-15",
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 86,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 6,
+            "why": "warm (38/100): Interaction within six weeks (call, 2026-06-30)."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: Second joint scoping call completed"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A concrete pilot shape both sides can take to one client each"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: CRM and RevOps governance, Practical AI implementation"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "2 evidence item(s): int-s10: partnership scoping call"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (86/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "warm (38/100): Interaction within six weeks (call, 2026-06-30)."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s09",
+      "contactId": "con-s06",
+      "purpose": "share-something-useful",
+      "stage": "sent",
+      "trigger": "His fund published a SEA SaaS GTM note adjacent to my founder-dinner observation",
+      "valueToRecipient": "A ground-level data point for a thesis his fund is publicly developing",
+      "evidence": [
+        "int-s09: panel conversation on SEA SaaS GTM"
+      ],
+      "channel": "linkedin-dm",
+      "message": "Hi Wei Lun,\n\nYour fund's GTM note crossed my feed and it matched something I keep hearing at founder dinners here: nobody asks about models, everyone asks what stopped being painful. Thought the ground-level version might be useful to the thesis.\n\nNo ask; the note was good.\n\nStuart",
+      "brand": "brand-sug",
+      "lanes": [
+        "GTM execution",
+        "Singapore & SEA commercial growth"
+      ],
+      "approval": {
+        "status": "approved",
+        "approvedBy": "stuart",
+        "approvedAt": "2026-07-05T09:00:00.000Z"
+      },
+      "sentAt": "2026-07-03T09:00:00.000Z",
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z",
+      "score": {
+        "total": 83,
+        "verdict": "recommend",
+        "rows": [
+          {
+            "key": "relationshipStrength",
+            "label": "Relationship strength",
+            "weight": 15,
+            "points": 3,
+            "why": "thin (18/100): Interaction within six weeks (event, 2026-06-15)."
+          },
+          {
+            "key": "triggerRelevance",
+            "label": "Relevance of trigger",
+            "weight": 20,
+            "points": 20,
+            "why": "Trigger: His fund published a SEA SaaS GTM note adjacent to my founder-dinner observation"
+          },
+          {
+            "key": "valueToRecipient",
+            "label": "Value to recipient",
+            "weight": 20,
+            "points": 20,
+            "why": "Stated value: A ground-level data point for a thesis his fund is publicly developing"
+          },
+          {
+            "key": "strategicFit",
+            "label": "Strategic fit",
+            "weight": 15,
+            "points": 15,
+            "why": "Linked lanes: GTM execution, Singapore & SEA commercial growth"
+          },
+          {
+            "key": "evidenceOfInterest",
+            "label": "Evidence of interest",
+            "weight": 10,
+            "points": 10,
+            "why": "1 evidence item(s): int-s09: panel conversation on SEA SaaS GTM"
+          },
+          {
+            "key": "timing",
+            "label": "Timing",
+            "weight": 10,
+            "points": 5,
+            "why": "Judged from how current the trigger is."
+          },
+          {
+            "key": "messageSpecificity",
+            "label": "Message specificity",
+            "weight": 10,
+            "points": 10,
+            "why": "Message drafted."
+          }
+        ],
+        "hardStops": [],
+        "verdictText": "Recommend outreach (83/100).",
+        "fastestImprovement": {
+          "key": "relationshipStrength",
+          "label": "Relationship strength",
+          "why": "thin (18/100): Interaction within six weeks (event, 2026-06-15)."
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "out-s10",
+      "contactId": "con-s14",
+      "purpose": "media-pitch",
+      "stage": "qualified",
+      "trigger": "Her outlet runs a series on B2B media businesses inside event companies",
+      "valueToRecipient": "An operator source who has actually built the media-inside-events model",
+      "evidence": [
+        "int: prior interview (fictional); her series brief is public"
+      ],
+      "channel": "email",
+      "message": null,
+      "brand": "brand-sug",
+      "lanes": [
+        "B2B media monetisation",
+        "Category creation"
+      ],
+      "approval": {
+        "status": "pending"
+      },
+      "sentAt": null,
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": null,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z"
+    },
+    {
+      "id": "out-s11",
+      "contactId": "con-s25",
+      "purpose": "new-business-conversation",
+      "stage": "do-not-contact",
+      "trigger": "n/a",
+      "valueToRecipient": null,
+      "evidence": [],
+      "channel": "linkedin-dm",
+      "message": null,
+      "brand": "brand-sug",
+      "lanes": [
+        "Sales and marketing alignment"
+      ],
+      "approval": {
+        "status": "pending"
+      },
+      "sentAt": null,
+      "reply": null,
+      "followUpDate": null,
+      "outcome": null,
+      "learning": null,
+      "note": "Freya opted out of outreach. Record exists to demonstrate suppression: the engine blocks drafting for her.",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z"
+    }
+  ]
+}
