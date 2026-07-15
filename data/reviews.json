@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal."
+  },
+  "items": [
+    {
+      "id": "rev-s01",
+      "kind": "weekly",
+      "period": "2026-07-08 to 2026-07-15",
+      "body": {
+        "workedOn": [
+          "Harbourline scoping",
+          "pricing posts",
+          "AI workflow mapping talk prep"
+        ],
+        "publicSafeLessons": [
+          "Three CRMs story (anonymised)",
+          "Discount authority pattern"
+        ],
+        "keepPrivate": [
+          "NEXT.io Q3 pipeline detail (ins-s08)"
+        ],
+        "recommendedTheme": "Commercial systems",
+        "contentIdeas": [
+          "Founder bottleneck visible in CRM first",
+          "Alignment is a data contract",
+          "Qualified conversation definition"
+        ],
+        "relationshipActions": [
+          "DM Tom Okafor (three engagements)",
+          "Reply to Lin Xiu",
+          "Reconnect with Marcus Ellery only if a real trigger appears"
+        ],
+        "stopDoing": "Drafting reconnects with no trigger (see out-s06).",
+        "confidentialityWarnings": [
+          "ins-s08 is employer-confidential; lessons only after full anonymisation."
+        ]
+      },
+      "status": "confirmed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-14T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "rev-s02",
+      "kind": "monthly",
+      "period": "2026-07",
+      "body": {
+        "authorityProgress": "Ten pieces published; conversations concentrated in CRM/pricing lanes.",
+        "strongestThemes": [
+          "CRM and RevOps governance",
+          "Pricing and margin discipline"
+        ],
+        "weakestThemes": [
+          "Commercial negotiation",
+          "Category creation"
+        ],
+        "offerDemand": "Audit and pricing sprints attract interest; fractional untested. DRAFT reading, small sample.",
+        "positioningDrift": "None detected; mentor flagged risk of over-indexing on AI language.",
+        "decisions": [
+          {
+            "decision": "Keep AI as the accelerant in the narrative, never the headline.",
+            "date": "2026-07-12",
+            "rationale": "Matches positioning: commercial clarity first."
+          }
+        ]
+      },
+      "status": "confirmed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-12T09:00:00.000Z"
+    }
+  ]
+}

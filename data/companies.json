@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal."
+  },
+  "items": [
+    {
+      "id": "com-s01",
+      "name": "Harbourline Logistics",
+      "location": "Singapore",
+      "industry": "B2B logistics SaaS",
+      "note": "~60 staff, founder-led, CRM chaos",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s02",
+      "name": "Kestrel Exhibitions",
+      "location": "London",
+      "industry": "B2B events",
+      "note": "Sponsorship revenue flat, sells inventory not outcomes",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s03",
+      "name": "Parallax Data Rooms",
+      "location": "Singapore",
+      "industry": "B2B SaaS",
+      "note": "Series A, sales and marketing misaligned",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s04",
+      "name": "Bellwether Podcasts",
+      "location": "Manchester",
+      "industry": "B2B media",
+      "note": "Hosts a commercial-leaders podcast",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s05",
+      "name": "Meridian iGaming Supply",
+      "location": "Malta",
+      "industry": "iGaming platform supplier",
+      "note": "Commercial team of 9, pricing informal",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s06",
+      "name": "Straits Venture Partners",
+      "location": "Singapore",
+      "industry": "Venture capital",
+      "note": "SEA B2B fund, hosts founder events",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s07",
+      "name": "Copperfield Media Group",
+      "location": "Leeds",
+      "industry": "B2B media and events",
+      "note": "Legacy publisher moving to events",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s08",
+      "name": "Quayside Analytics",
+      "location": "Singapore",
+      "industry": "Data consultancy",
+      "note": "Partners on RevOps tooling",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s09",
+      "name": "Northlight Conferences",
+      "location": "Amsterdam",
+      "industry": "B2B events",
+      "note": "Runs fintech summits, books speakers",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s10",
+      "name": "Tanjong Growth Collective",
+      "location": "Singapore",
+      "industry": "SME founder community",
+      "note": "400-member founder network",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s11",
+      "name": "Fairway Sports Data",
+      "location": "Dublin",
+      "industry": "Sports data",
+      "note": "Exploring prediction-market adjacency",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "com-s12",
+      "name": "Lantern & Vale",
+      "location": "Remote",
+      "industry": "Fractional exec network",
+      "note": "Places fractional commercial leaders",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-04-26T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    }
+  ]
+}

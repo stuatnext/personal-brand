@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "DRAFT ASSUMPTIONS. Every offer, price and claim here is unconfirmed until Stuart edits and approves it. No client names, testimonials or results may be attached until real ones exist."
+  },
+  "items": [
+    {
+      "id": "off-audit",
+      "name": "Commercial Systems Audit",
+      "status": "draft-assumption",
+      "draft": true,
+      "problem": "Identify operating drag, workflow gaps, CRM friction, GTM friction and the highest-value improvements.",
+      "outcome": "Identify operating drag, workflow gaps, CRM friction, GTM friction and the highest-value improvements.",
+      "primaryArtifacts": "A prioritised 30 to 90 day commercial improvement plan.",
+      "lanes": [
+        "Commercial systems",
+        "Founder-led operating drag"
+      ],
+      "buyerTrigger": "Founder or MD who suspects the commercial engine leaks but cannot see where.",
+      "targetBuyer": "Founder-led B2B, 5-100 employees, SG/Asia/Europe (draft)",
+      "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
+      "proofRequired": "Real case evidence needed before public claims. None attached yet.",
+      "conversionNotes": [],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "off-ai-sprint",
+      "name": "AI Workflow Implementation Sprint",
+      "status": "draft-assumption",
+      "draft": true,
+      "problem": "Embed AI into one or more important commercial workflows.",
+      "outcome": "Embed AI into one or more important commercial workflows.",
+      "primaryArtifacts": "Workflow map, prompt system, source knowledge structure, governance rules, implementation plan.",
+      "lanes": [
+        "Practical AI implementation",
+        "Singapore SME AI adoption"
+      ],
+      "buyerTrigger": "A team whose AI adoption has become disconnected experimentation.",
+      "targetBuyer": "Founder-led B2B, 5-100 employees, SG/Asia/Europe (draft)",
+      "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
+      "proofRequired": "Real case evidence needed before public claims. None attached yet.",
+      "conversionNotes": [],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "off-crm-gtm",
+      "name": "CRM and GTM Operating System",
+      "status": "draft-assumption",
+      "draft": true,
+      "problem": "Cleaner source-of-truth logic, stronger pipeline discipline, clearer ownership, better handoffs.",
+      "outcome": "Cleaner source-of-truth logic, stronger pipeline discipline, clearer ownership, better handoffs.",
+      "primaryArtifacts": "CRM governance model, lifecycle design, dashboard specification, operating cadence, action plan.",
+      "lanes": [
+        "CRM and RevOps governance",
+        "GTM execution"
+      ],
+      "buyerTrigger": "Commercial leader who no longer trusts the CRM numbers.",
+      "targetBuyer": "Founder-led B2B, 5-100 employees, SG/Asia/Europe (draft)",
+      "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
+      "proofRequired": "Real case evidence needed before public claims. None attached yet.",
+      "conversionNotes": [],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "off-pricing",
+      "name": "Pricing and Packaging Sprint",
+      "status": "draft-assumption",
+      "draft": true,
+      "problem": "Improve the value story, package architecture, willingness-to-pay logic, negotiation structure and expansion path.",
+      "outcome": "Improve the value story, package architecture, willingness-to-pay logic, negotiation structure and expansion path.",
+      "primaryArtifacts": "Pricing ladder, package structure, value fences, negotiation playbook, sales narrative.",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Commercial negotiation"
+      ],
+      "buyerTrigger": "Founder discounting informally and leaking margin.",
+      "targetBuyer": "Founder-led B2B, 5-100 employees, SG/Asia/Europe (draft)",
+      "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
+      "proofRequired": "Real case evidence needed before public claims. None attached yet.",
+      "conversionNotes": [],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "off-events",
+      "name": "B2B Event Revenue Architecture",
+      "status": "draft-assumption",
+      "draft": true,
+      "problem": "Move sponsorship and event monetisation from inventory selling toward outcome-led commercial packages.",
+      "outcome": "Move sponsorship and event monetisation from inventory selling toward outcome-led commercial packages.",
+      "primaryArtifacts": "Sponsor outcome map, package architecture, pricing logic, renewal structure, value measurement plan.",
+      "lanes": [
+        "B2B events and sponsorship",
+        "B2B media monetisation"
+      ],
+      "buyerTrigger": "Event business selling logo placement instead of outcomes.",
+      "targetBuyer": "Founder-led B2B, 5-100 employees, SG/Asia/Europe (draft)",
+      "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
+      "proofRequired": "Real case evidence needed before public claims. None attached yet.",
+      "conversionNotes": [],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "off-fractional",
+      "name": "Fractional Commercial Leadership",
+      "status": "draft-assumption",
+      "draft": true,
+      "problem": "Reduce founder dependency, clarify commercial priorities, improve GTM execution, strengthen accountability.",
+      "outcome": "Reduce founder dependency, clarify commercial priorities, improve GTM execution, strengthen accountability.",
+      "primaryArtifacts": "Commercial priorities, operating cadence, leadership reporting, decision framework, execution plan.",
+      "lanes": [
+        "Leadership through operating clarity",
+        "Founder-led operating drag"
+      ],
+      "buyerTrigger": "Founder who is still the bottleneck for every commercial decision.",
+      "targetBuyer": "Founder-led B2B, 5-100 employees, SG/Asia/Europe (draft)",
+      "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
+      "proofRequired": "Real case evidence needed before public claims. None attached yet.",
+      "conversionNotes": [],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    }
+  ]
+}

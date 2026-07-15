@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal."
+  },
+  "items": [
+    {
+      "id": "tsk-s01",
+      "title": "Send Mabel the scoping recap and propose Thursday",
+      "due": "2026-07-16",
+      "kind": "follow-up",
+      "relatedType": "opportunities",
+      "relatedId": "opp-s01",
+      "status": "open",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s02",
+      "title": "Send Rory the sponsor outcome map shape (overdue)",
+      "due": "2026-07-13",
+      "kind": "follow-up",
+      "relatedType": "opportunities",
+      "relatedId": "opp-s03",
+      "status": "open",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s03",
+      "title": "Draft the Quayside pilot one-pager",
+      "due": "2026-07-15",
+      "kind": "follow-up",
+      "relatedType": "opportunities",
+      "relatedId": "opp-s07",
+      "status": "open",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s04",
+      "title": "Reply to Lin Xiu with the lifecycle template",
+      "due": "2026-07-15",
+      "kind": "follow-up",
+      "relatedType": "engagements",
+      "relatedId": "eng-s06",
+      "status": "open",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s05",
+      "title": "Prepare the Bellwether outline for the 17th",
+      "due": "2026-07-20",
+      "kind": "preparation",
+      "relatedType": "content",
+      "relatedId": "cnt-s12",
+      "status": "open",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s06",
+      "title": "Confirm September podcast date with Aisyah",
+      "due": "2026-07-17",
+      "kind": "follow-up",
+      "relatedType": "engagements",
+      "relatedId": "eng-s11",
+      "status": "open",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s07",
+      "title": "Write the anonymised iGaming pricing proof point",
+      "due": "2026-07-19",
+      "kind": "build",
+      "relatedType": "offers",
+      "relatedId": "off-pricing",
+      "status": "open",
+      "deferredCount": 3,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-s08",
+      "title": "Log LinkedIn metrics for last week's posts",
+      "due": "2026-07-14",
+      "kind": "hygiene",
+      "relatedType": "content",
+      "relatedId": null,
+      "status": "done",
+      "deferredCount": 0,
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    }
+  ]
+}

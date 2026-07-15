@@ -1,0 +1,1253 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal. Published bodies are demo copy written to pass the voice linter."
+  },
+  "items": [
+    {
+      "id": "cnt-s01",
+      "title": "Your CRM is not the problem",
+      "format": "linkedin-post",
+      "lanes": [
+        "CRM and RevOps governance"
+      ],
+      "objective": "establish-expertise",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s01"
+      ],
+      "pov": "CRM migrations keep failing because the definitions were never agreed.",
+      "body": "A founder told me last month she has changed CRM three times in five years and trusts none of them.\n\nEvery migration was sold internally as the fix. It never was. Sales, marketing and delivery had never agreed what a qualified deal actually is, so every system faithfully reported a different version of the truth.\n\nI've rebuilt commercial reporting on top of HubSpot enough times to say this plainly: the tool takes the blame for a definitions problem. Agree the lifecycle first, in writing, with the people who own each stage. Then the cheapest CRM you can find will outperform the last three.\n\nThe useful question is: if your CRM vanished tomorrow, could your team write down what a qualified deal is on one page and all sign it?",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s01"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-07-06",
+      "publishedDate": "2026-07-06",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 4100,
+        "comments": 12,
+        "conversationsCreated": [
+          "con-s03",
+          "con-s20"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": [
+          "opp-s01"
+        ]
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-04T09:00:00.000Z",
+      "updatedAt": "2026-07-06T09:00:00.000Z",
+      "scoreOverrides": {
+        "evidence": 5,
+        "commercialRelevance": 4
+      },
+      "score": {
+        "criteria": {
+          "operatorCredibility": 4,
+          "practicalUsefulness": 4,
+          "distinctPointOfView": 4,
+          "evidence": 5,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 4,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "First-person operating experience present.",
+          "practicalUsefulness": "Contains something a reader can act on.",
+          "distinctPointOfView": "Stated view: \"CRM migrations keep failing because the definitions were never agreed.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: CRM and RevOps governance.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: establish-expertise.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 48,
+        "max": 60,
+        "weakest": [],
+        "recommendation": "publish",
+        "recommendationText": "Strong authority piece (48/60).",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s02",
+      "title": "Who approved that discount?",
+      "format": "linkedin-post",
+      "lanes": [
+        "Pricing and margin discipline"
+      ],
+      "objective": "challenge-weak-thinking",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s02"
+      ],
+      "pov": "Discount authority is a leadership instrument.",
+      "body": "Sat in a deal review recently where a 22% discount had closed the quarter's biggest deal. I asked who approved it. Silence.\n\nThat silence is expensive. When nobody owns discount authority, every seller negotiates against themselves and calls it customer focus. I've introduced tiered discount authorities in a commercial team before and the effect was immediate: margins held, and oddly, deals closed faster. Buyers respect a seller who can't just keep sliding.\n\nStill forming a view on where the tiers should sit for smaller founder-led teams. If you run one, how do you handle it today?",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s02"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-07-03",
+      "publishedDate": "2026-07-03",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 6200,
+        "comments": 19,
+        "conversationsCreated": [
+          "con-s13"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": [
+          "opp-s02"
+        ]
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "updatedAt": "2026-07-03T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 4,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Contains something a reader can act on.",
+          "distinctPointOfView": "Stated view: \"Discount authority is a leadership instrument.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Pricing and margin discipline.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: challenge-weak-thinking.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 43,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s03",
+      "title": "Sponsors renew on evidence, not logos",
+      "format": "linkedin-post",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "objective": "establish-expertise",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s03"
+      ],
+      "pov": "Outcome-led packages renew themselves.",
+      "body": "Sponsorship renewals aren't a sales problem. They're an evidence problem.\n\nWhen the package was logo placement and a booth, the renewal call is a negotiation about price. When the sponsor walked away with a number they could put in their own board deck, the renewal call is a scheduling exercise.\n\nI've sold and renewed event sponsorships for years and the pattern holds everywhere: build the package around what the sponsor gets to claim afterwards, and measure it for them, because they won't.\n\nThe uncomfortable bit is that most event P&Ls can't tell you what any sponsor actually got. That's the fix, and it's cheaper than a new sales deck.",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s03"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-30",
+      "publishedDate": "2026-06-30",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 3800,
+        "comments": 9,
+        "conversationsCreated": [
+          "con-s09",
+          "con-s21"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": [
+          "opp-s03"
+        ]
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-28T09:00:00.000Z",
+      "updatedAt": "2026-06-30T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 4,
+          "practicalUsefulness": 4,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 4,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "First-person operating experience present.",
+          "practicalUsefulness": "Contains something a reader can act on.",
+          "distinctPointOfView": "Stated view: \"Outcome-led packages renew themselves.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: B2B events and sponsorship.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: establish-expertise.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 46,
+        "max": 60,
+        "weakest": [],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (46). Fix: weakest criteria.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s04",
+      "title": "Map the workflow before you buy the tool",
+      "format": "linkedin-post",
+      "lanes": [
+        "Practical AI implementation",
+        "Singapore SME AI adoption"
+      ],
+      "objective": "educate-market",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s04"
+      ],
+      "pov": "AI value comes from workflow design, not tool purchase.",
+      "body": "Every stalled AI story I hear from SME founders has the same shape. Tool bought. Prompt shared in Slack. Nothing changed.\n\nThe teams getting real value did something boring first: they mapped the workflow, named the steps, gave each step an owner, and then asked where a model removes drag. AI slotted into a mapped workflow compounds. AI sprinkled onto an unmapped one evaporates.\n\nI'm doing this exercise inside my own commercial work at the moment and it's humbling how much of the drag was never the tooling.\n\nIf you've tried an AI rollout that quietly died, I'd genuinely like to hear what it looked like from the inside.",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s04"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-27",
+      "publishedDate": "2026-06-27",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 5400,
+        "comments": 22,
+        "conversationsCreated": [
+          "con-s18",
+          "con-s24"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": []
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-25T09:00:00.000Z",
+      "updatedAt": "2026-06-27T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 4,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Contains something a reader can act on.",
+          "distinctPointOfView": "Stated view: \"AI value comes from workflow design, not tool purchase.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Practical AI implementation, Singapore SME AI adoption.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: educate-market.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 43,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s05",
+      "title": "Pipeline reviews should end in decisions",
+      "format": "linkedin-post",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Leadership through operating clarity"
+      ],
+      "objective": "challenge-weak-thinking",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s06"
+      ],
+      "pov": "A review without stage moves is a weather report.",
+      "body": "I watched a pipeline review where the leader read the dashboard aloud to the room for forty minutes. Everyone nodded. Nothing moved.\n\nA pipeline review has one job: decisions. Stage moves, kills, next actions with names on them. If the meeting ends and the pipeline looks identical, you held a weather report.\n\nMy rule now: every review ends with three lists. What moved, what died, what has a named action this week. Takes ten minutes longer to run and saves the quarter.\n\nHow does yours end?",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s06"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-24",
+      "publishedDate": "2026-06-24",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 2900,
+        "comments": 8,
+        "conversationsCreated": [],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": []
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-22T09:00:00.000Z",
+      "updatedAt": "2026-06-24T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 4,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Contains something a reader can act on.",
+          "distinctPointOfView": "Stated view: \"A review without stage moves is a weather report.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: CRM and RevOps governance, Leadership through operating clarity.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: challenge-weak-thinking.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 43,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s06",
+      "title": "The quiet tell in prediction markets",
+      "format": "linkedin-post",
+      "lanes": [
+        "Prediction markets",
+        "Category creation"
+      ],
+      "objective": "build-authority",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s09"
+      ],
+      "pov": "Compliance-first hiring separates the serious venues.",
+      "body": "A pattern worth watching in prediction markets: the serious venues are hiring market integrity and compliance people before they hire growth people.\n\nThat ordering is the tell. It says who is building infrastructure for a decade and who is optimising a moment. I've watched the same split play out in other regulated categories, and the compliance-first firms looked slow right up until they were the only ones left standing.\n\nI'm still learning my way into parts of this category, but hiring order is one of the more honest indicators I've found. Worth checking before you partner with, supply to, or bet your career on a venue.",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s09"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-21",
+      "publishedDate": "2026-06-21",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 3100,
+        "comments": 11,
+        "conversationsCreated": [
+          "con-s11"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": []
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-19T09:00:00.000Z",
+      "updatedAt": "2026-06-21T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 2,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 4,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Nothing actionable yet. What should the reader do differently?",
+          "distinctPointOfView": "Stated view: \"Compliance-first hiring separates the serious venues.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Prediction markets, Category creation.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: build-authority.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 42,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          },
+          {
+            "key": "practicalUsefulness",
+            "label": "Practical usefulness",
+            "note": "Nothing actionable yet. What should the reader do differently?"
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (42). Fix: Operator credibility, Practical usefulness.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s07",
+      "title": "Nobody at the founder dinner asked about models",
+      "format": "linkedin-post",
+      "lanes": [
+        "Singapore SME AI adoption"
+      ],
+      "objective": "start-conversations",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s10"
+      ],
+      "pov": "SMEs buy relief from pain, not AI.",
+      "body": "Founder dinner in Singapore last month. AI came up constantly. Not once did anyone ask which model anyone uses.\n\nEvery question was a version of \"what stopped being painful\". Invoicing follow-ups. Proposal drafts. CRM hygiene. The vendors pitching AI-first are answering a question nobody at that table was asking.\n\nIf you sell to SMEs, the pitch that lands is the workflow that stopped hurting, with the model as a footnote.",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s10"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-18",
+      "publishedDate": "2026-06-18",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 4700,
+        "comments": 15,
+        "conversationsCreated": [
+          "con-s10"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": []
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-16T09:00:00.000Z",
+      "updatedAt": "2026-06-18T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 2,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Nothing actionable yet. What should the reader do differently?",
+          "distinctPointOfView": "Stated view: \"SMEs buy relief from pain, not AI.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Singapore SME AI adoption.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: start-conversations.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 41,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          },
+          {
+            "key": "practicalUsefulness",
+            "label": "Practical usefulness",
+            "note": "Nothing actionable yet. What should the reader do differently?"
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (41). Fix: Operator credibility, Practical usefulness.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s08",
+      "title": "The diagnostic is the product",
+      "format": "newsletter",
+      "lanes": [
+        "Commercial systems",
+        "GTM execution"
+      ],
+      "objective": "support-offer",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s13"
+      ],
+      "pov": "Naming the problem precisely is worth more than fixing it.",
+      "body": "Longer piece on why the paid diagnostic beats the free proposal: it converts anxiety into a plan, prices the thinking, and qualifies the buyer. [Full newsletter body drafted; fictional demo record.]",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s13"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-14",
+      "publishedDate": "2026-06-14",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 900,
+        "comments": 4,
+        "conversationsCreated": [
+          "con-s01"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": [
+          "opp-s01"
+        ]
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-12T09:00:00.000Z",
+      "updatedAt": "2026-06-14T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 2,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 4,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 4,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Nothing actionable yet. What should the reader do differently? Draft is very short.",
+          "distinctPointOfView": "Stated view: \"Naming the problem precisely is worth more than fixing it.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Commercial systems, GTM execution.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: support-offer.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 43,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          },
+          {
+            "key": "practicalUsefulness",
+            "label": "Practical usefulness",
+            "note": "Nothing actionable yet. What should the reader do differently? Draft is very short."
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility, Practical usefulness.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s09",
+      "title": "Events are sitting on a media business",
+      "format": "linkedin-post",
+      "lanes": [
+        "B2B events and sponsorship",
+        "B2B media monetisation"
+      ],
+      "objective": "establish-expertise",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s07"
+      ],
+      "pov": "The audience asset earns two days a year; the media layer is the recurring revenue.",
+      "body": "Most event businesses monetise their audience two days a year and call the other 363 marketing.\n\nI've built the other model: the newsletter, podcast and research layer that turns an event audience into recurring media revenue. It's not glamorous, and it outearns the event within a couple of years if you staff it like a business rather than a promo channel.\n\nIf you run events and your media line is a rounding error, that's not a market problem.",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s07"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-09",
+      "publishedDate": "2026-06-09",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 3500,
+        "comments": 10,
+        "conversationsCreated": [
+          "con-s07"
+        ],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": [
+          "opp-s04"
+        ]
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-07T09:00:00.000Z",
+      "updatedAt": "2026-06-09T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 4,
+          "practicalUsefulness": 2,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 4,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "First-person operating experience present.",
+          "practicalUsefulness": "Nothing actionable yet. What should the reader do differently?",
+          "distinctPointOfView": "Stated view: \"The audience asset earns two days a year; the media layer is the recurring revenue.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: B2B events and sponsorship, B2B media monetisation.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: establish-expertise.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 44,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "practicalUsefulness",
+            "label": "Practical usefulness",
+            "note": "Nothing actionable yet. What should the reader do differently?"
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (44). Fix: Practical usefulness.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s10",
+      "title": "Renewals are decided in onboarding",
+      "format": "linkedin-post",
+      "lanes": [
+        "Commercial systems"
+      ],
+      "objective": "establish-expertise",
+      "stage": "published",
+      "sourceInsights": [
+        "ins-s20"
+      ],
+      "pov": "The first thirty days set the renewal.",
+      "body": "Looked back at a year of renewals once and the pattern was embarrassing in its clarity: the renewal was decided in the first thirty days. Named outcome, agreed cadence, first proof delivered. Everything after was commentary.\n\nIf your renewal conversations feel like negotiations, the fix is upstream.",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s20"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-06-01",
+      "publishedDate": "2026-06-01",
+      "channel": "linkedin",
+      "url": null,
+      "performance": {
+        "impressions": 2200,
+        "comments": 5,
+        "conversationsCreated": [],
+        "contactsInfluenced": [],
+        "opportunitiesInfluenced": []
+      },
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-05-30T09:00:00.000Z",
+      "updatedAt": "2026-06-01T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 4,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Contains something a reader can act on.",
+          "distinctPointOfView": "Stated view: \"The first thirty days set the renewal.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Commercial systems.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: establish-expertise.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 43,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s11",
+      "title": "The founder bottleneck is visible in the CRM first",
+      "format": "linkedin-post",
+      "lanes": [
+        "Founder-led operating drag",
+        "CRM and RevOps governance"
+      ],
+      "objective": "establish-expertise",
+      "stage": "review",
+      "sourceInsights": [
+        "ins-s05"
+      ],
+      "pov": "Operating drag is measurable before revenue feels it.",
+      "body": "In founder-led businesses the tell is deals sitting in a \"waiting on founder\" stage.\n\nOperating drag shows up in the CRM months before it shows up in revenue. Count the deals waiting on one person's calendar and you have a leading indicator most boards never see.\n\n[Needs one concrete anonymised example before approval.]",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s05"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-07-17",
+      "publishedDate": null,
+      "channel": null,
+      "url": null,
+      "performance": null,
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 2,
+          "distinctPointOfView": 4,
+          "evidence": 3,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 3,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Nothing actionable yet. What should the reader do differently?",
+          "distinctPointOfView": "Stated view: \"Operating drag is measurable before revenue feels it.\"",
+          "evidence": "1 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Founder-led operating drag, CRM and RevOps governance.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: establish-expertise.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 41,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          },
+          {
+            "key": "practicalUsefulness",
+            "label": "Practical usefulness",
+            "note": "Nothing actionable yet. What should the reader do differently?"
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (41). Fix: Operator credibility, Practical usefulness.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s12",
+      "title": "Guest outline: commercial chaos to usable systems",
+      "format": "podcast-outline",
+      "lanes": [
+        "Commercial systems",
+        "Practical AI implementation"
+      ],
+      "objective": "attract-podcast-invitations",
+      "stage": "review",
+      "sourceInsights": [
+        "ins-s01",
+        "ins-s04"
+      ],
+      "pov": "The founder-friendly version of the systems story.",
+      "body": "Outline for the Bellwether appearance: 1. The three-CRMs story. 2. Why definitions beat tools. 3. Where AI genuinely removes drag. 4. The one-page commercial operating picture. [Draft outline; confirm before recording.]",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s01",
+        "insight:ins-s04"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": "2026-07-17",
+      "publishedDate": null,
+      "channel": null,
+      "url": null,
+      "performance": null,
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z",
+      "score": {
+        "criteria": {
+          "operatorCredibility": 2,
+          "practicalUsefulness": 2,
+          "distinctPointOfView": 4,
+          "evidence": 4,
+          "confidentialitySafety": 5,
+          "sugRelevance": 4,
+          "relationshipValue": 3,
+          "speakingPotential": 4,
+          "industryRelevance": 3,
+          "originality": 4,
+          "commercialRelevance": 3,
+          "toneMatch": 5
+        },
+        "notes": {
+          "operatorCredibility": "No first-person operating experience in the draft. Add what Stuart actually did.",
+          "practicalUsefulness": "Nothing actionable yet. What should the reader do differently? Draft is very short.",
+          "distinctPointOfView": "Stated view: \"The founder-friendly version of the systems story.\"",
+          "evidence": "2 evidence item(s) attached.",
+          "confidentialitySafety": "Source classification: public.",
+          "sugRelevance": "Linked to lanes: Commercial systems, Practical AI implementation.",
+          "relationshipValue": "No specific contacts linked.",
+          "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
+          "industryRelevance": "Judged from lane linkage.",
+          "originality": "Grounded in Stuart’s own captured insight.",
+          "commercialRelevance": "Objective: attract-podcast-invitations.",
+          "toneMatch": "Passes the voice linter."
+        },
+        "total": 43,
+        "max": 60,
+        "weakest": [
+          {
+            "key": "operatorCredibility",
+            "label": "Operator credibility",
+            "note": "No first-person operating experience in the draft. Add what Stuart actually did."
+          },
+          {
+            "key": "practicalUsefulness",
+            "label": "Practical usefulness",
+            "note": "Nothing actionable yet. What should the reader do differently? Draft is very short."
+          }
+        ],
+        "recommendation": "revise",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility, Practical usefulness.",
+        "thresholds": {
+          "strong": 48,
+          "publishAfterEdits": 36
+        },
+        "isSuggestion": true
+      }
+    },
+    {
+      "id": "cnt-s13",
+      "title": "Alignment is a data contract",
+      "format": "linkedin-post",
+      "lanes": [
+        "Sales and marketing alignment"
+      ],
+      "objective": "educate-market",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-s11"
+      ],
+      "pov": "The meeting is the symptom.",
+      "body": "[Drafting from ins-s11: one lifecycle, one MQL definition, one routing rule, reviewed quarterly.]",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s11"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": null,
+      "publishedDate": null,
+      "channel": null,
+      "url": null,
+      "performance": null,
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "cnt-s14",
+      "title": "The rate card is a positioning document",
+      "format": "article",
+      "lanes": [
+        "B2B media monetisation",
+        "Pricing and margin discipline"
+      ],
+      "objective": "establish-expertise",
+      "stage": "qualified-idea",
+      "sourceInsights": [
+        "ins-s15"
+      ],
+      "pov": null,
+      "body": "",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s15"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": null,
+      "publishedDate": null,
+      "channel": null,
+      "url": null,
+      "performance": null,
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "cnt-s15",
+      "title": "What \"qualified conversation\" should actually mean",
+      "format": "linkedin-post",
+      "lanes": [
+        "GTM execution"
+      ],
+      "objective": "start-conversations",
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s17"
+      ],
+      "pov": null,
+      "body": "",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s17"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": null,
+      "publishedDate": null,
+      "channel": null,
+      "url": null,
+      "performance": null,
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "cnt-s16",
+      "title": "Talk: the self-diagnosing audience",
+      "format": "speaking-proposal",
+      "lanes": [
+        "B2B events and sponsorship",
+        "GTM execution"
+      ],
+      "objective": "attract-speaking-invitations",
+      "stage": "raw-idea",
+      "sourceInsights": [
+        "ins-s18"
+      ],
+      "pov": null,
+      "body": "",
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "brand": "brand-stuart",
+      "evidence": [
+        "insight:ins-s18"
+      ],
+      "cta": null,
+      "confidentiality": "public",
+      "plannedDate": null,
+      "publishedDate": null,
+      "channel": null,
+      "url": null,
+      "performance": null,
+      "relatedContacts": [],
+      "versions": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    }
+  ]
+}

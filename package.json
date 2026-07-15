@@ -1,0 +1,16 @@
+{
+  "name": "strait-up-growth-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Strait Up Growth authority & outreach engine — Stuart Crowley's local-first personal brand, relationship intelligence and commercial pipeline OS. Zero dependencies; git is the database.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "seed": "node scripts/seed.mjs",
+    "seed:force": "node scripts/seed.mjs --force",
+    "today": "node scripts/today.mjs",
+    "test": "node scripts/self-test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal."
+  },
+  "items": [
+    {
+      "id": "opp-s01",
+      "name": "Harbourline commercial systems audit",
+      "type": "client",
+      "contactIds": [
+        "con-s01"
+      ],
+      "companyId": "com-s01",
+      "offerId": "off-audit",
+      "source": "content",
+      "contentInfluence": "direct-source",
+      "stage": "qualified",
+      "estimatedValue": 14000,
+      "currency": "SGD",
+      "probability": 0.5,
+      "nextAction": "Send scoping outline recap and propose Thursday diagnostic call",
+      "nextActionDate": "2026-07-16",
+      "lastActivityAt": "2026-07-14T09:00:00.000Z",
+      "relatedContent": [
+        "cnt-s01",
+        "cnt-s08"
+      ],
+      "relatedOutreach": [
+        "out-s01"
+      ],
+      "lanes": [],
+      "evidence": "Mabel replied to the diagnostic newsletter asking to talk scoping; intro call confirmed the three-CRMs pattern.",
+      "risks": null,
+      "outcome": null,
+      "revenue": null,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s02",
+      "name": "Parallax pricing and packaging sprint",
+      "type": "client",
+      "contactIds": [
+        "con-s13"
+      ],
+      "companyId": "com-s03",
+      "offerId": "off-pricing",
+      "source": "content",
+      "contentInfluence": "strong-influence",
+      "stage": "conversation",
+      "estimatedValue": 9000,
+      "currency": "SGD",
+      "probability": 0.3,
+      "nextAction": "Take the discount-authority thread to a call",
+      "nextActionDate": "2026-07-18",
+      "lastActivityAt": "2026-07-12T09:00:00.000Z",
+      "relatedContent": [
+        "cnt-s02"
+      ],
+      "relatedOutreach": [
+        "out-s05"
+      ],
+      "lanes": [],
+      "evidence": "Tom engaged three times on pricing posts; DM drafted.",
+      "risks": null,
+      "outcome": null,
+      "revenue": null,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-07-12T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s03",
+      "name": "Kestrel event revenue architecture",
+      "type": "client",
+      "contactIds": [
+        "con-s02"
+      ],
+      "companyId": "com-s02",
+      "offerId": "off-events",
+      "source": "relationship",
+      "contentInfluence": "supporting-influence",
+      "stage": "diagnostic",
+      "estimatedValue": 18000,
+      "currency": "SGD",
+      "probability": 0.55,
+      "nextAction": "Send the sponsor outcome map shape Rory asked for",
+      "nextActionDate": "2026-07-13",
+      "lastActivityAt": "2026-07-02T09:00:00.000Z",
+      "relatedContent": [
+        "cnt-s03"
+      ],
+      "relatedOutreach": [
+        "out-s03"
+      ],
+      "lanes": [],
+      "evidence": "Positive reply, then went quiet. Follow-up overdue.",
+      "risks": null,
+      "outcome": null,
+      "revenue": null,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-07-02T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s04",
+      "name": "Copperfield media monetisation advisory",
+      "type": "advisory",
+      "contactIds": [
+        "con-s07"
+      ],
+      "companyId": "com-s07",
+      "offerId": "off-events",
+      "source": "relationship",
+      "contentInfluence": "supporting-influence",
+      "stage": "signal",
+      "estimatedValue": 12000,
+      "currency": "SGD",
+      "probability": 0.2,
+      "nextAction": "Decide whether to develop or park; no movement in three weeks",
+      "nextActionDate": null,
+      "lastActivityAt": "2026-06-20T09:00:00.000Z",
+      "relatedContent": [
+        "cnt-s09"
+      ],
+      "relatedOutreach": [],
+      "lanes": [],
+      "evidence": "Harriet mentioned the media-line problem after cnt-s09; nothing since. Stale on purpose in the demo.",
+      "risks": null,
+      "outcome": null,
+      "revenue": null,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-06-20T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s05",
+      "name": "Bellwether podcast appearance",
+      "type": "podcast",
+      "contactIds": [
+        "con-s04"
+      ],
+      "companyId": "com-s04",
+      "offerId": null,
+      "source": "content",
+      "contentInfluence": "direct-source",
+      "stage": "won",
+      "estimatedValue": 0,
+      "currency": "SGD",
+      "probability": 1,
+      "nextAction": "Prepare outline cnt-s12, record on the 17th",
+      "nextActionDate": "2026-08-04",
+      "lastActivityAt": "2026-06-27T09:00:00.000Z",
+      "relatedContent": [],
+      "relatedOutreach": [
+        "out-s02"
+      ],
+      "lanes": [],
+      "evidence": "Booked. Value is authority evidence, not revenue.",
+      "risks": null,
+      "outcome": "won",
+      "revenue": 0,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-06-27T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s06",
+      "name": "Northlight autumn keynote slot",
+      "type": "speaking",
+      "contactIds": [
+        "con-s17"
+      ],
+      "companyId": "com-s09",
+      "offerId": null,
+      "source": "relationship",
+      "contentInfluence": "no-proven-influence",
+      "stage": "conversation",
+      "estimatedValue": 0,
+      "currency": "SGD",
+      "probability": 0.4,
+      "nextAction": "Await reply to out-s07, then send abstract",
+      "nextActionDate": "2026-07-22",
+      "lastActivityAt": "2026-07-09T09:00:00.000Z",
+      "relatedContent": [],
+      "relatedOutreach": [
+        "out-s07"
+      ],
+      "lanes": [],
+      "evidence": "Speaker-booker outreach drafted.",
+      "risks": null,
+      "outcome": null,
+      "revenue": null,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-07-09T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s07",
+      "name": "Quayside joint diagnostic pilot",
+      "type": "partnership",
+      "contactIds": [
+        "con-s08"
+      ],
+      "companyId": "com-s08",
+      "offerId": "off-audit",
+      "source": "referral",
+      "contentInfluence": "no-proven-influence",
+      "stage": "proposal",
+      "estimatedValue": 8000,
+      "currency": "SGD",
+      "probability": 0.6,
+      "nextAction": "Draft the pilot one-pager promised in out-s08",
+      "nextActionDate": "2026-07-15",
+      "lastActivityAt": "2026-07-07T09:00:00.000Z",
+      "relatedContent": [],
+      "relatedOutreach": [
+        "out-s08"
+      ],
+      "lanes": [],
+      "evidence": "Two scoping calls done; one-pager owed.",
+      "risks": null,
+      "outcome": null,
+      "revenue": null,
+      "lostReason": null,
+      "lessons": null,
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-07-07T09:00:00.000Z"
+    },
+    {
+      "id": "opp-s08",
+      "name": "Meridian pricing advisory",
+      "type": "client",
+      "contactIds": [
+        "con-s05"
+      ],
+      "companyId": "com-s05",
+      "offerId": "off-pricing",
+      "source": "existing-relationship",
+      "contentInfluence": "no-proven-influence",
+      "stage": "lost",
+      "estimatedValue": 15000,
+      "currency": "SGD",
+      "probability": 0,
+      "nextAction": null,
+      "nextActionDate": null,
+      "lastActivityAt": "2026-06-10T09:00:00.000Z",
+      "relatedContent": [],
+      "relatedOutreach": [],
+      "lanes": [],
+      "evidence": "Elena took it to an incumbent consultancy. Lesson logged: no iGaming case evidence to show yet.",
+      "risks": null,
+      "outcome": "lost",
+      "revenue": null,
+      "lostReason": "Chose incumbent; we lacked category case evidence.",
+      "lessons": "Build one anonymised iGaming pricing proof point before re-approaching this segment.",
+      "notes": [],
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-05T09:00:00.000Z",
+      "updatedAt": "2026-06-10T09:00:00.000Z"
+    }
+  ]
+}

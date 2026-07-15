@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "The four workspaces. Data-access rules feed the brand gate in lib/confidentiality.mjs."
+  },
+  "items": [
+    {
+      "id": "brand-stuart",
+      "name": "Stuart Crowley",
+      "kind": "personal",
+      "audience": "Founders, commercial leaders, event and media operators, industry peers",
+      "voiceNote": "Commercially sharp, conversational, direct, curious, dry, comfortable admitting uncertainty. British English. Credibility before conversion.",
+      "ctas": [
+        "Reply with your view",
+        "DM me",
+        "No CTA at all is fine"
+      ],
+      "restrictedTopics": [
+        "NEXT.io confidential commercial detail",
+        "client-identifiable material"
+      ],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "brand-sug",
+      "name": "Strait Up Growth",
+      "kind": "consultancy",
+      "audience": "Founder-led B2B businesses (5-100 people) in Singapore, Asia and Europe: founders, MDs, commercial directors, COOs, heads of growth/sales, marketing directors, RevOps leaders",
+      "voiceNote": "Sells commercial clarity and operating leverage, never hours. Narrative: \"I know where commercial systems break, and I use AI to make the fix faster.\" Never an AI agency, never a LinkedIn coaching service.",
+      "ctas": [
+        "Book a diagnostic conversation",
+        "Reply and tell me how you run it today"
+      ],
+      "restrictedTopics": [
+        "Anything sourced from NEXT.io confidential material",
+        "NEXTPredict partner relationships"
+      ],
+      "positioningStatus": "DRAFT ASSUMPTION. Positioning and services are editable and unconfirmed until Stuart signs them off.",
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "brand-nextio",
+      "name": "NEXT.io",
+      "kind": "employer",
+      "audience": "Global B2B iGaming industry",
+      "voiceNote": "Employer context. Confidential by default: deals, margins, pipeline, people never leave this workspace (rule R8).",
+      "ctas": [],
+      "restrictedTopics": [
+        "everything not already public"
+      ],
+      "dataAccess": "confidential-by-default",
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    },
+    {
+      "id": "brand-nextpredict",
+      "name": "NEXTPredict",
+      "kind": "event",
+      "audience": "Prediction markets category: operators, infrastructure, capital, compliance",
+      "voiceNote": "Category vocabulary only: prediction markets, event contracts, market structure. Never betting/gambling/casino/sportsbook/wagering (linter-enforced). Voice bible: data/voice/stuart-voice.md.",
+      "ctas": [
+        "Soft summit link, once, as context"
+      ],
+      "restrictedTopics": [
+        "speaker-recruitment framing",
+        "hard sell on first touch"
+      ],
+      "createdAt": "2026-07-15T01:40:31.185Z",
+      "updatedAt": "2026-07-15T01:40:31.185Z"
+    }
+  ]
+}

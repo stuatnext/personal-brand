@@ -1,0 +1,766 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal. ins-s08 exists to demonstrate the confidentiality filter catching employer material."
+  },
+  "items": [
+    {
+      "id": "ins-s01",
+      "title": "Three CRMs in five years means the CRM was never the problem",
+      "raw": "Founder told me she has migrated CRM three times in five years and trusts none of them. Every migration was sold internally as the fix. The actual problem was that sales, marketing and delivery never agreed what a qualified deal was. The tool keeps taking the blame for a definitions problem.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-13",
+      "type": "client-pattern",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-13T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s02",
+      "title": "Discount authority is a leadership instrument, not a finance rule",
+      "raw": "Watched a deal review where a rep discounted 22% to close by quarter end. Nobody could say who approved it. Where discount tiers exist and are enforced, margin holds and negotiations get shorter, because the seller stops negotiating against themselves.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-12",
+      "type": "commercial-lesson",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Commercial negotiation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-12T09:00:00.000Z",
+      "updatedAt": "2026-07-12T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s03",
+      "title": "Sponsors renew on outcomes they can show their boss",
+      "raw": "Sponsorship renewal conversations keep failing when the package was logo placement. The renewals that close themselves are the ones where the sponsor walked away with a number they could put in their own board deck.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-11",
+      "type": "commercial-lesson",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-11T09:00:00.000Z",
+      "updatedAt": "2026-07-11T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s04",
+      "title": "AI pilots die where the workflow was never mapped",
+      "raw": "Every stalled AI adoption story I hear in Singapore SME circles has the same shape: tool bought, prompt shared in Slack, nobody changed the workflow. The teams getting value mapped the workflow first and slotted AI into named steps with an owner.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-10",
+      "type": "client-pattern",
+      "lanes": [
+        "Practical AI implementation",
+        "Singapore SME AI adoption"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-10T09:00:00.000Z",
+      "updatedAt": "2026-07-10T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s05",
+      "title": "The founder bottleneck shows up in the CRM before it shows up in revenue",
+      "raw": "In founder-led businesses the tell is deals sitting in \"waiting on founder\" stages. Operating drag is measurable months before the revenue line feels it.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-09",
+      "type": "framework",
+      "lanes": [
+        "Founder-led operating drag",
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-09T09:00:00.000Z",
+      "updatedAt": "2026-07-09T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s06",
+      "title": "Pipeline reviews that read the dashboard aloud are theatre",
+      "raw": "Sat through a review where the leader read the dashboard to the room. No decision was taken. A pipeline review should end with stage moves, kills and next actions or it is a weather report.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-07",
+      "type": "contrarian-opinion",
+      "lanes": [
+        "CRM and RevOps governance",
+        "Leadership through operating clarity"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-07T09:00:00.000Z",
+      "updatedAt": "2026-07-07T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s07",
+      "title": "Event P&Ls hide the media asset inside them",
+      "raw": "Most event businesses sit on an audience asset they only monetise two days a year. The media layer (newsletter, podcast, research) is the recurring revenue nobody staffs.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-06",
+      "type": "commercial-lesson",
+      "lanes": [
+        "B2B events and sponsorship",
+        "B2B media monetisation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-06T09:00:00.000Z",
+      "updatedAt": "2026-07-06T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s08",
+      "title": "NEXT.io Q3 pipeline detail",
+      "raw": "Internal pipeline and margin discussion notes from the quarter. Contains named deals, figures and a pricing disagreement. Useful operating lessons but the specifics are employer-confidential.",
+      "source": "internal meeting (fictional)",
+      "date": "2026-07-05",
+      "type": "meeting-note",
+      "lanes": [
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 3,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "private-operating-lesson",
+        "score": 3,
+        "reasons": [
+          "Explicitly marked as not public."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-05T09:00:00.000Z",
+      "updatedAt": "2026-07-05T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s09",
+      "title": "Prediction markets are hiring compliance before marketing",
+      "raw": "Noticeable pattern in the category: the serious venues staff market integrity and compliance roles before they staff growth. That ordering tells you who plans to be around in five years.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-03",
+      "type": "event-observation",
+      "lanes": [
+        "Prediction markets",
+        "Category creation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-03T09:00:00.000Z",
+      "updatedAt": "2026-07-03T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s10",
+      "title": "Singapore SMEs buy outcomes, not AI",
+      "raw": "Founder dinner conversation: nobody asked which model anyone uses. Every question was some version of \"what stopped being painful\". The AI-first pitch is talking to itself.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-07-01",
+      "type": "event-observation",
+      "lanes": [
+        "Singapore SME AI adoption",
+        "Practical AI implementation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-01T09:00:00.000Z",
+      "updatedAt": "2026-07-01T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s11",
+      "title": "Sales and marketing alignment is a data contract, not a meeting",
+      "raw": "Alignment fails as a standing meeting and works as a shared definition set: one lifecycle, one MQL definition, one routing rule, reviewed quarterly. The meeting is the symptom.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-29",
+      "type": "framework",
+      "lanes": [
+        "Sales and marketing alignment",
+        "CRM and RevOps governance"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-29T09:00:00.000Z",
+      "updatedAt": "2026-06-29T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s12",
+      "title": "Category creation is mostly patience plus vocabulary",
+      "raw": "Watching a new category form: the winners repeat a small stable vocabulary until the market adopts it. The losers rebrand their language every quarter.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-27",
+      "type": "contrarian-opinion",
+      "lanes": [
+        "Category creation",
+        "Prediction markets"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 3,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-27T09:00:00.000Z",
+      "updatedAt": "2026-06-27T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s13",
+      "title": "The diagnostic is the product",
+      "raw": "Advisory conversations keep proving it: the paid diagnostic that names the problem precisely is worth more to the buyer than the fix, because it converts anxiety into a plan.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-25",
+      "type": "offer-insight",
+      "lanes": [
+        "Commercial systems",
+        "GTM execution"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 5,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": null,
+      "status": "routed",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-25T09:00:00.000Z",
+      "updatedAt": "2026-06-25T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s14",
+      "title": "Fractional leadership fails without a decision framework",
+      "raw": "Fractional roles collapse when every decision still routes through the founder. The fix is a written decision framework in week one: what the fractional leader decides alone, consults on, or escalates.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-23",
+      "type": "commercial-lesson",
+      "lanes": [
+        "Leadership through operating clarity",
+        "Founder-led operating drag"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-23T09:00:00.000Z",
+      "updatedAt": "2026-06-23T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s15",
+      "title": "Media monetisation: the rate card is a positioning document",
+      "raw": "A publisher raising prices found the objection was never budget, it was comparison. Reframed the rate card around outcomes and categories they owned; the same numbers stopped being questioned.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-20",
+      "type": "client-pattern",
+      "lanes": [
+        "B2B media monetisation",
+        "Pricing and margin discipline"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-20T09:00:00.000Z",
+      "updatedAt": "2026-06-20T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s16",
+      "title": "iGaming supplier pricing is where discipline goes to die",
+      "raw": "Supplier deals in iGaming still run on relationship pricing and side letters. The first supplier to run clean tiered packaging will look expensive and win anyway, because procurement can finally compare.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-17",
+      "type": "contrarian-opinion",
+      "lanes": [
+        "iGaming commercial strategy",
+        "Pricing and margin discipline"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-17T09:00:00.000Z",
+      "updatedAt": "2026-06-17T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s17",
+      "title": "Question: what does a \"qualified conversation\" actually mean",
+      "raw": "If the whole engine optimises for qualified conversations, the definition needs to be written down: right person, real problem, honest interest in discussing it. Otherwise the metric inflates like impressions did.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-15",
+      "type": "question",
+      "lanes": [
+        "GTM execution",
+        "Commercial systems"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-06-15T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s18",
+      "title": "Speaking works when the talk is a diagnostic in disguise",
+      "raw": "The talks that generate conversations are the ones where the audience self-diagnoses while listening. Teaching the checklist beats telling the story.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-10",
+      "type": "speaking-idea",
+      "lanes": [
+        "B2B events and sponsorship",
+        "GTM execution"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-10T09:00:00.000Z",
+      "updatedAt": "2026-06-10T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s19",
+      "title": "Prediction: SME AI budgets consolidate to two tools by 2027",
+      "raw": "Prediction, low confidence: the ten-tool AI stack SMEs assembled in 2025 consolidates to two by 2027, and the survivors are the ones embedded in a workflow with an owner. [unverified prediction]",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-07",
+      "type": "prediction",
+      "lanes": [
+        "Singapore SME AI adoption",
+        "Practical AI implementation"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 3,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-07T09:00:00.000Z",
+      "updatedAt": "2026-06-07T09:00:00.000Z"
+    },
+    {
+      "id": "ins-s20",
+      "title": "Renewal conversations start at onboarding",
+      "raw": "The renewal rate was decided in the first thirty days: whether the client got a named outcome and a cadence. Everything after is commentary.",
+      "source": "Stuart, direct observation (fictional demo)",
+      "date": "2026-06-03",
+      "type": "commercial-lesson",
+      "lanes": [
+        "Commercial systems",
+        "CRM and RevOps governance"
+      ],
+      "audiences": [
+        "founders",
+        "commercial leaders"
+      ],
+      "commercialRelevance": 4,
+      "confidence": "medium",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-06-03T09:00:00.000Z",
+      "updatedAt": "2026-06-03T09:00:00.000Z"
+    }
+  ]
+}

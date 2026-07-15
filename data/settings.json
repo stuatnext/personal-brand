@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:40:31.185Z",
+    "note": "Editable engine settings. Change here, not in code."
+  },
+  "values": {
+    "accentColor": "#B34700",
+    "demoMode": true,
+    "owner": "Stuart Crowley",
+    "contentThresholds": {
+      "strong": 48,
+      "publishAfterEdits": 36
+    },
+    "outreachWeights": {
+      "relationshipStrength": 15,
+      "triggerRelevance": 20,
+      "valueToRecipient": 20,
+      "strategicFit": 15,
+      "evidenceOfInterest": 10,
+      "timing": 10,
+      "messageSpecificity": 10
+    },
+    "authorityWeights": {
+      "operatorCredibility": 20,
+      "publishedThinking": 15,
+      "distinctPointOfView": 15,
+      "relationshipQuality": 15,
+      "speakingMedia": 10,
+      "commercialOutcomes": 15,
+      "consistency": 5,
+      "marketRelevance": 5
+    },
+    "outreachCooldownDays": 10
+  }
+}
