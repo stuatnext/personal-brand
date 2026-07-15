@@ -3,7 +3,7 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-15T02:28:10.888Z",
+    "generatedAt": "2026-07-15T05:01:11.454Z",
     "weekOf": "2026-07-15",
     "themeByPillar": {
       "strait-up-growth": "Pricing and margin discipline",
@@ -135,7 +135,7 @@
     "gaps": [
       {
         "channel": "Substack newsletter",
-        "suggestion": "Nothing scheduled this week. Candidate from the ideas bank: \"Category creation is mostly patience plus vocabulary\"."
+        "suggestion": "Nothing scheduled this week. Candidate from the ideas bank: \"Three CRMs in five years means the CRM was never the problem\"."
       }
     ],
     "suggestions": [
@@ -146,7 +146,7 @@
     ],
     "ideasBank": {
       "open": 10,
-      "addedThisRun": 1,
+      "addedThisRun": 0,
       "cap": 10
     },
     "claudeNotes": []
