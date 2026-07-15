@@ -296,6 +296,47 @@ const actions = {
     throw httpError(400, 'verb must be done, snooze or skip');
   },
 
+  // Lead workflow: research happens outside; the engine records decisions.
+  // Converting creates ONLY what the evidence supports (a name + the quote);
+  // no invented titles, emails or details.
+  async 'convert-lead'({ leadId }) {
+    const lead = get('leads', leadId);
+    if (!lead) throw httpError(404, 'lead not found');
+    if (lead.status === 'converted') throw httpError(409, 'already converted');
+    let companyId = lead.linkedCompanyId, contactId = lead.linkedContactId;
+    if (!companyId && !contactId) {
+      if (lead.kind === 'person') {
+        const contact = insert('contacts', {
+          name: lead.name, role: null, company: null, companyId: null,
+          relationshipType: 'prospect', lanes: [],
+          howKnown: `Detected as a lead (${lead.signal}): ${(lead.evidence?.[0]?.quote || '').slice(0, 140)}`,
+          email: null, linkedin: null, permissionStatus: 'legitimate-contact', doNotContact: false,
+          notes: [], nextAction: 'Verify identity and find the real context before any outreach', followUpDate: null,
+        });
+        contactId = contact.id;
+      } else {
+        const company = insert('companies', {
+          name: lead.name, location: null, industry: null,
+          note: `Prospect from lead detection (${lead.signal}): ${(lead.evidence?.[0]?.quote || '').slice(0, 140)}`,
+        });
+        companyId = company.id;
+      }
+    }
+    const task = insert('tasks', {
+      title: `Research ${lead.name}: verify the ${lead.signal} signal, find the named decision-maker`,
+      due: new Date(Date.now() + 2 * 86400000).toISOString().slice(0, 10),
+      kind: 'follow-up', relatedType: 'leads', relatedId: leadId, status: 'open', deferredCount: 0,
+    });
+    const updated = update('leads', leadId, { status: 'converted', linkedCompanyId: companyId || null, linkedContactId: contactId || null, convertedAt: new Date().toISOString() });
+    return { lead: updated, companyId, contactId, task, note: 'Created a skeleton record from the evidence only. Research fills in the rest; nothing was invented.' };
+  },
+
+  async 'dismiss-lead'({ leadId, reason = '' }) {
+    const lead = get('leads', leadId);
+    if (!lead) throw httpError(404, 'lead not found');
+    return { lead: update('leads', leadId, { status: 'dismissed', dismissReason: reason }) };
+  },
+
   async 'weekly-review'() {
     const body = await weeklyReviewDraft({ briefing: todayBriefing({ limit: 20 }), analytics: analytics() });
     const review = insert('reviews', { kind: 'weekly', period: body.weekOf, body, status: 'draft' });

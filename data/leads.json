@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T02:04:51.939Z",
+    "note": "FICTIONAL demonstration data. Not a real person, company or deal. Real leads are created by scripts/ingest.mjs when a buying signal and an entity appear together in dropped intel."
+  },
+  "items": [
+    {
+      "id": "lead-s01",
+      "name": "Ampersand Freight Systems",
+      "kind": "company",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Ampersand Freight Systems raised a $5M seed round to expand its B2B logistics platform across Southeast Asia. (fictional)",
+          "signal": "funding",
+          "date": "2026-07-13"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route.",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-13T09:00:00.000Z",
+      "updatedAt": "2026-07-13T09:00:00.000Z"
+    },
+    {
+      "id": "lead-s02",
+      "name": "Harbourline Logistics",
+      "kind": "company",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": "com-s01",
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Harbourline Logistics is hiring a Head of RevOps to fix its reporting stack. (fictional)",
+          "signal": "leadership-hire",
+          "date": "2026-07-11"
+        }
+      ],
+      "status": "researched",
+      "suggestedNextStep": "Known company with a live opportunity (opp-s01): fold the signal into the Mabel Tan thread rather than opening a new one.",
+      "fictional": true,
+      "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
+      "createdAt": "2026-07-11T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    }
+  ]
+}

@@ -36,6 +36,33 @@ newsletter (subject line and all), YouTube script, trade-press byline,
 podcast outline, speaking abstract. Repurposing rebuilds the expression
 per channel — it never pastes the same text twice.
 
+**Ingestion also detects prospects.** When a buying signal and an entity
+appear together in dropped intel — funding rounds, commercial leadership
+hires, Singapore/SEA expansion, stated CRM/pipeline pain, explicit
+requests for help, prediction-market venue launches, compliance hires,
+category partnerships — a **lead** is queued with the evidence quote, the
+pillar it belongs to and a suggested next step. Known contacts/companies
+are linked to their existing records; unknown entities wait for research.
+Leads are worked in `#/relationships` (convert to a skeleton record +
+research task, or dismiss) and surface on Today while the trigger is
+fresh. Nothing is ever contacted or enriched automatically.
+
+## The two authority pillars
+
+The lane taxonomy is tiered around what Stuart must become known for:
+
+1. **Strait Up Growth's domain** — practical AI implementation, commercial
+   & marketing strategy, CRM/RevOps, pricing, GTM, operational efficiency,
+   founder-led operating drag — specifically for **Singapore & SEA**.
+2. **Prediction markets.**
+
+Core-pillar lanes are weighted up in the content scorecard, jump the queue
+on Today, drive the authority score's market-relevance component, and get
+their own analytics rollup (content, conversations, opportunities and
+live leads per pillar). If supporting lanes (events, media, iGaming
+colour) dominate a month's publishing, the stop-doing recommendation says
+so.
+
 ## Run it
 
 No install step. Requires Node ≥ 20 (zero npm dependencies).

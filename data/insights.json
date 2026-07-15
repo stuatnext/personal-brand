@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:52:53.896Z",
+    "seededAt": "2026-07-15T02:04:51.939Z",
     "note": "FICTIONAL demonstration data. Not a real person, company or deal. ins-s08 exists to demonstrate the confidentiality filter catching employer material."
   },
   "items": [
@@ -126,7 +126,7 @@
       "type": "client-pattern",
       "lanes": [
         "Practical AI implementation",
-        "Singapore SME AI adoption"
+        "Singapore & SEA commercial growth"
       ],
       "audiences": [
         "founders",
@@ -352,7 +352,7 @@
       "date": "2026-07-01",
       "type": "event-observation",
       "lanes": [
-        "Singapore SME AI adoption",
+        "Singapore & SEA commercial growth",
         "Practical AI implementation"
       ],
       "audiences": [
@@ -694,7 +694,7 @@
       "date": "2026-06-07",
       "type": "prediction",
       "lanes": [
-        "Singapore SME AI adoption",
+        "Singapore & SEA commercial growth",
         "Practical AI implementation"
       ],
       "audiences": [

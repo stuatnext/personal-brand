@@ -18,7 +18,7 @@ import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { items, insert, read } from '../lib/store.mjs';
+import { items, insert, update } from '../lib/store.mjs';
 import { review as confReview } from '../lib/confidentiality.mjs';
 
 const args = process.argv.slice(2);
@@ -41,13 +41,30 @@ const LANE_HINTS = [
   [/sponsor|exhibit|summit|conference|event/i, 'B2B events and sponsorship'],
   [/igaming|casino operator|slots|sportsbook industry/i, 'iGaming commercial strategy'],
   [/prediction market|event contract|kalshi|polymarket|cftc/i, 'Prediction markets'],
-  [/singapore|\bsea\b|southeast asia|apac/i, 'Singapore SME AI adoption'],
+  [/singapore|\bsea\b|southeast asia|apac|malaysia|indonesia|vietnam|thailand|philippines|jakarta|kuala lumpur|bangkok|manila|ho chi minh|hanoi/i, 'Singapore & SEA commercial growth'],
+  [/operational efficiency|process(es)? (broke|fix|map)|operating (drag|cadence|rhythm)|efficien(cy|t)|manual work|bottleneck/i, 'Operational efficiency'],
   [/newsletter|podcast|media revenue|affiliate|editorial/i, 'B2B media monetisation'],
   [/negotiat/i, 'Commercial negotiation'],
   [/gtm|go.to.market|launch|positioning/i, 'GTM execution'],
   [/founder|bottleneck|delegat/i, 'Founder-led operating drag'],
   [/sales and marketing|alignment|handoff/i, 'Sales and marketing alignment'],
   [/categor(y|ies) (formation|creation)|new category/i, 'Category creation'],
+];
+
+// Lead signals — buying/relevance triggers matched to the two authority
+// pillars. A signal + an entity in the same record = a detected lead,
+// queued for RESEARCH (never auto-contacted, never enriched with invented
+// details). Extend this list every time a real lead pattern repeats.
+const LEAD_SIGNALS = [
+  { re: /rais(ed|es|ing)\s+(a\s+)?(?:[$€£]\s?\d[\d.,]*\s?(m|k|million|billion)?|seed|series\s+[a-d])\b|seed round|funding round|closes? (a )?round/i, signal: 'funding', pillar: 'strait-up-growth', why: 'Fresh capital means growth targets and commercial chaos to fix; budget exists.' },
+  { re: /(hiring|job opening|open role|we'?re looking for)\s+(an?\s+)?(?:[a-z]+\s+){0,3}(head|vp|director|chief|lead|officer)|appoint(s|ed)|joins? as|named (as )?(head|vp|director|chief|cmo|coo|cro)/i, signal: 'leadership-hire', pillar: 'strait-up-growth', why: 'New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.' },
+  { re: /expand(s|ing)?\s+(to|into)\s+(singapore|southeast asia|sea|apac|asia)|(opens?|opening|launch(es|ing)?)\s+(an?\s+)?(office|hub|team)\s+in\s+(singapore|asia|apac)/i, signal: 'sea-expansion', pillar: 'strait-up-growth', why: 'Entering Singapore/SEA is exactly the moment the Strait Up Growth lens (local GTM, channel mix, trust dynamics) is worth money.' },
+  { re: /(crm|pipeline|forecast)[^.\n]{0,40}(mess|chaos|nightmare|broken|unreliable|can'?t trust|don'?t trust)|migrat(e|ed|ing)[^.\n]{0,20}crm|three crms/i, signal: 'crm-pain', pillar: 'strait-up-growth', why: 'Stated CRM/pipeline pain is a direct Commercial Systems Audit trigger.' },
+  { re: /looking for (a |an )?(consultant|advisor|adviser|fractional|agency|help with)/i, signal: 'explicit-demand', pillar: 'strait-up-growth', why: 'Explicitly asking for outside help.' },
+  { re: /(struggling|drowning|overwhelmed)[^.\n]{0,50}(leads?|pipeline|follow.?ups?|marketing|sales)/i, signal: 'operating-pain', pillar: 'strait-up-growth', why: 'Voiced operating pain in the commercial engine.' },
+  { re: /launch(es|ed|ing)?[^.\n]{0,50}(prediction market|event contracts?)|new (prediction[- ]market )?(venue|exchange)|dcm designation|cftc (approv|filing|designat)/i, signal: 'pm-venue-launch', pillar: 'prediction-markets', why: 'A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.' },
+  { re: /(head of|hiring)[^.\n]{0,30}(compliance|market integrity|surveillance)|compliance (hire|role|team)/i, signal: 'pm-compliance-hire', pillar: 'prediction-markets', why: 'Compliance-first hiring is the tell for serious prediction-markets operators (Stuart\'s own published read).' },
+  { re: /(partnership|integrat(es|ion)|deal) with[^.\n]{0,40}(kalshi|polymarket|prediction market)/i, signal: 'pm-partnership', pillar: 'prediction-markets', why: 'Companies partnering into the category are forming their strategy now.' },
 ];
 
 const hash = (text) => crypto.createHash('sha1').update(text.replace(/\s+/g, ' ').trim().toLowerCase()).digest('hex');
@@ -131,6 +148,9 @@ const created = [];
 const duplicates = [];
 const confidentialFlags = [];
 const candidateEntities = new Map();
+const detectedLeads = [];
+const existingLeads = items('leads', { includeDeleted: true });
+const leadByName = new Map(existingLeads.map((l) => [l.name.toLowerCase(), l]));
 
 for (const r of records) {
   const h = hash(r.raw);
@@ -150,13 +170,17 @@ for (const r of records) {
   // reported but never auto-created (no invented records). Multi-word
   // sequences anywhere; single words only mid-sentence (skips sentence-
   // starting ordinary words).
-  const STOP = new Set(('the and but that this what when where which while with watched founder internal notes there their they then these those every most some people one two three after before because during however instead nothing something anything everyone someone monday tuesday wednesday thursday friday saturday sunday january february march april may june july august september october november december singapore asia europe london here still just also over under about against between').split(' '));
+  const STOP = new Set(('the and but that this what when where which while with watched founder internal notes there their they then these those every most some people one two three after before because during however instead nothing something anything everyone someone monday tuesday wednesday thursday friday saturday sunday january february march april may june july august september october november december singapore asia europe london kuala lumpur bangkok jakarta manila hanoi here still just also over under about against between prediction markets separately meanwhile series director head chief commercial').split(' '));
+  const recordCandidates = [];
   const addCandidate = (name) => {
     if (STOP.has(name.split(' ')[0].toLowerCase())) return;
     if (knownNames.some((k) => k.name.toLowerCase() === name.toLowerCase())) return;
+    // A fragment of a known entity's name is not a new entity.
+    if (!name.includes(' ') && knownNames.some((k) => k.name.toLowerCase().split(/\s+/).includes(name.toLowerCase()))) return;
     // A real name is never written lowercase elsewhere in the same text.
     if (new RegExp(`(?<![A-Za-z])${name.split(' ')[0].toLowerCase()}(?![A-Za-z])`).test(r.raw)) return;
     candidateEntities.set(name, (candidateEntities.get(name) || 0) + 1);
+    if (!recordCandidates.some((c) => c.toLowerCase() === name.toLowerCase())) recordCandidates.push(name);
   };
   for (const m of r.raw.matchAll(/\b([A-Z][a-z]{2,}(?: [A-Z][a-z]{2,}){1,2})\b/g)) addCandidate(m[1]);
   for (const sentence of r.raw.split(/(?<=[.!?:])\s+|\n+/)) {
@@ -165,6 +189,16 @@ for (const r of records) {
       const token = words[w].replace(/[^A-Za-z']/g, '');
       if (/^[A-Z][a-z]{2,}$/.test(token)) addCandidate(token);
     }
+  }
+  // Drop fragments: a candidate that is a word inside a longer candidate
+  // ("Tigerlily", "Commerce" when "Tigerlily Commerce" was found).
+  const fragments = new Set();
+  for (const a of recordCandidates) for (const b of recordCandidates) {
+    if (a !== b && b.split(' ').length > a.split(' ').length && b.split(' ').some((w) => w.toLowerCase() === a.toLowerCase())) fragments.add(a);
+  }
+  for (const f of fragments) {
+    recordCandidates.splice(recordCandidates.indexOf(f), 1);
+    if ((candidateEntities.get(f) || 0) <= 1) candidateEntities.delete(f);
   }
 
   const item = {
@@ -182,13 +216,74 @@ for (const r of records) {
     contentHash: h,
   };
   if (conf.classification !== 'public') confidentialFlags.push({ title: r.title, classification: conf.classification });
+  let insightId = '(dry-run)';
   if (!DRY) {
     const saved = insert('insights', item, { actor: 'ingest' });
-    created.push({ id: saved.id, title: r.title, lanes, classification: conf.classification });
-  } else {
-    created.push({ id: '(dry-run)', title: r.title, lanes, classification: conf.classification });
+    insightId = saved.id;
   }
-  existing.set(h, 'just-created');
+  created.push({ id: insightId, title: r.title, lanes, classification: conf.classification });
+  existing.set(h, insightId);
+
+  // ----- Lead detection: signal + entity in the same record ------------------
+  for (const sig of LEAD_SIGNALS) {
+    const m = r.raw.match(sig.re);
+    if (!m) continue;
+    // The sentence containing the match is the evidence quote.
+    const idx = r.raw.indexOf(m[0]);
+    const sentStart = Math.max(r.raw.lastIndexOf('.', idx), r.raw.lastIndexOf('\n', idx)) + 1;
+    const sentEnd = (() => { const e = r.raw.indexOf('.', idx + m[0].length); return e === -1 ? Math.min(r.raw.length, idx + 220) : e + 1; })();
+    const quote = r.raw.slice(sentStart, sentEnd).trim().slice(0, 260);
+
+    // Entities: pair the signal with names in the SAME SENTENCE first
+    // (known companies/contacts, then multi-word candidates, then single
+    // words); fall back to record-level names, then the record title.
+    // Search rings: the sentence, then its paragraph, then the record.
+    const paraStart = r.raw.lastIndexOf('\n\n', idx) + 1;
+    const paraEndIdx = r.raw.indexOf('\n\n', idx);
+    const paragraph = r.raw.slice(paraStart, paraEndIdx === -1 ? r.raw.length : paraEndIdx);
+    const rings = [quote, paragraph, r.raw];
+    let entities = [];
+    for (const ring of rings) {
+      const inRing = (name) => ring.toLowerCase().includes(name.toLowerCase());
+      for (const cid of relatedCompanies) { const c = companies.find((x) => x.id === cid); if (c && inRing(c.name)) entities.push({ name: c.name, kind: 'company', linkedCompanyId: cid }); }
+      for (const cid of relatedContacts) { const c = contacts.find((x) => x.id === cid); if (c && inRing(c.name)) entities.push({ name: c.name, kind: 'person', linkedContactId: cid }); }
+      if (!entities.length) {
+        const local = recordCandidates.filter(inRing).sort((a, b) => b.split(' ').length - a.split(' ').length);
+        for (const name of local.slice(0, 2)) entities.push({ name, kind: 'unknown' });
+      }
+      if (entities.length) break;
+    }
+    if (!entities.length) entities.push({ name: r.title, kind: 'unknown' });
+
+    for (const ent of entities) {
+      if (!ent.name) continue;
+      const key = ent.name.toLowerCase();
+      const evidence = { insightId, quote, signal: sig.signal, date: new Date().toISOString().slice(0, 10) };
+      const existingLead = leadByName.get(key);
+      if (existingLead) {
+        if (!DRY && !(existingLead.evidence || []).some((e) => e.quote === quote)) {
+          update('leads', existingLead.id, { evidence: [...(existingLead.evidence || []), evidence] }, { actor: 'ingest' });
+        }
+        detectedLeads.push({ name: ent.name, signal: sig.signal, pillar: sig.pillar, why: sig.why, quote, merged: true });
+        continue;
+      }
+      const lead = {
+        name: ent.name, kind: ent.kind, pillar: sig.pillar, signal: sig.signal, why: sig.why,
+        linkedCompanyId: ent.linkedCompanyId || null, linkedContactId: ent.linkedContactId || null,
+        evidence: [evidence], status: 'detected',
+        suggestedNextStep: ent.linkedContactId
+          ? 'Known contact with a live trigger: draft outreach citing the signal.'
+          : 'Research: verify the entity, find the named decision-maker (never invent details), then decide the route.',
+      };
+      if (!DRY) {
+        const saved = insert('leads', lead, { actor: 'ingest' });
+        leadByName.set(key, saved);
+      } else {
+        leadByName.set(key, { ...lead, id: '(dry-run)' });
+      }
+      detectedLeads.push({ name: ent.name, signal: sig.signal, pillar: sig.pillar, why: sig.why, quote, merged: false });
+    }
+  }
 }
 
 for (const d of tmpDirs) fs.rmSync(d, { recursive: true, force: true });
@@ -205,6 +300,15 @@ if (skipped.length) console.log(`  ? skipped (unsupported type): ${skipped.join(
 if (confidentialFlags.length) {
   console.log(`\nCONFIDENTIALITY: ${confidentialFlags.length} item(s) flagged non-public — confirm before any drafting:`);
   for (const f of confidentialFlags) console.log(`  ! ${f.classification}: ${f.title}`);
+}
+if (detectedLeads.length) {
+  console.log(`\nLEADS DETECTED (${detectedLeads.length}) — queued for research, never auto-contacted:`);
+  for (const l of detectedLeads) {
+    console.log(`  → ${l.name} [${l.signal} · ${l.pillar}]${l.merged ? ' (evidence added to existing lead)' : ''}`);
+    console.log(`      "${l.quote}"`);
+    console.log(`      ${l.why}`);
+  }
+  console.log('  Work the queue in #/relationships (Prospects & leads).');
 }
 if (candidateEntities.size) {
   const top = [...candidateEntities.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);

@@ -20,6 +20,23 @@ strongest insights and draft channel versions (LinkedIn / X / Substack;
 `repurpose` action rebuilds per channel, never copies). Commit `data/`
 after — git is the database.
 
+Ingestion also detects LEADS (buying signal + entity in the same drop):
+funding, leadership hires, SEA expansion, CRM pain, explicit demand,
+prediction-market launches/compliance hires. They queue in
+`data/leads.json` → #/relationships. Convert creates only evidence-backed
+skeleton records; extend `LEAD_SIGNALS` in `scripts/ingest.mjs` whenever a
+real lead pattern repeats.
+
+## The two authority pillars (never let them starve)
+
+1. Strait Up Growth: AI, commercial & marketing strategy, operational
+   efficiency — specifically Singapore & SEA.
+2. Prediction markets.
+
+Lane tiers live on `data/lanes.json` (`tier: core|supporting`,
+`pillar`). Core lanes are weighted up in scoring/Today/analytics; keep
+new lanes tiered honestly and don't mark colour lanes core.
+
 ## The rules that matter
 
 - **The system never sends or publishes.** Drafts end at `approved`;

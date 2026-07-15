@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:52:53.896Z",
+    "seededAt": "2026-07-15T02:04:51.939Z",
     "note": "FICTIONAL demonstration data. Not a real person, company or deal. out-s06 is deliberately weak and out-s11 deliberately suppressed, to demonstrate the qualification gates."
   },
   "items": [
@@ -791,7 +791,7 @@
       "brand": "brand-sug",
       "lanes": [
         "GTM execution",
-        "Singapore SME AI adoption"
+        "Singapore & SEA commercial growth"
       ],
       "approval": {
         "status": "approved",
@@ -838,7 +838,7 @@
             "label": "Strategic fit",
             "weight": 15,
             "points": 15,
-            "why": "Linked lanes: GTM execution, Singapore SME AI adoption"
+            "why": "Linked lanes: GTM execution, Singapore & SEA commercial growth"
           },
           {
             "key": "evidenceOfInterest",

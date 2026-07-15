@@ -155,6 +155,50 @@ console.log('\n== Intel ingestion (the front door) ==');
   fsm.rmSync(dir, { recursive: true, force: true });
 }
 
+console.log('\n== Lead detection (prospects from dropped intel) ==');
+{
+  const os = await import('node:os');
+  const fsm = await import('node:fs');
+  const dir = fsm.mkdtempSync(path.join(os.tmpdir(), 'leads-test-'));
+  fsm.writeFileSync(path.join(dir, 'intel.md'), [
+    'SEA funding brief',
+    '',
+    'Ampersand Freight Systems raised a $5M seed round and is expanding into Singapore next quarter.',
+    'Meanwhile Harbourline Logistics is hiring a Head of RevOps to fix its reporting stack.',
+    'Separately, Forecastly Exchange launched a prediction market venue and filed for DCM designation with the CFTC.',
+  ].join('\n'));
+  const out = execFileSync('node', [path.join(ROOT, 'scripts/ingest.mjs'), dir, '--source', 'lead-test'], { encoding: 'utf8' });
+  ok(/LEADS DETECTED/.test(out), 'ingest reports detected leads', out.split('\n').slice(-8).join(' | '));
+  const leads = (await get('/api/collections/leads')).data.items;
+  const harbourline = leads.find((l) => l.name === 'Harbourline Logistics');
+  ok(harbourline && harbourline.linkedCompanyId === 'com-s01', 'known company matched to its existing record (no duplicate entity)');
+  const pmLead = leads.find((l) => l.pillar === 'prediction-markets' && /Forecastly/i.test(l.name));
+  ok(!!pmLead, 'prediction-markets pillar lead detected (venue launch)', JSON.stringify(leads.map((l) => `${l.name}:${l.pillar}`)));
+  const funded = leads.find((l) => /Ampersand/i.test(l.name) && l.signal === 'funding');
+  ok(!!funded, 'funding signal produced a Strait Up Growth lead');
+  ok(leads.every((l) => (l.evidence || []).every((e) => e.quote)), 'every lead carries its evidence quote (provenance)');
+  const conv = await action('convert-lead', { leadId: funded.id });
+  ok(conv.status === 200 && conv.data.companyId && conv.data.task, 'convert creates a skeleton company + research task');
+  const company = (await get(`/api/collections/companies/${conv.data.companyId}`)).data;
+  ok(company.industry === null && company.location === null, 'converted record contains ONLY evidence-backed fields (nothing invented)');
+  const dis = await action('dismiss-lead', { leadId: pmLead.id, reason: 'test' });
+  ok(dis.status === 200 && dis.data.lead.status === 'dismissed', 'dismiss works');
+  const today2 = await get('/api/today');
+  ok(today2.data.allActions.some((a) => a.kind === 'work-lead'), 'Today surfaces leads to work');
+  fsm.rmSync(dir, { recursive: true, force: true });
+}
+
+console.log('\n== Authority pillars ==');
+{
+  const lanes = (await get('/api/collections/lanes')).data.items;
+  ok(lanes.filter((l) => l.tier === 'core').length >= 9 && lanes.some((l) => l.name === 'Operational efficiency'), 'lane taxonomy tiered with core pillar lanes');
+  const an = (await get('/api/analytics')).data;
+  ok(Array.isArray(an.pillars) && an.pillars.length === 2, 'analytics reports the two pillars');
+  ok(an.pillars.every((p) => 'leadsDetected' in p && 'conversations' in p), 'pillar rollup includes leads and conversations');
+  const coreScore = await action('score-content', { contentId: 'cnt-s04' }); // SEA/AI lanes
+  ok(coreScore.data.content.score.criteria.sugRelevance === 5, 'core-pillar content scores 5 on relevance');
+}
+
 console.log('\n== Multi-channel repurposing ==');
 {
   const rep = await action('repurpose', { contentId: cntId, format: 'x-thread' });

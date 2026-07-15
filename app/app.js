@@ -366,8 +366,23 @@ function weekKey(dateStr) {
 routes.relationships = async () => {
   const rel = ANALYTICS.relationships.rows;
   const openEng = S.engagements.filter((e) => e.status === 'open');
+  const leads = (S.leads || []).filter((l) => ['detected', 'researched'].includes(l.status));
   $('#main').innerHTML = `
     <div class="view-head"><div><h1>Relationships</h1><div class="h-sub">evidence-based strength, never a mystery number</div></div></div>
+    ${leads.length ? `<h2>Prospects &amp; leads (${leads.length} to work)</h2>
+    <p class="small">Detected from ingested intel: a buying signal + an entity, queued for research. Nothing is contacted or enriched automatically.</p>
+    <div class="table-wrap"><table><thead><tr><th>Entity</th><th>Signal</th><th>Pillar</th><th>Evidence</th><th>Next step</th><th></th></tr></thead>
+    <tbody>${leads.map((l) => `<tr>
+      <td><strong>${esc(l.name)}</strong> ${fictionBadge(l)}${l.linkedCompanyId ? ` <span class="badge">known company</span>` : ''}${l.linkedContactId ? ` <span class="badge good">known contact</span>` : ''}</td>
+      <td><span class="badge accent">${esc(l.signal)}</span><div class="small">${esc(l.status)}</div></td>
+      <td class="small">${esc(l.pillar)}</td>
+      <td class="small">"${esc((l.evidence?.[0]?.quote || '').slice(0, 130))}"<div style="color:var(--muted)">${esc(l.why)}</div></td>
+      <td class="small">${esc(l.suggestedNextStep)}</td>
+      <td><div class="btn-row" style="margin:0">
+        ${l.status === 'detected' ? `<button class="btn btn-sm" data-lead-researched="${l.id}">Mark researched</button>` : ''}
+        <button class="btn btn-sm btn-accent" data-lead-convert="${l.id}">Convert</button>
+        <button class="btn btn-sm btn-quiet" data-lead-dismiss="${l.id}">Dismiss</button>
+      </div></td></tr>`).join('')}</tbody></table></div>` : ''}
     ${openEng.length ? `<h2>Engagement inbox (${openEng.length} open)</h2>
     <div class="table-wrap"><table><thead><tr><th>Date</th><th>Who</th><th>What</th><th>Suggested</th><th></th></tr></thead>
     <tbody>${openEng.map((e) => `<tr class="rowlink" data-open="engagements:${e.id}">
@@ -395,6 +410,18 @@ routes.relationships = async () => {
   };
   $('#c-search').oninput = drawRows; $('#c-band').onchange = drawRows;
   drawRows(); wireCommon($('#main'));
+  $('#main').querySelectorAll('[data-lead-convert]').forEach((b) => b.onclick = async () => {
+    const r = await act('convert-lead', { leadId: b.dataset.leadConvert });
+    toast('Converted to a skeleton record + research task. Nothing invented.'); await refresh(); render();
+  });
+  $('#main').querySelectorAll('[data-lead-dismiss]').forEach((b) => b.onclick = async () => {
+    await act('dismiss-lead', { leadId: b.dataset.leadDismiss, reason: 'dismissed from queue' });
+    toast('Dismissed'); await refresh(); render();
+  });
+  $('#main').querySelectorAll('[data-lead-researched]').forEach((b) => b.onclick = async () => {
+    await api(`/collections/leads/${b.dataset.leadResearched}`, { method: 'PATCH', body: { status: 'researched' } });
+    toast('Marked researched'); await refresh(); render();
+  });
 };
 
 function panelEngagement(id) {
@@ -662,10 +689,15 @@ routes.analytics = async () => {
     <div class="table-wrap"><table><thead><tr><th>Component</th><th style="width:30%">Points</th><th>Evidence</th></tr></thead>
     <tbody>${au.components.map((c) => `<tr><td>${esc(c.label)}</td><td>${meter(c.points, c.weight)}</td><td class="small">${esc(c.why)}${c.missing ? `<br><em style="color:var(--warn)">missing: ${esc(c.missing)}</em>` : ''}</td></tr>`).join('')}</tbody></table></div>
 
-    <div class="two-col">
+    <h2>The two pillars</h2>
+    <p class="small">Stuart's authority targets: Strait Up Growth (AI, commercial &amp; marketing strategy, operational efficiency — Singapore &amp; SEA) and prediction markets. Everything else is supporting colour.</p>
+    <div class="table-wrap"><table><thead><tr><th>Pillar</th><th class="num">Content items</th><th class="num">Published (30d)</th><th class="num">Conversations</th><th class="num">Opportunities</th><th class="num">Live leads</th></tr></thead>
+    <tbody>${(a.pillars || []).map((p) => `<tr><td><strong>${esc(p.pillar)}</strong><div class="small">${p.lanes.map(esc).join(' · ')}</div></td><td class="num">${p.contentItems}</td><td class="num">${p.published30d}</td><td class="num"><strong>${p.conversations}</strong></td><td class="num">${p.opportunities}</td><td class="num">${p.leadsDetected}</td></tr>`).join('')}</tbody></table></div>
+
+    <div class="two-col" style="margin-top:1rem">
       <div><h2>Authority lanes</h2>
       <div class="table-wrap"><table><thead><tr><th>Lane</th><th class="num">Items</th><th class="num">Published</th><th class="num">Conversations</th><th class="num">Opps</th></tr></thead>
-      <tbody>${a.content.byLane.map((l) => `<tr><td>${esc(l.lane)}</td><td class="num">${l.items}</td><td class="num">${l.published}</td><td class="num">${l.conversations}</td><td class="num">${l.opportunities}</td></tr>`).join('')}</tbody></table></div></div>
+      <tbody>${a.content.byLane.map((l) => `<tr><td>${esc(l.lane)} ${l.tier === 'core' ? '<span class="badge accent">core</span>' : ''}</td><td class="num">${l.items}</td><td class="num">${l.published}</td><td class="num">${l.conversations}</td><td class="num">${l.opportunities}</td></tr>`).join('')}</tbody></table></div></div>
       <div><h2>Outreach by purpose</h2>
       <div class="table-wrap"><table><thead><tr><th>Purpose</th><th class="num">Drafted</th><th class="num">Sent</th><th class="num">Replied</th><th class="num">Positive</th><th class="num">Conv.</th></tr></thead>
       <tbody>${a.outreach.byPurpose.map((p) => `<tr><td>${esc(p.purpose)}</td><td class="num">${p.drafted}</td><td class="num">${p.sent}</td><td class="num">${p.replied}</td><td class="num">${p.positive}</td><td class="num">${p.conversations}</td></tr>`).join('')}</tbody></table></div></div>

@@ -107,30 +107,46 @@ write('brands', {
 });
 
 // ---------------------------------------------------------------------------
-// Authority lanes.
+// Authority lanes — tiered around the TWO PILLARS Stuart must own:
+//   Pillar 1 "strait-up-growth": AI, commercial & marketing strategy,
+//     operational efficiency, specifically Singapore and SEA.
+//   Pillar 2 "prediction-markets".
+// core = the positioning depends on it (weighted up everywhere);
+// supporting = credibility context, never allowed to dominate the feed.
 // ---------------------------------------------------------------------------
 const LANES = [
-  'Commercial systems', 'CRM and RevOps governance', 'Pricing and margin discipline',
-  'Practical AI implementation', 'B2B events and sponsorship', 'Sales and marketing alignment',
-  'Leadership through operating clarity', 'Founder-led operating drag', 'iGaming commercial strategy',
-  'Prediction markets', 'Singapore SME AI adoption', 'B2B media monetisation',
-  'Commercial negotiation', 'Category creation', 'GTM execution',
+  // [name, tier, pillar]
+  ['Commercial systems', 'core', 'strait-up-growth'],
+  ['CRM and RevOps governance', 'core', 'strait-up-growth'],
+  ['Pricing and margin discipline', 'core', 'strait-up-growth'],
+  ['Practical AI implementation', 'core', 'strait-up-growth'],
+  ['Operational efficiency', 'core', 'strait-up-growth'],
+  ['Sales and marketing alignment', 'core', 'strait-up-growth'],
+  ['GTM execution', 'core', 'strait-up-growth'],
+  ['Founder-led operating drag', 'core', 'strait-up-growth'],
+  ['Singapore & SEA commercial growth', 'core', 'strait-up-growth'],
+  ['Prediction markets', 'core', 'prediction-markets'],
+  ['Category creation', 'supporting', 'prediction-markets'],
+  ['B2B events and sponsorship', 'supporting', null],
+  ['B2B media monetisation', 'supporting', null],
+  ['iGaming commercial strategy', 'supporting', null],
+  ['Commercial negotiation', 'supporting', 'strait-up-growth'],
+  ['Leadership through operating clarity', 'supporting', 'strait-up-growth'],
 ];
 write('lanes', {
-  meta: meta('The authority taxonomy. Everything links to one or more lanes.'),
-  items: LANES.map((name, i) => ({
-    id: `lane-${String(i + 1).padStart(2, '0')}`, name,
+  meta: meta('The authority taxonomy, tiered around the two pillars: Strait Up Growth (AI / commercial & marketing strategy / operational efficiency, Singapore & SEA) and prediction markets. core lanes are weighted up in scoring, Today and the neglect warnings.'),
+  items: LANES.map(([name, tier, pillar], i) => ({
+    id: `lane-${String(i + 1).padStart(2, '0')}`, name, tier, pillar,
     createdAt: now.toISOString(), updatedAt: now.toISOString(),
   })),
 });
-const lane = (name) => name; // lanes are referenced by name for readability
 
 // ---------------------------------------------------------------------------
 // Offer library — DRAFT ASSUMPTIONS.
 // ---------------------------------------------------------------------------
 const offers = [
   ['off-audit', 'Commercial Systems Audit', 'Identify operating drag, workflow gaps, CRM friction, GTM friction and the highest-value improvements.', 'A prioritised 30 to 90 day commercial improvement plan.', ['Commercial systems', 'Founder-led operating drag'], 'Founder or MD who suspects the commercial engine leaks but cannot see where.'],
-  ['off-ai-sprint', 'AI Workflow Implementation Sprint', 'Embed AI into one or more important commercial workflows.', 'Workflow map, prompt system, source knowledge structure, governance rules, implementation plan.', ['Practical AI implementation', 'Singapore SME AI adoption'], 'A team whose AI adoption has become disconnected experimentation.'],
+  ['off-ai-sprint', 'AI Workflow Implementation Sprint', 'Embed AI into one or more important commercial workflows.', 'Workflow map, prompt system, source knowledge structure, governance rules, implementation plan.', ['Practical AI implementation', 'Singapore & SEA commercial growth'], 'A team whose AI adoption has become disconnected experimentation.'],
   ['off-crm-gtm', 'CRM and GTM Operating System', 'Cleaner source-of-truth logic, stronger pipeline discipline, clearer ownership, better handoffs.', 'CRM governance model, lifecycle design, dashboard specification, operating cadence, action plan.', ['CRM and RevOps governance', 'GTM execution'], 'Commercial leader who no longer trusts the CRM numbers.'],
   ['off-pricing', 'Pricing and Packaging Sprint', 'Improve the value story, package architecture, willingness-to-pay logic, negotiation structure and expansion path.', 'Pricing ladder, package structure, value fences, negotiation playbook, sales narrative.', ['Pricing and margin discipline', 'Commercial negotiation'], 'Founder discounting informally and leaking margin.'],
   ['off-events', 'B2B Event Revenue Architecture', 'Move sponsorship and event monetisation from inventory selling toward outcome-led commercial packages.', 'Sponsor outcome map, package architecture, pricing logic, renewal structure, value measurement plan.', ['B2B events and sponsorship', 'B2B media monetisation'], 'Event business selling logo placement instead of outcomes.'],
@@ -257,11 +273,11 @@ const contacts = [
   ['con-s03', 'Priya Raghavan', 'COO', 'com-s03', 'potential-client', ['CRM and RevOps governance', 'Sales and marketing alignment'], 'Commented on three CRM-governance posts', 'Singapore', {}],
   ['con-s04', 'Dominic Shaw', 'Host', 'com-s04', 'podcast-host', ['Commercial systems', 'B2B media monetisation'], 'Mutual guest suggestion from a peer', 'Manchester', {}],
   ['con-s05', 'Elena Borg', 'Head of Commercial', 'com-s05', 'igaming-executive', ['iGaming commercial strategy', 'Pricing and margin discipline'], 'Industry peer, met at an iGaming expo 2024', 'Malta', {}],
-  ['con-s06', 'Wei Lun Chua', 'Partner', 'com-s06', 'investor', ['GTM execution', 'Singapore SME AI adoption'], 'Panel Q&A conversation, Singapore', 'Singapore', {}],
+  ['con-s06', 'Wei Lun Chua', 'Partner', 'com-s06', 'investor', ['GTM execution', 'Singapore & SEA commercial growth'], 'Panel Q&A conversation, Singapore', 'Singapore', {}],
   ['con-s07', 'Harriet Vane', 'Managing Director', 'com-s07', 'industry-peer', ['B2B media monetisation', 'B2B events and sponsorship'], 'Former colleague from the media world', 'Leeds', {}],
   ['con-s08', 'Josh Ramirez', 'Founder', 'com-s08', 'referral-partner', ['CRM and RevOps governance', 'Practical AI implementation'], 'Collaborated on a client scoping call (fictional)', 'Singapore', {}],
   ['con-s09', 'Annelies de Vries', 'Programme Director', 'com-s09', 'event-organiser', ['B2B events and sponsorship', 'Category creation'], 'Cold inbound after a sponsorship post', 'Amsterdam', {}],
-  ['con-s10', 'Faridah Osman', 'Community Lead', 'com-s10', 'singapore-contact', ['Singapore SME AI adoption', 'Founder-led operating drag'], 'Runs the founder community Stuart spoke at', 'Singapore', {}],
+  ['con-s10', 'Faridah Osman', 'Community Lead', 'com-s10', 'singapore-contact', ['Singapore & SEA commercial growth', 'Founder-led operating drag'], 'Runs the founder community Stuart spoke at', 'Singapore', {}],
   ['con-s11', 'Callum Reid', 'Head of Partnerships', 'com-s11', 'prediction-markets-contact', ['Prediction markets', 'Category creation'], 'Replied to a prediction-markets thread', 'Dublin', {}],
   ['con-s12', 'Grace Liew', 'Principal', 'com-s12', 'referral-partner', ['Leadership through operating clarity'], 'Fractional network intro call', 'Remote', {}],
   ['con-s13', 'Tom Okafor', 'Founder', 'com-s03', 'founder', ['GTM execution', 'Pricing and margin discipline'], 'Engaged repeatedly with pricing posts', 'Singapore', {}],
@@ -275,7 +291,7 @@ const contacts = [
   ['con-s21', 'Pieter Hendriks', 'CEO', 'com-s09', 'potential-client', ['B2B events and sponsorship', 'Pricing and margin discipline'], 'Met at a fintech summit speaker dinner', 'Amsterdam', {}],
   ['con-s22', 'Aisyah Rahman', 'Podcast Producer', 'com-s04', 'media-contact', ['B2B media monetisation'], 'Coordinates guests for Bellwether', 'Manchester', {}],
   ['con-s23', 'Niall Docherty', 'Advisor', null, 'advisor', ['Commercial negotiation', 'Leadership through operating clarity'], 'Long-standing peer mentor (fictional)', 'Edinburgh', {}],
-  ['con-s24', 'Chen Wei', 'Founder', 'com-s08', 'technology-partner', ['Practical AI implementation', 'Singapore SME AI adoption'], 'Partner ecosystem, two joint calls', 'Singapore', {}],
+  ['con-s24', 'Chen Wei', 'Founder', 'com-s08', 'technology-partner', ['Practical AI implementation', 'Singapore & SEA commercial growth'], 'Partner ecosystem, two joint calls', 'Singapore', {}],
   ['con-s25', 'Freya Halvorsen', 'Head of Marketing', 'com-s02', 'commercial-leader', ['Sales and marketing alignment'], 'Opted out of outreach at an event, keep for context only', 'Oslo', { doNotContact: true, permissionStatus: 'opted-out' }],
 ];
 write('contacts', {
@@ -331,13 +347,13 @@ const insights = [
   ['ins-s01', -2, 'Three CRMs in five years means the CRM was never the problem', 'Founder told me she has migrated CRM three times in five years and trusts none of them. Every migration was sold internally as the fix. The actual problem was that sales, marketing and delivery never agreed what a qualified deal was. The tool keeps taking the blame for a definitions problem.', ['CRM and RevOps governance', 'Commercial systems'], 'client-pattern', 5, 'captured', {}],
   ['ins-s02', -3, 'Discount authority is a leadership instrument, not a finance rule', 'Watched a deal review where a rep discounted 22% to close by quarter end. Nobody could say who approved it. Where discount tiers exist and are enforced, margin holds and negotiations get shorter, because the seller stops negotiating against themselves.', ['Pricing and margin discipline', 'Commercial negotiation'], 'commercial-lesson', 5, 'routed', {}],
   ['ins-s03', -4, 'Sponsors renew on outcomes they can show their boss', 'Sponsorship renewal conversations keep failing when the package was logo placement. The renewals that close themselves are the ones where the sponsor walked away with a number they could put in their own board deck.', ['B2B events and sponsorship'], 'commercial-lesson', 5, 'routed', {}],
-  ['ins-s04', -5, 'AI pilots die where the workflow was never mapped', 'Every stalled AI adoption story I hear in Singapore SME circles has the same shape: tool bought, prompt shared in Slack, nobody changed the workflow. The teams getting value mapped the workflow first and slotted AI into named steps with an owner.', ['Practical AI implementation', 'Singapore SME AI adoption'], 'client-pattern', 5, 'routed', {}],
+  ['ins-s04', -5, 'AI pilots die where the workflow was never mapped', 'Every stalled AI adoption story I hear in Singapore SME circles has the same shape: tool bought, prompt shared in Slack, nobody changed the workflow. The teams getting value mapped the workflow first and slotted AI into named steps with an owner.', ['Practical AI implementation', 'Singapore & SEA commercial growth'], 'client-pattern', 5, 'routed', {}],
   ['ins-s05', -6, 'The founder bottleneck shows up in the CRM before it shows up in revenue', 'In founder-led businesses the tell is deals sitting in "waiting on founder" stages. Operating drag is measurable months before the revenue line feels it.', ['Founder-led operating drag', 'Commercial systems'], 'framework', 4, 'captured', {}],
   ['ins-s06', -8, 'Pipeline reviews that read the dashboard aloud are theatre', 'Sat through a review where the leader read the dashboard to the room. No decision was taken. A pipeline review should end with stage moves, kills and next actions or it is a weather report.', ['CRM and RevOps governance', 'Leadership through operating clarity'], 'contrarian-opinion', 4, 'routed', {}],
   ['ins-s07', -9, 'Event P&Ls hide the media asset inside them', 'Most event businesses sit on an audience asset they only monetise two days a year. The media layer (newsletter, podcast, research) is the recurring revenue nobody staffs.', ['B2B events and sponsorship', 'B2B media monetisation'], 'commercial-lesson', 4, 'captured', {}],
   ['ins-s08', -10, 'NEXT.io Q3 pipeline detail', 'Internal pipeline and margin discussion notes from the quarter. Contains named deals, figures and a pricing disagreement. Useful operating lessons but the specifics are employer-confidential.', ['Commercial systems'], 'meeting-note', 3, 'captured', { confidential: true }],
   ['ins-s09', -12, 'Prediction markets are hiring compliance before marketing', 'Noticeable pattern in the category: the serious venues staff market integrity and compliance roles before they staff growth. That ordering tells you who plans to be around in five years.', ['Prediction markets', 'Category creation'], 'event-observation', 4, 'routed', {}],
-  ['ins-s10', -14, 'Singapore SMEs buy outcomes, not AI', 'Founder dinner conversation: nobody asked which model anyone uses. Every question was some version of "what stopped being painful". The AI-first pitch is talking to itself.', ['Singapore SME AI adoption', 'Practical AI implementation'], 'event-observation', 5, 'routed', {}],
+  ['ins-s10', -14, 'Singapore SMEs buy outcomes, not AI', 'Founder dinner conversation: nobody asked which model anyone uses. Every question was some version of "what stopped being painful". The AI-first pitch is talking to itself.', ['Singapore & SEA commercial growth', 'Practical AI implementation'], 'event-observation', 5, 'routed', {}],
   ['ins-s11', -16, 'Sales and marketing alignment is a data contract, not a meeting', 'Alignment fails as a standing meeting and works as a shared definition set: one lifecycle, one MQL definition, one routing rule, reviewed quarterly. The meeting is the symptom.', ['Sales and marketing alignment', 'CRM and RevOps governance'], 'framework', 4, 'captured', {}],
   ['ins-s12', -18, 'Category creation is mostly patience plus vocabulary', 'Watching a new category form: the winners repeat a small stable vocabulary until the market adopts it. The losers rebrand their language every quarter.', ['Category creation', 'Prediction markets'], 'contrarian-opinion', 3, 'captured', {}],
   ['ins-s13', -20, 'The diagnostic is the product', 'Advisory conversations keep proving it: the paid diagnostic that names the problem precisely is worth more to the buyer than the fix, because it converts anxiety into a plan.', ['Commercial systems', 'GTM execution'], 'offer-insight', 5, 'routed', {}],
@@ -346,7 +362,7 @@ const insights = [
   ['ins-s16', -28, 'iGaming supplier pricing is where discipline goes to die', 'Supplier deals in iGaming still run on relationship pricing and side letters. The first supplier to run clean tiered packaging will look expensive and win anyway, because procurement can finally compare.', ['iGaming commercial strategy', 'Pricing and margin discipline'], 'contrarian-opinion', 4, 'captured', {}],
   ['ins-s17', -30, 'Question: what does a "qualified conversation" actually mean', 'If the whole engine optimises for qualified conversations, the definition needs to be written down: right person, real problem, honest interest in discussing it. Otherwise the metric inflates like impressions did.', ['GTM execution', 'Commercial systems'], 'question', 4, 'captured', {}],
   ['ins-s18', -35, 'Speaking works when the talk is a diagnostic in disguise', 'The talks that generate conversations are the ones where the audience self-diagnoses while listening. Teaching the checklist beats telling the story.', ['B2B events and sponsorship', 'GTM execution'], 'speaking-idea', 4, 'captured', {}],
-  ['ins-s19', -38, 'Prediction: SME AI budgets consolidate to two tools by 2027', 'Prediction, low confidence: the ten-tool AI stack SMEs assembled in 2025 consolidates to two by 2027, and the survivors are the ones embedded in a workflow with an owner. [unverified prediction]', ['Singapore SME AI adoption', 'Practical AI implementation'], 'prediction', 3, 'captured', {}],
+  ['ins-s19', -38, 'Prediction: SME AI budgets consolidate to two tools by 2027', 'Prediction, low confidence: the ten-tool AI stack SMEs assembled in 2025 consolidates to two by 2027, and the survivors are the ones embedded in a workflow with an owner. [unverified prediction]', ['Singapore & SEA commercial growth', 'Practical AI implementation'], 'prediction', 3, 'captured', {}],
   ['ins-s20', -42, 'Renewal conversations start at onboarding', 'The renewal rate was decided in the first thirty days: whether the client got a named outcome and a cadence. Everything after is commentary.', ['Commercial systems', 'CRM and RevOps governance'], 'commercial-lesson', 4, 'captured', {}],
 ];
 write('insights', {
@@ -381,7 +397,7 @@ const contentRows = [
     'Outcome-led packages renew themselves.',
     `Sponsorship renewals aren't a sales problem. They're an evidence problem.\n\nWhen the package was logo placement and a booth, the renewal call is a negotiation about price. When the sponsor walked away with a number they could put in their own board deck, the renewal call is a scheduling exercise.\n\nI've sold and renewed event sponsorships for years and the pattern holds everywhere: build the package around what the sponsor gets to claim afterwards, and measure it for them, because they won't.\n\nThe uncomfortable bit is that most event P&Ls can't tell you what any sponsor actually got. That's the fix, and it's cheaper than a new sales deck.`,
     mkPerf(3800, 9, ['con-s09', 'con-s21'], ['opp-s03'])],
-  ['cnt-s04', -18, 'published', 'linkedin-post', 'Map the workflow before you buy the tool', ['Practical AI implementation', 'Singapore SME AI adoption'], 'educate-market', ['ins-s04'],
+  ['cnt-s04', -18, 'published', 'linkedin-post', 'Map the workflow before you buy the tool', ['Practical AI implementation', 'Singapore & SEA commercial growth'], 'educate-market', ['ins-s04'],
     'AI value comes from workflow design, not tool purchase.',
     `Every stalled AI story I hear from SME founders has the same shape. Tool bought. Prompt shared in Slack. Nothing changed.\n\nThe teams getting real value did something boring first: they mapped the workflow, named the steps, gave each step an owner, and then asked where a model removes drag. AI slotted into a mapped workflow compounds. AI sprinkled onto an unmapped one evaporates.\n\nI'm doing this exercise inside my own commercial work at the moment and it's humbling how much of the drag was never the tooling.\n\nIf you've tried an AI rollout that quietly died, I'd genuinely like to hear what it looked like from the inside.`,
     mkPerf(5400, 22, ['con-s18', 'con-s24'], [])],
@@ -393,7 +409,7 @@ const contentRows = [
     'Compliance-first hiring separates the serious venues.',
     `A pattern worth watching in prediction markets: the serious venues are hiring market integrity and compliance people before they hire growth people.\n\nThat ordering is the tell. It says who is building infrastructure for a decade and who is optimising a moment. I've watched the same split play out in other regulated categories, and the compliance-first firms looked slow right up until they were the only ones left standing.\n\nI'm still learning my way into parts of this category, but hiring order is one of the more honest indicators I've found. Worth checking before you partner with, supply to, or bet your career on a venue.`,
     mkPerf(3100, 11, ['con-s11'], [])],
-  ['cnt-s07', -27, 'published', 'linkedin-post', 'Nobody at the founder dinner asked about models', ['Singapore SME AI adoption'], 'start-conversations', ['ins-s10'],
+  ['cnt-s07', -27, 'published', 'linkedin-post', 'Nobody at the founder dinner asked about models', ['Singapore & SEA commercial growth'], 'start-conversations', ['ins-s10'],
     'SMEs buy relief from pain, not AI.',
     `Founder dinner in Singapore last month. AI came up constantly. Not once did anyone ask which model anyone uses.\n\nEvery question was a version of "what stopped being painful". Invoicing follow-ups. Proposal drafts. CRM hygiene. The vendors pitching AI-first are answering a question nobody at that table was asking.\n\nIf you sell to SMEs, the pitch that lands is the workflow that stopped hurting, with the model as a footnote.`,
     mkPerf(4700, 15, ['con-s10'], [])],
@@ -626,7 +642,7 @@ const calFormats = ['linkedin-post', 'linkedin-post', 'newsletter'];
 const calLanes = [
   ['Commercial systems', 'CRM and RevOps governance', 'Practical AI implementation'],
   ['Pricing and margin discipline', 'B2B events and sponsorship', 'Founder-led operating drag'],
-  ['Singapore SME AI adoption', 'Sales and marketing alignment', 'Commercial systems'],
+  ['Singapore & SEA commercial growth', 'Sales and marketing alignment', 'Commercial systems'],
   ['Prediction markets', 'B2B media monetisation', 'GTM execution'],
 ];
 for (let w = 0; w < 4; w++) {
@@ -672,6 +688,31 @@ write('reviews', {
         decisions: [{ decision: 'Keep AI as the accelerant in the narrative, never the headline.', date: day(-3), rationale: 'Matches positioning: commercial clarity first.' }],
       },
       status: 'confirmed', ...F, createdAt: iso(-3), updatedAt: iso(-3),
+    },
+  ],
+});
+
+// ----- Leads (2 fictional, demonstrating the detection→research queue) ------------------
+write('leads', {
+  meta: meta(FICTION + ' Real leads are created by scripts/ingest.mjs when a buying signal and an entity appear together in dropped intel.'),
+  items: [
+    {
+      id: 'lead-s01', name: 'Ampersand Freight Systems', kind: 'company', pillar: 'strait-up-growth',
+      signal: 'funding', why: 'Fresh capital means growth targets and commercial chaos to fix; budget exists.',
+      linkedCompanyId: null, linkedContactId: null,
+      evidence: [{ insightId: null, quote: 'Ampersand Freight Systems raised a $5M seed round to expand its B2B logistics platform across Southeast Asia. (fictional)', signal: 'funding', date: day(-2) }],
+      status: 'detected',
+      suggestedNextStep: 'Research: verify the entity, find the named decision-maker (never invent details), then decide the route.',
+      ...F, createdAt: iso(-2), updatedAt: iso(-2),
+    },
+    {
+      id: 'lead-s02', name: 'Harbourline Logistics', kind: 'company', pillar: 'strait-up-growth',
+      signal: 'leadership-hire', why: 'New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.',
+      linkedCompanyId: 'com-s01', linkedContactId: null,
+      evidence: [{ insightId: null, quote: 'Harbourline Logistics is hiring a Head of RevOps to fix its reporting stack. (fictional)', signal: 'leadership-hire', date: day(-4) }],
+      status: 'researched',
+      suggestedNextStep: 'Known company with a live opportunity (opp-s01): fold the signal into the Mabel Tan thread rather than opening a new one.',
+      ...F, createdAt: iso(-4), updatedAt: iso(-1),
     },
   ],
 });

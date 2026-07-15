@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:52:53.896Z",
+    "seededAt": "2026-07-15T02:04:51.939Z",
     "note": "FICTIONAL demonstration data. Not a real person, company or deal. Emails are only present where the fictional person shared one; the engine never guesses addresses."
   },
   "items": [
@@ -147,7 +147,7 @@
       "relationshipType": "investor",
       "lanes": [
         "GTM execution",
-        "Singapore SME AI adoption"
+        "Singapore & SEA commercial growth"
       ],
       "howKnown": "Panel Q&A conversation, Singapore",
       "location": "Singapore",
@@ -254,7 +254,7 @@
       "company": "Tanjong Growth Collective",
       "relationshipType": "singapore-contact",
       "lanes": [
-        "Singapore SME AI adoption",
+        "Singapore & SEA commercial growth",
         "Founder-led operating drag"
       ],
       "howKnown": "Runs the founder community Stuart spoke at",
@@ -627,7 +627,7 @@
       "relationshipType": "technology-partner",
       "lanes": [
         "Practical AI implementation",
-        "Singapore SME AI adoption"
+        "Singapore & SEA commercial growth"
       ],
       "howKnown": "Partner ecosystem, two joint calls",
       "location": "Singapore",

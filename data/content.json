@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:52:53.896Z",
+    "seededAt": "2026-07-15T02:04:51.939Z",
     "note": "FICTIONAL demonstration data. Not a real person, company or deal. Published bodies are demo copy written to pass the voice linter."
   },
   "items": [
@@ -61,7 +61,7 @@
           "distinctPointOfView": 4,
           "evidence": 5,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -75,7 +75,7 @@
           "distinctPointOfView": "Stated view: \"CRM migrations keep failing because the definitions were never agreed.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: CRM and RevOps governance.",
+          "sugRelevance": "In core pillar lane(s): CRM and RevOps governance.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -83,11 +83,11 @@
           "commercialRelevance": "Objective: establish-expertise.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 48,
+        "total": 49,
         "max": 60,
         "weakest": [],
         "recommendation": "publish",
-        "recommendationText": "Strong authority piece (48/60).",
+        "recommendationText": "Strong authority piece (49/60).",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -147,7 +147,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -161,7 +161,7 @@
           "distinctPointOfView": "Stated view: \"Discount authority is a leadership instrument.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Pricing and margin discipline.",
+          "sugRelevance": "In core pillar lane(s): Pricing and margin discipline.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -169,7 +169,7 @@
           "commercialRelevance": "Objective: challenge-weak-thinking.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 43,
+        "total": 44,
         "max": 60,
         "weakest": [
           {
@@ -179,7 +179,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "recommendationText": "Publish after targeted edits (44). Fix: Operator credibility.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -240,7 +240,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 3,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 4,
@@ -254,7 +254,7 @@
           "distinctPointOfView": "Stated view: \"Outcome-led packages renew themselves.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: B2B events and sponsorship.",
+          "sugRelevance": "Only supporting lanes (B2B events and sponsorship). Fine as context, but the pillars are where authority compounds.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -262,11 +262,11 @@
           "commercialRelevance": "Objective: establish-expertise.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 46,
+        "total": 45,
         "max": 60,
         "weakest": [],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (46). Fix: weakest criteria.",
+        "recommendationText": "Publish after targeted edits (45). Fix: weakest criteria.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -280,7 +280,7 @@
       "format": "linkedin-post",
       "lanes": [
         "Practical AI implementation",
-        "Singapore SME AI adoption"
+        "Singapore & SEA commercial growth"
       ],
       "objective": "educate-market",
       "stage": "published",
@@ -326,7 +326,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -340,7 +340,7 @@
           "distinctPointOfView": "Stated view: \"AI value comes from workflow design, not tool purchase.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Practical AI implementation, Singapore SME AI adoption.",
+          "sugRelevance": "In core pillar lane(s): Practical AI implementation, Singapore & SEA commercial growth.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -348,7 +348,7 @@
           "commercialRelevance": "Objective: educate-market.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 43,
+        "total": 44,
         "max": 60,
         "weakest": [
           {
@@ -358,7 +358,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "recommendationText": "Publish after targeted edits (44). Fix: Operator credibility.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -415,7 +415,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -429,7 +429,7 @@
           "distinctPointOfView": "Stated view: \"A review without stage moves is a weather report.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: CRM and RevOps governance, Leadership through operating clarity.",
+          "sugRelevance": "In core pillar lane(s): CRM and RevOps governance.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -437,7 +437,7 @@
           "commercialRelevance": "Objective: challenge-weak-thinking.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 43,
+        "total": 44,
         "max": 60,
         "weakest": [
           {
@@ -447,7 +447,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "recommendationText": "Publish after targeted edits (44). Fix: Operator credibility.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -506,7 +506,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 4,
@@ -520,7 +520,7 @@
           "distinctPointOfView": "Stated view: \"Compliance-first hiring separates the serious venues.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Prediction markets, Category creation.",
+          "sugRelevance": "In core pillar lane(s): Prediction markets.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -528,7 +528,7 @@
           "commercialRelevance": "Objective: build-authority.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 42,
+        "total": 43,
         "max": 60,
         "weakest": [
           {
@@ -543,7 +543,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (42). Fix: Operator credibility, Practical usefulness.",
+        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility, Practical usefulness.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -556,7 +556,7 @@
       "title": "Nobody at the founder dinner asked about models",
       "format": "linkedin-post",
       "lanes": [
-        "Singapore SME AI adoption"
+        "Singapore & SEA commercial growth"
       ],
       "objective": "start-conversations",
       "stage": "published",
@@ -601,7 +601,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -615,7 +615,7 @@
           "distinctPointOfView": "Stated view: \"SMEs buy relief from pain, not AI.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Singapore SME AI adoption.",
+          "sugRelevance": "In core pillar lane(s): Singapore & SEA commercial growth.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -623,7 +623,7 @@
           "commercialRelevance": "Objective: start-conversations.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 41,
+        "total": 42,
         "max": 60,
         "weakest": [
           {
@@ -638,7 +638,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (41). Fix: Operator credibility, Practical usefulness.",
+        "recommendationText": "Publish after targeted edits (42). Fix: Operator credibility, Practical usefulness.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -699,7 +699,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 4,
           "industryRelevance": 3,
@@ -713,7 +713,7 @@
           "distinctPointOfView": "Stated view: \"Naming the problem precisely is worth more than fixing it.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Commercial systems, GTM execution.",
+          "sugRelevance": "In core pillar lane(s): Commercial systems, GTM execution.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -721,7 +721,7 @@
           "commercialRelevance": "Objective: support-offer.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 43,
+        "total": 44,
         "max": 60,
         "weakest": [
           {
@@ -736,7 +736,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility, Practical usefulness.",
+        "recommendationText": "Publish after targeted edits (44). Fix: Operator credibility, Practical usefulness.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -797,7 +797,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 3,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 4,
@@ -811,7 +811,7 @@
           "distinctPointOfView": "Stated view: \"The audience asset earns two days a year; the media layer is the recurring revenue.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: B2B events and sponsorship, B2B media monetisation.",
+          "sugRelevance": "Only supporting lanes (B2B events and sponsorship, B2B media monetisation). Fine as context, but the pillars are where authority compounds.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -819,7 +819,7 @@
           "commercialRelevance": "Objective: establish-expertise.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 44,
+        "total": 43,
         "max": 60,
         "weakest": [
           {
@@ -829,7 +829,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (44). Fix: Practical usefulness.",
+        "recommendationText": "Publish after targeted edits (43). Fix: Practical usefulness.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -885,7 +885,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -899,7 +899,7 @@
           "distinctPointOfView": "Stated view: \"The first thirty days set the renewal.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Commercial systems.",
+          "sugRelevance": "In core pillar lane(s): Commercial systems.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -907,7 +907,7 @@
           "commercialRelevance": "Objective: establish-expertise.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 43,
+        "total": 44,
         "max": 60,
         "weakest": [
           {
@@ -917,7 +917,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility.",
+        "recommendationText": "Publish after targeted edits (44). Fix: Operator credibility.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -968,7 +968,7 @@
           "distinctPointOfView": 4,
           "evidence": 3,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 3,
           "industryRelevance": 3,
@@ -982,7 +982,7 @@
           "distinctPointOfView": "Stated view: \"Operating drag is measurable before revenue feels it.\"",
           "evidence": "1 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Founder-led operating drag, CRM and RevOps governance.",
+          "sugRelevance": "In core pillar lane(s): Founder-led operating drag, CRM and RevOps governance.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -990,7 +990,7 @@
           "commercialRelevance": "Objective: establish-expertise.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 41,
+        "total": 42,
         "max": 60,
         "weakest": [
           {
@@ -1005,7 +1005,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (41). Fix: Operator credibility, Practical usefulness.",
+        "recommendationText": "Publish after targeted edits (42). Fix: Operator credibility, Practical usefulness.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
@@ -1058,7 +1058,7 @@
           "distinctPointOfView": 4,
           "evidence": 4,
           "confidentialitySafety": 5,
-          "sugRelevance": 4,
+          "sugRelevance": 5,
           "relationshipValue": 3,
           "speakingPotential": 4,
           "industryRelevance": 3,
@@ -1072,7 +1072,7 @@
           "distinctPointOfView": "Stated view: \"The founder-friendly version of the systems story.\"",
           "evidence": "2 evidence item(s) attached.",
           "confidentialitySafety": "Source classification: public.",
-          "sugRelevance": "Linked to lanes: Commercial systems, Practical AI implementation.",
+          "sugRelevance": "In core pillar lane(s): Commercial systems, Practical AI implementation.",
           "relationshipValue": "No specific contacts linked.",
           "speakingPotential": "Judged from format; adjust by hand if the idea carries a talk.",
           "industryRelevance": "Judged from lane linkage.",
@@ -1080,7 +1080,7 @@
           "commercialRelevance": "Objective: attract-podcast-invitations.",
           "toneMatch": "Passes the voice linter."
         },
-        "total": 43,
+        "total": 44,
         "max": 60,
         "weakest": [
           {
@@ -1095,7 +1095,7 @@
           }
         ],
         "recommendation": "revise",
-        "recommendationText": "Publish after targeted edits (43). Fix: Operator credibility, Practical usefulness.",
+        "recommendationText": "Publish after targeted edits (44). Fix: Operator credibility, Practical usefulness.",
         "thresholds": {
           "strong": 48,
           "publishAfterEdits": 36
