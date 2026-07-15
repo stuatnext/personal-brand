@@ -9,7 +9,7 @@ import { analytics } from '../lib/analytics.mjs';
 const t = todayBriefing({ limit: 7 });
 const a = analytics();
 
-console.log(`\nSTRAIT UP GROWTH — TODAY (${new Date().toDateString()})`);
+console.log(`\nSTUART CROWLEY — PERSONAL BRAND ENGINE — TODAY (${new Date().toDateString()})`);
 console.log('='.repeat(60));
 t.actions.forEach((x, i) => {
   console.log(`\n#${i + 1} [${x.kind}] ${x.title}`);

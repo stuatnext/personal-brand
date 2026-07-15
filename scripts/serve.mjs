@@ -128,6 +128,31 @@ const actions = {
     return { content: item, lint: result.lint, provider: result.provider, note: result.note };
   },
 
+  // Repurpose an existing piece for a different channel. The idea travels;
+  // the expression is rebuilt per CHANNEL_SPECS — never a verbatim copy.
+  async repurpose({ contentId, format }) {
+    const src = get('content', contentId);
+    if (!src) throw httpError(404, 'content not found');
+    if (!format) throw httpError(400, 'pass a target format');
+    if (format === src.format) throw httpError(400, 'target format is the same as the source; repurposing must change the shape');
+    if (['private-operating-lesson', 'strictly-confidential'].includes(src.confidentiality)) {
+      throw httpError(409, `Source is classified ${src.confidentiality}; resolve confidentiality before repurposing.`);
+    }
+    const insight = src.sourceInsights?.[0] ? get('insights', src.sourceInsights[0]) : null;
+    const result = await draftContent({
+      title: src.title, format, insight, pov: src.pov,
+      lanes: src.lanes || [], brand: 'stuart', sourceBody: src.body || '',
+    });
+    const item = insert('content', {
+      title: src.title, format, lanes: src.lanes || [], objective: src.objective,
+      stage: 'draft', sourceInsights: src.sourceInsights || [], repurposedFrom: contentId,
+      evidence: src.evidence || [], pov: src.pov || null, body: result.body,
+      draftProvider: result.provider, brand: src.brand, confidentiality: src.confidentiality || 'public',
+      audiences: src.audiences || [], performance: null, versions: [],
+    });
+    return { content: item, lint: result.lint, provider: result.provider, note: result.note };
+  },
+
   async 'score-content'({ contentId }) {
     const item = get('content', contentId);
     if (!item) throw httpError(404, 'content not found');
@@ -398,6 +423,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
   const port = portArg > -1 ? Number(process.argv[portArg + 1]) : 4173;
   const server = await start({ port });
   const addr = server.address();
-  console.log(`Strait Up Growth engine  http://localhost:${addr.port}`);
+  console.log(`Stuart Crowley — personal brand engine  http://localhost:${addr.port}`);
   console.log(`AI provider: ${providerName()}${providerName() === 'mock' ? ' (set ANTHROPIC_API_KEY for live drafting)' : ''}`);
 }

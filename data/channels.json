@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "seededAt": "2026-07-15T01:52:53.896Z",
+    "note": "Channel strategy. active = publishing now; suggested = engine recommendation with the evidence that would justify adopting; parked = considered and deprioritised."
+  },
+  "items": [
+    {
+      "id": "ch-linkedin",
+      "name": "LinkedIn (personal)",
+      "status": "active",
+      "defaultFormat": "linkedin-post",
+      "rationale": "Primary channel. Where founders, commercial leaders and the events/iGaming industry already are.",
+      "effort": "low",
+      "watchSignal": null,
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-x",
+      "name": "X",
+      "status": "active",
+      "defaultFormat": "x-post",
+      "rationale": "Prediction markets and B2B operator conversation lives here; sharpest-sentence versions of each idea, plus threads for the bigger ones.",
+      "effort": "low",
+      "watchSignal": null,
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-substack",
+      "name": "Substack newsletter",
+      "status": "active",
+      "defaultFormat": "substack-newsletter",
+      "rationale": "The long-form home: one idea interpreted deeply each week builds the body of thinking and an owned audience (email list is the only platform-proof asset).",
+      "effort": "medium",
+      "watchSignal": null,
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-li-newsletter",
+      "name": "LinkedIn newsletter",
+      "status": "suggested",
+      "defaultFormat": "linkedin-newsletter",
+      "rationale": "Near-free distribution: LinkedIn notifies subscribers directly. Restructure (never paste) the Substack lead for it. Grows an audience Substack can later convert.",
+      "effort": "low",
+      "watchSignal": "Adopt once the Substack cadence has held for 4 consecutive weeks.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-podcast-guesting",
+      "name": "Podcast guesting circuit",
+      "status": "suggested",
+      "defaultFormat": "podcast-outline",
+      "rationale": "Authority evidence that compounds: a guest slot reaches a borrowed audience and produces clips + quotes to repurpose. The outreach engine already has a podcast-pitch purpose.",
+      "effort": "medium",
+      "watchSignal": "Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-trade-press",
+      "name": "Industry trade press bylines",
+      "status": "suggested",
+      "defaultFormat": "byline-article",
+      "rationale": "iGaming and events trade outlets take operator bylines; one placed article outranks 20 posts for credibility with sponsors and buyers. Stuart has editor relationships from the media years.",
+      "effort": "medium",
+      "watchSignal": "One byline per quarter; start with the lane where a published post drew trade-industry comments.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-speaking",
+      "name": "Speaking (summits, founder communities)",
+      "status": "suggested",
+      "defaultFormat": "speaking-proposal",
+      "rationale": "The talk-as-diagnostic format converts audiences into conversations better than any post. Singapore founder communities are cheap reps; industry summits are the compounding version.",
+      "effort": "high",
+      "watchSignal": "Convert the seeded talk idea (cnt-s16) into an abstract; accept 1 community talk/month.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-video",
+      "name": "Short-form video (YouTube / LinkedIn native)",
+      "status": "suggested",
+      "defaultFormat": "youtube-script",
+      "rationale": "60-90 second talking-head operator notes; LinkedIn privileges native video and it humanises the written POV. Higher production drag, so earn it with writing consistency first.",
+      "effort": "high",
+      "watchSignal": "Test 4 videos after 90 days of consistent written cadence; keep only if they create conversations, not views.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-sg-communities",
+      "name": "Singapore founder communities (WhatsApp/Telegram/in-person)",
+      "status": "suggested",
+      "defaultFormat": "linkedin-comment",
+      "rationale": "Where the actual Strait Up Growth ICP asks for help. Participate, answer genuinely, never broadcast; the Tanjong-style talk loop showed this converts.",
+      "effort": "low",
+      "watchSignal": "Track: replies and DMs originating from community threads (log as engagements with source).",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-revops-communities",
+      "name": "B2B GTM/RevOps communities (Pavilion, RevGenius, Lenny-adjacent Slacks)",
+      "status": "suggested",
+      "defaultFormat": "linkedin-comment",
+      "rationale": "The CRM/RevOps and pricing lanes have dedicated rooms full of the exact buyer. Answer threads with operator specifics; profile does the selling.",
+      "effort": "medium",
+      "watchSignal": "Join 2, answer 3 threads/week for a month; keep if it produces one qualified conversation.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-substack-notes",
+      "name": "Substack Notes + cross-post network",
+      "status": "suggested",
+      "defaultFormat": "x-post",
+      "rationale": "The discovery layer for the newsletter: short takes and quotes from each issue reach other Substack readers, who convert to subscribers at high rates.",
+      "effort": "low",
+      "watchSignal": "Turn 2 lines from each issue into Notes; watch subscriber source attribution.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    },
+    {
+      "id": "ch-medium-quora",
+      "name": "Medium / Quora / Reddit",
+      "status": "parked",
+      "defaultFormat": null,
+      "rationale": "Low fit: audiences skew away from the ICP and self-promotion is punished. Only genuine answers, only if a thread lands in a lane. Do not invest.",
+      "effort": "low",
+      "watchSignal": "Revisit only if search traffic to the Substack shows demand for evergreen versions.",
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
+    }
+  ]
+}

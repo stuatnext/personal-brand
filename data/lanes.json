@@ -1,98 +1,98 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:40:31.185Z",
+    "seededAt": "2026-07-15T01:52:53.896Z",
     "note": "The authority taxonomy. Everything links to one or more lanes."
   },
   "items": [
     {
       "id": "lane-01",
       "name": "Commercial systems",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-02",
       "name": "CRM and RevOps governance",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-03",
       "name": "Pricing and margin discipline",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-04",
       "name": "Practical AI implementation",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-05",
       "name": "B2B events and sponsorship",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-06",
       "name": "Sales and marketing alignment",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-07",
       "name": "Leadership through operating clarity",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-08",
       "name": "Founder-led operating drag",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-09",
       "name": "iGaming commercial strategy",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-10",
       "name": "Prediction markets",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-11",
       "name": "Singapore SME AI adoption",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-12",
       "name": "B2B media monetisation",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-13",
       "name": "Commercial negotiation",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-14",
       "name": "Category creation",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "lane-15",
       "name": "GTM execution",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:40:31.185Z",
+    "seededAt": "2026-07-15T01:52:53.896Z",
     "note": "Mixed: kn-s05/kn-s06/kn-s08/kn-s09 are real working knowledge; the rest are demo/draft records flagged accordingly."
   },
   "items": [
@@ -121,6 +121,126 @@
         "meeting-note"
       ],
       "fictional": true,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a01",
+      "kind": "angle",
+      "title": "Angle: the contrarian read",
+      "body": "Take the consensus reaction to the news and argue the operator's opposite: \"everyone is reading this as X; from inside a commercial team it looks like Y\". Only when genuinely held.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a02",
+      "kind": "angle",
+      "title": "Angle: cost-of-inaction arithmetic",
+      "body": "Put rough, honest numbers on doing nothing: what the unowned follow-up, the informal discount, the untrusted CRM costs per quarter. Bucketed figures, never invented precision.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a03",
+      "kind": "angle",
+      "title": "Angle: the public teardown",
+      "body": "Take a public example (a pricing page, a sponsorship deck, an event website) and read it like an operator. Punch at patterns, never at people or small businesses.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a04",
+      "kind": "angle",
+      "title": "Angle: build-in-public diary",
+      "body": "Strait Up Growth in Asia as an honest running story: what was tried, what worked, what did not. Uncertainty is the feature; it separates Stuart from the guru crowd.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a05",
+      "kind": "angle",
+      "title": "Angle: the diagnostic checklist",
+      "body": "Turn a lesson into 5 questions a founder can score themselves against. The audience self-diagnoses, which is what converts readers into conversations.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a06",
+      "kind": "angle",
+      "title": "Angle: the dated prediction",
+      "body": "A specific, falsifiable call with a date, marked [prediction]. Revisit publicly when the date arrives, right or wrong; the revisit is a second post and compounding credibility.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a07",
+      "kind": "angle",
+      "title": "Angle: reader question, real answer",
+      "body": "Take an actual question from comments/DMs (with permission or anonymised) and answer it properly. Signals the room is alive and generates more questions.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a08",
+      "kind": "angle",
+      "title": "Angle: what I got wrong",
+      "body": "A decision Stuart would take differently now, and the operating rule that came out of it. The highest-trust format there is; use sparingly so it stays honest.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a09",
+      "kind": "angle",
+      "title": "Angle: the cross-industry transplant",
+      "body": "Take a mechanism from one lane (iGaming supplier pricing, event sponsorship renewals, prediction-market compliance hiring) and show what another industry can steal from it. Stuart's unfair advantage is having operated in several.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
+      "createdAt": "2026-06-15T09:00:00.000Z",
+      "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "kn-a10",
+      "kind": "angle",
+      "title": "Angle: the Asia lens",
+      "body": "The same commercial pattern read from Singapore/SEA: what Western B2B advice gets wrong locally (payments, trust, relationship pace, channel mix). Underserved and exactly the SUG ICP.",
+      "tags": [
+        "angle"
+      ],
+      "fictional": false,
       "createdAt": "2026-06-15T09:00:00.000Z",
       "updatedAt": "2026-07-14T09:00:00.000Z"
     }

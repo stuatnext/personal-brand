@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:40:31.185Z",
+    "seededAt": "2026-07-15T01:52:53.896Z",
     "note": "The four workspaces. Data-access rules feed the brand gate in lib/confidentiality.mjs."
   },
   "items": [
@@ -19,8 +19,8 @@
         "NEXT.io confidential commercial detail",
         "client-identifiable material"
       ],
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "brand-sug",
@@ -37,8 +37,8 @@
         "NEXTPredict partner relationships"
       ],
       "positioningStatus": "DRAFT ASSUMPTION. Positioning and services are editable and unconfirmed until Stuart signs them off.",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "brand-nextio",
@@ -51,8 +51,8 @@
         "everything not already public"
       ],
       "dataAccess": "confidential-by-default",
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     },
     {
       "id": "brand-nextpredict",
@@ -67,8 +67,8 @@
         "speaker-recruitment framing",
         "hard sell on first touch"
       ],
-      "createdAt": "2026-07-15T01:40:31.185Z",
-      "updatedAt": "2026-07-15T01:40:31.185Z"
+      "createdAt": "2026-07-15T01:52:53.896Z",
+      "updatedAt": "2026-07-15T01:52:53.896Z"
     }
   ]
 }

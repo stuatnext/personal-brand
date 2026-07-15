@@ -188,8 +188,36 @@ write('prompts', {
   ],
 });
 
+// ---------------------------------------------------------------------------
+// Channel strategy — where Stuart publishes now, and suggested channels he
+// may not have considered. Suggestions carry a rationale, an effort level
+// and the evidence that would justify adopting them ("watchSignal"), so
+// adoption is a decision, not a default.
+// ---------------------------------------------------------------------------
+const channels = [
+  ['ch-linkedin', 'LinkedIn (personal)', 'active', 'linkedin-post', 'Primary channel. Where founders, commercial leaders and the events/iGaming industry already are.', 'low', null],
+  ['ch-x', 'X', 'active', 'x-post', 'Prediction markets and B2B operator conversation lives here; sharpest-sentence versions of each idea, plus threads for the bigger ones.', 'low', null],
+  ['ch-substack', 'Substack newsletter', 'active', 'substack-newsletter', 'The long-form home: one idea interpreted deeply each week builds the body of thinking and an owned audience (email list is the only platform-proof asset).', 'medium', null],
+  ['ch-li-newsletter', 'LinkedIn newsletter', 'suggested', 'linkedin-newsletter', 'Near-free distribution: LinkedIn notifies subscribers directly. Restructure (never paste) the Substack lead for it. Grows an audience Substack can later convert.', 'low', 'Adopt once the Substack cadence has held for 4 consecutive weeks.'],
+  ['ch-podcast-guesting', 'Podcast guesting circuit', 'suggested', 'podcast-outline', 'Authority evidence that compounds: a guest slot reaches a borrowed audience and produces clips + quotes to repurpose. The outreach engine already has a podcast-pitch purpose.', 'medium', 'Pitch 2 shows/month once 3 strong published pieces exist per target lane.'],
+  ['ch-trade-press', 'Industry trade press bylines', 'suggested', 'byline-article', 'iGaming and events trade outlets take operator bylines; one placed article outranks 20 posts for credibility with sponsors and buyers. Stuart has editor relationships from the media years.', 'medium', 'One byline per quarter; start with the lane where a published post drew trade-industry comments.'],
+  ['ch-speaking', 'Speaking (summits, founder communities)', 'suggested', 'speaking-proposal', 'The talk-as-diagnostic format converts audiences into conversations better than any post. Singapore founder communities are cheap reps; industry summits are the compounding version.', 'high', 'Convert the seeded talk idea (cnt-s16) into an abstract; accept 1 community talk/month.'],
+  ['ch-video', 'Short-form video (YouTube / LinkedIn native)', 'suggested', 'youtube-script', '60-90 second talking-head operator notes; LinkedIn privileges native video and it humanises the written POV. Higher production drag, so earn it with writing consistency first.', 'high', 'Test 4 videos after 90 days of consistent written cadence; keep only if they create conversations, not views.'],
+  ['ch-sg-communities', 'Singapore founder communities (WhatsApp/Telegram/in-person)', 'suggested', 'linkedin-comment', 'Where the actual Strait Up Growth ICP asks for help. Participate, answer genuinely, never broadcast; the Tanjong-style talk loop showed this converts.', 'low', 'Track: replies and DMs originating from community threads (log as engagements with source).'],
+  ['ch-revops-communities', 'B2B GTM/RevOps communities (Pavilion, RevGenius, Lenny-adjacent Slacks)', 'suggested', 'linkedin-comment', 'The CRM/RevOps and pricing lanes have dedicated rooms full of the exact buyer. Answer threads with operator specifics; profile does the selling.', 'medium', 'Join 2, answer 3 threads/week for a month; keep if it produces one qualified conversation.'],
+  ['ch-substack-notes', 'Substack Notes + cross-post network', 'suggested', 'x-post', 'The discovery layer for the newsletter: short takes and quotes from each issue reach other Substack readers, who convert to subscribers at high rates.', 'low', 'Turn 2 lines from each issue into Notes; watch subscriber source attribution.'],
+  ['ch-medium-quora', 'Medium / Quora / Reddit', 'parked', null, 'Low fit: audiences skew away from the ICP and self-promotion is punished. Only genuine answers, only if a thread lands in a lane. Do not invest.', 'low', 'Revisit only if search traffic to the Substack shows demand for evergreen versions.'],
+];
+write('channels', {
+  meta: meta('Channel strategy. active = publishing now; suggested = engine recommendation with the evidence that would justify adopting; parked = considered and deprioritised.'),
+  items: channels.map(([id, name, status, defaultFormat, rationale, effort, watchSignal]) => ({
+    id, name, status, defaultFormat, rationale, effort, watchSignal,
+    createdAt: now.toISOString(), updatedAt: now.toISOString(),
+  })),
+});
+
 if (CONFIG_ONLY) {
-  console.log('Config collections seeded (settings, brands, lanes, offers, voice, prompts).');
+  console.log('Config collections seeded (settings, brands, lanes, offers, voice, prompts, channels).');
   process.exit(0);
 }
 
@@ -569,6 +597,19 @@ const knowledge = [
   ['kn-s08', 'template', 'Outreach shape that works', 'Real reason for writing now, one line. Value to them, concrete. One low-pressure ask. Under 150 words. No fake familiarity, no biography.'],
   ['kn-s09', 'link', 'Frequently used links', 'CV: stuart-crowley-cv repo. NEXTPredict summit page: see nextpredict-engine gtm.mjs. LinkedIn: linkedin.com/in/stuart-crowley-b2b561104.'],
   ['kn-s10', 'meeting-note', 'Tanjong founder session notes (fictional)', 'Talk on operating drag landed; strongest reaction to the "waiting on founder" CRM stage line. Devi Menon asked for the checklist. Follow-up captured as eng/tsk records.'],
+  // The angle library — standing wedges to run any insight through when the
+  // obvious post feels flat. The distillation step suggests per-insight
+  // angles; these are the durable shapes.
+  ['kn-a01', 'angle', 'Angle: the contrarian read', 'Take the consensus reaction to the news and argue the operator\'s opposite: "everyone is reading this as X; from inside a commercial team it looks like Y". Only when genuinely held.'],
+  ['kn-a02', 'angle', 'Angle: cost-of-inaction arithmetic', 'Put rough, honest numbers on doing nothing: what the unowned follow-up, the informal discount, the untrusted CRM costs per quarter. Bucketed figures, never invented precision.'],
+  ['kn-a03', 'angle', 'Angle: the public teardown', 'Take a public example (a pricing page, a sponsorship deck, an event website) and read it like an operator. Punch at patterns, never at people or small businesses.'],
+  ['kn-a04', 'angle', 'Angle: build-in-public diary', 'Strait Up Growth in Asia as an honest running story: what was tried, what worked, what did not. Uncertainty is the feature; it separates Stuart from the guru crowd.'],
+  ['kn-a05', 'angle', 'Angle: the diagnostic checklist', 'Turn a lesson into 5 questions a founder can score themselves against. The audience self-diagnoses, which is what converts readers into conversations.'],
+  ['kn-a06', 'angle', 'Angle: the dated prediction', 'A specific, falsifiable call with a date, marked [prediction]. Revisit publicly when the date arrives, right or wrong; the revisit is a second post and compounding credibility.'],
+  ['kn-a07', 'angle', 'Angle: reader question, real answer', 'Take an actual question from comments/DMs (with permission or anonymised) and answer it properly. Signals the room is alive and generates more questions.'],
+  ['kn-a08', 'angle', 'Angle: what I got wrong', 'A decision Stuart would take differently now, and the operating rule that came out of it. The highest-trust format there is; use sparingly so it stays honest.'],
+  ['kn-a09', 'angle', 'Angle: the cross-industry transplant', 'Take a mechanism from one lane (iGaming supplier pricing, event sponsorship renewals, prediction-market compliance hiring) and show what another industry can steal from it. Stuart\'s unfair advantage is having operated in several.'],
+  ['kn-a10', 'angle', 'Angle: the Asia lens', 'The same commercial pattern read from Singapore/SEA: what Western B2B advice gets wrong locally (payments, trust, relationship pace, channel mix). Underserved and exactly the SUG ICP.'],
 ];
 write('knowledge', {
   meta: meta('Mixed: kn-s05/kn-s06/kn-s08/kn-s09 are real working knowledge; the rest are demo/draft records flagged accordingly.'),

@@ -275,6 +275,7 @@ function panelContent(id) {
   openPanel(`
     <h2>${esc(c.title)} ${fictionBadge(c)}</h2>
     ${kv([['Stage', `<span class="badge accent">${esc(c.stage)}</span>`], ['Format', esc(c.format)], ['Lanes', (c.lanes || []).map(esc).join(', ')], ['Objective', esc(c.objective)], ['Brand', esc(c.brand)], ['Confidentiality', esc(c.confidentiality)], ['Published', fmtDate(c.publishedDate)]])}
+    ${c.repurposedFrom ? `<p class="small">Repurposed from <a href="#" data-open="content:${c.repurposedFrom}">${esc(byId('content', c.repurposedFrom)?.title || c.repurposedFrom)} (${esc(byId('content', c.repurposedFrom)?.format || '')})</a> — rebuilt for this channel, never pasted.</p>` : ''}
     ${(c.sourceInsights || []).length ? `<div class="section-t">Source insights (provenance)</div><ul class="plain">${c.sourceInsights.map((sid) => `<li><a href="#" data-open="insights:${sid}">${esc(byId('insights', sid)?.title || sid)}</a></li>`).join('')}</ul>` : '<p class="small">No source insight linked; treat claims as unsupported until sourced.</p>'}
     <div class="section-t">Body</div>
     <textarea id="p-body">${esc(c.body || '')}</textarea>
@@ -296,6 +297,11 @@ function panelContent(id) {
       ${c.stage === 'published' ? `<button class="btn" id="p-perf">Log performance</button>` : ''}
     </div>
     ${c.stage === 'published' && c.performance ? `<div class="small">impressions ${c.performance.impressions ?? '—'} · comments ${c.performance.comments ?? '—'} · conversations ${(c.performance.conversationsCreated || []).length} · opportunities ${(c.performance.opportunitiesInfluenced || []).length}</div>` : ''}
+    <div class="section-t">Repurpose for another channel</div>
+    <div class="btn-row">
+      <select id="p-repformat" style="width:auto">${['x-post', 'x-thread', 'substack-newsletter', 'linkedin-newsletter', 'linkedin-post', 'youtube-script', 'byline-article', 'podcast-outline', 'speaking-proposal'].filter((f) => f !== c.format).map((f) => `<option>${f}</option>`).join('')}</select>
+      <button class="btn" id="p-repurpose">Create channel version</button>
+    </div>
     ${(c.versions || []).length ? `<div class="section-t">Previous versions</div><ul class="plain">${c.versions.map((v) => `<li>${fmtDate(v.at)} · ${esc(v.provider)} · ${esc((v.body || '').slice(0, 90))}…</li>`).join('')}</ul>` : ''}
     <p class="small">The engine never publishes. Stuart posts manually, then records it here.</p>`);
   wireCommon($('#panel'));
@@ -311,6 +317,12 @@ function panelContent(id) {
   if ($('#p-approve')) $('#p-approve').onclick = async () => { const r = await act('approve', { type: 'content', id }); toast(r.brandGate?.flags?.length ? `Approved with flags: ${r.brandGate.flags[0]}` : 'Approved'); await refresh(); panelContent(id); };
   if ($('#p-reject')) $('#p-reject').onclick = async () => { await act('reject', { type: 'content', id, reason: 'needs work' }); toast('Back to draft'); await refresh(); panelContent(id); };
   if ($('#p-published')) $('#p-published').onclick = async () => { await act('mark-published', { contentId: id }); toast('Recorded as published'); await refresh(); panelContent(id); };
+  if ($('#p-repurpose')) $('#p-repurpose').onclick = async () => {
+    try {
+      const r = await act('repurpose', { contentId: id, format: $('#p-repformat').value });
+      toast(`Channel version drafted (${r.provider})`); await refresh(); panelContent(r.content.id);
+    } catch (e) { toast(e.message, true); }
+  };
   if ($('#p-perf')) $('#p-perf').onclick = async () => {
     const impressions = Number(prompt('Impressions?', c.performance?.impressions ?? '') || 0);
     const comments = Number(prompt('Comments?', c.performance?.comments ?? '') || 0);
@@ -704,9 +716,27 @@ routes.reviews = async () => {
 // ---------------------------------------------------------------------------
 routes.knowledge = async () => {
   const v = S.voiceDoc;
+  const chStatusBadge = { active: 'good', suggested: 'accent', parked: '' };
+  const angles = S.knowledge.filter((k) => k.kind === 'angle');
+  const knOther = S.knowledge.filter((k) => k.kind !== 'angle');
   $('#main').innerHTML = `
     <div class="view-head"><div><h1>Knowledge &amp; voice</h1><div class="h-sub">what the AI retrieves before it drafts anything; every generated output cites its sources</div></div></div>
-    <div class="two-col">
+
+    <h2>Channel strategy</h2>
+    <p class="small">Where the ideas travel. <strong>Suggested</strong> channels are engine recommendations with the evidence that would justify adopting them; adopt when the watch-signal fires, not before.</p>
+    <div class="table-wrap"><table><thead><tr><th>Channel</th><th>Status</th><th>Why</th><th>Effort</th><th>Adopt when</th><th></th></tr></thead>
+    <tbody>${[...S.channels].sort((a, b) => ({ active: 0, suggested: 1, parked: 2 }[a.status] - { active: 0, suggested: 1, parked: 2 }[b.status])).map((ch) => `<tr>
+      <td><strong>${esc(ch.name)}</strong></td>
+      <td><span class="badge ${chStatusBadge[ch.status] || ''}">${esc(ch.status)}</span></td>
+      <td class="small">${esc(ch.rationale)}</td><td>${esc(ch.effort)}</td>
+      <td class="small">${esc(ch.watchSignal || '—')}</td>
+      <td>${ch.status === 'suggested' ? `<button class="btn btn-sm" data-adopt="${ch.id}">Adopt</button>` : ''}</td></tr>`).join('')}</tbody></table></div>
+
+    <h2>Angle library</h2>
+    <p class="small">Standing wedges to run any insight through when the obvious post feels flat.</p>
+    <div class="table-wrap"><table><tbody>${angles.map((k) => `<tr><td style="white-space:nowrap"><strong>${esc(k.title.replace('Angle: ', ''))}</strong></td><td class="small">${esc(k.body)}</td></tr>`).join('')}</tbody></table></div>
+
+    <div class="two-col" style="margin-top:1.2rem">
       <div>
         <h2>Voice rules (approved — active in every draft)</h2>
         <ul class="plain">${(v.rules || []).map((r) => `<li>${esc(r.text)} <span class="badge">${esc(r.source || '')}</span>${r.status !== 'approved' ? ' <span class="badge warn">proposed</span>' : ''}</li>`).join('')}</ul>
@@ -720,11 +750,15 @@ routes.knowledge = async () => {
         <p class="small">Extracted rules are proposals; nothing becomes active until approved above.</p>
       </div>
       <div>
-        <h2>Knowledge base (${S.knowledge.length})</h2>
-        ${S.knowledge.map((k) => `<div class="card"><strong>${esc(k.title)}</strong> <span class="badge">${esc(k.kind)}</span> ${k.fictional ? '<span class="badge fiction">fictional demo</span>' : ''}
+        <h2>Knowledge base (${knOther.length})</h2>
+        ${knOther.map((k) => `<div class="card"><strong>${esc(k.title)}</strong> <span class="badge">${esc(k.kind)}</span> ${k.fictional ? '<span class="badge fiction">fictional demo</span>' : ''}
           <div class="small" style="margin-top:.25rem">${esc(k.body)}</div></div>`).join('')}
       </div>
     </div>`;
+  $('#main').querySelectorAll('[data-adopt]').forEach((b) => b.onclick = async () => {
+    await api(`/collections/channels/${b.dataset.adopt}`, { method: 'PATCH', body: { status: 'active', adoptedAt: new Date().toISOString() } });
+    toast('Channel adopted'); await refresh(); render();
+  });
   $('#vx-go').onclick = async () => {
     const r = await act('extract-voice-rule', { original: $('#vx-orig').value, edited: $('#vx-edit').value, note: $('#vx-note').value });
     toast(`${r.proposed.length} rule(s) proposed`); await refresh(); render();

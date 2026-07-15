@@ -134,6 +134,42 @@ ok(vx.status === 200 && vx.data.proposed.length >= 1, 'edit comparison proposes 
 const vApprove = await action('approve-voice-rule', { ruleId: vx.data.proposed[0].id });
 ok(vApprove.status === 200, 'Stuart approves a proposed rule -> active');
 
+console.log('\n== Intel ingestion (the front door) ==');
+{
+  const os = await import('node:os');
+  const fsm = await import('node:fs');
+  const dir = fsm.mkdtempSync(path.join(os.tmpdir(), 'ingest-test-'));
+  fsm.writeFileSync(path.join(dir, 'note-public.md'), 'Renewal pricing observation\n\nA supplier renegotiation this week showed the same pattern again: the buyer had no comparison anchor, so the incumbent price held without a fight. Anchors beat arguments in renewals.');
+  fsm.writeFileSync(path.join(dir, 'note-secret.txt'), 'NEXT.io internal: the Q3 pipeline review showed €2.4M active with an 18% margin uplift from the new discount tiers. CEO decided to hold pricing.');
+  fsm.writeFileSync(path.join(dir, 'capture.html'), '<html><body><h1>Prediction markets hiring watch</h1><p>Kalshi posted three compliance roles this &amp; last week.</p><script>ignore()</script></body></html>');
+  const out1 = execFileSync('node', [path.join(ROOT, 'scripts/ingest.mjs'), dir, '--source', 'self-test drop'], { encoding: 'utf8' });
+  ok(/created: 3/.test(out1), 'ingest creates one insight per record (3 files)', out1.split('\n')[2]);
+  ok(/strictly-confidential|private-operating-lesson/.test(out1), 'ingest flags the NEXT.io note as confidential');
+  ok(/Kalshi|CANDIDATE ENTITIES/.test(out1), 'ingest surfaces candidate entities without auto-creating them');
+  const out2 = execFileSync('node', [path.join(ROOT, 'scripts/ingest.mjs'), dir], { encoding: 'utf8' });
+  ok(/created: 0/.test(out2) && /duplicates skipped: 3/.test(out2), 'second ingest of the same drop is a no-op (dedupe by content hash)');
+  const ingested = await get('/api/collections/insights');
+  const mine = ingested.data.items.filter((i) => i.source === 'self-test drop' || (i.source || '').startsWith('ingest:'));
+  ok(mine.some((i) => (i.raw || '').includes('Anchors beat arguments')), 'raw text kept lossless');
+  ok(mine.some((i) => (i.lanes || []).includes('Prediction markets')), 'lane heuristics tag the hiring-watch note');
+  fsm.rmSync(dir, { recursive: true, force: true });
+}
+
+console.log('\n== Multi-channel repurposing ==');
+{
+  const rep = await action('repurpose', { contentId: cntId, format: 'x-thread' });
+  ok(rep.status === 200 && rep.data.content.format === 'x-thread', 'repurpose creates an X thread version');
+  ok(rep.data.content.repurposedFrom === cntId, 'repurposed piece links back to its source (provenance)');
+  const srcBody = (await get(`/api/collections/content/${cntId}`)).data.body;
+  ok(rep.data.content.body && rep.data.content.body !== srcBody, 'repurposed body is not a verbatim copy');
+  const same = await action('repurpose', { contentId: cntId, format: 'linkedin-post' });
+  ok(same.status === 400, 'repurposing to the same format is rejected');
+  const sub = await action('repurpose', { contentId: cntId, format: 'substack-newsletter' });
+  ok(sub.status === 200 && /Subject:/.test(sub.data.content.body), 'Substack version carries newsletter structure (subject line)');
+  const channels = await get('/api/collections/channels');
+  ok(channels.data.items.some((c) => c.status === 'suggested' && c.watchSignal), 'channel strategy library served with adoption watch-signals');
+}
+
 console.log('\n== Reviews ==');
 const wk = await action('weekly-review', {});
 ok(wk.status === 200 && wk.data.review.body.recommendedTheme, 'weekly review drafted from records');

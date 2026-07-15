@@ -1,8 +1,24 @@
-# Strait Up Growth engine — working notes for Claude
+# Stuart Crowley's personal brand engine — working notes for Claude
 
-Stuart Crowley's personal-brand / authority / outreach / pipeline OS for
-**Strait Up Growth** (his consultancy). Local-first, zero dependencies.
-Read `README.md` and `docs/ARCHITECTURE.md` before changing anything.
+Stuart's personal-brand / authority / outreach / pipeline OS. Strait Up
+Growth (his consultancy) is ONE of four brand workspaces inside it
+(Stuart personal, Strait Up Growth, NEXT.io, NEXTPredict). Local-first,
+zero dependencies. Read `README.md` and `docs/ARCHITECTURE.md` before
+changing anything.
+
+## The daily job: ingest what Stuart drops
+
+When Stuart hands over intel (notes, ZIPs, HTML captures, JSONL), run:
+
+```bash
+node scripts/ingest.mjs <path> [--source "label"]   # --dry-run to preview
+```
+
+Lossless raw text, hash-dedupe, confidentiality review, lane tags, entity
+matches, candidate-entity list (research, never invent). Then distil the
+strongest insights and draft channel versions (LinkedIn / X / Substack;
+`repurpose` action rebuilds per channel, never copies). Commit `data/`
+after — git is the database.
 
 ## The rules that matter
 

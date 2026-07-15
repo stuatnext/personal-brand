@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T01:40:31.185Z",
+    "seededAt": "2026-07-15T01:52:53.896Z",
     "note": "The voice system. Approved rules feed the AI context; proposed rules wait for Stuart. The linter (lib/voice.mjs) enforces the mechanical bits. Full worldview: data/voice/stuart-voice.md."
   },
   "rules": [
