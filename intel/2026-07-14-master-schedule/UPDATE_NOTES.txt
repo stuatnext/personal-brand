@@ -1,0 +1,22 @@
+NEXTPredict schedule update, 14 July 2026
+
+Added nine items from the final 13-14 July research sweep.
+
+Verified / ready:
+- New York Post promotion comparison: Kalshi and Polymarket marketed with NYPMAX
+- Love Island spoiler supply chain
+- LeBron / Axios and prediction prices in sports journalism
+- Goldman employee compliance framing
+- UC Berkeley / MarketWatch whale-effect discussion
+
+New proprietary projects:
+- The Spoiler Supply Chain
+- The Probability Citation Tracker
+
+Verification-gated watches:
+- Blockchain.com embeds Polymarket
+- StartupHub.ai cross-venue arbitrage dashboards
+- Prospect Prediction Markets / Foris DAX FCM LOI and growth projections
+
+Total calendar items: 103
+Total proprietary data-journalism projects: 49

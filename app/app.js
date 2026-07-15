@@ -689,8 +689,8 @@ routes.analytics = async () => {
     <div class="table-wrap"><table><thead><tr><th>Component</th><th style="width:30%">Points</th><th>Evidence</th></tr></thead>
     <tbody>${au.components.map((c) => `<tr><td>${esc(c.label)}</td><td>${meter(c.points, c.weight)}</td><td class="small">${esc(c.why)}${c.missing ? `<br><em style="color:var(--warn)">missing: ${esc(c.missing)}</em>` : ''}</td></tr>`).join('')}</tbody></table></div>
 
-    <h2>The two pillars</h2>
-    <p class="small">Stuart's authority targets: Strait Up Growth (AI, commercial &amp; marketing strategy, operational efficiency — Singapore &amp; SEA) and prediction markets. Everything else is supporting colour.</p>
+    <h2>The authority pillars</h2>
+    <p class="small">Stuart's authority targets: Strait Up Growth (AI, commercial &amp; marketing strategy, operational efficiency — Singapore &amp; SEA), prediction markets, and iGaming &amp; sports betting (the NEXT.io positioning). Everything else is supporting colour.</p>
     <div class="table-wrap"><table><thead><tr><th>Pillar</th><th class="num">Content items</th><th class="num">Published (30d)</th><th class="num">Conversations</th><th class="num">Opportunities</th><th class="num">Live leads</th></tr></thead>
     <tbody>${(a.pillars || []).map((p) => `<tr><td><strong>${esc(p.pillar)}</strong><div class="small">${p.lanes.map(esc).join(' · ')}</div></td><td class="num">${p.contentItems}</td><td class="num">${p.published30d}</td><td class="num"><strong>${p.conversations}</strong></td><td class="num">${p.opportunities}</td><td class="num">${p.leadsDetected}</td></tr>`).join('')}</tbody></table></div>
 

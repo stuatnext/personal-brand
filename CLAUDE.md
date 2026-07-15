@@ -27,15 +27,28 @@ prediction-market launches/compliance hires. They queue in
 skeleton records; extend `LEAD_SIGNALS` in `scripts/ingest.mjs` whenever a
 real lead pattern repeats.
 
-## The two authority pillars (never let them starve)
+## The three authority pillars (never let them starve)
 
 1. Strait Up Growth: AI, commercial & marketing strategy, operational
    efficiency — specifically Singapore & SEA.
 2. Prediction markets.
+3. iGaming & sports betting (the NEXT.io positioning). Sportsbook/casino
+   vocabulary is fine here and in Stuart-personal copy; it stays BANNED in
+   NEXTPredict copy (lib/voice.mjs enforces per-brand).
 
 Lane tiers live on `data/lanes.json` (`tier: core|supporting`,
 `pillar`). Core lanes are weighted up in scoring/Today/analytics; keep
 new lanes tiered honestly and don't mark colour lanes core.
+
+## Real data now lives in data/ — protect it
+
+The NEXTPredict master social schedule (103 items) is REAL data in
+`data/calendar.json` (source archived in `intel/`). NEVER run
+`seed.mjs --force` on real data; use `--config-only --force` to refresh
+lanes/brands/channels/prompts without touching records. The self-test is
+hermetic (scratch ENGINE_DATA_DIR) and safe to run any time. Schedule
+updates re-import with `scripts/import-schedule.mjs` (dedupes by
+date+topic).
 
 ## The rules that matter
 

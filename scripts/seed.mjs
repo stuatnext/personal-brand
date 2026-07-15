@@ -29,7 +29,7 @@ const day = (offsetDays = 0) => iso(offsetDays).slice(0, 10);
 
 // Safety: never clobber real (non-fictional) records without --force.
 if (!FORCE) {
-  for (const c of ['insights', 'contacts', 'content', 'outreach', 'opportunities']) {
+  for (const c of ['insights', 'contacts', 'content', 'outreach', 'opportunities', 'calendar', 'leads']) {
     const existing = read(c).items || [];
     if (existing.some((i) => !i.fictional)) {
       console.error(`data/${c}.json contains non-fictional records. Refusing to overwrite. Use --force if you really mean it.`);
@@ -107,10 +107,11 @@ write('brands', {
 });
 
 // ---------------------------------------------------------------------------
-// Authority lanes — tiered around the TWO PILLARS Stuart must own:
-//   Pillar 1 "strait-up-growth": AI, commercial & marketing strategy,
+// Authority lanes — tiered around the THREE PILLARS Stuart must own:
+//   1 "strait-up-growth": AI, commercial & marketing strategy,
 //     operational efficiency, specifically Singapore and SEA.
-//   Pillar 2 "prediction-markets".
+//   2 "prediction-markets".
+//   3 "igaming": iGaming & sports betting, the NEXT.io positioning.
 // core = the positioning depends on it (weighted up everywhere);
 // supporting = credibility context, never allowed to dominate the feed.
 // ---------------------------------------------------------------------------
@@ -127,14 +128,15 @@ const LANES = [
   ['Singapore & SEA commercial growth', 'core', 'strait-up-growth'],
   ['Prediction markets', 'core', 'prediction-markets'],
   ['Category creation', 'supporting', 'prediction-markets'],
-  ['B2B events and sponsorship', 'supporting', null],
-  ['B2B media monetisation', 'supporting', null],
-  ['iGaming commercial strategy', 'supporting', null],
+  ['iGaming commercial strategy', 'core', 'igaming'],
+  ['Sports betting & sportsbook strategy', 'core', 'igaming'],
+  ['B2B events and sponsorship', 'supporting', 'igaming'],
+  ['B2B media monetisation', 'supporting', 'igaming'],
   ['Commercial negotiation', 'supporting', 'strait-up-growth'],
   ['Leadership through operating clarity', 'supporting', 'strait-up-growth'],
 ];
 write('lanes', {
-  meta: meta('The authority taxonomy, tiered around the two pillars: Strait Up Growth (AI / commercial & marketing strategy / operational efficiency, Singapore & SEA) and prediction markets. core lanes are weighted up in scoring, Today and the neglect warnings.'),
+  meta: meta('The authority taxonomy, tiered around the three pillars: Strait Up Growth (AI / commercial & marketing strategy / operational efficiency, Singapore & SEA), prediction markets, and iGaming & sports betting (the NEXT.io positioning; its events/media lanes are supporting context). core lanes are weighted up in scoring, Today and the neglect warnings. NOTE the brand boundary: iGaming/sportsbook vocabulary is fine in Stuart-personal and NEXT.io content and stays BANNED in NEXTPredict copy (linter-enforced).'),
   items: LANES.map(([name, tier, pillar], i) => ({
     id: `lane-${String(i + 1).padStart(2, '0')}`, name, tier, pillar,
     createdAt: now.toISOString(), updatedAt: now.toISOString(),
@@ -214,6 +216,7 @@ const channels = [
   ['ch-linkedin', 'LinkedIn (personal)', 'active', 'linkedin-post', 'Primary channel. Where founders, commercial leaders and the events/iGaming industry already are.', 'low', null],
   ['ch-x', 'X', 'active', 'x-post', 'Prediction markets and B2B operator conversation lives here; sharpest-sentence versions of each idea, plus threads for the bigger ones.', 'low', null],
   ['ch-substack', 'Substack newsletter', 'active', 'substack-newsletter', 'The long-form home: one idea interpreted deeply each week builds the body of thinking and an owned audience (email list is the only platform-proof asset).', 'medium', null],
+  ['ch-pm-forum', 'Prediction Markets Forum (NEXTPredict)', 'active', 'linkedin-post', 'The NEXTPredict community surface: category analysis and data-journalism pieces land here per the master social schedule. NEXTPredict voice rules apply (category vocabulary only).', 'medium', null],
   ['ch-li-newsletter', 'LinkedIn newsletter', 'suggested', 'linkedin-newsletter', 'Near-free distribution: LinkedIn notifies subscribers directly. Restructure (never paste) the Substack lead for it. Grows an audience Substack can later convert.', 'low', 'Adopt once the Substack cadence has held for 4 consecutive weeks.'],
   ['ch-podcast-guesting', 'Podcast guesting circuit', 'suggested', 'podcast-outline', 'Authority evidence that compounds: a guest slot reaches a borrowed audience and produces clips + quotes to repurpose. The outreach engine already has a podcast-pitch purpose.', 'medium', 'Pitch 2 shows/month once 3 strong published pieces exist per target lane.'],
   ['ch-trade-press', 'Industry trade press bylines', 'suggested', 'byline-article', 'iGaming and events trade outlets take operator bylines; one placed article outranks 20 posts for credibility with sponsors and buyers. Stuart has editor relationships from the media years.', 'medium', 'One byline per quarter; start with the lane where a published post drew trade-industry comments.'],

@@ -39,7 +39,8 @@ const LANE_HINTS = [
   [/pric(e|ing)|discount|margin|packag|willingness.to.pay/i, 'Pricing and margin discipline'],
   [/\bai\b|prompt|llm|claude|gpt|automation|workflow/i, 'Practical AI implementation'],
   [/sponsor|exhibit|summit|conference|event/i, 'B2B events and sponsorship'],
-  [/igaming|casino operator|slots|sportsbook industry/i, 'iGaming commercial strategy'],
+  [/igaming|casino|slots|gaming operator|gaming supplier/i, 'iGaming commercial strategy'],
+  [/sports ?betting|sportsbook|bookmaker|odds feed|in-play|wager/i, 'Sports betting & sportsbook strategy'],
   [/prediction market|event contract|kalshi|polymarket|cftc/i, 'Prediction markets'],
   [/singapore|\bsea\b|southeast asia|apac|malaysia|indonesia|vietnam|thailand|philippines|jakarta|kuala lumpur|bangkok|manila|ho chi minh|hanoi/i, 'Singapore & SEA commercial growth'],
   [/operational efficiency|process(es)? (broke|fix|map)|operating (drag|cadence|rhythm)|efficien(cy|t)|manual work|bottleneck/i, 'Operational efficiency'],
@@ -65,6 +66,9 @@ const LEAD_SIGNALS = [
   { re: /launch(es|ed|ing)?[^.\n]{0,50}(prediction market|event contracts?)|new (prediction[- ]market )?(venue|exchange)|dcm designation|cftc (approv|filing|designat)/i, signal: 'pm-venue-launch', pillar: 'prediction-markets', why: 'A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.' },
   { re: /(head of|hiring)[^.\n]{0,30}(compliance|market integrity|surveillance)|compliance (hire|role|team)/i, signal: 'pm-compliance-hire', pillar: 'prediction-markets', why: 'Compliance-first hiring is the tell for serious prediction-markets operators (Stuart\'s own published read).' },
   { re: /(partnership|integrat(es|ion)|deal) with[^.\n]{0,40}(kalshi|polymarket|prediction market)/i, signal: 'pm-partnership', pillar: 'prediction-markets', why: 'Companies partnering into the category are forming their strategy now.' },
+  { re: /(igaming|casino|sportsbook|sports betting|betting operator|slots? supplier)[^.\n]{0,70}(licen[cs]e|regulat(ed|ion|or)|goes live|enters?|launch|expand)|licen[cs]e (award|grant|approv)[^.\n]{0,60}(igaming|casino|sportsbook|betting|gaming)/i, signal: 'igaming-market-move', pillar: 'igaming', why: 'A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io\'s exact audience, and moving now.' },
+  { re: /(igaming|casino|sportsbook|sports betting|gaming (group|operator))[^.\n]{0,80}(appoint|joins as|named|hires?)|(appoint(s|ed)|joins as|named)[^.\n]{0,80}(igaming|casino|sportsbook|sports betting)/i, signal: 'igaming-leadership', pillar: 'igaming', why: 'Senior moves in iGaming/sports betting: new leaders reset media, sponsorship and event budgets in their first quarter.' },
+  { re: /(acquir(es|ed|ing)|merger|takeover|buys?)[^.\n]{0,70}(igaming|casino|sportsbook|betting|slots)|(igaming|casino|sportsbook|betting)[^.\n]{0,70}(acquir(es|ed|ing)|merger|takeover)/i, signal: 'igaming-ma', pillar: 'igaming', why: 'M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.' },
 ];
 
 const hash = (text) => crypto.createHash('sha1').update(text.replace(/\s+/g, ' ').trim().toLowerCase()).digest('hex');

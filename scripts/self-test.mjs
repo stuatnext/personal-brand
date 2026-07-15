@@ -7,10 +7,15 @@
 
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
+import fs from 'node:fs';
+import os from 'node:os';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const seed = () => execFileSync('node', [path.join(ROOT, 'scripts/seed.mjs'), '--force'], { stdio: 'pipe' });
+// Hermetic: run against a scratch data dir so real data/ is never touched.
+const TESTDATA = fs.mkdtempSync(path.join(os.tmpdir(), 'engine-test-data-'));
+process.env.ENGINE_DATA_DIR = TESTDATA;
+const seed = () => execFileSync('node', [path.join(ROOT, 'scripts/seed.mjs'), '--force'], { stdio: 'pipe', env: { ...process.env, ENGINE_DATA_DIR: TESTDATA } });
 
 let passed = 0, failed = 0;
 function ok(cond, name, detail = '') {
@@ -166,6 +171,7 @@ console.log('\n== Lead detection (prospects from dropped intel) ==');
     'Ampersand Freight Systems raised a $5M seed round and is expanding into Singapore next quarter.',
     'Meanwhile Harbourline Logistics is hiring a Head of RevOps to fix its reporting stack.',
     'Separately, Forecastly Exchange launched a prediction market venue and filed for DCM designation with the CFTC.',
+    'And Nordlight Gaming Group was granted a sportsbook licence for the newly regulated Brazilian market.',
   ].join('\n'));
   const out = execFileSync('node', [path.join(ROOT, 'scripts/ingest.mjs'), dir, '--source', 'lead-test'], { encoding: 'utf8' });
   ok(/LEADS DETECTED/.test(out), 'ingest reports detected leads', out.split('\n').slice(-8).join(' | '));
@@ -176,6 +182,8 @@ console.log('\n== Lead detection (prospects from dropped intel) ==');
   ok(!!pmLead, 'prediction-markets pillar lead detected (venue launch)', JSON.stringify(leads.map((l) => `${l.name}:${l.pillar}`)));
   const funded = leads.find((l) => /Ampersand/i.test(l.name) && l.signal === 'funding');
   ok(!!funded, 'funding signal produced a Strait Up Growth lead');
+  const igLead = leads.find((l) => l.pillar === 'igaming' && /Nordlight/i.test(l.name));
+  ok(!!igLead, 'iGaming pillar lead detected (sportsbook licence)', JSON.stringify(leads.map((l) => `${l.name}:${l.pillar}:${l.signal}`)));
   ok(leads.every((l) => (l.evidence || []).every((e) => e.quote)), 'every lead carries its evidence quote (provenance)');
   const conv = await action('convert-lead', { leadId: funded.id });
   ok(conv.status === 200 && conv.data.companyId && conv.data.task, 'convert creates a skeleton company + research task');
@@ -191,9 +199,9 @@ console.log('\n== Lead detection (prospects from dropped intel) ==');
 console.log('\n== Authority pillars ==');
 {
   const lanes = (await get('/api/collections/lanes')).data.items;
-  ok(lanes.filter((l) => l.tier === 'core').length >= 9 && lanes.some((l) => l.name === 'Operational efficiency'), 'lane taxonomy tiered with core pillar lanes');
+  ok(lanes.filter((l) => l.tier === 'core').length >= 11 && lanes.some((l) => l.name === 'Sports betting & sportsbook strategy'), 'lane taxonomy tiered with core pillar lanes across all three pillars');
   const an = (await get('/api/analytics')).data;
-  ok(Array.isArray(an.pillars) && an.pillars.length === 2, 'analytics reports the two pillars');
+  ok(Array.isArray(an.pillars) && an.pillars.length === 3, 'analytics reports the three pillars (SUG/SEA, prediction markets, iGaming & sports betting)');
   ok(an.pillars.every((p) => 'leadsDetected' in p && 'conversations' in p), 'pillar rollup includes leads and conversations');
   const coreScore = await action('score-content', { contentId: 'cnt-s04' }); // SEA/AI lanes
   ok(coreScore.data.content.score.criteria.sugRelevance === 5, 'core-pillar content scores 5 on relevance');
@@ -223,6 +231,6 @@ const auditLog = await get('/api/audit');
 ok(auditLog.data.items.length > 10, `audit trail populated (${auditLog.data.items.length} entries visible)`);
 
 server.close();
-seed(); // leave the repo in the clean seeded state
-console.log(`\n${passed} passed, ${failed} failed. Data re-seeded to clean fictional state.`);
+fs.rmSync(TESTDATA, { recursive: true, force: true });
+console.log(`\n${passed} passed, ${failed} failed. Ran against a scratch data dir; real data/ untouched.`);
 process.exit(failed ? 1 : 0);

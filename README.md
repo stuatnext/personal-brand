@@ -36,10 +36,24 @@ newsletter (subject line and all), YouTube script, trade-press byline,
 podcast outline, speaking abstract. Repurposing rebuilds the expression
 per channel — it never pastes the same text twice.
 
+**Schedule workbooks import straight into the calendar:**
+
+```bash
+node scripts/import-schedule.mjs <xlsx> [--dry-run] [--clear-fictional]
+```
+
+Built for the NEXTPredict master social schedule shape (any sheet with
+Date/Channel/Topic headers works): items land with their status, priority
+and verification notes; verification-gated items are listed loudly;
+re-import dedupes on date + topic. The 2026-07-14 master schedule (103
+items) is live in `#/calendar`, and its source files are archived
+losslessly under `intel/`.
+
 **Ingestion also detects prospects.** When a buying signal and an entity
 appear together in dropped intel — funding rounds, commercial leadership
 hires, Singapore/SEA expansion, stated CRM/pipeline pain, explicit
-requests for help, prediction-market venue launches, compliance hires,
+requests for help, prediction-market venue launches, compliance and
+licensing moves in iGaming/sports betting, M&A,
 category partnerships — a **lead** is queued with the evidence quote, the
 pillar it belongs to and a suggested next step. Known contacts/companies
 are linked to their existing records; unknown entities wait for research.
@@ -47,7 +61,7 @@ Leads are worked in `#/relationships` (convert to a skeleton record +
 research task, or dismiss) and surface on Today while the trigger is
 fresh. Nothing is ever contacted or enriched automatically.
 
-## The two authority pillars
+## The three authority pillars
 
 The lane taxonomy is tiered around what Stuart must become known for:
 
@@ -55,6 +69,10 @@ The lane taxonomy is tiered around what Stuart must become known for:
    & marketing strategy, CRM/RevOps, pricing, GTM, operational efficiency,
    founder-led operating drag — specifically for **Singapore & SEA**.
 2. **Prediction markets.**
+3. **iGaming & sports betting** — the NEXT.io industry positioning (its
+   events/media lanes ride along as supporting context). Brand boundary:
+   sportsbook/casino vocabulary is fine in Stuart-personal and NEXT.io
+   content and stays linter-banned in NEXTPredict copy.
 
 Core-pillar lanes are weighted up in the content scorecard, jump the queue
 on Today, drive the authority score's market-relevance component, and get
