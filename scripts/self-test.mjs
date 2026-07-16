@@ -134,6 +134,8 @@ const approvalCreateSmuggle = await post('/api/collections/content', { title: 'a
 ok(approvalCreateSmuggle.status === 409, 'generic POST cannot create pre-approved content', JSON.stringify(approvalCreateSmuggle.data));
 const lintRes = await action('lint', { text: 'This is a game changer — not just hype, but the next evolution of events.', brand: 'stuart', kind: 'post' });
 ok(!lintRes.data.ok && lintRes.data.problems.length >= 3, `voice linter catches em dash + banned phrases + parallelism (${lintRes.data.problems.length} problems)`);
+const packLint = await action('lint', { text: 'We are at an inflection point and this highlights a broader trend.', brand: 'stuart', kind: 'post' });
+ok(!packLint.data.ok && packLint.data.problems.length >= 3, `voice-pack 2026-07-15 banned phrases enforced (${packLint.data.problems.length} problems)`);
 const npLint = await action('lint', { text: 'The betting industry will love this.', brand: 'nextpredict', kind: 'post' });
 ok(!npLint.data.ok, 'NEXTPredict category-vocabulary rule enforced');
 const gate = await action('brand-gate', { text: 'Our NEXT.io pipeline hit a record.', brand: 'strait-up-growth', classification: 'public' });

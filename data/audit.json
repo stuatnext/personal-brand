@@ -930,6 +930,502 @@
       "action": "insert",
       "collection": "content",
       "summary": "Category creation is mostly patience plus vocabulary"
+    },
+    {
+      "id": "cal-170d19d6",
+      "at": "2026-07-16T08:15:58.829Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi flight-cancellation contracts hit a data-rights problem"
+    },
+    {
+      "id": "cal-a291bb14",
+      "at": "2026-07-16T08:15:58.832Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The CFTC just made contract finality the story"
+    },
+    {
+      "id": "cal-b98b591b",
+      "at": "2026-07-16T08:15:58.835Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi probabilities are appearing inside ChatGPT answers"
+    },
+    {
+      "id": "cal-aa756acb",
+      "at": "2026-07-16T08:15:58.837Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Blockchain.com embeds Polymarket"
+    },
+    {
+      "id": "cal-96ed18c6",
+      "at": "2026-07-16T08:15:58.840Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi Pro and the institutional interface"
+    },
+    {
+      "id": "cal-1600f457",
+      "at": "2026-07-16T08:15:58.842Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: useful hedges, answer-layer distribution and the perception fight"
+    },
+    {
+      "id": "cal-2973b185",
+      "at": "2026-07-16T08:15:58.844Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Michael Burry calls prediction markets gambling"
+    },
+    {
+      "id": "cal-e8701e40",
+      "at": "2026-07-16T08:15:58.849Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: World Cup final market watch"
+    },
+    {
+      "id": "cal-45f0ba25",
+      "at": "2026-07-16T08:15:58.851Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: what survives after the World Cup?"
+    },
+    {
+      "id": "cal-cfbe251d",
+      "at": "2026-07-16T08:15:58.854Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The World Cup final was an acquisition event. Monday is the product test."
+    },
+    {
+      "id": "cal-4ad5a43c",
+      "at": "2026-07-16T08:15:58.856Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Gopuff puts Polymarket in the shopping basket"
+    },
+    {
+      "id": "cal-fa1c7675",
+      "at": "2026-07-16T08:15:58.858Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Coming Home GBA and the margin route into prediction markets"
+    },
+    {
+      "id": "cal-09f67be3",
+      "at": "2026-07-16T08:15:58.860Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: professional interfaces, margin and market structure"
+    },
+    {
+      "id": "cal-8dfa11a1",
+      "at": "2026-07-16T08:15:58.865Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: compliance, education and category identity"
+    },
+    {
+      "id": "cal-652442ef",
+      "at": "2026-07-16T08:15:58.867Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets are hiring a full operating stack"
+    },
+    {
+      "id": "cal-e72f8f76",
+      "at": "2026-07-16T08:15:58.870Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Gibraltar creates a third regulatory category"
+    },
+    {
+      "id": "cal-8b79bf35",
+      "at": "2026-07-16T08:15:58.873Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: the developer and infrastructure layer"
+    },
+    {
+      "id": "cal-43d3da63",
+      "at": "2026-07-16T08:15:58.876Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket blocked in Czechia"
+    },
+    {
+      "id": "cal-c4d8597b",
+      "at": "2026-07-16T08:15:58.878Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The CFTC’s nine-state legal war"
+    },
+    {
+      "id": "cal-fd764162",
+      "at": "2026-07-16T08:15:58.883Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: source quality and what deserves a story"
+    },
+    {
+      "id": "cal-1fe3586f",
+      "at": "2026-07-16T08:15:58.885Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-market marketing now has a compliance stack"
+    },
+    {
+      "id": "cal-a41b99dc",
+      "at": "2026-07-16T08:15:58.887Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket’s US re-entry meets Europe’s national blocks"
+    },
+    {
+      "id": "cal-4396ec17",
+      "at": "2026-07-16T08:15:58.889Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Prediction Markets are Gambling Act"
+    },
+    {
+      "id": "cal-9ae998de",
+      "at": "2026-07-16T08:15:58.892Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "AGA moves into the Wisconsin federal fight"
+    },
+    {
+      "id": "cal-00d1de5d",
+      "at": "2026-07-16T08:15:58.896Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket’s fake-win marketing problem"
+    },
+    {
+      "id": "cal-a1817f33",
+      "at": "2026-07-16T08:15:58.899Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Can a prop-trading model build sports-market liquidity?"
+    },
+    {
+      "id": "cal-39996c90",
+      "at": "2026-07-16T08:15:58.902Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "When the settlement source can be manipulated"
+    },
+    {
+      "id": "cal-f6f13184",
+      "at": "2026-07-16T08:15:58.904Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi wants to move beyond event contracts"
+    },
+    {
+      "id": "cal-8abc00aa",
+      "at": "2026-07-16T08:15:58.907Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Love Island and the spoiler supply chain"
+    },
+    {
+      "id": "cal-6f34f46b",
+      "at": "2026-07-16T08:15:58.910Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Rothera and the intermediary-owned exchange"
+    },
+    {
+      "id": "cal-757bdfb1",
+      "at": "2026-07-16T08:15:58.915Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Regulatory clarity is becoming a distribution advantage"
+    },
+    {
+      "id": "cal-02169c40",
+      "at": "2026-07-16T08:15:58.918Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "North Carolina chooses taxation"
+    },
+    {
+      "id": "cal-c56c1f14",
+      "at": "2026-07-16T08:15:58.921Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who owns the market when the broker owns the exchange?"
+    },
+    {
+      "id": "cal-0fdb23a1",
+      "at": "2026-07-16T08:15:58.924Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who watches the oracle voters?"
+    },
+    {
+      "id": "cal-6dd8e60a",
+      "at": "2026-07-16T08:15:58.927Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi is trying to put a forward curve on AI compute"
+    },
+    {
+      "id": "cal-21e133df",
+      "at": "2026-07-16T08:15:58.932Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Trade surveillance becomes part of the product"
+    },
+    {
+      "id": "cal-52639068",
+      "at": "2026-07-16T08:15:58.936Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi probabilities inside ChatGPT’s answer layer"
+    },
+    {
+      "id": "cal-10dd1e4f",
+      "at": "2026-07-16T08:15:58.939Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-market ETFs reach the SEC queue"
+    },
+    {
+      "id": "cal-c5d06226",
+      "at": "2026-07-16T08:15:58.943Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #01: White Swan Data and Bernard Marantelli"
+    },
+    {
+      "id": "cal-665951c3",
+      "at": "2026-07-16T08:15:58.948Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "ODD SPOT #01: Kalshi at an Austin comedy club"
+    },
+    {
+      "id": "cal-f9500043",
+      "at": "2026-07-16T08:15:58.951Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "What changes when only AI agents trade?"
+    },
+    {
+      "id": "cal-48714448",
+      "at": "2026-07-16T08:15:58.955Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "AI forecasting accuracy is not live trading performance"
+    },
+    {
+      "id": "cal-bb15b95e",
+      "at": "2026-07-16T08:15:58.958Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-market volatility is its own thing"
+    },
+    {
+      "id": "cal-bb82985d",
+      "at": "2026-07-16T08:15:58.961Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who actually profits on a prediction-market exchange?"
+    },
+    {
+      "id": "cal-af19e040",
+      "at": "2026-07-16T08:15:58.965Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets enter the public-health conversation"
+    },
+    {
+      "id": "cal-21107103",
+      "at": "2026-07-16T08:15:58.968Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE SIGNAL #01: latest verified company move"
+    },
+    {
+      "id": "cal-dce51d85",
+      "at": "2026-07-16T08:15:58.971Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "When the market comment section becomes a trading tool"
+    },
+    {
+      "id": "cal-4c753dd4",
+      "at": "2026-07-16T08:15:58.974Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets map what can be settled"
+    },
+    {
+      "id": "cal-2d9ff8e8",
+      "at": "2026-07-16T08:15:58.980Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The 18-to-21 access gap"
+    },
+    {
+      "id": "cal-afd2a2af",
+      "at": "2026-07-16T08:15:58.983Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets move inside the newsletter"
+    },
+    {
+      "id": "cal-1b4fb24d",
+      "at": "2026-07-16T08:15:58.986Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Kalshi Concourse"
+    },
+    {
+      "id": "cal-72634c13",
+      "at": "2026-07-16T08:15:58.989Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #02: River Markets"
+    },
+    {
+      "id": "cal-cab67655",
+      "at": "2026-07-16T08:15:58.992Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The prediction-market lobbying layer is forming"
+    },
+    {
+      "id": "cal-50d4b204",
+      "at": "2026-07-16T08:15:58.995Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "What should count as prohibited information?"
+    },
+    {
+      "id": "cal-3e4ca83d",
+      "at": "2026-07-16T08:15:58.999Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #03: Connamara Technologies and EP3"
+    },
+    {
+      "id": "cal-f360487d",
+      "at": "2026-07-16T08:15:59.003Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "I SPOKE TO #01: one useful industry conversation"
+    },
+    {
+      "id": "cal-6da052d4",
+      "at": "2026-07-16T08:15:59.007Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #04: Elie Mishory and Novig"
+    },
+    {
+      "id": "cal-c452164c",
+      "at": "2026-07-16T08:15:59.015Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "I SPOKE TO #02: founder, trader or market maker"
+    },
+    {
+      "id": "cal-7dee35cc",
+      "at": "2026-07-16T08:15:59.018Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #05: Philip Tetlock and ForecastEx"
+    },
+    {
+      "id": "cal-7d5a1738",
+      "at": "2026-07-16T08:15:59.021Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "I SPOKE TO #03: exchange or clearing operator"
+    },
+    {
+      "id": "cal-8853473e",
+      "at": "2026-07-16T08:15:59.025Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "ODD SPOT #02: the best verified unexpected appearance of the fortnight"
+    },
+    {
+      "id": "cal-7785c0a9",
+      "at": "2026-07-16T08:15:59.028Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #06: one confirmed person or company in the NEXTPredict room"
     }
   ]
 }

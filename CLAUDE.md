@@ -62,11 +62,16 @@ date+topic).
 - **Never fabricate**: no invented emails, statistics, familiarity, client
   results or pipeline values. The mock AI provider writes bracketed slots
   instead of facts; keep it that way.
-- **Voice:** `data/voice/stuart-voice.md` is the bible (copied from
-  nextpredict-engine — keep the OFF_VOICE list in `lib/voice.mjs` in
-  lockstep with that repo's `scripts/lint-drafts.mjs`). No em dashes, no
-  hype phrases, no negative parallelism. "The part I keep coming back to"
-  is banned even though old prompt material suggests it.
+- **Voice:** Stuart's own LLM voice pack
+  (`data/voice/llm-voice-pack-2026-07-15/` — voice guide, platform
+  playbook, approved examples) is the newest canon and wins where it
+  differs from `data/voice/stuart-voice.md` (the 2026-07-03 bible). Keep
+  the OFF_VOICE list in `lib/voice.mjs` in lockstep with both and with
+  nextpredict-engine's `scripts/lint-drafts.mjs`. No em dashes, no hype
+  phrases, no negative parallelism; "inflection point", "this
+  highlights", "broader trend" are hard-banned per the pack. Every social
+  topic gets three platform versions (LinkedIn / Forum / X), never
+  duplicated copy.
 - **Offers/positioning are draft assumptions** until Stuart confirms them
   in the app. Do not present them as fact and do not attach invented proof.
 - **Fictional seed data** carries `fictional: true`. `scripts/seed.mjs`
