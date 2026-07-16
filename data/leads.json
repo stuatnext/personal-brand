@@ -51,6 +51,129 @@
       "fictionNote": "FICTIONAL demonstration data. Not a real person, company or deal.",
       "createdAt": "2026-07-11T09:00:00.000Z",
       "updatedAt": "2026-07-14T09:00:00.000Z"
+    },
+    {
+      "id": "lead-21e1639b",
+      "createdAt": "2026-07-16T08:26:33.315Z",
+      "updatedAt": "2026-07-16T08:26:33.670Z",
+      "name": "Novig",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-1a273848",
+          "quote": "Novig receiving CFTC approval puts a sports-first challenger into the regulated prediction market race.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        },
+        {
+          "insightId": "ins-c212fb20",
+          "quote": "Novig has secured CFTC approval through Ludlow Exchange.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        },
+        {
+          "insightId": "ins-c212fb20",
+          "quote": "Novig has secured CFTC approval through Ludlow Exchange.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16",
+          "note": "via alias Ludlow Exchange"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-cc671750",
+      "createdAt": "2026-07-16T08:26:33.383Z",
+      "updatedAt": "2026-07-16T08:26:33.383Z",
+      "name": "Rush Street",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4f138fe2",
+          "quote": "If the filings keep coming, are sportsbooks entering prediction markets defensively, or because they can see where sports trading is heading?\n```",
+          "signal": "igaming-market-move",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b5397f13",
+      "createdAt": "2026-07-16T08:26:33.508Z",
+      "updatedAt": "2026-07-16T08:26:33.508Z",
+      "name": "Axiom",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-150bec70",
+          "quote": "- Axiom claimed to launch prediction markets powered by Polymarket.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-9556cb72",
+      "createdAt": "2026-07-16T08:26:33.510Z",
+      "updatedAt": "2026-07-16T08:26:33.510Z",
+      "name": "Polymarket",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-150bec70",
+          "quote": "- Axiom claimed to launch prediction markets powered by Polymarket.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-18f41522",
+      "createdAt": "2026-07-16T08:26:33.575Z",
+      "updatedAt": "2026-07-16T08:26:33.575Z",
+      "name": "Osiz",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-de49d06a",
+          "quote": "- TRUEiGTECH posted about prediction market versus sportsbook regulatory distinction, including many legal claims that need verification.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
     }
   ]
 }
