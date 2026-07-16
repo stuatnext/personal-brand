@@ -1,5 +1,10 @@
 # Stuart's voice and prediction-markets worldview
 
+> SUPERSEDED-IN-PART (2026-07-15): Stuart's own LLM voice pack now extends this
+> document and wins where they differ. It lives at data/voice/llm-voice-pack-2026-07-15/
+> (voice guide, platform playbook, approved examples, task prompts). The linter
+> (lib/voice.mjs) carries its banned-phrase additions.
+
 Source of truth for how Stuart Crowley sounds and thinks. Distilled from his own
 voice handoff (`nexpredict_chat_handoff_2026-07-03`, the file he called "the most
 important in the pack"). The linters (`scripts/lint-drafts.mjs` OFF_VOICE,

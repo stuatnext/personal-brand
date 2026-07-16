@@ -930,6 +930,1438 @@
       "action": "insert",
       "collection": "content",
       "summary": "Category creation is mostly patience plus vocabulary"
+    },
+    {
+      "id": "cal-170d19d6",
+      "at": "2026-07-16T08:15:58.829Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi flight-cancellation contracts hit a data-rights problem"
+    },
+    {
+      "id": "cal-a291bb14",
+      "at": "2026-07-16T08:15:58.832Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The CFTC just made contract finality the story"
+    },
+    {
+      "id": "cal-b98b591b",
+      "at": "2026-07-16T08:15:58.835Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi probabilities are appearing inside ChatGPT answers"
+    },
+    {
+      "id": "cal-aa756acb",
+      "at": "2026-07-16T08:15:58.837Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Blockchain.com embeds Polymarket"
+    },
+    {
+      "id": "cal-96ed18c6",
+      "at": "2026-07-16T08:15:58.840Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi Pro and the institutional interface"
+    },
+    {
+      "id": "cal-1600f457",
+      "at": "2026-07-16T08:15:58.842Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: useful hedges, answer-layer distribution and the perception fight"
+    },
+    {
+      "id": "cal-2973b185",
+      "at": "2026-07-16T08:15:58.844Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Michael Burry calls prediction markets gambling"
+    },
+    {
+      "id": "cal-e8701e40",
+      "at": "2026-07-16T08:15:58.849Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: World Cup final market watch"
+    },
+    {
+      "id": "cal-45f0ba25",
+      "at": "2026-07-16T08:15:58.851Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: what survives after the World Cup?"
+    },
+    {
+      "id": "cal-cfbe251d",
+      "at": "2026-07-16T08:15:58.854Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The World Cup final was an acquisition event. Monday is the product test."
+    },
+    {
+      "id": "cal-4ad5a43c",
+      "at": "2026-07-16T08:15:58.856Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Gopuff puts Polymarket in the shopping basket"
+    },
+    {
+      "id": "cal-fa1c7675",
+      "at": "2026-07-16T08:15:58.858Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Coming Home GBA and the margin route into prediction markets"
+    },
+    {
+      "id": "cal-09f67be3",
+      "at": "2026-07-16T08:15:58.860Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: professional interfaces, margin and market structure"
+    },
+    {
+      "id": "cal-8dfa11a1",
+      "at": "2026-07-16T08:15:58.865Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: compliance, education and category identity"
+    },
+    {
+      "id": "cal-652442ef",
+      "at": "2026-07-16T08:15:58.867Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets are hiring a full operating stack"
+    },
+    {
+      "id": "cal-e72f8f76",
+      "at": "2026-07-16T08:15:58.870Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Gibraltar creates a third regulatory category"
+    },
+    {
+      "id": "cal-8b79bf35",
+      "at": "2026-07-16T08:15:58.873Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: the developer and infrastructure layer"
+    },
+    {
+      "id": "cal-43d3da63",
+      "at": "2026-07-16T08:15:58.876Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket blocked in Czechia"
+    },
+    {
+      "id": "cal-c4d8597b",
+      "at": "2026-07-16T08:15:58.878Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The CFTC’s nine-state legal war"
+    },
+    {
+      "id": "cal-fd764162",
+      "at": "2026-07-16T08:15:58.883Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: source quality and what deserves a story"
+    },
+    {
+      "id": "cal-1fe3586f",
+      "at": "2026-07-16T08:15:58.885Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-market marketing now has a compliance stack"
+    },
+    {
+      "id": "cal-a41b99dc",
+      "at": "2026-07-16T08:15:58.887Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket’s US re-entry meets Europe’s national blocks"
+    },
+    {
+      "id": "cal-4396ec17",
+      "at": "2026-07-16T08:15:58.889Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Prediction Markets are Gambling Act"
+    },
+    {
+      "id": "cal-9ae998de",
+      "at": "2026-07-16T08:15:58.892Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "AGA moves into the Wisconsin federal fight"
+    },
+    {
+      "id": "cal-00d1de5d",
+      "at": "2026-07-16T08:15:58.896Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket’s fake-win marketing problem"
+    },
+    {
+      "id": "cal-a1817f33",
+      "at": "2026-07-16T08:15:58.899Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Can a prop-trading model build sports-market liquidity?"
+    },
+    {
+      "id": "cal-39996c90",
+      "at": "2026-07-16T08:15:58.902Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "When the settlement source can be manipulated"
+    },
+    {
+      "id": "cal-f6f13184",
+      "at": "2026-07-16T08:15:58.904Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi wants to move beyond event contracts"
+    },
+    {
+      "id": "cal-8abc00aa",
+      "at": "2026-07-16T08:15:58.907Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Love Island and the spoiler supply chain"
+    },
+    {
+      "id": "cal-6f34f46b",
+      "at": "2026-07-16T08:15:58.910Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Rothera and the intermediary-owned exchange"
+    },
+    {
+      "id": "cal-757bdfb1",
+      "at": "2026-07-16T08:15:58.915Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Regulatory clarity is becoming a distribution advantage"
+    },
+    {
+      "id": "cal-02169c40",
+      "at": "2026-07-16T08:15:58.918Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "North Carolina chooses taxation"
+    },
+    {
+      "id": "cal-c56c1f14",
+      "at": "2026-07-16T08:15:58.921Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who owns the market when the broker owns the exchange?"
+    },
+    {
+      "id": "cal-0fdb23a1",
+      "at": "2026-07-16T08:15:58.924Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who watches the oracle voters?"
+    },
+    {
+      "id": "cal-6dd8e60a",
+      "at": "2026-07-16T08:15:58.927Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi is trying to put a forward curve on AI compute"
+    },
+    {
+      "id": "cal-21e133df",
+      "at": "2026-07-16T08:15:58.932Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Trade surveillance becomes part of the product"
+    },
+    {
+      "id": "cal-52639068",
+      "at": "2026-07-16T08:15:58.936Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi probabilities inside ChatGPT’s answer layer"
+    },
+    {
+      "id": "cal-10dd1e4f",
+      "at": "2026-07-16T08:15:58.939Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-market ETFs reach the SEC queue"
+    },
+    {
+      "id": "cal-c5d06226",
+      "at": "2026-07-16T08:15:58.943Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #01: White Swan Data and Bernard Marantelli"
+    },
+    {
+      "id": "cal-665951c3",
+      "at": "2026-07-16T08:15:58.948Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "ODD SPOT #01: Kalshi at an Austin comedy club"
+    },
+    {
+      "id": "cal-f9500043",
+      "at": "2026-07-16T08:15:58.951Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "What changes when only AI agents trade?"
+    },
+    {
+      "id": "cal-48714448",
+      "at": "2026-07-16T08:15:58.955Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "AI forecasting accuracy is not live trading performance"
+    },
+    {
+      "id": "cal-bb15b95e",
+      "at": "2026-07-16T08:15:58.958Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction-market volatility is its own thing"
+    },
+    {
+      "id": "cal-bb82985d",
+      "at": "2026-07-16T08:15:58.961Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who actually profits on a prediction-market exchange?"
+    },
+    {
+      "id": "cal-af19e040",
+      "at": "2026-07-16T08:15:58.965Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets enter the public-health conversation"
+    },
+    {
+      "id": "cal-21107103",
+      "at": "2026-07-16T08:15:58.968Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE SIGNAL #01: latest verified company move"
+    },
+    {
+      "id": "cal-dce51d85",
+      "at": "2026-07-16T08:15:58.971Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "When the market comment section becomes a trading tool"
+    },
+    {
+      "id": "cal-4c753dd4",
+      "at": "2026-07-16T08:15:58.974Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets map what can be settled"
+    },
+    {
+      "id": "cal-2d9ff8e8",
+      "at": "2026-07-16T08:15:58.980Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The 18-to-21 access gap"
+    },
+    {
+      "id": "cal-afd2a2af",
+      "at": "2026-07-16T08:15:58.983Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets move inside the newsletter"
+    },
+    {
+      "id": "cal-1b4fb24d",
+      "at": "2026-07-16T08:15:58.986Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The Kalshi Concourse"
+    },
+    {
+      "id": "cal-72634c13",
+      "at": "2026-07-16T08:15:58.989Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #02: River Markets"
+    },
+    {
+      "id": "cal-cab67655",
+      "at": "2026-07-16T08:15:58.992Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The prediction-market lobbying layer is forming"
+    },
+    {
+      "id": "cal-50d4b204",
+      "at": "2026-07-16T08:15:58.995Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "What should count as prohibited information?"
+    },
+    {
+      "id": "cal-3e4ca83d",
+      "at": "2026-07-16T08:15:58.999Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #03: Connamara Technologies and EP3"
+    },
+    {
+      "id": "cal-f360487d",
+      "at": "2026-07-16T08:15:59.003Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "I SPOKE TO #01: one useful industry conversation"
+    },
+    {
+      "id": "cal-6da052d4",
+      "at": "2026-07-16T08:15:59.007Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #04: Elie Mishory and Novig"
+    },
+    {
+      "id": "cal-c452164c",
+      "at": "2026-07-16T08:15:59.015Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "I SPOKE TO #02: founder, trader or market maker"
+    },
+    {
+      "id": "cal-7dee35cc",
+      "at": "2026-07-16T08:15:59.018Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #05: Philip Tetlock and ForecastEx"
+    },
+    {
+      "id": "cal-7d5a1738",
+      "at": "2026-07-16T08:15:59.021Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "I SPOKE TO #03: exchange or clearing operator"
+    },
+    {
+      "id": "cal-8853473e",
+      "at": "2026-07-16T08:15:59.025Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "ODD SPOT #02: the best verified unexpected appearance of the fortnight"
+    },
+    {
+      "id": "cal-7785c0a9",
+      "at": "2026-07-16T08:15:59.028Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE #06: one confirmed person or company in the NEXTPredict room"
+    },
+    {
+      "id": "ins-3b477e7c",
+      "at": "2026-07-16T08:26:33.302Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "NEXTPredict Intel Package"
+    },
+    {
+      "id": "ins-05d7381f",
+      "at": "2026-07-16T08:26:33.309Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.1 Wedbush clears more than one billion prediction market contracts"
+    },
+    {
+      "id": "ins-1a273848",
+      "at": "2026-07-16T08:26:33.314Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.2 Novig receives CFTC DCM approval"
+    },
+    {
+      "id": "lead-21e1639b",
+      "at": "2026-07-16T08:26:33.315Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Novig"
+    },
+    {
+      "id": "ins-15bc0cef",
+      "at": "2026-07-16T08:26:33.318Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.3 ProphetX secures DCM and DCO approval"
+    },
+    {
+      "id": "ins-76f6963e",
+      "at": "2026-07-16T08:26:33.321Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.4 Rush Street-linked entities file for DCM and DCO approvals"
+    },
+    {
+      "id": "ins-73e1b366",
+      "at": "2026-07-16T08:26:33.324Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.5 Kalshi and Sportradar partnership"
+    },
+    {
+      "id": "ins-45f589fc",
+      "at": "2026-07-16T08:26:33.327Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.6 ADI Predictstreet launches in UK and Ireland via Matchbook"
+    },
+    {
+      "id": "ins-4bb4817c",
+      "at": "2026-07-16T08:26:33.330Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.7 Bloomberg: World Cup exposes global regulatory rift"
+    },
+    {
+      "id": "ins-2c0e39fc",
+      "at": "2026-07-16T08:26:33.334Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.8 Congress.gov: Prediction Markets Are Gambling Act"
+    },
+    {
+      "id": "ins-4aa137de",
+      "at": "2026-07-16T08:26:33.336Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.9 ProPublica changes code of ethics for prediction markets"
+    },
+    {
+      "id": "ins-c9b3ef36",
+      "at": "2026-07-16T08:26:33.339Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.10 New York Magazine: Rotten Tomatoes market manipulation article"
+    },
+    {
+      "id": "ins-a82a7b7e",
+      "at": "2026-07-16T08:26:33.342Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.11 Yale SOM: Wisdom of the few"
+    },
+    {
+      "id": "ins-6f14a284",
+      "at": "2026-07-16T08:26:33.344Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.12 Investor's Business Daily / retail investor risk"
+    },
+    {
+      "id": "ins-31afb885",
+      "at": "2026-07-16T08:26:33.347Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.13 Financial Times: corporate prediction market predicament"
+    },
+    {
+      "id": "ins-b4b6a0d8",
+      "at": "2026-07-16T08:26:33.351Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.14 The Conversation / University of Illinois / WBUR / CBN"
+    },
+    {
+      "id": "ins-0ae17314",
+      "at": "2026-07-16T08:26:33.353Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.15 Atlantic Council: US and Europe regulatory playbook"
+    },
+    {
+      "id": "ins-cef2421e",
+      "at": "2026-07-16T08:26:33.356Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.16 Tastylive / Kelvon / options and prediction markets"
+    },
+    {
+      "id": "ins-a2da0a92",
+      "at": "2026-07-16T08:26:33.358Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.17 Suraj Peramanu / The 4th Quarter explainer format"
+    },
+    {
+      "id": "ins-a5207d8f",
+      "at": "2026-07-16T08:26:33.360Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.18 Reddit signals"
+    },
+    {
+      "id": "ins-f9f91795",
+      "at": "2026-07-16T08:26:33.362Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.1 Definition is the battleground"
+    },
+    {
+      "id": "lead-996eb38e",
+      "at": "2026-07-16T08:26:33.363Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Compliance"
+    },
+    {
+      "id": "ins-b7518e45",
+      "at": "2026-07-16T08:26:33.365Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.2 Sports is the adoption engine and the perception trap"
+    },
+    {
+      "id": "ins-5de1c832",
+      "at": "2026-07-16T08:26:33.367Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.3 Infrastructure is catching up with attention"
+    },
+    {
+      "id": "ins-4e736848",
+      "at": "2026-07-16T08:26:33.369Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.4 Retail may be liquidity, not the crowd"
+    },
+    {
+      "id": "ins-4e73150a",
+      "at": "2026-07-16T08:26:33.371Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.5 Influenceable outcomes are the next integrity problem"
+    },
+    {
+      "id": "ins-89847584",
+      "at": "2026-07-16T08:26:33.373Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.6 Compliance becomes product credibility"
+    },
+    {
+      "id": "ins-55323dda",
+      "at": "2026-07-16T08:26:33.375Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.7 The tools layer is immature"
+    },
+    {
+      "id": "ins-4e795f0f",
+      "at": "2026-07-16T08:26:33.377Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "6.1 Infrastructure versus consumer edge"
+    },
+    {
+      "id": "lead-21e1639b",
+      "at": "2026-07-16T08:26:33.378Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "ins-4f138fe2",
+      "at": "2026-07-16T08:26:33.381Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "6.2 Sportsbook filing queue"
+    },
+    {
+      "id": "lead-21e1639b",
+      "at": "2026-07-16T08:26:33.382Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-cc671750",
+      "at": "2026-07-16T08:26:33.383Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Rush Street"
+    },
+    {
+      "id": "lead-4c9483df",
+      "at": "2026-07-16T08:26:33.385Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Sensible"
+    },
+    {
+      "id": "ins-8c4cc147",
+      "at": "2026-07-16T08:26:33.386Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "6.3 Wisdom of the few"
+    },
+    {
+      "id": "ins-54f34510",
+      "at": "2026-07-16T08:26:33.388Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.1 Rush Street / Casino.org"
+    },
+    {
+      "id": "ins-7ca82fc9",
+      "at": "2026-07-16T08:26:33.390Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.2 Yale / skilled traders"
+    },
+    {
+      "id": "ins-d70a3501",
+      "at": "2026-07-16T08:26:33.392Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.3 Novig / sports-native DCM"
+    },
+    {
+      "id": "lead-ed6d7298",
+      "at": "2026-07-16T08:26:33.393Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "7.3 Novig / sports-native DCM"
+    },
+    {
+      "id": "ins-ef90fcfd",
+      "at": "2026-07-16T08:26:33.395Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.4 Susan Mathews / compliance"
+    },
+    {
+      "id": "ins-7e010015",
+      "at": "2026-07-16T08:26:33.397Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.5 Suraj Peramanu / education"
+    },
+    {
+      "id": "ins-4cb80a85",
+      "at": "2026-07-16T08:26:33.400Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.6 ProPublica ethics"
+    },
+    {
+      "id": "ins-fb954371",
+      "at": "2026-07-16T08:26:33.402Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.7 ADI Predictstreet / Matchbook"
+    },
+    {
+      "id": "ins-3ce7c3cf",
+      "at": "2026-07-16T08:26:33.405Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.1 Trading Technologies enters prediction markets"
+    },
+    {
+      "id": "ins-cc509068",
+      "at": "2026-07-16T08:26:33.410Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.2 StarCompliance and Kalshi launch employee monitoring"
+    },
+    {
+      "id": "ins-d1ac5b9f",
+      "at": "2026-07-16T08:26:33.413Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.3 Hadrius prediction market employee oversight"
+    },
+    {
+      "id": "ins-87e2a063",
+      "at": "2026-07-16T08:26:33.417Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.4 Sportradar and Kalshi official data partnership"
+    },
+    {
+      "id": "ins-caa697f8",
+      "at": "2026-07-16T08:26:33.420Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.5 Wedbush clears more than one billion prediction market contracts"
+    },
+    {
+      "id": "ins-8d9b80f2",
+      "at": "2026-07-16T08:26:33.424Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.6 BitMart US launches federally regulated prediction markets with Plaee"
+    },
+    {
+      "id": "ins-066d0f18",
+      "at": "2026-07-16T08:26:33.427Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.7 Zengo prediction markets powered by Polymarket"
+    },
+    {
+      "id": "ins-5d5168a2",
+      "at": "2026-07-16T08:26:33.430Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.8 Chainlink and oracle layer"
+    },
+    {
+      "id": "ins-1d7731cd",
+      "at": "2026-07-16T08:26:33.433Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.9 TS Imagine: event contracts as risk infrastructure"
+    },
+    {
+      "id": "ins-13b224a0",
+      "at": "2026-07-16T08:26:33.438Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.10 CFTC proposal and event contract rulemaking"
+    },
+    {
+      "id": "ins-1fbc0cab",
+      "at": "2026-07-16T08:26:33.441Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "3.11 Novig / Ludlow Exchange and other DCM activity"
+    },
+    {
+      "id": "lead-8b52b42d",
+      "at": "2026-07-16T08:26:33.442Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Jacob"
+    },
+    {
+      "id": "ins-fc03b195",
+      "at": "2026-07-16T08:26:33.448Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.1 The World Cup as stress test"
+    },
+    {
+      "id": "ins-d6c25538",
+      "at": "2026-07-16T08:26:33.451Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.2 World Cup market venue test"
+    },
+    {
+      "id": "ins-b34ee9e5",
+      "at": "2026-07-16T08:26:33.454Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.3 Spain World Cup loss, probability versus sizing"
+    },
+    {
+      "id": "ins-aea19eff",
+      "at": "2026-07-16T08:26:33.457Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "4.4 21Shares Soccer Prediction Battle"
+    },
+    {
+      "id": "ins-15f966cc",
+      "at": "2026-07-16T08:26:33.461Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "5.1 The central problem"
+    },
+    {
+      "id": "ins-9a356ec4",
+      "at": "2026-07-16T08:26:33.464Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "5.2 Laura Bates and Pradeep Rana threads"
+    },
+    {
+      "id": "ins-f4f0ca40",
+      "at": "2026-07-16T08:26:33.468Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "5.3 CBS AI trader and concentration of profits"
+    },
+    {
+      "id": "ins-f567e973",
+      "at": "2026-07-16T08:26:33.473Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "6.1 Peter Diamandis video: AI Just Beat Prediction Markets"
+    },
+    {
+      "id": "ins-8a9fdac6",
+      "at": "2026-07-16T08:26:33.477Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.1 Polymarket 5-minute crypto order-book dataset"
+    },
+    {
+      "id": "ins-b734ae11",
+      "at": "2026-07-16T08:26:33.480Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.2 Backtesting and bots"
+    },
+    {
+      "id": "ins-2919beea",
+      "at": "2026-07-16T08:26:33.483Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.3 News-feed trading bots"
+    },
+    {
+      "id": "ins-dcdc44d8",
+      "at": "2026-07-16T08:26:33.488Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.4 Smart-money dashboards and copytrading"
+    },
+    {
+      "id": "ins-27c00d2f",
+      "at": "2026-07-16T08:26:33.491Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.5 Margin on Polymarket and layered leverage"
+    },
+    {
+      "id": "ins-5a792645",
+      "at": "2026-07-16T08:26:33.494Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.6 Prop firms for prediction markets"
+    },
+    {
+      "id": "ins-dde80f9a",
+      "at": "2026-07-16T08:26:33.498Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "7.7 Public prediction records and proof of forecasting"
+    },
+    {
+      "id": "ins-9c7ecb13",
+      "at": "2026-07-16T08:26:33.500Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "8.1 White-label and routing"
+    },
+    {
+      "id": "ins-07b5ee34",
+      "at": "2026-07-16T08:26:33.504Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "8.2 Social prediction apps"
+    },
+    {
+      "id": "ins-150bec70",
+      "at": "2026-07-16T08:26:33.507Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "8.3 Axiom prediction markets powered by Polymarket"
+    },
+    {
+      "id": "lead-b5397f13",
+      "at": "2026-07-16T08:26:33.508Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Axiom"
+    },
+    {
+      "id": "lead-9556cb72",
+      "at": "2026-07-16T08:26:33.511Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Polymarket"
+    },
+    {
+      "id": "ins-1c275002",
+      "at": "2026-07-16T08:26:33.515Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "9.1 Bloomberg World Cup global rift"
+    },
+    {
+      "id": "lead-bceac38c",
+      "at": "2026-07-16T08:26:33.516Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "World Cup"
+    },
+    {
+      "id": "lead-ebb90f00",
+      "at": "2026-07-16T08:26:33.518Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Completely"
+    },
+    {
+      "id": "ins-bce7ac98",
+      "at": "2026-07-16T08:26:33.522Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "9.2 Tribal sovereignty and IGRA"
+    },
+    {
+      "id": "ins-020a8196",
+      "at": "2026-07-16T08:26:33.527Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "9.3 Africa, Latin America and settlement legibility"
+    },
+    {
+      "id": "ins-60563cae",
+      "at": "2026-07-16T08:26:33.531Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "9.4 Ethiopia and Ghana local prediction market ideas"
+    },
+    {
+      "id": "ins-4d0b6f8e",
+      "at": "2026-07-16T08:26:33.535Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "10.1 Prediction markets as media companies"
+    },
+    {
+      "id": "ins-7ec3f462",
+      "at": "2026-07-16T08:26:33.538Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "10.2 Storyful brand exposure curve"
+    },
+    {
+      "id": "ins-7d08faab",
+      "at": "2026-07-16T08:26:33.541Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "10.3 Free Press and negative consumer comments"
+    },
+    {
+      "id": "ins-6b47d741",
+      "at": "2026-07-16T08:26:33.545Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "10.4 BBC Business Daily: are prediction markets fuelling insider trading?"
+    },
+    {
+      "id": "ins-95283e0c",
+      "at": "2026-07-16T08:26:33.551Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "10.5 NYT: Wall Street traders and hedging"
+    },
+    {
+      "id": "ins-1ceb75cf",
+      "at": "2026-07-16T08:26:33.555Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "11.1 Robinhood and prediction markets"
+    },
+    {
+      "id": "ins-0f5f97f8",
+      "at": "2026-07-16T08:26:33.560Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "11.2 Tema ETFs adds Kalshi to Durable Quality ETF"
+    },
+    {
+      "id": "ins-6e3fd421",
+      "at": "2026-07-16T08:26:33.564Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "11.3 Bloomberg Intelligence 2026 Outlook"
+    },
+    {
+      "id": "ins-64d72f7e",
+      "at": "2026-07-16T08:26:33.568Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "11.4 Lars Mapstead investor post"
+    },
+    {
+      "id": "ins-de49d06a",
+      "at": "2026-07-16T08:26:33.573Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.1 WagerGeeks, TRUEiGTECH, Osiz and clone-software posts"
+    },
+    {
+      "id": "lead-18f41522",
+      "at": "2026-07-16T08:26:33.576Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Osiz"
+    },
+    {
+      "id": "ins-a8a57c6b",
+      "at": "2026-07-16T08:26:33.582Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.2 Esports Insider and WEEX SEO guides"
+    },
+    {
+      "id": "ins-0b713da7",
+      "at": "2026-07-16T08:26:33.589Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.3 CoinGeek and NEXT mentions"
+    },
+    {
+      "id": "ins-69b0ca0c",
+      "at": "2026-07-16T08:26:33.596Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "13.1 Oliver Yates: prediction markets as a category may not exist in five years"
+    },
+    {
+      "id": "ins-953b67bc",
+      "at": "2026-07-16T08:26:33.603Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "13.2 Troutman Pepper Locke podcast"
+    },
+    {
+      "id": "ins-a5225e46",
+      "at": "2026-07-16T08:26:33.609Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "13.3 Katten: The Economics and Rise of Prediction Markets Toward a New Asset Class"
+    },
+    {
+      "id": "ins-c9774807",
+      "at": "2026-07-16T08:26:33.616Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "13.4 Kentucky tax discussion"
+    },
+    {
+      "id": "ins-4f91abf2",
+      "at": "2026-07-16T08:26:33.624Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "14.1 Sponsor leads"
+    },
+    {
+      "id": "ins-f3c53201",
+      "at": "2026-07-16T08:26:33.650Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "14.2 Speaker leads"
+    },
+    {
+      "id": "ins-fc22beac",
+      "at": "2026-07-16T08:26:33.655Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "16.1 Strong general LinkedIn post: trust architecture"
+    },
+    {
+      "id": "ins-1849654f",
+      "at": "2026-07-16T08:26:33.659Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "16.2 LinkedIn post: retail stack versus risk stack"
+    },
+    {
+      "id": "ins-efc743ad",
+      "at": "2026-07-16T08:26:33.663Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "16.3 LinkedIn post: jurisdictional product"
+    },
+    {
+      "id": "lead-b1bc17a9",
+      "at": "2026-07-16T08:26:33.665Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Same"
+    },
+    {
+      "id": "ins-c212fb20",
+      "at": "2026-07-16T08:26:33.668Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "16.4 LinkedIn post: institutional pipes"
+    },
+    {
+      "id": "lead-f490e39b",
+      "at": "2026-07-16T08:26:33.670Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Ludlow Exchange"
+    },
+    {
+      "id": "lead-21e1639b",
+      "at": "2026-07-16T08:26:33.671Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "ins-b6f9b455",
+      "at": "2026-07-16T08:26:33.675Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "16.5 LinkedIn post: AI and prediction markets"
+    },
+    {
+      "id": "ins-d01de8af",
+      "at": "2026-07-16T08:26:33.679Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "200 character LinkedIn note to Joe at illumin"
+    },
+    {
+      "id": "ins-872cd2da",
+      "at": "2026-07-16T08:26:33.684Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.1 CFTC and state conflict"
+    },
+    {
+      "id": "ins-bcfec3f7",
+      "at": "2026-07-16T08:26:33.688Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.2 Compliance as a commercial category"
+    },
+    {
+      "id": "ins-7f2ae948",
+      "at": "2026-07-16T08:26:33.692Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.3 World Cup as mass-market stress test"
+    },
+    {
+      "id": "ins-59e98110",
+      "at": "2026-07-16T08:26:33.699Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.4 Institutional infrastructure forming quickly"
+    },
+    {
+      "id": "ins-57b8ffff",
+      "at": "2026-07-16T08:26:33.704Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.5 Talent market signal"
+    },
+    {
+      "id": "ins-8b1e51e7",
+      "at": "2026-07-16T08:26:33.708Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12.6 Consumer risk narrative"
+    },
+    {
+      "id": "ins-75f687f7",
+      "at": "2026-07-16T08:26:33.729Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "5 Ways to Connect Your AI Agent to Prediction Markets in 2026"
+    },
+    {
+      "id": "ins-8a1a55b0",
+      "at": "2026-07-16T08:26:33.743Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "5 Patterns That Kill Prediction Market Traders (and How Agents Fix Them)"
     }
   ]
 }

@@ -1,0 +1,1 @@
+Paste 01_MASTER_SYSTEM_PROMPT.txt into the target LLM. For shorter instruction fields, use 02_COMPACT_SYSTEM_PROMPT.txt. Then provide the task and source intel. For every social topic, require three adapted versions: Stuart LinkedIn, Prediction Markets Forum and X/Twitter.

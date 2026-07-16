@@ -1,0 +1,16 @@
+{
+  "created_at_utc": "2026-07-16T08:17:32.022445+00:00",
+  "source_compact_archive": "NEXTPredict_All_Intel_2026-07-16_SINGLE_COMPACT_LOSSLESS.zip",
+  "batch_archive_count_processed": 16,
+  "included_unique_file_count": 191,
+  "omitted_file_occurrence_count": 166,
+  "included_uncompressed_bytes": 58863756,
+  "exact_duplicate_files_physically_removed": 1,
+  "binary_originals_included": false,
+  "research_pdf_text_included_where_present": true,
+  "canonical_intel_corpus_included": true,
+  "social_action_shortlist_included": true,
+  "current_batch_indexes_and_text_included": true,
+  "archival_fidelity": false,
+  "working_pack_purpose": "Search, planning, contact extraction, company/source discovery, content development and spreadsheet updates."
+}

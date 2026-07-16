@@ -1,6 +1,6 @@
 {
   "meta": {
-    "seededAt": "2026-07-15T02:13:30.219Z",
+    "seededAt": "2026-07-16T08:17:00.072Z",
     "note": "DRAFT ASSUMPTIONS. Every offer, price and claim here is unconfirmed until Stuart edits and approves it. No client names, testimonials or results may be attached until real ones exist."
   },
   "items": [
@@ -21,8 +21,8 @@
       "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
       "proofRequired": "Real case evidence needed before public claims. None attached yet.",
       "conversionNotes": [],
-      "createdAt": "2026-07-15T02:13:30.219Z",
-      "updatedAt": "2026-07-15T02:13:30.219Z"
+      "createdAt": "2026-07-16T08:17:00.072Z",
+      "updatedAt": "2026-07-16T08:17:00.072Z"
     },
     {
       "id": "off-ai-sprint",
@@ -41,8 +41,8 @@
       "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
       "proofRequired": "Real case evidence needed before public claims. None attached yet.",
       "conversionNotes": [],
-      "createdAt": "2026-07-15T02:13:30.219Z",
-      "updatedAt": "2026-07-15T02:13:30.219Z"
+      "createdAt": "2026-07-16T08:17:00.072Z",
+      "updatedAt": "2026-07-16T08:17:00.072Z"
     },
     {
       "id": "off-crm-gtm",
@@ -61,8 +61,8 @@
       "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
       "proofRequired": "Real case evidence needed before public claims. None attached yet.",
       "conversionNotes": [],
-      "createdAt": "2026-07-15T02:13:30.219Z",
-      "updatedAt": "2026-07-15T02:13:30.219Z"
+      "createdAt": "2026-07-16T08:17:00.072Z",
+      "updatedAt": "2026-07-16T08:17:00.072Z"
     },
     {
       "id": "off-pricing",
@@ -81,8 +81,8 @@
       "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
       "proofRequired": "Real case evidence needed before public claims. None attached yet.",
       "conversionNotes": [],
-      "createdAt": "2026-07-15T02:13:30.219Z",
-      "updatedAt": "2026-07-15T02:13:30.219Z"
+      "createdAt": "2026-07-16T08:17:00.072Z",
+      "updatedAt": "2026-07-16T08:17:00.072Z"
     },
     {
       "id": "off-events",
@@ -101,8 +101,8 @@
       "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
       "proofRequired": "Real case evidence needed before public claims. None attached yet.",
       "conversionNotes": [],
-      "createdAt": "2026-07-15T02:13:30.219Z",
-      "updatedAt": "2026-07-15T02:13:30.219Z"
+      "createdAt": "2026-07-16T08:17:00.072Z",
+      "updatedAt": "2026-07-16T08:17:00.072Z"
     },
     {
       "id": "off-fractional",
@@ -121,8 +121,8 @@
       "pricingLogic": "UNSET. Value-based, never hours. Stuart to define.",
       "proofRequired": "Real case evidence needed before public claims. None attached yet.",
       "conversionNotes": [],
-      "createdAt": "2026-07-15T02:13:30.219Z",
-      "updatedAt": "2026-07-15T02:13:30.219Z"
+      "createdAt": "2026-07-16T08:17:00.072Z",
+      "updatedAt": "2026-07-16T08:17:00.072Z"
     }
   ]
 }

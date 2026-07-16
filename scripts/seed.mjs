@@ -182,6 +182,9 @@ write('voice', {
     { id: 'vr-08', status: 'approved', source: 'engine rule', text: 'Credibility before conversion. Not every piece carries a commercial ask; most should not.' },
     { id: 'vr-09', status: 'approved', source: 'engine rule', text: 'Never fabricate statistics, quotes, relationships, experience or client results. Unverified claims are visibly marked unverified.' },
     { id: 'vr-10', status: 'proposed', source: 'ChatGPT product prompt', text: 'Useful openers to keep in rotation: "The useful question is...", "The uncomfortable bit is...", "This feels less like hype now and more like build mode." (Stuart to approve.)' },
+    { id: 'vr-11', status: 'approved', source: 'voice pack 2026-07-15', text: 'Additional hard-banned phrases: "inflection point" (upgraded from soft avoid), "this highlights", "broader trend", "the bit that stands out", "the angle here". "For me, ..." as an opener is a soft avoid.' },
+    { id: 'vr-12', status: 'approved', source: 'voice pack 2026-07-15', text: 'Every social topic gets THREE platform-specific versions (Stuart LinkedIn, Prediction Markets Forum group, X) and the copy is never duplicated across them. Forum format: one compact context paragraph plus one clear practitioner question.' },
+    { id: 'vr-13', status: 'approved', source: 'voice pack 2026-07-15', text: 'Contractions are the default (that\'s, it\'s, don\'t); uncontracted forms only for emphasis, legal precision or contrast. Humour dry and incidental, noticed rather than written. Full pack: data/voice/llm-voice-pack-2026-07-15/.' },
   ],
   examples: [
     { id: 'vx-01', type: 'comment', verdict: 'reference-only', source: 'voice handoff (paraphrased shape)', text: 'Warm agreement, one observation from operating experience (latency, settlement, provider quality are familiar headaches), move from front-end to backend, end on a category read. No sell.', note: 'Mirror the shape, never the words.' },
