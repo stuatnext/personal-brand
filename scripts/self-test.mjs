@@ -111,8 +111,10 @@ const oppMove = await patch(`/api/collections/opportunities/${oppId}`, { stage: 
 ok(oppMove.status === 200 && oppMove.data.stage === 'qualified', '12. opportunity advanced with Stuart-entered value');
 
 const today = await get('/api/today');
-ok(today.status === 200 && today.data.actions.length >= 3, `13. Today briefing live (${today.data.actions.length} actions)`);
+ok(today.status === 200 && today.data.actions.length === 3, `13. Today briefing defaults to 3 actions (${today.data.actions.length} actions)`);
 ok(today.data.actions.every((a) => a.why && a.whyNow && a.nextStep), '13b. every recommendation carries why / why-now / next step');
+const todayMore = await get('/api/today?limit=7');
+ok(todayMore.status === 200 && todayMore.data.actions.length === 7, `13c. explicit ?limit= still honoured (${todayMore.data.actions.length} actions)`);
 const analytics = await get('/api/analytics');
 ok(analytics.status === 200 && analytics.data.pipeline.attribution.some((o) => o.id === oppId && o.contentInfluence === 'strong-influence'), '14. attribution reflected in analytics');
 ok(analytics.data.authority.components.length === 8, '14b. authority score shows all 8 components with evidence');
@@ -126,6 +128,10 @@ const smuggle = await patch('/api/collections/outreach/out-s05', { stage: 'sent'
 ok(smuggle.status === 409, 'generic PATCH cannot smuggle stage=sent');
 const smuggle2 = await post('/api/collections/content', { title: 'x', stage: 'published' });
 ok(smuggle2.status === 409, 'generic POST cannot create pre-published content');
+const approvalSmuggle = await patch(`/api/collections/content/${cntId}`, { approval: { status: 'approved', approvedBy: 'attacker' } });
+ok(approvalSmuggle.status === 409, 'generic PATCH cannot smuggle content approval', JSON.stringify(approvalSmuggle.data));
+const approvalCreateSmuggle = await post('/api/collections/content', { title: 'approval bypass attempt', approval: { status: 'approved' } });
+ok(approvalCreateSmuggle.status === 409, 'generic POST cannot create pre-approved content', JSON.stringify(approvalCreateSmuggle.data));
 const lintRes = await action('lint', { text: 'This is a game changer — not just hype, but the next evolution of events.', brand: 'stuart', kind: 'post' });
 ok(!lintRes.data.ok && lintRes.data.problems.length >= 3, `voice linter catches em dash + banned phrases + parallelism (${lintRes.data.problems.length} problems)`);
 const npLint = await action('lint', { text: 'The betting industry will love this.', brand: 'nextpredict', kind: 'post' });

@@ -32,7 +32,7 @@ const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
 // Fields only action endpoints may set; generic PATCH rejects them.
 const GUARDED_FIELDS = {
   outreach: ['sentAt', 'approval', 'stage'],
-  content: ['publishedDate', 'stage'],
+  content: ['publishedDate', 'approval', 'stage'],
 };
 const OUTREACH_STAGE_VIA_PATCH_OK = ['identified', 'researched', 'qualified', 'drafted', 'paused', 'do-not-contact'];
 const CONTENT_STAGE_VIA_PATCH_OK = ['raw-idea', 'qualified-idea', 'outline', 'draft', 'review', 'repurposed', 'archived'];
@@ -384,7 +384,7 @@ async function handle(req, res) {
       const { state } = await import('../lib/store.mjs');
       return json(res, 200, { ...state(), provider: providerName(), voiceDoc: read('voice') });
     }
-    if (p === '/api/today' && req.method === 'GET') return json(res, 200, todayBriefing({ limit: Number(url.searchParams.get('limit')) || 7 }));
+    if (p === '/api/today' && req.method === 'GET') return json(res, 200, todayBriefing({ limit: Number(url.searchParams.get('limit')) || 3 }));
     if (p === '/api/analytics' && req.method === 'GET') return json(res, 200, analytics());
     if (p === '/api/authority' && req.method === 'GET') return json(res, 200, authorityScore());
     if (p === '/api/audit' && req.method === 'GET') return json(res, 200, { items: (read('audit').items || []).slice(-200).reverse() });
