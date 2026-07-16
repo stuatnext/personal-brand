@@ -31,7 +31,7 @@ function toast(msg, isErr = false) {
 }
 
 async function refresh() {
-  [S, TODAY, ANALYTICS] = await Promise.all([api('/state'), api('/today?limit=7'), api('/analytics')]);
+  [S, TODAY, ANALYTICS] = await Promise.all([api('/state'), api('/today'), api('/analytics')]);
   document.documentElement.style.setProperty('--accent', S.settings.values?.accentColor || '#B34700');
   $('#provider-badge').textContent = `ai: ${S.provider}`;
   $('#demo-banner').hidden = !S.settings.values?.demoMode;
@@ -95,7 +95,7 @@ const meter = (val, max) => `<span class="meter"><span class="bar"><i style="wid
 // TODAY
 // ---------------------------------------------------------------------------
 routes.today = async () => {
-  TODAY = await api('/today?limit=7');
+  TODAY = await api('/today');
   const c = TODAY.counts;
   const actionsHtml = TODAY.actions.map((a, i) => `
     <div class="card flag action">

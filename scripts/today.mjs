@@ -6,7 +6,7 @@
 import { todayBriefing } from '../lib/recommend.mjs';
 import { analytics } from '../lib/analytics.mjs';
 
-const t = todayBriefing({ limit: 7 });
+const t = todayBriefing();
 const a = analytics();
 
 console.log(`\nSTUART CROWLEY — PERSONAL BRAND ENGINE — TODAY (${new Date().toDateString()})`);
