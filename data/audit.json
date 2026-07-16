@@ -2362,6 +2362,702 @@
       "action": "insert",
       "collection": "insights",
       "summary": "5 Patterns That Kill Prediction Market Traders (and How Agents Fix Them)"
+    },
+    {
+      "id": "ins-158a42ac",
+      "at": "2026-07-16T12:33:11.182Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Prediction markets and the regulatory gamble"
+    },
+    {
+      "id": "lead-b47a10cc",
+      "at": "2026-07-16T12:33:11.188Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Add"
+    },
+    {
+      "id": "ins-66cb8f6b",
+      "at": "2026-07-16T12:33:11.271Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Meta wants to clone Polymarket & Kalshi, but it can’t clone regulatory moat 🤷; Santander open-sourced its entire AI governance stack 🤖"
+    },
+    {
+      "id": "lead-3f33ca7d",
+      "at": "2026-07-16T12:33:11.273Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "European"
+    },
+    {
+      "id": "lead-99228415",
+      "at": "2026-07-16T12:33:11.275Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "French"
+    },
+    {
+      "id": "lead-4fda2697",
+      "at": "2026-07-16T12:33:11.277Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Kalshi"
+    },
+    {
+      "id": "ins-fdb51f82",
+      "at": "2026-07-16T12:33:11.317Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Falling oil prices, sketchy soccer matches, and the power of prediction markets"
+    },
+    {
+      "id": "ins-fb65db90",
+      "at": "2026-07-16T12:33:11.358Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "12 Charts: The Rotation Is Showing Up."
+    },
+    {
+      "id": "ins-4054b0c0",
+      "at": "2026-07-16T12:33:11.400Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "The Five Most Important Crypto Charts From Q2"
+    },
+    {
+      "id": "ins-4976d237",
+      "at": "2026-07-16T12:33:11.444Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "FinReg Daily 86"
+    },
+    {
+      "id": "ins-a7724f34",
+      "at": "2026-07-16T12:33:11.480Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "2Q26 Crypto Market Review"
+    },
+    {
+      "id": "ins-b933f686",
+      "at": "2026-07-16T12:33:11.501Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Tokenized Stocks in 2026: Why Global Investors Are Paying Attention"
+    },
+    {
+      "id": "ins-0e48752a",
+      "at": "2026-07-16T12:33:11.654Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Forefront Fintech Digest Week in Review: July 6 - 10"
+    },
+    {
+      "id": "lead-4930dc96",
+      "at": "2026-07-16T12:33:11.656Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Wall Street"
+    },
+    {
+      "id": "lead-b4f91b8e",
+      "at": "2026-07-16T12:33:11.657Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Tim"
+    },
+    {
+      "id": "lead-163ec86c",
+      "at": "2026-07-16T12:33:11.659Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Nancy Pham"
+    },
+    {
+      "id": "lead-5dde0dec",
+      "at": "2026-07-16T12:33:11.661Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Swiss Exchange"
+    },
+    {
+      "id": "lead-8d16e231",
+      "at": "2026-07-16T12:33:11.663Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Cboe Predicts"
+    },
+    {
+      "id": "lead-294b6a96",
+      "at": "2026-07-16T12:33:11.857Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Feed"
+    },
+    {
+      "id": "lead-488d925a",
+      "at": "2026-07-16T12:33:11.859Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Compliance"
+    },
+    {
+      "id": "lead-f4917de3",
+      "at": "2026-07-16T12:33:11.881Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Predictstreet Announce Exclusive"
+    },
+    {
+      "id": "lead-e4bc8bf3",
+      "at": "2026-07-16T12:33:11.882Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Generation Regulated Sports"
+    },
+    {
+      "id": "lead-04546512",
+      "at": "2026-07-16T12:33:11.926Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "View Shay Bouchles"
+    },
+    {
+      "id": "lead-bce9f130",
+      "at": "2026-07-16T12:33:11.928Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Shay Bouchles"
+    },
+    {
+      "id": "lead-7dc3038d",
+      "at": "2026-07-16T12:33:11.954Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Practical Venture Capital"
+    },
+    {
+      "id": "lead-37f36ee1",
+      "at": "2026-07-16T12:33:11.956Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Jeff Bezos"
+    },
+    {
+      "id": "lead-eef5f7b4",
+      "at": "2026-07-16T12:33:11.962Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Buy"
+    },
+    {
+      "id": "lead-f4597df5",
+      "at": "2026-07-16T12:33:11.996Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "View"
+    },
+    {
+      "id": "lead-f5a3c516",
+      "at": "2026-07-16T12:33:11.998Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Tech"
+    },
+    {
+      "id": "lead-747e9538",
+      "at": "2026-07-16T12:33:12.033Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Broken Symmetry Capital"
+    },
+    {
+      "id": "lead-667aa5f8",
+      "at": "2026-07-16T12:33:12.035Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Through Frontier Forecast"
+    },
+    {
+      "id": "lead-72e48110",
+      "at": "2026-07-16T12:33:12.071Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Launching Prediction Markets"
+    },
+    {
+      "id": "lead-c8d39cf4",
+      "at": "2026-07-16T12:33:12.073Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Product Spotlight"
+    },
+    {
+      "id": "lead-cb875d6e",
+      "at": "2026-07-16T12:33:12.075Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Sales Engineering"
+    },
+    {
+      "id": "lead-e9a80c47",
+      "at": "2026-07-16T12:33:12.077Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Edited"
+    },
+    {
+      "id": "lead-c475e06b",
+      "at": "2026-07-16T12:33:12.087Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Ataur Rosul Abeer"
+    },
+    {
+      "id": "lead-7d4ff6f5",
+      "at": "2026-07-16T12:33:12.089Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Sales Supervisor"
+    },
+    {
+      "id": "lead-bd1987b6",
+      "at": "2026-07-16T12:33:12.147Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "View Sebastien Douville"
+    },
+    {
+      "id": "lead-6e0f5961",
+      "at": "2026-07-16T12:33:12.149Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Base Infrastructure Layer"
+    },
+    {
+      "id": "lead-3222bad7",
+      "at": "2026-07-16T12:33:12.153Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "View Daria Shakhbazova"
+    },
+    {
+      "id": "lead-57fba54f",
+      "at": "2026-07-16T12:33:12.155Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Daria Shakhbazova"
+    },
+    {
+      "id": "lead-4fda2697",
+      "at": "2026-07-16T12:33:12.174Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-307091b8",
+      "at": "2026-07-16T12:33:12.213Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Embed Prediction Markets"
+    },
+    {
+      "id": "lead-443d47c4",
+      "at": "2026-07-16T12:33:12.215Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Taps Polymarket"
+    },
+    {
+      "id": "lead-f4be1ed9",
+      "at": "2026-07-16T12:33:12.268Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Regulatory Advisor Tiffany"
+    },
+    {
+      "id": "lead-e3d318e3",
+      "at": "2026-07-16T12:33:12.270Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Tiffany Duncan"
+    },
+    {
+      "id": "lead-07ebecbd",
+      "at": "2026-07-16T12:33:12.280Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Udesh Jha"
+    },
+    {
+      "id": "lead-cfbe07fa",
+      "at": "2026-07-16T12:33:12.282Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Risk"
+    },
+    {
+      "id": "lead-a1575a29",
+      "at": "2026-07-16T12:33:12.328Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "All"
+    },
+    {
+      "id": "lead-a4eb77f6",
+      "at": "2026-07-16T12:33:12.330Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Gaming"
+    },
+    {
+      "id": "lead-d9087665",
+      "at": "2026-07-16T12:33:12.341Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "View Romansh Yadav"
+    },
+    {
+      "id": "lead-4b025344",
+      "at": "2026-07-16T12:33:12.343Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Smart Contract Audits"
+    },
+    {
+      "id": "lead-a52138b2",
+      "at": "2026-07-16T12:33:12.366Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Lex Law Office"
+    },
+    {
+      "id": "lead-d88aedd6",
+      "at": "2026-07-16T12:33:12.836Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Rialto"
+    },
+    {
+      "id": "lead-24a19ab3",
+      "at": "2026-07-16T12:33:12.843Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Inc"
+    },
+    {
+      "id": "lead-941d14cb",
+      "at": "2026-07-16T12:33:13.158Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Disco Nails Club"
+    },
+    {
+      "id": "lead-535a9906",
+      "at": "2026-07-16T12:33:13.164Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Senior Vice President"
+    },
+    {
+      "id": "lead-941d14cb",
+      "at": "2026-07-16T12:33:13.221Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-535a9906",
+      "at": "2026-07-16T12:33:13.223Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-e8b122f9",
+      "at": "2026-07-16T12:33:13.340Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Super App Strategy"
+    },
+    {
+      "id": "lead-377f2b73",
+      "at": "2026-07-16T12:33:13.342Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Unlock Claude Fable"
+    },
+    {
+      "id": "lead-20410513",
+      "at": "2026-07-16T12:33:13.345Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Infinity Investment Partners"
+    },
+    {
+      "id": "lead-ac41c986",
+      "at": "2026-07-16T12:33:13.347Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Pollen Street Capital"
+    },
+    {
+      "id": "lead-5846b146",
+      "at": "2026-07-16T12:33:14.801Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Reporter Katherine Doherty"
+    },
+    {
+      "id": "lead-686fab9b",
+      "at": "2026-07-16T12:33:14.809Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Watch Bloomberg Radio"
+    },
+    {
+      "id": "lead-5846b146",
+      "at": "2026-07-16T12:33:14.827Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-686fab9b",
+      "at": "2026-07-16T12:33:14.829Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-a7864790",
+      "at": "2026-07-16T12:33:14.964Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Predict"
+    },
+    {
+      "id": "lead-c4c9eef9",
+      "at": "2026-07-16T12:33:14.967Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Chapter"
+    },
+    {
+      "id": "lead-23393c7f",
+      "at": "2026-07-16T12:33:15.130Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Red"
+    },
+    {
+      "id": "lead-ad9dd4d3",
+      "at": "2026-07-16T12:33:16.002Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Canadian Investment Regulatory"
+    },
+    {
+      "id": "lead-47abdad1",
+      "at": "2026-07-16T12:33:16.005Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Canadian Investor Protection"
+    },
+    {
+      "id": "lead-4de62a28",
+      "at": "2026-07-16T12:33:16.138Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Sec"
+    },
+    {
+      "id": "lead-0b04c292",
+      "at": "2026-07-16T12:33:16.205Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Colorado"
+    },
+    {
+      "id": "lead-096738f0",
+      "at": "2026-07-16T12:33:16.784Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Approval"
+    },
+    {
+      "id": "lead-e7e6a475",
+      "at": "2026-07-16T12:33:16.821Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Predictive Labs"
+    },
+    {
+      "id": "lead-42a199e4",
+      "at": "2026-07-16T12:33:16.824Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Coinsilium Group"
+    },
+    {
+      "id": "lead-d3d9e695",
+      "at": "2026-07-16T12:33:17.071Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Warsh Makes Vow"
+    },
+    {
+      "id": "lead-44f47e99",
+      "at": "2026-07-16T12:33:17.074Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Learned From Kevin"
+    },
+    {
+      "id": "lead-d3d9e695",
+      "at": "2026-07-16T12:33:17.155Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-44f47e99",
+      "at": "2026-07-16T12:33:17.158Z",
+      "actor": "ingest",
+      "action": "update",
+      "collection": "leads",
+      "summary": "evidence"
+    },
+    {
+      "id": "lead-7974d8a2",
+      "at": "2026-07-16T12:33:17.246Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Systematic Polymarket Bot"
+    },
+    {
+      "id": "lead-ac284af2",
+      "at": "2026-07-16T12:33:17.249Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Consensys Lawyer Bill"
+    },
+    {
+      "id": "lead-84c4a49a",
+      "at": "2026-07-16T12:33:17.342Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Texas Doctors Warn"
+    },
+    {
+      "id": "lead-39289c44",
+      "at": "2026-07-16T12:33:17.345Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Houston Public Media"
+    },
+    {
+      "id": "lead-1f6bf010",
+      "at": "2026-07-16T12:33:17.666Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Bitcoin Steady Again"
+    },
+    {
+      "id": "lead-b1cb00ff",
+      "at": "2026-07-16T12:33:17.668Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Eric Burlison Believes"
     }
   ]
 }

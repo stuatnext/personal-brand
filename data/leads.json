@@ -174,6 +174,100 @@
       ],
       "status": "detected",
       "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-4fda2697",
+      "createdAt": "2026-07-16T12:33:11.276Z",
+      "updatedAt": "2026-07-16T12:33:12.173Z",
+      "name": "Kalshi",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-66cb8f6b",
+          "quote": "Remember that Kalshi spent years earning CFTC approval and still faces state-level lawsuits.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        },
+        {
+          "insightId": "batch:02_linkedin_posts_lossless.jsonl",
+          "quote": "** Kalshi just launched prediction markets for compute pricing, treating AI infrastructure like a traded commodity.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-163ec86c",
+      "createdAt": "2026-07-16T12:33:11.658Z",
+      "updatedAt": "2026-07-16T12:33:11.658Z",
+      "name": "Nancy Pham",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-0e48752a",
+          "quote": "Nancy Pham has been named head of fixed income sales at the SIX Swiss Exchange, following a 16-year tenure at UBS.",
+          "signal": "leadership-hire",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5dde0dec",
+      "createdAt": "2026-07-16T12:33:11.660Z",
+      "updatedAt": "2026-07-16T12:33:11.660Z",
+      "name": "Swiss Exchange",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-0e48752a",
+          "quote": "Nancy Pham has been named head of fixed income sales at the SIX Swiss Exchange, following a 16-year tenure at UBS.",
+          "signal": "leadership-hire",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8d16e231",
+      "createdAt": "2026-07-16T12:33:11.662Z",
+      "updatedAt": "2026-07-16T12:33:11.662Z",
+      "name": "Cboe Predicts",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-0e48752a",
+          "quote": "On 23 June Cboe said in a statement that it was launching the first products in Cboe Predicts, its new prediction markets suite, with the aim of introducing retail traders to the options market.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
     }
   ]
 }

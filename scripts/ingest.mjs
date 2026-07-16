@@ -23,6 +23,11 @@ import { review as confReview } from '../lib/confidentiality.mjs';
 
 const args = process.argv.slice(2);
 const DRY = args.includes('--dry-run');
+// --leads-only: mine buying signals and entities WITHOUT creating insight
+// records. For high-volume social batches (hundreds of feed posts) where
+// one-insight-per-post would drown the working collection; the lossless
+// archive under intel/ remains the source of truth.
+const LEADS_ONLY = args.includes('--leads-only');
 const target = args.find((a) => !a.startsWith('--'));
 const flag = (name, dflt) => { const i = args.indexOf(name); return i > -1 ? args[i + 1] : dflt; };
 const SOURCE = flag('--source', null);
@@ -220,12 +225,12 @@ for (const r of records) {
     contentHash: h,
   };
   if (conf.classification !== 'public') confidentialFlags.push({ title: r.title, classification: conf.classification });
-  let insightId = '(dry-run)';
-  if (!DRY) {
+  let insightId = LEADS_ONLY ? `batch:${r.sourceFile}` : '(dry-run)';
+  if (!DRY && !LEADS_ONLY) {
     const saved = insert('insights', item, { actor: 'ingest' });
     insightId = saved.id;
   }
-  created.push({ id: insightId, title: r.title, lanes, classification: conf.classification });
+  if (!LEADS_ONLY) created.push({ id: insightId, title: r.title, lanes, classification: conf.classification });
   existing.set(h, insightId);
 
   // ----- Lead detection: signal + entity in the same record ------------------
@@ -295,7 +300,7 @@ for (const d of tmpDirs) fs.rmSync(d, { recursive: true, force: true });
 // ---------------------------------------------------------------------------
 // Routing summary.
 // ---------------------------------------------------------------------------
-console.log(`\nINGEST ${DRY ? '(dry run) ' : ''}— ${records.length} record(s) found in ${path.basename(target)}`);
+console.log(`\nINGEST ${DRY ? '(dry run) ' : ''}${LEADS_ONLY ? '(leads-only: no insight records created) ' : ''}— ${records.length} record(s) found in ${path.basename(target)}`);
 console.log('='.repeat(64));
 console.log(`created: ${created.length} · duplicates skipped: ${duplicates.length} · unsupported files: ${skipped.length}`);
 for (const c of created) console.log(`  + ${c.id}  ${c.title}\n      lanes: ${c.lanes.join(', ') || '(none matched — tag by hand)'} · confidentiality: ${c.classification}`);
