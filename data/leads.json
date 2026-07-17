@@ -55,7 +55,7 @@
     {
       "id": "lead-21e1639b",
       "createdAt": "2026-07-16T08:26:33.315Z",
-      "updatedAt": "2026-07-16T08:26:33.670Z",
+      "updatedAt": "2026-07-17T04:29:08.363Z",
       "name": "Novig",
       "kind": "unknown",
       "pillar": "prediction-markets",
@@ -82,6 +82,12 @@
           "signal": "pm-venue-launch",
           "date": "2026-07-16",
           "note": "via alias Ludlow Exchange"
+        },
+        {
+          "insightId": "ins-d1a0af65",
+          "quote": "Novig won CFTC designation in June and will run their model, peer to peer model that puts direct pricing pressure on everyone.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
         }
       ],
       "status": "detected",
@@ -178,7 +184,7 @@
     {
       "id": "lead-4fda2697",
       "createdAt": "2026-07-16T12:33:11.276Z",
-      "updatedAt": "2026-07-16T12:33:12.173Z",
+      "updatedAt": "2026-07-17T04:32:00.335Z",
       "name": "Kalshi",
       "kind": "unknown",
       "pillar": "prediction-markets",
@@ -198,6 +204,24 @@
           "quote": "** Kalshi just launched prediction markets for compute pricing, treating AI infrastructure like a traded commodity.",
           "signal": "pm-venue-launch",
           "date": "2026-07-16"
+        },
+        {
+          "insightId": "ins-cb66090c",
+          "quote": "in/dHc2pgzU\"],\"hashtags\":[\"#iGaming\",\"#PredictionMarkets\",\"#Google\",\"#GamingRegulation\",\"#Compliance\",\"#DigitalPolicy\",\"#ConsumerProtection\",\"#Polymarket\",\"#Kalshi\",\"#GamingIndustry\"],\"topic_tags\":[\"compliance_surveillance\",\"regulation_cftc_sec\",\"partnerships_",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-fea554c5",
+          "quote": "Exchanges like Kalshi hold CFTC Designated Contract Market\r\n3\r\nBiopharma’s Public Probability AppliedXL · Kalshi\r\napproval, and millions of individuals participate in markets that span politics, technology,\r\nthe environment, and more.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-6604d07e",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-030\",\"title\":\"Prediction market startup Pascal raises $9 million to challenge Kalshi and Polymarket\",\"publisher\":\"Fortune\",\"source_type\":\"news_article\",\"collection_date\":\"2026-07-17\",\"preservation_status\":\"catalogued_from_chat_c",
+          "signal": "funding",
+          "date": "2026-07-17"
         }
       ],
       "status": "detected",
@@ -264,6 +288,3368 @@
           "quote": "On 23 June Cboe said in a statement that it was launching the first products in Cboe Predicts, its new prediction markets suite, with the aim of introducing retail traders to the options market.",
           "signal": "pm-venue-launch",
           "date": "2026-07-16"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-44fff012",
+      "createdAt": "2026-07-17T04:28:53.305Z",
+      "updatedAt": "2026-07-17T04:28:53.305Z",
+      "name": "Press",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-595ce354",
+          "quote": "Novig won CFTC designation in June and will run their model, peer to peer model that puts direct pricing pressure on everyone.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-13517794",
+      "createdAt": "2026-07-17T04:28:53.433Z",
+      "updatedAt": "2026-07-17T04:29:08.608Z",
+      "name": "Super App Strategy",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-b80e4fce",
+          "quote": "\\r\\nBR-DGE, the high-growth payments technology company, has secured a £10M funding round.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-7cb3caec",
+          "quote": "BR-DGE, the high-growth payments technology company, has secured a £10M funding round.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ab6b362a",
+      "createdAt": "2026-07-17T04:28:53.434Z",
+      "updatedAt": "2026-07-17T04:28:53.434Z",
+      "name": "Loops That Build",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-b80e4fce",
+          "quote": "\\r\\nBR-DGE, the high-growth payments technology company, has secured a £10M funding round.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d9192f87",
+      "createdAt": "2026-07-17T04:28:53.436Z",
+      "updatedAt": "2026-07-17T04:28:53.436Z",
+      "name": "Infinity Investment Partners",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-b80e4fce",
+          "quote": "Owners BBVA, Toscafund, and Infinity Investment Partners appointed Jefferies to run the sale, but Pollen Street Capital’s bid was too low, and Yorkshire and Leeds Building Societies opted out.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-7f98213c",
+      "createdAt": "2026-07-17T04:28:53.438Z",
+      "updatedAt": "2026-07-17T04:28:53.438Z",
+      "name": "Pollen Street Capital",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-b80e4fce",
+          "quote": "Owners BBVA, Toscafund, and Infinity Investment Partners appointed Jefferies to run the sale, but Pollen Street Capital’s bid was too low, and Yorkshire and Leeds Building Societies opted out.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-07d2a1e7",
+      "createdAt": "2026-07-17T04:28:53.496Z",
+      "updatedAt": "2026-07-17T04:28:53.496Z",
+      "name": "Now",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-66f8db82",
+          "quote": "Now his robotics startup just raised $55 million.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ea591630",
+      "createdAt": "2026-07-17T04:28:53.632Z",
+      "updatedAt": "2026-07-17T04:28:53.632Z",
+      "name": "Stuart Crowley",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-c1f6a556",
+          "quote": "But while lotteries remain the largest part of the market, the strongest growth is coming from online casino products, exposing a widening split between Spain’s expanding digital sector and a largely stagnant physical gambling industry.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-4482e5e8",
+      "createdAt": "2026-07-17T04:28:53.633Z",
+      "updatedAt": "2026-07-17T04:28:53.633Z",
+      "name": "Emoji Keyboard",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-c1f6a556",
+          "quote": "But while lotteries remain the largest part of the market, the strongest growth is coming from online casino products, exposing a widening split between Spain’s expanding digital sector and a largely stagnant physical gambling industry.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-faeed876",
+      "createdAt": "2026-07-17T04:28:53.923Z",
+      "updatedAt": "2026-07-17T04:29:07.758Z",
+      "name": "Clone",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-1d021d9c",
+          "quote": "\\nOur Polymarket Clone Script helps businesses launch secure and fully customizable decentralized prediction market platform like orginal polymarket.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-6d8cb82b",
+          "quote": "Our Polymarket Clone Script helps businesses launch secure and fully customizable decentralized prediction market platform like orginal polymarket.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-40bcb373",
+      "createdAt": "2026-07-17T04:28:53.925Z",
+      "updatedAt": "2026-07-17T04:28:53.925Z",
+      "name": "Script",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-1d021d9c",
+          "quote": "\\nOur Polymarket Clone Script helps businesses launch secure and fully customizable decentralized prediction market platform like orginal polymarket.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f6741c9c",
+      "createdAt": "2026-07-17T04:28:54.501Z",
+      "updatedAt": "2026-07-17T04:28:54.501Z",
+      "name": "Tenzin Partners",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-5b12c462",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_markets_latest_24h\",\"source_sequence\":55,\"search_query\":\"prediction markets\",\"search_sort\":\"Latest\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Tenzin Partners\",\"author_type\":\"company\",\"connection_degree\":null,\"",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ad6ce1a0",
+      "createdAt": "2026-07-17T04:28:54.585Z",
+      "updatedAt": "2026-07-17T04:28:54.585Z",
+      "name": "Jamie Garcia",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-18005a86",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_markets_latest_24h\",\"source_sequence\":60,\"search_query\":\"prediction markets\",\"search_sort\":\"Latest\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Jamie Garcia\",\"author_type\":\"person\",\"connection_degree\":\"2nd\",\"pro",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b03656ab",
+      "createdAt": "2026-07-17T04:28:54.722Z",
+      "updatedAt": "2026-07-17T04:28:54.722Z",
+      "name": "Former Vice Chairman",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-compliance-hire",
+      "why": "Compliance-first hiring is the tell for serious prediction-markets operators (Stuart's own published read).",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-886f0c62",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_markets_latest_24h\",\"source_sequence\":68,\"search_query\":\"prediction markets\",\"search_sort\":\"Latest\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Siobhán MacDermott\",\"author_type\":\"person\",\"connection_degree\":\"2nd",
+          "signal": "pm-compliance-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-82f9c9d7",
+      "createdAt": "2026-07-17T04:28:54.724Z",
+      "updatedAt": "2026-07-17T04:28:54.724Z",
+      "name": "Multilingual Polyglot",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-compliance-hire",
+      "why": "Compliance-first hiring is the tell for serious prediction-markets operators (Stuart's own published read).",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-886f0c62",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_markets_latest_24h\",\"source_sequence\":68,\"search_query\":\"prediction markets\",\"search_sort\":\"Latest\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Siobhán MacDermott\",\"author_type\":\"person\",\"connection_degree\":\"2nd",
+          "signal": "pm-compliance-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8b795f5c",
+      "createdAt": "2026-07-17T04:28:55.053Z",
+      "updatedAt": "2026-07-17T04:28:55.053Z",
+      "name": "Memorial Sloan Kettering",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-e445f829",
+          "quote": "\\nSo  @Kalshi and @AppliedXL launching pilot prediction markets on clinical trial outcomes and FDA decisions is not the transparency solution they like to frame it as (strengthening enforcement of existing FDAAA reporting requirements would).",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-70d68c56",
+      "createdAt": "2026-07-17T04:28:55.056Z",
+      "updatedAt": "2026-07-17T04:28:55.056Z",
+      "name": "Debyani Chakravarty",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-e445f829",
+          "quote": "\\nSo  @Kalshi and @AppliedXL launching pilot prediction markets on clinical trial outcomes and FDA decisions is not the transparency solution they like to frame it as (strengthening enforcement of existing FDAAA reporting requirements would).",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d82ff7ae",
+      "createdAt": "2026-07-17T04:28:55.080Z",
+      "updatedAt": "2026-07-17T04:28:55.080Z",
+      "name": "Grade Biotech",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-92e08870",
+          "quote": "\\nCasino-Grade Biotech:\\nKalshi is launching prediction markets for clinical trials and FDA approvals.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8faabbda",
+      "createdAt": "2026-07-17T04:28:55.306Z",
+      "updatedAt": "2026-07-17T04:28:55.306Z",
+      "name": "Kelvin Lai",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-compliance-hire",
+      "why": "Compliance-first hiring is the tell for serious prediction-markets operators (Stuart's own published read).",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-70fc512d",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_markets_latest_24h\",\"source_sequence\":99,\"search_query\":\"prediction markets\",\"search_sort\":\"Latest\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Kelvin Lai, CPA, MBA\",\"author_type\":\"unknown\",\"connection_degree\":\"",
+          "signal": "pm-compliance-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5af138af",
+      "createdAt": "2026-07-17T04:28:55.477Z",
+      "updatedAt": "2026-07-17T04:28:55.477Z",
+      "name": "Messi",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "crm-pain",
+      "why": "Stated CRM/pipeline pain is a direct Commercial Systems Audit trigger.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4064cd90",
+          "quote": "\\nWill the model's highest-probability team complete the forecast?\\nOr will Messi turn an 8.",
+          "signal": "crm-pain",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-9fb239b3",
+      "createdAt": "2026-07-17T04:28:55.849Z",
+      "updatedAt": "2026-07-17T04:28:55.849Z",
+      "name": "Challenger Capital",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-a07a1db4",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_markets_latest_24h\",\"source_sequence\":126,\"search_query\":\"prediction markets\",\"search_sort\":\"Latest\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Challenger Capital\",\"author_type\":\"company\",\"connection_degree\":nu",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8e312041",
+      "createdAt": "2026-07-17T04:28:56.084Z",
+      "updatedAt": "2026-07-17T04:28:56.084Z",
+      "name": "Phase",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4a507ba0",
+          "quote": "Kalshi is launching prediction markets on Phase III trial outcomes and FDA approvals.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-3d55477d",
+      "createdAt": "2026-07-17T04:28:58.124Z",
+      "updatedAt": "2026-07-17T04:28:58.124Z",
+      "name": "Josephs",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-6c0a67bf",
+          "quote": "\\nThe hiring signal also got louder 💼\\nBrian Josephs posted that Sportradar is creating a new commercial team for prediction markets and hiring a VP of Sales.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-407fe7e7",
+      "createdAt": "2026-07-17T04:28:58.127Z",
+      "updatedAt": "2026-07-17T04:29:07.748Z",
+      "name": "Sportradar",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-6c0a67bf",
+          "quote": "\\nThe hiring signal also got louder 💼\\nBrian Josephs posted that Sportradar is creating a new commercial team for prediction markets and hiring a VP of Sales.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-6d8cb82b",
+          "quote": "Brian Josephs posted that Sportradar is creating a new commercial team for prediction markets and hiring a VP of Sales.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-6cfccb9a",
+      "createdAt": "2026-07-17T04:28:58.878Z",
+      "updatedAt": "2026-07-17T04:28:58.878Z",
+      "name": "Alex Dickinson",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4019d011",
+          "quote": "\\nAnyway, what was once a pastime only for the rich and famous is being democratized 👏👏👏\\nKalshi just launched prediction markets on clinical trial outcomes.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5c8fbb1f",
+      "createdAt": "2026-07-17T04:28:58.881Z",
+      "updatedAt": "2026-07-17T04:28:58.881Z",
+      "name": "Martha Stewart",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4019d011",
+          "quote": "\\nAnyway, what was once a pastime only for the rich and famous is being democratized 👏👏👏\\nKalshi just launched prediction markets on clinical trial outcomes.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8247e680",
+      "createdAt": "2026-07-17T04:28:59.017Z",
+      "updatedAt": "2026-07-17T04:28:59.017Z",
+      "name": "John Sullivan",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-aee2409b",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_market_top_match_24h\",\"source_sequence\":28,\"search_query\":\"prediction market\",\"search_sort\":\"Top Match\",\"search_window\":\"Past 24 hours\",\"author_name\":\"John Sullivan\",\"author_type\":\"unknown\",\"connection_degree\":\"2nd",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-a4f6520c",
+      "createdAt": "2026-07-17T04:28:59.384Z",
+      "updatedAt": "2026-07-17T04:28:59.384Z",
+      "name": "National Biotech Reporter",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-9132e56e",
+          "quote": "It's launching prediction markets for clinical trials and FDA approval decisions.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-bbdc7e40",
+      "createdAt": "2026-07-17T04:28:59.387Z",
+      "updatedAt": "2026-07-17T04:28:59.387Z",
+      "name": "Elaine Chen",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-9132e56e",
+          "quote": "It's launching prediction markets for clinical trials and FDA approval decisions.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e9bcddf5",
+      "createdAt": "2026-07-17T04:28:59.499Z",
+      "updatedAt": "2026-07-17T04:28:59.499Z",
+      "name": "Liam Dunn",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-897e4551",
+          "quote": "txt\",\"source_key\":\"linkedin_search_prediction_market_top_match_24h\",\"source_sequence\":44,\"search_query\":\"prediction market\",\"search_sort\":\"Top Match\",\"search_window\":\"Past 24 hours\",\"author_name\":\"Liam Dunn\",\"author_type\":\"person\",\"connection_degree\":\"3rd+\",\"p",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-290d4710",
+      "createdAt": "2026-07-17T04:28:59.670Z",
+      "updatedAt": "2026-07-17T04:28:59.675Z",
+      "name": "Stocks Bet Has",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-216e43ca",
+          "quote": "have already launched prediction markets of their own.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-216e43ca",
+          "quote": "in/gnA73wu3\"],\"hashtags\":[\"#SportsBetting\",\"#PredictionMarkets\",\"#iGaming\"],\"topic_tags\":[\"regulation_cftc_sec\"],\"relevance_score_heuristic\":6,\"relevance_label_heuristic\":\"high\",\"content_fingerprint_sha256\":\"f5e0e22aaedb80c921874c31e48284000ecd0f287591ea77eecd",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-fdeb2fbd",
+      "createdAt": "2026-07-17T04:28:59.672Z",
+      "updatedAt": "2026-07-17T04:28:59.678Z",
+      "name": "Michael Burry",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-216e43ca",
+          "quote": "have already launched prediction markets of their own.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-216e43ca",
+          "quote": "in/gnA73wu3\"],\"hashtags\":[\"#SportsBetting\",\"#PredictionMarkets\",\"#iGaming\"],\"topic_tags\":[\"regulation_cftc_sec\"],\"relevance_score_heuristic\":6,\"relevance_label_heuristic\":\"high\",\"content_fingerprint_sha256\":\"f5e0e22aaedb80c921874c31e48284000ecd0f287591ea77eecd",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-02f91630",
+      "createdAt": "2026-07-17T04:28:59.746Z",
+      "updatedAt": "2026-07-17T04:28:59.746Z",
+      "name": "Transforming Healthcare With",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-1b3b93bd",
+          "quote": "\\nKalshi announces today:\\n\\\"Kalshi, the next-generation financial exchange, today announced a partnership with public intelligence company AppliedXL to launch a pilot suite of prediction markets on clinical trial outcomes and FDA regulatory decisions.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f8a89f1e",
+      "createdAt": "2026-07-17T04:28:59.749Z",
+      "updatedAt": "2026-07-17T04:28:59.749Z",
+      "name": "Craig Cinquina Craig",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-1b3b93bd",
+          "quote": "\\nKalshi announces today:\\n\\\"Kalshi, the next-generation financial exchange, today announced a partnership with public intelligence company AppliedXL to launch a pilot suite of prediction markets on clinical trial outcomes and FDA regulatory decisions.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-3af4be96",
+      "createdAt": "2026-07-17T04:28:59.839Z",
+      "updatedAt": "2026-07-17T04:28:59.839Z",
+      "name": "Leopold Gaillard",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-a11814a5",
+          "quote": "You should be acquiring like casinos.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8b877a9c",
+      "createdAt": "2026-07-17T04:28:59.842Z",
+      "updatedAt": "2026-07-17T04:28:59.842Z",
+      "name": "Kalshi Polymarket",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-a11814a5",
+          "quote": "You should be acquiring like casinos.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-510d5301",
+      "createdAt": "2026-07-17T04:29:00.001Z",
+      "updatedAt": "2026-07-17T04:29:00.001Z",
+      "name": "Google",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-cb66090c",
+          "quote": "in/dHc2pgzU\"],\"hashtags\":[\"#iGaming\",\"#PredictionMarkets\",\"#Google\",\"#GamingRegulation\",\"#Compliance\",\"#DigitalPolicy\",\"#ConsumerProtection\",\"#Polymarket\",\"#Kalshi\",\"#GamingIndustry\"],\"topic_tags\":[\"compliance_surveillance\",\"regulation_cftc_sec\",\"partnerships_",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-4548e549",
+      "createdAt": "2026-07-17T04:29:05.642Z",
+      "updatedAt": "2026-07-17T04:32:01.121Z",
+      "name": "Pascal Raises",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "Prediction Market Startup Pascal Raises $9 Million to Challenge Industry Leaders Kalshi and Polymarket\r\n\r\nThe prediction markets sector continues to attract investor interest, with New York-based startup Pascal announcing a $9 million Series A funding round as",
+          "signal": "funding",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-4f8f28f2",
+          "quote": "- **INLINE-020**: Pascal Raises $9M to Compete with Kalshi and Polymarket in Prediction Markets (KuCoin / CryptoBriefing syndication).",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e7e9d279",
+      "createdAt": "2026-07-17T04:29:05.649Z",
+      "updatedAt": "2026-07-17T04:29:05.649Z",
+      "name": "Hal",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "Prediction Market Startup Pascal Raises $9 Million to Challenge Industry Leaders Kalshi and Polymarket\r\n\r\nThe prediction markets sector continues to attract investor interest, with New York-based startup Pascal announcing a $9 million Series A funding round as",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b6b00eab",
+      "createdAt": "2026-07-17T04:29:05.654Z",
+      "updatedAt": "2026-07-17T04:29:05.654Z",
+      "name": "Brian Josephs",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "Brian Josephs posted that Sportradar is creating a new commercial team for prediction markets and hiring a VP of Sales.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e6151914",
+      "createdAt": "2026-07-17T04:29:05.667Z",
+      "updatedAt": "2026-07-17T04:29:05.667Z",
+      "name": "Ina",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "Our Polymarket Clone Script helps businesses launch secure and fully customizable decentralized prediction market platform like orginal polymarket.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-c26b6076",
+      "createdAt": "2026-07-17T04:29:05.670Z",
+      "updatedAt": "2026-07-17T04:29:05.670Z",
+      "name": "Lance",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-compliance-hire",
+      "why": "Compliance-first hiring is the tell for serious prediction-markets operators (Stuart's own published read).",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "The AI hiring surveillance pipeline starts earlier than you think.",
+          "signal": "pm-compliance-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5cf42970",
+      "createdAt": "2026-07-17T04:29:05.677Z",
+      "updatedAt": "2026-07-17T04:29:08.110Z",
+      "name": "Marke",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "#iGaming #SportsBetting #PredictionMarkets #GamingRegulation #USGambling #ETF\r\n\r\nSports event contract ETF proposal widens US prediction markets debate\r\nSports event contract ETF proposal widens US prediction markets debate\r\n\r\nGlobal Gambling News\r\n\r\n\r\n\r\n\r\n\r\n\r",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-8c0d9fa9",
+          "quote": "Kalshi just launched prediction markets on clinical trial outcomes.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5cc2d1af",
+      "createdAt": "2026-07-17T04:29:05.689Z",
+      "updatedAt": "2026-07-17T04:33:50.815Z",
+      "name": "Ive",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-65ed9e69",
+          "quote": "You should be acquiring like casinos.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-3a9db485",
+          "quote": "Pelaz was appointed Chief Strategy\r\nOfficer and member of the Executive\r\nBoard of Hensoldt AG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-809ad420",
+          "quote": "There are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-53fb5d03",
+      "createdAt": "2026-07-17T04:29:07.770Z",
+      "updatedAt": "2026-07-17T04:33:56.145Z",
+      "name": "Ill",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-compliance-hire",
+      "why": "Compliance-first hiring is the tell for serious prediction-markets operators (Stuart's own published read).",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-6d8cb82b",
+          "quote": "The AI hiring surveillance pipeline starts earlier than you think.",
+          "signal": "pm-compliance-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-6598e4a6",
+          "quote": "You will be very disappointed to find out how much Manipulation-for-Profit happens every Friday for decades.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-da42f3ac",
+      "createdAt": "2026-07-17T04:29:08.116Z",
+      "updatedAt": "2026-07-17T04:29:08.116Z",
+      "name": "Wide",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-8c0d9fa9",
+          "quote": "#iGaming #SportsBetting #PredictionMarkets #GamingRegulation #USGambling #ETF\r\n\r\nSports event contract ETF proposal widens US prediction markets debate\r\nSports event contract ETF proposal widens US prediction markets debate\r\n\r\nGlobal Gambling News\r\n\r\n\r\n\r\n\r\n\r\n\r",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d51dfec8",
+      "createdAt": "2026-07-17T04:29:08.289Z",
+      "updatedAt": "2026-07-17T04:29:08.289Z",
+      "name": "Senior Sales Manager",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-8c0d9fa9",
+          "quote": "You should be acquiring like casinos.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b19653d6",
+      "createdAt": "2026-07-17T04:29:08.294Z",
+      "updatedAt": "2026-07-17T04:29:08.294Z",
+      "name": "Eventus Quarterly Roundup",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-8c0d9fa9",
+          "quote": "You should be acquiring like casinos.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-afe34c4d",
+      "createdAt": "2026-07-17T04:29:08.611Z",
+      "updatedAt": "2026-07-17T04:29:08.611Z",
+      "name": "Unlock Claude Fable",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7cb3caec",
+          "quote": "BR-DGE, the high-growth payments technology company, has secured a £10M funding round.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-bf90b65c",
+      "createdAt": "2026-07-17T04:29:08.917Z",
+      "updatedAt": "2026-07-17T04:29:08.917Z",
+      "name": "Red Bull",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4a6e7c88",
+          "quote": "Now his robotics startup just raised $55 million.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f872b6a6",
+      "createdAt": "2026-07-17T04:29:08.920Z",
+      "updatedAt": "2026-07-17T04:29:08.920Z",
+      "name": "Formula One",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4a6e7c88",
+          "quote": "Now his robotics startup just raised $55 million.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-85a6ab94",
+      "createdAt": "2026-07-17T04:29:08.925Z",
+      "updatedAt": "2026-07-17T04:29:08.925Z",
+      "name": "Grow",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4a6e7c88",
+          "quote": "But while lotteries remain the largest part of the market, the strongest growth is coming from online casino products, exposing a widening split between Spain’s expanding digital sector and a largely stagnant physical gambling industry.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-a60db47e",
+      "createdAt": "2026-07-17T04:29:08.928Z",
+      "updatedAt": "2026-07-17T04:29:08.928Z",
+      "name": "Spain",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4a6e7c88",
+          "quote": "But while lotteries remain the largest part of the market, the strongest growth is coming from online casino products, exposing a widening split between Spain’s expanding digital sector and a largely stagnant physical gambling industry.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-bd575caa",
+      "createdAt": "2026-07-17T04:29:18.614Z",
+      "updatedAt": "2026-07-17T04:32:32.195Z",
+      "name": "Iowa Electronic Markets",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4ab0e50b",
+          "quote": "Some companies are already using the SEC as the launching pad for their event contracts.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "— a market infrastructure company that has a partnership with Kalshi — said getting clarification from the two agencies is critical for institutions who are looking to trade on prediction markets.",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-05c309df",
+      "createdAt": "2026-07-17T04:29:18.621Z",
+      "updatedAt": "2026-07-17T04:32:32.202Z",
+      "name": "Sarah Razaq Sallis",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4ab0e50b",
+          "quote": "Some companies are already using the SEC as the launching pad for their event contracts.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "— a market infrastructure company that has a partnership with Kalshi — said getting clarification from the two agencies is critical for institutions who are looking to trade on prediction markets.",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e16babfc",
+      "createdAt": "2026-07-17T04:29:18.627Z",
+      "updatedAt": "2026-07-17T04:29:18.627Z",
+      "name": "King",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-partnership",
+      "why": "Companies partnering into the category are forming their strategy now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4ab0e50b",
+          "quote": "— a market infrastructure company that has a partnership with Kalshi — said getting clarification from the two agencies is critical for institutions who are looking to trade on prediction markets.",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-125e6c6b",
+      "createdAt": "2026-07-17T04:29:18.773Z",
+      "updatedAt": "2026-07-17T04:33:54.391Z",
+      "name": "Yes",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-028b5d60",
+          "quote": "The DraftKings Predictions site launched in December 2025 and offers primarily Yes/No event contracts.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-7301b571",
+          "quote": "Yes we have a serious problem with underpaying government employees, elected and appointed.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ea1e4212",
+      "createdAt": "2026-07-17T04:29:18.776Z",
+      "updatedAt": "2026-07-17T04:33:56.137Z",
+      "name": "Dec",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-028b5d60",
+          "quote": "The DraftKings Predictions site launched in December 2025 and offers primarily Yes/No event contracts.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-6598e4a6",
+          "quote": "You will be very disappointed to find out how much Manipulation-for-Profit happens every Friday for decades.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f16932b9",
+      "createdAt": "2026-07-17T04:29:18.786Z",
+      "updatedAt": "2026-07-17T04:29:18.786Z",
+      "name": "Chicago Mercantile Exchange",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-028b5d60",
+          "quote": "DraftKings is a leader in the DFS and online sportsbook space that has recently expanded into prediction markets with DraftKings Predictions.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-9e455a23",
+      "createdAt": "2026-07-17T04:29:18.789Z",
+      "updatedAt": "2026-07-17T04:29:18.789Z",
+      "name": "Champions League",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-028b5d60",
+          "quote": "DraftKings is a leader in the DFS and online sportsbook space that has recently expanded into prediction markets with DraftKings Predictions.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-bd65d307",
+      "createdAt": "2026-07-17T04:29:19.174Z",
+      "updatedAt": "2026-07-17T04:29:19.264Z",
+      "name": "Lilly Research Laboratories",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-5a6792cb",
+          "quote": "named CRO personnel, and surveillance keyed to CRO affiliation rather than sponsor employment alone.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-5a6792cb",
+          "quote": "Buying or shorting a biotech’s shares means betting on the whole company at once: the\r\ndrug program, yes, but also its management, its cash on hand, its other pipeline programs,\r\nthe mood of the sector, and the direction of the broader market.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-833cb9c4",
+      "createdAt": "2026-07-17T04:29:19.177Z",
+      "updatedAt": "2026-07-17T04:30:02.211Z",
+      "name": "Designated Contract Market",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-5a6792cb",
+          "quote": "named CRO personnel, and surveillance keyed to CRO affiliation rather than sponsor employment alone.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-fea554c5",
+          "quote": "Exchanges like Kalshi hold CFTC Designated Contract Market\r\n3\r\nBiopharma’s Public Probability AppliedXL · Kalshi\r\napproval, and millions of individuals participate in markets that span politics, technology,\r\nthe environment, and more.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-3787641f",
+      "createdAt": "2026-07-17T04:29:19.185Z",
+      "updatedAt": "2026-07-17T04:29:19.185Z",
+      "name": "Pub",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-5a6792cb",
+          "quote": "Exchanges like Kalshi hold CFTC Designated Contract Market\r\n3\r\nBiopharma’s Public Probability AppliedXL · Kalshi\r\napproval, and millions of individuals participate in markets that span politics, technology,\r\nthe environment, and more.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-a4bc3fa0",
+      "createdAt": "2026-07-17T04:29:20.350Z",
+      "updatedAt": "2026-07-17T04:29:20.350Z",
+      "name": "Your",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-ece9f664",
+          "quote": "named head of UN mission\r\nin Afghanistan\r\nBangladesh arrests fugitive suspect\r\nin ex-president’s murder: police\r\nS Korea’s top court upholds jail term\r\nfor MP over church bribes\r\nThe Macau Post Daily FRIDAY July 17, 2026\r\nWORLD\r\n10 Your trusted source for real",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-1fdc2e79",
+      "createdAt": "2026-07-17T04:29:20.354Z",
+      "updatedAt": "2026-07-17T04:29:20.354Z",
+      "name": "Bangladesh",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-ece9f664",
+          "quote": "named head of UN mission\r\nin Afghanistan\r\nBangladesh arrests fugitive suspect\r\nin ex-president’s murder: police\r\nS Korea’s top court upholds jail term\r\nfor MP over church bribes\r\nThe Macau Post Daily FRIDAY July 17, 2026\r\nWORLD\r\n10 Your trusted source for real",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-79bc135d",
+      "createdAt": "2026-07-17T04:29:25.166Z",
+      "updatedAt": "2026-07-17T04:30:27.896Z",
+      "name": "Hensoldt",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-3a9db485",
+          "quote": "Pelaz was appointed Chief Strategy\r\nOfficer and member of the Executive\r\nBoard of Hensoldt AG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-04dc4351",
+          "quote": "was appointed Chief Strategy Officer and\r\nmember of the Executive Board of Hensoldt\r\nAG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-1ca4d6fa",
+      "createdAt": "2026-07-17T04:29:27.135Z",
+      "updatedAt": "2026-07-17T04:29:27.135Z",
+      "name": "Successor",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-aa8a1d17",
+          "quote": "terms expire until their successors have been appointed\r\nand have taken office.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-1aece24e",
+      "createdAt": "2026-07-17T04:29:27.544Z",
+      "updatedAt": "2026-07-17T04:29:27.544Z",
+      "name": "Clerk Technical",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-12ddd9d4",
+          "quote": "ااةتفلنة خبربا كلن ُتإل ديا ااةتفلنة هباا اخلربا كػ لصربا يفل ذُتل ) appointed-Court\r\nexperts )و كػ لويفُت ةت كلٍتل )Clerk Technical )ي لن ا للض\" ت فل ادل لها ا تلن ةإل كذل\r\nديا ل ان اأاجلت ت ةفو ا ؿ وف ك ذأ وذراذة ةػ لفرىل اخل ا يف ةل يفجلنتة )دب لن ة صجَت( إ",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-6bd5c221",
+      "createdAt": "2026-07-17T04:29:29.144Z",
+      "updatedAt": "2026-07-17T04:29:29.144Z",
+      "name": "Lead Data Scientist",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-36e85dc7",
+          "quote": "This role is responsible for managing and growing key client relationships in the iGaming, sports betting, and online entertainment sector, achieving significant revenue growth, and identifying new business opportunities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b771f693",
+      "createdAt": "2026-07-17T04:29:29.148Z",
+      "updatedAt": "2026-07-17T04:29:29.148Z",
+      "name": "Lead Product Manager",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-36e85dc7",
+          "quote": "This role is responsible for managing and growing key client relationships in the iGaming, sports betting, and online entertainment sector, achieving significant revenue growth, and identifying new business opportunities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-40a7e9f2",
+      "createdAt": "2026-07-17T04:29:41.560Z",
+      "updatedAt": "2026-07-17T04:30:01.615Z",
+      "name": "Predictions",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-afa2d1fa",
+          "quote": "The DraftKings Predictions site launched in December 2025 and offers primarily Yes/No event contracts.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-2377d98d",
+          "quote": "Unlike its sportsbook, DraftKings Predictions is regulated by the CFTC.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d4bd675f",
+      "createdAt": "2026-07-17T04:29:41.657Z",
+      "updatedAt": "2026-07-17T04:29:41.657Z",
+      "name": "Call",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-948958e9",
+          "quote": "Prediction markets are generally regulated at the federal level by the CFTC, while sportsbooks are typically regulated by state gaming authorities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-53480370",
+      "createdAt": "2026-07-17T04:29:42.122Z",
+      "updatedAt": "2026-07-17T04:29:42.122Z",
+      "name": "Buying",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-abc4dc2a",
+          "quote": "Buying or shorting a biotech’s shares means betting on the whole company at once: the\r\ndrug program, yes, but also its management, its cash on hand, its other pipeline programs,\r\nthe mood of the sector, and the direction of the broader market.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-88d9f143",
+      "createdAt": "2026-07-17T04:29:42.606Z",
+      "updatedAt": "2026-07-17T04:29:42.606Z",
+      "name": "Susquehanna International Group",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4c6f61d0",
+          "quote": "named CRO personnel, and surveillance keyed to CRO affiliation rather than sponsor employment alone.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-224c3f43",
+      "createdAt": "2026-07-17T04:29:42.610Z",
+      "updatedAt": "2026-07-17T04:29:42.610Z",
+      "name": "Sidney Gilman",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4c6f61d0",
+          "quote": "named CRO personnel, and surveillance keyed to CRO affiliation rather than sponsor employment alone.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ad1c5b0b",
+      "createdAt": "2026-07-17T04:29:44.343Z",
+      "updatedAt": "2026-07-17T04:29:44.343Z",
+      "name": "Afghanistan",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-35e2301a",
+          "quote": "named head of UN mission\r\nin Afghanistan\r\nBangladesh arrests fugitive suspect\r\nin ex-president’s murder: police\r\nS Korea’s top court upholds jail term\r\nfor MP over church bribes\r\nThe Macau Post Daily FRIDAY July 17, 2026\r\nWORLD\r\n10 Your trusted source for real",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-2a97edc1",
+      "createdAt": "2026-07-17T04:29:49.910Z",
+      "updatedAt": "2026-07-17T04:30:27.889Z",
+      "name": "Officer",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-d91a039c",
+          "quote": "Pelaz was appointed Chief Strategy\r\nOfficer and member of the Executive\r\nBoard of Hensoldt AG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-04dc4351",
+          "quote": "was appointed Chief Strategy Officer and\r\nmember of the Executive Board of Hensoldt\r\nAG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-58254692",
+      "createdAt": "2026-07-17T04:29:49.914Z",
+      "updatedAt": "2026-07-17T04:29:49.914Z",
+      "name": "Executive",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-d91a039c",
+          "quote": "Pelaz was appointed Chief Strategy\r\nOfficer and member of the Executive\r\nBoard of Hensoldt AG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-25db59b1",
+      "createdAt": "2026-07-17T04:29:53.189Z",
+      "updatedAt": "2026-07-17T04:29:53.189Z",
+      "name": "Controller Malia Cohen",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2cc033d7",
+          "quote": "terms expire until their successors have been appointed\r\nand have taken office.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-bf44ccdf",
+      "createdAt": "2026-07-17T04:29:53.196Z",
+      "updatedAt": "2026-07-17T04:29:53.196Z",
+      "name": "California State Controller",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2cc033d7",
+          "quote": "terms expire until their successors have been appointed\r\nand have taken office.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-07934515",
+      "createdAt": "2026-07-17T04:29:54.148Z",
+      "updatedAt": "2026-07-17T04:29:54.148Z",
+      "name": "Righteously Remembering Nana",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-42f35c20",
+          "quote": "organizer ever appointed\r\nto that body — because\r\nthe people who have been\r\nlocked out of power\r\ndeserve a seat at every\r\ntable where their futures\r\nare decided.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-2f2edd99",
+      "createdAt": "2026-07-17T04:29:54.155Z",
+      "updatedAt": "2026-07-17T04:29:54.155Z",
+      "name": "Toni Cade Bambara",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-42f35c20",
+          "quote": "organizer ever appointed\r\nto that body — because\r\nthe people who have been\r\nlocked out of power\r\ndeserve a seat at every\r\ntable where their futures\r\nare decided.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-fef15f6e",
+      "createdAt": "2026-07-17T04:30:01.610Z",
+      "updatedAt": "2026-07-17T04:30:01.610Z",
+      "name": "Unlike",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2377d98d",
+          "quote": "Unlike its sportsbook, DraftKings Predictions is regulated by the CFTC.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-9fd40156",
+      "createdAt": "2026-07-17T04:30:03.683Z",
+      "updatedAt": "2026-07-17T04:30:03.683Z",
+      "name": "Genome Sciences",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-fe2c324c",
+          "quote": "named CRO personnel, and surveillance keyed to CRO affiliation rather than sponsor employment alone.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e9fa6b43",
+      "createdAt": "2026-07-17T04:30:21.990Z",
+      "updatedAt": "2026-07-17T04:30:21.990Z",
+      "name": "Strategy",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-e36bd478",
+          "quote": "Pelaz was appointed Chief Strategy\r\nOfficer and member of the Executive\r\nBoard of Hensoldt AG.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b3a474e0",
+      "createdAt": "2026-07-17T04:30:29.669Z",
+      "updatedAt": "2026-07-17T04:30:29.669Z",
+      "name": "Import Bank",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-cc265a57",
+          "quote": "Biden appointed Harris to\r\nthe Export-Import Bank of\r\nthe United States’ Council\r\non Climate.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f8e538b4",
+      "createdAt": "2026-07-17T04:30:29.675Z",
+      "updatedAt": "2026-07-17T04:34:12.392Z",
+      "name": "United States",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-cc265a57",
+          "quote": "Biden appointed Harris to\r\nthe Export-Import Bank of\r\nthe United States’ Council\r\non Climate.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-077c48bc",
+          "quote": "So,\\r\\n8:458 minutes, 45 secondsI mean, at least if you go to a casino, you can claim that there's some entertainment value in the experience, but that's not what's happening here.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d296f911",
+      "createdAt": "2026-07-17T04:30:44.078Z",
+      "updatedAt": "2026-07-17T04:30:44.078Z",
+      "name": "Newcastle Upon Tyne",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-c75cdcf2",
+          "quote": "This role is responsible for managing and growing key client relationships in the iGaming, sports betting, and online entertainment sector, achieving significant revenue growth, and identifying new business opportunities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e620db2b",
+      "createdAt": "2026-07-17T04:30:44.084Z",
+      "updatedAt": "2026-07-17T04:30:44.084Z",
+      "name": "Easy Apply",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-c75cdcf2",
+          "quote": "This role is responsible for managing and growing key client relationships in the iGaming, sports betting, and online entertainment sector, achieving significant revenue growth, and identifying new business opportunities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-99e5692a",
+      "createdAt": "2026-07-17T04:31:51.200Z",
+      "updatedAt": "2026-07-17T04:31:51.200Z",
+      "name": "Index Structurer",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4c7c4d9c",
+          "quote": "This role is responsible for managing and growing key client relationships in the iGaming, sports betting, and online entertainment sector, achieving significant revenue growth, and identifying new business opportunities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d0d73f24",
+      "createdAt": "2026-07-17T04:31:51.206Z",
+      "updatedAt": "2026-07-17T04:31:51.206Z",
+      "name": "United Kingdom",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4c7c4d9c",
+          "quote": "This role is responsible for managing and growing key client relationships in the iGaming, sports betting, and online entertainment sector, achieving significant revenue growth, and identifying new business opportunities.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-101d933a",
+      "createdAt": "2026-07-17T04:31:56.174Z",
+      "updatedAt": "2026-07-17T04:31:56.174Z",
+      "name": "Kalshi Launches Biotech",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-e26ff7fc",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-005\",\"title\":\"Kalshi Launches Biotech Prediction Markets Pilot Program Powered by AppliedXL\",\"publisher\":\"Business Wire / Kalshi\",\"source_type\":\"press_release\",\"collection_date\":\"2026-07-17\",\"preservation_status\":\"catalogued_fro",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e756066e",
+      "createdAt": "2026-07-17T04:31:56.180Z",
+      "updatedAt": "2026-07-17T04:31:56.180Z",
+      "name": "Program Powered",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-e26ff7fc",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-005\",\"title\":\"Kalshi Launches Biotech Prediction Markets Pilot Program Powered by AppliedXL\",\"publisher\":\"Business Wire / Kalshi\",\"source_type\":\"press_release\",\"collection_date\":\"2026-07-17\",\"preservation_status\":\"catalogued_fro",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-7cabbfca",
+      "createdAt": "2026-07-17T04:31:58.476Z",
+      "updatedAt": "2026-07-17T04:31:58.476Z",
+      "name": "Kalshi News",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-011dcebb",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-019\",\"title\":\"Kalshi launches biotech prediction markets pilot program\",\"publisher\":\"Kalshi News\",\"source_type\":\"company_article\",\"collection_date\":\"2026-07-17\",\"preservation_status\":\"catalogued_from_chat_composer_not_byte_addre",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-14106c6c",
+      "createdAt": "2026-07-17T04:31:58.642Z",
+      "updatedAt": "2026-07-17T04:31:58.642Z",
+      "name": "Compete",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-924c17cb",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-020\",\"title\":\"Pascal Raises $9M to Compete with Kalshi and Polymarket in Prediction Markets\",\"publisher\":\"KuCoin / CryptoBriefing syndication\",\"source_type\":\"news_article\",\"collection_date\":\"2026-07-17\",\"preservation_status\":\"ca",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-3c448ce9",
+      "createdAt": "2026-07-17T04:31:59.144Z",
+      "updatedAt": "2026-07-17T04:31:59.144Z",
+      "name": "Crypto Briefing",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-1676686f",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-023\",\"title\":\"Pascal raises $9M in Series A to take on Kalshi and Polymarket with institutional-grade prediction markets\",\"publisher\":\"Crypto Briefing\",\"source_type\":\"news_article\",\"collection_date\":\"2026-07-17\",\"preservation_st",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-df5c0541",
+      "createdAt": "2026-07-17T04:32:00.326Z",
+      "updatedAt": "2026-07-17T04:32:00.326Z",
+      "name": "Pascal",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-6604d07e",
+          "quote": "{\"inline_occurrence_id\":\"INLINE-030\",\"title\":\"Prediction market startup Pascal raises $9 million to challenge Kalshi and Polymarket\",\"publisher\":\"Fortune\",\"source_type\":\"news_article\",\"collection_date\":\"2026-07-17\",\"preservation_status\":\"catalogued_from_chat_c",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-64ae4e8e",
+      "createdAt": "2026-07-17T04:32:01.127Z",
+      "updatedAt": "2026-07-17T04:32:01.127Z",
+      "name": "Predict",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4f8f28f2",
+          "quote": "- **INLINE-020**: Pascal Raises $9M to Compete with Kalshi and Polymarket in Prediction Markets (KuCoin / CryptoBriefing syndication).",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-6eb9c11c",
+      "createdAt": "2026-07-17T04:32:01.133Z",
+      "updatedAt": "2026-07-17T04:32:01.133Z",
+      "name": "Business Wire",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4f8f28f2",
+          "quote": "- **INLINE-005**: Kalshi Launches Biotech Prediction Markets Pilot Program Powered by AppliedXL (Business Wire / Kalshi).",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-0d8e2832",
+      "createdAt": "2026-07-17T04:32:01.139Z",
+      "updatedAt": "2026-07-17T04:32:01.139Z",
+      "name": "App",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4f8f28f2",
+          "quote": "- **INLINE-005**: Kalshi Launches Biotech Prediction Markets Pilot Program Powered by AppliedXL (Business Wire / Kalshi).",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e5bceb1d",
+      "createdAt": "2026-07-17T04:32:32.035Z",
+      "updatedAt": "2026-07-17T04:32:32.035Z",
+      "name": "Commissioner Marty Makary",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "named CRO personnel, and surveillance keyed to CRO affiliation rather than sponsor employment alone.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-1d43e329",
+      "createdAt": "2026-07-17T04:32:32.212Z",
+      "updatedAt": "2026-07-17T04:32:32.212Z",
+      "name": "Ngs",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "DraftKings is a leader in the DFS and online sportsbook space that has recently expanded into prediction markets with DraftKings Predictions.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d6ff14d3",
+      "createdAt": "2026-07-17T04:32:32.234Z",
+      "updatedAt": "2026-07-17T04:32:32.234Z",
+      "name": "Lea",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "DraftKings is a leader in the DFS and online sportsbook space that has recently expanded into prediction markets with DraftKings Predictions.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-98d3e7a5",
+      "createdAt": "2026-07-17T04:32:32.251Z",
+      "updatedAt": "2026-07-17T04:32:32.251Z",
+      "name": "Pipe",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "Buying or shorting a biotech’s shares means betting on the whole company at once: the\r\ndrug program, yes, but also its management, its cash on hand, its other pipeline programs,\r\nthe mood of the sector, and the direction of the broader market.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-4273a5bd",
+      "createdAt": "2026-07-17T04:32:32.282Z",
+      "updatedAt": "2026-07-17T04:32:32.282Z",
+      "name": "Ying",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-ma",
+      "why": "M&A reshapes commercial teams and budgets; both sides of the deal are conversations worth having early.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7b3e6ccb",
+          "quote": "Buying or shorting a biotech’s shares means betting on the whole company at once: the\r\ndrug program, yes, but also its management, its cash on hand, its other pipeline programs,\r\nthe mood of the sector, and the direction of the broader market.",
+          "signal": "igaming-ma",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-4f06c0db",
+      "createdAt": "2026-07-17T04:32:45.979Z",
+      "updatedAt": "2026-07-17T04:32:45.979Z",
+      "name": "Bringing Total Funding",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-b0f524e4",
+          "quote": "Pascal Raises $9 Million Series A Led by USV Bringing Total Funding to $15 Million\r\n7 hours ago · News · 156 posts\r\n$HYPE Drops to $62 on Whale Sells and Summer Lull\r\nTrending now · News · 96 posts\r\nPolygon Labs Announces Layoffs and Transitions from Blockchai",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-d665afb4",
+      "createdAt": "2026-07-17T04:32:45.985Z",
+      "updatedAt": "2026-07-17T04:32:45.985Z",
+      "name": "Polygon Labs Announces",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "funding",
+      "why": "Fresh capital means growth targets and commercial chaos to fix; budget exists.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-b0f524e4",
+          "quote": "Pascal Raises $9 Million Series A Led by USV Bringing Total Funding to $15 Million\r\n7 hours ago · News · 156 posts\r\n$HYPE Drops to $62 on Whale Sells and Summer Lull\r\nTrending now · News · 96 posts\r\nPolygon Labs Announces Layoffs and Transitions from Blockchai",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-4b8ff487",
+      "createdAt": "2026-07-17T04:32:46.262Z",
+      "updatedAt": "2026-07-17T04:32:46.262Z",
+      "name": "Predicts",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-4f69031c",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\nPerp.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-da4557bb",
+      "createdAt": "2026-07-17T04:32:46.513Z",
+      "updatedAt": "2026-07-17T04:32:46.513Z",
+      "name": "Jump Trading",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-44f8152e",
+          "quote": "Jump Trading has doubled its prediction markets team this year to about 20 and plans to keep hiring \r\n\r\nHead of PM Simon Johansen tells me and \r\n@iboudway\r\n at this rate Super Bowl 2027 looks due for another 10x in volumes\r\n\r\n“It’s probably the most AI-resista",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-6da5f345",
+      "createdAt": "2026-07-17T04:32:46.520Z",
+      "updatedAt": "2026-07-17T04:32:46.520Z",
+      "name": "Simon Johansen",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-44f8152e",
+          "quote": "Jump Trading has doubled its prediction markets team this year to about 20 and plans to keep hiring \r\n\r\nHead of PM Simon Johansen tells me and \r\n@iboudway\r\n at this rate Super Bowl 2027 looks due for another 10x in volumes\r\n\r\n“It’s probably the most AI-resista",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-09a5ce28",
+      "createdAt": "2026-07-17T04:32:46.527Z",
+      "updatedAt": "2026-07-17T04:33:33.957Z",
+      "name": "Strikes Bold Deal",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-partnership",
+      "why": "Companies partnering into the category are forming their strategy now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-44f8152e",
+          "quote": "OpenAI Strikes Bold Deal With Kalshi to Mix Together the Most Hated Technologies in Existence: AI and Prediction Markets | Frank Landymore, Futurism\r\n\r\nIs it not enough to simply watch the beautiful game, unadorned?\r\n\r\nThese days you might use an AI chatbot to",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-9b57fa16",
+          "quote": "\"},\"canonical_occurrence_id\":\"X03-010\",\"canonical_selection_rule\":\"longest visible body; ties resolved by capture view and rank\",\"canonical_body_visible\":\"OpenAI Strikes Bold Deal With Kalshi to Mix Together the Most Hated Technologies in Existence: AI and Pre",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e5218d72",
+      "createdAt": "2026-07-17T04:32:46.534Z",
+      "updatedAt": "2026-07-17T04:33:33.968Z",
+      "name": "Mix Together",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-partnership",
+      "why": "Companies partnering into the category are forming their strategy now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-44f8152e",
+          "quote": "OpenAI Strikes Bold Deal With Kalshi to Mix Together the Most Hated Technologies in Existence: AI and Prediction Markets | Frank Landymore, Futurism\r\n\r\nIs it not enough to simply watch the beautiful game, unadorned?\r\n\r\nThese days you might use an AI chatbot to",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-9b57fa16",
+          "quote": "\"},\"canonical_occurrence_id\":\"X03-010\",\"canonical_selection_rule\":\"longest visible body; ties resolved by capture view and rank\",\"canonical_body_visible\":\"OpenAI Strikes Bold Deal With Kalshi to Mix Together the Most Hated Technologies in Existence: AI and Pre",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-682f769c",
+      "createdAt": "2026-07-17T04:32:46.812Z",
+      "updatedAt": "2026-07-17T04:32:46.812Z",
+      "name": "Today",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-217ad50d",
+          "quote": "Today, we launched GPU compute forward curves derived from our prediction market prices.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f68f8505",
+      "createdAt": "2026-07-17T04:32:46.823Z",
+      "updatedAt": "2026-07-17T04:34:11.815Z",
+      "name": "American Gaming Association",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-217ad50d",
+          "quote": "There are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-2b6f0ddf",
+          "quote": "\\n\\nThere are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-12496a3a",
+          "quote": "0\",\"record_type\":\"youtube_lossless_chunk\",\"occurrence_id\":\"YT-20260717-0011\",\"chunk_id\":\"YT-20260717-0011-C001\",\"chunk_number\":1,\"char_start\":0,\"char_end\":11967,\"chunk_text\":\"\\r\\n\\r\\nES\\r\\n\\r\\nSkip navigation\\r\\nSearch\\r\\n\\r\\n\\r\\n\\r\\nCreate\\r\\n\\r\\n\\r\\nAvatar i",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-51653dbc",
+      "createdAt": "2026-07-17T04:32:46.829Z",
+      "updatedAt": "2026-07-17T04:33:38.700Z",
+      "name": "Lucas Martin Calderon",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-217ad50d",
+          "quote": "There are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-0e3c8447",
+          "quote": "{\"post_key\":\"post_72093b4151dfb693\",\"author\":\"Lucas Martin Calderon\",\"handle\":\"@lmc_security\",\"date_text\":\"Jul 7\",\"date_normalization\":{\"kind\":\"calendar\",\"date_text\":\"Jul 7\",\"resolved_date\":\"2026-07-07\",\"note\":null},\"canonical_occurrence_id\":\"X04-022\",\"canonic",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-3d875b94",
+      "createdAt": "2026-07-17T04:32:47.085Z",
+      "updatedAt": "2026-07-17T04:33:49.819Z",
+      "name": "Pred",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-de9d2bc9",
+          "quote": "Today, we launched GPU compute forward curves derived from our prediction market prices.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-fdce1ffe",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\nPerp.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-76d50424",
+      "createdAt": "2026-07-17T04:32:47.092Z",
+      "updatedAt": "2026-07-17T04:32:47.092Z",
+      "name": "End",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-de9d2bc9",
+          "quote": "There are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e22399e6",
+      "createdAt": "2026-07-17T04:32:56.225Z",
+      "updatedAt": "2026-07-17T04:33:30.743Z",
+      "name": "Samuel Hume",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-7973565c",
+          "quote": "\"},\"body_visible\":\"Kalshi to launch prediction markets on clinical trials.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-2a52a504",
+          "quote": "\"},\"canonical_occurrence_id\":\"X02-013\",\"canonical_selection_rule\":\"longest visible body; ties resolved by capture view and rank\",\"canonical_body_visible\":\"Kalshi to launch prediction markets on clinical trials.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f692d381",
+      "createdAt": "2026-07-17T04:33:05.566Z",
+      "updatedAt": "2026-07-17T04:33:05.566Z",
+      "name": "Front Office Sports",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-728bfbff",
+          "quote": "\\n\\nThere are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-174bb9d1",
+      "createdAt": "2026-07-17T04:33:09.197Z",
+      "updatedAt": "2026-07-17T04:33:40.942Z",
+      "name": "Tarek Mansour",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-81de42ac",
+          "quote": "txt\",\"rank_in_view\":19,\"source_line_start_1_based\":355,\"source_line_end_1_based_inclusive\":363,\"author\":\"Tarek Mansour\",\"handle\":\"@mansourtarek_\",\"date_text\":\"Jul 14\",\"date_normalization\":{\"kind\":\"calendar\",\"date_text\":\"Jul 14\",\"resolved_date\":\"2026-07-14\",\"no",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-1c0ce310",
+          "quote": "{\"post_key\":\"post_96e2c099d8762a6b\",\"author\":\"Tarek Mansour\",\"handle\":\"@mansourtarek_\",\"date_text\":\"Jul 14\",\"date_normalization\":{\"kind\":\"calendar\",\"date_text\":\"Jul 14\",\"resolved_date\":\"2026-07-14\",\"note\":null},\"canonical_occurrence_id\":\"X05-015\",\"canonical_se",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-aa030690",
+      "createdAt": "2026-07-17T04:33:49.811Z",
+      "updatedAt": "2026-07-17T04:33:50.363Z",
+      "name": "Street",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-fdce1ffe",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\nPerp.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-c4d1fe68",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\n```\n\n## X02-010 | Perp.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-0c829b00",
+      "createdAt": "2026-07-17T04:33:49.836Z",
+      "updatedAt": "2026-07-17T04:33:56.164Z",
+      "name": "Mar",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-fdce1ffe",
+          "quote": "There are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-6598e4a6",
+          "quote": "Last October, Trump's social media company, Trump Media and Technology Group, announced it was looking into launching its own prediction market offering.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-2a2df6f6",
+      "createdAt": "2026-07-17T04:33:50.355Z",
+      "updatedAt": "2026-07-17T04:33:50.807Z",
+      "name": "Mark",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-c4d1fe68",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\n```\n\n## X02-010 | Perp.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-809ad420",
+          "quote": "There are constructive debates to be had about marketing, but pretending that casinos and the gambling industry are a model for platform safety or proper regulation is not serious.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ef9b68e6",
+      "createdAt": "2026-07-17T04:33:50.791Z",
+      "updatedAt": "2026-07-17T04:33:50.791Z",
+      "name": "Walter Bloomberg",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-809ad420",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\n```\n\n## X02-011 | *Walter Bloomberg @DeItaone | 7h\n\n- Post key: `post_096aaaa6cfaa1a38`\n- Appearances: 2 (X01-023, X02-011)\n- Trunca",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-6bd5d3f5",
+      "createdAt": "2026-07-17T04:33:50.798Z",
+      "updatedAt": "2026-07-17T04:33:50.798Z",
+      "name": "Appearances",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-809ad420",
+          "quote": "bet teamed up with adi predictstreet to launch sports prediction markets across latin america\r\n\r\nwhich update stands out most?\r\n```\n\n## X02-011 | *Walter Bloomberg @DeItaone | 7h\n\n- Post key: `post_096aaaa6cfaa1a38`\n- Appearances: 2 (X01-023, X02-011)\n- Trunca",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-db7d562a",
+      "createdAt": "2026-07-17T04:33:52.875Z",
+      "updatedAt": "2026-07-17T04:33:52.875Z",
+      "name": "Custom Game Development",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-609a0361",
+          "quote": "You will be very disappointed to find out how much Manipulation-for-Profit happens every Friday for decades.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ed95551d",
+      "createdAt": "2026-07-17T04:33:52.882Z",
+      "updatedAt": "2026-07-17T04:33:52.882Z",
+      "name": "Tell Jane Street",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-609a0361",
+          "quote": "You will be very disappointed to find out how much Manipulation-for-Profit happens every Friday for decades.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-1e7acec1",
+      "createdAt": "2026-07-17T04:33:54.682Z",
+      "updatedAt": "2026-07-17T04:33:54.682Z",
+      "name": "Commodity Futures Trading",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-36607aeb",
+          "quote": "He is in talks to settle with Federal regulators, AKA, the people Trump appointed to look the other way.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-b0c89f14",
+      "createdAt": "2026-07-17T04:33:54.690Z",
+      "updatedAt": "2026-07-17T04:33:54.690Z",
+      "name": "Detroit Economic Club",
+      "kind": "unknown",
+      "pillar": "strait-up-growth",
+      "signal": "leadership-hire",
+      "why": "New commercial leaders buy audits and systems in their first 90 days; hiring shows investment in the function.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-36607aeb",
+          "quote": "He is in talks to settle with Federal regulators, AKA, the people Trump appointed to look the other way.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-0244b2da",
+      "createdAt": "2026-07-17T04:33:54.698Z",
+      "updatedAt": "2026-07-17T04:33:54.698Z",
+      "name": "Technology Group",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-36607aeb",
+          "quote": "Last October, Trump's social media company, Trump Media and Technology Group, announced it was looking into launching its own prediction market offering.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-7310175d",
+      "createdAt": "2026-07-17T04:33:56.155Z",
+      "updatedAt": "2026-07-17T04:33:56.155Z",
+      "name": "Launch",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-6598e4a6",
+          "quote": "Last October, Trump's social media company, Trump Media and Technology Group, announced it was looking into launching its own prediction market offering.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-e3556c2a",
+      "createdAt": "2026-07-17T04:33:59.458Z",
+      "updatedAt": "2026-07-17T04:34:08.966Z",
+      "name": "Polymarket Are Coming",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-78e21c08",
+          "quote": "So, uh if you are going to go and do like say sports betting right now that is at least in the US it is regulated on a\r\n4:304 minutes, 30 secondsstate-by-state basis.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-ec23b71a",
+          "quote": "So, uh if you are going to go and do like say sports betting right now that is at least in the US it is regulated on a\\r\\n4:304 minutes, 30 secondsstate-by-state basis.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-442cddd9",
+      "createdAt": "2026-07-17T04:33:59.466Z",
+      "updatedAt": "2026-07-17T04:34:08.974Z",
+      "name": "Consumer Financial Tra",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-78e21c08",
+          "quote": "So, uh if you are going to go and do like say sports betting right now that is at least in the US it is regulated on a\r\n4:304 minutes, 30 secondsstate-by-state basis.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-ec23b71a",
+          "quote": "So, uh if you are going to go and do like say sports betting right now that is at least in the US it is regulated on a\\r\\n4:304 minutes, 30 secondsstate-by-state basis.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-f0ca5e65",
+      "createdAt": "2026-07-17T04:34:00.355Z",
+      "updatedAt": "2026-07-17T04:34:00.355Z",
+      "name": "Beat Wall Street",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-619d94eb",
+          "quote": "0:5353 secondsand a media company owned by a former president, have all launched or co-hosted their own prediction markets.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-55d41dff",
+      "createdAt": "2026-07-17T04:34:00.363Z",
+      "updatedAt": "2026-07-17T04:34:00.974Z",
+      "name": "Digital Asset Treasuries",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-619d94eb",
+          "quote": "0:5353 secondsand a media company owned by a former president, have all launched or co-hosted their own prediction markets.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-47f450e7",
+          "quote": "8:458 minutes, 45 secondsI mean, at least if you go to a casino, you can claim that there's some entertainment value in the experience, but that's not what's happening here.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5ce03a82",
+      "createdAt": "2026-07-17T04:34:00.647Z",
+      "updatedAt": "2026-07-17T04:34:11.824Z",
+      "name": "Michael Selig",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-25b9aeae",
+          "quote": "Axios' Nathan Bomey sits down with Michael Selig, chairman of the Commodity Futures Trading Commission (CFTC), to discuss why the agency believes prediction markets are fundamentally different from sports betting and why that distinction matters for federal re",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-12496a3a",
+          "quote": "0\",\"record_type\":\"youtube_lossless_chunk\",\"occurrence_id\":\"YT-20260717-0011\",\"chunk_id\":\"YT-20260717-0011-C001\",\"chunk_number\":1,\"char_start\":0,\"char_end\":11967,\"chunk_text\":\"\\r\\n\\r\\nES\\r\\n\\r\\nSkip navigation\\r\\nSearch\\r\\n\\r\\n\\r\\n\\r\\nCreate\\r\\n\\r\\n\\r\\nAvatar i",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-31ee6819",
+      "createdAt": "2026-07-17T04:34:00.654Z",
+      "updatedAt": "2026-07-17T04:34:00.654Z",
+      "name": "Nathan Bomey",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-25b9aeae",
+          "quote": "Axios' Nathan Bomey sits down with Michael Selig, chairman of the Commodity Futures Trading Commission (CFTC), to discuss why the agency believes prediction markets are fundamentally different from sports betting and why that distinction matters for federal re",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-ecb5e29a",
+      "createdAt": "2026-07-17T04:34:00.966Z",
+      "updatedAt": "2026-07-17T04:34:12.384Z",
+      "name": "Wall Street Journal",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-47f450e7",
+          "quote": "8:458 minutes, 45 secondsI mean, at least if you go to a casino, you can claim that there's some entertainment value in the experience, but that's not what's happening here.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        },
+        {
+          "insightId": "ins-077c48bc",
+          "quote": "So,\\r\\n8:458 minutes, 45 secondsI mean, at least if you go to a casino, you can claim that there's some entertainment value in the experience, but that's not what's happening here.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-5961f48c",
+      "createdAt": "2026-07-17T04:34:11.249Z",
+      "updatedAt": "2026-07-17T04:34:11.249Z",
+      "name": "Within",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-a30b8cc8",
+          "quote": "Within just the\\r\\n0:4646 secondslast year, more than a dozen major organizations, including a Chicago derivatives exchange, a sports magazine,\\r\\n0:5353 seconds[music]\\r\\n0:5353 secondsand a media company owned by a former president, have all launched or co-h",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-8f5935dc",
+      "createdAt": "2026-07-17T04:34:11.257Z",
+      "updatedAt": "2026-07-17T04:34:11.257Z",
+      "name": "Chicago",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-a30b8cc8",
+          "quote": "Within just the\\r\\n0:4646 secondslast year, more than a dozen major organizations, including a Chicago derivatives exchange, a sports magazine,\\r\\n0:5353 seconds[music]\\r\\n0:5353 secondsand a media company owned by a former president, have all launched or co-h",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-22a40a78",
+      "createdAt": "2026-07-17T04:34:27.743Z",
+      "updatedAt": "2026-07-17T04:34:27.743Z",
+      "name": "Den",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2c198b6d",
+          "quote": "0:5353 secondsand a media company owned by a former president, have all launched or co-hosted their own prediction markets.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-aad82a26",
+      "createdAt": "2026-07-17T04:34:27.751Z",
+      "updatedAt": "2026-07-17T04:34:27.751Z",
+      "name": "Pres",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A new venue or regulatory step in prediction markets: worth knowing early, before the wire covers it.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2c198b6d",
+          "quote": "0:5353 secondsand a media company owned by a former president, have all launched or co-hosted their own prediction markets.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-a7d44c7a",
+      "createdAt": "2026-07-17T04:34:27.848Z",
+      "updatedAt": "2026-07-17T04:34:27.848Z",
+      "name": "Eric Burlison Believes",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2c198b6d",
+          "quote": "So, uh if you are going to go and do like say sports betting right now that is at least in the US it is regulated on a\r\n4:304 minutes, 30 secondsstate-by-state basis.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-276d03c0",
+      "createdAt": "2026-07-17T04:34:27.857Z",
+      "updatedAt": "2026-07-17T04:34:27.857Z",
+      "name": "Boogie Down Bronx",
+      "kind": "unknown",
+      "pillar": "igaming",
+      "signal": "igaming-market-move",
+      "why": "A licence, market opening or expansion in iGaming/sports betting: the operators and suppliers involved are NEXT.io's exact audience, and moving now.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2c198b6d",
+          "quote": "So, uh if you are going to go and do like say sports betting right now that is at least in the US it is regulated on a\r\n4:304 minutes, 30 secondsstate-by-state basis.",
+          "signal": "igaming-market-move",
+          "date": "2026-07-17"
         }
       ],
       "status": "detected",
