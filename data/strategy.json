@@ -3,54 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-16T23:32:28.410Z",
-    "weekOf": "2026-07-16",
+    "generatedAt": "2026-07-17T23:31:15.057Z",
+    "weekOf": "2026-07-17",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-16",
-        "channel": "Stuart LinkedIn",
-        "what": "When do prophets profit?",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Confirm paper title, authors, findings and any hedging examples."
-      },
-      {
-        "date": "2026-07-16",
-        "channel": "X",
-        "what": "Kalshi flight-cancellation contracts hit a data-rights problem",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use the WSJ report and obtain the Kalshi contract rules or CFTC filing. Attribute RTX’s position precisely and do not imply FlightAware endorsed the contracts."
-      },
-      {
-        "date": "2026-07-16",
-        "channel": "X",
-        "what": "The CFTC just made contract finality the story",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use the official CFTC order. Distinguish the Michigan court order, Kalshi's proposed emergency rule and the Commission's stay."
-      },
-      {
-        "date": "2026-07-16",
-        "channel": "X",
-        "what": "Kalshi probabilities are appearing inside ChatGPT answers",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use OpenAI’s official help article. State clearly that users cannot trade inside the answer and avoid unconfirmed partnership language."
-      },
-      {
-        "date": "2026-07-16",
-        "channel": "X",
-        "what": "Blockchain.com embeds Polymarket",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use the official partnership announcement. Confirm eligible-market wording and avoid implying universal availability."
-      },
       {
         "date": "2026-07-17",
         "channel": "X",
@@ -234,6 +194,54 @@
         "status": "scheduled",
         "source": "master schedule",
         "verification": "Refresh every cited role and remove closed vacancies."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "X",
+        "what": "North Carolina chooses taxation",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Confirm signature, effective date and exact tax treatment."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "Prediction Markets Forum",
+        "what": "When the market thinks, how many traders is that?",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Read the underlying paper before publication. Distinguish price influence, trade size and forecasting performance."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "Stuart LinkedIn",
+        "what": "Gibraltar creates a third regulatory category",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Obtain the regulations and regulator announcement directly. Confirm the 13 July effective date, approval process and legal carve-out before publishing."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "Stuart LinkedIn",
+        "what": "Daily Intel: the developer and infrastructure layer",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Open and verify repositories, maintainers, supported platforms and recent activity before tagging."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "X",
+        "what": "Polymarket blocked in Czechia",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Confirm the Ministry of Finance listing, the 15-day ISP timetable and the local legal classification. Avoid implying a Europe-wide rule."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "X",
+        "what": "The CFTC’s nine-state legal war",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm the nine named states and quote the CFTC order or official statement precisely. Keep agency litigation, exchange litigation and state enforcement distinct."
       }
     ],
     "gaps": [
@@ -245,6 +253,7 @@
     "suggestions": [
       "Verification gate due 2026-07-17: \"The Odyssey release\" must not run without a primary source (Confirm the live market, contract wording and official 17 July release.).",
       "Verification gate due 2026-07-22: \"Post-tournament behaviour signal\" must not run without a primary source (Verify the signal and compare like-for-like periods.).",
+      "Verification gate due 2026-07-23: \"North Carolina chooses taxation\" must not run without a primary source (Confirm signature, effective date and exact tax treatment.).",
       "Verification gate due 2026-07-18: \"Michael Burry calls prediction markets gambling\" must not run without a primary source (Attribute every claim. Use the Business Insider report and locate Burry's original comments before quoting directly.).",
       "Verification gate due 2026-07-21: \"Daily Intel: professional interfaces, margin and market structure\" must not run without a primary source (Verify NFA/CFTC records; capture Kalshi Pro primary materials; tag Chris DeMuth Jr only against his published view.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
