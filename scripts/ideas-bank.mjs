@@ -18,6 +18,7 @@
 // Ideas carry a generatedKey: archiving one stops it being regenerated.
 
 import { items, insert, read, write } from '../lib/store.mjs';
+import { connectInsight, hasConnections } from '../lib/connect.mjs';
 
 const DRY = process.argv.includes('--dry-run');
 const maxArg = process.argv.indexOf('--max');
@@ -39,6 +40,15 @@ const engagements = items('engagements');
 const channels = items('channels');
 const angles = items('knowledge').filter((k) => k.kind === 'angle');
 const contacts = items('contacts');
+const companies = items('companies');
+const leads = items('leads');
+
+// Connect an insight to the companies, contacts, lane-relevant readers and open
+// leads it touches, so each generated idea carries its dots and the rationale
+// says who/what it connects to. Internal drafting guidance only — publishing an
+// idea still runs the confidentiality review before anything goes public.
+const connOf = (insight) => connectInsight(insight, { companies, contacts, leads });
+const connSuffix = (c) => (hasConnections(c) ? ` Connects to — ${c.line}.` : '');
 
 const existingKeys = new Set(content.map((c) => c.generatedKey).filter(Boolean));
 const openAutoIdeas = content.filter((c) => c.stage === 'raw-idea' && c.generatedKey);
@@ -61,10 +71,11 @@ const unrouted = insights
     return coreB - coreA || (b.commercialRelevance || 0) - (a.commercialRelevance || 0);
   });
 for (const i of unrouted) {
+  const conn = connOf(i);
   push(`insight:${i.id}`, {
     title: i.title, format: 'linkedin-post', lanes: i.lanes || [],
-    sourceInsights: [i.id], evidence: [`insight:${i.id}`],
-    rationale: `Unrouted insight (relevance ${i.commercialRelevance}/5${(i.lanes || []).some((l) => laneByName[l]?.tier === 'core') ? ', core pillar lane' : ''}). Distil, then draft.${i.confidentiality?.classification === 'public-after-anonymisation' ? ' ANONYMISE FIRST: source is public-after-anonymisation.' : ''}`,
+    sourceInsights: [i.id], evidence: [`insight:${i.id}`], connections: conn,
+    rationale: `Unrouted insight (relevance ${i.commercialRelevance}/5${(i.lanes || []).some((l) => laneByName[l]?.tier === 'core') ? ', core pillar lane' : ''}). Distil, then draft.${i.confidentiality?.classification === 'public-after-anonymisation' ? ' ANONYMISE FIRST: source is public-after-anonymisation.' : ''}${connSuffix(conn)}`,
   });
 }
 
@@ -77,11 +88,12 @@ for (const p of pillars) {
   const freshest = insights.filter((i) => usable(i) && (i.lanes || []).some((l) => pl.includes(l))).sort((a, b) => (a.date < b.date ? 1 : -1))[0];
   const angle = angles[(p.length + now.getUTCDate()) % Math.max(angles.length, 1)];
   if (freshest && angle) {
+    const conn = connOf(freshest);
     push(`gapfill:${p}:${freshest.id}:${angle.id}`, {
       title: `${angle.title.replace('Angle: ', '')}: ${freshest.title}`,
       format: 'linkedin-post', lanes: (freshest.lanes || []).filter((l) => pl.includes(l)).slice(0, 2),
-      sourceInsights: [freshest.id], evidence: [`insight:${freshest.id}`, `angle:${angle.id}`],
-      rationale: `Pillar "${p}" has published nothing in 30 days. Run its freshest insight through the "${angle.title.replace('Angle: ', '')}" wedge.`,
+      sourceInsights: [freshest.id], evidence: [`insight:${freshest.id}`, `angle:${angle.id}`], connections: conn,
+      rationale: `Pillar "${p}" has published nothing in 30 days. Run its freshest insight through the "${angle.title.replace('Angle: ', '')}" wedge.${connSuffix(conn)}`,
     });
   }
 }
@@ -104,11 +116,12 @@ for (const c of content.filter((c) => c.stage === 'published' && (c.performance?
 // 4. Dated predictions due a public revisit (the revisit is a second post
 // and compounding credibility, right or wrong).
 for (const i of insights.filter((i) => i.type === 'prediction' && daysSince(i.date) >= 60)) {
+  const conn = connOf(i);
   push(`revisit:${i.id}`, {
     title: `Revisit the prediction: ${i.title}`,
     format: 'linkedin-post', lanes: i.lanes || [], sourceInsights: [i.id],
-    evidence: [`insight:${i.id} (${Math.round(daysSince(i.date))} days old)`],
-    rationale: 'A dated prediction on record. Revisiting it publicly, right or wrong, is the highest-trust format available.',
+    evidence: [`insight:${i.id} (${Math.round(daysSince(i.date))} days old)`], connections: conn,
+    rationale: `A dated prediction on record. Revisiting it publicly, right or wrong, is the highest-trust format available.${connSuffix(conn)}`,
   });
 }
 
@@ -138,6 +151,7 @@ for (const cand of candidates) {
     pov: null, body: '', brand: 'brand-stuart', audiences: [], performance: null,
     versions: [], confidentiality: 'public', generatedKey: cand.key,
     generatedRationale: cand.rationale, generatedAt: now.toISOString(),
+    ...(cand.connections && hasConnections(cand.connections) ? { connections: cand.connections } : {}),
     ...(cand.repurposeOf ? { repurposeCandidateOf: cand.repurposeOf } : {}),
   };
   if (!DRY) insert('content', item, { actor: 'ideas-bank' });
