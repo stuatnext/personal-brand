@@ -1538,6 +1538,180 @@
       "generatedKey": "insight:ins-s12",
       "generatedRationale": "Unrouted insight (relevance 3/5, core pillar lane). Distil, then draft.",
       "generatedAt": "2026-07-15T02:28:10.888Z"
+    },
+    {
+      "id": "cnt-fb50cd01",
+      "createdAt": "2026-07-18T05:56:03.557Z",
+      "updatedAt": "2026-07-18T05:56:03.557Z",
+      "title": "CFTC and Michigan: the fight moved into live trades",
+      "format": "linkedin-post",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "objective": "Reframe the Kalshi jurisdiction story around contract finality as an operational risk.",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-141db40b"
+      ],
+      "evidence": [
+        "insight:ins-141db40b"
+      ],
+      "pov": null,
+      "body": "The prediction market argument has moved from the courtroom to the order book.\n\nFor months the Kalshi question sat where these things usually sit. Briefs, jurisdictional lines, whether an event contract is a financial product or something a state gets to license. This week it moved into live trades. The CFTC directed Kalshi to keep settling open Michigan positions while the state pushes the other way, which leaves the exchange holding two instructions that do not reconcile.\n\nThe interesting part sits underneath the jurisdiction fight. Contract finality has become the live question. A market only works if everyone trusts that an open position settles on its stated terms. Once settlement appears to depend on which authority is being answered that day, the product risk becomes operational rather than legal. That is the version institutional participants actually care about.\n\nFor anyone building or backing in this category, the useful read is that regulatory clarity is turning into an infrastructure requirement rather than a compliance footnote. The venues that can answer \"what happens to my open position if the rules move\" will have an edge that has nothing to do with liquidity.\n\nWorth watching whether the federal and state question gets resolved as principle, or, as usual, one contract at a time.\n\nWhich authority should own the finality of a live event contract?",
+      "brand": "brand-stuart",
+      "channel": "Stuart LinkedIn",
+      "confidentiality": "public",
+      "audiences": [],
+      "cta": null,
+      "performance": null,
+      "versions": [],
+      "draftProvider": "claude-session",
+      "fictional": false
+    },
+    {
+      "id": "cnt-adbde9d5",
+      "createdAt": "2026-07-18T05:56:03.564Z",
+      "updatedAt": "2026-07-18T05:56:03.564Z",
+      "title": "CFTC and Michigan (X): finality is the product",
+      "format": "x-post",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "objective": "Sharp live-signal version of the finality read.",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-141db40b"
+      ],
+      "evidence": [
+        "insight:ins-141db40b"
+      ],
+      "pov": null,
+      "body": "The Kalshi story just moved from the courtroom to the order book.\n\nThe CFTC has told Kalshi to keep settling open Michigan trades while the state pushes the other way. Underneath the jurisdiction fight is a sharper question for anyone holding a position: does it still settle on the stated terms when two regulators disagree?\n\nContract finality is quietly becoming the product.",
+      "brand": "brand-stuart",
+      "channel": "X",
+      "confidentiality": "public",
+      "audiences": [],
+      "cta": null,
+      "performance": null,
+      "versions": [],
+      "draftProvider": "claude-session",
+      "fictional": false
+    },
+    {
+      "id": "cnt-bdaa64ea",
+      "createdAt": "2026-07-18T05:56:03.567Z",
+      "updatedAt": "2026-07-18T05:56:03.567Z",
+      "title": "Forum: who carries the risk when authorities disagree?",
+      "format": "forum-post",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "objective": "Practitioner prompt on operational handling of conflicting instructions.",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-141db40b"
+      ],
+      "evidence": [
+        "insight:ins-141db40b"
+      ],
+      "pov": null,
+      "body": "The CFTC has directed Kalshi to keep fulfilling open Michigan trades while the state takes the opposite view, so contract finality now reads as an operational question rather than a purely legal one.\n\nFor those of you running or building venues: what should happen to an open event contract when a federal and a state authority give incompatible instructions, and who should carry that risk? Interested in how people have actually modelled it, beyond where the law should land.",
+      "brand": "brand-stuart",
+      "channel": "Prediction Markets Forum",
+      "confidentiality": "public",
+      "audiences": [],
+      "cta": null,
+      "performance": null,
+      "versions": [],
+      "draftProvider": "claude-session",
+      "fictional": false
+    },
+    {
+      "id": "cnt-57442389",
+      "createdAt": "2026-07-18T05:56:03.570Z",
+      "updatedAt": "2026-07-18T05:56:03.570Z",
+      "title": "Five questions Congress should ask about sports prediction markets",
+      "format": "linkedin-post",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "objective": "Pre-hearing framing that positions Stuart on market-integrity architecture.",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-853d1d7c"
+      ],
+      "evidence": [
+        "insight:ins-853d1d7c"
+      ],
+      "pov": null,
+      "body": "On 21 July a House Agriculture subcommittee takes up sports prediction markets, and the framing of that session will matter more than the outcome.\n\nThe category has scaled faster than the rules meant to govern it. Congress now has to decide whether a sports event contract is a financial product, a gambling product, or a new thing that needs its own architecture. That decision sets who regulates, who licenses, and who carries the integrity burden.\n\nFive questions would make the session useful rather than performative.\n\nOne, how do you identify restricted participants across teams, leagues, media, data providers and the families around them? The insider population for a sports contract is wider than most people assume.\n\nTwo, what actually separates manipulation from informed research? That line decides what surveillance is even looking for.\n\nThree, who should hold authority over these contracts: federal derivatives regulators, states, tribes, or a shared model?\n\nFour, what surveillance and data-sharing standards should be mandatory rather than optional?\n\nFive, how should platforms handle contract design, settlement and consumer disclosure, given that the settlement source is where most disputes begin?\n\nThe commercial read is straightforward. The venues and vendors that already have credible answers here are the ones institutions and regulators will take seriously. The rest spend the next year reacting.\n\nWhich of the five is Congress least prepared to ask well?",
+      "brand": "brand-stuart",
+      "channel": "Stuart LinkedIn",
+      "confidentiality": "public",
+      "audiences": [],
+      "cta": null,
+      "performance": null,
+      "versions": [],
+      "draftProvider": "claude-session",
+      "fictional": false
+    },
+    {
+      "id": "cnt-64c13f92",
+      "createdAt": "2026-07-18T05:56:03.572Z",
+      "updatedAt": "2026-07-18T05:56:03.572Z",
+      "title": "House hearing (X): two questions that decide the session",
+      "format": "x-post",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "objective": "Distil the hearing to its two load-bearing questions.",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-853d1d7c"
+      ],
+      "evidence": [
+        "insight:ins-853d1d7c"
+      ],
+      "pov": null,
+      "body": "A House Agriculture subcommittee takes up sports prediction markets on 21 July.\n\nTwo questions decide whether the session is useful. Can it separate market manipulation from informed research? And can it say who counts as a restricted participant across teams, leagues, media and data providers?\n\nAlmost everything else in this debate is downstream of those two.",
+      "brand": "brand-stuart",
+      "channel": "X",
+      "confidentiality": "public",
+      "audiences": [],
+      "cta": null,
+      "performance": null,
+      "versions": [],
+      "draftProvider": "claude-session",
+      "fictional": false
+    },
+    {
+      "id": "cnt-059c8195",
+      "createdAt": "2026-07-18T05:56:03.576Z",
+      "updatedAt": "2026-07-18T05:56:03.576Z",
+      "title": "Forum: federal to tax, but not to license?",
+      "format": "forum-post",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "objective": "Forum prompt on the tax-without-licensing split ahead of the hearing.",
+      "stage": "draft",
+      "sourceInsights": [
+        "ins-853d1d7c"
+      ],
+      "evidence": [
+        "insight:ins-853d1d7c"
+      ],
+      "pov": null,
+      "body": "Quick one for the practitioners here, ahead of the 21 July House hearing.\n\nSeveral states are moving to tax federally regulated prediction markets while declining to license them. If a contract is federal enough to tax, what is the argument for treating it as something else for oversight? And if you run a venue, how would that split actually work day to day?",
+      "brand": "brand-stuart",
+      "channel": "Prediction Markets Forum",
+      "confidentiality": "public",
+      "audiences": [],
+      "cta": null,
+      "performance": null,
+      "versions": [],
+      "draftProvider": "claude-session",
+      "fictional": false
     }
   ]
 }

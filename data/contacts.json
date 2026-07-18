@@ -1241,7 +1241,7 @@
     {
       "id": "con-a35ead78",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.976Z",
       "name": "Francesco Marconi",
       "x": null,
       "linkedin": null,
@@ -1268,10 +1268,14 @@
       "sharedInterests": "AppliedXL is presented as the public-intelligence partner behind Kalshi’s clinical-trial and FDA market pilot.",
       "potentialValue": "Speaker lead; data infrastructure; biotech market-design discussion",
       "notes": [
-        "AppliedXL is presented as the public-intelligence partner behind Kalshi’s clinical-trial and FDA market pilot."
+        "AppliedXL is presented as the public-intelligence partner behind Kalshi’s clinical-trial and FDA market pilot.",
+        "Infrastructure Founder lead (Claude Intel 2026-07-17/18): Sits at the intersection of intelligence, journalism, resolution and biotech markets. — fit: Speaker; Sponsor; Data partner."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Infrastructure Founder",
+      "nextpredictRelevance": "Speaker; Sponsor; Data partner",
+      "suggestedAction": "Request an exploratory conversation before a formal stage proposal."
     },
     {
       "id": "con-40c88312",
@@ -1381,7 +1385,7 @@
     {
       "id": "con-218271f1",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.913Z",
       "name": "Robert J. Denault",
       "x": null,
       "linkedin": null,
@@ -1408,10 +1412,14 @@
       "sharedInterests": "Publicly addressed suspicious trading and legal pressure. | Publicly described Kalshi’s surveillance, investigation and referral process in the teleprompter case.",
       "potentialValue": "Enforcement and “impossible position” context; verify title and quote. | Primary-source follow-up on surveillance, evidence preservation and employment verification.",
       "notes": [
-        "Publicly addressed suspicious trading and legal pressure. | Publicly described Kalshi’s surveillance, investigation and referral process in the teleprompter case."
+        "Publicly addressed suspicious trading and legal pressure. | Publicly described Kalshi’s surveillance, investigation and referral process in the teleprompter case.",
+        "Exchange/Enforcement lead (Claude Intel 2026-07-17/18): Publicly articulated the operational conflict between state and federal obligations. — fit: Enforcement panel; Speaker."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Exchange/Enforcement",
+      "nextpredictRelevance": "Enforcement panel; Speaker",
+      "suggestedAction": "Engage on market integrity and conflicting regulatory instructions."
     },
     {
       "id": "con-2b3f3b56",
@@ -16841,7 +16849,7 @@
     {
       "id": "con-2175506f",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:40.038Z",
       "name": "Scott Sadin",
       "x": null,
       "linkedin": "https://www.linkedin.com/in/scott-sadin-a598b977/",
@@ -16867,9 +16875,14 @@
       "email": null,
       "sharedInterests": null,
       "potentialValue": null,
-      "notes": [],
+      "notes": [
+        "Integrity lead (Claude Intel 2026-07-17/18): Brings contract-specific sports and event-market integrity expertise. — fit: Speaker; Sponsor."
+      ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Integrity",
+      "nextpredictRelevance": "Speaker; Sponsor",
+      "suggestedAction": "Explore panel participation and sponsorship."
     },
     {
       "id": "con-2e5b820c",
@@ -19520,7 +19533,7 @@
     {
       "id": "con-6161efde",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:40.068Z",
       "name": "Bobby Allyn",
       "x": "@BobbyAllyn",
       "linkedin": "https://www.linkedin.com/in/bobbyallyn/",
@@ -19547,10 +19560,14 @@
       "sharedInterests": "Strong bridge between market structure and lived consumer experience.",
       "potentialValue": "Offer balanced human-source access plus verified operating context. | Press relationship; consumer-impact session; audio interview.",
       "notes": [
-        "Strong bridge between market structure and lived consumer experience."
+        "Strong bridge between market structure and lived consumer experience.",
+        "Media lead (Claude Intel 2026-07-17/18): Covers sports-market classification and federal-state conflict. — fit: Press; Moderator."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Media",
+      "nextpredictRelevance": "Press; Moderator",
+      "suggestedAction": "Offer Pierre and independent speakers as background sources."
     },
     {
       "id": "con-f310f89b",
@@ -19730,7 +19747,7 @@
     {
       "id": "con-d019e33a",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:40.053Z",
       "name": "Kate Knibbs",
       "x": "@Knibbs",
       "linkedin": "https://www.linkedin.com/in/kate-knibbs/",
@@ -19757,10 +19774,14 @@
       "sharedInterests": "A dedicated, skeptical technology voice whose coverage shapes category perception.",
       "potentialValue": "Engage seriously with criticism. Offer evidence on market design, consumer risk and controls. | Press relationship; critical-voice panel; research briefing.",
       "notes": [
-        "A dedicated, skeptical technology voice whose coverage shapes category perception."
+        "A dedicated, skeptical technology voice whose coverage shapes category perception.",
+        "Media lead (Claude Intel 2026-07-17/18): Covers prediction-market structure, regulation and platform accountability. — fit: Press; Moderator."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Media",
+      "nextpredictRelevance": "Press; Moderator",
+      "suggestedAction": "Offer background access, independent sources and a press pass without seeking favourable coverage."
     },
     {
       "id": "con-0d818d8f",
@@ -26202,7 +26223,7 @@
     {
       "id": "con-2220c2f5",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.945Z",
       "name": "Ivo Crnkovic-Rubsamen",
       "x": null,
       "linkedin": null,
@@ -26229,10 +26250,14 @@
       "sharedInterests": "Combines institutional trading and crypto-market infrastructure experience in a newly funded prediction-market venue.",
       "potentialValue": "Speaker and sponsor lead; new-platform discussion",
       "notes": [
-        "Combines institutional trading and crypto-market infrastructure experience in a newly funded prediction-market venue."
+        "Combines institutional trading and crypto-market infrastructure experience in a newly funded prediction-market venue.",
+        "Founder lead (Claude Intel 2026-07-17/18): Building a professional, trader-first prediction venue with fresh institutional backing. — fit: Founder speaker; Startup lead."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Founder",
+      "nextpredictRelevance": "Founder speaker; Startup lead",
+      "suggestedAction": "Congratulate him on the raise and invite him to discuss professional exchange design."
     },
     {
       "id": "con-f3d82e6a",
@@ -26272,7 +26297,7 @@
     {
       "id": "con-46bb722f",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.960Z",
       "name": "Matthew Downey",
       "x": null,
       "linkedin": null,
@@ -26299,10 +26324,14 @@
       "sharedInterests": "Represents the execution and market-microstructure side of Pascal’s professional-trader positioning.",
       "potentialValue": "Speaker and sponsor lead; liquidity and execution panel",
       "notes": [
-        "Represents the execution and market-microstructure side of Pascal’s professional-trader positioning."
+        "Represents the execution and market-microstructure side of Pascal’s professional-trader positioning.",
+        "Founder/Trader lead (Claude Intel 2026-07-17/18): Brings high-frequency trading and product expertise to Pascal. — fit: Speaker; Institutional panel."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Founder/Trader",
+      "nextpredictRelevance": "Speaker; Institutional panel",
+      "suggestedAction": "Offer a technical market-structure session distinct from Ivo."
     },
     {
       "id": "con-7f9347fb",
@@ -26798,7 +26827,7 @@
     {
       "id": "con-422e1528",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.869Z",
       "name": "Mike Selig",
       "x": "@ChairmanSelig",
       "linkedin": null,
@@ -26825,10 +26854,14 @@
       "sharedInterests": "Central voice in federal pre-emption and contract-finality disputes.",
       "potentialValue": "Quote official CFTC orders and map federal-state conflict.",
       "notes": [
-        "Central voice in federal pre-emption and contract-finality disputes."
+        "Central voice in federal pre-emption and contract-finality disputes.",
+        "Regulator lead (Claude Intel 2026-07-17/18): Central federal voice in the jurisdictional conflict over prediction markets. — fit: Keynote; Regulatory panel."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Regulator",
+      "nextpredictRelevance": "Keynote; Regulatory panel",
+      "suggestedAction": "Approach through formal CFTC protocol with a neutral market-integrity and jurisdiction brief."
     },
     {
       "id": "con-2973529e",
@@ -27288,7 +27321,7 @@
     {
       "id": "con-efae3e80",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.992Z",
       "name": "David Dai",
       "x": null,
       "linkedin": null,
@@ -27315,10 +27348,14 @@
       "sharedInterests": "Co-author of the settlement-manipulation study on five-minute Bitcoin prediction markets.",
       "potentialValue": "Research briefing, speaker lead and paper comment.",
       "notes": [
-        "Co-author of the settlement-manipulation study on five-minute Bitcoin prediction markets."
+        "Co-author of the settlement-manipulation study on five-minute Bitcoin prediction markets.",
+        "Researcher lead (Claude Intel 2026-07-17/18): Co-authored the study on settlement manipulation in five-minute Bitcoin markets. — fit: Technical speaker; Content source."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Researcher",
+      "nextpredictRelevance": "Technical speaker; Content source",
+      "suggestedAction": "Invite for a technical briefing and panel."
     },
     {
       "id": "con-2b7d91ae",
@@ -27428,7 +27465,7 @@
     {
       "id": "con-c35fb9cf",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:40.007Z",
       "name": "Ruizhe Jia",
       "x": null,
       "linkedin": null,
@@ -27455,10 +27492,14 @@
       "sharedInterests": "Co-author of the settlement-manipulation study.",
       "potentialValue": "Research briefing, speaker lead and paper comment.",
       "notes": [
-        "Co-author of the settlement-manipulation study."
+        "Co-author of the settlement-manipulation study.",
+        "Researcher lead (Claude Intel 2026-07-17/18): Co-authored the study on settlement manipulation in five-minute Bitcoin markets. — fit: Technical speaker; Content source."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Researcher",
+      "nextpredictRelevance": "Technical speaker; Content source",
+      "suggestedAction": "Invite for a technical briefing and panel."
     },
     {
       "id": "con-cf39f1e5",
@@ -27533,7 +27574,7 @@
     {
       "id": "con-3d90d450",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:40.023Z",
       "name": "Shihao Yu",
       "x": null,
       "linkedin": null,
@@ -27560,10 +27601,14 @@
       "sharedInterests": "Co-author and contact author of the settlement-manipulation study.",
       "potentialValue": "Research briefing, speaker lead and paper comment.",
       "notes": [
-        "Co-author and contact author of the settlement-manipulation study."
+        "Co-author and contact author of the settlement-manipulation study.",
+        "Researcher lead (Claude Intel 2026-07-17/18): Co-authored the study on settlement manipulation in five-minute Bitcoin markets. — fit: Technical speaker; Content source."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Researcher",
+      "nextpredictRelevance": "Technical speaker; Content source",
+      "suggestedAction": "Invite for a technical briefing and panel."
     },
     {
       "id": "con-70afbd01",
@@ -28023,7 +28068,7 @@
     {
       "id": "con-c64f846a",
       "createdAt": "2026-07-18T05:07:18.338Z",
-      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:51:39.929Z",
       "name": "Simon Johansen",
       "x": null,
       "linkedin": null,
@@ -28050,10 +28095,14 @@
       "sharedInterests": "Leads a reported expansion of Jump’s prediction-markets team and provides a direct institutional market-making perspective.",
       "potentialValue": "Speaker lead; institutional trading panel; sponsor conversation",
       "notes": [
-        "Leads a reported expansion of Jump’s prediction-markets team and provides a direct institutional market-making perspective."
+        "Leads a reported expansion of Jump’s prediction-markets team and provides a direct institutional market-making perspective.",
+        "Institutional Trader lead (Claude Intel 2026-07-17/18): Leads one of the clearest institutional prediction-markets build-outs. — fit: Speaker; Institutional roundtable."
       ],
       "nextAction": "Verify identity and current role before outreach.",
-      "followUpDate": null
+      "followUpDate": null,
+      "leadType": "Institutional Trader",
+      "nextpredictRelevance": "Speaker; Institutional roundtable",
+      "suggestedAction": "Send a focused invitation on liquidity, talent and professionalisation."
     },
     {
       "id": "con-f698af58",
@@ -28510,6 +28559,690 @@
       ],
       "nextAction": "Verify identity and current role before outreach.",
       "followUpDate": null
+    },
+    {
+      "id": "con-1c74e9e3",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Moreton Capital prediction-markets leadership",
+      "role": "Strategy leadership, Moreton Capital Partners",
+      "company": "Moreton Capital Partners",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Institutional Trader",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Building a dedicated strategy and recruiting a senior Portfolio Manager.",
+      "potentialValue": "Speaker; Attendee",
+      "nextpredictRelevance": "Speaker; Attendee",
+      "suggestedAction": "Identify team lead and Australia-based candidates.",
+      "priority": "Critical",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Building a dedicated strategy and recruiting a senior Portfolio Manager."
+      ],
+      "nextAction": "Identify team lead and Australia-based candidates.",
+      "followUpDate": null,
+      "sourceNote": "https://apply.workable.com/moreton-capital-partners/j/7AA6473A86",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-4ab035e9",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Niusha Moshrefi",
+      "role": "Researcher, Academic research",
+      "company": "Academic research",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Researcher",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Authored commercially useful research on sports-market calibration and parlays.",
+      "potentialValue": "Research speaker; Content source",
+      "nextpredictRelevance": "Research speaker; Content source",
+      "suggestedAction": "Invite for a briefing and potential technical panel.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Authored commercially useful research on sports-market calibration and parlays."
+      ],
+      "nextAction": "Invite for a briefing and potential technical panel.",
+      "followUpDate": null,
+      "sourceNote": "https://arxiv.org/abs/2607.14430",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-d43724a9",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Eric Haynes",
+      "role": "Head of Surveillance, Robinhood",
+      "company": "Robinhood",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Compliance/Surveillance",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Described the operational challenge of identifying restricted participants across contract types.",
+      "potentialValue": "Speaker; Compliance panel",
+      "nextpredictRelevance": "Speaker; Compliance panel",
+      "suggestedAction": "Invite to discuss restricted-person identification and AI-assisted surveillance.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Described the operational challenge of identifying restricted participants across contract types."
+      ],
+      "nextAction": "Invite to discuss restricted-person identification and AI-assisted surveillance.",
+      "followUpDate": null,
+      "sourceNote": "https://www.eventus.com/cat-article/surveillance-and-market-integrity/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-90376755",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Jeff Bell",
+      "role": "Executive, Eventus",
+      "company": "Eventus",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Surveillance Vendor",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Eventus provides surveillance and market-integrity infrastructure.",
+      "potentialValue": "Speaker; Sponsor",
+      "nextpredictRelevance": "Speaker; Sponsor",
+      "suggestedAction": "Invite and explore commercial partnership.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Eventus provides surveillance and market-integrity infrastructure."
+      ],
+      "nextAction": "Invite and explore commercial partnership.",
+      "followUpDate": null,
+      "sourceNote": "https://www.eventus.com/cat-article/surveillance-and-market-integrity/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-244b54de",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Cameron Routh",
+      "role": "Executive, Eventus",
+      "company": "Eventus",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Surveillance Vendor",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Relevant to exchange surveillance, product risk and market integrity.",
+      "potentialValue": "Speaker; Sponsor",
+      "nextpredictRelevance": "Speaker; Sponsor",
+      "suggestedAction": "Engage alongside Jeff Bell.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Relevant to exchange surveillance, product risk and market integrity."
+      ],
+      "nextAction": "Engage alongside Jeff Bell.",
+      "followUpDate": null,
+      "sourceNote": "https://www.eventus.com/cat-article/surveillance-and-market-integrity/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-ba8bceab",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "David Bean",
+      "role": "Chairman, Indian Gaming Association",
+      "company": "Indian Gaming Association",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Policy",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Public leader in efforts to protect tribal gaming interests in prediction-market legislation.",
+      "potentialValue": "Regulatory speaker",
+      "nextpredictRelevance": "Regulatory speaker",
+      "suggestedAction": "Use respectful official outreach focused on sovereignty and market structure.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Public leader in efforts to protect tribal gaming interests in prediction-market legislation."
+      ],
+      "nextAction": "Use respectful official outreach focused on sovereignty and market structure.",
+      "followUpDate": null,
+      "sourceNote": "https://defirate.com/news/tribal-leaders-press-senate-to-add-sports-prediction-market-ban-to-clarity-act/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-b0913116",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Gary Batton",
+      "role": "Chief, Choctaw Nation",
+      "company": "Choctaw Nation",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Tribal Leader",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Public voice on federal oversight and tribal participation.",
+      "potentialValue": "Regulatory speaker",
+      "nextpredictRelevance": "Regulatory speaker",
+      "suggestedAction": "Invite through official channels to a balanced sovereignty discussion.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Public voice on federal oversight and tribal participation."
+      ],
+      "nextAction": "Invite through official channels to a balanced sovereignty discussion.",
+      "followUpDate": null,
+      "sourceNote": "https://indianz.com/News/2026/07/14/press-release-five-civilized-tribes-call-for-oversight-of-prediction-markets/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-08f6609e",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Silvio Schembri",
+      "role": "Minister for the Economy, Government of Malta",
+      "company": "Government of Malta",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Government",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Connected to Malta policy development around prediction markets.",
+      "potentialValue": "International regulatory speaker",
+      "nextpredictRelevance": "International regulatory speaker",
+      "suggestedAction": "Confirm policy role and approach through official channels.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Connected to Malta policy development around prediction markets."
+      ],
+      "nextAction": "Confirm policy role and approach through official channels.",
+      "followUpDate": null,
+      "sourceNote": "https://www.financemagnates.com/fintech/inside-the-prediction-markets-malta-drafts-rules-as-blockchaincom-and-jump-trading-expand-their-reach/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-ddd1d5b7",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Malta Gaming Authority policy lead",
+      "role": "Policy/Regulatory leadership, Malta Gaming Authority",
+      "company": "Malta Gaming Authority",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Regulator",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Could become central to a bespoke European licensing regime.",
+      "potentialValue": "Speaker; Partner",
+      "nextpredictRelevance": "Speaker; Partner",
+      "suggestedAction": "Identify the official responsible for the framework.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Could become central to a bespoke European licensing regime."
+      ],
+      "nextAction": "Identify the official responsible for the framework.",
+      "followUpDate": null,
+      "sourceNote": "https://www.financemagnates.com/fintech/inside-the-prediction-markets-malta-drafts-rules-as-blockchaincom-and-jump-trading-expand-their-reach/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-a41093e9",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "ANJ leadership",
+      "role": "Regulatory leadership, Autorite Nationale des Jeux",
+      "company": "Autorite Nationale des Jeux",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Regulator",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Responsible for France’s Polymarket access action.",
+      "potentialValue": "International regulatory panel",
+      "nextpredictRelevance": "International regulatory panel",
+      "suggestedAction": "Use official outreach and frame the invitation around consumer protection and classification.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Responsible for France’s Polymarket access action."
+      ],
+      "nextAction": "Use official outreach and frame the invitation around consumer protection and classification.",
+      "followUpDate": null,
+      "sourceNote": "https://www.channelnewsasia.com/business/france-blocks-access-polymarket-website-6261691",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-94d1c39e",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "PMXT founders",
+      "role": "Founders, PMXT",
+      "company": "PMXT",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Infrastructure",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Building a standardised API layer across prediction venues.",
+      "potentialValue": "Startup; Workshop; Sponsor",
+      "nextpredictRelevance": "Startup; Workshop; Sponsor",
+      "suggestedAction": "Validate traction and invite to an infrastructure discussion.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Building a standardised API layer across prediction venues."
+      ],
+      "nextAction": "Validate traction and invite to an infrastructure discussion.",
+      "followUpDate": null,
+      "sourceNote": "https://github.com/pmxt-dev/pmxt",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-490ce018",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "OpenThomas developer",
+      "role": "Developer, OpenThomas",
+      "company": "OpenThomas",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "AI/Infrastructure",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Building an autonomous weather-market agent with transparent code.",
+      "potentialValue": "Technical content; AI panel",
+      "nextpredictRelevance": "Technical content; AI panel",
+      "suggestedAction": "Engage after validating live performance and execution assumptions.",
+      "priority": "Medium",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Building an autonomous weather-market agent with transparent code."
+      ],
+      "nextAction": "Engage after validating live performance and execution assumptions.",
+      "followUpDate": null,
+      "sourceNote": "https://github.com/PredictionMarketTrader/openthomas",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-dc8a9d36",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Eilers & Krejcik Gaming team",
+      "role": "Analysts, Eilers & Krejcik Gaming",
+      "company": "Eilers & Krejcik Gaming",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Data/Research",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Produces high-value prediction-market monitoring and comparative data.",
+      "potentialValue": "Data partner; Speaker; Research collaboration",
+      "nextpredictRelevance": "Data partner; Speaker; Research collaboration",
+      "suggestedAction": "Pursue a formal relationship and discuss data collaboration.",
+      "priority": "Critical",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Produces high-value prediction-market monitoring and comparative data."
+      ],
+      "nextAction": "Pursue a formal relationship and discuss data collaboration.",
+      "followUpDate": null,
+      "sourceNote": "https://ekgamingllc.com/downloads/prediction-markets-monitor-july-2026/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-577ee6a9",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Alex Abad-Santos",
+      "role": "Journalist, Vox",
+      "company": "Vox",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Media",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Connects prediction markets with entertainment, fandom and spoiler risk.",
+      "potentialValue": "Press; Moderator",
+      "nextpredictRelevance": "Press; Moderator",
+      "suggestedAction": "Offer relevant production, integrity and legal sources.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Connects prediction markets with entertainment, fandom and spoiler risk."
+      ],
+      "nextAction": "Offer relevant production, integrity and legal sources.",
+      "followUpDate": null,
+      "sourceNote": "https://www.vox.com/culture/495837/kalshi-reality-tv-betting-survivor-spoilers",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-cb7d163b",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Nicole Moran",
+      "role": "Principal, Cornerstone Research",
+      "company": "Cornerstone Research",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Economics/Enforcement",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Contributed to a strong framework for distinguishing research from misappropriated information.",
+      "potentialValue": "Speaker; Content source",
+      "nextpredictRelevance": "Speaker; Content source",
+      "suggestedAction": "Invite for a briefing and possible enforcement panel.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Contributed to a strong framework for distinguishing research from misappropriated information."
+      ],
+      "nextAction": "Invite for a briefing and possible enforcement panel.",
+      "followUpDate": null,
+      "sourceNote": "https://www.cornerstone.com/insights/articles/regulation-of-trading-in-prediction-markets/",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-44939c35",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Jeremy Liabo",
+      "role": "Partner, Ropes & Gray",
+      "company": "Ropes & Gray",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Legal",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Relevant to SEC/CFTC overlap and securities-law questions.",
+      "potentialValue": "Legal speaker",
+      "nextpredictRelevance": "Legal speaker",
+      "suggestedAction": "Invite to a federal-jurisdiction session.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Relevant to SEC/CFTC overlap and securities-law questions."
+      ],
+      "nextAction": "Invite to a federal-jurisdiction session.",
+      "followUpDate": null,
+      "sourceNote": "https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-d1117794",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Charu Chandrasekhar",
+      "role": "Partner, Debevoise & Plimpton",
+      "company": "Debevoise & Plimpton",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Legal",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Relevant to event contracts and securities-law boundaries.",
+      "potentialValue": "Legal speaker",
+      "nextpredictRelevance": "Legal speaker",
+      "suggestedAction": "Invite to a federal-jurisdiction session.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Relevant to event contracts and securities-law boundaries."
+      ],
+      "nextAction": "Invite to a federal-jurisdiction session.",
+      "followUpDate": null,
+      "sourceNote": "https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-6dee59d9",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Liz Davis",
+      "role": "Partner, Davis Wright Tremaine",
+      "company": "Davis Wright Tremaine",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Legal",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Relevant to regulatory overlap and prediction-market compliance.",
+      "potentialValue": "Legal speaker",
+      "nextpredictRelevance": "Legal speaker",
+      "suggestedAction": "Invite to a federal-jurisdiction session.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Relevant to regulatory overlap and prediction-market compliance."
+      ],
+      "nextAction": "Invite to a federal-jurisdiction session.",
+      "followUpDate": null,
+      "sourceNote": "https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
+    },
+    {
+      "id": "con-1d5fd874",
+      "createdAt": "2026-07-18T05:51:39.765Z",
+      "updatedAt": "2026-07-18T05:51:39.765Z",
+      "name": "Scott Mascianica",
+      "role": "Partner, Bradley",
+      "company": "Bradley",
+      "companyId": null,
+      "relationshipType": "category-lead",
+      "leadType": "Legal",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "howKnown": "Curated lead in the Claude Intel 2026-07-17/18 intel pack.",
+      "location": null,
+      "permissionStatus": "unverified",
+      "doNotContact": false,
+      "email": null,
+      "linkedin": null,
+      "x": null,
+      "sharedInterests": "Relevant to securities, enforcement and jurisdictional risk.",
+      "potentialValue": "Legal speaker",
+      "nextpredictRelevance": "Legal speaker",
+      "suggestedAction": "Invite to a federal-jurisdiction session.",
+      "priority": "High",
+      "verification": "Verify identity and current role before outreach.",
+      "notes": [
+        "Why: Relevant to securities, enforcement and jurisdictional risk."
+      ],
+      "nextAction": "Invite to a federal-jurisdiction session.",
+      "followUpDate": null,
+      "sourceNote": "https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray",
+      "source": "workbook-directory",
+      "importedFrom": "08_LEADS.jsonl",
+      "fictional": false
     }
   ]
 }

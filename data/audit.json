@@ -3946,6 +3946,166 @@
       "action": "insert",
       "collection": "insights",
       "summary": "{\"pack_name\":\"NEXTPredict Claude Intel 2026-07-17_18\",\"coverage_start\":\"2026-07-17\",\"co..."
+    },
+    {
+      "id": "+19",
+      "at": "2026-07-18T05:51:39.858Z",
+      "actor": "import-pack-leads",
+      "action": "bulk-insert",
+      "collection": "contacts",
+      "summary": "19 curated leads from 08_LEADS.jsonl"
+    },
+    {
+      "id": "con-422e1528",
+      "at": "2026-07-18T05:51:39.904Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-218271f1",
+      "at": "2026-07-18T05:51:39.921Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-c64f846a",
+      "at": "2026-07-18T05:51:39.937Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-2220c2f5",
+      "at": "2026-07-18T05:51:39.952Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-46bb722f",
+      "at": "2026-07-18T05:51:39.968Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-a35ead78",
+      "at": "2026-07-18T05:51:39.983Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-efae3e80",
+      "at": "2026-07-18T05:51:39.999Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-c35fb9cf",
+      "at": "2026-07-18T05:51:40.015Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-3d90d450",
+      "at": "2026-07-18T05:51:40.030Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-2175506f",
+      "at": "2026-07-18T05:51:40.045Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-d019e33a",
+      "at": "2026-07-18T05:51:40.060Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "con-6161efde",
+      "at": "2026-07-18T05:51:40.076Z",
+      "actor": "import-pack-leads",
+      "action": "update",
+      "collection": "contacts",
+      "summary": "leadType,nextpredictRelevance,suggestedAction,notes"
+    },
+    {
+      "id": "7 items",
+      "at": "2026-07-18T05:52:38.791Z",
+      "actor": "stuart-confirm",
+      "action": "reclassify",
+      "collection": "insights",
+      "summary": "confirmed public (false-positive confidentiality flags on third-party market intel)"
+    },
+    {
+      "id": "cnt-fb50cd01",
+      "at": "2026-07-18T05:56:03.561Z",
+      "actor": "draft-assist",
+      "action": "insert",
+      "collection": "content",
+      "summary": "CFTC and Michigan: the fight moved into live trades"
+    },
+    {
+      "id": "cnt-adbde9d5",
+      "at": "2026-07-18T05:56:03.565Z",
+      "actor": "draft-assist",
+      "action": "insert",
+      "collection": "content",
+      "summary": "CFTC and Michigan (X): finality is the product"
+    },
+    {
+      "id": "cnt-bdaa64ea",
+      "at": "2026-07-18T05:56:03.568Z",
+      "actor": "draft-assist",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Forum: who carries the risk when authorities disagree?"
+    },
+    {
+      "id": "cnt-57442389",
+      "at": "2026-07-18T05:56:03.571Z",
+      "actor": "draft-assist",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Five questions Congress should ask about sports prediction markets"
+    },
+    {
+      "id": "cnt-64c13f92",
+      "at": "2026-07-18T05:56:03.574Z",
+      "actor": "draft-assist",
+      "action": "insert",
+      "collection": "content",
+      "summary": "House hearing (X): two questions that decide the session"
+    },
+    {
+      "id": "cnt-059c8195",
+      "at": "2026-07-18T05:56:03.578Z",
+      "actor": "draft-assist",
+      "action": "insert",
+      "collection": "content",
+      "summary": "Forum: federal to tax, but not to license?"
     }
   ]
 }

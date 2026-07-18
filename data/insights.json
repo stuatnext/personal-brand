@@ -4879,7 +4879,7 @@
     {
       "id": "ins-d3fbfd9b",
       "createdAt": "2026-07-18T05:46:39.502Z",
-      "updatedAt": "2026-07-18T05:46:39.502Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "Prediction Markets Intelligence Brief",
       "raw": "# Prediction Markets Intelligence Brief\n\n## Coverage: 17-18 July 2026\n\n## Executive read\n\nPrediction markets have entered the jurisdiction, integrity and infrastructure phase.\n\nThe strongest signals are no longer limited to trading volume. Federal and state authorities are issuing conflicting instructions. Congress is examining sports-market protections. France is blocking access while Malta explores a bespoke licensing route. Institutional firms are assembling specialist trading teams. Operators are internalising exchange infrastructure. New markets in entertainment, healthcare and corporate events are expanding the restricted-person universe and exposing weaknesses in settlement design, surveillance and data rights.\n\nThe commercial opportunity is growing alongside the burden of proof. NEXTPredict should place greater emphasis on market architecture, institutional trading, compliance infrastructure, resolution, data rights and political strategy. Generic category-growth discussions are becoming stale.\n\n---\n\n# 1. Highest-priority signals\n\n## 1. CFTC intervention in the Michigan conflict\n\nThe CFTC stayed Kalshi's proposed emergency rule and directed the exchange to continue fulfilling open Michigan trades normally. The practical effect was to place Kalshi between a federal direction and a conflicting state-court position.\n\n**Commercial read:** The dispute has moved beyond licensing and access. It now concerns whether a state court can disrupt transactions executed on a federally regulated derivatives venue.\n\n**Content angle:** The CFTC has moved from defending its jurisdiction in court to intervening in the treatment of live trades. Kalshi appears caught between two authorities giving it incompatible instructions.\n\n**NEXTPredict relevance:** Regulatory keynote, market-structure panel, enforcement and legal content.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 2. House Agriculture Committee hearing on sports prediction markets\n\nThe House Agriculture Subcommittee scheduled a 21 July hearing titled \"Examining Customer Protections and Market Integrity in Sports Event Prediction Markets.\"\n\n**Commercial read:** The hearing should produce named policy positions, witnesses, quotes and potential NEXTPredict speakers. It is more actionable than another broad regulation story.\n\n**Recommended operation:**\n\n1. Pre-hearing post: five questions Congress should ask.\n2. Live monitoring: strongest claims, disagreements and witness positions.\n3. Post-hearing analysis: who sounded credible, what remains unresolved and who belongs at NEXTPredict.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 3. France blocks Polymarket\n\nFrance ordered internet providers to block Polymarket, escalating from restrictions on transactions to full access controls.\n\n**Commercial read:** International expansion is becoming a country-by-country operational problem involving access, advertising, payments, classification and consumer protection.\n\n**Content angle:** Can a prediction market build a genuinely international product when even the display of prices can be treated differently in each jurisdiction?\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 4. Malta explores a bespoke prediction-market framework\n\nMalta is exploring a dedicated licensing approach that may sit outside conventional financial-services and gambling classifications. No final legislative text has been published.\n\n**Commercial read:** Europe may be splitting into competing models. Some jurisdictions will restrict access under existing gambling law, while others may design new regimes to attract operators and infrastructure.\n\n**NEXTPredict session:** Europe's Regulatory Fork: Block, License or Invent a New Category?\n\n**Priority:** 9/10  \n**Confidence:** Medium-high\n\n## 5. North Carolina adopts tax without direct sportsbook licensing\n\nNorth Carolina enacted a 6% tax on prediction-market net trading-fee revenue, effective 1 January 2027, while recognising federal oversight rather than creating a conventional sportsbook licensing regime.\n\n**Commercial read:** This creates a politically useful third model: accept federal regulation, avoid building a duplicate licensing structure and still collect state revenue.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 6. Jump Trading expands its prediction-markets team\n\nJump reportedly doubled its specialist team to roughly 20 people and is recruiting from unconventional backgrounds including sports trading and independent forecasting.\n\n**Commercial read:** Prediction markets are becoming a genuine institutional trading strategy rather than a side experiment.\n\n**Lead:** Simon Johansen, Head of Prediction Markets.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 7. Moreton Capital builds a dedicated strategy\n\nMoreton Capital Partners advertised for a senior Portfolio Manager to run a dedicated prediction-markets strategy using quantitative modelling, agentic AI and domain expertise. Reporting indicates it has already begun trading internal capital.\n\n**Commercial read:** This is one of the clearest signs of dedicated institutional capital entering the category.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 8. Pascal raises capital for a trader-first venue\n\nPascal announced a $9 million Series A led by Union Square Ventures. Its proposition centres on APIs, order-book trading, professional interfaces and OTC capability.\n\n**Commercial read:** The platform battle may shift from market count and consumer acquisition to which venue professional traders trust with meaningful size.\n\n**Leads:** Ivo Crnkovic-Rubsamen and Matthew Downey.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 9. DraftKings and Underdog internalise exchange infrastructure\n\nDraftKings launched its proprietary DKeX exchange and reportedly received futures commission merchant approval. Underdog's UDX self-certified initial sports-event contracts with market-maker support.\n\n**Commercial read:** Sports operators are moving from distribution partners to vertically integrated exchange businesses controlling customer acquisition, product, economics and infrastructure.\n\n**Priority:** 9/10  \n**Confidence:** Medium-high\n\n## 10. Blockchain.com embeds Polymarket\n\nBlockchain.com integrated Polymarket into its brokerage experience for eligible users. Its reported 43 million verified users represent a potential distribution base, not confirmed prediction-market adoption.\n\n**Commercial read:** Prediction-market distribution is moving into existing crypto, brokerage and financial interfaces.\n\n**Priority:** 8/10  \n**Confidence:** High\n\n## 11. Kalshi and AppliedXL launch biopharma markets\n\nKalshi and AppliedXL launched a pilot covering clinical-trial outcomes and FDA decisions, initially focusing on late-stage trials after enrolment closes.\n\n**Commercial read:** Health markets may create genuine information value, but they also multiply MNPI, ethical, patient-impact and restricted-person risks.\n\n**Lead:** Francesco Marconi, AppliedXL.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 12. Reality television becomes an integrity and brand-risk category\n\nCoverage of Love Island and Survivor markets highlighted potential leakage, spoiler risk and the difficulty of controlling information across production staff, contestants, contractors and their networks.\n\nKalshi's total entertainment trading volume reportedly exceeded $600 million in 2026, up from $300 million in 2025. This figure is for entertainment markets overall, not Love Island alone.\n\n**Commercial read:** Entertainment may be a powerful acquisition vertical, but it can also damage suspense and brand value before rights holders have developed policies.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 13. Polymarket five-minute Bitcoin contracts show settlement-manipulation risk\n\nAcademic research found a repeatable pattern in which Binance spot order flow increased immediately before settlement of five-minute Polymarket Bitcoin markets, partially reversed afterwards, and benefited a concentrated group of traders. The same pattern was largely absent in fifteen-minute contracts.\n\n**Commercial read:** Contract design and settlement windows can create manipulation incentives. A prediction market may be manipulated by moving the underlying reference market rather than trading directly on the prediction venue.\n\n**NEXTPredict session:** How to Manipulate a Prediction Market Without Trading on It.\n\n**Priority:** 10/10  \n**Confidence:** High, subject to further peer review\n\n## 14. SEC jurisdiction becomes more relevant\n\nContracts linked to public companies, issuer revenue, CEO statements, earnings, valuations or corporate outcomes may raise questions about security-based swaps or overlapping SEC jurisdiction.\n\n**Commercial read:** The next regulatory conflict may involve federal overlap as well as federal-state pre-emption.\n\n**NEXTPredict session:** When Does an Event Contract Become a Securities Product?\n\n**Priority:** 8/10  \n**Confidence:** Medium-high\n\n## 15. Restricted-person identification is becoming a technology category\n\nRobinhood surveillance leadership has described current processes for identifying restricted traders through occupations, employers and connections. The company is exploring AI assistance as contract variety expands.\n\n**Commercial read:** Basic KYC is insufficient. Each contract creates a different potential insider population.\n\n**NEXTPredict session:** Who Is an Insider When Every Contract Has a Different Insider List?\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 16. Data rights can determine whether a contract is launchable\n\nKalshi proposed using FlightAware as a primary resolution source for flight-cancellation contracts. FlightAware's parent RTX said it had not authorised the use and that its terms prohibited it.\n\n**Commercial read:** Resolution-source permission, licensing, correction policies, backup sources and audit rights are part of product viability.\n\n**NEXTPredict session:** You Cannot Settle What You Do Not Own: Data Rights Behind Event Contracts.\n\n**Priority:** 8/10  \n**Confidence:** High\n\n## 17. PMXT is building a unified prediction-market API layer\n\nPMXT is developing a CCXT-style interface across multiple prediction venues, including Python, TypeScript and MCP support.\n\n**Commercial read:** Fragmented APIs become valuable infrastructure once firms trade across multiple venues and autonomous agents require standardised access.\n\n**Priority:** 8/10  \n**Confidence:** High for the project, low-medium for commercial traction\n\n## 18. OpenThomas demonstrates autonomous weather-market trading\n\nOpenThomas is an open-source agent designed to trade weather contracts using multiple forecasts, station-bias analysis, LLM adjustments and risk controls. Its default mode is paper trading.\n\n**Commercial read:** Weather may be an early laboratory for autonomous agents because outcomes are frequent, objective and tied to known reporting stations.\n\n**Caveat:** There is no evidence that the agent has a durable live-trading edge.\n\n**Priority:** 7/10  \n**Confidence:** High on project existence, low on commercial performance\n\n## 19. Augur pivots toward resolution infrastructure\n\nAugur's Lituus proposal focuses on decentralised resolution infrastructure that could support multiple prediction-market front ends.\n\n**Commercial read:** The valuable layer may be resolution rather than end-user distribution.\n\n**Freshness:** Strategic background, not a fresh 17-18 July launch.\n\n**Priority:** 8/10\n\n## 20. Entain cites prediction markets as competitive pressure\n\nEntain announced cost reductions and role removals amid higher UK tax pressure. Reuters also reported prediction markets among the competitive pressures it is seeking to address.\n\n**Commercial read:** Prediction markets are becoming a named strategic consideration for major incumbent operators.\n\n**Caveat:** Do not claim prediction markets caused the redundancies.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n---\n\n# 2. Strongest relationship and lead opportunities\n\n## Regulatory and policy\n\n- Michael Selig, CFTC Chairman - formal keynote invitation through protocol.\n- Robert DeNault, Kalshi Head of Enforcement - operational conflict, enforcement and market integrity.\n- House Agriculture hearing witnesses and committee staff - immediate monitoring and research.\n- David Bean, Indian Gaming Association - tribal sovereignty and proposed legislative restrictions.\n- Gary Batton, Choctaw Nation - tribal and federal policy perspective.\n- Malta Gaming Authority and Silvio Schembri - European regulatory strategy.\n- French ANJ leadership - international regulation and access restrictions.\n- North Carolina tax and policy specialists - state taxation without duplicate licensing.\n\n## Institutional trading\n\n- Simon Johansen, Jump Trading.\n- Moreton Capital prediction-markets Portfolio Manager and team leadership.\n- Ivo Crnkovic-Rubsamen, Pascal.\n- Matthew Downey, Pascal.\n- Relevant leaders at DRW, Susquehanna, IMC, Wintermute, Tyr Capital, Precharm and Westren Capital.\n\n## Infrastructure and compliance\n\n- Francesco Marconi, AppliedXL.\n- Eric Haynes, Robinhood.\n- Scott Sadin, IC360.\n- Jeff Bell and Cameron Routh, Eventus.\n- PMXT founders.\n- OpenThomas developer.\n- Augur/Lituus contributors.\n- Eilers & Krejcik Gaming analysts.\n- FlightAware/RTX data licensing contacts.\n- Sportradar, Stats Perform, GRID and Genius Sports.\n\n## Academic and expert\n\n- David Dai, Ruizhe Jia and Shihao Yu - Bitcoin settlement-manipulation research.\n- Niusha Moshrefi - sports calibration and parlay research.\n- Laurent Samuel, Greg Leonard, Nicole Moran, Jerrod Attias and Jonas Dalmazzo - Cornerstone Research.\n- Jeremy Liabo, Charu Chandrasekhar, Liz Davis and Scott Mascianica - SEC/CFTC boundary expertise.\n\n## Media\n\n- Kate Knibbs, WIRED.\n- Bobby Allyn, NPR.\n- Alex Abad-Santos, Vox.\n- Bloomberg reporters covering Jump and institutional trading.\n- Gillian Brassil and Rebecca Klar, Bloomberg Law.\n- Reuters reporters covering France and Entain.\n- Eilers & Krejcik Gaming as a data and content relationship.\n\n---\n\n# 3. Recommended NEXTPredict programme themes\n\n1. The Federal-State Collision: Who Controls Event Contracts?\n2. Europe's Regulatory Fork: Block, License or Invent a New Category?\n3. The Full-Stack Prediction Exchange.\n4. The New Prediction-Markets Talent Stack.\n5. How to Manipulate a Prediction Market Without Trading on It.\n6. Who Is an Insider When Every Contract Has a Different Insider List?\n7. You Cannot Settle What You Do Not Own: Data Rights Behind Event Contracts.\n8. What Does 70% Actually Mean?\n9. When Does an Event Contract Become a Securities Product?\n10. Entertainment Markets: Acquisition Engine or Brand-Risk Machine?\n11. Can AI Agents Trade Profitably After Execution Costs?\n12. Resolution as Infrastructure: Oracles, Appeals and Disputes.\n\n---\n\n# 4. Recommended editorial theme\n\n## The market is scaling faster than its control architecture\n\nThis theme connects the strongest developments:\n\n- Federal and state conflict over live contracts.\n- Congressional scrutiny of sports markets.\n- European fragmentation.\n- Institutional trading expansion.\n- Entertainment, biotech and corporate-event insider populations.\n- Settlement manipulation and dispute risk.\n- Data licensing and resolution rights.\n- AI agents and cross-venue infrastructure.\n\nNEXTPredict should present itself as the room where growth, integrity, architecture and commercial scale can be discussed together.",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -4895,7 +4895,7 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "strictly-confidential",
+        "classification": "public",
         "score": 5,
         "reasons": [
           "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public.",
@@ -4903,7 +4903,9 @@
         ],
         "isSuggestion": true,
         "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [
@@ -5165,7 +5167,7 @@
     {
       "id": "ins-6eec3b2d",
       "createdAt": "2026-07-18T05:46:39.759Z",
-      "updatedAt": "2026-07-18T05:46:39.759Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "Verification and Research Gaps",
       "raw": "# Verification and Research Gaps\n\n## Claims corrected or downgraded\n\n### CFTC ordered Kalshi to \"defy\" Michigan\n\nThe CFTC directed Kalshi to fulfil open trades. \"Defy\" or \"ignore\" is editorial framing, not the wording of the agency order.\n\n### Cold War emergency powers\n\nThe historical comparison should be attributed to reporting and former CFTC officials unless confirmed directly in primary CFTC material.\n\n### Selig Supreme Court vow\n\nSelig had previously discussed welcoming Supreme Court review. Do not present this as a new 17 July declaration without primary confirmation.\n\n### Base launched a new fund on 17 July\n\nBase's ecosystem fund already existed. The fresh signal is explicit prioritisation or renewed focus on prediction markets.\n\n### Blockchain.com gives Polymarket 43 million users\n\nThe integration provides access to a potential verified-user base. It does not prove 43 million users adopted Polymarket.\n\n### Love Island produced $600 million\n\nThe $600 million figure refers to Kalshi entertainment markets overall, not Love Island alone.\n\n### Entain redundancies caused by prediction markets\n\nHigher UK taxes were the dominant pressure. Prediction markets were one competitive factor, not the sole cause.\n\n### OpenThomas profitability\n\nThe project exists, but paper trading and model outputs do not demonstrate a live, executable edge.\n\n### StartupHub arbitrage\n\nFlagged opportunities require checking resolution wording, fees, spread, depth, limits, jurisdiction and capital lock-up.\n\n## Claims requiring fresh confirmation\n\n- Final witness list for the 21 July House hearing.\n- Exact status and text of Malta's proposed framework.\n- DraftKings FCM registration status from primary NFA records.\n- Names of Kalshi's newest Democratic lobbyists.\n- Base investment lead responsible for prediction markets.\n- Moreton team size and external-capital timeline.\n- Westren Capital's actual trading activity, capital and venues.\n- PMXT production usage and customer traction.\n- OpenThomas live trading, if any.\n- Final resolution and dispute handling for the USD.AI contract.\n- Any subsequent peer review or rebuttal of the Bitcoin settlement-manipulation study.\n\n## Social-source handling\n\nReddit and LinkedIn findings should be used to identify objections, questions, participants and language. They should not be treated as confirmation of misconduct, market size or commercial performance without independent verification.",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -5181,7 +5183,7 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "strictly-confidential",
+        "classification": "public",
         "score": 5,
         "reasons": [
           "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public.",
@@ -5189,7 +5191,9 @@
         ],
         "isSuggestion": true,
         "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [],
@@ -5211,7 +5215,7 @@
     {
       "id": "ins-141db40b",
       "createdAt": "2026-07-18T05:46:39.768Z",
-      "updatedAt": "2026-07-18T05:46:39.768Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "CFTC intervention in Michigan trades",
       "raw": "{\"id\":\"SIG-001\",\"title\":\"CFTC intervention in Michigan trades\",\"date\":\"2026-07-14\",\"category\":\"Regulatory\",\"priority\":10,\"confidence\":\"High\",\"summary\":\"The CFTC directed Kalshi to continue fulfilling open Michigan trades, creating a practical conflict with a state-court position.\",\"commercial_read\":\"The federal-state dispute now affects the treatment of live contracts, not only licensing and market access.\",\"content_angle\":\"Kalshi appears caught between two authorities giving it incompatible instructions.\",\"lead_potential\":[\"Michael Selig\",\"Robert DeNault\",\"Michigan legal and regulatory officials\"],\"nexpredict_relevance\":[\"Regulatory keynote\",\"Legal panel\",\"Content\"],\"next_action\":\"Lead editorial coverage and prepare formal invitations through official channels.\",\"sources\":[\"https://www.cftc.gov/PressRoom/PressReleases/9267-26\"]}",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -5226,7 +5230,7 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "public-after-anonymisation",
+        "classification": "public",
         "score": 2,
         "reasons": [
           "Describes internal disagreement."
@@ -5242,7 +5246,9 @@
           "Sensitive timings blurred (\"recently\", \"last year\").",
           "Deal terms and counterparties removed."
         ],
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [],
@@ -5490,7 +5496,7 @@
     {
       "id": "ins-8d66e210",
       "createdAt": "2026-07-18T05:46:39.835Z",
-      "updatedAt": "2026-07-18T05:46:39.835Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "Pascal raises for a trader-first venue",
       "raw": "{\"id\":\"SIG-008\",\"title\":\"Pascal raises for a trader-first venue\",\"date\":\"2026-07-17\",\"category\":\"Funding/Platform\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Pascal announced a $9 million Series A led by Union Square Ventures and is building professional interfaces, APIs and OTC capability.\",\"commercial_read\":\"Professional traders may demand materially different venues from consumer-first prediction platforms.\",\"content_angle\":\"The next platform battle may be about who professional traders trust with size.\",\"lead_potential\":[\"Ivo Crnkovic-Rubsamen\",\"Matthew Downey\",\"USV investment team\"],\"nexpredict_relevance\":[\"Founder speaker\",\"Startup lead\",\"Investor content\"],\"next_action\":\"Contact both founders with differentiated session ideas.\",\"sources\":[\"https://blog.usv.com/pascal\",\"https://finance.yahoo.com/markets/options/articles/exclusive-prediction-market-startup-pascal-130000617.html\"]}",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -5504,7 +5510,7 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "public-after-anonymisation",
+        "classification": "public",
         "score": 2,
         "reasons": [
           "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public."
@@ -5520,7 +5526,9 @@
           "Sensitive timings blurred (\"recently\", \"last year\").",
           "Deal terms and counterparties removed."
         ],
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [
@@ -5662,7 +5670,7 @@
     {
       "id": "ins-f4af29b5",
       "createdAt": "2026-07-18T05:46:39.868Z",
-      "updatedAt": "2026-07-18T05:46:39.868Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "Entertainment markets scale alongside leakage risk",
       "raw": "{\"id\":\"SIG-012\",\"title\":\"Entertainment markets scale alongside leakage risk\",\"date\":\"2026-07-17\",\"category\":\"Product/Brand\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Kalshi entertainment volume reportedly exceeded $600 million in 2026 while reality-TV markets generated spoiler and informed-trading concerns.\",\"commercial_read\":\"Entertainment may be a powerful acquisition vertical and a serious brand-risk problem at the same time.\",\"content_angle\":\"Rights holders need prediction-market policies before prices create a public narrative for them.\",\"lead_potential\":[\"Production executives\",\"Broadcasters\",\"Entertainment lawyers\",\"Exchange integrity teams\"],\"nexpredict_relevance\":[\"Entertainment panel\",\"Content\",\"Sponsor leads\"],\"next_action\":\"Develop an entertainment-integrity session and recruit production-side voices.\",\"sources\":[\"https://www.vox.com/culture/495837/kalshi-reality-tv-betting-survivor-spoilers\",\"https://finance.yahoo.com/markets/options/articles/millions-dollars-were-wagered-love-100000499.html\",\"https://www.barrons.com/articles/love-island-kalshi-prediction-markets-7e74ff1c\"]}",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -5678,7 +5686,7 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "public-after-anonymisation",
+        "classification": "public",
         "score": 2,
         "reasons": [
           "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public."
@@ -5694,7 +5702,9 @@
           "Sensitive timings blurred (\"recently\", \"last year\").",
           "Deal terms and counterparties removed."
         ],
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [],
@@ -5991,7 +6001,7 @@
     {
       "id": "ins-dd3e3779",
       "createdAt": "2026-07-18T05:46:39.942Z",
-      "updatedAt": "2026-07-18T05:46:39.942Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "Entain names prediction markets as competitive pressure",
       "raw": "{\"id\":\"SIG-020\",\"title\":\"Entain names prediction markets as competitive pressure\",\"date\":\"2026-07-18\",\"category\":\"Competitive\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Entain is cutting costs amid tax pressure and has also cited prediction markets among competitive pressures.\",\"commercial_read\":\"Prediction markets have become a named strategic consideration for a major gambling incumbent.\",\"content_angle\":\"The clearest sign the category matters may be incumbents mentioning it in restructuring discussions.\",\"lead_potential\":[\"Entain product strategy\",\"Corporate development\",\"US leadership\"],\"nexpredict_relevance\":[\"Operator panel\",\"Attendee leads\"],\"next_action\":\"Identify relevant Entain executives and avoid claiming PMs caused the redundancies.\",\"sources\":[\"https://live.euronext.com/en/financial-news/ladbrokes-owner-entain-cut-500-roles-it-seeks-lower-costs\"]}",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -6005,14 +6015,16 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "private-operating-lesson",
+        "classification": "public",
         "score": 3,
         "reasons": [
           "Employee-sensitive information."
         ],
         "isSuggestion": true,
         "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [],
@@ -6144,7 +6156,7 @@
     {
       "id": "ins-1b698fb9",
       "createdAt": "2026-07-18T05:46:39.980Z",
-      "updatedAt": "2026-07-18T05:46:39.980Z",
+      "updatedAt": "2026-07-18T05:52:38.783Z",
       "title": "{\"id\":\"LEAD-002\",\"name\":\"Robert DeNault\",\"role\":\"Head of Enforcement\",\"company\":\"Kalshi...",
       "raw": "{\"id\":\"LEAD-002\",\"name\":\"Robert DeNault\",\"role\":\"Head of Enforcement\",\"company\":\"Kalshi\",\"lead_type\":\"Exchange/Enforcement\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Publicly articulated the operational conflict between state and federal obligations.\",\"nexpredict_relevance\":[\"Enforcement panel\",\"Speaker\"],\"suggested_action\":\"Engage on market integrity and conflicting regulatory instructions.\",\"sources\":[\"https://www.cftc.gov/PressRoom/PressReleases/9267-26\"]}",
       "source": "NEXTPredict Claude Intel 2026-07-17/18",
@@ -6158,7 +6170,7 @@
       "commercialRelevance": 3,
       "confidence": "unreviewed",
       "confidentiality": {
-        "classification": "public-after-anonymisation",
+        "classification": "public",
         "score": 2,
         "reasons": [
           "Describes internal disagreement."
@@ -6174,7 +6186,9 @@
           "Sensitive timings blurred (\"recently\", \"last year\").",
           "Deal terms and counterparties removed."
         ],
-        "confirmed": false
+        "confirmed": true,
+        "confirmedAt": "2026-07-18T05:52:38.783Z",
+        "reclassNote": "Confirmed public: market intelligence about third parties (no NEXT.io deals/margins/pipeline/people). Auto-flag was a false positive on reported $ figures / third-party cost-cutting / regulatory dispute wording."
       },
       "distilled": null,
       "relatedContacts": [],
