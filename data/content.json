@@ -1542,7 +1542,7 @@
     {
       "id": "cnt-fb50cd01",
       "createdAt": "2026-07-18T05:56:03.557Z",
-      "updatedAt": "2026-07-18T05:56:03.557Z",
+      "updatedAt": "2026-07-18T06:13:49.498Z",
       "title": "CFTC and Michigan: the fight moved into live trades",
       "format": "linkedin-post",
       "lanes": [
@@ -1557,7 +1557,7 @@
         "insight:ins-141db40b"
       ],
       "pov": null,
-      "body": "The prediction market argument has moved from the courtroom to the order book.\n\nFor months the Kalshi question sat where these things usually sit. Briefs, jurisdictional lines, whether an event contract is a financial product or something a state gets to license. This week it moved into live trades. The CFTC directed Kalshi to keep settling open Michigan positions while the state pushes the other way, which leaves the exchange holding two instructions that do not reconcile.\n\nThe interesting part sits underneath the jurisdiction fight. Contract finality has become the live question. A market only works if everyone trusts that an open position settles on its stated terms. Once settlement appears to depend on which authority is being answered that day, the product risk becomes operational rather than legal. That is the version institutional participants actually care about.\n\nFor anyone building or backing in this category, the useful read is that regulatory clarity is turning into an infrastructure requirement rather than a compliance footnote. The venues that can answer \"what happens to my open position if the rules move\" will have an edge that has nothing to do with liquidity.\n\nWorth watching whether the federal and state question gets resolved as principle, or, as usual, one contract at a time.\n\nWhich authority should own the finality of a live event contract?",
+      "body": "The prediction market argument has moved from the courtroom to the order book.\n\nFor months the Kalshi question sat where these things usually sit. Briefs, jurisdictional lines, whether an event contract is a financial product or something a state gets to license. This week it moved into live trades. The CFTC, under chairman Mike Selig, directed Kalshi to keep settling open Michigan positions while the state, through attorney general Dana Nessel, pushes the other way. That leaves the exchange holding two instructions that do not reconcile.\n\nThe interesting part sits underneath the jurisdiction fight. Contract finality has become the live question. A market only works if everyone trusts that an open position settles on its stated terms. Once settlement appears to depend on which authority is being answered that day, the product risk becomes operational rather than legal. That is the version institutional participants actually care about.\n\nFor anyone building or backing in this category, the useful read is that regulatory clarity is turning into an infrastructure requirement rather than a compliance footnote. The venues that can answer \"what happens to my open position if the rules move\" will have an edge that has nothing to do with liquidity.\n\nWorth watching whether the federal and state question gets resolved as principle, or, as usual, one contract at a time.\n\nWhich authority should own the finality of a live event contract?",
       "brand": "brand-stuart",
       "channel": "Stuart LinkedIn",
       "confidentiality": "public",
@@ -1566,12 +1566,31 @@
       "performance": null,
       "versions": [],
       "draftProvider": "claude-session",
-      "fictional": false
+      "fictional": false,
+      "firstComment": "Tag on posting: Kalshi, the CFTC, chairman Mike Selig and Michigan attorney general Dana Nessel. Primary source: [CFTC order staying the Kalshi emergency rule].",
+      "tags": [
+        {
+          "name": "Kalshi",
+          "handle": "@Kalshi"
+        },
+        {
+          "name": "CFTC",
+          "handle": "@CFTC"
+        },
+        {
+          "name": "Mike Selig",
+          "handle": "@ChairmanSelig"
+        },
+        {
+          "name": "Dana Nessel",
+          "handle": "@dananessel"
+        }
+      ]
     },
     {
       "id": "cnt-adbde9d5",
       "createdAt": "2026-07-18T05:56:03.564Z",
-      "updatedAt": "2026-07-18T05:56:03.564Z",
+      "updatedAt": "2026-07-18T06:13:49.507Z",
       "title": "CFTC and Michigan (X): finality is the product",
       "format": "x-post",
       "lanes": [
@@ -1586,7 +1605,7 @@
         "insight:ins-141db40b"
       ],
       "pov": null,
-      "body": "The Kalshi story just moved from the courtroom to the order book.\n\nThe CFTC has told Kalshi to keep settling open Michigan trades while the state pushes the other way. Underneath the jurisdiction fight is a sharper question for anyone holding a position: does it still settle on the stated terms when two regulators disagree?\n\nContract finality is quietly becoming the product.",
+      "body": "The @Kalshi story just moved from the courtroom to the order book.\n\nThe @CFTC has told Kalshi to keep settling open Michigan trades while the state, led by AG @dananessel, pushes the other way. Underneath the jurisdiction fight is a sharper question for anyone holding a position: does it still settle on the stated terms when two regulators disagree?\n\nContract finality is quietly becoming the product.",
       "brand": "brand-stuart",
       "channel": "X",
       "confidentiality": "public",
@@ -1595,12 +1614,27 @@
       "performance": null,
       "versions": [],
       "draftProvider": "claude-session",
-      "fictional": false
+      "fictional": false,
+      "firstComment": null,
+      "tags": [
+        {
+          "name": "Kalshi",
+          "handle": "@Kalshi"
+        },
+        {
+          "name": "CFTC",
+          "handle": "@CFTC"
+        },
+        {
+          "name": "Dana Nessel",
+          "handle": "@dananessel"
+        }
+      ]
     },
     {
       "id": "cnt-bdaa64ea",
       "createdAt": "2026-07-18T05:56:03.567Z",
-      "updatedAt": "2026-07-18T05:56:03.567Z",
+      "updatedAt": "2026-07-18T06:13:49.512Z",
       "title": "Forum: who carries the risk when authorities disagree?",
       "format": "forum-post",
       "lanes": [
@@ -1624,12 +1658,19 @@
       "performance": null,
       "versions": [],
       "draftProvider": "claude-session",
-      "fictional": false
+      "fictional": false,
+      "firstComment": "Tag Kalshi, and invite the enforcement and compliance practitioners into the thread (Robert DeNault, Eric Haynes, Michael Ross) once you have confirmed handles.",
+      "tags": [
+        {
+          "name": "Kalshi",
+          "handle": "@Kalshi"
+        }
+      ]
     },
     {
       "id": "cnt-57442389",
       "createdAt": "2026-07-18T05:56:03.570Z",
-      "updatedAt": "2026-07-18T05:56:03.570Z",
+      "updatedAt": "2026-07-18T06:13:49.516Z",
       "title": "Five questions Congress should ask about sports prediction markets",
       "format": "linkedin-post",
       "lanes": [
@@ -1653,12 +1694,23 @@
       "performance": null,
       "versions": [],
       "draftProvider": "claude-session",
-      "fictional": false
+      "fictional": false,
+      "firstComment": "Tag the venues in scope, Kalshi and Polymarket, and add the confirmed witnesses once the House Agriculture Committee publishes the list. Primary source: [subcommittee hearing notice].",
+      "tags": [
+        {
+          "name": "Kalshi",
+          "handle": "@Kalshi"
+        },
+        {
+          "name": "Polymarket",
+          "handle": "@Polymarket"
+        }
+      ]
     },
     {
       "id": "cnt-64c13f92",
       "createdAt": "2026-07-18T05:56:03.572Z",
-      "updatedAt": "2026-07-18T05:56:03.572Z",
+      "updatedAt": "2026-07-18T06:13:49.519Z",
       "title": "House hearing (X): two questions that decide the session",
       "format": "x-post",
       "lanes": [
@@ -1673,7 +1725,7 @@
         "insight:ins-853d1d7c"
       ],
       "pov": null,
-      "body": "A House Agriculture subcommittee takes up sports prediction markets on 21 July.\n\nTwo questions decide whether the session is useful. Can it separate market manipulation from informed research? And can it say who counts as a restricted participant across teams, leagues, media and data providers?\n\nAlmost everything else in this debate is downstream of those two.",
+      "body": "A House Agriculture subcommittee takes up sports prediction markets on 21 July.\n\nTwo questions decide whether the session is useful. Can it separate market manipulation from informed research? And can it say who counts as a restricted participant across teams, leagues, media and data providers?\n\nAlmost everything else in this debate, for @Kalshi, @Polymarket and everyone building around them, is downstream of those two.",
       "brand": "brand-stuart",
       "channel": "X",
       "confidentiality": "public",
@@ -1682,12 +1734,23 @@
       "performance": null,
       "versions": [],
       "draftProvider": "claude-session",
-      "fictional": false
+      "fictional": false,
+      "firstComment": null,
+      "tags": [
+        {
+          "name": "Kalshi",
+          "handle": "@Kalshi"
+        },
+        {
+          "name": "Polymarket",
+          "handle": "@Polymarket"
+        }
+      ]
     },
     {
       "id": "cnt-059c8195",
       "createdAt": "2026-07-18T05:56:03.576Z",
-      "updatedAt": "2026-07-18T05:56:03.576Z",
+      "updatedAt": "2026-07-18T06:13:49.522Z",
       "title": "Forum: federal to tax, but not to license?",
       "format": "forum-post",
       "lanes": [
@@ -1711,7 +1774,9 @@
       "performance": null,
       "versions": [],
       "draftProvider": "claude-session",
-      "fictional": false
+      "fictional": false,
+      "firstComment": "Posts to the group, so no individual tag is needed. If you want a named voice, invite one of the regulatory-facing operators by name.",
+      "tags": []
     }
   ]
 }
