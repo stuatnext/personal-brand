@@ -40,3 +40,36 @@ Output: `NEXTPredict_Master_Social_Schedule_CLEAN_2026-07-17.xlsx` (32 tabs:
 All working tabs are flat tables (headers in row 1, no merged cells) with
 freeze panes, filters and dropdown validation fed from the Lists tab, so the
 workbook stays clean and stays easy for an LLM to ingest.
+
+## Follow-up pass (same session): dedup, enrichment, engine sync
+
+- **Second-pass dedup**: 1,374 → 1,359 entities. 15 clear aliases auto-merged
+  (name-initial variants like `Robert J. Denault`/`Robert DeNault`; company
+  sub-units like `Kalshi compute-markets product team` → `Kalshi`). 30
+  genuinely ambiguous pairs (`ForecastEx / Interactive Brokers`, the
+  `Tarek Mansour + Luana Lopes Lara` paired row, `Simon Johnson`/`Simon
+  Johansen` — different people) were left for Stuart on the new **Dedup
+  Review** tab rather than merged.
+- **Handle enrichment (Critical + High, 332 entities)**: web-verified via 14
+  parallel research agents. X handles 108 → 219, real LinkedIn profiles
+  (not keyword searches) → 296, websites 88 → 285. Agents corrected 5 wrong
+  handles already in the source data (e.g. Kate Knibbs `@KateKnibbs` →
+  `@Knibbs`, Caitlin Ostroff → `@ceostroff`) and left anything unconfirmable
+  blank. Confidence (verified / likely) is in the Directory `Handle check`
+  column; `Handle source` records how. The shared web-search budget capped
+  mid-run, so some big-brand handles are "likely" (X login wall blocked live
+  re-checks); re-confirm at tag time.
+- **Cross-links**: Production Board now carries a `Post ID` (its calendar
+  post) and Commenting Plan a `Directory ID` (the target's directory row).
+- **Engine sync** (`data/`, committed): schedule re-imported via
+  `import-schedule.mjs` (+44 posts, 147 deduped → calendar 209). Directory
+  imported via the new `scripts/import-directory.mjs` (+495 companies, +825
+  contacts, +10 evidence-backed leads from the deep-dive signals; 39
+  papers/regulatory items skipped as sources, not relationships). All imports
+  are real (`fictional:false`) and tagged `source:"workbook-directory"` so
+  they can be filtered or rolled back as a batch. Existing fictional demo
+  records were left untouched. `npm test` passes 72/72 (hermetic); `today.mjs`
+  renders clean against the real data.
+- `directory-import.json` is the engine import source (re-runnable; dedupes on
+  normalised name). `import-directory.mjs` is safe to re-run for future
+  workbook refreshes.

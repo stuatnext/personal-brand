@@ -268,6 +268,256 @@
       ],
       "status": "detected",
       "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
+    },
+    {
+      "id": "lead-64233b04",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "Jump Trading",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "leadership-hire",
+      "why": "The supplied brief says Jump expanded the team to roughly 20 people and plans further hiring, treating event contracts as a durable Wall Street market.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Jump Trading doubles its prediction-markets team  The supplied brief says Jump expanded the team to roughly 20 people and plans further hiring, treating event contracts as a durable Wall Street market.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Bloomberg; weekly intelligence brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-7b17a3e7",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "Pascal",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "funding",
+      "why": "Pascal is described as a professional and institutional prediction-market venue in private beta, with $15M total reported funding.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Pascal raises $9M Series A led by USV  Pascal is described as a professional and institutional prediction-market venue in private beta, with $15M total reported funding.",
+          "signal": "funding",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Fortune; weekly and fresh deep-dive briefs.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-7ad9fa59",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "Moreton",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "leadership-hire",
+      "why": "The briefs add role-level detail to the existing Moreton strategy signal: end-to-end P&L ownership, live books, market making, arbitrage and API fluency.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Moreton hires portfolio-manager and trader roles  The briefs add role-level detail to the existing Moreton strategy signal: end-to-end P&L ownership, live books, market making, arbitrage and API fluency.",
+          "signal": "leadership-hire",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; LinkedIn; deep-search brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-bbce2b9a",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "Bitget Wallet",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-partnership",
+      "why": "Repeated match markets inside a major wallet suggest prediction trading is becoming a native distribution feature rather than a standalone destination.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Bitget Wallet embeds sports and esports prediction markets  Repeated match markets inside a major wallet suggest prediction trading is becoming a native distribution feature rather than a standalone destination.",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Bitget Wallet; deep-search brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-ca7ae2ff",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "ForeGate",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "The brief describes wallet-based access through Binance Wallet, OKX Wallet and other DApp wallets during the Esports World Cup.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "ForeGate launches an Esports World Cup prediction zone  The brief describes wallet-based access through Binance Wallet, OKX Wallet and other DApp wallets during the Esports World Cup.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Odaily; deep-search brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-bd85f686",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "Verdict Labs",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "The supplied claim is a production-grade automation and AI-assisted toolkit with auditable code and documented results.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Verdict Labs launches prediction-market automation tools  The supplied claim is a production-grade automation and AI-assisted toolkit with auditable code and documented results.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; verdictlabs.org; deep-search brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-a8d892f6",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "ADI Predictstreet",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-partnership",
+      "why": "The supplied brief positions DAZN distribution, ADI Predictstreet market products and ADI Chain settlement infrastructure as a new sports-media route into prediction markets.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "DAZN and ADI Predictstreet announce global partnership  The supplied brief positions DAZN distribution, ADI Predictstreet market products and ADI Chain settlement infrastructure as a new sports-media route into prediction markets.",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Sports Video Group; fresh and deep-search briefs.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-5320719a",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "Westren Capital",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "A London proprietary trading firm is reported to have expanded into prediction markets, adding another institutional trading signal.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "Westren Capital enters event-driven markets  A London proprietary trading firm is reported to have expanded into prediction markets, adding another institutional trading signal.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Financial Content / GlobePRwire; deep-search brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-4cb1e0f7",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "iPredicta",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-venue-launch",
+      "why": "The brief describes a US prediction-market comparison interface that aggregates live prices and may surface arbitrage opportunities.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "iPredicta launches cross-venue price comparison  The brief describes a US prediction-market comparison interface that aggregates live prices and may surface arbitrage opportunities.",
+          "signal": "pm-venue-launch",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Recent Slot Releases; deep-search brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
+    },
+    {
+      "id": "lead-9db9081e",
+      "createdAt": "2026-07-18T05:07:18.338Z",
+      "updatedAt": "2026-07-18T05:07:18.338Z",
+      "name": "BM Wallet",
+      "kind": "company",
+      "pillar": "prediction-markets",
+      "signal": "pm-partnership",
+      "why": "The brief describes a self-custodial wallet feature allowing users to trade event outcomes without moving to a separate app.",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": null,
+          "quote": "BM Wallet adds stablecoin-settled prediction markets  The brief describes a self-custodial wallet feature allowing users to trade event outcomes without moving to a separate app.",
+          "signal": "pm-partnership",
+          "date": "2026-07-17"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity and signal against a primary source before acting. Source: 17 Jul Deep Dive Additions; Business Insider; ultra-deep brief.",
+      "source": "workbook-directory",
+      "importedFrom": "directory-import.json",
+      "fictional": false
     }
   ]
 }

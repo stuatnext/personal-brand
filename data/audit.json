@@ -3058,6 +3058,382 @@
       "action": "insert",
       "collection": "leads",
       "summary": "Eric Burlison Believes"
+    },
+    {
+      "id": "cal-83a02649",
+      "at": "2026-07-18T05:07:18.114Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The teleprompter case and the widening insider perimeter"
+    },
+    {
+      "id": "cal-2baed46d",
+      "at": "2026-07-18T05:07:18.118Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Daily Intel: insider risk, biotech markets and the widening control surface"
+    },
+    {
+      "id": "cal-006c6797",
+      "at": "2026-07-18T05:07:18.122Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Did the teleprompter case prove surveillance worked or the market should not exist?"
+    },
+    {
+      "id": "cal-8ee48c6e",
+      "at": "2026-07-18T05:07:18.125Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Teleprompter operator allegedly made $100K on speech markets"
+    },
+    {
+      "id": "cal-fa082b14",
+      "at": "2026-07-18T05:07:18.129Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi opens markets on Minor League Baseball"
+    },
+    {
+      "id": "cal-674cf4e9",
+      "at": "2026-07-18T05:07:18.134Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Kalshi Pro and the private-client signal"
+    },
+    {
+      "id": "cal-af07c3a4",
+      "at": "2026-07-18T05:07:18.137Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets have entered the clinical-trial timeline"
+    },
+    {
+      "id": "cal-b43b5d8e",
+      "at": "2026-07-18T05:07:18.141Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Prediction markets have entered the restructuring slide"
+    },
+    {
+      "id": "cal-5956dc62",
+      "at": "2026-07-18T05:07:18.145Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Who watches prediction markets when the SEC and CFTC both have a claim?"
+    },
+    {
+      "id": "cal-89640c25",
+      "at": "2026-07-18T05:07:18.148Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The America250 backlash is a category-perception warning"
+    },
+    {
+      "id": "cal-159e96c1",
+      "at": "2026-07-18T05:07:18.152Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Polymarket’s US return meets retreat across Canada and Europe"
+    },
+    {
+      "id": "cal-466486f6",
+      "at": "2026-07-18T05:07:18.155Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: 89% of June ADV came from sports"
+    },
+    {
+      "id": "cal-2fda344f",
+      "at": "2026-07-18T05:07:18.159Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Roxanne Bras Petraeus and the employee-policy gap"
+    },
+    {
+      "id": "cal-7094e22f",
+      "at": "2026-07-18T05:07:18.163Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Five-minute Bitcoin markets and settlement manipulation"
+    },
+    {
+      "id": "cal-5acf895a",
+      "at": "2026-07-18T05:07:18.166Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "COMPANY FILE: AppliedXL and the intelligence layer behind biotech markets"
+    },
+    {
+      "id": "cal-fdbf0e3b",
+      "at": "2026-07-18T05:07:18.170Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: female weekly active users rose 106% around Love Island"
+    },
+    {
+      "id": "cal-62f50339",
+      "at": "2026-07-18T05:07:18.173Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Neil Paine and prediction markets as editorial infrastructure"
+    },
+    {
+      "id": "cal-7bdce7e8",
+      "at": "2026-07-18T05:07:18.178Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "HINDCAST: did the model forecast, or remember the future?"
+    },
+    {
+      "id": "cal-1b634831",
+      "at": "2026-07-18T05:07:18.181Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "AI forecasting benchmarks need a clock, not merely a score"
+    },
+    {
+      "id": "cal-4818e6b5",
+      "at": "2026-07-18T05:07:18.184Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: roughly 2,000 markets visible in Kalshi Pro"
+    },
+    {
+      "id": "cal-d17dd72e",
+      "at": "2026-07-18T05:07:18.188Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Udesh Jha and the risk function behind category expansion"
+    },
+    {
+      "id": "cal-867729c6",
+      "at": "2026-07-18T05:07:18.191Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "COMPANY FILE: UMA and the settlement layer behind Polymarket"
+    },
+    {
+      "id": "cal-5d5dc260",
+      "at": "2026-07-18T05:07:18.196Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: how many jurisdictions now restrict prediction-market access?"
+    },
+    {
+      "id": "cal-062decf6",
+      "at": "2026-07-18T05:07:18.199Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Szymon Pawica and the natural-language trading interface"
+    },
+    {
+      "id": "cal-3401f7bc",
+      "at": "2026-07-18T05:07:18.202Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: the settlement-source dependency count"
+    },
+    {
+      "id": "cal-f2c0e60d",
+      "at": "2026-07-18T05:07:18.206Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Taraneh Derayati and 24/7 clearing infrastructure"
+    },
+    {
+      "id": "cal-48c4d965",
+      "at": "2026-07-18T05:07:18.209Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "COMPANY FILE: Dome and the unified API race"
+    },
+    {
+      "id": "cal-9591a2a2",
+      "at": "2026-07-18T05:07:18.213Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: senior prediction-market hires in the past 90 days"
+    },
+    {
+      "id": "cal-4e03a2c9",
+      "at": "2026-07-18T05:07:18.216Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Robin Hanson and the distance from forecasting to governance"
+    },
+    {
+      "id": "cal-25371df5",
+      "at": "2026-07-18T05:07:18.219Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: prediction-market distribution surfaces beyond native apps"
+    },
+    {
+      "id": "cal-fcd1fdf9",
+      "at": "2026-07-18T05:07:18.222Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Megan McGrath and the compliance rebuild at Polymarket"
+    },
+    {
+      "id": "cal-74398f2d",
+      "at": "2026-07-18T05:07:18.226Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "COMPANY FILE: Vermiculus and the clearing engine for always-on markets"
+    },
+    {
+      "id": "cal-73d79bcc",
+      "at": "2026-07-18T05:07:18.230Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: how concentrated is “the market” in its ten largest positions?"
+    },
+    {
+      "id": "cal-f9566ee0",
+      "at": "2026-07-18T05:07:18.233Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Michael Ross and the new MNPI control surface"
+    },
+    {
+      "id": "cal-1a710300",
+      "at": "2026-07-18T05:07:18.236Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: median time to settle a sampled market"
+    },
+    {
+      "id": "cal-b2c5a774",
+      "at": "2026-07-18T05:07:18.239Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Tim McCourt and the traditional-exchange route into event contracts"
+    },
+    {
+      "id": "cal-fbf2afb6",
+      "at": "2026-07-18T05:07:18.243Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "COMPANY FILE: Solidus Labs and surveillance as product infrastructure"
+    },
+    {
+      "id": "cal-a1bdfc8e",
+      "at": "2026-07-18T05:07:18.247Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: prediction-market mentions in corporate filings and earnings materials"
+    },
+    {
+      "id": "cal-c2a03221",
+      "at": "2026-07-18T05:07:18.250Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Luana Lopes Lara and the operating build behind Kalshi"
+    },
+    {
+      "id": "cal-587dee1d",
+      "at": "2026-07-18T05:07:18.253Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: verified partnerships announced this quarter"
+    },
+    {
+      "id": "cal-082dd6b8",
+      "at": "2026-07-18T05:07:18.257Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Mike Selig and the federal market-structure argument"
+    },
+    {
+      "id": "cal-96781842",
+      "at": "2026-07-18T05:07:18.261Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "COMPANY FILE: StarCompliance and the employee-control stack"
+    },
+    {
+      "id": "cal-5204f4f7",
+      "at": "2026-07-18T05:07:18.264Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "NUMBER OF THE WEEK: the prediction-market talent migration count"
+    },
+    {
+      "id": "cal-f83e2569",
+      "at": "2026-07-18T05:07:18.268Z",
+      "actor": "import-schedule",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "THE TAPE: Daniel Taylor and forensic analytics for prediction markets"
+    },
+    {
+      "id": "+495",
+      "at": "2026-07-18T05:07:18.350Z",
+      "actor": "import-directory",
+      "action": "bulk-insert",
+      "collection": "companies",
+      "summary": "imported 495 from directory-import.json"
+    },
+    {
+      "id": "+825",
+      "at": "2026-07-18T05:07:18.367Z",
+      "actor": "import-directory",
+      "action": "bulk-insert",
+      "collection": "contacts",
+      "summary": "imported 825 from directory-import.json"
+    },
+    {
+      "id": "+10",
+      "at": "2026-07-18T05:07:18.369Z",
+      "actor": "import-directory",
+      "action": "bulk-insert",
+      "collection": "leads",
+      "summary": "imported 10 leads from directory-import.json"
     }
   ]
 }
