@@ -4837,6 +4837,2578 @@
       "nextAction": "Distil and route",
       "status": "captured",
       "contentHash": "069f90cf8ff425195632af817edcb4da533a198e"
+    },
+    {
+      "id": "ins-cc7ad200",
+      "createdAt": "2026-07-18T05:46:39.333Z",
+      "updatedAt": "2026-07-18T05:46:39.333Z",
+      "title": "NEXTPredict Claude Intelligence Pack",
+      "raw": "# NEXTPredict Claude Intelligence Pack\n\n**Coverage period:** 17-18 July 2026  \n**Prepared for:** Stuart Crowley / NEXTPredict  \n**Purpose:** LLM-readable intelligence, lead generation, editorial planning and conference development.\n\n## What is included\n\n1. `01_FULL_COMBINED_BRIEF.md` - Consolidated editorial and commercial intelligence brief.\n2. `02_SIGNALS_MASTER.md` - Prioritised signal table with confidence, action and NEXTPredict relevance.\n3. `03_LEADS_MASTER.md` - Speaker, sponsor, media, regulatory and institutional leads.\n4. `04_CONTENT_AND_ACTIONS.md` - Recommended editorial sequence, content ideas and outreach priorities.\n5. `05_SOURCE_INDEX.md` - Source URLs grouped by theme.\n6. `06_VERIFICATION_AND_GAPS.md` - Corrections, caveats and claims requiring further confirmation.\n7. `07_SIGNALS.jsonl` - One structured signal per line for machine ingestion.\n8. `08_LEADS.jsonl` - One structured lead per line for machine ingestion.\n9. `09_RAW_ADDITIONAL_INTEL.md` - Lower-priority and niche material retained for recall.\n10. `10_CLAUDE_OPERATING_PROMPT.md` - Suggested instructions for using this pack in Claude.\n11. `manifest.json` - File manifest and schema notes.\n\n## Recommended Claude workflow\n\n- Start with `01_FULL_COMBINED_BRIEF.md` for context.\n- Use `07_SIGNALS.jsonl` and `08_LEADS.jsonl` for structured analysis.\n- Use `06_VERIFICATION_AND_GAPS.md` before drafting public claims.\n- Use `04_CONTENT_AND_ACTIONS.md` when producing posts, DMs, emails or NEXTPredict programming ideas.\n\n## Editorial guardrails\n\n- Separate verified facts from inference and social-source claims.\n- Do not repeat dramatic wording unless it is directly supported by a primary source.\n- Treat market odds and volumes as timestamped observations.\n- Do not describe potential platform distribution as confirmed user adoption.\n- Do not describe paper-trading results as executable profitability.\n- Keep Stuart commercially sharp, curious and credible. Avoid guru language and forced NEXTPredict promotion.",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship",
+        "B2B media monetisation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "fbd0eb95c8b44ba2d2ec145c7cdf6c865e83ae0a"
+    },
+    {
+      "id": "ins-d3fbfd9b",
+      "createdAt": "2026-07-18T05:46:39.502Z",
+      "updatedAt": "2026-07-18T05:46:39.502Z",
+      "title": "Prediction Markets Intelligence Brief",
+      "raw": "# Prediction Markets Intelligence Brief\n\n## Coverage: 17-18 July 2026\n\n## Executive read\n\nPrediction markets have entered the jurisdiction, integrity and infrastructure phase.\n\nThe strongest signals are no longer limited to trading volume. Federal and state authorities are issuing conflicting instructions. Congress is examining sports-market protections. France is blocking access while Malta explores a bespoke licensing route. Institutional firms are assembling specialist trading teams. Operators are internalising exchange infrastructure. New markets in entertainment, healthcare and corporate events are expanding the restricted-person universe and exposing weaknesses in settlement design, surveillance and data rights.\n\nThe commercial opportunity is growing alongside the burden of proof. NEXTPredict should place greater emphasis on market architecture, institutional trading, compliance infrastructure, resolution, data rights and political strategy. Generic category-growth discussions are becoming stale.\n\n---\n\n# 1. Highest-priority signals\n\n## 1. CFTC intervention in the Michigan conflict\n\nThe CFTC stayed Kalshi's proposed emergency rule and directed the exchange to continue fulfilling open Michigan trades normally. The practical effect was to place Kalshi between a federal direction and a conflicting state-court position.\n\n**Commercial read:** The dispute has moved beyond licensing and access. It now concerns whether a state court can disrupt transactions executed on a federally regulated derivatives venue.\n\n**Content angle:** The CFTC has moved from defending its jurisdiction in court to intervening in the treatment of live trades. Kalshi appears caught between two authorities giving it incompatible instructions.\n\n**NEXTPredict relevance:** Regulatory keynote, market-structure panel, enforcement and legal content.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 2. House Agriculture Committee hearing on sports prediction markets\n\nThe House Agriculture Subcommittee scheduled a 21 July hearing titled \"Examining Customer Protections and Market Integrity in Sports Event Prediction Markets.\"\n\n**Commercial read:** The hearing should produce named policy positions, witnesses, quotes and potential NEXTPredict speakers. It is more actionable than another broad regulation story.\n\n**Recommended operation:**\n\n1. Pre-hearing post: five questions Congress should ask.\n2. Live monitoring: strongest claims, disagreements and witness positions.\n3. Post-hearing analysis: who sounded credible, what remains unresolved and who belongs at NEXTPredict.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 3. France blocks Polymarket\n\nFrance ordered internet providers to block Polymarket, escalating from restrictions on transactions to full access controls.\n\n**Commercial read:** International expansion is becoming a country-by-country operational problem involving access, advertising, payments, classification and consumer protection.\n\n**Content angle:** Can a prediction market build a genuinely international product when even the display of prices can be treated differently in each jurisdiction?\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 4. Malta explores a bespoke prediction-market framework\n\nMalta is exploring a dedicated licensing approach that may sit outside conventional financial-services and gambling classifications. No final legislative text has been published.\n\n**Commercial read:** Europe may be splitting into competing models. Some jurisdictions will restrict access under existing gambling law, while others may design new regimes to attract operators and infrastructure.\n\n**NEXTPredict session:** Europe's Regulatory Fork: Block, License or Invent a New Category?\n\n**Priority:** 9/10  \n**Confidence:** Medium-high\n\n## 5. North Carolina adopts tax without direct sportsbook licensing\n\nNorth Carolina enacted a 6% tax on prediction-market net trading-fee revenue, effective 1 January 2027, while recognising federal oversight rather than creating a conventional sportsbook licensing regime.\n\n**Commercial read:** This creates a politically useful third model: accept federal regulation, avoid building a duplicate licensing structure and still collect state revenue.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 6. Jump Trading expands its prediction-markets team\n\nJump reportedly doubled its specialist team to roughly 20 people and is recruiting from unconventional backgrounds including sports trading and independent forecasting.\n\n**Commercial read:** Prediction markets are becoming a genuine institutional trading strategy rather than a side experiment.\n\n**Lead:** Simon Johansen, Head of Prediction Markets.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 7. Moreton Capital builds a dedicated strategy\n\nMoreton Capital Partners advertised for a senior Portfolio Manager to run a dedicated prediction-markets strategy using quantitative modelling, agentic AI and domain expertise. Reporting indicates it has already begun trading internal capital.\n\n**Commercial read:** This is one of the clearest signs of dedicated institutional capital entering the category.\n\n**Priority:** 10/10  \n**Confidence:** High\n\n## 8. Pascal raises capital for a trader-first venue\n\nPascal announced a $9 million Series A led by Union Square Ventures. Its proposition centres on APIs, order-book trading, professional interfaces and OTC capability.\n\n**Commercial read:** The platform battle may shift from market count and consumer acquisition to which venue professional traders trust with meaningful size.\n\n**Leads:** Ivo Crnkovic-Rubsamen and Matthew Downey.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 9. DraftKings and Underdog internalise exchange infrastructure\n\nDraftKings launched its proprietary DKeX exchange and reportedly received futures commission merchant approval. Underdog's UDX self-certified initial sports-event contracts with market-maker support.\n\n**Commercial read:** Sports operators are moving from distribution partners to vertically integrated exchange businesses controlling customer acquisition, product, economics and infrastructure.\n\n**Priority:** 9/10  \n**Confidence:** Medium-high\n\n## 10. Blockchain.com embeds Polymarket\n\nBlockchain.com integrated Polymarket into its brokerage experience for eligible users. Its reported 43 million verified users represent a potential distribution base, not confirmed prediction-market adoption.\n\n**Commercial read:** Prediction-market distribution is moving into existing crypto, brokerage and financial interfaces.\n\n**Priority:** 8/10  \n**Confidence:** High\n\n## 11. Kalshi and AppliedXL launch biopharma markets\n\nKalshi and AppliedXL launched a pilot covering clinical-trial outcomes and FDA decisions, initially focusing on late-stage trials after enrolment closes.\n\n**Commercial read:** Health markets may create genuine information value, but they also multiply MNPI, ethical, patient-impact and restricted-person risks.\n\n**Lead:** Francesco Marconi, AppliedXL.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 12. Reality television becomes an integrity and brand-risk category\n\nCoverage of Love Island and Survivor markets highlighted potential leakage, spoiler risk and the difficulty of controlling information across production staff, contestants, contractors and their networks.\n\nKalshi's total entertainment trading volume reportedly exceeded $600 million in 2026, up from $300 million in 2025. This figure is for entertainment markets overall, not Love Island alone.\n\n**Commercial read:** Entertainment may be a powerful acquisition vertical, but it can also damage suspense and brand value before rights holders have developed policies.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 13. Polymarket five-minute Bitcoin contracts show settlement-manipulation risk\n\nAcademic research found a repeatable pattern in which Binance spot order flow increased immediately before settlement of five-minute Polymarket Bitcoin markets, partially reversed afterwards, and benefited a concentrated group of traders. The same pattern was largely absent in fifteen-minute contracts.\n\n**Commercial read:** Contract design and settlement windows can create manipulation incentives. A prediction market may be manipulated by moving the underlying reference market rather than trading directly on the prediction venue.\n\n**NEXTPredict session:** How to Manipulate a Prediction Market Without Trading on It.\n\n**Priority:** 10/10  \n**Confidence:** High, subject to further peer review\n\n## 14. SEC jurisdiction becomes more relevant\n\nContracts linked to public companies, issuer revenue, CEO statements, earnings, valuations or corporate outcomes may raise questions about security-based swaps or overlapping SEC jurisdiction.\n\n**Commercial read:** The next regulatory conflict may involve federal overlap as well as federal-state pre-emption.\n\n**NEXTPredict session:** When Does an Event Contract Become a Securities Product?\n\n**Priority:** 8/10  \n**Confidence:** Medium-high\n\n## 15. Restricted-person identification is becoming a technology category\n\nRobinhood surveillance leadership has described current processes for identifying restricted traders through occupations, employers and connections. The company is exploring AI assistance as contract variety expands.\n\n**Commercial read:** Basic KYC is insufficient. Each contract creates a different potential insider population.\n\n**NEXTPredict session:** Who Is an Insider When Every Contract Has a Different Insider List?\n\n**Priority:** 9/10  \n**Confidence:** High\n\n## 16. Data rights can determine whether a contract is launchable\n\nKalshi proposed using FlightAware as a primary resolution source for flight-cancellation contracts. FlightAware's parent RTX said it had not authorised the use and that its terms prohibited it.\n\n**Commercial read:** Resolution-source permission, licensing, correction policies, backup sources and audit rights are part of product viability.\n\n**NEXTPredict session:** You Cannot Settle What You Do Not Own: Data Rights Behind Event Contracts.\n\n**Priority:** 8/10  \n**Confidence:** High\n\n## 17. PMXT is building a unified prediction-market API layer\n\nPMXT is developing a CCXT-style interface across multiple prediction venues, including Python, TypeScript and MCP support.\n\n**Commercial read:** Fragmented APIs become valuable infrastructure once firms trade across multiple venues and autonomous agents require standardised access.\n\n**Priority:** 8/10  \n**Confidence:** High for the project, low-medium for commercial traction\n\n## 18. OpenThomas demonstrates autonomous weather-market trading\n\nOpenThomas is an open-source agent designed to trade weather contracts using multiple forecasts, station-bias analysis, LLM adjustments and risk controls. Its default mode is paper trading.\n\n**Commercial read:** Weather may be an early laboratory for autonomous agents because outcomes are frequent, objective and tied to known reporting stations.\n\n**Caveat:** There is no evidence that the agent has a durable live-trading edge.\n\n**Priority:** 7/10  \n**Confidence:** High on project existence, low on commercial performance\n\n## 19. Augur pivots toward resolution infrastructure\n\nAugur's Lituus proposal focuses on decentralised resolution infrastructure that could support multiple prediction-market front ends.\n\n**Commercial read:** The valuable layer may be resolution rather than end-user distribution.\n\n**Freshness:** Strategic background, not a fresh 17-18 July launch.\n\n**Priority:** 8/10\n\n## 20. Entain cites prediction markets as competitive pressure\n\nEntain announced cost reductions and role removals amid higher UK tax pressure. Reuters also reported prediction markets among the competitive pressures it is seeking to address.\n\n**Commercial read:** Prediction markets are becoming a named strategic consideration for major incumbent operators.\n\n**Caveat:** Do not claim prediction markets caused the redundancies.\n\n**Priority:** 9/10  \n**Confidence:** High\n\n---\n\n# 2. Strongest relationship and lead opportunities\n\n## Regulatory and policy\n\n- Michael Selig, CFTC Chairman - formal keynote invitation through protocol.\n- Robert DeNault, Kalshi Head of Enforcement - operational conflict, enforcement and market integrity.\n- House Agriculture hearing witnesses and committee staff - immediate monitoring and research.\n- David Bean, Indian Gaming Association - tribal sovereignty and proposed legislative restrictions.\n- Gary Batton, Choctaw Nation - tribal and federal policy perspective.\n- Malta Gaming Authority and Silvio Schembri - European regulatory strategy.\n- French ANJ leadership - international regulation and access restrictions.\n- North Carolina tax and policy specialists - state taxation without duplicate licensing.\n\n## Institutional trading\n\n- Simon Johansen, Jump Trading.\n- Moreton Capital prediction-markets Portfolio Manager and team leadership.\n- Ivo Crnkovic-Rubsamen, Pascal.\n- Matthew Downey, Pascal.\n- Relevant leaders at DRW, Susquehanna, IMC, Wintermute, Tyr Capital, Precharm and Westren Capital.\n\n## Infrastructure and compliance\n\n- Francesco Marconi, AppliedXL.\n- Eric Haynes, Robinhood.\n- Scott Sadin, IC360.\n- Jeff Bell and Cameron Routh, Eventus.\n- PMXT founders.\n- OpenThomas developer.\n- Augur/Lituus contributors.\n- Eilers & Krejcik Gaming analysts.\n- FlightAware/RTX data licensing contacts.\n- Sportradar, Stats Perform, GRID and Genius Sports.\n\n## Academic and expert\n\n- David Dai, Ruizhe Jia and Shihao Yu - Bitcoin settlement-manipulation research.\n- Niusha Moshrefi - sports calibration and parlay research.\n- Laurent Samuel, Greg Leonard, Nicole Moran, Jerrod Attias and Jonas Dalmazzo - Cornerstone Research.\n- Jeremy Liabo, Charu Chandrasekhar, Liz Davis and Scott Mascianica - SEC/CFTC boundary expertise.\n\n## Media\n\n- Kate Knibbs, WIRED.\n- Bobby Allyn, NPR.\n- Alex Abad-Santos, Vox.\n- Bloomberg reporters covering Jump and institutional trading.\n- Gillian Brassil and Rebecca Klar, Bloomberg Law.\n- Reuters reporters covering France and Entain.\n- Eilers & Krejcik Gaming as a data and content relationship.\n\n---\n\n# 3. Recommended NEXTPredict programme themes\n\n1. The Federal-State Collision: Who Controls Event Contracts?\n2. Europe's Regulatory Fork: Block, License or Invent a New Category?\n3. The Full-Stack Prediction Exchange.\n4. The New Prediction-Markets Talent Stack.\n5. How to Manipulate a Prediction Market Without Trading on It.\n6. Who Is an Insider When Every Contract Has a Different Insider List?\n7. You Cannot Settle What You Do Not Own: Data Rights Behind Event Contracts.\n8. What Does 70% Actually Mean?\n9. When Does an Event Contract Become a Securities Product?\n10. Entertainment Markets: Acquisition Engine or Brand-Risk Machine?\n11. Can AI Agents Trade Profitably After Execution Costs?\n12. Resolution as Infrastructure: Oracles, Appeals and Disputes.\n\n---\n\n# 4. Recommended editorial theme\n\n## The market is scaling faster than its control architecture\n\nThis theme connects the strongest developments:\n\n- Federal and state conflict over live contracts.\n- Congressional scrutiny of sports markets.\n- European fragmentation.\n- Institutional trading expansion.\n- Entertainment, biotech and corporate-event insider populations.\n- Settlement manipulation and dispute risk.\n- Data licensing and resolution rights.\n- AI agents and cross-venue infrastructure.\n\nNEXTPredict should present itself as the room where growth, integrity, architecture and commercial scale can be discussed together.",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Practical AI implementation",
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "strictly-confidential",
+        "score": 5,
+        "reasons": [
+          "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public.",
+          "Employee-sensitive information."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-a35ead78",
+        "con-2175506f",
+        "con-6161efde",
+        "con-d019e33a",
+        "con-2220c2f5",
+        "con-46bb722f",
+        "con-efae3e80",
+        "con-c35fb9cf",
+        "con-3d90d450",
+        "con-c64f846a"
+      ],
+      "relatedCompanies": [
+        "com-3c8cbee5",
+        "com-cf961cb9",
+        "com-a048601a",
+        "com-212ebcb2",
+        "com-047244e4",
+        "com-25a427e1",
+        "com-360f677b",
+        "com-d2c6a2e6",
+        "com-7d286cd2",
+        "com-b37fb900",
+        "com-685237b0",
+        "com-4633f916",
+        "com-5ef8cf96",
+        "com-971a4b55",
+        "com-d62e0eb5",
+        "com-4b1f7565",
+        "com-a23f40dd",
+        "com-113f1174",
+        "com-ec6b7bd5",
+        "com-f73e163f",
+        "com-8377f530",
+        "com-e721f182",
+        "com-fc06c8ae"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "0ea8bc77eb670c7b0fb90e224bc334e4d5636d6c"
+    },
+    {
+      "id": "ins-f6add149",
+      "createdAt": "2026-07-18T05:46:39.574Z",
+      "updatedAt": "2026-07-18T05:46:39.574Z",
+      "title": "Signals Master",
+      "raw": "# Signals Master\n\n| Priority | Signal | Category | Commercial read | NEXTPredict relevance | Confidence | Action |\n|---:|---|---|---|---|---|---|\n| 10 | CFTC intervention in Michigan trades | Regulatory | Federal-state conflict now affects treatment of live contracts | Keynote, legal panel, content | High | Lead editorial coverage and invite relevant participants |\n| 10 | House hearing on sports prediction markets | Regulatory | Produces named policy positions, witnesses and leads | Speaker and media pipeline | High | Pre-, live- and post-hearing operation |\n| 10 | Jump expands specialist team | Institutional | Dedicated institutional strategy is becoming real | Speaker, attendee, roundtable | High | Approach Simon Johansen |\n| 10 | Moreton builds dedicated strategy | Institutional | New capital and leadership entering category | Speaker, attendee | High | Map team and hiring contacts |\n| 10 | Five-minute BTC settlement manipulation research | Integrity | Contract design can incentivise manipulation of reference markets | Technical session, academic speakers | High | Contact authors and surveillance firms |\n| 9 | France blocks Polymarket | Regulatory | Country-level access and advertising controls matter | International panel | High | Build Europe map |\n| 9 | Malta explores bespoke framework | Regulatory | Jurisdictions may compete to attract operators | International panel | Medium-high | Identify government and MGA contacts |\n| 9 | North Carolina tax model | Tax/Regulatory | States may tax without duplicate licensing | State-policy session | High | Map states considering similar models |\n| 9 | Pascal trader-first raise | Funding/Platform | Professional traders may demand different venues | Founder speaker, startup lead | High | Contact founders |\n| 9 | DraftKings and UDX internalise exchange stack | Platform | Operators want control of economics, product and infrastructure | Operator and technology session | Medium-high | Identify exchange leadership |\n| 9 | Kalshi/AppliedXL biotech markets | Product/Compliance | Health creates value and a complex insider perimeter | Speaker, partner, workshop | High | Contact Francesco Marconi |\n| 9 | Entertainment volume and leakage risk | Product/Brand | Acquisition growth is paired with spoiler and integrity cost | Entertainment panel | High | Recruit production and integrity speakers |\n| 9 | Restricted-person identification | Compliance/Technology | Each contract creates a different insider population | Sponsor and speaker opportunity | High | Contact Robinhood, Eventus, IC360 |\n| 9 | Entain cites prediction-market pressure | Competitive | Incumbent operators now recognise category pressure | Operator strategy panel | High | Map Entain product leadership |\n| 8 | Blockchain.com integrates Polymarket | Distribution | Prediction markets are embedding in existing financial interfaces | Distribution panel | High | Contact brokerage and product teams |\n| 8 | SEC boundary becomes relevant | Regulatory | Corporate-event contracts may trigger securities questions | Legal panel | Medium-high | Recruit legal experts |\n| 8 | FlightAware data-rights conflict | Data/Resolution | Data permission can determine contract viability | Data sponsor and panel | High | Contact data owners and exchanges |\n| 8 | PMXT unified API | Infrastructure | Standardised cross-venue access supports professional trading and agents | Startup and developer workshop | Medium | Contact founders |\n| 8 | Augur/Lituus resolution layer | Infrastructure | Resolution may be the valuable shared layer | Oracle panel | Medium-high | Contact contributors |\n| 8 | EKG Prediction Markets Monitor | Data/Research | Reliable market monitoring is strategically valuable | Data partner and speaker | High | Pursue relationship |\n| 8 | USD.AI dispute risk | Resolution | Poor definitions create governance risk even when prices are observable | Case study | Medium-high | Monitor resolution |\n| 7 | OpenThomas weather agent | AI | Weather is a plausible test bed for autonomous agents | Technical content | Low-medium | Validate live performance |\n| 7 | StartupHub cross-venue engine | Arbitrage | Apparent arbitrage may disappear after fees, definitions and limits | Content source | Medium | Validate execution assumptions |\n| 7 | Slate cultural critique | Media/Perception | Mainstream culture increasingly frames PMs as financialisation | Media relationship | High | Engage hosts and producers |\n| 7 | Gemini Predicted newsletter | Media/Product | Market prices are becoming editorial products | Media and data partnership | High | Monitor model and contact team |",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Practical AI implementation",
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-a35ead78",
+        "con-c64f846a"
+      ],
+      "relatedCompanies": [
+        "com-212ebcb2",
+        "com-047244e4",
+        "com-360f677b",
+        "com-d2c6a2e6",
+        "com-7d286cd2",
+        "com-b37fb900",
+        "com-685237b0",
+        "com-4633f916",
+        "com-5ef8cf96",
+        "com-971a4b55",
+        "com-d62e0eb5",
+        "com-113f1174",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "c38fde850292426f869cd745590fa8911864a357"
+    },
+    {
+      "id": "ins-865992c5",
+      "createdAt": "2026-07-18T05:46:39.675Z",
+      "updatedAt": "2026-07-18T05:46:39.675Z",
+      "title": "Leads Master",
+      "raw": "# Leads Master\n\n| Score | Name / Organisation | Type | Why they matter | NEXTPredict relevance | Suggested action | Confidence |\n|---:|---|---|---|---|---|---|\n| 10 | Michael Selig, CFTC | Regulator | Central federal voice in jurisdictional conflict | Keynote | Formal invitation through protocol | High |\n| 9 | Robert DeNault, Kalshi | Exchange/Enforcement | Public voice on conflicting federal and state obligations | Enforcement panel | Engage and invite | High |\n| 10 | Simon Johansen, Jump Trading | Institutional trader | Leads major institutional team expansion | Speaker, roundtable | Direct invitation focused on liquidity and talent | High |\n| 10 | Moreton Capital prediction-markets leadership | Institutional trader | Dedicated strategy, hiring and capital allocation | Speaker, attendee | Identify team lead and PM candidates | High |\n| 10 | Ivo Crnkovic-Rubsamen, Pascal | Founder | Trader-first venue and fresh funding | Founder speaker | Congratulate and invite | High |\n| 9 | Matthew Downey, Pascal | Founder/Trader | HFT and product background | Speaker | Offer market-structure session | High |\n| 9 | Francesco Marconi, AppliedXL | Infrastructure founder | Resolution, intelligence and biotech-market design | Speaker, sponsor, partner | Direct founder outreach | High |\n| 9 | Niusha Moshrefi | Researcher | Sports calibration and parlay research | Research speaker | Invite for briefing | High |\n| 10 | David Dai | Researcher | Co-author of BTC settlement-manipulation study | Technical speaker | Contact for research session | High |\n| 10 | Ruizhe Jia | Researcher | Co-author of BTC settlement-manipulation study | Technical speaker | Contact for research session | High |\n| 10 | Shihao Yu | Researcher | Co-author of BTC settlement-manipulation study | Technical speaker | Contact for research session | High |\n| 9 | Eric Haynes, Robinhood | Surveillance | Restricted-person identification and AI surveillance | Speaker | Invite to compliance session | High |\n| 9 | Scott Sadin, IC360 | Integrity | Sports and event-market integrity expertise | Speaker, sponsor | Invite and explore partnership | High |\n| 9 | Jeff Bell, Eventus | Surveillance | Exchange surveillance and market-integrity infrastructure | Speaker, sponsor | Invite | High |\n| 8 | Cameron Routh, Eventus | Surveillance | Market integrity and product risk | Speaker | Engage | High |\n| 9 | David Bean, Indian Gaming Association | Policy | Public leader on tribal and sports-event restrictions | Regulatory speaker | Respectful official outreach | High |\n| 8 | Gary Batton, Choctaw Nation | Tribal leader | Sovereignty and federal policy perspective | Speaker | Official invitation | High |\n| 8 | Silvio Schembri / Malta policy team | Government | Bespoke EU framework development | International regulatory panel | Official outreach | Medium-high |\n| 8 | Malta Gaming Authority | Regulator | Potential licensing authority | Speaker, partner | Identify policy lead | Medium-high |\n| 8 | ANJ leadership, France | Regulator | Ordered Polymarket access block | International panel | Official outreach | High |\n| 8 | John Bivona, Kalshi | Government relations | Washington political infrastructure | Policy attendee/speaker | Engage | Medium-high |\n| 8 | Base Ecosystem Fund investment lead | Investor | Prediction markets identified as a target area | Investor speaker, sponsor | Identify responsible partner | Medium |\n| 8 | PMXT founders | Infrastructure | Unified cross-venue API and MCP support | Startup, workshop | Contact and validate traction | Medium |\n| 7 | OpenThomas developer | AI/Infrastructure | Autonomous weather-market agent | Technical content | Invite only after validation | Medium |\n| 8 | Augur/Lituus contributors | Resolution | Shared decentralised resolution layer | Oracle panel | Contact core contributors | Medium-high |\n| 10 | Eilers & Krejcik Gaming team | Data/Research | Strong monitoring and market comparison capability | Data partner, speaker | Pursue partnership | High |\n| 9 | Kate Knibbs, WIRED | Media | Cross-border structure and prediction-market beat | Press, moderator | Offer background access and pass | High |\n| 8 | Bobby Allyn, NPR | Media | Sports classification and federal-state reporting | Press, moderator | Offer independent sources | High |\n| 8 | Alex Abad-Santos, Vox | Media | Entertainment and cultural-risk coverage | Press, moderator | Offer production and integrity sources | High |\n| 8 | Gillian Brassil and Rebecca Klar | Media/Legal | SEC and securities-law boundary reporting | Press | Offer legal-source introductions | High |\n| 8 | Nicole Moran, Cornerstone Research | Economics/Enforcement | Prediction-market economics and enforcement framework | Speaker, content | Invite for briefing | High |\n| 8 | Jeremy Liabo, Ropes & Gray | Legal | SEC/CFTC overlap | Legal speaker | Outreach | High |\n| 8 | Charu Chandrasekhar, Debevoise | Legal | Securities and derivatives boundary | Legal speaker | Outreach | High |\n| 8 | Liz Davis, Davis Wright Tremaine | Legal | Regulatory overlap | Legal speaker | Outreach | High |\n| 8 | Scott Mascianica, Bradley | Legal | Securities and enforcement expertise | Legal speaker | Outreach | High |",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-a35ead78",
+        "con-2175506f",
+        "con-6161efde",
+        "con-d019e33a",
+        "con-2220c2f5",
+        "con-46bb722f",
+        "con-bce3d1b7",
+        "con-efae3e80",
+        "con-c35fb9cf",
+        "con-3d90d450",
+        "con-c64f846a"
+      ],
+      "relatedCompanies": [
+        "com-212ebcb2",
+        "com-360f677b",
+        "com-d2c6a2e6",
+        "com-7d286cd2",
+        "com-685237b0",
+        "com-5ef8cf96",
+        "com-971a4b55",
+        "com-113f1174",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "1226df4d9ad5a029b551194b99ca92bc2e9b9f5b"
+    },
+    {
+      "id": "ins-237830ba",
+      "createdAt": "2026-07-18T05:46:39.708Z",
+      "updatedAt": "2026-07-18T05:46:39.708Z",
+      "title": "Content and Actions",
+      "raw": "# Content and Actions\n\n## Recommended weekly theme\n\n**The market is scaling faster than its control architecture.**\n\nUse this theme to connect regulation, institutional trading, settlement, data rights, restricted participants, AI agents and entertainment integrity.\n\n## Immediate editorial sequence\n\n### 18 July\n\n**Lead post:** CFTC and Michigan.\n\nCore idea: the regulator has moved from legal argument to intervention in live trades, leaving an operator between conflicting authorities.\n\n### 20 July\n\n**Pre-hearing post:** Five questions Congress should ask about sports prediction markets.\n\nSuggested questions:\n\n1. How should restricted participants be identified across teams, leagues, media, data providers and family networks?\n2. What evidence distinguishes market manipulation from informed research?\n3. Who should control sports-event contracts: federal derivatives regulators, states, tribes or some shared model?\n4. What surveillance and data-sharing standards should be mandatory?\n5. How should platforms handle contract design, settlement and consumer disclosures?\n\n### 21 July\n\n**Live hearing monitoring:** Capture witnesses, strongest claims, contradictions, proposed reforms and follow-up leads.\n\n### 22 July\n\n**Post-hearing analysis:** Who sounded credible, what Congress misunderstood and which infrastructure gaps became obvious.\n\n## High-value LinkedIn ideas\n\n### 1. The infrastructure race\n\nDraftKings, UDX, Jump, Moreton and Pascal show the category moving from consumer acquisition into exchange infrastructure, professional trading and capital formation.\n\n### 2. Who counts as an insider?\n\nCompare sports, reality television, clinical trials, weather, corporate events and government communications. Each creates a different insider population.\n\n### 3. Contract design is compliance infrastructure\n\nUse the five-minute Bitcoin research, USD.AI dispute and FlightAware issue to show how settlement windows, definitions and data rights shape integrity.\n\n### 4. Europe is choosing sides\n\nContrast France's block with Malta and Gibraltar's attempts to build licensing routes.\n\n### 5. The incumbent-pressure signal\n\nEntain mentioning prediction markets may be more commercially revealing than another record-volume headline.\n\n## Prediction Markets Forum prompts\n\n1. Should pre-recorded entertainment outcomes be tradeable?\n2. Should states tax federally regulated prediction markets without licensing them?\n3. What is the most important missing layer: liquidity, surveillance, resolution, distribution or regulation?\n4. Should a market be permitted if the platform does not own or license the settlement data?\n5. What evidence would convince you an AI trading agent has a real edge?\n\n## NEXTPredict outreach priorities\n\n### Tier 1\n\n- Simon Johansen\n- Moreton Capital strategy leadership\n- Ivo Crnkovic-Rubsamen\n- Francesco Marconi\n- Michael Selig through official channels\n- Robert DeNault\n- Eilers & Krejcik Gaming\n\n### Tier 2\n\n- Eric Haynes\n- Eventus and IC360\n- David Bean and Gary Batton\n- Malta policy and MGA contacts\n- PMXT founders\n- Academic authors on manipulation and calibration\n\n## Proprietary research ideas\n\n### Institutional desk tracker\n\nTrack firm, lead, team size, roles, capital, venues, strategy, market-making activity, AI use and relationship status.\n\n### Europe jurisdiction map\n\nTrack legal classification, access, advertising, payments, licence status, enforcement action and regulator contacts.\n\n### AI execution benchmark\n\nCompare agents using timestamped forecasts, actual liquidity, fees, spread, slippage, partial fills, latency, capital lock-up and drawdown.\n\n### Restricted-person map\n\nBuild contract-specific insider universes for sport, politics, entertainment, biotech, weather and corporate events.",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-a35ead78",
+        "con-2220c2f5",
+        "con-c64f846a"
+      ],
+      "relatedCompanies": [
+        "com-047244e4",
+        "com-360f677b",
+        "com-d2c6a2e6",
+        "com-7d286cd2",
+        "com-685237b0",
+        "com-d62e0eb5",
+        "com-113f1174",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "2dc309d52323d9d79648b3869a93dcc3e893b916"
+    },
+    {
+      "id": "ins-0b081f0e",
+      "createdAt": "2026-07-18T05:46:39.734Z",
+      "updatedAt": "2026-07-18T05:46:39.734Z",
+      "title": "Source Index",
+      "raw": "# Source Index\n\n## Regulatory and hearings\n\n- CFTC Michigan action: https://www.cftc.gov/PressRoom/PressReleases/9267-26\n- House Agriculture hearing: https://agriculture.house.gov/calendar/eventsingle.aspx?EventID=8189\n- France block: https://www.channelnewsasia.com/business/france-blocks-access-polymarket-website-6261691\n- Malta framework reporting: https://www.financemagnates.com/fintech/inside-the-prediction-markets-malta-drafts-rules-as-blockchaincom-and-jump-trading-expand-their-reach/\n- North Carolina state action: https://www.hklaw.com/en/insights/publications/2026/07/the-states-are-coming-for-prediction-markets-a-new-frontier\n- SEC boundary: https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray\n- Tribal/CLARITY activity: https://defirate.com/news/tribal-leaders-press-senate-to-add-sports-prediction-market-ban-to-clarity-act/\n- CFTC Supreme Court comments background: https://www.semafor.com/article/06/12/2026/trumps-prediction-market-regulator-to-the-supreme-court-bring-it-on\n\n## Institutional trading and platforms\n\n- Jump team expansion: https://approd6.advisorperspectives.com/articles/2026/07/17/jump-trading-doubles-team-ride-record-prediction\n- Moreton hiring: https://apply.workable.com/moreton-capital-partners/j/7AA6473A86\n- Moreton unit reporting: https://www.fnlondon.com/articles/commodities-hedge-fund-moreton-capital-sets-up-prediction-markets-unit-5432bf6b\n- Pascal funding: https://blog.usv.com/pascal\n- Pascal additional reporting: https://finance.yahoo.com/markets/options/articles/exclusive-prediction-market-startup-pascal-130000617.html\n- DraftKings DKeX: https://ir.aboutdraftkings.com/news/news-details/2026/DraftKings-Launches-Proprietary-Exchange-to-Bolster-Differentiated-Predictions-Experience/default.aspx\n- Blockchain.com / Polymarket distribution: https://predictionauthority.com/news/blockchain-com-integrates-polymarket-giving-43-million-users-access-to-prediction-markets-in-app/\n- Entain pressure: https://live.euronext.com/en/financial-news/ladbrokes-owner-entain-cut-500-roles-it-seeks-lower-costs\n- Westren Capital company release: https://www.financialcontent.com/article/globeprwire-2026-7-16-westren-capital-broadens-trading-strategy-with-entry-into-prediction-markets\n\n## Product, entertainment and biotech\n\n- Kalshi / AppliedXL biotech: https://news.kalshi.com/p/kalshi-biotech-prediction-markets\n- STAT biotech reporting: https://www.statnews.com/2026/07/16/kalshi-new-offering-prediction-market-clinical-trials-fda-approvals/\n- Vox reality television: https://www.vox.com/culture/495837/kalshi-reality-tv-betting-survivor-spoilers\n- Entertainment volume reporting: https://finance.yahoo.com/markets/options/articles/millions-dollars-were-wagered-love-100000499.html\n- Love Island coverage: https://www.barrons.com/articles/love-island-kalshi-prediction-markets-7e74ff1c\n- Polymarket structure: https://www.wired.com/story/whats-up-with-polymarkets-panama-entity\n\n## Integrity, surveillance and resolution\n\n- Bitcoin settlement manipulation paper: https://arxiv.org/pdf/2606.31675\n- Sports calibration and parlays: https://arxiv.org/abs/2607.14430\n- Eventus surveillance recap: https://www.eventus.com/cat-article/surveillance-and-market-integrity/\n- FlightAware data-rights conflict: https://www.wsj.com/business/kalshi-to-offer-contracts-predicting-flight-cancellations-aa2dd063\n- USD.AI dispute risk: https://cryptobriefing.com/polymarket-usdai-chip-2b-fdv-prediction-market/\n- Cornerstone Research enforcement framework: https://www.cornerstone.com/insights/articles/regulation-of-trading-in-prediction-markets/\n\n## Infrastructure and AI\n\n- OpenThomas: https://github.com/PredictionMarketTrader/openthomas\n- PMXT: https://github.com/pmxt-dev/pmxt\n- Augur Lituus: https://www.augur.net/blog/the-augur-lituus-whitepaper/\n- StartupHub arbitrage engine: https://www.startuphub.ai/arbitrage\n- Base ecosystem fund: https://www.base.org/ecosystem-fund\n- Base historical fund announcement: https://blog.base.org/base-ecosystem-fund-announces-first-six-investments\n\n## Media, podcasts and monitoring\n\n- Eilers & Krejcik monitor: https://ekgamingllc.com/downloads/prediction-markets-monitor-july-2026/\n- Slate episode: https://www.mixcloud.com/slatemagazinedailypodcast/icymi-prediction-markets-are-coming-for-everything-we-love/\n- Gwart / Pascal background: https://www.listennotes.com/podcasts/the-gwart-show/next-gen-prediction-markets-OdanejmFYRB/\n- Gemini Predicted: https://www.gemini.com/blog/introducing-gemini-predicted-the-newsletter-the-markets-write\n- NPR / sports classification: https://news.prairiepublic.org/news-from-npr/2026-07-17/kalshi-says-its-not-a-sportsbook-even-as-world-cup-bets-surge",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship",
+        "Sports betting & sportsbook strategy"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-212ebcb2",
+        "com-047244e4",
+        "com-360f677b",
+        "com-d2c6a2e6",
+        "com-b37fb900",
+        "com-685237b0",
+        "com-12536e76",
+        "com-5ef8cf96",
+        "com-971a4b55",
+        "com-a23f40dd",
+        "com-113f1174",
+        "com-f73e163f",
+        "com-8377f530",
+        "com-f144c7f8"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "465b818c228df85c3b37868fb123743256273f74"
+    },
+    {
+      "id": "ins-6eec3b2d",
+      "createdAt": "2026-07-18T05:46:39.759Z",
+      "updatedAt": "2026-07-18T05:46:39.759Z",
+      "title": "Verification and Research Gaps",
+      "raw": "# Verification and Research Gaps\n\n## Claims corrected or downgraded\n\n### CFTC ordered Kalshi to \"defy\" Michigan\n\nThe CFTC directed Kalshi to fulfil open trades. \"Defy\" or \"ignore\" is editorial framing, not the wording of the agency order.\n\n### Cold War emergency powers\n\nThe historical comparison should be attributed to reporting and former CFTC officials unless confirmed directly in primary CFTC material.\n\n### Selig Supreme Court vow\n\nSelig had previously discussed welcoming Supreme Court review. Do not present this as a new 17 July declaration without primary confirmation.\n\n### Base launched a new fund on 17 July\n\nBase's ecosystem fund already existed. The fresh signal is explicit prioritisation or renewed focus on prediction markets.\n\n### Blockchain.com gives Polymarket 43 million users\n\nThe integration provides access to a potential verified-user base. It does not prove 43 million users adopted Polymarket.\n\n### Love Island produced $600 million\n\nThe $600 million figure refers to Kalshi entertainment markets overall, not Love Island alone.\n\n### Entain redundancies caused by prediction markets\n\nHigher UK taxes were the dominant pressure. Prediction markets were one competitive factor, not the sole cause.\n\n### OpenThomas profitability\n\nThe project exists, but paper trading and model outputs do not demonstrate a live, executable edge.\n\n### StartupHub arbitrage\n\nFlagged opportunities require checking resolution wording, fees, spread, depth, limits, jurisdiction and capital lock-up.\n\n## Claims requiring fresh confirmation\n\n- Final witness list for the 21 July House hearing.\n- Exact status and text of Malta's proposed framework.\n- DraftKings FCM registration status from primary NFA records.\n- Names of Kalshi's newest Democratic lobbyists.\n- Base investment lead responsible for prediction markets.\n- Moreton team size and external-capital timeline.\n- Westren Capital's actual trading activity, capital and venues.\n- PMXT production usage and customer traction.\n- OpenThomas live trading, if any.\n- Final resolution and dispute handling for the USD.AI contract.\n- Any subsequent peer review or rebuttal of the Bitcoin settlement-manipulation study.\n\n## Social-source handling\n\nReddit and LinkedIn findings should be used to identify objections, questions, participants and language. They should not be treated as confirmation of misconduct, market size or commercial performance without independent verification.",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "Prediction markets",
+        "B2B media monetisation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "strictly-confidential",
+        "score": 5,
+        "reasons": [
+          "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public.",
+          "Employee-sensitive information."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-b37fb900",
+        "com-5ef8cf96",
+        "com-971a4b55",
+        "com-a23f40dd",
+        "com-113f1174",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "5ae1004abd910f1a25d4d0167eb6556c7519ec68"
+    },
+    {
+      "id": "ins-141db40b",
+      "createdAt": "2026-07-18T05:46:39.768Z",
+      "updatedAt": "2026-07-18T05:46:39.768Z",
+      "title": "CFTC intervention in Michigan trades",
+      "raw": "{\"id\":\"SIG-001\",\"title\":\"CFTC intervention in Michigan trades\",\"date\":\"2026-07-14\",\"category\":\"Regulatory\",\"priority\":10,\"confidence\":\"High\",\"summary\":\"The CFTC directed Kalshi to continue fulfilling open Michigan trades, creating a practical conflict with a state-court position.\",\"commercial_read\":\"The federal-state dispute now affects the treatment of live contracts, not only licensing and market access.\",\"content_angle\":\"Kalshi appears caught between two authorities giving it incompatible instructions.\",\"lead_potential\":[\"Michael Selig\",\"Robert DeNault\",\"Michigan legal and regulatory officials\"],\"nexpredict_relevance\":[\"Regulatory keynote\",\"Legal panel\",\"Content\"],\"next_action\":\"Lead editorial coverage and prepare formal invitations through official channels.\",\"sources\":[\"https://www.cftc.gov/PressRoom/PressReleases/9267-26\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-14",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets",
+        "B2B media monetisation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public-after-anonymisation",
+        "score": 2,
+        "reasons": [
+          "Describes internal disagreement."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "anonymisationChecklist": [
+          "Company names replaced with a role description (e.g. \"a B2B events business\").",
+          "Individual names removed or replaced with roles.",
+          "Exact commercial figures bucketed (\"six figures\", \"double-digit uplift\") or removed.",
+          "Identifying project details generalised.",
+          "Private internal decisions and disagreements removed.",
+          "Sensitive timings blurred (\"recently\", \"last year\").",
+          "Deal terms and counterparties removed."
+        ],
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-4633f916",
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "f88ed3876a1176ffacf7e57b48809315e40501b6"
+    },
+    {
+      "id": "ins-853d1d7c",
+      "createdAt": "2026-07-18T05:46:39.778Z",
+      "updatedAt": "2026-07-18T05:46:39.778Z",
+      "title": "House hearing on sports prediction markets",
+      "raw": "{\"id\":\"SIG-002\",\"title\":\"House hearing on sports prediction markets\",\"date\":\"2026-07-21\",\"category\":\"Regulatory\",\"priority\":10,\"confidence\":\"High\",\"summary\":\"The House Agriculture Subcommittee scheduled a hearing on customer protections and market integrity in sports-event prediction markets.\",\"commercial_read\":\"The hearing should produce named policy positions, witness leads and concrete reform proposals.\",\"content_angle\":\"Five questions Congress should ask before deciding whether sports event contracts are financial products, gambling products or something new.\",\"lead_potential\":[\"House Agriculture Committee staff\",\"Hearing witnesses\",\"CFTC officials\"],\"nexpredict_relevance\":[\"Speaker pipeline\",\"Media pipeline\",\"Policy content\"],\"next_action\":\"Run pre-hearing, live-monitoring and post-hearing workflows.\",\"sources\":[\"https://agriculture.house.gov/calendar/eventsingle.aspx?EventID=8189\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-21",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "60b442244e7823f842c9d741e1efc3567b37c76d"
+    },
+    {
+      "id": "ins-d17545af",
+      "createdAt": "2026-07-18T05:46:39.788Z",
+      "updatedAt": "2026-07-18T05:46:39.788Z",
+      "title": "France blocks Polymarket",
+      "raw": "{\"id\":\"SIG-003\",\"title\":\"France blocks Polymarket\",\"date\":\"2026-07-17\",\"category\":\"Regulatory\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"French authorities ordered internet service providers to block access to Polymarket.\",\"commercial_read\":\"International expansion is becoming a country-by-country operational problem involving access, advertising, payments and classification.\",\"content_angle\":\"Can a prediction market build a global product when even the display of prices is treated differently across jurisdictions?\",\"lead_potential\":[\"ANJ leadership\",\"European gaming counsel\",\"Geolocation and compliance vendors\"],\"nexpredict_relevance\":[\"International regulatory panel\",\"Compliance sponsor leads\"],\"next_action\":\"Build a European jurisdiction map and identify relevant speakers.\",\"sources\":[\"https://www.channelnewsasia.com/business/france-blocks-access-polymarket-website-6261691\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "5d697a4b8445d5c8574e71a625c087d9839fef56"
+    },
+    {
+      "id": "ins-6a377084",
+      "createdAt": "2026-07-18T05:46:39.798Z",
+      "updatedAt": "2026-07-18T05:46:39.798Z",
+      "title": "Malta explores bespoke prediction-market framework",
+      "raw": "{\"id\":\"SIG-004\",\"title\":\"Malta explores bespoke prediction-market framework\",\"date\":\"2026-07-17\",\"category\":\"Regulatory\",\"priority\":9,\"confidence\":\"Medium-high\",\"summary\":\"Malta is exploring a dedicated licensing approach outside conventional financial-services and gambling classifications.\",\"commercial_read\":\"European jurisdictions may compete to attract prediction-market operators and infrastructure.\",\"content_angle\":\"Europe may be splitting between jurisdictions that block the category and those trying to invent a regulatory home for it.\",\"lead_potential\":[\"Silvio Schembri\",\"Malta Gaming Authority\",\"European regulatory counsel\"],\"nexpredict_relevance\":[\"International panel\",\"Government speaker\",\"Partner lead\"],\"next_action\":\"Confirm framework status and identify policy contacts.\",\"sources\":[\"https://www.financemagnates.com/fintech/inside-the-prediction-markets-malta-drafts-rules-as-blockchaincom-and-jump-trading-expand-their-reach/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "a1dcd657f5d1ba38f0f5419ed6d350e2f3b9b667"
+    },
+    {
+      "id": "ins-851261d9",
+      "createdAt": "2026-07-18T05:46:39.809Z",
+      "updatedAt": "2026-07-18T05:46:39.809Z",
+      "title": "North Carolina tax-without-licensing model",
+      "raw": "{\"id\":\"SIG-005\",\"title\":\"North Carolina tax-without-licensing model\",\"date\":\"2026-07-07\",\"category\":\"Tax/Regulatory\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"North Carolina enacted a 6% tax on prediction-market net trading-fee revenue while recognising federal oversight.\",\"commercial_read\":\"States may accept federal regulation, avoid duplicate licensing and still collect revenue.\",\"content_angle\":\"North Carolina may have found the politically useful middle ground.\",\"lead_potential\":[\"North Carolina policy officials\",\"State tax counsel\",\"CFTC pre-emption experts\"],\"nexpredict_relevance\":[\"State-policy panel\",\"Tax and regulation content\"],\"next_action\":\"Map other states considering similar approaches.\",\"sources\":[\"https://www.hklaw.com/en/insights/publications/2026/07/the-states-are-coming-for-prediction-markets-a-new-frontier\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-07",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "e043cd6656ddda89acf92da2b6e19b43a949a8b5"
+    },
+    {
+      "id": "ins-68014a91",
+      "createdAt": "2026-07-18T05:46:39.817Z",
+      "updatedAt": "2026-07-18T05:46:39.817Z",
+      "title": "Jump Trading expands prediction-markets team",
+      "raw": "{\"id\":\"SIG-006\",\"title\":\"Jump Trading expands prediction-markets team\",\"date\":\"2026-07-17\",\"category\":\"Institutional\",\"priority\":10,\"confidence\":\"High\",\"summary\":\"Jump reportedly doubled its prediction-markets team to roughly 20 people and is continuing to hire.\",\"commercial_read\":\"Prediction markets are becoming a genuine institutional trading strategy.\",\"content_angle\":\"The talent signal matters more than another volume record.\",\"lead_potential\":[\"Simon Johansen\",\"Jump prediction-markets traders\"],\"nexpredict_relevance\":[\"Institutional speaker\",\"Roundtable\",\"Attendee\"],\"next_action\":\"Approach Simon Johansen with a focused institutional-market-structure invitation.\",\"sources\":[\"https://approd6.advisorperspectives.com/articles/2026/07/17/jump-trading-doubles-team-ride-record-prediction\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-c64f846a"
+      ],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "0724d98879639f30f2240e07067cdfbdb1fdd8de"
+    },
+    {
+      "id": "ins-f0a317d4",
+      "createdAt": "2026-07-18T05:46:39.826Z",
+      "updatedAt": "2026-07-18T05:46:39.826Z",
+      "title": "Moreton builds dedicated prediction-markets strategy",
+      "raw": "{\"id\":\"SIG-007\",\"title\":\"Moreton builds dedicated prediction-markets strategy\",\"date\":\"2026-07-17\",\"category\":\"Institutional\",\"priority\":10,\"confidence\":\"High\",\"summary\":\"Moreton is hiring a senior Portfolio Manager to lead a strategy using quantitative modelling, agentic AI and domain expertise.\",\"commercial_read\":\"Dedicated capital and leadership are entering the category.\",\"content_angle\":\"Institutional interest is moving from exploration to team-building and capital allocation.\",\"lead_potential\":[\"Moreton leadership\",\"Portfolio Manager candidates\",\"Australia-based institutional traders\"],\"nexpredict_relevance\":[\"Speaker\",\"Institutional attendee\",\"Content\"],\"next_action\":\"Map the team and identify the strategy lead.\",\"sources\":[\"https://apply.workable.com/moreton-capital-partners/j/7AA6473A86\",\"https://www.fnlondon.com/articles/commodities-hedge-fund-moreton-capital-sets-up-prediction-markets-unit-5432bf6b\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "e1aca59506a68b80e1a14137f91a0b45ab23b83e"
+    },
+    {
+      "id": "ins-8d66e210",
+      "createdAt": "2026-07-18T05:46:39.835Z",
+      "updatedAt": "2026-07-18T05:46:39.835Z",
+      "title": "Pascal raises for a trader-first venue",
+      "raw": "{\"id\":\"SIG-008\",\"title\":\"Pascal raises for a trader-first venue\",\"date\":\"2026-07-17\",\"category\":\"Funding/Platform\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Pascal announced a $9 million Series A led by Union Square Ventures and is building professional interfaces, APIs and OTC capability.\",\"commercial_read\":\"Professional traders may demand materially different venues from consumer-first prediction platforms.\",\"content_angle\":\"The next platform battle may be about who professional traders trust with size.\",\"lead_potential\":[\"Ivo Crnkovic-Rubsamen\",\"Matthew Downey\",\"USV investment team\"],\"nexpredict_relevance\":[\"Founder speaker\",\"Startup lead\",\"Investor content\"],\"next_action\":\"Contact both founders with differentiated session ideas.\",\"sources\":[\"https://blog.usv.com/pascal\",\"https://finance.yahoo.com/markets/options/articles/exclusive-prediction-market-startup-pascal-130000617.html\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Founder-led operating drag"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public-after-anonymisation",
+        "score": 2,
+        "reasons": [
+          "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "anonymisationChecklist": [
+          "Company names replaced with a role description (e.g. \"a B2B events business\").",
+          "Individual names removed or replaced with roles.",
+          "Exact commercial figures bucketed (\"six figures\", \"double-digit uplift\") or removed.",
+          "Identifying project details generalised.",
+          "Private internal decisions and disagreements removed.",
+          "Sensitive timings blurred (\"recently\", \"last year\").",
+          "Deal terms and counterparties removed."
+        ],
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-2220c2f5",
+        "con-46bb722f"
+      ],
+      "relatedCompanies": [
+        "com-a048601a",
+        "com-685237b0",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "07bdbf42a38ee71386fe39e91e172dc60e652a7e"
+    },
+    {
+      "id": "ins-5e6f0354",
+      "createdAt": "2026-07-18T05:46:39.843Z",
+      "updatedAt": "2026-07-18T05:46:39.843Z",
+      "title": "DraftKings and UDX internalise exchange infrastructure",
+      "raw": "{\"id\":\"SIG-009\",\"title\":\"DraftKings and UDX internalise exchange infrastructure\",\"date\":\"2026-07-17\",\"category\":\"Platform\",\"priority\":9,\"confidence\":\"Medium-high\",\"summary\":\"Sports operators are moving toward proprietary exchanges, direct contract certification and market-maker relationships.\",\"commercial_read\":\"Owning distribution, brokerage, exchange technology and economics changes the competitive structure.\",\"content_angle\":\"Prediction markets are becoming an infrastructure contest.\",\"lead_potential\":[\"DKeX leadership\",\"UDX leadership\",\"Supporting market makers\"],\"nexpredict_relevance\":[\"Operator panel\",\"Technology panel\",\"Sponsor leads\"],\"next_action\":\"Identify the executives responsible for exchange operations and liquidity.\",\"sources\":[\"https://ir.aboutdraftkings.com/news/news-details/2026/DraftKings-Launches-Proprietary-Exchange-to-Bolster-Differentiated-Predictions-Experience/default.aspx\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Prediction markets",
+        "GTM execution"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "7a32ab7dd54a9f879cf4028b15af374d3bfa1b32"
+    },
+    {
+      "id": "ins-b7eb6251",
+      "createdAt": "2026-07-18T05:46:39.851Z",
+      "updatedAt": "2026-07-18T05:46:39.851Z",
+      "title": "Blockchain.com integrates Polymarket",
+      "raw": "{\"id\":\"SIG-010\",\"title\":\"Blockchain.com integrates Polymarket\",\"date\":\"2026-07-17\",\"category\":\"Distribution\",\"priority\":8,\"confidence\":\"High\",\"summary\":\"Blockchain.com embedded Polymarket access into its brokerage interface for eligible users.\",\"commercial_read\":\"Prediction-market distribution is moving into existing brokerage and crypto products.\",\"content_angle\":\"The exchange may matter less than the interface through which the customer first encounters it.\",\"lead_potential\":[\"Blockchain.com product leaders\",\"Polymarket distribution team\"],\"nexpredict_relevance\":[\"Distribution panel\",\"Partner leads\"],\"next_action\":\"Contact integration and brokerage leadership.\",\"sources\":[\"https://predictionauthority.com/news/blockchain-com-integrates-polymarket-giving-43-million-users-access-to-prediction-markets-in-app/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-b37fb900",
+        "com-c71c8611",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "70b4604b6631cc4a08826c96f3e15f10c2efdb9e"
+    },
+    {
+      "id": "ins-7c01fc4a",
+      "createdAt": "2026-07-18T05:46:39.859Z",
+      "updatedAt": "2026-07-18T05:46:39.859Z",
+      "title": "Kalshi and AppliedXL launch biopharma markets",
+      "raw": "{\"id\":\"SIG-011\",\"title\":\"Kalshi and AppliedXL launch biopharma markets\",\"date\":\"2026-07-16\",\"category\":\"Product/Compliance\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"A pilot covers late-stage clinical trials and FDA decisions with AppliedXL supporting resolution infrastructure.\",\"commercial_read\":\"Health markets create information value but also complex MNPI, ethical and restricted-person risks.\",\"content_angle\":\"Where does the insider perimeter end in a clinical trial?\",\"lead_potential\":[\"Francesco Marconi\",\"Biotech investors\",\"Clinical-trial compliance specialists\"],\"nexpredict_relevance\":[\"Speaker\",\"Data partner\",\"Workshop\"],\"next_action\":\"Invite Francesco Marconi for an exploratory conversation.\",\"sources\":[\"https://news.kalshi.com/p/kalshi-biotech-prediction-markets\",\"https://www.statnews.com/2026/07/16/kalshi-new-offering-prediction-market-clinical-trials-fda-approvals/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-16",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets",
+        "GTM execution"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-a35ead78"
+      ],
+      "relatedCompanies": [
+        "com-212ebcb2",
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "41b3f134030f717a1266ecc777596fe9f030fdf6"
+    },
+    {
+      "id": "ins-f4af29b5",
+      "createdAt": "2026-07-18T05:46:39.868Z",
+      "updatedAt": "2026-07-18T05:46:39.868Z",
+      "title": "Entertainment markets scale alongside leakage risk",
+      "raw": "{\"id\":\"SIG-012\",\"title\":\"Entertainment markets scale alongside leakage risk\",\"date\":\"2026-07-17\",\"category\":\"Product/Brand\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Kalshi entertainment volume reportedly exceeded $600 million in 2026 while reality-TV markets generated spoiler and informed-trading concerns.\",\"commercial_read\":\"Entertainment may be a powerful acquisition vertical and a serious brand-risk problem at the same time.\",\"content_angle\":\"Rights holders need prediction-market policies before prices create a public narrative for them.\",\"lead_potential\":[\"Production executives\",\"Broadcasters\",\"Entertainment lawyers\",\"Exchange integrity teams\"],\"nexpredict_relevance\":[\"Entertainment panel\",\"Content\",\"Sponsor leads\"],\"next_action\":\"Develop an entertainment-integrity session and recruit production-side voices.\",\"sources\":[\"https://www.vox.com/culture/495837/kalshi-reality-tv-betting-survivor-spoilers\",\"https://finance.yahoo.com/markets/options/articles/millions-dollars-were-wagered-love-100000499.html\",\"https://www.barrons.com/articles/love-island-kalshi-prediction-markets-7e74ff1c\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "B2B events and sponsorship",
+        "Sports betting & sportsbook strategy"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public-after-anonymisation",
+        "score": 2,
+        "reasons": [
+          "Contains a specific commercial figure. Exact figures must be removed or bucketed before anything public."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "anonymisationChecklist": [
+          "Company names replaced with a role description (e.g. \"a B2B events business\").",
+          "Individual names removed or replaced with roles.",
+          "Exact commercial figures bucketed (\"six figures\", \"double-digit uplift\") or removed.",
+          "Identifying project details generalised.",
+          "Private internal decisions and disagreements removed.",
+          "Sensitive timings blurred (\"recently\", \"last year\").",
+          "Deal terms and counterparties removed."
+        ],
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "232c9ef316242fef5bc22310525ba214cf9c6408"
+    },
+    {
+      "id": "ins-a18063eb",
+      "createdAt": "2026-07-18T05:46:39.877Z",
+      "updatedAt": "2026-07-18T05:46:39.877Z",
+      "title": "Five-minute Bitcoin markets show settlement manipulation",
+      "raw": "{\"id\":\"SIG-013\",\"title\":\"Five-minute Bitcoin markets show settlement manipulation\",\"date\":\"2026-07-18\",\"category\":\"Integrity\",\"priority\":10,\"confidence\":\"High\",\"summary\":\"Research found abnormal reference-market order flow immediately before settlement of five-minute Polymarket Bitcoin contracts, followed by partial reversal.\",\"commercial_read\":\"Contract design can make manipulation of the underlying reference market economically rational.\",\"content_angle\":\"A prediction market may be manipulated without trading directly on it.\",\"lead_potential\":[\"David Dai\",\"Ruizhe Jia\",\"Shihao Yu\",\"Oracle and surveillance firms\"],\"nexpredict_relevance\":[\"Technical session\",\"Academic speakers\",\"Compliance sponsors\"],\"next_action\":\"Contact the authors and develop a technical integrity session.\",\"sources\":[\"https://arxiv.org/pdf/2606.31675\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-efae3e80",
+        "con-c35fb9cf",
+        "con-3d90d450"
+      ],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "315b0b7a1bb0f5b10ea927dd738630d726a58330"
+    },
+    {
+      "id": "ins-c71db9b7",
+      "createdAt": "2026-07-18T05:46:39.885Z",
+      "updatedAt": "2026-07-18T05:46:39.885Z",
+      "title": "SEC boundary becomes commercially relevant",
+      "raw": "{\"id\":\"SIG-014\",\"title\":\"SEC boundary becomes commercially relevant\",\"date\":\"2026-07-18\",\"category\":\"Regulatory\",\"priority\":8,\"confidence\":\"Medium-high\",\"summary\":\"Corporate-event contracts may raise securities-law or security-based-swap questions alongside CFTC oversight.\",\"commercial_read\":\"The next major jurisdictional problem may involve federal overlap as well as state conflict.\",\"content_angle\":\"When does an event contract become a securities product?\",\"lead_potential\":[\"Jeremy Liabo\",\"Charu Chandrasekhar\",\"Liz Davis\",\"Scott Mascianica\"],\"nexpredict_relevance\":[\"Legal panel\",\"Content\"],\"next_action\":\"Recruit legal experts and map product types most exposed to overlap.\",\"sources\":[\"https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "0662eadbb3f7dc1ba61539fff8218da7cd66050f"
+    },
+    {
+      "id": "ins-b1593995",
+      "createdAt": "2026-07-18T05:46:39.897Z",
+      "updatedAt": "2026-07-18T05:46:39.897Z",
+      "title": "Restricted-person identification becomes infrastructure",
+      "raw": "{\"id\":\"SIG-015\",\"title\":\"Restricted-person identification becomes infrastructure\",\"date\":\"2026-07-18\",\"category\":\"Compliance/Technology\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Robinhood surveillance leadership described manual identification of occupations, employers and connections that may create restricted access.\",\"commercial_read\":\"Basic KYC cannot identify every potential insider across sports, entertainment, biotech, weather and corporate events.\",\"content_angle\":\"Who is an insider when every contract has a different insider list?\",\"lead_potential\":[\"Eric Haynes\",\"Scott Sadin\",\"Jeff Bell\",\"Cameron Routh\"],\"nexpredict_relevance\":[\"Speaker\",\"Sponsor\",\"Compliance workshop\"],\"next_action\":\"Contact Robinhood, IC360 and Eventus.\",\"sources\":[\"https://www.eventus.com/cat-article/surveillance-and-market-integrity/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-2175506f"
+      ],
+      "relatedCompanies": [
+        "com-360f677b",
+        "com-7d286cd2",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "1f2cba7a3dc602d310bf016127b5b52090e8071c"
+    },
+    {
+      "id": "ins-66dba165",
+      "createdAt": "2026-07-18T05:46:39.904Z",
+      "updatedAt": "2026-07-18T05:46:39.904Z",
+      "title": "FlightAware conflict exposes settlement data-rights risk",
+      "raw": "{\"id\":\"SIG-016\",\"title\":\"FlightAware conflict exposes settlement data-rights risk\",\"date\":\"2026-07-16\",\"category\":\"Data/Resolution\",\"priority\":8,\"confidence\":\"High\",\"summary\":\"FlightAware parent RTX said it had not authorised use of its data for proposed Kalshi flight-cancellation contracts.\",\"commercial_read\":\"Data licensing, correction policies, uptime and audit rights can determine whether a contract is launchable.\",\"content_angle\":\"You cannot settle what you do not own or license.\",\"lead_potential\":[\"FlightAware\",\"RTX\",\"Sports and weather data providers\",\"Oracle vendors\"],\"nexpredict_relevance\":[\"Data panel\",\"Sponsor leads\"],\"next_action\":\"Map settlement-data dependencies and contact providers.\",\"sources\":[\"https://www.wsj.com/business/kalshi-to-offer-contracts-predicting-flight-cancellations-aa2dd063\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-16",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Prediction markets",
+        "GTM execution"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-047244e4",
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-ec6b7bd5",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "9d0f783a7f6b7d903bd63c1d950aef60bc3c1321"
+    },
+    {
+      "id": "ins-9dd7d660",
+      "createdAt": "2026-07-18T05:46:39.914Z",
+      "updatedAt": "2026-07-18T05:46:39.914Z",
+      "title": "PMXT builds a unified prediction-market API",
+      "raw": "{\"id\":\"SIG-017\",\"title\":\"PMXT builds a unified prediction-market API\",\"date\":\"2026-07-18\",\"category\":\"Infrastructure\",\"priority\":8,\"confidence\":\"Medium\",\"summary\":\"PMXT is developing a CCXT-style interface with Python, TypeScript and MCP support across several venues.\",\"commercial_read\":\"Cross-venue standardisation becomes valuable as professional firms and autonomous agents expand.\",\"content_angle\":\"The prediction-market equivalent of CCXT may look like plumbing, which is exactly why it matters.\",\"lead_potential\":[\"PMXT founders\",\"Developer ecosystem\"],\"nexpredict_relevance\":[\"Startup\",\"Developer workshop\",\"Infrastructure sponsor\"],\"next_action\":\"Validate production use and contact the founders.\",\"sources\":[\"https://github.com/pmxt-dev/pmxt\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Founder-led operating drag"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-d62e0eb5",
+        "com-113f1174",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "eafbda9ebdd5bfb3f3ea7e24dc6c0420cd8e9a8b"
+    },
+    {
+      "id": "ins-0f64d14f",
+      "createdAt": "2026-07-18T05:46:39.922Z",
+      "updatedAt": "2026-07-18T05:46:39.922Z",
+      "title": "OpenThomas trades weather markets autonomously",
+      "raw": "{\"id\":\"SIG-018\",\"title\":\"OpenThomas trades weather markets autonomously\",\"date\":\"2026-07-18\",\"category\":\"AI\",\"priority\":7,\"confidence\":\"Low-medium\",\"summary\":\"OpenThomas is an open-source weather-market agent using multiple forecast models, bias adjustments and risk controls.\",\"commercial_read\":\"Weather is a plausible early laboratory for autonomous agents because settlement is frequent and objective.\",\"content_angle\":\"AI-agent claims should be judged after fees, spread, slippage and live execution.\",\"lead_potential\":[\"OpenThomas developer\",\"Weather data providers\",\"AI trading researchers\"],\"nexpredict_relevance\":[\"Technical content\",\"AI panel\"],\"next_action\":\"Validate live performance before promoting commercial significance.\",\"sources\":[\"https://github.com/PredictionMarketTrader/openthomas\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "9d6e7430ee2902cb8c5834624ad45d325425f1d8"
+    },
+    {
+      "id": "ins-a67d83f0",
+      "createdAt": "2026-07-18T05:46:39.932Z",
+      "updatedAt": "2026-07-18T05:46:39.932Z",
+      "title": "Augur pivots toward shared resolution infrastructure",
+      "raw": "{\"id\":\"SIG-019\",\"title\":\"Augur pivots toward shared resolution infrastructure\",\"date\":\"2026-07-18\",\"category\":\"Infrastructure\",\"priority\":8,\"confidence\":\"Medium-high\",\"summary\":\"Augur Lituus proposes a decentralised resolution layer that could serve multiple prediction-market applications.\",\"commercial_read\":\"Resolution may become a shared infrastructure layer rather than a feature owned by each consumer venue.\",\"content_angle\":\"Augur may have concluded that the valuable layer is resolution, not the front end.\",\"lead_potential\":[\"Augur and Lituus contributors\",\"Oracle researchers\"],\"nexpredict_relevance\":[\"Oracle panel\",\"Infrastructure content\"],\"next_action\":\"Research contributors and current development status.\",\"sources\":[\"https://www.augur.net/blog/the-augur-lituus-whitepaper/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "90bdf20dff9cc08e6876858a244c987328466bdc"
+    },
+    {
+      "id": "ins-dd3e3779",
+      "createdAt": "2026-07-18T05:46:39.942Z",
+      "updatedAt": "2026-07-18T05:46:39.942Z",
+      "title": "Entain names prediction markets as competitive pressure",
+      "raw": "{\"id\":\"SIG-020\",\"title\":\"Entain names prediction markets as competitive pressure\",\"date\":\"2026-07-18\",\"category\":\"Competitive\",\"priority\":9,\"confidence\":\"High\",\"summary\":\"Entain is cutting costs amid tax pressure and has also cited prediction markets among competitive pressures.\",\"commercial_read\":\"Prediction markets have become a named strategic consideration for a major gambling incumbent.\",\"content_angle\":\"The clearest sign the category matters may be incumbents mentioning it in restructuring discussions.\",\"lead_potential\":[\"Entain product strategy\",\"Corporate development\",\"US leadership\"],\"nexpredict_relevance\":[\"Operator panel\",\"Attendee leads\"],\"next_action\":\"Identify relevant Entain executives and avoid claiming PMs caused the redundancies.\",\"sources\":[\"https://live.euronext.com/en/financial-news/ladbrokes-owner-entain-cut-500-roles-it-seeks-lower-costs\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "private-operating-lesson",
+        "score": 3,
+        "reasons": [
+          "Employee-sensitive information."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "612c82fc089d3a3974f3bd5411da2a15722a7073"
+    },
+    {
+      "id": "ins-59e00320",
+      "createdAt": "2026-07-18T05:46:39.953Z",
+      "updatedAt": "2026-07-18T05:46:39.953Z",
+      "title": "Eilers & Krejcik releases July market monitor",
+      "raw": "{\"id\":\"SIG-021\",\"title\":\"Eilers & Krejcik releases July market monitor\",\"date\":\"2026-07-17\",\"category\":\"Data/Research\",\"priority\":8,\"confidence\":\"High\",\"summary\":\"The July monitor compares prediction-market and online sports-betting activity using trade-level data across multiple venues.\",\"commercial_read\":\"Reliable market monitoring is a strategic asset for content, sponsorship and programming.\",\"content_angle\":\"The category needs shared metrics and definitions before every volume claim becomes marketing.\",\"lead_potential\":[\"Eilers & Krejcik Gaming analysts\"],\"nexpredict_relevance\":[\"Data partner\",\"Speaker\",\"Research collaboration\"],\"next_action\":\"Pursue a relationship and potential data collaboration.\",\"sources\":[\"https://ekgamingllc.com/downloads/prediction-markets-monitor-july-2026/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "d04db72af535d5d98fb709e63ad1f091f7afe5be"
+    },
+    {
+      "id": "ins-0cf4a7c6",
+      "createdAt": "2026-07-18T05:46:39.962Z",
+      "updatedAt": "2026-07-18T05:46:39.962Z",
+      "title": "USD.AI contract exposes resolution-design ambiguity",
+      "raw": "{\"id\":\"SIG-022\",\"title\":\"USD.AI contract exposes resolution-design ambiguity\",\"date\":\"2026-07-17\",\"category\":\"Resolution\",\"priority\":7,\"confidence\":\"Medium-high\",\"summary\":\"A high-volume Polymarket token-valuation contract faced questions about launch timing, price source and valuation measurement.\",\"commercial_read\":\"Observable prices do not prevent disputes when contract definitions are weak.\",\"content_angle\":\"Resolution risk often begins in the wording, not the vote at the end.\",\"lead_potential\":[\"Polymarket resolution team\",\"Crypto market-data providers\"],\"nexpredict_relevance\":[\"Case study\",\"Oracle session\"],\"next_action\":\"Monitor final resolution and document the failure modes.\",\"sources\":[\"https://cryptobriefing.com/polymarket-usdai-chip-2b-fdv-prediction-market/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-17",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Practical AI implementation",
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "fb678414d674005cabc93f1a9e2ca5a69bec5a2a"
+    },
+    {
+      "id": "ins-5424dfed",
+      "createdAt": "2026-07-18T05:46:39.971Z",
+      "updatedAt": "2026-07-18T05:46:39.971Z",
+      "title": "{\"id\":\"LEAD-001\",\"name\":\"Michael Selig\",\"role\":\"Chairman\",\"company\":\"CFTC\",\"lead_type\":...",
+      "raw": "{\"id\":\"LEAD-001\",\"name\":\"Michael Selig\",\"role\":\"Chairman\",\"company\":\"CFTC\",\"lead_type\":\"Regulator\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Central federal voice in the jurisdictional conflict over prediction markets.\",\"nexpredict_relevance\":[\"Keynote\",\"Regulatory panel\"],\"suggested_action\":\"Approach through formal CFTC protocol with a neutral market-integrity and jurisdiction brief.\",\"sources\":[\"https://www.cftc.gov/PressRoom/PressReleases/9267-26\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "f96460f25a585753536e1a6631aabe33209e9669"
+    },
+    {
+      "id": "ins-1b698fb9",
+      "createdAt": "2026-07-18T05:46:39.980Z",
+      "updatedAt": "2026-07-18T05:46:39.980Z",
+      "title": "{\"id\":\"LEAD-002\",\"name\":\"Robert DeNault\",\"role\":\"Head of Enforcement\",\"company\":\"Kalshi...",
+      "raw": "{\"id\":\"LEAD-002\",\"name\":\"Robert DeNault\",\"role\":\"Head of Enforcement\",\"company\":\"Kalshi\",\"lead_type\":\"Exchange/Enforcement\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Publicly articulated the operational conflict between state and federal obligations.\",\"nexpredict_relevance\":[\"Enforcement panel\",\"Speaker\"],\"suggested_action\":\"Engage on market integrity and conflicting regulatory instructions.\",\"sources\":[\"https://www.cftc.gov/PressRoom/PressReleases/9267-26\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public-after-anonymisation",
+        "score": 2,
+        "reasons": [
+          "Describes internal disagreement."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "anonymisationChecklist": [
+          "Company names replaced with a role description (e.g. \"a B2B events business\").",
+          "Individual names removed or replaced with roles.",
+          "Exact commercial figures bucketed (\"six figures\", \"double-digit uplift\") or removed.",
+          "Identifying project details generalised.",
+          "Private internal decisions and disagreements removed.",
+          "Sensitive timings blurred (\"recently\", \"last year\").",
+          "Deal terms and counterparties removed."
+        ],
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "8781462e6e3ede48da65030f39cf81c367aa8777"
+    },
+    {
+      "id": "ins-156cbdd1",
+      "createdAt": "2026-07-18T05:46:39.990Z",
+      "updatedAt": "2026-07-18T05:46:39.990Z",
+      "title": "{\"id\":\"LEAD-003\",\"name\":\"Simon Johansen\",\"role\":\"Head of Prediction Markets\",\"company\":...",
+      "raw": "{\"id\":\"LEAD-003\",\"name\":\"Simon Johansen\",\"role\":\"Head of Prediction Markets\",\"company\":\"Jump Trading\",\"lead_type\":\"Institutional Trader\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Leads one of the clearest institutional prediction-markets build-outs.\",\"nexpredict_relevance\":[\"Speaker\",\"Institutional roundtable\"],\"suggested_action\":\"Send a focused invitation on liquidity, talent and professionalisation.\",\"sources\":[\"https://approd6.advisorperspectives.com/articles/2026/07/17/jump-trading-doubles-team-ride-record-prediction\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-c64f846a"
+      ],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "55824d1dea810e20296cb127e42b3ade4376d8b9"
+    },
+    {
+      "id": "ins-8345a5b0",
+      "createdAt": "2026-07-18T05:46:40.000Z",
+      "updatedAt": "2026-07-18T05:46:40.000Z",
+      "title": "{\"id\":\"LEAD-004\",\"name\":\"Moreton Capital prediction-markets leadership\",\"role\":\"Strateg...",
+      "raw": "{\"id\":\"LEAD-004\",\"name\":\"Moreton Capital prediction-markets leadership\",\"role\":\"Strategy leadership\",\"company\":\"Moreton Capital Partners\",\"lead_type\":\"Institutional Trader\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Building a dedicated strategy and recruiting a senior Portfolio Manager.\",\"nexpredict_relevance\":[\"Speaker\",\"Attendee\"],\"suggested_action\":\"Identify team lead and Australia-based candidates.\",\"sources\":[\"https://apply.workable.com/moreton-capital-partners/j/7AA6473A86\",\"https://www.fnlondon.com/articles/commodities-hedge-fund-moreton-capital-sets-up-prediction-markets-unit-5432bf6b\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-3c8cbee5",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "2f7a1c1faeeaa4a9dd9c11e671be38ac3ac5aaba"
+    },
+    {
+      "id": "ins-f4655686",
+      "createdAt": "2026-07-18T05:46:40.010Z",
+      "updatedAt": "2026-07-18T05:46:40.010Z",
+      "title": "{\"id\":\"LEAD-005\",\"name\":\"Ivo Crnkovic-Rubsamen\",\"role\":\"Co-founder\",\"company\":\"Pascal\",...",
+      "raw": "{\"id\":\"LEAD-005\",\"name\":\"Ivo Crnkovic-Rubsamen\",\"role\":\"Co-founder\",\"company\":\"Pascal\",\"lead_type\":\"Founder\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Building a professional, trader-first prediction venue with fresh institutional backing.\",\"nexpredict_relevance\":[\"Founder speaker\",\"Startup lead\"],\"suggested_action\":\"Congratulate him on the raise and invite him to discuss professional exchange design.\",\"sources\":[\"https://blog.usv.com/pascal\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Founder-led operating drag"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-2220c2f5"
+      ],
+      "relatedCompanies": [
+        "com-685237b0",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "02e80fb0a15a51353870c04530f5f5ea672504ae"
+    },
+    {
+      "id": "ins-7a42568c",
+      "createdAt": "2026-07-18T05:46:40.020Z",
+      "updatedAt": "2026-07-18T05:46:40.020Z",
+      "title": "{\"id\":\"LEAD-006\",\"name\":\"Matthew Downey\",\"role\":\"Co-founder\",\"company\":\"Pascal\",\"lead_t...",
+      "raw": "{\"id\":\"LEAD-006\",\"name\":\"Matthew Downey\",\"role\":\"Co-founder\",\"company\":\"Pascal\",\"lead_type\":\"Founder/Trader\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Brings high-frequency trading and product expertise to Pascal.\",\"nexpredict_relevance\":[\"Speaker\",\"Institutional panel\"],\"suggested_action\":\"Offer a technical market-structure session distinct from Ivo.\",\"sources\":[\"https://finance.yahoo.com/markets/options/articles/exclusive-prediction-market-startup-pascal-130000617.html\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Founder-led operating drag"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-46bb722f"
+      ],
+      "relatedCompanies": [
+        "com-685237b0",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "6761f4f2be607e65df340c711247688b1e2e85a1"
+    },
+    {
+      "id": "ins-4151ee1c",
+      "createdAt": "2026-07-18T05:46:40.030Z",
+      "updatedAt": "2026-07-18T05:46:40.030Z",
+      "title": "{\"id\":\"LEAD-007\",\"name\":\"Francesco Marconi\",\"role\":\"Co-founder and CEO\",\"company\":\"Appl...",
+      "raw": "{\"id\":\"LEAD-007\",\"name\":\"Francesco Marconi\",\"role\":\"Co-founder and CEO\",\"company\":\"AppliedXL\",\"lead_type\":\"Infrastructure Founder\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Sits at the intersection of intelligence, journalism, resolution and biotech markets.\",\"nexpredict_relevance\":[\"Speaker\",\"Sponsor\",\"Data partner\"],\"suggested_action\":\"Request an exploratory conversation before a formal stage proposal.\",\"sources\":[\"https://news.kalshi.com/p/kalshi-biotech-prediction-markets\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Prediction markets",
+        "Founder-led operating drag"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-a35ead78"
+      ],
+      "relatedCompanies": [
+        "com-212ebcb2",
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "c9402bd54c6eaffd1605b468ee0fd5f13351dc4d"
+    },
+    {
+      "id": "ins-19fa7083",
+      "createdAt": "2026-07-18T05:46:40.038Z",
+      "updatedAt": "2026-07-18T05:46:40.038Z",
+      "title": "{\"id\":\"LEAD-008\",\"name\":\"David Dai\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"...",
+      "raw": "{\"id\":\"LEAD-008\",\"name\":\"David Dai\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"lead_type\":\"Researcher\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Co-authored the study on settlement manipulation in five-minute Bitcoin markets.\",\"nexpredict_relevance\":[\"Technical speaker\",\"Content source\"],\"suggested_action\":\"Invite for a technical briefing and panel.\",\"sources\":[\"https://arxiv.org/pdf/2606.31675\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-efae3e80"
+      ],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "9c355d47ce34b6322140a4f27f33cb4896d4189f"
+    },
+    {
+      "id": "ins-b8d9b742",
+      "createdAt": "2026-07-18T05:46:40.049Z",
+      "updatedAt": "2026-07-18T05:46:40.049Z",
+      "title": "{\"id\":\"LEAD-009\",\"name\":\"Ruizhe Jia\",\"role\":\"Researcher\",\"company\":\"Academic research\",...",
+      "raw": "{\"id\":\"LEAD-009\",\"name\":\"Ruizhe Jia\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"lead_type\":\"Researcher\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Co-authored the study on settlement manipulation in five-minute Bitcoin markets.\",\"nexpredict_relevance\":[\"Technical speaker\",\"Content source\"],\"suggested_action\":\"Invite for a technical briefing and panel.\",\"sources\":[\"https://arxiv.org/pdf/2606.31675\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-c35fb9cf"
+      ],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "a28d6621cb90b1ce16c909b31bb64172b682645e"
+    },
+    {
+      "id": "ins-d91499ff",
+      "createdAt": "2026-07-18T05:46:40.058Z",
+      "updatedAt": "2026-07-18T05:46:40.058Z",
+      "title": "{\"id\":\"LEAD-010\",\"name\":\"Shihao Yu\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"...",
+      "raw": "{\"id\":\"LEAD-010\",\"name\":\"Shihao Yu\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"lead_type\":\"Researcher\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Co-authored the study on settlement manipulation in five-minute Bitcoin markets.\",\"nexpredict_relevance\":[\"Technical speaker\",\"Content source\"],\"suggested_action\":\"Invite for a technical briefing and panel.\",\"sources\":[\"https://arxiv.org/pdf/2606.31675\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-3d90d450"
+      ],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "ee4a9c61d7a9333c753fb29c49319b139cb525bd"
+    },
+    {
+      "id": "ins-e762b839",
+      "createdAt": "2026-07-18T05:46:40.068Z",
+      "updatedAt": "2026-07-18T05:46:40.068Z",
+      "title": "{\"id\":\"LEAD-011\",\"name\":\"Niusha Moshrefi\",\"role\":\"Researcher\",\"company\":\"Academic resea...",
+      "raw": "{\"id\":\"LEAD-011\",\"name\":\"Niusha Moshrefi\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"lead_type\":\"Researcher\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Authored commercially useful research on sports-market calibration and parlays.\",\"nexpredict_relevance\":[\"Research speaker\",\"Content source\"],\"suggested_action\":\"Invite for a briefing and potential technical panel.\",\"sources\":[\"https://arxiv.org/abs/2607.14430\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "ebebca53792a0c8343bd8595249c44aa2a93beae"
+    },
+    {
+      "id": "ins-2153ab9f",
+      "createdAt": "2026-07-18T05:46:40.077Z",
+      "updatedAt": "2026-07-18T05:46:40.077Z",
+      "title": "{\"id\":\"LEAD-012\",\"name\":\"Eric Haynes\",\"role\":\"Head of Surveillance\",\"company\":\"Robinhoo...",
+      "raw": "{\"id\":\"LEAD-012\",\"name\":\"Eric Haynes\",\"role\":\"Head of Surveillance\",\"company\":\"Robinhood\",\"lead_type\":\"Compliance/Surveillance\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Described the operational challenge of identifying restricted participants across contract types.\",\"nexpredict_relevance\":[\"Speaker\",\"Compliance panel\"],\"suggested_action\":\"Invite to discuss restricted-person identification and AI-assisted surveillance.\",\"sources\":[\"https://www.eventus.com/cat-article/surveillance-and-market-integrity/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-360f677b",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "72f373466aa9e85e7bd1f059fc74737286370703"
+    },
+    {
+      "id": "ins-0e851565",
+      "createdAt": "2026-07-18T05:46:40.090Z",
+      "updatedAt": "2026-07-18T05:46:40.090Z",
+      "title": "{\"id\":\"LEAD-013\",\"name\":\"Scott Sadin\",\"role\":\"Integrity executive\",\"company\":\"IC360\",\"l...",
+      "raw": "{\"id\":\"LEAD-013\",\"name\":\"Scott Sadin\",\"role\":\"Integrity executive\",\"company\":\"IC360\",\"lead_type\":\"Integrity\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Brings contract-specific sports and event-market integrity expertise.\",\"nexpredict_relevance\":[\"Speaker\",\"Sponsor\"],\"suggested_action\":\"Explore panel participation and sponsorship.\",\"sources\":[\"https://www.eventus.com/cat-article/surveillance-and-market-integrity/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-2175506f"
+      ],
+      "relatedCompanies": [
+        "com-360f677b",
+        "com-7d286cd2",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "e1d3740d9e666299e84858339388a91c7d19d28a"
+    },
+    {
+      "id": "ins-a50b6e20",
+      "createdAt": "2026-07-18T05:46:40.098Z",
+      "updatedAt": "2026-07-18T05:46:40.098Z",
+      "title": "{\"id\":\"LEAD-014\",\"name\":\"Jeff Bell\",\"role\":\"Executive\",\"company\":\"Eventus\",\"lead_type\":...",
+      "raw": "{\"id\":\"LEAD-014\",\"name\":\"Jeff Bell\",\"role\":\"Executive\",\"company\":\"Eventus\",\"lead_type\":\"Surveillance Vendor\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Eventus provides surveillance and market-integrity infrastructure.\",\"nexpredict_relevance\":[\"Speaker\",\"Sponsor\"],\"suggested_action\":\"Invite and explore commercial partnership.\",\"sources\":[\"https://www.eventus.com/cat-article/surveillance-and-market-integrity/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-360f677b",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "003f29a82782d16ede47c4cfb8d1703d1ff4b98b"
+    },
+    {
+      "id": "ins-5bb44a34",
+      "createdAt": "2026-07-18T05:46:40.109Z",
+      "updatedAt": "2026-07-18T05:46:40.109Z",
+      "title": "{\"id\":\"LEAD-015\",\"name\":\"Cameron Routh\",\"role\":\"Executive\",\"company\":\"Eventus\",\"lead_ty...",
+      "raw": "{\"id\":\"LEAD-015\",\"name\":\"Cameron Routh\",\"role\":\"Executive\",\"company\":\"Eventus\",\"lead_type\":\"Surveillance Vendor\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Relevant to exchange surveillance, product risk and market integrity.\",\"nexpredict_relevance\":[\"Speaker\",\"Sponsor\"],\"suggested_action\":\"Engage alongside Jeff Bell.\",\"sources\":[\"https://www.eventus.com/cat-article/surveillance-and-market-integrity/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-360f677b",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "84d63997c225ee16e7138d6201516e603cd4a2ca"
+    },
+    {
+      "id": "ins-40cea445",
+      "createdAt": "2026-07-18T05:46:40.117Z",
+      "updatedAt": "2026-07-18T05:46:40.117Z",
+      "title": "{\"id\":\"LEAD-016\",\"name\":\"David Bean\",\"role\":\"Chairman\",\"company\":\"Indian Gaming Associa...",
+      "raw": "{\"id\":\"LEAD-016\",\"name\":\"David Bean\",\"role\":\"Chairman\",\"company\":\"Indian Gaming Association\",\"lead_type\":\"Policy\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Public leader in efforts to protect tribal gaming interests in prediction-market legislation.\",\"nexpredict_relevance\":[\"Regulatory speaker\"],\"suggested_action\":\"Use respectful official outreach focused on sovereignty and market structure.\",\"sources\":[\"https://defirate.com/news/tribal-leaders-press-senate-to-add-sports-prediction-market-ban-to-clarity-act/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "ce91857eb56c976f9c4c22e0aef1a376cc1bba20"
+    },
+    {
+      "id": "ins-e239ddb8",
+      "createdAt": "2026-07-18T05:46:40.127Z",
+      "updatedAt": "2026-07-18T05:46:40.127Z",
+      "title": "{\"id\":\"LEAD-017\",\"name\":\"Gary Batton\",\"role\":\"Chief\",\"company\":\"Choctaw Nation\",\"lead_t...",
+      "raw": "{\"id\":\"LEAD-017\",\"name\":\"Gary Batton\",\"role\":\"Chief\",\"company\":\"Choctaw Nation\",\"lead_type\":\"Tribal Leader\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Public voice on federal oversight and tribal participation.\",\"nexpredict_relevance\":[\"Regulatory speaker\"],\"suggested_action\":\"Invite through official channels to a balanced sovereignty discussion.\",\"sources\":[\"https://indianz.com/News/2026/07/14/press-release-five-civilized-tribes-call-for-oversight-of-prediction-markets/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "06f20bad18c1bef96a7dac11a9aa7a33bbd9e754"
+    },
+    {
+      "id": "ins-1fef8aa1",
+      "createdAt": "2026-07-18T05:46:40.135Z",
+      "updatedAt": "2026-07-18T05:46:40.135Z",
+      "title": "{\"id\":\"LEAD-018\",\"name\":\"Silvio Schembri\",\"role\":\"Minister for the Economy\",\"company\":\"...",
+      "raw": "{\"id\":\"LEAD-018\",\"name\":\"Silvio Schembri\",\"role\":\"Minister for the Economy\",\"company\":\"Government of Malta\",\"lead_type\":\"Government\",\"priority\":8,\"confidence\":\"Medium-high\",\"why_they_matter\":\"Connected to Malta policy development around prediction markets.\",\"nexpredict_relevance\":[\"International regulatory speaker\"],\"suggested_action\":\"Confirm policy role and approach through official channels.\",\"sources\":[\"https://www.financemagnates.com/fintech/inside-the-prediction-markets-malta-drafts-rules-as-blockchaincom-and-jump-trading-expand-their-reach/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "3b274c4fc7fe37d75242a5e217bc19501910ba49"
+    },
+    {
+      "id": "ins-9cf5fb4a",
+      "createdAt": "2026-07-18T05:46:40.146Z",
+      "updatedAt": "2026-07-18T05:46:40.146Z",
+      "title": "{\"id\":\"LEAD-019\",\"name\":\"Malta Gaming Authority policy lead\",\"role\":\"Policy/Regulatory ...",
+      "raw": "{\"id\":\"LEAD-019\",\"name\":\"Malta Gaming Authority policy lead\",\"role\":\"Policy/Regulatory leadership\",\"company\":\"Malta Gaming Authority\",\"lead_type\":\"Regulator\",\"priority\":8,\"confidence\":\"Medium-high\",\"why_they_matter\":\"Could become central to a bespoke European licensing regime.\",\"nexpredict_relevance\":[\"Speaker\",\"Partner\"],\"suggested_action\":\"Identify the official responsible for the framework.\",\"sources\":[\"https://www.financemagnates.com/fintech/inside-the-prediction-markets-malta-drafts-rules-as-blockchaincom-and-jump-trading-expand-their-reach/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "1f401f85b2b62766433b58fb7ca4aa3e60b819f0"
+    },
+    {
+      "id": "ins-2ab40638",
+      "createdAt": "2026-07-18T05:46:40.158Z",
+      "updatedAt": "2026-07-18T05:46:40.158Z",
+      "title": "{\"id\":\"LEAD-020\",\"name\":\"ANJ leadership\",\"role\":\"Regulatory leadership\",\"company\":\"Auto...",
+      "raw": "{\"id\":\"LEAD-020\",\"name\":\"ANJ leadership\",\"role\":\"Regulatory leadership\",\"company\":\"Autorite Nationale des Jeux\",\"lead_type\":\"Regulator\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Responsible for France’s Polymarket access action.\",\"nexpredict_relevance\":[\"International regulatory panel\"],\"suggested_action\":\"Use official outreach and frame the invitation around consumer protection and classification.\",\"sources\":[\"https://www.channelnewsasia.com/business/france-blocks-access-polymarket-website-6261691\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "4db21dc5fa40326c5912c11f66c67c8bc4324d50"
+    },
+    {
+      "id": "ins-5f3a78c5",
+      "createdAt": "2026-07-18T05:46:40.168Z",
+      "updatedAt": "2026-07-18T05:46:40.168Z",
+      "title": "{\"id\":\"LEAD-021\",\"name\":\"PMXT founders\",\"role\":\"Founders\",\"company\":\"PMXT\",\"lead_type\":...",
+      "raw": "{\"id\":\"LEAD-021\",\"name\":\"PMXT founders\",\"role\":\"Founders\",\"company\":\"PMXT\",\"lead_type\":\"Infrastructure\",\"priority\":8,\"confidence\":\"Medium\",\"why_they_matter\":\"Building a standardised API layer across prediction venues.\",\"nexpredict_relevance\":[\"Startup\",\"Workshop\",\"Sponsor\"],\"suggested_action\":\"Validate traction and invite to an infrastructure discussion.\",\"sources\":[\"https://github.com/pmxt-dev/pmxt\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Founder-led operating drag"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-d62e0eb5",
+        "com-113f1174",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "eae879ccbe435c17b77cb853a205b9e9a03ab6b4"
+    },
+    {
+      "id": "ins-32ef8650",
+      "createdAt": "2026-07-18T05:46:40.176Z",
+      "updatedAt": "2026-07-18T05:46:40.176Z",
+      "title": "{\"id\":\"LEAD-022\",\"name\":\"OpenThomas developer\",\"role\":\"Developer\",\"company\":\"OpenThomas...",
+      "raw": "{\"id\":\"LEAD-022\",\"name\":\"OpenThomas developer\",\"role\":\"Developer\",\"company\":\"OpenThomas\",\"lead_type\":\"AI/Infrastructure\",\"priority\":7,\"confidence\":\"Medium\",\"why_they_matter\":\"Building an autonomous weather-market agent with transparent code.\",\"nexpredict_relevance\":[\"Technical content\",\"AI panel\"],\"suggested_action\":\"Engage after validating live performance and execution assumptions.\",\"sources\":[\"https://github.com/PredictionMarketTrader/openthomas\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "e9848b023c856e29fd7ddbec3f6ea6baf8ebb9f7"
+    },
+    {
+      "id": "ins-616a3f9b",
+      "createdAt": "2026-07-18T05:46:40.186Z",
+      "updatedAt": "2026-07-18T05:46:40.186Z",
+      "title": "{\"id\":\"LEAD-023\",\"name\":\"Eilers & Krejcik Gaming team\",\"role\":\"Analysts\",\"company\":\"Eil...",
+      "raw": "{\"id\":\"LEAD-023\",\"name\":\"Eilers & Krejcik Gaming team\",\"role\":\"Analysts\",\"company\":\"Eilers & Krejcik Gaming\",\"lead_type\":\"Data/Research\",\"priority\":10,\"confidence\":\"High\",\"why_they_matter\":\"Produces high-value prediction-market monitoring and comparative data.\",\"nexpredict_relevance\":[\"Data partner\",\"Speaker\",\"Research collaboration\"],\"suggested_action\":\"Pursue a formal relationship and discuss data collaboration.\",\"sources\":[\"https://ekgamingllc.com/downloads/prediction-markets-monitor-july-2026/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "66cea46d04177f555ef77c965f254864fb686199"
+    },
+    {
+      "id": "ins-2541f0e5",
+      "createdAt": "2026-07-18T05:46:40.194Z",
+      "updatedAt": "2026-07-18T05:46:40.194Z",
+      "title": "{\"id\":\"LEAD-024\",\"name\":\"Kate Knibbs\",\"role\":\"Journalist\",\"company\":\"WIRED\",\"lead_type\"...",
+      "raw": "{\"id\":\"LEAD-024\",\"name\":\"Kate Knibbs\",\"role\":\"Journalist\",\"company\":\"WIRED\",\"lead_type\":\"Media\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Covers prediction-market structure, regulation and platform accountability.\",\"nexpredict_relevance\":[\"Press\",\"Moderator\"],\"suggested_action\":\"Offer background access, independent sources and a press pass without seeking favourable coverage.\",\"sources\":[\"https://www.wired.com/story/whats-up-with-polymarkets-panama-entity\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-d019e33a"
+      ],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "5f95ead6c9bcc0c60df8477db4c0ad402a55a994"
+    },
+    {
+      "id": "ins-d7e26e6a",
+      "createdAt": "2026-07-18T05:46:40.204Z",
+      "updatedAt": "2026-07-18T05:46:40.204Z",
+      "title": "{\"id\":\"LEAD-025\",\"name\":\"Bobby Allyn\",\"role\":\"Journalist\",\"company\":\"NPR\",\"lead_type\":\"...",
+      "raw": "{\"id\":\"LEAD-025\",\"name\":\"Bobby Allyn\",\"role\":\"Journalist\",\"company\":\"NPR\",\"lead_type\":\"Media\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Covers sports-market classification and federal-state conflict.\",\"nexpredict_relevance\":[\"Press\",\"Moderator\"],\"suggested_action\":\"Offer Pierre and independent speakers as background sources.\",\"sources\":[\"https://news.prairiepublic.org/news-from-npr/2026-07-17/kalshi-says-its-not-a-sportsbook-even-as-world-cup-bets-surge\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Sports betting & sportsbook strategy",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-6161efde"
+      ],
+      "relatedCompanies": [
+        "com-12536e76",
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "d4359b072f750a2f936ef94fafaef9f67b9cbeaf"
+    },
+    {
+      "id": "ins-b65ad686",
+      "createdAt": "2026-07-18T05:46:40.212Z",
+      "updatedAt": "2026-07-18T05:46:40.212Z",
+      "title": "{\"id\":\"LEAD-026\",\"name\":\"Alex Abad-Santos\",\"role\":\"Journalist\",\"company\":\"Vox\",\"lead_ty...",
+      "raw": "{\"id\":\"LEAD-026\",\"name\":\"Alex Abad-Santos\",\"role\":\"Journalist\",\"company\":\"Vox\",\"lead_type\":\"Media\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Connects prediction markets with entertainment, fandom and spoiler risk.\",\"nexpredict_relevance\":[\"Press\",\"Moderator\"],\"suggested_action\":\"Offer relevant production, integrity and legal sources.\",\"sources\":[\"https://www.vox.com/culture/495837/kalshi-reality-tv-betting-survivor-spoilers\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-5ef8cf96",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "d1be45420a8d49492b54eb92ba6af2bd80e838f5"
+    },
+    {
+      "id": "ins-cc9bef3c",
+      "createdAt": "2026-07-18T05:46:40.221Z",
+      "updatedAt": "2026-07-18T05:46:40.221Z",
+      "title": "{\"id\":\"LEAD-027\",\"name\":\"Nicole Moran\",\"role\":\"Principal\",\"company\":\"Cornerstone Resear...",
+      "raw": "{\"id\":\"LEAD-027\",\"name\":\"Nicole Moran\",\"role\":\"Principal\",\"company\":\"Cornerstone Research\",\"lead_type\":\"Economics/Enforcement\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Contributed to a strong framework for distinguishing research from misappropriated information.\",\"nexpredict_relevance\":[\"Speaker\",\"Content source\"],\"suggested_action\":\"Invite for a briefing and possible enforcement panel.\",\"sources\":[\"https://www.cornerstone.com/insights/articles/regulation-of-trading-in-prediction-markets/\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "74aafa73baa258d80395ec3ed7d565245f7ff626"
+    },
+    {
+      "id": "ins-fe7cfd2e",
+      "createdAt": "2026-07-18T05:46:40.229Z",
+      "updatedAt": "2026-07-18T05:46:40.229Z",
+      "title": "{\"id\":\"LEAD-028\",\"name\":\"Jeremy Liabo\",\"role\":\"Partner\",\"company\":\"Ropes & Gray\",\"lead_...",
+      "raw": "{\"id\":\"LEAD-028\",\"name\":\"Jeremy Liabo\",\"role\":\"Partner\",\"company\":\"Ropes & Gray\",\"lead_type\":\"Legal\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Relevant to SEC/CFTC overlap and securities-law questions.\",\"nexpredict_relevance\":[\"Legal speaker\"],\"suggested_action\":\"Invite to a federal-jurisdiction session.\",\"sources\":[\"https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f",
+        "com-8377f530"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "45eddafb3a52fede48996acbaa11f6523008931f"
+    },
+    {
+      "id": "ins-07372de1",
+      "createdAt": "2026-07-18T05:46:40.239Z",
+      "updatedAt": "2026-07-18T05:46:40.239Z",
+      "title": "{\"id\":\"LEAD-029\",\"name\":\"Charu Chandrasekhar\",\"role\":\"Partner\",\"company\":\"Debevoise & P...",
+      "raw": "{\"id\":\"LEAD-029\",\"name\":\"Charu Chandrasekhar\",\"role\":\"Partner\",\"company\":\"Debevoise & Plimpton\",\"lead_type\":\"Legal\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Relevant to event contracts and securities-law boundaries.\",\"nexpredict_relevance\":[\"Legal speaker\"],\"suggested_action\":\"Invite to a federal-jurisdiction session.\",\"sources\":[\"https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "B2B events and sponsorship",
+        "Prediction markets"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "6b7272f893b3a25ffb1a91dd839f909957b2fd5f"
+    },
+    {
+      "id": "ins-f5514b9e",
+      "createdAt": "2026-07-18T05:46:40.247Z",
+      "updatedAt": "2026-07-18T05:46:40.247Z",
+      "title": "{\"id\":\"LEAD-030\",\"name\":\"Liz Davis\",\"role\":\"Partner\",\"company\":\"Davis Wright Tremaine\",...",
+      "raw": "{\"id\":\"LEAD-030\",\"name\":\"Liz Davis\",\"role\":\"Partner\",\"company\":\"Davis Wright Tremaine\",\"lead_type\":\"Legal\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Relevant to regulatory overlap and prediction-market compliance.\",\"nexpredict_relevance\":[\"Legal speaker\"],\"suggested_action\":\"Invite to a federal-jurisdiction session.\",\"sources\":[\"https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "3518b106c37aa75911551425dedcf4f68ae29bdd"
+    },
+    {
+      "id": "ins-d01fe1df",
+      "createdAt": "2026-07-18T05:46:40.257Z",
+      "updatedAt": "2026-07-18T05:46:40.257Z",
+      "title": "{\"id\":\"LEAD-031\",\"name\":\"Scott Mascianica\",\"role\":\"Partner\",\"company\":\"Bradley\",\"lead_t...",
+      "raw": "{\"id\":\"LEAD-031\",\"name\":\"Scott Mascianica\",\"role\":\"Partner\",\"company\":\"Bradley\",\"lead_type\":\"Legal\",\"priority\":8,\"confidence\":\"High\",\"why_they_matter\":\"Relevant to securities, enforcement and jurisdictional risk.\",\"nexpredict_relevance\":[\"Legal speaker\"],\"suggested_action\":\"Invite to a federal-jurisdiction session.\",\"sources\":[\"https://news.bloomberglaw.com/securities-law/prediction-markets-encounter-another-regulator-as-sec-joins-fray\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "8b4fa9ce79a0fe29a032fa3d716917ccf2903b50"
+    },
+    {
+      "id": "ins-112f5c94",
+      "createdAt": "2026-07-18T05:46:40.282Z",
+      "updatedAt": "2026-07-18T05:46:40.282Z",
+      "title": "Raw Additional Intel",
+      "raw": "# Raw Additional Intel\n\nThese items are retained for recall but were not elevated into the highest-priority brief.\n\n## Political and legislative monitoring\n\n- CLARITY Act ethics negotiations and stablecoin-yield language.\n- Prediction-market odds for bill passage, subject to timestamp and contract-definition differences.\n- Banking coalition requests concerning stablecoin yield.\n- Tribal and gaming attempts to attach sports-event restrictions.\n\n## International media diffusion\n\nCoverage of prediction-market integrity stories appeared in French, Thai, Chinese and Japanese outlets. This is best treated as one broader signal: prediction-market controversies are travelling into mainstream international media.\n\n## Consumer acquisition and marketing\n\n- Kalshi sports promotions and welcome bonuses.\n- Polymarket sports promotions.\n- Esports contract expansion.\n- Novel markets involving aliens, box office and entertainment events.\n\n## Community and social signals\n\n- Reddit discussion of biotech restricted-person risk.\n- Reddit criticism of paper-trading profitability claims for AI agents.\n- Prediction-market subreddit growth claims requiring direct verification.\n- X Spaces activity around prediction markets and AI.\n\n## Lower-priority market observations\n\n- Short-dated political odds.\n- Individual wallet trades.\n- \"Smart money\" screenshots without validated methodology.\n- Fed, AI-model and geopolitical contract prices without a material market move.\n- CLARITY odds differences across platforms where resolution criteria differ.\n\n## Podcast and newsletter monitoring\n\n- On The Brink discussion of teleprompter-related integrity concerns.\n- Slate cultural critique.\n- Gwart interview with Pascal founder Ivo Crnkovic-Rubsamen.\n- Gemini Predicted weekly editorial product.",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Pricing and margin discipline",
+        "Practical AI implementation",
+        "B2B events and sponsorship"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [
+        "con-2220c2f5"
+      ],
+      "relatedCompanies": [
+        "com-685237b0",
+        "com-4633f916",
+        "com-5ef8cf96",
+        "com-971a4b55",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "f094d34e71ec3291b348fceb5d52081423f873f3"
+    },
+    {
+      "id": "ins-c584a091",
+      "createdAt": "2026-07-18T05:46:40.303Z",
+      "updatedAt": "2026-07-18T05:46:40.303Z",
+      "title": "Suggested Claude Operating Prompt",
+      "raw": "# Suggested Claude Operating Prompt\n\nYou are Stuart Crowley's prediction-markets intelligence desk.\n\nUse the supplied NEXTPredict intelligence pack as the working source base for 17-18 July 2026. Your job is to turn research into practical action for Stuart and NEXTPredict.\n\n## Priorities\n\n1. Identify what Stuart should post, comment on, monitor, ignore or turn into outreach.\n2. Surface speaker, sponsor, media, investor, institutional-trading and infrastructure leads.\n3. Distinguish confirmed facts from inference, social discussion and unverified claims.\n4. Prefer primary and high-quality sources listed in the source index.\n5. Use the verification file before making public claims.\n6. Keep NEXTPredict positioning credible and soft unless the task is directly commercial.\n\n## Stuart's voice\n\n- Commercially sharp and curious.\n- Watching the category form in real time.\n- Slightly amused by the chaos, but never flippant about legal or integrity issues.\n- Willing to ask sharper questions than most of the feed.\n- Not a guru, lawyer, regulator or hype merchant.\n- Use natural paragraphs and British understatement.\n- Avoid em dashes, generic LinkedIn language and theatrical one-line stacking.\n\n## Output behaviour\n\nWhen asked for \"next\", provide one item at a time.\n\nFor each intelligence item, give:\n\n- What happened\n- Confidence and source quality\n- Commercial read\n- Best Stuart angle\n- Lead potential\n- NEXTPredict relevance\n- Recommended action\n\nDo not repeat raw volume headlines unless they reveal market structure, distribution, institutional adoption, consumer acquisition or category perception.",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation",
+        "B2B events and sponsorship",
+        "GTM execution"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-d2c6a2e6",
+        "com-240a49b2",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "09c7d9b3e80d9d0e435af6dcf1590d8da2d2068e"
+    },
+    {
+      "id": "ins-bee2a49f",
+      "createdAt": "2026-07-18T05:46:40.314Z",
+      "updatedAt": "2026-07-18T05:46:40.314Z",
+      "title": "{\"pack_name\":\"NEXTPredict Claude Intel 2026-07-17_18\",\"coverage_start\":\"2026-07-17\",\"co...",
+      "raw": "{\"pack_name\":\"NEXTPredict Claude Intel 2026-07-17_18\",\"coverage_start\":\"2026-07-17\",\"coverage_end\":\"2026-07-18\",\"prepared_for\":\"Stuart Crowley / NEXTPredict\",\"formats\":[\"markdown\",\"jsonl\",\"json\"],\"encoding\":\"UTF-8\",\"files\":[\"00_README.md\",\"01_FULL_COMBINED_BRIEF.md\",\"02_SIGNALS_MASTER.md\",\"03_LEADS_MASTER.md\",\"04_CONTENT_AND_ACTIONS.md\",\"05_SOURCE_INDEX.md\",\"06_VERIFICATION_AND_GAPS.md\",\"07_SIGNALS.jsonl\",\"08_LEADS.jsonl\",\"09_RAW_ADDITIONAL_INTEL.md\",\"10_CLAUDE_OPERATING_PROMPT.md\"],\"jsonl_signal_schema\":[\"id\",\"title\",\"date\",\"category\",\"priority\",\"confidence\",\"summary\",\"commercial_read\",\"content_angle\",\"lead_potential\",\"nexpredict_relevance\",\"next_action\",\"sources\"],\"jsonl_lead_schema\":[\"id\",\"name\",\"role\",\"company\",\"lead_type\",\"priority\",\"confidence\",\"why_they_matter\",\"nexpredict_relevance\",\"suggested_action\",\"sources\"]}",
+      "source": "NEXTPredict Claude Intel 2026-07-17/18",
+      "sourceUrl": null,
+      "date": "2026-07-18",
+      "type": "ingested-intel",
+      "lanes": [
+        "Practical AI implementation"
+      ],
+      "audiences": [],
+      "commercialRelevance": 3,
+      "confidence": "unreviewed",
+      "confidentiality": {
+        "classification": "public",
+        "score": 0,
+        "reasons": [
+          "No confidentiality signals detected. Still confirm nothing identifies a client, colleague or live deal."
+        ],
+        "isSuggestion": true,
+        "note": "This is a suggested classification for Stuart to confirm, not a verdict.",
+        "confirmed": false
+      },
+      "distilled": null,
+      "relatedContacts": [],
+      "relatedCompanies": [
+        "com-c71c8611",
+        "com-f73e163f"
+      ],
+      "relatedOffers": [],
+      "nextAction": "Distil and route",
+      "status": "captured",
+      "contentHash": "5a0b108b2ec4acac25e8e38cb1767c05b57b1956"
     }
   ]
 }

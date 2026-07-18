@@ -1,0 +1,23 @@
+{
+  "pack_name": "NEXTPredict Claude Intel 2026-07-17_18",
+  "coverage_start": "2026-07-17",
+  "coverage_end": "2026-07-18",
+  "prepared_for": "Stuart Crowley / NEXTPredict",
+  "formats": ["markdown", "jsonl", "json"],
+  "encoding": "UTF-8",
+  "files": [
+    "00_README.md",
+    "01_FULL_COMBINED_BRIEF.md",
+    "02_SIGNALS_MASTER.md",
+    "03_LEADS_MASTER.md",
+    "04_CONTENT_AND_ACTIONS.md",
+    "05_SOURCE_INDEX.md",
+    "06_VERIFICATION_AND_GAPS.md",
+    "07_SIGNALS.jsonl",
+    "08_LEADS.jsonl",
+    "09_RAW_ADDITIONAL_INTEL.md",
+    "10_CLAUDE_OPERATING_PROMPT.md"
+  ],
+  "jsonl_signal_schema": ["id", "title", "date", "category", "priority", "confidence", "summary", "commercial_read", "content_angle", "lead_potential", "nexpredict_relevance", "next_action", "sources"],
+  "jsonl_lead_schema": ["id", "name", "role", "company", "lead_type", "priority", "confidence", "why_they_matter", "nexpredict_relevance", "suggested_action", "sources"]
+}

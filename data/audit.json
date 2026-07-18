@@ -3434,6 +3434,518 @@
       "action": "bulk-insert",
       "collection": "leads",
       "summary": "imported 10 leads from directory-import.json"
+    },
+    {
+      "id": "ins-cc7ad200",
+      "at": "2026-07-18T05:46:39.339Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "NEXTPredict Claude Intelligence Pack"
+    },
+    {
+      "id": "ins-d3fbfd9b",
+      "at": "2026-07-18T05:46:39.508Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Prediction Markets Intelligence Brief"
+    },
+    {
+      "id": "ins-f6add149",
+      "at": "2026-07-18T05:46:39.578Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Signals Master"
+    },
+    {
+      "id": "ins-865992c5",
+      "at": "2026-07-18T05:46:39.679Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Leads Master"
+    },
+    {
+      "id": "ins-237830ba",
+      "at": "2026-07-18T05:46:39.712Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Content and Actions"
+    },
+    {
+      "id": "ins-0b081f0e",
+      "at": "2026-07-18T05:46:39.738Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Source Index"
+    },
+    {
+      "id": "ins-6eec3b2d",
+      "at": "2026-07-18T05:46:39.762Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Verification and Research Gaps"
+    },
+    {
+      "id": "ins-141db40b",
+      "at": "2026-07-18T05:46:39.771Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "CFTC intervention in Michigan trades"
+    },
+    {
+      "id": "ins-853d1d7c",
+      "at": "2026-07-18T05:46:39.782Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "House hearing on sports prediction markets"
+    },
+    {
+      "id": "ins-d17545af",
+      "at": "2026-07-18T05:46:39.792Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "France blocks Polymarket"
+    },
+    {
+      "id": "ins-6a377084",
+      "at": "2026-07-18T05:46:39.802Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Malta explores bespoke prediction-market framework"
+    },
+    {
+      "id": "ins-851261d9",
+      "at": "2026-07-18T05:46:39.812Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "North Carolina tax-without-licensing model"
+    },
+    {
+      "id": "ins-68014a91",
+      "at": "2026-07-18T05:46:39.821Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Jump Trading expands prediction-markets team"
+    },
+    {
+      "id": "ins-f0a317d4",
+      "at": "2026-07-18T05:46:39.830Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Moreton builds dedicated prediction-markets strategy"
+    },
+    {
+      "id": "ins-8d66e210",
+      "at": "2026-07-18T05:46:39.839Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Pascal raises for a trader-first venue"
+    },
+    {
+      "id": "ins-5e6f0354",
+      "at": "2026-07-18T05:46:39.847Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "DraftKings and UDX internalise exchange infrastructure"
+    },
+    {
+      "id": "ins-b7eb6251",
+      "at": "2026-07-18T05:46:39.855Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Blockchain.com integrates Polymarket"
+    },
+    {
+      "id": "ins-7c01fc4a",
+      "at": "2026-07-18T05:46:39.863Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Kalshi and AppliedXL launch biopharma markets"
+    },
+    {
+      "id": "ins-f4af29b5",
+      "at": "2026-07-18T05:46:39.872Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Entertainment markets scale alongside leakage risk"
+    },
+    {
+      "id": "ins-a18063eb",
+      "at": "2026-07-18T05:46:39.881Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Five-minute Bitcoin markets show settlement manipulation"
+    },
+    {
+      "id": "ins-c71db9b7",
+      "at": "2026-07-18T05:46:39.889Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "SEC boundary becomes commercially relevant"
+    },
+    {
+      "id": "ins-b1593995",
+      "at": "2026-07-18T05:46:39.901Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Restricted-person identification becomes infrastructure"
+    },
+    {
+      "id": "ins-66dba165",
+      "at": "2026-07-18T05:46:39.908Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "FlightAware conflict exposes settlement data-rights risk"
+    },
+    {
+      "id": "ins-9dd7d660",
+      "at": "2026-07-18T05:46:39.918Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "PMXT builds a unified prediction-market API"
+    },
+    {
+      "id": "ins-0f64d14f",
+      "at": "2026-07-18T05:46:39.927Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "OpenThomas trades weather markets autonomously"
+    },
+    {
+      "id": "ins-a67d83f0",
+      "at": "2026-07-18T05:46:39.937Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Augur pivots toward shared resolution infrastructure"
+    },
+    {
+      "id": "ins-dd3e3779",
+      "at": "2026-07-18T05:46:39.947Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Entain names prediction markets as competitive pressure"
+    },
+    {
+      "id": "ins-59e00320",
+      "at": "2026-07-18T05:46:39.957Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Eilers & Krejcik releases July market monitor"
+    },
+    {
+      "id": "ins-0cf4a7c6",
+      "at": "2026-07-18T05:46:39.966Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "USD.AI contract exposes resolution-design ambiguity"
+    },
+    {
+      "id": "ins-5424dfed",
+      "at": "2026-07-18T05:46:39.976Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-001\",\"name\":\"Michael Selig\",\"role\":\"Chairman\",\"company\":\"CFTC\",\"lead_type\":..."
+    },
+    {
+      "id": "ins-1b698fb9",
+      "at": "2026-07-18T05:46:39.984Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-002\",\"name\":\"Robert DeNault\",\"role\":\"Head of Enforcement\",\"company\":\"Kalshi..."
+    },
+    {
+      "id": "ins-156cbdd1",
+      "at": "2026-07-18T05:46:39.995Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-003\",\"name\":\"Simon Johansen\",\"role\":\"Head of Prediction Markets\",\"company\":..."
+    },
+    {
+      "id": "ins-8345a5b0",
+      "at": "2026-07-18T05:46:40.005Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-004\",\"name\":\"Moreton Capital prediction-markets leadership\",\"role\":\"Strateg..."
+    },
+    {
+      "id": "ins-f4655686",
+      "at": "2026-07-18T05:46:40.015Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-005\",\"name\":\"Ivo Crnkovic-Rubsamen\",\"role\":\"Co-founder\",\"company\":\"Pascal\",..."
+    },
+    {
+      "id": "ins-7a42568c",
+      "at": "2026-07-18T05:46:40.024Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-006\",\"name\":\"Matthew Downey\",\"role\":\"Co-founder\",\"company\":\"Pascal\",\"lead_t..."
+    },
+    {
+      "id": "ins-4151ee1c",
+      "at": "2026-07-18T05:46:40.034Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-007\",\"name\":\"Francesco Marconi\",\"role\":\"Co-founder and CEO\",\"company\":\"Appl..."
+    },
+    {
+      "id": "ins-19fa7083",
+      "at": "2026-07-18T05:46:40.043Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-008\",\"name\":\"David Dai\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"..."
+    },
+    {
+      "id": "ins-b8d9b742",
+      "at": "2026-07-18T05:46:40.053Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-009\",\"name\":\"Ruizhe Jia\",\"role\":\"Researcher\",\"company\":\"Academic research\",..."
+    },
+    {
+      "id": "ins-d91499ff",
+      "at": "2026-07-18T05:46:40.063Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-010\",\"name\":\"Shihao Yu\",\"role\":\"Researcher\",\"company\":\"Academic research\",\"..."
+    },
+    {
+      "id": "ins-e762b839",
+      "at": "2026-07-18T05:46:40.073Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-011\",\"name\":\"Niusha Moshrefi\",\"role\":\"Researcher\",\"company\":\"Academic resea..."
+    },
+    {
+      "id": "ins-2153ab9f",
+      "at": "2026-07-18T05:46:40.082Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-012\",\"name\":\"Eric Haynes\",\"role\":\"Head of Surveillance\",\"company\":\"Robinhoo..."
+    },
+    {
+      "id": "lead-9786ce58",
+      "at": "2026-07-18T05:46:40.084Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "leads",
+      "summary": "Eric Haynes"
+    },
+    {
+      "id": "ins-0e851565",
+      "at": "2026-07-18T05:46:40.094Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-013\",\"name\":\"Scott Sadin\",\"role\":\"Integrity executive\",\"company\":\"IC360\",\"l..."
+    },
+    {
+      "id": "ins-a50b6e20",
+      "at": "2026-07-18T05:46:40.103Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-014\",\"name\":\"Jeff Bell\",\"role\":\"Executive\",\"company\":\"Eventus\",\"lead_type\":..."
+    },
+    {
+      "id": "ins-5bb44a34",
+      "at": "2026-07-18T05:46:40.113Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-015\",\"name\":\"Cameron Routh\",\"role\":\"Executive\",\"company\":\"Eventus\",\"lead_ty..."
+    },
+    {
+      "id": "ins-40cea445",
+      "at": "2026-07-18T05:46:40.121Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-016\",\"name\":\"David Bean\",\"role\":\"Chairman\",\"company\":\"Indian Gaming Associa..."
+    },
+    {
+      "id": "ins-e239ddb8",
+      "at": "2026-07-18T05:46:40.130Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-017\",\"name\":\"Gary Batton\",\"role\":\"Chief\",\"company\":\"Choctaw Nation\",\"lead_t..."
+    },
+    {
+      "id": "ins-1fef8aa1",
+      "at": "2026-07-18T05:46:40.139Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-018\",\"name\":\"Silvio Schembri\",\"role\":\"Minister for the Economy\",\"company\":\"..."
+    },
+    {
+      "id": "ins-9cf5fb4a",
+      "at": "2026-07-18T05:46:40.150Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-019\",\"name\":\"Malta Gaming Authority policy lead\",\"role\":\"Policy/Regulatory ..."
+    },
+    {
+      "id": "ins-2ab40638",
+      "at": "2026-07-18T05:46:40.162Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-020\",\"name\":\"ANJ leadership\",\"role\":\"Regulatory leadership\",\"company\":\"Auto..."
+    },
+    {
+      "id": "ins-5f3a78c5",
+      "at": "2026-07-18T05:46:40.172Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-021\",\"name\":\"PMXT founders\",\"role\":\"Founders\",\"company\":\"PMXT\",\"lead_type\":..."
+    },
+    {
+      "id": "ins-32ef8650",
+      "at": "2026-07-18T05:46:40.180Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-022\",\"name\":\"OpenThomas developer\",\"role\":\"Developer\",\"company\":\"OpenThomas..."
+    },
+    {
+      "id": "ins-616a3f9b",
+      "at": "2026-07-18T05:46:40.190Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-023\",\"name\":\"Eilers & Krejcik Gaming team\",\"role\":\"Analysts\",\"company\":\"Eil..."
+    },
+    {
+      "id": "ins-2541f0e5",
+      "at": "2026-07-18T05:46:40.198Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-024\",\"name\":\"Kate Knibbs\",\"role\":\"Journalist\",\"company\":\"WIRED\",\"lead_type\"..."
+    },
+    {
+      "id": "ins-d7e26e6a",
+      "at": "2026-07-18T05:46:40.208Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-025\",\"name\":\"Bobby Allyn\",\"role\":\"Journalist\",\"company\":\"NPR\",\"lead_type\":\"..."
+    },
+    {
+      "id": "ins-b65ad686",
+      "at": "2026-07-18T05:46:40.216Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-026\",\"name\":\"Alex Abad-Santos\",\"role\":\"Journalist\",\"company\":\"Vox\",\"lead_ty..."
+    },
+    {
+      "id": "ins-cc9bef3c",
+      "at": "2026-07-18T05:46:40.225Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-027\",\"name\":\"Nicole Moran\",\"role\":\"Principal\",\"company\":\"Cornerstone Resear..."
+    },
+    {
+      "id": "ins-fe7cfd2e",
+      "at": "2026-07-18T05:46:40.233Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-028\",\"name\":\"Jeremy Liabo\",\"role\":\"Partner\",\"company\":\"Ropes & Gray\",\"lead_..."
+    },
+    {
+      "id": "ins-07372de1",
+      "at": "2026-07-18T05:46:40.242Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-029\",\"name\":\"Charu Chandrasekhar\",\"role\":\"Partner\",\"company\":\"Debevoise & P..."
+    },
+    {
+      "id": "ins-f5514b9e",
+      "at": "2026-07-18T05:46:40.252Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-030\",\"name\":\"Liz Davis\",\"role\":\"Partner\",\"company\":\"Davis Wright Tremaine\",..."
+    },
+    {
+      "id": "ins-d01fe1df",
+      "at": "2026-07-18T05:46:40.261Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"id\":\"LEAD-031\",\"name\":\"Scott Mascianica\",\"role\":\"Partner\",\"company\":\"Bradley\",\"lead_t..."
+    },
+    {
+      "id": "ins-112f5c94",
+      "at": "2026-07-18T05:46:40.287Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Raw Additional Intel"
+    },
+    {
+      "id": "ins-c584a091",
+      "at": "2026-07-18T05:46:40.307Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "Suggested Claude Operating Prompt"
+    },
+    {
+      "id": "ins-bee2a49f",
+      "at": "2026-07-18T05:46:40.319Z",
+      "actor": "ingest",
+      "action": "insert",
+      "collection": "insights",
+      "summary": "{\"pack_name\":\"NEXTPredict Claude Intel 2026-07-17_18\",\"coverage_start\":\"2026-07-17\",\"co..."
     }
   ]
 }

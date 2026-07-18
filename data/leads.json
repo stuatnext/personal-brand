@@ -518,6 +518,28 @@
       "source": "workbook-directory",
       "importedFrom": "directory-import.json",
       "fictional": false
+    },
+    {
+      "id": "lead-9786ce58",
+      "createdAt": "2026-07-18T05:46:40.083Z",
+      "updatedAt": "2026-07-18T05:46:40.083Z",
+      "name": "Eric Haynes",
+      "kind": "unknown",
+      "pillar": "prediction-markets",
+      "signal": "pm-compliance-hire",
+      "why": "Compliance-first hiring is the tell for serious prediction-markets operators (Stuart's own published read).",
+      "linkedCompanyId": null,
+      "linkedContactId": null,
+      "evidence": [
+        {
+          "insightId": "ins-2153ab9f",
+          "quote": "{\"id\":\"LEAD-012\",\"name\":\"Eric Haynes\",\"role\":\"Head of Surveillance\",\"company\":\"Robinhood\",\"lead_type\":\"Compliance/Surveillance\",\"priority\":9,\"confidence\":\"High\",\"why_they_matter\":\"Described the operational challenge of identifying restricted participants acros",
+          "signal": "pm-compliance-hire",
+          "date": "2026-07-18"
+        }
+      ],
+      "status": "detected",
+      "suggestedNextStep": "Research: verify the entity, find the named decision-maker (never invent details), then decide the route."
     }
   ]
 }
