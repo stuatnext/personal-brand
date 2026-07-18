@@ -204,6 +204,41 @@ console.log('\n== Lead detection (prospects from dropped intel) ==');
   fsm.rmSync(dir, { recursive: true, force: true });
 }
 
+console.log('\n== Writing assist (retrieval + tagging) ==');
+{
+  const TOK = 'zqxwombatshared';
+  const pub = await post('/api/collections/insights', {
+    title: `${TOK} public settlement note`,
+    raw: `${TOK} a public observation about prediction-market settlement sources and oracle risk.`,
+    lanes: ['Prediction markets'], confidentiality: { classification: 'public' }, status: 'captured',
+  });
+  const conf = await post('/api/collections/insights', {
+    title: `${TOK} confidential deal note`,
+    raw: `${TOK} internal margin and pipeline detail that must never go public.`,
+    lanes: ['Prediction markets'], confidentiality: { classification: 'strictly-confidential' }, status: 'captured',
+  });
+  const TAG = 'zqxtagtoken';
+  await post('/api/collections/contacts', {
+    name: `Zeta ${TAG} Keeper`, role: `${TAG} settlement analyst`, doNotContact: false, permissionStatus: 'unverified',
+  });
+  await post('/api/collections/contacts', {
+    name: `Omega ${TAG} Blocked`, role: `${TAG} settlement analyst`, doNotContact: true, permissionStatus: 'opted-out',
+  });
+
+  const safe = await action('assist', { topic: `${TOK} settlement` });
+  ok(safe.status === 200 && Array.isArray(safe.data.references), 'assist action returns references + tags');
+  const refIds = safe.data.references.map((r) => r.id);
+  ok(refIds.includes(pub.data.id), 'relevant public reference retrieved by meaning (not exact name)');
+  ok(!refIds.includes(conf.data.id), 'strictly-confidential reference excluded from public output');
+
+  const withConf = await action('assist', { topic: `${TOK} settlement`, publicSafe: false });
+  ok(withConf.data.references.some((r) => r.id === conf.data.id), 'confidential reference returned only when publicSafe is off');
+
+  const tags = (await action('assist', { topic: `${TAG} settlement analyst` })).data.tags.map((t) => t.name);
+  ok(tags.some((n) => /Keeper/.test(n)), 'contactable person suggested as a tag');
+  ok(!tags.some((n) => /Blocked/.test(n)), 'do-not-contact person never suggested as a tag');
+}
+
 console.log('\n== Authority pillars ==');
 {
   const lanes = (await get('/api/collections/lanes')).data.items;

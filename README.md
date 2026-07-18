@@ -88,9 +88,18 @@ No install step. Requires Node ≥ 20 (zero npm dependencies).
 ```bash
 npm run dev        # → http://localhost:4173
 npm run today      # the daily briefing in the terminal
-npm test           # end-to-end self-test (36 checks, re-seeds after)
+npm run assist "<topic>"   # writing assist: relevant older references + who to tag
+npm test           # end-to-end self-test (re-seeds after)
 npm run seed       # restore the fictional demo dataset (refuses to clobber real data)
 ```
+
+**Writing assist** (`npm run assist "<topic>"`, or `--insight <id>` / `--content <id>`,
+or the `assist` API action) retrieves the most relevant older references to weave into
+a new post and the people/companies worth tagging — by meaning, not exact name — using a
+local BM25 index over insights + past posts + the calendar plus a name co-mention graph
+(`lib/retrieval.mjs`). It respects the confidentiality gate (private / strictly-confidential
+material is never surfaced for public output) and the do-not-contact guard, and only ever
+returns records that already exist. It retrieves; it does not draft, send or publish.
 
 Optional live AI drafting: `ANTHROPIC_API_KEY=... npm run dev`
 (model override: `ANTHROPIC_MODEL`, default `claude-sonnet-5`). Without a

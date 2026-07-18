@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Stuart Crowley's personal brand engine — intel ingestion, multi-channel content (LinkedIn / X / Substack and beyond), relationship intelligence, honest outreach and the Strait Up Growth pipeline. Local-first, zero dependencies; git is the database.",
+  "description": "Stuart Crowley's personal brand engine \u2014 intel ingestion, multi-channel content (LinkedIn / X / Substack and beyond), relationship intelligence, honest outreach and the Strait Up Growth pipeline. Local-first, zero dependencies; git is the database.",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
@@ -11,7 +11,10 @@
     "seed:force": "node scripts/seed.mjs --force",
     "today": "node scripts/today.mjs",
     "ingest": "node scripts/ingest.mjs",
-    "test": "node scripts/self-test.mjs"
+    "test": "node scripts/self-test.mjs",
+    "assist": "node scripts/draft-assist.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

@@ -22,6 +22,7 @@ import { lint } from '../lib/voice.mjs';
 import { review as confReview, brandGate, ANONYMISATION_CHECKLIST } from '../lib/confidentiality.mjs';
 import { scoreContent, scoreOutreach, relationshipStrength, authorityScore } from '../lib/scoring.mjs';
 import { todayBriefing } from '../lib/recommend.mjs';
+import { assist as draftAssist } from '../lib/retrieval.mjs';
 import { analytics } from '../lib/analytics.mjs';
 import { distillInsight, draftContent, draftOutreach, weeklyReviewDraft, providerName } from '../lib/ai.mjs';
 
@@ -69,6 +70,26 @@ function httpError(code, message) { const e = new Error(message); e.code = code;
 const actions = {
   async lint({ text = '', brand = 'stuart', kind = 'post' }) {
     return lint(text, { brand, kind });
+  },
+
+  // Writing assist: relevant older references + tag suggestions for a topic.
+  // Pass a topic string, or an insightId / contentId to use that record as
+  // the query. Read-only; never drafts, sends or publishes.
+  async assist({ topic = '', insightId, contentId, publicSafe = true, limit = 6, tagLimit = 8 }) {
+    let query = topic, excludeId = null;
+    if (insightId) {
+      const ins = get('insights', insightId);
+      if (!ins) throw httpError(404, 'insight not found');
+      query = [ins.title, ins.raw].filter(Boolean).join(' ');
+      excludeId = insightId;
+    } else if (contentId) {
+      const c = get('content', contentId);
+      if (!c) throw httpError(404, 'content not found');
+      query = [c.title, c.body, c.objective].filter(Boolean).join(' ');
+      excludeId = contentId;
+    }
+    if (!query.trim()) throw httpError(400, 'pass a topic, insightId or contentId');
+    return draftAssist(query, { k: Number(limit) || 6, tagK: Number(tagLimit) || 8, publicSafe: publicSafe !== false && publicSafe !== 'false', excludeId });
   },
 
   async confidentiality({ text, insightId, confirm }) {
