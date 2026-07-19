@@ -208,11 +208,37 @@ for (const ch of channels.filter((c) => c.status === 'suggested').slice(0, 2)) {
   suggestions.push(`Channel watch: ${ch.name}. Adopt when: ${ch.watchSignal}`);
 }
 
+// Pillar mix: is the FORWARD schedule balanced across the three pillars, or a
+// single-pillar megaphone? Target ratios live in lanes.json meta.pillarMix; a
+// pillar meaningfully under its target is flagged so the schedule stops being PM-only.
+const pillarOf = (item) => {
+  for (const l of (item.lane ? [item.lane] : (item.lanes || []))) {
+    const p = laneByName[l]?.pillar;
+    if (p) return p;
+  }
+  return 'personal';
+};
+const mixTarget = read('lanes').meta?.pillarMix?.nowToSummit
+  || Object.fromEntries([...pillars, 'personal'].map((p) => [p, +(1 / (pillars.length + 1)).toFixed(3)]));
+const fwdItems = calendar.filter((i) => !i.fictional && i.date >= today);
+const mixCounts = {};
+for (const i of fwdItems) { const p = pillarOf(i); mixCounts[p] = (mixCounts[p] || 0) + 1; }
+const fwdTotal = fwdItems.length || 1;
+const pillarMix = { window: `forward from ${today} (${fwdItems.length} items)`, target: mixTarget, actual: {}, underweight: [] };
+for (const p of Object.keys(mixTarget)) {
+  const n = mixCounts[p] || 0;
+  pillarMix.actual[p] = { n, pct: +(n / fwdTotal).toFixed(3) };
+  if (pillarMix.actual[p].pct < mixTarget[p] * 0.7) pillarMix.underweight.push(p);
+}
+for (const p of pillarMix.underweight) {
+  suggestions.push(`Pillar mix off target: "${p}" is ${Math.round(pillarMix.actual[p].pct * 100)}% of the forward schedule vs a ${Math.round(mixTarget[p] * 100)}% target. Add ${p} content (see docs/growth-playbook.md).`);
+}
+
 const strategy = {
   meta: { note: 'Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts.' },
   values: {
     generatedAt: now.toISOString(), weekOf: today,
-    themeByPillar, channelPlan, gaps, suggestions,
+    themeByPillar, channelPlan, gaps, suggestions, pillarMix,
     ideasBank: { open: openAutoIdeas.length + added.length, addedThisRun: added.length, cap: MAX_OPEN },
     claudeNotes: read('strategy').values?.claudeNotes || [],
   },

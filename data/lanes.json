@@ -1,7 +1,22 @@
 {
   "meta": {
     "seededAt": "2026-07-16T08:17:00.072Z",
-    "note": "The authority taxonomy, tiered around the three pillars: Strait Up Growth (AI / commercial & marketing strategy / operational efficiency, Singapore & SEA), prediction markets, and iGaming & sports betting (the NEXT.io positioning; its events/media lanes are supporting context). core lanes are weighted up in scoring, Today and the neglect warnings. NOTE the brand boundary: iGaming/sportsbook vocabulary is fine in Stuart-personal and NEXT.io content and stays BANNED in NEXTPredict copy (linter-enforced)."
+    "note": "The authority taxonomy, tiered around the three pillars: Strait Up Growth (AI / commercial & marketing strategy / operational efficiency, Singapore & SEA), prediction markets, and iGaming & sports betting (the NEXT.io positioning; its events/media lanes are supporting context). core lanes are weighted up in scoring, Today and the neglect warnings. NOTE the brand boundary: iGaming/sportsbook vocabulary is fine in Stuart-personal and NEXT.io content and stays BANNED in NEXTPredict copy (linter-enforced).",
+    "pillarMix": {
+      "note": "Target forward-schedule mix. now->summit leans into the NEXTPredict catalyst; rebalance toward the Strait Up Growth consultancy engine after October. Consumed by scripts/ideas-bank.mjs; see docs/growth-playbook.md.",
+      "nowToSummit": {
+        "prediction-markets": 0.55,
+        "strait-up-growth": 0.25,
+        "igaming": 0.12,
+        "personal": 0.08
+      },
+      "postSummit": {
+        "strait-up-growth": 0.4,
+        "prediction-markets": 0.35,
+        "igaming": 0.15,
+        "personal": 0.1
+      }
+    }
   },
   "items": [
     {

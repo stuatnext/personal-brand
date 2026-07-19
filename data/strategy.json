@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-18T23:33:23.418Z",
-    "weekOf": "2026-07-18",
+    "generatedAt": "2026-07-19T12:20:56.898Z",
+    "weekOf": "2026-07-19",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-18",
-        "channel": "X",
-        "what": "World Cup third-place match",
-        "status": "reactive",
-        "source": "master schedule",
-        "verification": "Check volume and whether the observation is genuinely new."
-      },
-      {
-        "date": "2026-07-18",
-        "channel": "X",
-        "what": "Michael Burry calls prediction markets gambling",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Attribute every claim. Use the Business Insider report and locate Burry's original comments before quoting directly."
-      },
-      {
-        "date": "2026-07-18",
-        "channel": "X",
-        "what": "Kalshi opens markets on Minor League Baseball",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm live market pages, eligible jurisdictions, contract rules and the number of Triple-A events before publication."
-      },
       {
         "date": "2026-07-19",
         "channel": "X",
@@ -140,6 +116,14 @@
         "verification": "Use the official pilot announcement and rules. Confirm the 13-contract count, exact settlement sources and participant restrictions. AppliedXL provides intelligence; Kalshi remains responsible for market rules and final settlement."
       },
       {
+        "date": "2026-07-21",
+        "channel": "Stuart LinkedIn",
+        "what": "The revenue number nobody owns",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
         "date": "2026-07-22",
         "channel": "X",
         "what": "Post-tournament behaviour signal",
@@ -178,6 +162,14 @@
         "status": "ready",
         "source": "master schedule",
         "verification": "Attribute the 500-role figure and competition wording to Reuters and Entain. Keep tax increases and broader cost reduction in the causal frame."
+      },
+      {
+        "date": "2026-07-22",
+        "channel": "Stuart LinkedIn",
+        "what": "A CRM is a promise about how you sell. The database is the easy part.",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       },
       {
         "date": "2026-07-23",
@@ -234,6 +226,14 @@
         "status": "planned / invite-gated",
         "source": "master schedule",
         "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "X",
+        "what": "Discounting is a decision you make once and pay for forever",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       },
       {
         "date": "2026-07-24",
@@ -314,6 +314,30 @@
         "status": "ready",
         "source": "master schedule",
         "verification": "Use Polymarket’s current official restrictions page and primary regulator sources for each jurisdiction. Do not turn a platform geoblock into a legal conclusion without the underlying order."
+      },
+      {
+        "date": "2026-07-24",
+        "channel": "Stuart LinkedIn",
+        "what": "Where AI actually pays back in a commercial team, and where it just makes noise",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-07-25",
+        "channel": "X",
+        "what": "CFTC comment-letter observations",
+        "status": "reactive",
+        "source": "master schedule",
+        "verification": "Read the original submission and separate commenter claims from Commission views."
+      },
+      {
+        "date": "2026-07-25",
+        "channel": "X",
+        "what": "AGA moves into the Wisconsin federal fight",
+        "status": "unverified-watch",
+        "source": "master schedule",
+        "verification": "Do not publish until the intervention filing or court docket is obtained directly. The current source is a secondary litigation tracker."
       }
     ],
     "gaps": [
@@ -326,11 +350,46 @@
       "Verification gate due 2026-07-22: \"Post-tournament behaviour signal\" must not run without a primary source (Verify the signal and compare like-for-like periods.).",
       "Verification gate due 2026-07-23: \"North Carolina chooses taxation\" must not run without a primary source (Confirm signature, effective date and exact tax treatment.).",
       "Verification gate due 2026-07-24: \"Blockchain.com embeds Polymarket\" must not run without a primary source (Do not publish until Blockchain.com, Polymarket or a regulatory/product document confirms the integration, eligible markets and launch date.).",
-      "Verification gate due 2026-07-18: \"Michael Burry calls prediction markets gambling\" must not run without a primary source (Attribute every claim. Use the Business Insider report and locate Burry's original comments before quoting directly.).",
       "Verification gate due 2026-07-21: \"Daily Intel: professional interfaces, margin and market structure\" must not run without a primary source (Verify NFA/CFTC records; capture Kalshi Pro primary materials; tag Chris DeMuth Jr only against his published view.).",
+      "Verification gate due 2026-07-23: \"Daily Intel: the developer and infrastructure layer\" must not run without a primary source (Open and verify repositories, maintainers, supported platforms and recent activity before tagging.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
-      "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane."
+      "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
+      "Pillar mix off target: \"strait-up-growth\" is 8% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 4% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
+    "pillarMix": {
+      "window": "forward from 2026-07-19 (218 items)",
+      "target": {
+        "prediction-markets": 0.55,
+        "strait-up-growth": 0.25,
+        "igaming": 0.12,
+        "personal": 0.08
+      },
+      "actual": {
+        "prediction-markets": {
+          "n": 191,
+          "pct": 0.876
+        },
+        "strait-up-growth": {
+          "n": 18,
+          "pct": 0.083
+        },
+        "igaming": {
+          "n": 9,
+          "pct": 0.041
+        },
+        "personal": {
+          "n": 0,
+          "pct": 0
+        }
+      },
+      "underweight": [
+        "strait-up-growth",
+        "igaming",
+        "personal"
+      ]
+    },
     "ideasBank": {
       "open": 10,
       "addedThisRun": 0,
