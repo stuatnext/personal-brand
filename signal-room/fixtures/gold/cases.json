@@ -1,0 +1,360 @@
+{
+  "description": "Gold-standard evaluation set for Signal Room. Each case declares an input (a fixture file or inline text) and expectations over extraction, clustering, claims, actions, queueing, permissions and drafts. Provenance: real cases come from the 2026-07-16 LinkedIn capture (see docs/DATA-INVENTORY.md); synthetic cases are modelled on the intel corpus.",
+  "cases": [
+    {
+      "id": "li-extraction-coverage",
+      "category": "extraction completeness",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": { "minContentItems": 28, "maxContentItems": 32 }
+    },
+    {
+      "id": "li-nav-noise",
+      "category": "interface noise",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": { "item": { "textContains": "My Network", "itemType": "platform_navigation", "isNoise": true } }
+    },
+    {
+      "id": "li-goldman-original-post",
+      "category": "strong original-post opportunity",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "item": { "authorContains": "Tim Ryan", "textContains": "Goldman just barred", "itemType": "original_post" },
+        "claim": { "textContains": "barred", "statusOneOf": ["social_claim_only", "reported"] },
+        "action": { "marker": "Goldman just barred", "oneOf": ["linkedin_post", "comment", "quote_post"] },
+        "queued": { "marker": "Goldman just barred", "is": true }
+      }
+    },
+    {
+      "id": "li-dazn-sponsor-lead",
+      "category": "sponsor lead",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "item": { "authorContains": "Shay Segev", "textContains": "ADI PredictStreet" },
+        "claim": { "textContains": "DAZN and ADI Predictstreet", "statusOneOf": ["primary_source_found", "corroborated"] },
+        "action": { "marker": "exclusive global partnership", "oneOf": ["sponsor_lead"] },
+        "queued": { "marker": "exclusive global partnership", "is": true }
+      }
+    },
+    {
+      "id": "li-pollak-duplicate-news",
+      "category": "duplicate news story",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "clusterTogether": ["Base Creator Jesse Pollak Steps Back", "Social Momentum Lags"]
+      }
+    },
+    {
+      "id": "li-norway-regulatory",
+      "category": "important regulatory signal",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "item": { "authorContains": "Shravan", "textContains": "Norway" },
+        "action": { "marker": "Norway Classifies", "oneOf": ["linkedin_post", "comment", "investigate", "x_post"] }
+      }
+    },
+    {
+      "id": "li-runout-promo",
+      "category": "coordinated promotional campaign",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "action": { "marker": "RunOut", "oneOf": ["ignore", "monitor", "save"] },
+        "queued": { "marker": "RunOut", "is": false }
+      }
+    },
+    {
+      "id": "li-azure-digest-aggregation",
+      "category": "duplicate news story",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "action": { "marker": "This Week in Crypto", "oneOf": ["save", "ignore", "monitor"] },
+        "queued": { "marker": "This Week in Crypto", "is": false }
+      }
+    },
+    {
+      "id": "li-podcast-promo-aggregation",
+      "category": "viral but commercially irrelevant post",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "action": { "marker": "Dealflow Podcast", "oneOf": ["save", "ignore", "monitor"] },
+        "queued": { "marker": "Dealflow Podcast", "is": false }
+      }
+    },
+    {
+      "id": "li-zad-essay-no-queue",
+      "category": "viral but commercially irrelevant post",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "queued": { "marker": "Korean livestreamer", "is": false }
+      }
+    },
+    {
+      "id": "li-real-estate-offtopic",
+      "category": "useful post with no Stuart angle",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "action": { "marker": "Real Estate Development Over the Next Decade", "oneOf": ["ignore", "save", "monitor"] },
+        "queued": { "marker": "Real Estate Development Over the Next Decade", "is": false }
+      }
+    },
+    {
+      "id": "li-functional-safety-offtopic",
+      "category": "useful post with no Stuart angle",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "queued": { "marker": "Functional Safety Devices", "is": false }
+      }
+    },
+    {
+      "id": "li-digital-footprint-no-angle",
+      "category": "useful post with no Stuart angle",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "queued": { "marker": "digital footprint can sabotage", "is": false }
+      }
+    },
+    {
+      "id": "li-tribal-gaming-claim",
+      "category": "important regulatory signal",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "claim": { "textContains": "tribal gaming revenue", "statusOneOf": ["social_claim_only", "reported"] },
+        "action": { "marker": "Tribal Gaming Revenue", "oneOf": ["investigate", "linkedin_post", "comment", "monitor"] }
+      }
+    },
+    {
+      "id": "li-nifty-offtopic",
+      "category": "low-quality crypto promotion",
+      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "expect": {
+        "queued": { "marker": "Nifty Prediction", "is": false }
+      }
+    },
+    {
+      "id": "x-extraction-coverage",
+      "category": "extraction completeness",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": { "minContentItems": 7, "maxContentItems": 10 }
+    },
+    {
+      "id": "x-kalshi-quote-post",
+      "category": "strong quote-post opportunity",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "item": { "authorContains": "Marcus Delaney", "textContains": "congressional trading contracts", "itemType": "original_post" },
+        "action": { "marker": "congressional trading contracts", "oneOf": ["quote_post", "comment", "x_post"] },
+        "queued": { "marker": "congressional trading contracts", "is": true }
+      }
+    },
+    {
+      "id": "x-quote-structure",
+      "category": "strong comment opportunity",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "item": { "authorContains": "Sam Okafor", "textContains": "normalises the product", "itemType": "quote_post" }
+      }
+    },
+    {
+      "id": "x-robinhood-duplicates",
+      "category": "duplicate news story",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "clusterTogether": ["expanded its event contracts hub", "BREAKING: Robinhood expands"],
+        "duplicates": { "marker": "Robinhood expands", "minCount": 1 }
+      }
+    },
+    {
+      "id": "x-degen-promo",
+      "category": "low-quality crypto promotion",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "action": { "marker": "$PREDICT token presale", "oneOf": ["ignore"] },
+        "queued": { "marker": "$PREDICT token presale", "is": false }
+      }
+    },
+    {
+      "id": "x-profit-brag",
+      "category": "unverified screenshot",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "action": { "marker": "Turned $200 into $41,000", "oneOf": ["ignore", "monitor", "investigate"] },
+        "queued": { "marker": "Turned $200 into $41,000", "is": false }
+      }
+    },
+    {
+      "id": "x-priya-quiet-signal",
+      "category": "strong comment opportunity",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "claim": { "textContains": "advisory committee minutes", "statusOneOf": ["social_claim_only", "reported", "observed"] },
+        "action": { "marker": "advisory committee minutes", "oneOf": ["quote_post", "comment", "x_post", "linkedin_post", "investigate", "monitor"] }
+      }
+    },
+    {
+      "id": "x-robinhood-claim-hedged",
+      "category": "misleading liquidity claim",
+      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "expect": {
+        "claim": { "textContains": "12", "statusOneOf": ["social_claim_only", "reported"] },
+        "draft": { "marker": "BREAKING: Robinhood expands", "type": "x_post", "mustHedge": true }
+      }
+    },
+    {
+      "id": "news-extraction-jobs",
+      "category": "recruitment signal",
+      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "expect": {
+        "item": { "textContains": "Market Surveillance Analyst", "itemType": "job_listing" }
+      }
+    },
+    {
+      "id": "news-draftkings-compliance-job",
+      "category": "recruitment signal",
+      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "expect": {
+        "action": { "marker": "Head of Prediction Markets Compliance", "oneOf": ["investigate", "sales_handoff", "linkedin_post"] },
+        "queued": { "marker": "Head of Prediction Markets Compliance", "is": true }
+      }
+    },
+    {
+      "id": "news-verity-infrastructure",
+      "category": "market-infrastructure signal",
+      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "expect": {
+        "claim": { "textContains": "Series A", "statusOneOf": ["reported", "social_claim_only", "primary_source_found"] },
+        "action": { "marker": "Verity Markets raises", "oneOf": ["linkedin_post", "investigate", "comment", "x_post"] },
+        "queued": { "marker": "Verity Markets raises", "is": true }
+      }
+    },
+    {
+      "id": "news-cftc-advisory",
+      "category": "important regulatory signal",
+      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "expect": {
+        "action": { "marker": "advisory committee to review", "oneOf": ["linkedin_post", "comment", "investigate", "x_post", "monitor"] }
+      }
+    },
+    {
+      "id": "reddit-extraction",
+      "category": "extraction completeness",
+      "input": { "fixture": "reddit-thread.txt", "sourceType": "reddit" },
+      "expect": {
+        "item": { "authorContains": "u/quietsignal_9", "textContains": "Market Surveillance Analyst", "itemType": "original_post" },
+        "minContentItems": 4
+      }
+    },
+    {
+      "id": "reddit-comment-structure",
+      "category": "strong comment opportunity",
+      "input": { "fixture": "reddit-thread.txt", "sourceType": "reddit" },
+      "expect": {
+        "item": { "authorContains": "u/pm_liquidity_watch", "textContains": "cross-market manipulation", "itemType": "comment" }
+      }
+    },
+    {
+      "id": "reddit-moonshot-promo",
+      "category": "low-quality crypto promotion",
+      "input": { "fixture": "reddit-thread.txt", "sourceType": "reddit" },
+      "expect": {
+        "action": { "marker": "$ORACLE token", "oneOf": ["ignore"] },
+        "queued": { "marker": "$ORACLE token", "is": false }
+      }
+    },
+    {
+      "id": "call-single-cluster",
+      "category": "private information that must not enter public copy",
+      "input": { "fixture": "call-transcript.txt", "sourceType": "call_transcript" },
+      "expect": { "singleCluster": true }
+    },
+    {
+      "id": "call-private-routing",
+      "category": "private information that must not enter public copy",
+      "input": { "fixture": "call-transcript.txt", "sourceType": "call_transcript" },
+      "expect": {
+        "action": { "marker": "underinvesting in post-trade", "oneOf": ["sales_handoff", "save"] },
+        "permission": { "marker": "underinvesting in post-trade", "publishable": false }
+      }
+    },
+    {
+      "id": "call-leak-guard",
+      "category": "private information that must not enter public copy",
+      "input": { "fixture": "call-transcript.txt", "sourceType": "call_transcript" },
+      "expect": {
+        "draft": {
+          "marker": "underinvesting in post-trade",
+          "type": "linkedin_post",
+          "forbidden": ["85,000", "85000", "ninth of September", "Meridian"]
+        }
+      }
+    },
+    {
+      "id": "inline-speaker-lead",
+      "category": "speaker lead",
+      "input": {
+        "text": "Feed post\nView Jordan Mercer’s profile\nJordan Mercer\n • 2nd\nCategory analyst\n2h • \nFollow\nRebecca Kossnick is launching a research programme on prediction market settlement quality, according to her post this morning. Given she ran Meta's Forecast app, the prediction markets world should pay attention to where she takes this.\n\n3\n",
+        "sourceType": "linkedin"
+      },
+      "expect": {
+        "action": { "marker": "Rebecca Kossnick", "oneOf": ["speaker_lead", "dm", "investigate"] }
+      }
+    },
+    {
+      "id": "inline-dm-founder",
+      "category": "DM opportunity",
+      "input": {
+        "text": "Feed post\nView Elena Vasquez’s profile\nElena Vasquez\n • 2nd\nFounder at ClearBook Markets\n3h • \nFollow\nPrediction markets keep being analysed as venues when the harder question is market structure. Everyone prices listings; nobody prices the cost of settlement disputes, and the venues eating that cost quietly are making a liquidity decision, not a legal one. We learned this the hard way building our clearing layer at ClearBook Markets.\n\n41\n12 comments\n",
+        "sourceType": "linkedin"
+      },
+      "expect": {
+        "action": { "marker": "settlement disputes", "oneOf": ["dm", "comment", "speaker_lead"] },
+        "queued": { "marker": "settlement disputes", "is": true }
+      }
+    },
+    {
+      "id": "inline-media-lead",
+      "category": "strong comment opportunity",
+      "input": {
+        "text": "Feed post\nView Priit Kallas’s profile\nPriit Kallas\n • 3rd+\nMedia watcher\n5h • \nFollow\nVanity Fair is now covering prediction markets. Their feature this week treats event contracts as a culture story, not a finance story, which tells you where category perception is heading. Mainstream media coverage changes which brands feel safe sponsoring the space.\n\n18\n",
+        "sourceType": "linkedin"
+      },
+      "expect": {
+        "action": { "marker": "Vanity Fair", "oneOf": ["media_lead", "comment", "linkedin_post", "quote_post"] }
+      }
+    },
+    {
+      "id": "inline-misleading-liquidity",
+      "category": "misleading liquidity claim",
+      "input": {
+        "text": "TraderVol\n@tradervol_x\n·\n2h\nNew venue EventEdge did $40M volume in week one. Order book depth is insane, spreads basically zero. This is already the most liquid prediction market in the world. Free money if you market make there.\n9\n21\n180\n15K\nViews\n",
+        "sourceType": "x"
+      },
+      "expect": {
+        "claim": { "textContains": "$40M", "statusOneOf": ["social_claim_only"] },
+        "action": { "marker": "EventEdge", "oneOf": ["investigate", "ignore", "monitor"] },
+        "draft": { "marker": "EventEdge", "type": "x_post", "mustHedge": true }
+      }
+    },
+    {
+      "id": "inline-exact-duplicate",
+      "category": "duplicate news story",
+      "input": {
+        "text": "NewsBotA\n@newsbota\n·\n1h\nKalshi has filed with the CFTC to self-certify contracts on quarterly GDP revisions, expanding its economic indicators category beyond CPI and payrolls data.\n2\n4\n11\n1K\nViews\n\nNewsBotB\n@newsbotb\n·\n1h\nKalshi has filed with the CFTC to self-certify contracts on quarterly GDP revisions, expanding its economic indicators category beyond CPI and payrolls data.\n1\n2\n5\n800\nViews\n",
+        "sourceType": "x"
+      },
+      "expect": {
+        "duplicates": { "marker": "self-certify contracts", "minCount": 1 },
+        "clusterTogether": ["self-certify contracts", "self-certify contracts"]
+      }
+    },
+    {
+      "id": "inline-repetition-not-corroboration",
+      "category": "duplicate news story",
+      "input": {
+        "text": "AccountOne\n@accountone\n·\n1h\nPolymarket US has reportedly signed a market data distribution deal with a major terminal provider, per industry sources.\n5\n11\n90\n8K\nViews\n\nAccountTwo\n@accounttwo\n·\n1h\nPolymarket US has reportedly signed a market data distribution deal with a major terminal provider, per industry sources.\n2\n3\n25\n2K\nViews\n",
+        "sourceType": "x"
+      },
+      "expect": {
+        "claim": { "textContains": "market data distribution deal", "statusOneOf": ["social_claim_only", "reported"], "maxIndependent": 1 }
+      }
+    }
+  ]
+}

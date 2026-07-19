@@ -249,3 +249,14 @@ and all positioning language are **drafts**; the authority-lane taxonomy
 defaults; SGD is the default currency; "qualified conversation" needs
 Stuart's written definition (there's a seeded insight holding that
 question).
+
+## Signal Room (separate app: `signal-room/`)
+
+Signal Room is Stuart's private prediction-markets **editorial intelligence
+terminal**: paste a huge messy feed dump, get a five-item action queue with
+evidence, claims, verification states and voice-linted drafts. It is a
+self-contained Next.js + PostgreSQL (embedded PGlite) app living in
+`signal-room/` with its own `package.json`, tests and README — the
+zero-dependency engine in this repo is untouched and the two do not import
+from each other. See `signal-room/README.md` for setup and
+`signal-room/docs/DECISIONS.md` for the architectural reasoning.
