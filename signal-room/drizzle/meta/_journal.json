@@ -15,6 +15,13 @@
       "when": 1784468143625,
       "tag": "0001_market-snapshots",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784512935281,
+      "tag": "0002_horizon",
+      "breakpoints": true
     }
   ]
 }

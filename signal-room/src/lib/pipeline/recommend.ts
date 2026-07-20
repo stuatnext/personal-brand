@@ -369,9 +369,33 @@ export function buildOpportunities(
     const claimed = summariseClaims(f.claims, ["social_claim_only", "reported", "disputed"]);
     const author = f.primary.authorName ? `${f.primary.authorName} on ${f.primary.platform}` : f.primary.platform;
 
+    // Continuity-aware "what changed": on a continuing thread the honest
+    // answer is the delta since the story was last seen, not a restatement.
+    let whatChanged: string;
+    if (f.thread && f.thread.observationCount > 1) {
+      const lastSeen = f.thread.lastSeenBefore?.toISOString().slice(0, 10) ?? "the last observation";
+      whatChanged =
+        f.thread.newClaims.length > 0
+          ? capitalise(
+              `since ${lastSeen} (observation ${f.thread.observationCount} of this story): ` +
+                f.thread.newClaims
+                  .map((c) => `${hedge(c.status)}"${truncate(c.text, 150)}"`)
+                  .join(" · "),
+            )
+          : `No new development since ${lastSeen}; the story is repeating, not moving.`;
+    } else {
+      whatChanged = f.claims.length
+        ? capitalise(`${hedge(f.claims[0].status)}${truncate(f.claims[0].claimText, 200)}`)
+        : "No discrete factual change extracted; this cluster is conversation and colour.";
+    }
+
     drafts.push({
       clusterKey: f.cluster.key,
       title: f.cluster.canonicalTitle,
+      threadDay: f.thread?.observationCount,
+      threadNoDevelopment: Boolean(
+        f.thread && f.thread.observationCount > 1 && f.thread.newClaimCount === 0,
+      ),
       recommendedAction: choice.action,
       actionAlternatives: choice.rejected,
       rationale: choice.why,
@@ -380,11 +404,7 @@ export function buildOpportunities(
         : choice.why,
       stuartAngle: buildAngle(f, privateContextNotes.get(f.cluster.key) ?? []),
       whatHappened: `${capitalise(author)}: "${truncate(f.primary.originalText, 240)}"`,
-      whatChanged: f.claims.length
-        ? capitalise(
-            `${hedge(f.claims[0].status)}${truncate(f.claims[0].claimText, 200)}`,
-          )
-        : "No discrete factual change extracted; this cluster is conversation and colour.",
+      whatChanged,
       whatsNew: scores.find((s) => s.dimension === "newness")?.reason ?? "",
       confirmedSummary: confirmed || "Nothing in this paste is independently confirmed.",
       claimedSummary: claimed || "No unverified factual claims detected.",
@@ -417,9 +437,11 @@ export function buildOpportunities(
     if (queued >= maxQueue) break;
     if (d.recommendedAction === "ignore" || d.recommendedAction === "monitor") continue;
     // Commercial leads always compete for a slot; everything else must be
-    // on-lane. "save" recommendations keep material without spending a slot.
+    // on-lane. "save" recommendations keep material without spending a slot,
+    // and a continuing story with no new development never re-queues.
     if (!LEAD_ACTIONS.has(d.recommendedAction)) {
       if (d.recommendedAction === "save") continue;
+      if (d.threadNoDevelopment) continue;
       if (relevanceOf(d) < 30 && d.relationshipValue < 50) continue;
       if (d.overallScore < 30) continue; // prefer no action over weak content
     }

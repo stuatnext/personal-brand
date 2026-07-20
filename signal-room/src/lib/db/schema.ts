@@ -217,11 +217,13 @@ export type RunStats = {
   duplicateItems?: number;
   noiseItems?: number;
   storyClusters?: number;
+  storyThreadsContinued?: number;
   claimsNeedingVerification?: number;
   claimsTotal?: number;
   relevantPeople?: number;
   potentialLeads?: number;
   recommendations?: number;
+  thesisSuggestions?: number;
   warnings?: string[];
 };
 
@@ -350,11 +352,47 @@ export const entityMentions = pgTable(
   ],
 );
 
+// Persistent cross-day story threads. A thread accumulates the clusters
+// that tell the same underlying story across ingestions, so the system can
+// say "day three of this story, and here is what changed since yesterday".
+export type ThreadSignature = {
+  entities: string[]; // entity keys, e.g. "platform:Kalshi"
+  keywords: string[]; // significant words from titles/primaries
+  numbers: string[]; // distinctive figures
+  claimHashes: string[]; // normalised hashes of every claim seen on the thread
+};
+
+export type ThreadObservation = {
+  date: string; // YYYY-MM-DD
+  ingestionId: string;
+  clusterId: string;
+  itemCount: number;
+  newClaimCount: number;
+  headline: string;
+};
+
+export const storyThreads = pgTable(
+  "story_threads",
+  {
+    id: uuid("id").primaryKey(),
+    canonicalTitle: text("canonical_title").notNull(),
+    signatureJson: jsonb("signature_json").$type<ThreadSignature>().notNull(),
+    observationsJson: jsonb("observations_json").$type<ThreadObservation[]>().default([]),
+    observationCount: integer("observation_count").notNull().default(1),
+    firstObservedAt: timestamp("first_observed_at", { withTimezone: true }).notNull().defaultNow(),
+    lastObservedAt: timestamp("last_observed_at", { withTimezone: true }).notNull().defaultNow(),
+    currentStatus: text("current_status").notNull().default("active"), // active|dormant|archived
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("threads_last_observed_idx").on(t.lastObservedAt)],
+);
+
 export const storyClusters = pgTable(
   "story_clusters",
   {
     id: uuid("id").primaryKey(),
     ingestionId: uuid("ingestion_id").references(() => ingestions.id, { onDelete: "cascade" }),
+    threadId: uuid("thread_id").references(() => storyThreads.id, { onDelete: "set null" }),
     canonicalTitle: text("canonical_title").notNull(),
     workingSummary: text("working_summary"),
     topicsJson: jsonb("topics_json").$type<string[]>().default([]),
@@ -363,7 +401,7 @@ export const storyClusters = pgTable(
     currentStatus: text("current_status").notNull().default("active"), // active|stale|archived
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [index("clusters_ingestion_idx").on(t.ingestionId)],
+  (t) => [index("clusters_ingestion_idx").on(t.ingestionId), index("clusters_thread_idx").on(t.threadId)],
 );
 
 export const clusterItems = pgTable(
@@ -630,6 +668,73 @@ export const marketSnapshots = pgTable(
   (t) => [
     index("snapshots_market_idx").on(t.venue, t.marketId),
     index("snapshots_captured_idx").on(t.capturedAt),
+  ],
+);
+
+/** Per-collector persisted cursors (e.g. last published timestamp per
+ *  feed) so repeated collection runs ingest only what is new. */
+export const collectorCursors = pgTable(
+  "collector_cursors",
+  {
+    id: uuid("id").primaryKey(),
+    collector: text("collector").notNull(),
+    key: text("key").notNull(), // e.g. the feed URL or channel id
+    value: text("value").notNull(), // collector-defined (ISO timestamp, guid…)
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [uniqueIndex("cursors_collector_key_idx").on(t.collector, t.key)],
+);
+
+// --- Thesis tracking (Oracle layer v1) --------------------------------------
+// A thesis is a position Stuart is holding about the category. Evidence
+// rows link claims to theses with a stance; the pipeline auto-suggests
+// links, Stuart confirms or rejects them. Confidence is Stuart's number,
+// changed by hand; the system only shows the evidence tally.
+
+export const THESIS_STATUSES = [
+  "open",
+  "strengthening",
+  "weakening",
+  "resolved_true",
+  "resolved_false",
+  "parked",
+] as const;
+
+export const theses = pgTable(
+  "theses",
+  {
+    id: uuid("id").primaryKey(),
+    statement: text("statement").notNull(),
+    rationale: text("rationale"),
+    status: text("status").notNull().default("open"),
+    confidence: real("confidence").notNull().default(50), // Stuart's own number, 0..100
+    resolutionCriteria: text("resolution_criteria"),
+    whatWouldChange: text("what_would_change"),
+    tagsJson: jsonb("tags_json").$type<string[]>().default([]),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("theses_status_idx").on(t.status)],
+);
+
+export const thesisEvidence = pgTable(
+  "thesis_evidence",
+  {
+    id: uuid("id").primaryKey(),
+    thesisId: uuid("thesis_id")
+      .notNull()
+      .references(() => theses.id, { onDelete: "cascade" }),
+    claimId: uuid("claim_id")
+      .notNull()
+      .references(() => claims.id, { onDelete: "cascade" }),
+    stance: text("stance").notNull().default("supports"), // supports|counters|context
+    state: text("state").notNull().default("suggested"), // suggested|confirmed|rejected
+    note: text("note"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("thesis_evidence_thesis_idx").on(t.thesisId),
+    uniqueIndex("thesis_evidence_pair_idx").on(t.thesisId, t.claimId),
   ],
 );
 

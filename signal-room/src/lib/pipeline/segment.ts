@@ -524,7 +524,7 @@ function segmentReddit(raw: string, lines: Line[]): ExtractedItem[] {
 
 // --- News / jobs ---------------------------------------------------------------
 
-const NEWS_TIME = /^\d+\s*(minutes?|hours?|days?|weeks?)\s+ago$/i;
+const NEWS_TIME = /^(\d+\s*(minutes?|hours?|days?|weeks?)\s+ago|\d{4}-\d{2}-\d{2})$/i;
 
 function segmentNewsJobs(raw: string, lines: Line[], platform: "news" | "jobs"): ExtractedItem[] {
   // Blocks separated by blank lines: headline, source, time / job title,
@@ -657,6 +657,54 @@ function segmentTranscript(raw: string, lines: Line[]): ExtractedItem[] {
     }
   }
   return items;
+}
+
+// --- YouTube digests (from the youtube collector) --------------------------
+
+const YT_LINE = /^New video from (.+?): "(.+)"$/;
+
+function segmentYoutube(raw: string, lines: Line[]): ExtractedItem[] {
+  const items: ExtractedItem[] = [];
+  let start: number | null = null;
+  const flush = (from: number, to: number) => {
+    const text = lines
+      .slice(from, to)
+      .map((l) => l.text)
+      .join("\n")
+      .trim();
+    if (!text) return;
+    const m = lines[from].text.trim().match(YT_LINE);
+    const dateLine = lines
+      .slice(from, to)
+      .map((l) => l.text.trim())
+      .find((t) => /^\d{4}-\d{2}-\d{2}$/.test(t));
+    // descriptions carry stray shortlinks; the watch URL is the source
+    const urls = extractUrls(text);
+    items.push({
+      tempId: nextTempId(),
+      platform: "youtube",
+      itemType: m ? "video" : "note",
+      authorName: m ? m[1] : undefined,
+      originalText: text,
+      publishedAtText: dateLine,
+      sourceUrl: urls.find((u) => /youtube\.com|youtu\.be/i.test(u)) ?? urls[0],
+      engagement: {},
+      rawStartOffset: lines[from].start,
+      rawEndOffset: lines[to - 1].end,
+      extractionConfidence: m ? 0.92 : 0.6,
+      isNoise: false,
+      topics: extractHashtags(text),
+    });
+  };
+  for (let i = 0; i <= lines.length; i++) {
+    const blank = i === lines.length || lines[i].text.trim() === "";
+    if (!blank && start === null) start = i;
+    if (blank && start !== null) {
+      flush(start, i);
+      start = null;
+    }
+  }
+  return items.length ? items : segmentGeneric(raw, lines, "youtube");
 }
 
 // --- Market-site digests (from the markets collector) ---------------------
@@ -825,6 +873,7 @@ export function segment(raw: string, declared: DeclaredSource): ExtractedItem[] 
     case "market_site":
       return segmentMarketSite(raw, lines);
     case "youtube":
+      return segmentYoutube(raw, lines);
     case "mixed":
     default:
       return segmentGeneric(raw, lines, effective === "mixed" ? "unknown" : effective);

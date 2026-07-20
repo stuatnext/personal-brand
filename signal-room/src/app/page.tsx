@@ -38,6 +38,7 @@ export default async function TodayPage() {
                 <div className="mb-1.5 flex flex-wrap items-center gap-2">
                   <ActionTag action={r.action} />
                   <span className="tag">{r.platform}</span>
+                  {r.threadDay ? <span className="tag tag-info">continuing · obs {r.threadDay}</span> : null}
                   <span className="k-label">score {r.overallScore}</span>
                 </div>
                 <h2 className="text-[15.5px] font-semibold leading-snug tracking-tight group-hover:text-[--color-signal]">

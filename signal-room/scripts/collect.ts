@@ -13,6 +13,7 @@
 import { eq } from "drizzle-orm";
 import { marketCollector } from "../src/lib/collectors/markets";
 import { redditCollector, xCollector } from "../src/lib/collectors/social";
+import { rssCollector, youtubeCollector } from "../src/lib/collectors/feeds";
 import type { Collector } from "../src/lib/collectors/types";
 import { createIngestion } from "../src/lib/ingest";
 import { db, ensureMigrated } from "../src/lib/db/client";
@@ -29,7 +30,13 @@ async function waitForRun(runId: string, timeoutMs = 180_000): Promise<string> {
   }
 }
 
-const REGISTRY: Collector[] = [marketCollector(), redditCollector(), xCollector()];
+const REGISTRY: Collector[] = [
+  marketCollector(),
+  redditCollector(),
+  xCollector(),
+  youtubeCollector(),
+  rssCollector(),
+];
 
 async function main() {
   const args = process.argv.slice(2);

@@ -4,6 +4,7 @@ import { z } from "zod";
 import { db } from "@/lib/db/client";
 import { auditLog, feedback, opportunities, recommendations, FEEDBACK_DECISIONS } from "@/lib/db/schema";
 import { uid } from "@/lib/ids";
+import { recordEngagement } from "@/lib/graph";
 
 const bodySchema = z.object({
   decision: z.enum(FEEDBACK_DECISIONS),
@@ -58,6 +59,8 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
       scopeId: id,
       detailJson: { feedbackId, reason: body.reason },
     });
+    // graph: engagement + prospect edges accumulate from Use decisions
+    await recordEngagement(id, body.decision);
     return NextResponse.json({ ok: true, feedbackId });
   } catch (err) {
     return NextResponse.json({ error: err instanceof Error ? err.message : String(err) }, { status: 400 });

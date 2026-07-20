@@ -48,11 +48,13 @@ npm run dev          # dev server on :4180
 npm run build        # production build
 npm run typecheck    # tsc --noEmit
 npm run lint         # eslint over src, scripts, tests, e2e
-npm test             # 67 vitest checks incl. hermetic DB round-trip + eval gates
+npm test             # 91 vitest checks incl. hermetic DB round-trips + eval gates
 npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
-npm run collect      # run collectors (markets/reddit/x); --list, --dry-run
+npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
 npm run learn        # nudge score weights from Use/Wrong-angle feedback; --dry-run
+npm run briefing     # terminal "since you last sat down"; --mark sets the marker
+npm run shakedown    # live-provider draft evaluation (needs ANTHROPIC_API_KEY)
 npm run db:migrate   # apply migrations (PGlite or DATABASE_URL)
 npm run db:seed      # demo data (idempotent; skips existing titles)
 npm run db:reset     # wipe the LOCAL embedded database (refuses on DATABASE_URL)
@@ -90,6 +92,61 @@ rejected opportunities, and nudges that dimension's weight (bounded to
 Changes are audit-logged and visible in Settings; the next processing run
 uses them. Scores stay opinions; the weights get opinionated in Stuart's
 direction.
+
+Two more collectors ride the same contract: **youtube** (keyless channel
+RSS, set `SIGNAL_ROOM_YOUTUBE_CHANNELS`) and **feeds** (any RSS 2.0/Atom
+feed, set `SIGNAL_ROOM_FEEDS` — the CFTC press-release feed and The Block
+both verified live). Both keep a persisted cursor per feed so only new
+items ingest.
+
+## Story continuity and theses
+
+**Stories** (`/stories`): every processed cluster joins a persistent story
+thread. Matching is entity agreement plus a wording/figure echo, with
+keywords keyed on each cluster's *claims* (the factual skeleton), so the
+same story told by different authors on different days still links up.
+A continuing story's opportunity reports the claim-level delta ("Since
+2026-07-20, observation 3: …"); a story that reappears with **no new
+claims** is demoted out of the queue as no-development. Today cards carry
+a `continuing · obs N` badge, and the opportunity page shows the story so
+far. Digests, off-topic colour and private ingestions don't thread.
+Processing runs are serialised (one at a time) so thread bookkeeping can
+never interleave.
+
+**Briefing** (`/briefing`, or `npm run briefing`): "since you last sat
+down" — stories that moved (with their claim-level deltas), first
+sightings, thesis movement (new suggestions, confirmations, confidence
+moves with reasons), the live queue, open commercial leads and stories
+that have gone quiet. The marker is explicit: press *Mark caught up* (or
+`--mark`) and the next briefing measures from there.
+
+**Relationship graph**: pressing **Use it** builds the graph. Authors of
+material Stuart acted on gain a `stuart_engaged_with` edge (strength grows
+with repetition); acting on a lead records the prospect edge
+(speaker/sponsor/media/sales). Those edges feed scoring: when someone
+Stuart has engaged with before reappears in fresh intelligence, the story's
+relationship value rises with a visible reason. Each person/company now has
+a profile page (`/people/[id]`): recent material, edges, works-at, links
+into the opportunities they carried.
+
+**Live-provider shakedown** (`npm run shakedown`, needs
+`ANTHROPIC_API_KEY`): the first structured Claude run — generates live
+drafts for the top queued opportunities, checks every one against the
+voice linter and the permission scanner, measures latency and hedging, and
+compares sizes against the mock skeletons; writes `shakedown-report.json`
+and exits non-zero if any draft is dirty. The Anthropic client now carries
+a 90s timeout and retries transient failures (429/5xx/network) with
+backoff, and its parsing/retry/corrective-pass behaviour is unit-tested
+against a stubbed API.
+
+**Theses** (`/theses`): first-class positions with evidence. The pipeline
+auto-suggests claim links to open theses by keyword match (stance
+`context`, state `suggested`); Stuart triages each suggestion to
+supports/counters/context or rejects it, moves the confidence slider
+himself (audit-logged with a reason), and records what would change the
+view. The tally counts confirmed evidence only — the system deliberately
+does not auto-update confidence. Opportunity pages cross-link the theses
+their claims touch.
 
 ## The workflow
 
@@ -219,9 +276,10 @@ process → reprocess idempotency → private-draft safety → feedback).
 
 ## Screens
 
-Screenshots in `docs/screenshots/` (captured by `npm run e2e`):
-Today (01), Paste (02), Intelligence (03), Processing report (04),
-Opportunity detail (05), Draft editor (06), Archive (07), People (08).
+Screenshots in `docs/screenshots/`: Today (01), Paste (02), Intelligence
+(03), Processing report (04), Opportunity detail (05), Draft editor (06),
+Archive (07), People (08), Stories (09), Thesis detail (10), Story-so-far
+panel on a continuing opportunity (11), Briefing (12).
 
 ## What is mocked / local-only
 
@@ -245,26 +303,28 @@ Opportunity detail (05), Draft editor (06), Archive (07), People (08).
   them; they are demoted to `save` as aggregations.
 - Reprocessing rebuilds derived rows; feedback attached to that ingestion's
   opportunities is removed with them.
-- Cross-ingestion story continuity (yesterday's cluster ↔ today's) is
-  newness-only (dedupe-hash lookback); the full temporal graph is future
-  work.
+- Story threads match on entities + claim-keyword echoes within a 14-day
+  window; private ingestions deliberately don't thread (v1), and a story
+  retold with entirely different entities won't link.
+- PGlite is single-process: don't run `db:reset`/`db:seed`/`collect`
+  while `npm run dev` is up (or restart the server afterwards) — a second
+  process sees diverged state.
 
 ## Next three integrations (recommended order)
 
-The original next-three (X/Reddit collectors, Kalshi/Polymarket market
-data, feedback weight learning) are now built — see "Automated collection
-and learning" above. The next horizon:
+Three horizons are now built (collectors/market-data/learning/OCR;
+continuity/feeds/theses; briefing/graph/shakedown-harness). What comes
+after:
 
-1. **Cross-ingestion story continuity** — persistent story threads across
-   days (yesterday's Goldman cluster ↔ today's follow-up), turning newness
-   into a real temporal graph and enabling "what changed since I last
-   looked" briefings.
-2. **YouTube + newsletter/RSS collectors** — same collector contract;
-   transcripts and newsletters are where the category's long-form arguments
-   live.
-3. **Thesis tracking (the Oracle layer)** — first-class theses with
-   supporting/counter-evidence, confidence updates and what-would-change-
-   the-view, fed by the claims layer that already exists.
+1. **Run the live shakedown** — set `ANTHROPIC_API_KEY`, run
+   `npm run shakedown`, and tune `src/lib/ai/prompts.ts` against the
+   report. The harness exists; the tokens have not been spent yet.
+2. **Introductions and outreach states on the graph** — who introduced
+   whom, DM/email sent/replied states on prospect edges, and a pipeline
+   view over speaker/sponsor prospects.
+3. **Cross-venue market intelligence** — equivalent-market detection
+   across Kalshi/Polymarket snapshots (same event, both venues) surfacing
+   price/liquidity divergence as editorial signal.
 
 ## Product decisions
 

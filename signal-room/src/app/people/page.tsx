@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { db, queryRaw } from "@/lib/db/client";
 import { EmptyState, PageHeader } from "@/components/ui";
 
@@ -48,7 +49,11 @@ export default async function PeoplePage() {
               const flags = (r.flags_json ?? {}) as { prospectType?: string; category?: string };
               return (
                 <tr key={r.id} className="border-b hairline transition-colors hover:bg-[--color-panel-2]">
-                  <td className="px-3 py-2 text-[13px]">{r.canonical_name}</td>
+                  <td className="px-3 py-2 text-[13px]">
+                    <Link href={`/people/${r.id}`} className="hover:text-[--color-signal]">
+                      {r.canonical_name}
+                    </Link>
+                  </td>
                   <td className="px-3 py-2">
                     <span className="tag">
                       {r.kind}

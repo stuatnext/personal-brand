@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw"/>
+ <id>yt:channel:_x5XG1OV2P6uZZ5FSM9Ttw</id>
+ <yt:channelId>_x5XG1OV2P6uZZ5FSM9Ttw</yt:channelId>
+ <title>Google for Developers</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw"/>
+ <author>
+  <name>Google for Developers</name>
+  <uri>https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw</uri>
+ </author>
+ <published>2007-08-23T00:34:43+00:00</published>
+ <entry>
+  <id>yt:video:iOK1-b_9Dlg</id>
+  <yt:videoId>iOK1-b_9Dlg</yt:videoId>
+  <yt:channelId>UC_x5XG1OV2P6uZZ5FSM9Ttw</yt:channelId>
+  <title>Get started with the Interactions API</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=iOK1-b_9Dlg"/>
+  <author>
+   <name>Google for Developers</name>
+   <uri>https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw</uri>
+  </author>
+  <published>2026-07-17T23:00:34+00:00</published>
+  <updated>2026-07-17T23:23:38+00:00</updated>
+  <media:group>
+   <media:title>Get started with the Interactions API</media:title>
+   <media:content url="https://www.youtube.com/v/iOK1-b_9Dlg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/iOK1-b_9Dlg/hqdefault.jpg" width="480" height="360"/>
+   <media:description>The Interactions API has reached general availability and is now our primary API for interacting with Gemini models and agents.  Whether you're calling a model or running an agent, the Interactions API gets you there in a few lines of code.  
+
+Start building with the new API now → https://goo.gle/4fjN2Jg 
+
+Subscribe to Google for Developers → https://goo.gle/developers   
+
+Speaker: Thor Schaeff 
+Products Mentioned:  Google AI, Gemini</media:description>
+   <media:community>
+    <media:starRating count="149" average="5.00" min="1" max="5"/>
+    <media:statistics views="3213"/>
+   </media:community>
+  </media:group>
+ </entry><entry>
+  <id>yt:video:8I7wr2hYFec</id>
+  <yt:videoId>8I7wr2hYFec</yt:videoId>
+  <yt:channelId>UC_x5XG1OV2P6uZZ5FSM9Ttw</yt:channelId>
+  <title>Antigravity Arcade: From prompt to game in minutes</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=8I7wr2hYFec"/>
+  <author>
+   <name>Google for Developers</name>
+   <uri>https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw</uri>
+  </author>
+  <published>2026-07-17T16:00:10+00:00</published>
+  <updated>2026-07-17T16:11:19+00:00</updated>
+  <media:group>
+   <media:title>Antigravity Arcade: From prompt to game in minutes</media:title>
+   <media:content url="https://www.youtube.com/v/8I7wr2hYFec?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/8I7wr2hYFec/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Explore how Antigravity and AI skills can generate web games in minutes with best practices skills and deployment workflows to an online games portal powered by Firebase and Google Cloud.
+
+Subscribe to Google for Developers → https://goo.gle/developers  
+
+Speaker: Tom Greenaway 
+Products Mentioned:  Google AI</media:description>
+   <media:community>
+    <media:starRating count="149" average="5.00" min="1" max="5"/>
+    <media:statistics views="4716"/>
+   </media:community>
+  </media:group>
+ </entry></feed>

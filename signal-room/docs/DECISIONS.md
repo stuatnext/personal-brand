@@ -153,7 +153,55 @@ error event (not just a rejection) on garbage input — without the guard a
 bad upload could take the server process down. OCR failure of any kind
 falls back to the original stored-for-manual-analysis behaviour.
 
-## 14. Corpus use
+## 14. Story identity is entities plus claims, and processing is serial
+
+Cross-day thread matching keys on entity agreement plus a wording/figure
+echo, with keywords built from each cluster's **claim texts** rather than
+prose alone: the factual skeleton survives author-voice changes (Tim's
+banking commentary and Priya's analyst summary of the same Goldman story
+share claims, not style). "New on the thread" is decided by claim-hash
+difference, so the system can honestly say which claims moved. Processing
+runs execute serially (a global chain): two concurrent runs could both
+match a thread before either records its observation, and live testing
+produced exactly that interleaving before serialisation. Reprocessing an
+ingestion unwinds its thread observations first, so a rerun never counts
+itself as a second sighting.
+
+## 15. Theses count evidence; they do not forecast
+
+Auto-suggested evidence arrives stance-`context` and state-`suggested`,
+because guessing supports/counters from keywords would put words in the
+thesis. Stuart triages every suggestion; confidence is a hand-set number
+whose every move is audit-logged with a reason; the tally counts confirmed
+evidence only. Scenario analysis, source track records and probabilistic
+forecasts stay out of v1 on purpose.
+
+## 16. The briefing marker is explicit, not inferred
+
+"Since you last sat down" is measured from a caught-up marker Stuart sets
+deliberately (button or `--mark`), persisted as a collector cursor. Login
+times and page views were rejected as signals: glancing at the queue on a
+phone is not catching up, and a wrong automatic marker silently swallows
+developments.
+
+## 17. The graph is built from actions, not mentions
+
+Relationship edges accumulate only from what Stuart DOES: using an
+opportunity records engagement with its authors; acting on a lead records
+the prospect edge. Mention co-occurrence deliberately does not create
+edges (everyone in a category feed co-occurs with everyone). Engagement
+strength then feeds relationship scoring with a visible reason, so the
+loop is: act → edge → future stories involving that person rank higher.
+
+## 18. The live provider earns trust through the shakedown, not on faith
+
+The Anthropic path ships hardened (timeout, retry with backoff on
+transient failures, corrective voice pass) and stub-tested, but stays
+labelled untested-live until `npm run shakedown` runs with a real key and
+reports every draft clean against the voice linter and permission scanner.
+The first live run is a one-command evaluation, not an ad-hoc experiment.
+
+## 19. Corpus use
 
 The `/mnt/data` ZIPs named in the brief were not present in this
 workspace. The same material already lives in the sibling repo

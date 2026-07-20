@@ -4,40 +4,81 @@ import { lintVoice } from "@/lib/voice/lint";
 
 // Real provider. Only active when ANTHROPIC_API_KEY is set. The editorial
 // model (strongest) handles judgement and drafting; the extraction model
-// slot exists for cheap mechanical refinement.
+// slot exists for cheap mechanical refinement. Calls carry a hard timeout
+// and retry transient failures (429/5xx/network) with backoff, because the
+// first live failure mode of any provider integration is a hung request.
 
 const API_URL = "https://api.anthropic.com/v1/messages";
+const TIMEOUT_MS = 90_000;
+const MAX_ATTEMPTS = 3;
 
-async function callClaude(opts: {
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+export async function callClaude(opts: {
   model: string;
   system: string;
   user: string;
   maxTokens?: number;
 }): Promise<string> {
-  const res = await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": process.env.ANTHROPIC_API_KEY ?? "",
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: opts.model,
-      max_tokens: opts.maxTokens ?? 1200,
-      system: opts.system,
-      messages: [{ role: "user", content: opts.user }],
-    }),
-  });
-  if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    throw new Error(`Anthropic API ${res.status}: ${body.slice(0, 300)}`);
+  let lastError: Error | null = null;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+    try {
+      const res = await fetch(API_URL, {
+        method: "POST",
+        signal: controller.signal,
+        headers: {
+          "content-type": "application/json",
+          "x-api-key": process.env.ANTHROPIC_API_KEY ?? "",
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({
+          model: opts.model,
+          max_tokens: opts.maxTokens ?? 1200,
+          system: opts.system,
+          messages: [{ role: "user", content: opts.user }],
+        }),
+      });
+      if (res.status === 429 || res.status >= 500) {
+        const body = await res.text().catch(() => "");
+        lastError = new Error(`Anthropic API ${res.status}: ${body.slice(0, 200)}`);
+        if (attempt < MAX_ATTEMPTS) {
+          const retryAfter = Number(res.headers.get("retry-after")) || attempt * 2;
+          await sleep(retryAfter * 1000);
+          continue;
+        }
+        throw lastError;
+      }
+      if (!res.ok) {
+        const body = await res.text().catch(() => "");
+        throw new Error(`Anthropic API ${res.status}: ${body.slice(0, 300)}`);
+      }
+      const data = (await res.json()) as { content: { type: string; text?: string }[] };
+      return data.content
+        .filter((c) => c.type === "text")
+        .map((c) => c.text ?? "")
+        .join("\n")
+        .trim();
+    } catch (err) {
+      if (err instanceof Error && err.name === "AbortError") {
+        lastError = new Error(`Anthropic API timed out after ${TIMEOUT_MS / 1000}s`);
+      } else if (err instanceof Error) {
+        lastError = err;
+      } else {
+        lastError = new Error(String(err));
+      }
+      // non-HTTP failures (network, timeout) retry too
+      if (attempt < MAX_ATTEMPTS && !/API 4\d\d/.test(lastError.message)) {
+        await sleep(attempt * 2000);
+        continue;
+      }
+      throw lastError;
+    } finally {
+      clearTimeout(timer);
+    }
   }
-  const data = (await res.json()) as { content: { type: string; text?: string }[] };
-  return data.content
-    .filter((c) => c.type === "text")
-    .map((c) => c.text ?? "")
-    .join("\n")
-    .trim();
+  throw lastError ?? new Error("Anthropic call failed");
 }
 
 export class AnthropicProvider implements LLMProvider {
