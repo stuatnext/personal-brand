@@ -48,7 +48,7 @@ npm run dev          # dev server on :4180
 npm run build        # production build
 npm run typecheck    # tsc --noEmit
 npm run lint         # eslint over src, scripts, tests, e2e
-npm test             # 67 vitest checks incl. hermetic DB round-trip + eval gates
+npm test             # 91 vitest checks incl. hermetic DB round-trips + eval gates
 npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
 npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
