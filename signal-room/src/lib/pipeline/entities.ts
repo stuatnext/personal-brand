@@ -53,16 +53,35 @@ export function extractEntities(items: ExtractedItem[]): EntityMentionDraft[] {
 
     // 1. Authors are entities.
     if (item.authorName && item.authorName.length >= 3 && item.authorName.length <= 60) {
-      const isCompany = item.itemType === "company_announcement";
-      mentions.push({
-        entityKey: keyFor(isCompany ? "company" : "person", item.authorName),
-        kind: isCompany ? "company" : "person",
-        canonicalName: item.authorName,
-        mentionText: item.authorName,
-        role: "author",
-        itemTempId: item.tempId,
-        confidence: 0.85,
-      });
+      if (item.itemType === "market_listing") {
+        // Market digests are attributed to the venue(s) whose API produced
+        // them; cross-venue lines carry "Kalshi vs Polymarket". Venues are
+        // platform entities, never people.
+        for (const part of item.authorName.split(/\s+(?:vs|and|\+)\s+/i)) {
+          const venue = part.trim();
+          if (venue.length < 3 || venue.length > 40) continue;
+          mentions.push({
+            entityKey: keyFor("platform", venue),
+            kind: "platform",
+            canonicalName: venue,
+            mentionText: item.authorName,
+            role: "author",
+            itemTempId: item.tempId,
+            confidence: 0.85,
+          });
+        }
+      } else {
+        const isCompany = item.itemType === "company_announcement";
+        mentions.push({
+          entityKey: keyFor(isCompany ? "company" : "person", item.authorName),
+          kind: isCompany ? "company" : "person",
+          canonicalName: item.authorName,
+          mentionText: item.authorName,
+          role: "author",
+          itemTempId: item.tempId,
+          confidence: 0.85,
+        });
+      }
       // Author headline often names their organisation ("Commercial Director,
       // NEXT.io" / "GenCap | Virtuals Protocol").
       if (item.authorMeta) {

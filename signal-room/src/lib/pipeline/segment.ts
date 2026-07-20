@@ -709,7 +709,10 @@ function segmentYoutube(raw: string, lines: Line[]): ExtractedItem[] {
 
 // --- Market-site digests (from the markets collector) ---------------------
 
-const MARKET_LINE = /^(New listing|Status change|Volume move) on ([A-Z][\w.-]*(?: [A-Z][\w.-]*)?):\s*(.+)$/;
+// Venue part tolerates one- or two-word venue names and the cross-venue
+// label "Kalshi vs Polymarket" (also "X and Y") from the markets collector.
+const MARKET_LINE =
+  /^(New listing|Status change|Volume move|Cross-venue divergence|Cross-venue liquidity) on ([A-Z][\w.-]*(?: (?:vs |and )?[A-Z][\w.-]*){0,2}):\s*(.+)$/;
 
 function segmentMarketSite(raw: string, lines: Line[]): ExtractedItem[] {
   const items: ExtractedItem[] = [];
