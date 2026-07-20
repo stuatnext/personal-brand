@@ -111,7 +111,49 @@ never five variations of one story. "No action" is a first-class outcome:
 weak clusters produce monitor/ignore entries in the archive rather than
 padding the queue.
 
-## 10. Corpus use
+## 10. Collectors create ingestions, nothing else
+
+A collector (markets/reddit/x) never writes pipeline rows. It formats what
+it gathered into segmenter-native text and hands it to the same
+`createIngestion` path as a manual paste, so raw preservation, permission
+defaults, extraction, claims and scoring behave identically for automated
+and manual intel. The whole automation layer is one seam (`Collector`
+interface + `scripts/collect.ts`).
+
+## 11. Market "newness" is the market's own open time, not snapshot absence
+
+Venues hold thousands of open markets and a page-limited API fetch drifts
+between calls, so "not in the previous snapshot" proves nothing (a
+page-drift artefact produced 200 false "new listings" in live testing).
+New = `open_time` after the previous collection; absence is only the
+fallback where a venue reports no open time. Kalshi's auto-generated
+parlay/combination markets (`KXMVE…`, "yes X,yes Y" titles) are excluded
+from digests as venue plumbing. A venue's API is treated as a primary
+source for its own listings — claims from market digests land as
+`primary_source_found`, not social rumour.
+
+## 12. Weight learning is bounded, slow and audit-logged
+
+`npm run learn` measures how each score dimension separated Stuart's
+accepted (Use/Save) from rejected (Ignore/Wrong-angle) opportunities and
+nudges weights multiplicatively: ±15% of the dimension's weight per pass at
+full signal, clamped to [0.2, 2.5], no-op below 3 accepted + 3 rejected
+decisions, inverted dimensions handled on their effective (flipped) values.
+Every applied change is written to the audit log. Deliberately conservative:
+the queue should drift toward Stuart's judgement, never lurch.
+
+## 13. OCR is best-effort and structurally distrusted
+
+Screenshots are OCR'd with tesseract.js (language pack cached under the
+data dir; first use needs network once). Recognised text enters the paste
+as a clearly-marked "SCREENSHOT (OCR, unverified capture)" section, so its
+claims land as social claims, never facts. Magic-byte validation runs
+before the worker because tesseract's worker thread emits an unhandled
+error event (not just a rejection) on garbage input — without the guard a
+bad upload could take the server process down. OCR failure of any kind
+falls back to the original stored-for-manual-analysis behaviour.
+
+## 14. Corpus use
 
 The `/mnt/data` ZIPs named in the brief were not present in this
 workspace. The same material already lives in the sibling repo

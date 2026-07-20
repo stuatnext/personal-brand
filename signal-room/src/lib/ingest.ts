@@ -7,6 +7,9 @@ import { ingestions, ingestionFiles, users, auditLog } from "@/lib/db/schema";
 import { uid, sha256 } from "@/lib/ids";
 import { defaultPermissionForSource } from "@/lib/permissions";
 import { enqueueProcessing } from "@/lib/pipeline/run";
+import { ocrImage } from "@/lib/ocr";
+
+const MAX_OCR_BYTES = 8 * 1024 * 1024;
 
 export const MAX_INPUT_CHARS = Number(process.env.SIGNAL_ROOM_MAX_INPUT_CHARS || 2_000_000);
 
@@ -115,13 +118,25 @@ export async function createIngestion(input: CreateIngestionInput): Promise<Crea
       const safeName = `${Date.now()}-${f.filename.replace(/[^\w.-]+/g, "_")}`;
       const storagePath = path.join(uploadsDir, safeName);
       fs.writeFileSync(storagePath, f.bytes);
+      // Best-effort OCR: recognised text joins the pipeline, clearly marked
+      // as an unverified screenshot capture; failure falls back to
+      // stored-for-manual-analysis.
+      const ocr = f.bytes.length <= MAX_OCR_BYTES ? await ocrImage(f.bytes) : null;
+      if (ocr) {
+        parts.push(
+          `\n\n===== SCREENSHOT (OCR, unverified capture): ${f.filename} =====\n\nScreenshot text recognised at ${Math.round(ocr.confidence)}% confidence; treat every figure and quote as a social claim until verified against the image.\n\n${ocr.text}`,
+        );
+      }
       fileRecords.push({
         filename: f.filename,
         mimeType: f.mimeType,
         sizeBytes: f.bytes.length,
         kind: "screenshot",
         storagePath,
-        note: "stored for manual analysis; screenshot OCR is not part of the MVP pipeline",
+        extractedText: ocr?.text,
+        note: ocr
+          ? `OCR text extracted (tesseract.js, ${Math.round(ocr.confidence)}% confidence); verify against the image before quoting`
+          : "stored for manual analysis; OCR unavailable or found no text",
       });
       screenshotCount += 1;
       continue;

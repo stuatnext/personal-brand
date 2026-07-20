@@ -135,6 +135,30 @@ describe("processIngestion round trip", () => {
     expect(rows[0].reason).toContain("liquidity story");
   });
 
+  it("weight learning persists nudged weights from real feedback rows", async () => {
+    const database = await db();
+    const { learnWeights } = await import("@/lib/learning");
+    const opps = await database.select().from(opportunities).where(eq(opportunities.ingestionId, linkedinId));
+    expect(opps.length).toBeGreaterThanOrEqual(6);
+    // three accepted, three rejected (one wrong_angle exists from the prior test)
+    const decisions = ["use", "use", "save", "ignore", "ignore"];
+    for (let i = 0; i < decisions.length; i++) {
+      await database.insert(feedbackTable).values({
+        id: uid(),
+        opportunityId: opps[i + 1].id,
+        decision: decisions[i],
+      });
+    }
+    const result = await learnWeights();
+    expect(result.positives).toBeGreaterThanOrEqual(3);
+    expect(result.negatives).toBeGreaterThanOrEqual(3);
+    expect(result.applied).toBe(true);
+    const [owner] = await database.select().from(users).limit(1);
+    const weights = (owner.settingsJson as { scoreWeights?: Record<string, number> }).scoreWeights;
+    expect(weights).toBeDefined();
+    expect(Object.keys(weights!).length).toBeGreaterThan(5);
+  }, 60_000);
+
   it("draft generation lints against Stuart's voice and records revisions", async () => {
     const database = await db();
     const recs = await database.select().from(recommendations).where(eq(recommendations.ingestionId, linkedinId));

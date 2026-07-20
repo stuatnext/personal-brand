@@ -659,6 +659,47 @@ function segmentTranscript(raw: string, lines: Line[]): ExtractedItem[] {
   return items;
 }
 
+// --- Market-site digests (from the markets collector) ---------------------
+
+const MARKET_LINE = /^(New listing|Status change|Volume move) on ([A-Z][\w.-]*(?: [A-Z][\w.-]*)?):\s*(.+)$/;
+
+function segmentMarketSite(raw: string, lines: Line[]): ExtractedItem[] {
+  const items: ExtractedItem[] = [];
+  let start: number | null = null;
+  const flush = (from: number, to: number) => {
+    const text = lines
+      .slice(from, to)
+      .map((l) => l.text)
+      .join("\n")
+      .trim();
+    if (!text) return;
+    const m = text.match(MARKET_LINE);
+    items.push({
+      tempId: nextTempId(),
+      platform: "market_site",
+      itemType: m ? "market_listing" : "note",
+      authorName: m ? m[2] : undefined,
+      authorMeta: m ? m[1].toLowerCase() : undefined,
+      originalText: text,
+      engagement: {},
+      rawStartOffset: lines[from].start,
+      rawEndOffset: lines[to - 1].end,
+      extractionConfidence: m ? 0.95 : 0.7,
+      isNoise: false,
+      topics: [],
+    });
+  };
+  for (let i = 0; i <= lines.length; i++) {
+    const blank = i === lines.length || lines[i].text.trim() === "";
+    if (!blank && start === null) start = i;
+    if (blank && start !== null) {
+      flush(start, i);
+      start = null;
+    }
+  }
+  return items;
+}
+
 function segmentNotes(raw: string, lines: Line[]): ExtractedItem[] {
   // paragraphs (blank-line separated) as notes
   const items: ExtractedItem[] = [];
@@ -781,8 +822,9 @@ export function segment(raw: string, declared: DeclaredSource): ExtractedItem[] 
       return segmentTranscript(raw, lines);
     case "internal_notes":
       return segmentNotes(raw, lines);
-    case "youtube":
     case "market_site":
+      return segmentMarketSite(raw, lines);
+    case "youtube":
     case "mixed":
     default:
       return segmentGeneric(raw, lines, effective === "mixed" ? "unknown" : effective);

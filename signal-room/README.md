@@ -48,21 +48,57 @@ npm run dev          # dev server on :4180
 npm run build        # production build
 npm run typecheck    # tsc --noEmit
 npm run lint         # eslint over src, scripts, tests, e2e
-npm test             # 50 vitest checks incl. hermetic DB round-trip + eval gates
+npm test             # 67 vitest checks incl. hermetic DB round-trip + eval gates
 npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
+npm run collect      # run collectors (markets/reddit/x); --list, --dry-run
+npm run learn        # nudge score weights from Use/Wrong-angle feedback; --dry-run
 npm run db:migrate   # apply migrations (PGlite or DATABASE_URL)
 npm run db:seed      # demo data (idempotent; skips existing titles)
 npm run db:reset     # wipe the LOCAL embedded database (refuses on DATABASE_URL)
 ```
 
+## Automated collection and learning
+
+**Collectors** (`npm run collect`) gather external intel and feed it through
+the exact same ingestion path as a manual paste — raw preservation,
+extraction, claims, scoring identical:
+
+- **markets** (no credentials): snapshots Kalshi + Polymarket listings into
+  `market_snapshots`, diffs against the previous collection and ingests a
+  digest of what changed. "New listing" is decided by the market's own open
+  time (page-limited fetches drift, so absence proves nothing);
+  auto-generated parlay combos are excluded as venue plumbing; the venue's
+  own API counts as a primary source for its own listings. First run
+  records a baseline only. *Live-verified against both public APIs.*
+- **reddit** (no credentials): sweeps `SIGNAL_ROOM_REDDIT_SUBS` via the
+  public JSON API, formatted so the reddit segmenter parses it natively.
+  Reddit refuses many datacenter IPs (fails loudly, never silently) — run
+  from a normal network. *Formatter unit-tested; live path blocked from
+  this build environment.*
+- **x** (needs `X_BEARER_TOKEN`): recent search via the X API v2 using
+  `SIGNAL_ROOM_X_QUERY`, formatted for the X segmenter. *Implemented,
+  credential-gated, not live-tested.*
+
+Intended cadence: a daily session or Claude Routine runs
+`npm run collect && npm run learn`.
+
+**Weight learning** (`npm run learn`): reads Use/Save vs Ignore/Wrong-angle
+decisions, measures how each score dimension separated accepted from
+rejected opportunities, and nudges that dimension's weight (bounded to
+[0.2, 2.5], ±15% per pass, no-op below 3 accepted + 3 rejected decisions).
+Changes are audit-logged and visible in Settings; the next processing run
+uses them. Scores stay opinions; the weights get opinionated in Stuart's
+direction.
+
 ## The workflow
 
 1. **Paste** — dump the mess, pick the probable source, `PROCESS
    INTELLIGENCE`. TXT/MD/CSV/JSON/JSONL/ZIP uploads join the paste;
-   screenshots are stored for manual analysis (no OCR yet, labelled as such).
-   The raw input is SHA-256 hashed and preserved verbatim **before** any
-   processing.
+   screenshots are OCR'd best-effort (tesseract.js; recognised text enters
+   the pipeline clearly marked as an unverified capture) and always stored
+   for manual review. The raw input is SHA-256 hashed and preserved
+   verbatim **before** any processing.
 2. **Processing report** — live stage progress (10 stages), then the counts:
    blocks detected, unique items, duplicates, noise set aside, clusters,
    claims needing verification, people, potential leads, warnings. Every
@@ -193,7 +229,9 @@ Opportunity detail (05), Draft editor (06), Archive (07), People (08).
   shows `MOCK PROVIDER`. Drafts are labelled skeletons, not generated prose.
   The Anthropic path is implemented but has not been exercised in this
   environment (no key present) — treat it as untested until first run.
-- **Screenshot ingestion**: stored and listed, not OCR'd.
+- **X collector**: implemented and credential-gated; not live-tested (no
+  bearer token in the build environment). The Reddit collector's live path
+  is blocked from datacenter IPs; both formatters are unit-tested.
 - **Auth**: single-user passcode gate; not Supabase Auth.
 - **Job queue**: in-process async runner behind a small seam
   (`enqueueProcessing`), DB-backed state; replaceable by a real queue.
@@ -213,17 +251,20 @@ Opportunity detail (05), Draft editor (06), Archive (07), People (08).
 
 ## Next three integrations (recommended order)
 
-1. **X API + Reddit collectors** — the architecture already treats a
-   collector as "something that creates ingestions": implement as cron jobs
-   that POST to `/api/ingestions` with `sourceType` set. Entities, claims,
-   clusters and scoring work unchanged.
-2. **Kalshi + Polymarket market data** — new `market_snapshots` table keyed
-   to entities; joins the scoring layer as evidence quality/newness inputs
-   (listings, volume, rule edits as first-class signals).
-3. **Feedback-driven weight learning** — the feedback table already stores
-   decisions + reasons + time-to-decision; a nightly job adjusting
-   `scoreWeights` per dimension from Use/Wrong-angle outcomes closes the
-   judgement loop.
+The original next-three (X/Reddit collectors, Kalshi/Polymarket market
+data, feedback weight learning) are now built — see "Automated collection
+and learning" above. The next horizon:
+
+1. **Cross-ingestion story continuity** — persistent story threads across
+   days (yesterday's Goldman cluster ↔ today's follow-up), turning newness
+   into a real temporal graph and enabling "what changed since I last
+   looked" briefings.
+2. **YouTube + newsletter/RSS collectors** — same collector contract;
+   transcripts and newsletters are where the category's long-form arguments
+   live.
+3. **Thesis tracking (the Oracle layer)** — first-class theses with
+   supporting/counter-evidence, confidence updates and what-would-change-
+   the-view, fed by the claims layer that already exists.
 
 ## Product decisions
 

@@ -121,8 +121,8 @@ export function PasteForm() {
               </ul>
             ) : null}
             <p className="mt-2 text-[11.5px] leading-snug text-[--color-dim]">
-              Screenshots are stored for manual analysis; they do not enter the text pipeline in this
-              version.
+              Screenshots are OCR&apos;d best-effort (text joins the pipeline as an unverified capture)
+              and always stored for manual review.
             </p>
           </div>
         </div>

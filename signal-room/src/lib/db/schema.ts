@@ -612,6 +612,27 @@ export const tags = pgTable(
   (t) => [index("tags_scope_idx").on(t.scopeType, t.scopeId), index("tags_tag_idx").on(t.tag)],
 );
 
+export const marketSnapshots = pgTable(
+  "market_snapshots",
+  {
+    id: uuid("id").primaryKey(),
+    venue: text("venue").notNull(), // kalshi | polymarket | …
+    marketId: text("market_id").notNull(), // venue-native id/ticker
+    title: text("title").notNull(),
+    status: text("status").notNull().default("open"),
+    volume24h: real("volume_24h"),
+    liquidity: real("liquidity"),
+    lastPrice: real("last_price"),
+    closeTime: timestamp("close_time", { withTimezone: true }),
+    rawJson: jsonb("raw_json").$type<Record<string, unknown>>().default({}),
+    capturedAt: timestamp("captured_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("snapshots_market_idx").on(t.venue, t.marketId),
+    index("snapshots_captured_idx").on(t.capturedAt),
+  ],
+);
+
 export const auditLog = pgTable(
   "audit_log",
   {

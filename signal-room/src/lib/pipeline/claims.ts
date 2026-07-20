@@ -202,6 +202,8 @@ export function extractClaims(
       // named officer is making it. That is an official statement (primary
       // source for "the company says X"), not an unverified social rumour.
       const selfSourced = group.some((cand) => {
+        // a venue's own API is the primary source for its own listings
+        if (cand.item.itemType === "market_listing") return true;
         const orgTokens = extractOrgTokens(
           cand.item.authorName,
           cand.item.authorMeta,

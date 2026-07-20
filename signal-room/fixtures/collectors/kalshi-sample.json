@@ -1,0 +1,64 @@
+{
+ "markets": [
+  {
+   "close_time": "2026-07-22T23:20:00Z",
+   "event_ticker": "KXMVECROSSCATEGORY-S20264BBE556FD45",
+   "last_price_dollars": "0.0000",
+   "liquidity_dollars": "0.0000",
+   "open_time": "2026-07-20T00:39:46Z",
+   "status": "active",
+   "ticker": "KXMVECROSSCATEGORY-S20264BBE556FD45-09005417FA1",
+   "title": "yes Freddie Freeman: 1+,yes Mookie Betts: 1+,yes Shohei Ohtani: 2+,yes Ben Rice: 1+,yes Jazz Chisholm Jr.: 2+"
+  },
+  {
+   "close_time": "2026-08-02T23:00:00Z",
+   "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026C4270CE4FB5",
+   "last_price_dollars": "0.0000",
+   "liquidity_dollars": "0.0000",
+   "open_time": "2026-07-20T00:39:46Z",
+   "status": "active",
+   "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026C4270CE4FB5-D1D1CF35B55",
+   "title": "yes DeWanna Bonner: 15+,no Phoenix wins by over 12.5 points"
+  },
+  {
+   "close_time": "2026-08-02T23:00:00Z",
+   "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E9CF8C59838",
+   "last_price_dollars": "0.0000",
+   "liquidity_dollars": "0.0000",
+   "open_time": "2026-07-20T00:39:46Z",
+   "status": "active",
+   "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E9CF8C59838-106E2EA7267",
+   "title": "yes Target Price: $64,842.22,yes New York Y,yes Phoenix"
+  },
+  {
+   "close_time": "2026-08-08T17:40:00Z",
+   "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20264099668491D",
+   "last_price_dollars": "0.0000",
+   "liquidity_dollars": "0.0000",
+   "open_time": "2026-07-20T00:39:46Z",
+   "status": "active",
+   "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S20264099668491D-F72B39ED741",
+   "title": "yes Memphis,yes Nurullo Aliev,yes Magomed Ankalaev,yes Axel Sola,yes Islam Dulatov,yes Steve Erceg,yes Rizvan Kuniev,yes Sam Patterson,yes Magomed Tuchalov,yes Abubakar Vagaev,yes Valter Walker,yes Magomed Zaynukov,yes Phoenix,yes Las Vegas,yes Minnesota,yes New York,yes Golden State"
+  },
+  {
+   "close_time": "2026-07-24T00:05:00Z",
+   "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026C7BFCE9298A",
+   "last_price_dollars": "0.0000",
+   "liquidity_dollars": "0.0000",
+   "open_time": "2026-07-20T00:39:46Z",
+   "status": "active",
+   "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026C7BFCE9298A-40114979F36",
+   "title": "yes Cleveland,yes Pittsburgh,yes Toronto,yes Boston,yes Los Angeles D,yes Atlanta,yes Milwaukee,yes Kansas City,yes Detroit"
+  },
+  {
+   "close_time": "2026-08-02T23:00:00Z",
+   "event_ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DA40E8463B5",
+   "last_price_dollars": "0.0000",
+   "liquidity_dollars": "0.0000",
+   "open_time": "2026-07-20T00:39:46Z",
+   "status": "active",
+   "ticker": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DA40E8463B5-A881EFBEC92",
+   "title": "yes DeWanna Bonner: 15+,yes Monique Akoa Makani: 10+,yes Brittney Griner: 4+"
+  }
+ ]
+}

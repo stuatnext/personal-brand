@@ -1,0 +1,62 @@
+[
+ {
+  "id": "558934",
+  "question": "Will Spain win the 2026 FIFA World Cup?",
+  "slug": "will-spain-win-the-2026-fifa-world-cup-963",
+  "volume24hr": 23154288.327074174,
+  "liquidity": "6005305.85496",
+  "lastTradePrice": 0.999,
+  "endDate": "2026-07-20T00:00:00Z",
+  "startDate": "2025-07-02T22:26:48.104Z",
+  "closed": false,
+  "active": true
+ },
+ {
+  "id": "558938",
+  "question": "Will Argentina win the 2026 FIFA World Cup?",
+  "slug": "will-argentina-win-the-2026-fifa-world-cup-245",
+  "volume24hr": 14578073.83188408,
+  "liquidity": "6459472.35685",
+  "lastTradePrice": 0.001,
+  "endDate": "2026-07-20T00:00:00Z",
+  "startDate": "2025-07-02T22:26:52.071Z",
+  "closed": false,
+  "active": true
+ },
+ {
+  "id": "2063132",
+  "question": "Will Demeke Mekonnen be the next Prime Minister of Ethiopia?",
+  "slug": "will-demeke-mekonnen-be-the-next-prime-minister-of-ethiopia",
+  "volume24hr": 5247701.024,
+  "liquidity": "28980.3114",
+  "lastTradePrice": 0.002,
+  "endDate": "2026-06-01T00:00:00Z",
+  "startDate": "2026-04-27T21:54:59.91Z",
+  "closed": false,
+  "active": true
+ },
+ {
+  "id": "2063129",
+  "question": "Will Belete Molla be the next Prime Minister of Ethiopia?",
+  "slug": "will-belete-molla-be-the-next-prime-minister-of-ethiopia",
+  "volume24hr": 4899731.05,
+  "liquidity": "21859.74739",
+  "lastTradePrice": 0.002,
+  "endDate": "2026-06-01T00:00:00Z",
+  "startDate": "2026-04-27T21:54:41.666Z",
+  "closed": false,
+  "active": true
+ },
+ {
+  "id": "2470848",
+  "question": "Will Trump be in the WC Champions Photo?",
+  "slug": "will-trump-be-in-the-wc-champions-photo-20260608152527021",
+  "volume24hr": 1773782.1252889994,
+  "liquidity": "410950.7562",
+  "lastTradePrice": 0.992,
+  "endDate": "2026-07-20T03:59:00Z",
+  "startDate": "2026-06-08T15:30:27.90057Z",
+  "closed": false,
+  "active": true
+ }
+]
