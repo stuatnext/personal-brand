@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-19T23:35:03.047Z",
-    "weekOf": "2026-07-19",
+    "generatedAt": "2026-07-20T23:35:18.313Z",
+    "weekOf": "2026-07-20",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-19",
-        "channel": "X",
-        "what": "The retention test starts now",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm the final has ended and avoid unverified volume claims."
-      },
-      {
-        "date": "2026-07-19",
-        "channel": "X",
-        "what": "Daily Intel: World Cup final market watch",
-        "status": "reactive",
-        "source": "master schedule",
-        "verification": "Timestamp every price and source; verify the final schedule and market rules."
-      },
       {
         "date": "2026-07-20",
         "channel": "X",
@@ -359,7 +343,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-19 (218 items)",
+      "window": "forward from 2026-07-20 (216 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -368,8 +352,8 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 191,
-          "pct": 0.876
+          "n": 189,
+          "pct": 0.875
         },
         "strait-up-growth": {
           "n": 18,
@@ -377,7 +361,7 @@
         },
         "igaming": {
           "n": 9,
-          "pct": 0.041
+          "pct": 0.042
         },
         "personal": {
           "n": 0,
