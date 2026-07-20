@@ -1,6 +1,6 @@
 import { desc, eq } from "drizzle-orm";
 import { db } from "@/lib/db/client";
-import { ingestions, opportunities, recommendations } from "@/lib/db/schema";
+import { ingestions, opportunities, recommendations, storyClusters, storyThreads } from "@/lib/db/schema";
 
 const LEAD_ACTIONS = new Set(["speaker_lead", "sponsor_lead", "media_lead", "sales_handoff"]);
 
@@ -9,6 +9,8 @@ export interface QueueEntry {
   opportunityId: string;
   title: string;
   action: string;
+  /** observation count of the story thread this opportunity continues (>1 = continuing story) */
+  threadDay: number | null;
   overallScore: number;
   urgency: number;
   confidence: number;
@@ -37,10 +39,13 @@ export async function getTodayQueue(): Promise<QueueEntry[]> {
       opp: opportunities,
       ingestionTitle: ingestions.title,
       sourceType: ingestions.sourceType,
+      threadObservations: storyThreads.observationCount,
     })
     .from(recommendations)
     .innerJoin(opportunities, eq(recommendations.opportunityId, opportunities.id))
     .innerJoin(ingestions, eq(recommendations.ingestionId, ingestions.id))
+    .innerJoin(storyClusters, eq(opportunities.storyClusterId, storyClusters.id))
+    .leftJoin(storyThreads, eq(storyClusters.threadId, storyThreads.id))
     .where(eq(recommendations.status, "open"))
     .orderBy(desc(opportunities.overallScore))
     .limit(60);
@@ -56,6 +61,7 @@ export async function getTodayQueue(): Promise<QueueEntry[]> {
     opportunityId: r.opp.id,
     title: r.opp.title,
     action: r.rec.primaryAction,
+    threadDay: r.threadObservations && r.threadObservations > 1 ? r.threadObservations : null,
     overallScore: r.opp.overallScore,
     urgency: r.opp.urgency,
     confidence: r.opp.confidence,

@@ -7,6 +7,8 @@ const LINKS: { href: string; label: string }[] = [
   { href: "/", label: "Today" },
   { href: "/paste", label: "Paste" },
   { href: "/intelligence", label: "Intelligence" },
+  { href: "/stories", label: "Stories" },
+  { href: "/theses", label: "Theses" },
   { href: "/people", label: "People" },
   { href: "/drafts", label: "Drafts" },
   { href: "/archive", label: "Archive" },

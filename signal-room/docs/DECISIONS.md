@@ -153,7 +153,30 @@ error event (not just a rejection) on garbage input — without the guard a
 bad upload could take the server process down. OCR failure of any kind
 falls back to the original stored-for-manual-analysis behaviour.
 
-## 14. Corpus use
+## 14. Story identity is entities plus claims, and processing is serial
+
+Cross-day thread matching keys on entity agreement plus a wording/figure
+echo, with keywords built from each cluster's **claim texts** rather than
+prose alone: the factual skeleton survives author-voice changes (Tim's
+banking commentary and Priya's analyst summary of the same Goldman story
+share claims, not style). "New on the thread" is decided by claim-hash
+difference, so the system can honestly say which claims moved. Processing
+runs execute serially (a global chain): two concurrent runs could both
+match a thread before either records its observation, and live testing
+produced exactly that interleaving before serialisation. Reprocessing an
+ingestion unwinds its thread observations first, so a rerun never counts
+itself as a second sighting.
+
+## 15. Theses count evidence; they do not forecast
+
+Auto-suggested evidence arrives stance-`context` and state-`suggested`,
+because guessing supports/counters from keywords would put words in the
+thesis. Stuart triages every suggestion; confidence is a hand-set number
+whose every move is audit-logged with a reason; the tally counts confirmed
+evidence only. Scenario analysis, source track records and probabilistic
+forecasts stay out of v1 on purpose.
+
+## 16. Corpus use
 
 The `/mnt/data` ZIPs named in the brief were not present in this
 workspace. The same material already lives in the sibling repo

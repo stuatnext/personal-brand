@@ -66,6 +66,8 @@ export interface ClusterFeatures {
   offTopic: boolean;
   /** digest/roundup/podcast-promo formats: source material, not a story */
   aggregation: boolean;
+  /** cross-day continuity facts when this cluster joined a story thread */
+  thread?: import("./threads").ThreadInfo;
 }
 
 /** Multi-story digests and episode promos are mined for what they contain,
@@ -97,6 +99,7 @@ export function collectFeatures(
   previouslySeen: boolean,
   currentThemes: string[],
   restricted = false,
+  thread?: import("./threads").ThreadInfo,
 ): ClusterFeatures {
   const members = cluster.memberTempIds.map((id) => items.get(id)!).filter(Boolean);
   const primary = items.get(cluster.primaryTempId)!;
@@ -119,6 +122,7 @@ export function collectFeatures(
     restricted,
     offTopic: isOffTopic(allText),
     aggregation: isAggregation(allText),
+    thread,
   };
 }
 
@@ -129,22 +133,40 @@ export function scoreCluster(f: ClusterFeatures): ScoreBreakdown[] {
   const push = (dimension: string, score: number, reason: string) =>
     s.push({ dimension, score: clamp(score), reason });
 
-  // newness
-  let newness = 50;
-  const newnessReasons: string[] = [];
-  if (RECENCY_STRONG.test(f.allText)) {
-    newness += 25;
-    newnessReasons.push("recency language in the source items");
+  // newness: a continuing story is judged by its DEVELOPMENT, not its topic.
+  if (f.thread && f.thread.observationCount > 1) {
+    const day = f.thread.observationCount;
+    const lastSeen = f.thread.lastSeenBefore?.toISOString().slice(0, 10) ?? "earlier";
+    if (f.thread.newClaimCount > 0) {
+      push(
+        "newness",
+        Math.min(88, 52 + f.thread.newClaimCount * 9),
+        `observation ${day} of a continuing story: ${f.thread.newClaimCount} new claim(s) since ${lastSeen}`,
+      );
+    } else {
+      push(
+        "newness",
+        12,
+        `continuing story with no new development since ${lastSeen}; it is repeating, not moving`,
+      );
+    }
+  } else {
+    let newness = 50;
+    const newnessReasons: string[] = [];
+    if (RECENCY_STRONG.test(f.allText)) {
+      newness += 25;
+      newnessReasons.push("recency language in the source items");
+    }
+    if (f.previouslySeen) {
+      newness -= 45;
+      newnessReasons.push("substantially seen in a previous ingestion");
+    }
+    if (/\bfirst\b|\bnever (?:before|previously)\b|\bworld first\b/i.test(f.allText)) {
+      newness += 10;
+      newnessReasons.push("claimed first-of-kind");
+    }
+    push("newness", newness, newnessReasons.join("; ") || "no strong recency markers either way");
   }
-  if (f.previouslySeen) {
-    newness -= 45;
-    newnessReasons.push("substantially seen in a previous ingestion");
-  }
-  if (/\bfirst\b|\bnever (?:before|previously)\b|\bworld first\b/i.test(f.allText)) {
-    newness += 10;
-    newnessReasons.push("claimed first-of-kind");
-  }
-  push("newness", newness, newnessReasons.join("; ") || "no strong recency markers either way");
 
   // stuart_edge
   const edge = f.edgeTopics.length;

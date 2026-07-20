@@ -91,6 +91,35 @@ Changes are audit-logged and visible in Settings; the next processing run
 uses them. Scores stay opinions; the weights get opinionated in Stuart's
 direction.
 
+Two more collectors ride the same contract: **youtube** (keyless channel
+RSS, set `SIGNAL_ROOM_YOUTUBE_CHANNELS`) and **feeds** (any RSS 2.0/Atom
+feed, set `SIGNAL_ROOM_FEEDS` — the CFTC press-release feed and The Block
+both verified live). Both keep a persisted cursor per feed so only new
+items ingest.
+
+## Story continuity and theses
+
+**Stories** (`/stories`): every processed cluster joins a persistent story
+thread. Matching is entity agreement plus a wording/figure echo, with
+keywords keyed on each cluster's *claims* (the factual skeleton), so the
+same story told by different authors on different days still links up.
+A continuing story's opportunity reports the claim-level delta ("Since
+2026-07-20, observation 3: …"); a story that reappears with **no new
+claims** is demoted out of the queue as no-development. Today cards carry
+a `continuing · obs N` badge, and the opportunity page shows the story so
+far. Digests, off-topic colour and private ingestions don't thread.
+Processing runs are serialised (one at a time) so thread bookkeeping can
+never interleave.
+
+**Theses** (`/theses`): first-class positions with evidence. The pipeline
+auto-suggests claim links to open theses by keyword match (stance
+`context`, state `suggested`); Stuart triages each suggestion to
+supports/counters/context or rejects it, moves the confidence slider
+himself (audit-logged with a reason), and records what would change the
+view. The tally counts confirmed evidence only — the system deliberately
+does not auto-update confidence. Opportunity pages cross-link the theses
+their claims touch.
+
 ## The workflow
 
 1. **Paste** — dump the mess, pick the probable source, `PROCESS
@@ -219,9 +248,10 @@ process → reprocess idempotency → private-draft safety → feedback).
 
 ## Screens
 
-Screenshots in `docs/screenshots/` (captured by `npm run e2e`):
-Today (01), Paste (02), Intelligence (03), Processing report (04),
-Opportunity detail (05), Draft editor (06), Archive (07), People (08).
+Screenshots in `docs/screenshots/`: Today (01), Paste (02), Intelligence
+(03), Processing report (04), Opportunity detail (05), Draft editor (06),
+Archive (07), People (08), Stories (09), Thesis detail (10), Story-so-far
+panel on a continuing opportunity (11).
 
 ## What is mocked / local-only
 
@@ -245,26 +275,28 @@ Opportunity detail (05), Draft editor (06), Archive (07), People (08).
   them; they are demoted to `save` as aggregations.
 - Reprocessing rebuilds derived rows; feedback attached to that ingestion's
   opportunities is removed with them.
-- Cross-ingestion story continuity (yesterday's cluster ↔ today's) is
-  newness-only (dedupe-hash lookback); the full temporal graph is future
-  work.
+- Story threads match on entities + claim-keyword echoes within a 14-day
+  window; private ingestions deliberately don't thread (v1), and a story
+  retold with entirely different entities won't link.
+- PGlite is single-process: don't run `db:reset`/`db:seed`/`collect`
+  while `npm run dev` is up (or restart the server afterwards) — a second
+  process sees diverged state.
 
 ## Next three integrations (recommended order)
 
-The original next-three (X/Reddit collectors, Kalshi/Polymarket market
-data, feedback weight learning) are now built — see "Automated collection
-and learning" above. The next horizon:
+Both earlier horizons are built (collectors + market data + learning +
+OCR, then story continuity + feed collectors + thesis tracking). What
+comes after:
 
-1. **Cross-ingestion story continuity** — persistent story threads across
-   days (yesterday's Goldman cluster ↔ today's follow-up), turning newness
-   into a real temporal graph and enabling "what changed since I last
-   looked" briefings.
-2. **YouTube + newsletter/RSS collectors** — same collector contract;
-   transcripts and newsletters are where the category's long-form arguments
-   live.
-3. **Thesis tracking (the Oracle layer)** — first-class theses with
-   supporting/counter-evidence, confidence updates and what-would-change-
-   the-view, fed by the claims layer that already exists.
+1. **Live-provider shakedown** — first real `ANTHROPIC_API_KEY` runs:
+   compare Claude drafts against the voice linter and the mock skeletons,
+   then tune the editorial prompts on real feedback.
+2. **Thread-aware briefing** — a "what changed since you last sat down"
+   morning view composed from thread deltas and thesis movement, rather
+   than per-ingestion queues alone.
+3. **Relationship graph v2** — promote author/org edges and lead outcomes
+   into a queryable people-graph (who Stuart engaged, who introduced whom,
+   speaker/sponsor pipeline states) feeding relationship_value scoring.
 
 ## Product decisions
 

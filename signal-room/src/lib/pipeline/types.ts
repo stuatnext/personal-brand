@@ -107,6 +107,10 @@ export interface ScoreBreakdown {
 export interface OpportunityDraft {
   clusterKey: string;
   title: string;
+  /** observation number on a continuing story thread (1 = first sighting) */
+  threadDay?: number;
+  /** continuing story with nothing new: archive it, don't queue it */
+  threadNoDevelopment?: boolean;
   recommendedAction: string;
   actionAlternatives: { action: string; whyNot: string }[];
   rationale: string;

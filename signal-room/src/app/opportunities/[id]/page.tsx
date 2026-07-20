@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { asc, eq, inArray } from "drizzle-orm";
 import { db } from "@/lib/db/client";
@@ -12,6 +13,9 @@ import {
   opportunityScores,
   sourceItems,
   storyClusters,
+  storyThreads,
+  theses,
+  thesisEvidence,
   SCORE_DIMENSIONS,
 } from "@/lib/db/schema";
 import { isPublishable } from "@/lib/permissions";
@@ -95,6 +99,22 @@ export default async function OpportunityPage({ params }: { params: Promise<{ id
     rec.roles.add(mention.role);
     people.set(entity.id, rec);
   }
+
+  // continuity: the thread this cluster belongs to, if any
+  const [thread] = cluster?.threadId
+    ? await database.select().from(storyThreads).where(eq(storyThreads.id, cluster.threadId))
+    : [undefined];
+
+  // theses touched by this cluster's claims
+  const claimIds = clusterClaims.map((c) => c.id);
+  const thesisLinks = claimIds.length
+    ? await database
+        .select({ link: thesisEvidence, thesis: theses })
+        .from(thesisEvidence)
+        .innerJoin(theses, eq(thesisEvidence.thesisId, theses.id))
+        .where(inArray(thesisEvidence.claimId, claimIds))
+    : [];
+  const relatedTheses = [...new Map(thesisLinks.map((t) => [t.thesis.id, t])).values()];
 
   const INVERTED = new Set(["saturation", "credibility_risk"]);
 
@@ -276,6 +296,46 @@ export default async function OpportunityPage({ params }: { params: Promise<{ id
               ) : null}
             </div>
           </section>
+
+          {thread && thread.observationCount > 1 ? (
+            <section className="panel border-l-2 border-l-[--color-info] p-4" data-testid="story-so-far">
+              <div className="k-label mb-2 !text-[--color-info]">
+                Story so far · observation {thread.observationCount}
+              </div>
+              <ol className="space-y-1.5">
+                {(thread.observationsJson ?? []).slice(-6).map((o, i) => (
+                  <li key={i} className="font-mono text-[11px] leading-snug text-[--color-mut]">
+                    <span className="text-[--color-dim]">{o.date}</span> · {o.itemCount} item(s) ·{" "}
+                    {o.newClaimCount > 0 ? (
+                      <span className="text-[--color-ok]">{o.newClaimCount} new claim(s)</span>
+                    ) : (
+                      <span className="text-[--color-dim]">no development</span>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ) : null}
+
+          {relatedTheses.length > 0 ? (
+            <section className="panel p-4" data-testid="related-theses">
+              <div className="k-label mb-2">Relevant theses</div>
+              <div className="space-y-1.5">
+                {relatedTheses.slice(0, 4).map(({ link, thesis: t }) => (
+                  <Link
+                    key={t.id}
+                    href={`/theses/${t.id}`}
+                    className="block text-[12.5px] leading-snug text-[--color-mut] hover:text-[--color-signal]"
+                  >
+                    <span className={`tag mr-1.5 ${link.state === "suggested" ? "tag-signal" : "tag-ok"}`}>
+                      {link.state}
+                    </span>
+                    {t.statement.slice(0, 90)}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           <section className="panel p-4">
             <div className="k-label mb-2">Cluster</div>

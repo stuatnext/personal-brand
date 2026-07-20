@@ -1,4 +1,4 @@
-import { and, eq, ne, inArray, sql } from "drizzle-orm";
+import { and, eq, gte, ne, inArray, sql } from "drizzle-orm";
 import { db, type Db } from "@/lib/db/client";
 import {
   ingestions,
@@ -9,6 +9,7 @@ import {
   entityAliases,
   entityMentions,
   storyClusters,
+  storyThreads,
   clusterItems,
   claims,
   claimEvidence,
@@ -28,8 +29,16 @@ import { detectDuplicates, dedupeHash } from "./dedupe";
 import { extractEntities } from "./entities";
 import { buildClusters } from "./cluster";
 import { extractClaims } from "./claims";
-import { collectFeatures } from "./score";
+import { collectFeatures, isAggregation, isOffTopic } from "./score";
 import { buildOpportunities } from "./recommend";
+import {
+  buildClusterSignature,
+  bestThreadMatch,
+  mergeSignature,
+  newClaimsAgainstThread,
+  type ThreadInfo,
+} from "./threads";
+import { suggestThesisEvidence } from "@/lib/theses";
 import { GAZETTEER } from "./gazetteer";
 import { isPublishable } from "@/lib/permissions";
 import { getProvider } from "@/lib/ai/provider";
@@ -44,6 +53,7 @@ export const STAGES: { key: string; label: string }[] = [
   { key: "identify_entities", label: "Identifying people and companies" },
   { key: "build_clusters", label: "Building story clusters" },
   { key: "extract_claims", label: "Extracting claims" },
+  { key: "link_threads", label: "Linking story threads" },
   { key: "rank_opportunities", label: "Ranking opportunities" },
   { key: "create_queue", label: "Creating the action queue" },
 ];
@@ -94,6 +104,37 @@ async function deleteDerived(database: Db, ingestionId: string) {
     await database.delete(opportunities).where(inArray(opportunities.id, oppIds));
   }
   await database.delete(claims).where(eq(claims.ingestionId, ingestionId));
+
+  // Unwind this ingestion's traces from story threads so reprocessing
+  // cannot count the same ingestion as a second observation of its own
+  // story. (Merged signature keywords/hashes are left in place; the rerun
+  // re-adds them.)
+  const threadIds = (
+    await database
+      .select({ threadId: storyClusters.threadId })
+      .from(storyClusters)
+      .where(eq(storyClusters.ingestionId, ingestionId))
+  )
+    .map((r) => r.threadId)
+    .filter((t): t is string => Boolean(t));
+  if (threadIds.length) {
+    const rows = await database.select().from(storyThreads).where(inArray(storyThreads.id, threadIds));
+    for (const row of rows) {
+      const remaining = (row.observationsJson ?? []).filter((o) => o.ingestionId !== ingestionId);
+      if (remaining.length === 0) {
+        await database.delete(storyThreads).where(eq(storyThreads.id, row.id));
+      } else {
+        const lastObservedAt = new Date(
+          Math.max(...remaining.map((o) => new Date(o.date + "T00:00:00Z").getTime())),
+        );
+        await database
+          .update(storyThreads)
+          .set({ observationsJson: remaining, observationCount: remaining.length, lastObservedAt })
+          .where(eq(storyThreads.id, row.id));
+      }
+    }
+  }
+
   await database.delete(storyClusters).where(eq(storyClusters.ingestionId, ingestionId));
   const itemIds = (
     await database
@@ -423,10 +464,128 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
       }
     }
 
-    // Stage 9: score + editorial layer.
+    // Stage 9: cross-day story threads. Match each eligible cluster against
+    // recent threads (entity agreement + figure/wording echo); attach or
+    // create, and compute the claim-level delta since the story was last
+    // seen. Digests, off-topic colour and restricted ingestions don't
+    // thread (v1: private continuity stays out of shared thread rows).
+    const itemByTemp = new Map(items.map((i) => [i.tempId, i]));
+    const threadInfoByCluster = await stageRun("link_threads", async () => {
+      const map = new Map<string, ThreadInfo>();
+      if (!isPublishable(permissionLevel)) return map;
+      const cutoff = new Date(Date.now() - 14 * 24 * 3600 * 1000);
+      const recent = await database
+        .select()
+        .from(storyThreads)
+        .where(gte(storyThreads.lastObservedAt, cutoff))
+        .limit(400);
+      const today = new Date().toISOString().slice(0, 10);
+      const claimedThreads = new Set<string>();
+      let continued = 0;
+      for (const cluster of clusters) {
+        const memberText = cluster.memberTempIds
+          .map((id) => itemByTemp.get(id)?.originalText ?? "")
+          .join("\n");
+        const platform = itemByTemp.get(cluster.primaryTempId)?.platform;
+        if (platform === "market_site" || isAggregation(memberText) || isOffTopic(memberText)) continue;
+        const sig = buildClusterSignature(cluster, itemByTemp, mentions, claimDrafts);
+        if (sig.entities.length === 0) continue;
+        const clusterDbId = clusterIdByKey.get(cluster.key)!;
+        const clusterClaims = claimDrafts.filter((c) => c.clusterKey === cluster.key);
+        const candidates = recent
+          .filter((r) => !claimedThreads.has(r.id))
+          .map((r) => ({ id: r.id, signature: r.signatureJson }));
+        const match = bestThreadMatch(sig, candidates);
+        if (match) {
+          claimedThreads.add(match.threadId);
+          const row = recent.find((r) => r.id === match.threadId)!;
+          const fresh = newClaimsAgainstThread(row.signatureJson, clusterClaims);
+          const observation = {
+            date: today,
+            ingestionId,
+            clusterId: clusterDbId,
+            itemCount: cluster.memberTempIds.length,
+            newClaimCount: fresh.length,
+            headline: cluster.canonicalTitle,
+          };
+          await database
+            .update(storyThreads)
+            .set({
+              signatureJson: mergeSignature(row.signatureJson, sig),
+              observationsJson: [...(row.observationsJson ?? []), observation],
+              observationCount: row.observationCount + 1,
+              lastObservedAt: new Date(),
+              currentStatus: "active",
+            })
+            .where(eq(storyThreads.id, row.id));
+          await database
+            .update(storyClusters)
+            .set({ threadId: row.id })
+            .where(eq(storyClusters.id, clusterDbId));
+          map.set(cluster.key, {
+            threadId: row.id,
+            observationCount: row.observationCount + 1,
+            firstObservedAt: row.firstObservedAt,
+            lastSeenBefore: row.lastObservedAt,
+            newClaimCount: fresh.length,
+            newClaims: fresh.slice(0, 3).map((c) => ({ text: c.claimText, status: c.status })),
+            knownClaimCount: clusterClaims.length - fresh.length,
+          });
+          continued += 1;
+        } else {
+          const threadId = uid();
+          const signature = { entities: sig.entities, keywords: sig.keywords, numbers: sig.numbers, claimHashes: sig.claimHashes };
+          await database.insert(storyThreads).values({
+            id: threadId,
+            canonicalTitle: cluster.canonicalTitle,
+            signatureJson: signature,
+            observationsJson: [
+              {
+                date: today,
+                ingestionId,
+                clusterId: clusterDbId,
+                itemCount: cluster.memberTempIds.length,
+                newClaimCount: clusterClaims.length,
+                headline: cluster.canonicalTitle,
+              },
+            ],
+            observationCount: 1,
+          });
+          await database
+            .update(storyClusters)
+            .set({ threadId })
+            .where(eq(storyClusters.id, clusterDbId));
+          map.set(cluster.key, {
+            threadId,
+            observationCount: 1,
+            firstObservedAt: new Date(),
+            lastSeenBefore: null,
+            newClaimCount: clusterClaims.length,
+            newClaims: [],
+            knownClaimCount: 0,
+          });
+        }
+      }
+      stats.storyThreadsContinued = continued;
+      return map;
+    });
+
+    // Thesis evidence suggestions from this run's claims (Oracle layer v1).
+    try {
+      const suggested = await suggestThesisEvidence(
+        [...claimIdByTemp.entries()].map(([tempId, id]) => {
+          const draft = claimDrafts.find((c) => c.tempId === tempId)!;
+          return { id, text: draft.claimText };
+        }),
+      );
+      if (suggested > 0) stats.thesisSuggestions = suggested;
+    } catch (err) {
+      warn(`thesis suggestion pass failed: ${err instanceof Error ? err.message : err}`);
+    }
+
+    // Stage 10: score + editorial layer.
     const oppDrafts = await stageRun("rank_opportunities", async () => {
       // Cross-ingestion newness: has this story's primary content been seen before?
-      const itemByTemp = new Map(items.map((i) => [i.tempId, i]));
       const previouslySeenByCluster = new Map<string, boolean>();
       for (const cluster of clusters) {
         const primary = itemByTemp.get(cluster.primaryTempId)!;
@@ -500,6 +659,7 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
           previouslySeenByCluster.get(cluster.key) ?? false,
           currentThemes,
           !isPublishable(permissionLevel),
+          threadInfoByCluster.get(cluster.key),
         ),
       );
       const weights = (owner?.settingsJson as { scoreWeights?: Record<string, number> } | null)?.scoreWeights;
@@ -641,14 +801,23 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
 // (processing_runs), so the UI polls the run row and a crashed process
 // leaves an inspectable failed run that can be reprocessed.
 
-type QueueGlobal = { __signalRoomJobs?: Map<string, Promise<unknown>> };
+type QueueGlobal = {
+  __signalRoomJobs?: Map<string, Promise<unknown>>;
+  __signalRoomChain?: Promise<unknown>;
+};
 const qg = globalThis as unknown as QueueGlobal;
 function jobs(): Map<string, Promise<unknown>> {
   if (!qg.__signalRoomJobs) qg.__signalRoomJobs = new Map();
   return qg.__signalRoomJobs;
 }
 
-/** Fire-and-track processing of an ingestion. Returns the run id immediately. */
+/**
+ * Fire-and-track processing of an ingestion. Returns the run id
+ * immediately. Runs execute SEQUENTIALLY (a global chain): two ingestions
+ * processed at once could interleave story-thread bookkeeping (both
+ * matching the same thread before either records its observation), and a
+ * single-user tool gains nothing from parallel runs.
+ */
 export async function enqueueProcessing(ingestionId: string): Promise<string> {
   const database = await db();
   const runId = uid();
@@ -659,11 +828,13 @@ export async function enqueueProcessing(ingestionId: string): Promise<string> {
     provider: getProvider().name,
     stagesJson: STAGES.map((s) => ({ ...s, status: "pending" as const })),
   });
-  const promise = processIngestion(ingestionId, runId)
+  const promise = (qg.__signalRoomChain ?? Promise.resolve())
+    .then(() => processIngestion(ingestionId, runId))
     .catch(() => {
       /* recorded on the run row */
     })
     .finally(() => jobs().delete(runId));
+  qg.__signalRoomChain = promise;
   jobs().set(runId, promise);
   return runId;
 }
