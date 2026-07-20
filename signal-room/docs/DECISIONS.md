@@ -176,7 +176,32 @@ whose every move is audit-logged with a reason; the tally counts confirmed
 evidence only. Scenario analysis, source track records and probabilistic
 forecasts stay out of v1 on purpose.
 
-## 16. Corpus use
+## 16. The briefing marker is explicit, not inferred
+
+"Since you last sat down" is measured from a caught-up marker Stuart sets
+deliberately (button or `--mark`), persisted as a collector cursor. Login
+times and page views were rejected as signals: glancing at the queue on a
+phone is not catching up, and a wrong automatic marker silently swallows
+developments.
+
+## 17. The graph is built from actions, not mentions
+
+Relationship edges accumulate only from what Stuart DOES: using an
+opportunity records engagement with its authors; acting on a lead records
+the prospect edge. Mention co-occurrence deliberately does not create
+edges (everyone in a category feed co-occurs with everyone). Engagement
+strength then feeds relationship scoring with a visible reason, so the
+loop is: act → edge → future stories involving that person rank higher.
+
+## 18. The live provider earns trust through the shakedown, not on faith
+
+The Anthropic path ships hardened (timeout, retry with backoff on
+transient failures, corrective voice pass) and stub-tested, but stays
+labelled untested-live until `npm run shakedown` runs with a real key and
+reports every draft clean against the voice linter and permission scanner.
+The first live run is a one-command evaluation, not an ad-hoc experiment.
+
+## 19. Corpus use
 
 The `/mnt/data` ZIPs named in the brief were not present in this
 workspace. The same material already lives in the sibling repo

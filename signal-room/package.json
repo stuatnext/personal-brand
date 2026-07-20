@@ -17,6 +17,8 @@
     "eval": "tsx scripts/eval.ts",
     "collect": "tsx scripts/collect.ts",
     "learn": "tsx scripts/learn-weights.ts",
+    "briefing": "tsx scripts/briefing.ts",
+    "shakedown": "tsx scripts/shakedown.ts",
     "e2e": "playwright test",
     "screenshots": "playwright test e2e/screenshots.spec.ts"
   },

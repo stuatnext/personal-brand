@@ -68,6 +68,8 @@ export interface ClusterFeatures {
   aggregation: boolean;
   /** cross-day continuity facts when this cluster joined a story thread */
   thread?: import("./threads").ThreadInfo;
+  /** lowercased canonical name -> engagement strength, from the relationship graph */
+  knownEngagement?: Map<string, number>;
 }
 
 /** Multi-story digests and episode promos are mined for what they contain,
@@ -100,6 +102,7 @@ export function collectFeatures(
   currentThemes: string[],
   restricted = false,
   thread?: import("./threads").ThreadInfo,
+  knownEngagement?: Map<string, number>,
 ): ClusterFeatures {
   const members = cluster.memberTempIds.map((id) => items.get(id)!).filter(Boolean);
   const primary = items.get(cluster.primaryTempId)!;
@@ -123,6 +126,7 @@ export function collectFeatures(
     offTopic: isOffTopic(allText),
     aggregation: isAggregation(allText),
     thread,
+    knownEngagement,
   };
 }
 
@@ -236,14 +240,31 @@ export function scoreCluster(f: ClusterFeatures): ScoreBreakdown[] {
       m.authorMeta ?? "",
     ),
   );
+  // graph feedback: people Stuart has engaged with before are worth more
+  // when they reappear
+  const engagedNames = f.knownEngagement
+    ? [
+        ...new Set(
+          f.mentions
+            .filter((m) => f.knownEngagement!.has(m.canonicalName.toLowerCase()))
+            .map((m) => m.canonicalName),
+        ),
+      ]
+    : [];
   push(
     "relationship_value",
-    clamp(personProspects.length * 25 + otherProspects.length * 12 + (seniorAuthor ? 30 : 0)),
+    clamp(
+      personProspects.length * 25 +
+        otherProspects.length * 12 +
+        (seniorAuthor ? 30 : 0) +
+        Math.min(25, engagedNames.length * 15),
+    ),
     [
       prospectMentions.length
         ? `involves ${[...new Set(prospectMentions.map((m) => m.canonicalName))].slice(0, 3).join(", ")}`
         : "",
       seniorAuthor ? "senior author in the thread" : "",
+      engagedNames.length ? `Stuart has engaged with ${engagedNames.slice(0, 2).join(", ")} before` : "",
     ]
       .filter(Boolean)
       .join("; ") || "no notable people or prospects identified",

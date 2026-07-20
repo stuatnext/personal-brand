@@ -39,6 +39,7 @@ import {
   type ThreadInfo,
 } from "./threads";
 import { suggestThesisEvidence } from "@/lib/theses";
+import { engagementByName } from "@/lib/graph";
 import { GAZETTEER } from "./gazetteer";
 import { isPublishable } from "@/lib/permissions";
 import { getProvider } from "@/lib/ai/provider";
@@ -650,6 +651,7 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
         }
       }
 
+      const knownEngagement = await engagementByName();
       const features = clusters.map((cluster) =>
         collectFeatures(
           cluster,
@@ -660,6 +662,7 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
           currentThemes,
           !isPublishable(permissionLevel),
           threadInfoByCluster.get(cluster.key),
+          knownEngagement,
         ),
       );
       const weights = (owner?.settingsJson as { scoreWeights?: Record<string, number> } | null)?.scoreWeights;

@@ -51,8 +51,10 @@ npm run lint         # eslint over src, scripts, tests, e2e
 npm test             # 67 vitest checks incl. hermetic DB round-trip + eval gates
 npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
-npm run collect      # run collectors (markets/reddit/x); --list, --dry-run
+npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
 npm run learn        # nudge score weights from Use/Wrong-angle feedback; --dry-run
+npm run briefing     # terminal "since you last sat down"; --mark sets the marker
+npm run shakedown    # live-provider draft evaluation (needs ANTHROPIC_API_KEY)
 npm run db:migrate   # apply migrations (PGlite or DATABASE_URL)
 npm run db:seed      # demo data (idempotent; skips existing titles)
 npm run db:reset     # wipe the LOCAL embedded database (refuses on DATABASE_URL)
@@ -110,6 +112,32 @@ a `continuing · obs N` badge, and the opportunity page shows the story so
 far. Digests, off-topic colour and private ingestions don't thread.
 Processing runs are serialised (one at a time) so thread bookkeeping can
 never interleave.
+
+**Briefing** (`/briefing`, or `npm run briefing`): "since you last sat
+down" — stories that moved (with their claim-level deltas), first
+sightings, thesis movement (new suggestions, confirmations, confidence
+moves with reasons), the live queue, open commercial leads and stories
+that have gone quiet. The marker is explicit: press *Mark caught up* (or
+`--mark`) and the next briefing measures from there.
+
+**Relationship graph**: pressing **Use it** builds the graph. Authors of
+material Stuart acted on gain a `stuart_engaged_with` edge (strength grows
+with repetition); acting on a lead records the prospect edge
+(speaker/sponsor/media/sales). Those edges feed scoring: when someone
+Stuart has engaged with before reappears in fresh intelligence, the story's
+relationship value rises with a visible reason. Each person/company now has
+a profile page (`/people/[id]`): recent material, edges, works-at, links
+into the opportunities they carried.
+
+**Live-provider shakedown** (`npm run shakedown`, needs
+`ANTHROPIC_API_KEY`): the first structured Claude run — generates live
+drafts for the top queued opportunities, checks every one against the
+voice linter and the permission scanner, measures latency and hedging, and
+compares sizes against the mock skeletons; writes `shakedown-report.json`
+and exits non-zero if any draft is dirty. The Anthropic client now carries
+a 90s timeout and retries transient failures (429/5xx/network) with
+backoff, and its parsing/retry/corrective-pass behaviour is unit-tested
+against a stubbed API.
 
 **Theses** (`/theses`): first-class positions with evidence. The pipeline
 auto-suggests claim links to open theses by keyword match (stance
@@ -251,7 +279,7 @@ process → reprocess idempotency → private-draft safety → feedback).
 Screenshots in `docs/screenshots/`: Today (01), Paste (02), Intelligence
 (03), Processing report (04), Opportunity detail (05), Draft editor (06),
 Archive (07), People (08), Stories (09), Thesis detail (10), Story-so-far
-panel on a continuing opportunity (11).
+panel on a continuing opportunity (11), Briefing (12).
 
 ## What is mocked / local-only
 
@@ -284,19 +312,19 @@ panel on a continuing opportunity (11).
 
 ## Next three integrations (recommended order)
 
-Both earlier horizons are built (collectors + market data + learning +
-OCR, then story continuity + feed collectors + thesis tracking). What
-comes after:
+Three horizons are now built (collectors/market-data/learning/OCR;
+continuity/feeds/theses; briefing/graph/shakedown-harness). What comes
+after:
 
-1. **Live-provider shakedown** — first real `ANTHROPIC_API_KEY` runs:
-   compare Claude drafts against the voice linter and the mock skeletons,
-   then tune the editorial prompts on real feedback.
-2. **Thread-aware briefing** — a "what changed since you last sat down"
-   morning view composed from thread deltas and thesis movement, rather
-   than per-ingestion queues alone.
-3. **Relationship graph v2** — promote author/org edges and lead outcomes
-   into a queryable people-graph (who Stuart engaged, who introduced whom,
-   speaker/sponsor pipeline states) feeding relationship_value scoring.
+1. **Run the live shakedown** — set `ANTHROPIC_API_KEY`, run
+   `npm run shakedown`, and tune `src/lib/ai/prompts.ts` against the
+   report. The harness exists; the tokens have not been spent yet.
+2. **Introductions and outreach states on the graph** — who introduced
+   whom, DM/email sent/replied states on prospect edges, and a pipeline
+   view over speaker/sponsor prospects.
+3. **Cross-venue market intelligence** — equivalent-market detection
+   across Kalshi/Polymarket snapshots (same event, both venues) surfacing
+   price/liquidity divergence as editorial signal.
 
 ## Product decisions
 
