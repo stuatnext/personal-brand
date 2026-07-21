@@ -26,6 +26,8 @@ export interface DraftContext {
   allowedEvidence: AllowedEvidence[];
   hasUnverifiedClaims: boolean;
   stuartReaction?: string;
+  /** authority pillar (drives brand voice, positioning and sign-off) */
+  pillar?: string;
 }
 
 export interface EditorialContext {

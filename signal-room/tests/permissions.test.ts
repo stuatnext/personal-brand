@@ -43,6 +43,35 @@ describe("leak detection", () => {
       "Prediction market venues keep talking about listings while the settlement layer stays underdiscussed. The infrastructure conversation deserves more attention than it gets.";
     expect(detectLeaks(draft, restricted)).toHaveLength(0);
   });
+
+  it("does not flag outreach boilerplate that shares small talk with a transcript", () => {
+    // The email template's stock ask overlaps ordinary conversation in any
+    // call transcript; common-word-only shingles must not count as leaks.
+    const transcript = [
+      {
+        id: "r2",
+        kind: "source_item" as const,
+        level: "private",
+        text: "Stuart: honestly I'd love to hear how you're seeing it from your side. Client: sure. Stuart: and how do you think about it day to day?",
+      },
+    ];
+    const draft =
+      "I'd genuinely love to jump on a call and hear how you're seeing it; I'd learn a great deal from you. Would you have 20 minutes over the next couple of weeks?";
+    expect(detectLeaks(draft, transcript)).toHaveLength(0);
+  });
+
+  it("still catches distinctive wording even without figures or names", () => {
+    const transcript = [
+      {
+        id: "r3",
+        kind: "source_item" as const,
+        level: "private",
+        text: "They said the accelerated onboarding waiver expires quietly before the renewal window opens.",
+      },
+    ];
+    const draft = "Word is an accelerated onboarding waiver expires quietly at one venue.";
+    expect(detectLeaks(draft, transcript).length).toBeGreaterThan(0);
+  });
 });
 
 describe("structural guard: private evidence never reaches the writing agent", () => {

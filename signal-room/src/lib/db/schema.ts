@@ -150,6 +150,14 @@ export type DraftType = (typeof DRAFT_TYPES)[number];
 export const FEEDBACK_DECISIONS = ["use", "wrong_angle", "save", "ignore"] as const;
 export type FeedbackDecision = (typeof FEEDBACK_DECISIONS)[number];
 
+/** Stuart's three authority pillars. Every ingestion belongs to exactly one
+ *  (chosen at drop time — drops are deliberate), and the pillar drives
+ *  relevance terms, lead rules, voice vocabulary and outreach positioning.
+ *  Kept in lockstep with src/lib/pillars.ts. */
+export const PILLARS = ["prediction_markets", "igaming", "strait_up_growth"] as const;
+export type Pillar = (typeof PILLARS)[number];
+export const DEFAULT_PILLAR: Pillar = "prediction_markets";
+
 /** Outreach pipeline states for prospect edges on the relationship graph.
  *  The system only ever sets the first two (identified when the edge is
  *  created, drafted when a dm/email draft exists for the opportunity that
@@ -193,6 +201,9 @@ export const ingestions = pgTable(
       .notNull()
       .references(() => users.id),
     sourceType: text("source_type").notNull().default("mixed"),
+    // Which authority pillar this drop belongs to (drops are deliberate;
+    // Stuart picks at ingest, and can override via reprocess).
+    pillar: text("pillar").notNull().default("prediction_markets"),
     title: text("title").notNull(),
     // Raw input is the source of truth and is preserved verbatim.
     rawText: text("raw_text").notNull(),
@@ -498,6 +509,8 @@ export const opportunities = pgTable(
       .notNull()
       .references(() => storyClusters.id, { onDelete: "cascade" }),
     title: text("title").notNull(),
+    // denormalised from the ingestion so queue/archive filter cheaply
+    pillar: text("pillar").notNull().default("prediction_markets"),
     recommendedAction: text("recommended_action").notNull().default("monitor"),
     actionAlternativesJson: jsonb("action_alternatives_json")
       .$type<{ action: string; whyNot: string }[]>()
@@ -698,6 +711,45 @@ export const marketSnapshots = pgTable(
   (t) => [
     index("snapshots_market_idx").on(t.venue, t.marketId),
     index("snapshots_captured_idx").on(t.capturedAt),
+  ],
+);
+
+/** One same-run quote comparison on a matched cross-venue pair. Prices and
+ *  volumes come verbatim from the two venue APIs in a single collection. */
+export interface CrossVenueObservation {
+  at: string; // ISO timestamp of the collection run
+  kalshiPrice: number;
+  polymarketPrice: number;
+  /** signed: kalshiPrice - polymarketPrice */
+  gap: number;
+  kalshiVolume24h: number | null;
+  polymarketVolume24h: number | null;
+}
+
+/** A question the matcher believes trades on both venues, accumulating
+ *  observations across collection runs so one-shot comparisons become
+ *  trends ("this gap has held for a week"). The equivalence itself stays
+ *  an inference; every observation's numbers are venue-API facts. */
+export const crossVenuePairs = pgTable(
+  "cross_venue_pairs",
+  {
+    id: uuid("id").primaryKey(),
+    kalshiMarketId: text("kalshi_market_id").notNull(),
+    polymarketMarketId: text("polymarket_market_id").notNull(),
+    kalshiTitle: text("kalshi_title").notNull(),
+    polymarketTitle: text("polymarket_title").notNull(),
+    similarity: real("similarity").notNull(),
+    observationsJson: jsonb("observations_json")
+      .$type<CrossVenueObservation[]>()
+      .notNull()
+      .default([]),
+    observationCount: integer("observation_count").notNull().default(0),
+    firstSeenAt: timestamp("first_seen_at", { withTimezone: true }).notNull().defaultNow(),
+    lastSeenAt: timestamp("last_seen_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("cross_venue_pair_idx").on(t.kalshiMarketId, t.polymarketMarketId),
+    index("cross_venue_last_seen_idx").on(t.lastSeenAt),
   ],
 );
 

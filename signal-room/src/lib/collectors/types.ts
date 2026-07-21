@@ -7,6 +7,8 @@
 export interface CollectorOutput {
   title: string;
   sourceType: string;
+  /** authority pillar the ingestion lands in (default prediction_markets) */
+  pillar?: string;
   text: string;
   /** collector-specific note shown in logs (counts, cursors, rate info) */
   note?: string;

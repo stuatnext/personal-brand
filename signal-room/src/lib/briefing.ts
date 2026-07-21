@@ -10,6 +10,8 @@ import {
 } from "@/lib/db/schema";
 import { getCursor, setCursor } from "@/lib/collectors/cursors";
 import { getTodayQueue, type QueueEntry } from "@/lib/queue";
+import { getFollowUpsDue, followUpDays, type FollowUpDue } from "@/lib/graph";
+import { crossVenueTrends, type CrossVenueTrendRow } from "@/lib/collectors/markets";
 
 // The thread-aware briefing: "what changed since you last sat down",
 // composed from story-thread deltas, thesis movement and the open queue —
@@ -62,6 +64,13 @@ export interface BriefingData {
   queue: QueueEntry[];
   openLeads: { opportunityId: string; title: string; action: string }[];
   goneQuiet: QuietThread[];
+  /** Sent outreach sitting silent past the window — a nudge, never a send.
+   *  Current state, not since-gated: due is due until Stuart acts. */
+  followUps: FollowUpDue[];
+  followUpWindowDays: number;
+  /** Standing cross-venue trends from the pair history (also not
+   *  since-gated: a gap that has held for a week is news until it closes). */
+  crossVenue: CrossVenueTrendRow[];
 }
 
 const LEAD_ACTIONS = new Set(["speaker_lead", "sponsor_lead", "media_lead", "sales_handoff"]);
@@ -188,6 +197,10 @@ export async function getBriefing(): Promise<BriefingData> {
       lastObservedAt: t.lastObservedAt?.toISOString() ?? "",
     }));
 
+  const windowDays = await followUpDays();
+  const followUps = await getFollowUpsDue(windowDays);
+  const crossVenue = await crossVenueTrends();
+
   return {
     since,
     generatedAt: new Date().toISOString(),
@@ -197,6 +210,9 @@ export async function getBriefing(): Promise<BriefingData> {
     queue,
     openLeads: openLeads.slice(0, 8),
     goneQuiet,
+    followUps,
+    followUpWindowDays: windowDays,
+    crossVenue,
   };
 }
 

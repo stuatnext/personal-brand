@@ -1,6 +1,8 @@
 # Signal Room
 
-Stuart Crowley's private prediction-markets editorial intelligence system.
+Stuart Crowley's private editorial intelligence system, serving his three
+authority pillars: prediction markets (NEXTPredict), iGaming & sports
+betting (NEXT.io) and Strait Up Growth.
 
 > Signal Room turns industry noise, market activity and private context into
 > the few content moves worth making today.
@@ -17,6 +19,31 @@ public draft.
 
 The system **never sends or publishes anything**. Drafts end at `final`;
 Stuart acts by hand.
+
+## The three pillars
+
+One judgement engine serves all three of Stuart's authority pillars;
+the pillar is data, chosen deliberately per drop (drops are separate on
+purpose) and carried from the ingestion to its opportunities and drafts:
+
+| Pillar | Brand voice | What changes |
+| --- | --- | --- |
+| Prediction markets | NEXTPredict | betting/gambling/sportsbook/casino vocabulary banned in outreach; confirmed sign-off ("Commercial Director, NEXTPredict"); summit-shaped leads |
+| iGaming & sports betting | NEXT.io | industry vocabulary is normal working language; sign-off title stays a bracketed [YOUR TITLE] slot (never invented); operator/supplier/regulator lanes |
+| Strait Up Growth | Strait Up Growth | consulting leads (SEA expansion, CRM pain, fresh raises + a named company → sales_handoff); AI/CRM/GTM/SEA lanes; positioning presented as current thinking |
+
+Per pillar: relevance terms (the same iGaming story queues in its lane and
+is ignored as off-topic under prediction markets — both directions are
+gold-eval cases), edge-topic lanes, category-entry language, outreach
+positioning lines and sign-offs. Stuart-global voice rules (no em dashes,
+banned phrases, no negative parallelism) apply everywhere and are not
+per-pillar. The pillar is picked on Paste (or supplied by a collector; see
+the source prefix below), shows on Today/opportunity/archive, balances the
+queue (no pillar takes more than 3 of 5 slots when others have open work),
+and can be corrected per ingestion via Reprocess (audit-logged). The score
+dimension is stored under its historical key `nextpredict_relevance` so
+learned weights and history stay valid; it reads as "pillar relevance" in
+the UI and means relevance to the drop's own pillar.
 
 ## Quick start
 
@@ -48,10 +75,12 @@ npm run dev          # dev server on :4180
 npm run build        # production build
 npm run typecheck    # tsc --noEmit
 npm run lint         # eslint over src, scripts, tests, e2e
-npm test             # 111 vitest checks incl. hermetic DB round-trips + eval gates
-npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
+npm test             # 133 vitest checks incl. hermetic DB round-trips + eval gates
+npm run eval         # gold-set evaluation (45 cases, 126 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
 npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
+npm run collect:inbox # database-free collection into inbox/drops (the scheduled job)
+npm run ingest:inbox  # ingest committed inbox drops locally (sha-deduped, safe to re-run)
 npm run learn        # nudge score weights from Use/Wrong-angle feedback; --dry-run
 npm run briefing     # terminal "since you last sat down"; --mark sets the marker
 npm run shakedown    # live-provider draft evaluation (needs ANTHROPIC_API_KEY)
@@ -61,6 +90,20 @@ npm run db:reset     # wipe the LOCAL embedded database (refuses on DATABASE_URL
 ```
 
 ## Automated collection and learning
+
+Collection runs in two modes. **Local** (`npm run collect`) pulls straight
+into your database. **Scheduled** (`npm run collect:inbox`, run daily by the
+`signal-room-collect` GitHub Action at 05:30 SGT) is database-free: it
+gathers the same material with the same parsers, writes dated, lossless
+drop files under `inbox/drops/` and commits them — collector state (feed
+cursors, the market snapshot for diffing, the Kalshi rotation cursor,
+cross-venue pair history) lives in a committed JSON file, so an ephemeral
+runner can collect while PGlite never leaves your machine. When you sit
+down, `npm run ingest:inbox` feeds every drop you haven't seen through the
+normal pipeline (sha-deduped, so re-runs and overlaps are safe; stop the
+dev server first, PGlite is single-process). The feed roster is
+`config/feeds.json` — pillar-tagged and live-verified; add a feed by adding
+a line.
 
 **Collectors** (`npm run collect`) gather external intel and feed it through
 the exact same ingestion path as a manual paste — raw preservation,
@@ -85,7 +128,13 @@ extraction, claims, scoring identical:
   per run) so coverage converges across runs while every compared price
   stays fresh from the same fetch. *Live-verified: real cross-listed pairs
   found on both venues, incl. a 64c-vs-60c pair with 98% of volume on one
-  venue.*
+  venue.* Every matched pair's same-run quotes also land in a persistent
+  history (`cross_venue_pairs`, rolling window, pruned after 45 quiet
+  days), and a trend reader turns that history into briefing lines: a gap
+  that held across every observation, a gap that widened or narrowed by 5+
+  points, or a venue's share of the combined volume moving 20+ points. Two
+  quotes from the same day are a comparison, not a trend, so nothing is
+  claimed until the span crosses a day.
 - **reddit** (no credentials): sweeps `SIGNAL_ROOM_REDDIT_SUBS` via the
   public JSON API, formatted so the reddit segmenter parses it natively.
   Reddit refuses many datacenter IPs (fails loudly, never silently) — run
@@ -110,7 +159,10 @@ Two more collectors ride the same contract: **youtube** (keyless channel
 RSS, set `SIGNAL_ROOM_YOUTUBE_CHANNELS`) and **feeds** (any RSS 2.0/Atom
 feed, set `SIGNAL_ROOM_FEEDS` — the CFTC press-release feed and The Block
 both verified live). Both keep a persisted cursor per feed so only new
-items ingest.
+items ingest, and both accept a per-source pillar prefix
+(`igaming:https://…`) so an iGaming trade feed or a SEA business feed
+lands in its own lane; unprefixed sources stay on prediction markets.
+The markets/reddit/x collectors are prediction-markets by nature.
 
 ## Story continuity and theses
 
@@ -129,9 +181,11 @@ never interleave.
 **Briefing** (`/briefing`, or `npm run briefing`): "since you last sat
 down" — stories that moved (with their claim-level deltas), first
 sightings, thesis movement (new suggestions, confirmations, confidence
-moves with reasons), the live queue, open commercial leads and stories
-that have gone quiet. The marker is explicit: press *Mark caught up* (or
-`--mark`) and the next briefing measures from there.
+moves with reasons), the live queue, open commercial leads, follow-ups
+due, standing cross-venue trends and stories that have gone quiet. The
+marker is explicit: press *Mark caught up* (or `--mark`) and the next
+briefing measures from there (follow-ups and trends are current state,
+not since-gated: due is due until Stuart acts).
 
 **Relationship graph**: pressing **Use it** builds the graph. Authors of
 material Stuart acted on gain a `stuart_engaged_with` edge (strength grows
@@ -158,6 +212,14 @@ controls; the same controls live on each person page, next to an
 *Introduced by* form that records who made an introduction as an
 `introduced_by` edge (the introducer is found or created by name — a fact
 Stuart states, so recording it is not inventing it).
+
+**Follow-up cadence**: a prospect Stuart marked `sent` that has sat silent
+past the window (default 5 days, adjustable in Settings) surfaces as a
+follow-up nudge on Today and in the Briefing, sorted by days silent. The
+nudge is a reminder, never a sender, and it carries the outreach
+discipline with it: follow-ups to silence stay exploratory — the same
+20-minute ask with a clean out, no tickets, no pricing. The moment Stuart
+records a reply (or passes), the nudge clears itself.
 
 **Live-provider shakedown** (`npm run shakedown`, needs
 `ANTHROPIC_API_KEY`): the first structured Claude run — generates live
@@ -280,7 +342,7 @@ Private context still powers WHY STUART HAS AN ANGLE as guidance notes.
 
 ## Evaluation
 
-`npm run eval` runs 39 gold cases (curated from the real 2026-07-16 LinkedIn
+`npm run eval` runs 45 gold cases (curated from the real 2026-07-16 LinkedIn
 capture + synthetic fixtures covering every required category: comment /
 quote-post / original-post / DM / speaker / sponsor / media leads,
 regulatory, recruitment, infrastructure, misleading liquidity, unverified
@@ -302,10 +364,12 @@ private-information) — 101 checks with hard gates:
 segmentation (against the real capture), dedupe, claims
 (repetition-vs-corroboration, self-sourced announcements), the voice
 linter, leak detection, cross-venue matching (equivalence, thresholds,
-digest→claims round trip), hermetic DB round-trips (scratch PGlite,
-process → reprocess idempotency → private-draft safety → feedback), and
-the outreach state machine (both draft/use orderings, manual transitions,
-introductions, the pipeline view).
+digest→claims round trip), cross-venue history (trend reading, pair
+upserts, pruning, briefing round trip), hermetic DB round-trips (scratch
+PGlite, process → reprocess idempotency → private-draft safety →
+feedback), the outreach state machine (both draft/use orderings, manual
+transitions, introductions, the pipeline view) and the follow-up window
+(due/not-due boundaries, briefing round trip).
 
 ## Screens
 
@@ -346,20 +410,22 @@ panel on a continuing opportunity (11), Briefing (12), Outreach pipeline
 
 ## Next three integrations (recommended order)
 
-Four horizons are now built (collectors/market-data/learning/OCR;
+Five horizons are now built (collectors/market-data/learning/OCR;
 continuity/feeds/theses; briefing/graph/shakedown-harness;
-outreach-pipeline/cross-venue). What comes after:
+outreach-pipeline/cross-venue; follow-up-cadence/cross-venue-history).
+What comes after:
 
 1. **Run the live shakedown** — set `ANTHROPIC_API_KEY`, run
    `npm run shakedown`, and tune `src/lib/ai/prompts.ts` against the
    report. The harness exists; the tokens have not been spent yet.
-2. **Follow-up cadence on the pipeline** — a prospect sitting in `sent`
-   with no reply for N days should surface on Today/Briefing as a
-   follow-up nudge (exploratory register, never a chase with price
-   language), driven off `state_updated_at`.
-3. **Cross-venue history** — persist matched pairs across runs so the
-   briefing can say "this gap has held for a week" or "Kalshi's share of
-   this question doubled", turning one-shot comparisons into trends.
+2. **One-click follow-up drafts from the nudge** — a "draft the follow-up"
+   action on each due prospect that generates a linted dm/email in the
+   exploratory register (same 20-minute ask, clean out), pre-scoped to
+   that prospect's opportunity. Drafting only; sending stays Stuart's.
+3. **Trend lines into the editorial flow** — when a cross-venue trend
+   crosses a bar (gap held 7+ days, share doubled), emit it as a
+   "Cross-venue trend" digest line so it flows through claims into an
+   opportunity and can become a post, not just a briefing row.
 
 ## Product decisions
 

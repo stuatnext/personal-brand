@@ -122,6 +122,33 @@ export default async function BriefingPage() {
             </div>
           </section>
 
+          <section className="panel p-4" data-testid="briefing-followups">
+            <div className="k-label mb-3 !text-[--color-signal]">Follow-ups due · {b.followUps.length}</div>
+            {b.followUps.length === 0 ? (
+              <div className="text-[12px] text-[--color-dim]">
+                Nothing sent has sat silent past {b.followUpWindowDays} days.
+              </div>
+            ) : (
+              <>
+                <div className="space-y-1.5">
+                  {b.followUps.map((f) => (
+                    <Link key={f.relationshipId} href={`/people/${f.entityId}`} className="block hover:text-[--color-signal]">
+                      <span className="flex items-center justify-between gap-2">
+                        <span className="min-w-0 truncate text-[12.5px] font-medium">{f.name}</span>
+                        <span className="tag tag-signal shrink-0">{f.daysSilent}d silent</span>
+                      </span>
+                      <span className="k-label">{f.relationship.replace(/_/g, " ")}</span>
+                    </Link>
+                  ))}
+                </div>
+                <p className="mt-3 text-[11px] leading-relaxed text-[--color-dim]">
+                  Follow-ups to silence stay exploratory: the same 20-minute ask with a clean out.
+                  No tickets, no pricing. You send by hand; record it on the pipeline.
+                </p>
+              </>
+            )}
+          </section>
+
           <section className="panel p-4">
             <div className="k-label mb-3">Open commercial leads · {b.openLeads.length}</div>
             <div className="space-y-1.5">
@@ -133,6 +160,33 @@ export default async function BriefingPage() {
               ))}
               {b.openLeads.length === 0 ? <div className="text-[12px] text-[--color-dim]">None open.</div> : null}
             </div>
+          </section>
+
+          <section className="panel p-4" data-testid="briefing-crossvenue">
+            <div className="k-label mb-3">Cross-venue trends · {b.crossVenue.length}</div>
+            {b.crossVenue.length === 0 ? (
+              <div className="text-[12px] text-[--color-dim]">
+                No matched pair has enough history yet. Trends build as the markets collector runs.
+              </div>
+            ) : (
+              <>
+                <div className="space-y-2">
+                  {b.crossVenue.map((t) => (
+                    <div key={t.pairId}>
+                      <div className="text-[12.5px] font-medium leading-snug">{t.title.slice(0, 80)}</div>
+                      <div className="mt-0.5 text-[11.5px] leading-snug text-[--color-mut]">{t.headline}</div>
+                      <div className="k-label mt-0.5">
+                        {t.kind.replace(/_/g, " ")} · {t.kalshiMarketId} / {t.polymarketMarketId}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-3 text-[11px] leading-relaxed text-[--color-dim]">
+                  Prices are venue-API quotes compared within single runs; the pairing itself is the
+                  matcher&apos;s inference.
+                </p>
+              </>
+            )}
           </section>
 
           <section className="panel p-4">

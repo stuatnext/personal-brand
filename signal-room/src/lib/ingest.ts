@@ -6,6 +6,8 @@ import { db, dataDir } from "@/lib/db/client";
 import { ingestions, ingestionFiles, users, auditLog } from "@/lib/db/schema";
 import { uid, sha256 } from "@/lib/ids";
 import { defaultPermissionForSource } from "@/lib/permissions";
+import { isPillar } from "@/lib/pillars";
+import { DEFAULT_PILLAR } from "@/lib/db/schema";
 import { enqueueProcessing } from "@/lib/pipeline/run";
 import { ocrImage } from "@/lib/ocr";
 
@@ -25,6 +27,9 @@ export interface IncomingFile {
 export interface CreateIngestionInput {
   title?: string;
   sourceType: string;
+  /** authority pillar for this drop (drops are deliberate; defaults to
+   *  prediction_markets when not specified) */
+  pillar?: string;
   text?: string;
   files?: IncomingFile[];
 }
@@ -170,6 +175,7 @@ export async function createIngestion(input: CreateIngestionInput): Promise<Crea
     id,
     userId,
     sourceType: input.sourceType,
+    pillar: isPillar(input.pillar ?? "") ? input.pillar : DEFAULT_PILLAR,
     title,
     rawText,
     rawSha256: sha256(rawText),

@@ -1,0 +1,9 @@
+{
+  "title": "Market baseline captured (400 listings)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Baseline snapshot on Kalshi and Polymarket: 400 open listings recorded. Diffs against this baseline start with the next collection run.",
+  "note": "baseline only, no diff emitted",
+  "capturedAt": "2026-07-21T01:05:30.918Z",
+  "sha256": "736122920c75485098844297ca79c0913761ecb25d40450fdec06b84a170a257"
+}

@@ -37,9 +37,17 @@ interface Item {
   permissionLevel: string;
 }
 
+// Keep in lockstep with PILLARS in src/lib/db/schema.ts.
+const PILLAR_CHOICES: { value: string; label: string }[] = [
+  { value: "prediction_markets", label: "Prediction markets" },
+  { value: "igaming", label: "iGaming & sports betting" },
+  { value: "strait_up_growth", label: "Strait Up Growth" },
+];
+
 export function ProcessingReport({ ingestionId }: { ingestionId: string }) {
   const [run, setRun] = useState<Run | null>(null);
   const [ingestion, setIngestion] = useState<Record<string, unknown> | null>(null);
+  const [pillarChoice, setPillarChoice] = useState("prediction_markets");
   const [items, setItems] = useState<Item[] | null>(null);
   const [filter, setFilter] = useState<"content" | "noise" | "all">("content");
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -49,6 +57,7 @@ export function ProcessingReport({ ingestionId }: { ingestionId: string }) {
     const res = await fetch(`/api/ingestions/${ingestionId}`, { cache: "no-store" });
     const data = await res.json();
     setIngestion(data.ingestion);
+    if (data.ingestion?.pillar) setPillarChoice(String(data.ingestion.pillar));
     setRun(data.latestRun);
     return data.latestRun as Run | null;
   }, [ingestionId]);
@@ -159,24 +168,42 @@ export function ProcessingReport({ ingestionId }: { ingestionId: string }) {
         </div>
 
         <div>
-          <div className="mb-3 flex items-center justify-between">
+          <div className="mb-3 flex items-center justify-between gap-3">
             <div>
               <div className="font-mono text-[13px] text-[--color-fg]">{String(ingestion.title ?? "")}</div>
               <div className="k-label mt-1">
-                {String(ingestion.sourceType)} · {fmtDate(ingestion.createdAt as string)} · sha256{" "}
-                {String(ingestion.rawSha256 ?? "").slice(0, 12)}…
+                {String(ingestion.sourceType)} · {String(ingestion.pillar ?? "prediction_markets").replace(/_/g, " ")} ·{" "}
+                {fmtDate(ingestion.createdAt as string)} · sha256 {String(ingestion.rawSha256 ?? "").slice(0, 12)}…
               </div>
             </div>
             {!running ? (
-              <button
-                className="btn"
-                onClick={async () => {
-                  await fetch(`/api/ingestions/${ingestionId}/reprocess`, { method: "POST" });
-                  location.reload();
-                }}
-              >
-                Reprocess
-              </button>
+              <div className="flex items-center gap-2" data-testid="reprocess-controls">
+                <select
+                  aria-label="pillar for reprocess"
+                  value={pillarChoice}
+                  onChange={(e) => setPillarChoice(e.target.value)}
+                  className="!w-auto text-[11.5px]"
+                >
+                  {PILLAR_CHOICES.map((p) => (
+                    <option key={p.value} value={p.value}>
+                      {p.label}
+                    </option>
+                  ))}
+                </select>
+                <button
+                  className="btn"
+                  onClick={async () => {
+                    await fetch(`/api/ingestions/${ingestionId}/reprocess`, {
+                      method: "POST",
+                      headers: { "content-type": "application/json" },
+                      body: JSON.stringify({ pillar: pillarChoice }),
+                    });
+                    location.reload();
+                  }}
+                >
+                  Reprocess
+                </button>
+              </div>
             ) : null}
           </div>
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[3px] border hairline bg-[--color-line] sm:grid-cols-3 xl:grid-cols-4">

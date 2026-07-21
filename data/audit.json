@@ -4154,6 +4154,78 @@
       "action": "update",
       "collection": "content",
       "summary": "body,firstComment,tags"
+    },
+    {
+      "id": "cal-f15169e6",
+      "at": "2026-07-21T02:37:03.431Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Retention is the missing World Cup number"
+    },
+    {
+      "id": "cal-973a11c1",
+      "at": "2026-07-21T02:37:03.437Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Retention is the missing World Cup number"
+    },
+    {
+      "id": "cal-4ffb65bc",
+      "at": "2026-07-21T02:37:03.443Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Retention is the missing World Cup number"
+    },
+    {
+      "id": "cal-6b450ae8",
+      "at": "2026-07-21T02:37:03.448Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The World Cup was a payments stress test"
+    },
+    {
+      "id": "cal-3ca5ad44",
+      "at": "2026-07-21T02:37:03.454Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The World Cup was a payments stress test"
+    },
+    {
+      "id": "cal-b2d7b68f",
+      "at": "2026-07-21T02:37:03.459Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "The World Cup was a payments stress test"
+    },
+    {
+      "id": "cal-f8752ecb",
+      "at": "2026-07-21T02:37:03.464Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Surveillance architecture, not surveillance debate"
+    },
+    {
+      "id": "cal-a6b1fc39",
+      "at": "2026-07-21T02:37:03.469Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Surveillance architecture, not surveillance debate"
+    },
+    {
+      "id": "cal-0885f78c",
+      "at": "2026-07-21T02:37:03.475Z",
+      "actor": "intel-ingest-2026-07-21",
+      "action": "insert",
+      "collection": "calendar",
+      "summary": "Surveillance architecture, not surveillance debate"
     }
   ]
 }

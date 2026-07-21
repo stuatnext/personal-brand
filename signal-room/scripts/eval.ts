@@ -17,7 +17,7 @@ import { detectLeaks, isPublishable } from "../src/lib/permissions";
 interface GoldCase {
   id: string;
   category: string;
-  input: { fixture?: string; text?: string; sourceType: string };
+  input: { fixture?: string; text?: string; sourceType: string; pillar?: string };
   expect: {
     minContentItems?: number;
     maxContentItems?: number;
@@ -57,13 +57,15 @@ async function main() {
   // one pipeline run per distinct input
   const runs = new Map<string, PureRun>();
   const runFor = (c: GoldCase): PureRun => {
-    const key = c.input.fixture ? `f:${c.input.fixture}:${c.input.sourceType}` : `t:${c.input.text}:${c.input.sourceType}`;
+    const key = c.input.fixture
+      ? `f:${c.input.fixture}:${c.input.sourceType}:${c.input.pillar ?? ""}`
+      : `t:${c.input.text}:${c.input.sourceType}:${c.input.pillar ?? ""}`;
     let run = runs.get(key);
     if (!run) {
       const raw = c.input.fixture
         ? fs.readFileSync(path.join(root, "fixtures", c.input.fixture), "utf8")
         : (c.input.text ?? "");
-      run = runPurePipeline(raw, c.input.sourceType);
+      run = runPurePipeline(raw, c.input.sourceType, undefined, c.input.pillar);
       runs.set(key, run);
     }
     return run;
@@ -189,7 +191,11 @@ async function main() {
         add(c.id, c.category, "draft_generated", false, "no draft context for marker");
       } else {
         const draft = await provider.generateDraft(ctx);
-        const lint = lintVoice(draft, { hasUnverifiedClaims: ctx.hasUnverifiedClaims });
+        const lint = lintVoice(draft, {
+          hasUnverifiedClaims: ctx.hasUnverifiedClaims,
+          outreach: ["dm", "email", "forum_post"].includes(e.draft.type),
+          pillar: run.pillar,
+        });
         add(c.id, c.category, "voice_compliance", lint.errors.length === 0, lint.errors.map((x) => x.rule).join(",") || "clean");
         if (e.draft.forbidden) {
           const restricted = run.items

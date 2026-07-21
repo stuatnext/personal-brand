@@ -106,11 +106,13 @@ export async function generateDraft(
     allowedEvidence,
     hasUnverifiedClaims,
     stuartReaction,
+    pillar: opp.pillar,
   });
 
   const voiceLint = lintVoice(content, {
     outreach: OUTREACH_TYPES.has(draftType),
     hasUnverifiedClaims,
+    pillar: opp.pillar,
   });
 
   const permissionWarnings = await scanForLeaks(content);
@@ -186,7 +188,7 @@ export async function reviseDraft(
   const [existing] = await database.select().from(drafts).where(eq(drafts.id, draftId));
   if (!existing) throw new Error("draft not found");
   const [opp] = await database
-    .select({ clusterId: opportunities.storyClusterId })
+    .select({ clusterId: opportunities.storyClusterId, pillar: opportunities.pillar })
     .from(opportunities)
     .where(eq(opportunities.id, existing.opportunityId));
   const clusterClaims = opp
@@ -197,6 +199,7 @@ export async function reviseDraft(
     hasUnverifiedClaims: clusterClaims.some(
       (c) => c.status === "social_claim_only" || c.status === "disputed" || c.status === "reported",
     ),
+    pillar: opp?.pillar,
   });
   const permissionWarnings = await scanForLeaks(content);
   await database

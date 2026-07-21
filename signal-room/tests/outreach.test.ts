@@ -18,12 +18,14 @@ import { auditLog, entities, ingestions, opportunities, relationships, users } f
 import { processIngestion } from "@/lib/pipeline/run";
 import {
   engagementByName,
+  getFollowUpsDue,
   getPipeline,
   personProfile,
   recordEngagement,
   recordIntroduction,
   setOutreachState,
 } from "@/lib/graph";
+import { getBriefing } from "@/lib/briefing";
 import { generateDraft } from "@/lib/drafts";
 import { uid, sha256 } from "@/lib/ids";
 import { and, eq } from "drizzle-orm";
@@ -237,4 +239,41 @@ describe("pipeline view", () => {
     expect(totalsByState.replied).toBeGreaterThanOrEqual(1);
     expect(totalsByState.drafted).toBeGreaterThanOrEqual(1);
   });
+});
+
+describe("follow-up cadence", () => {
+  it("surfaces sent-and-silent prospects past the window, and only those", async () => {
+    const database = await db();
+
+    // Robinhood: sent 9 days ago with no reply -> due
+    const robinhood = await prospectEdgeFor("Robinhood");
+    await setOutreachState(robinhood.edge!.id, "sent");
+    await database
+      .update(relationships)
+      .set({ stateUpdatedAt: new Date(Date.now() - 9 * 24 * 3600 * 1000) })
+      .where(eq(relationships.id, robinhood.edge!.id));
+
+    // JPMorgan: sent just now -> inside the window, not due
+    const jpm = await prospectEdgeFor("JPMorgan");
+    await setOutreachState(jpm.edge!.id, "sent");
+
+    const due = await getFollowUpsDue(5);
+    const names = due.map((f) => f.name);
+    expect(names).toContain("Robinhood");
+    expect(names).not.toContain("JPMorgan"); // too recent
+    expect(names).not.toContain("Goldman Sachs"); // replied, not silent
+
+    const robinhoodDue = due.find((f) => f.name === "Robinhood")!;
+    expect(robinhoodDue.daysSilent).toBe(9);
+    expect(robinhoodDue.relationship).toBe("sponsor_prospect");
+
+    // a wider window empties the list
+    expect(await getFollowUpsDue(30)).toHaveLength(0);
+  });
+
+  it("reaches the briefing with the configured window", async () => {
+    const briefing = await getBriefing();
+    expect(briefing.followUpWindowDays).toBe(5);
+    expect(briefing.followUps.some((f) => f.name === "Robinhood")).toBe(true);
+  }, 60_000);
 });

@@ -11,6 +11,7 @@ import {
   PROSPECT_RELATIONSHIPS,
   relationships,
   sourceItems,
+  users,
 } from "@/lib/db/schema";
 import { uid } from "@/lib/ids";
 import { prospectFlags } from "@/lib/pipeline/entities";
@@ -330,6 +331,70 @@ export async function recordIntroduction(
     detailJson: { entityId, introducer: introducer.canonicalName, ...(note ? { note } : {}) },
   });
   return { introducerId: introducer.id, edgeId };
+}
+
+// --- Follow-up cadence --------------------------------------------------------
+
+export const DEFAULT_FOLLOW_UP_DAYS = 5;
+
+export interface FollowUpDue {
+  relationshipId: string;
+  entityId: string;
+  name: string;
+  kind: string;
+  relationship: string;
+  stateUpdatedAt: string | null;
+  daysSilent: number;
+  note: string | null;
+}
+
+/** The configured silence window before a sent prospect surfaces as a
+ *  follow-up (users.settingsJson.followUpDays, default 5). */
+export async function followUpDays(): Promise<number> {
+  const database = await db();
+  const [owner] = await database.select().from(users).limit(1);
+  const settings = (owner?.settingsJson ?? {}) as { followUpDays?: number };
+  return typeof settings.followUpDays === "number" && settings.followUpDays >= 1
+    ? Math.round(settings.followUpDays)
+    : DEFAULT_FOLLOW_UP_DAYS;
+}
+
+/**
+ * Prospects Stuart SENT outreach to that have sat silent for the window.
+ * This is a nudge, never an auto-send — and per the outreach discipline a
+ * follow-up to silence stays exploratory: the same 20-minute ask with a
+ * clean out, no tickets, no pricing. Silence is measured from the moment
+ * Stuart recorded `sent` (state_updated_at); anything he has since moved
+ * to replied/meeting_booked/confirmed/passed no longer qualifies.
+ */
+export async function getFollowUpsDue(staleDays?: number): Promise<FollowUpDue[]> {
+  const days = staleDays ?? (await followUpDays());
+  const cutoff = Date.now() - days * 24 * 3600 * 1000;
+  const database = await db();
+  const rows = await database
+    .select({ rel: relationships, entity: entities })
+    .from(relationships)
+    .innerJoin(entities, eq(relationships.fromEntityId, entities.id))
+    .where(
+      and(
+        inArray(relationships.relationship, [...PROSPECT_RELATIONSHIPS]),
+        eq(relationships.state, "sent"),
+      ),
+    );
+  return rows
+    .filter((r) => r.rel.stateUpdatedAt && r.rel.stateUpdatedAt.getTime() < cutoff)
+    .map(({ rel, entity }) => ({
+      relationshipId: rel.id,
+      entityId: entity.id,
+      name: entity.canonicalName,
+      kind: entity.kind,
+      relationship: rel.relationship,
+      stateUpdatedAt: rel.stateUpdatedAt?.toISOString() ?? null,
+      daysSilent: Math.floor((Date.now() - rel.stateUpdatedAt!.getTime()) / (24 * 3600 * 1000)),
+      note: rel.note,
+    }))
+    .sort((a, b) => b.daysSilent - a.daysSilent)
+    .slice(0, 12);
 }
 
 // --- Pipeline view ----------------------------------------------------------

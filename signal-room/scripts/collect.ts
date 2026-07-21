@@ -80,6 +80,7 @@ async function main() {
           const result = await createIngestion({
             title: out.title,
             sourceType: out.sourceType,
+            pillar: out.pillar,
             text: out.text,
           });
           const status = await waitForRun(result.runId);

@@ -1,6 +1,6 @@
-import { desc, inArray, lt } from "drizzle-orm";
+import { and, desc, eq, inArray, lt } from "drizzle-orm";
 import { db } from "@/lib/db/client";
-import { marketSnapshots } from "@/lib/db/schema";
+import { crossVenuePairs, marketSnapshots, type CrossVenueObservation } from "@/lib/db/schema";
 import { uid } from "@/lib/ids";
 import { getCursor, setCursor } from "./cursors";
 import type { Collector, CollectorOutput } from "./types";
@@ -363,6 +363,194 @@ export function buildCrossVenueDigest(signals: CrossVenueSignal[], cap = 8): str
   return lines.join("\n\n");
 }
 
+// --- Cross-venue history: pairs accumulate observations across runs ---------
+
+export const MAX_PAIR_OBSERVATIONS = 90;
+
+/** One same-run quote comparison, shaped identically wherever the history
+ *  lives (the DB table locally, the committed state file in the scheduled
+ *  inbox job) so the two never drift. */
+export function observationFor(pair: EquivalentPair, at: Date): CrossVenueObservation {
+  return {
+    at: at.toISOString(),
+    kalshiPrice: pair.kalshi.lastPrice ?? 0,
+    polymarketPrice: pair.polymarket.lastPrice ?? 0,
+    gap: (pair.kalshi.lastPrice ?? 0) - (pair.polymarket.lastPrice ?? 0),
+    kalshiVolume24h: pair.kalshi.volume24h,
+    polymarketVolume24h: pair.polymarket.volume24h,
+  };
+}
+
+/** Record this run's quote comparison on every matched pair. Same-run
+ *  numbers only; the rolling window keeps the table bounded. */
+export async function recordPairObservations(pairs: EquivalentPair[], at = new Date()): Promise<void> {
+  if (pairs.length === 0) return;
+  const database = await db();
+  for (const pair of pairs) {
+    if (!pair.kalshi.marketId || !pair.polymarket.marketId) continue;
+    const obs = observationFor(pair, at);
+    const [existing] = await database
+      .select()
+      .from(crossVenuePairs)
+      .where(
+        and(
+          eq(crossVenuePairs.kalshiMarketId, pair.kalshi.marketId),
+          eq(crossVenuePairs.polymarketMarketId, pair.polymarket.marketId),
+        ),
+      );
+    if (existing) {
+      await database
+        .update(crossVenuePairs)
+        .set({
+          kalshiTitle: pair.kalshi.title,
+          polymarketTitle: pair.polymarket.title,
+          similarity: pair.similarity,
+          observationsJson: [...(existing.observationsJson ?? []), obs].slice(-MAX_PAIR_OBSERVATIONS),
+          observationCount: existing.observationCount + 1,
+          lastSeenAt: at,
+        })
+        .where(eq(crossVenuePairs.id, existing.id));
+    } else {
+      await database.insert(crossVenuePairs).values({
+        id: uid(),
+        kalshiMarketId: pair.kalshi.marketId,
+        polymarketMarketId: pair.polymarket.marketId,
+        kalshiTitle: pair.kalshi.title,
+        polymarketTitle: pair.polymarket.title,
+        similarity: pair.similarity,
+        observationsJson: [obs],
+        observationCount: 1,
+        firstSeenAt: at,
+        lastSeenAt: at,
+      });
+    }
+  }
+}
+
+/** Drop pairs not re-observed within `days` (delisted, renamed, or the
+ *  match stopped qualifying). */
+export async function pruneCrossVenuePairs(days = 45): Promise<void> {
+  const database = await db();
+  const cutoff = new Date(Date.now() - days * 24 * 3600 * 1000);
+  await database.delete(crossVenuePairs).where(lt(crossVenuePairs.lastSeenAt, cutoff));
+}
+
+export interface CrossVenueTrend {
+  kind: "gap_widened" | "gap_converged" | "gap_held" | "share_shift";
+  headline: string;
+  spanDays: number;
+  observationCount: number;
+}
+
+const pts = (gap: number): string => `${Math.round(Math.abs(gap) * 100)}`;
+
+/**
+ * Read a trend out of one pair's observation history. Numbers are quoted
+ * verbatim; the wording states only what the observations show. Two quotes
+ * from the same day are a comparison, not a trend, so a span under a day
+ * returns null.
+ */
+export function computeTrend(observations: CrossVenueObservation[]): CrossVenueTrend | null {
+  if (observations.length < 2) return null;
+  const first = observations[0];
+  const latest = observations[observations.length - 1];
+  const spanDays = (new Date(latest.at).getTime() - new Date(first.at).getTime()) / (24 * 3600 * 1000);
+  if (!Number.isFinite(spanDays) || spanDays < 1) return null;
+  const span = Math.round(spanDays);
+  const base = { spanDays: span, observationCount: observations.length };
+
+  const firstAbs = Math.abs(first.gap);
+  const latestAbs = Math.abs(latest.gap);
+  if (latestAbs - firstAbs >= 0.05) {
+    return {
+      kind: "gap_widened",
+      headline: `price gap widened from ${pts(first.gap)} to ${pts(latest.gap)} points across ${observations.length} observations over ${span} day(s)`,
+      ...base,
+    };
+  }
+  if (firstAbs - latestAbs >= 0.05) {
+    return {
+      kind: "gap_converged",
+      headline: `price gap narrowed from ${pts(first.gap)} to ${pts(latest.gap)} points across ${observations.length} observations over ${span} day(s)`,
+      ...base,
+    };
+  }
+
+  const sameSign = observations.every((o) => Math.sign(o.gap) === Math.sign(first.gap));
+  const allWide = observations.every((o) => Math.abs(o.gap) >= 0.04);
+  if (sameSign && allWide) {
+    const minGap = Math.min(...observations.map((o) => Math.abs(o.gap)));
+    const richer = first.gap > 0 ? "Kalshi" : "Polymarket";
+    return {
+      kind: "gap_held",
+      headline: `priced at least ${Math.round(minGap * 100)} points higher on ${richer} in every one of ${observations.length} observations over ${span} day(s)`,
+      ...base,
+    };
+  }
+
+  const share = (o: CrossVenueObservation): number | null => {
+    const k = o.kalshiVolume24h ?? 0;
+    const p = o.polymarketVolume24h ?? 0;
+    return k + p >= 10_000 ? k / (k + p) : null;
+  };
+  const firstShare = share(first);
+  const latestShare = share(latest);
+  if (firstShare !== null && latestShare !== null && Math.abs(latestShare - firstShare) >= 0.2) {
+    return {
+      kind: "share_shift",
+      headline: `Kalshi's share of the combined 24h volume moved from ${Math.round(firstShare * 100)}% to ${Math.round(latestShare * 100)}% over ${span} day(s)`,
+      ...base,
+    };
+  }
+  return null;
+}
+
+export interface CrossVenueTrendRow extends CrossVenueTrend {
+  pairId: string;
+  kalshiMarketId: string;
+  polymarketMarketId: string;
+  title: string;
+  latestGap: number;
+  lastSeenAt: string;
+}
+
+/** Current standing trends across all remembered pairs, strongest first. */
+export async function crossVenueTrends(limit = 6): Promise<CrossVenueTrendRow[]> {
+  const database = await db();
+  const rows = await database
+    .select()
+    .from(crossVenuePairs)
+    .orderBy(desc(crossVenuePairs.lastSeenAt))
+    .limit(200);
+  const KIND_ORDER: Record<CrossVenueTrend["kind"], number> = {
+    gap_widened: 0,
+    gap_converged: 1,
+    gap_held: 2,
+    share_shift: 3,
+  };
+  const out: CrossVenueTrendRow[] = [];
+  for (const row of rows) {
+    const observations = row.observationsJson ?? [];
+    const trend = computeTrend(observations);
+    if (!trend) continue;
+    out.push({
+      ...trend,
+      pairId: row.id,
+      kalshiMarketId: row.kalshiMarketId,
+      polymarketMarketId: row.polymarketMarketId,
+      title: row.kalshiTitle,
+      latestGap: observations[observations.length - 1]?.gap ?? 0,
+      lastSeenAt: row.lastSeenAt?.toISOString() ?? "",
+    });
+  }
+  return out
+    .sort(
+      (a, b) =>
+        KIND_ORDER[a.kind] - KIND_ORDER[b.kind] || Math.abs(b.latestGap) - Math.abs(a.latestGap),
+    )
+    .slice(0, limit);
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
   const res = await fetch(url, { headers: { accept: "application/json" } });
   if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
@@ -429,9 +617,9 @@ export async function pruneSnapshots(days = 30): Promise<void> {
   await database.delete(marketSnapshots).where(lt(marketSnapshots.capturedAt, cutoff));
 }
 
-const KALSHI_URL = "https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open";
+export const KALSHI_URL = "https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open";
 // gamma serves at most 100 rows per call regardless of limit; page by offset
-const polymarketUrl = (offset: number) =>
+export const polymarketUrl = (offset: number) =>
   `https://gamma-api.polymarket.com/markets?limit=100&offset=${offset}&closed=false&order=volume24hr&ascending=false`;
 
 // Kalshi's unordered listing is dominated by auto-generated same-day sports
@@ -448,7 +636,7 @@ const polymarketUrl = (offset: number) =>
 const LONGDATED_CURSOR_KEY = "kalshi-longdated-cursor";
 const LONGDATED_PAGES_PER_RUN = 4; // 4k rows/run -> full rotation in ~a week of daily runs
 
-function kalshiLongDatedUrl(cursor: string): string {
+export function kalshiLongDatedUrl(cursor: string): string {
   const ts = Math.floor(Date.now() / 1000) + 5 * 86400;
   return (
     `https://api.elections.kalshi.com/trade-api/v2/markets?limit=1000&status=open&min_close_ts=${ts}` +
@@ -520,6 +708,10 @@ export function marketCollector(): Collector {
         poolNote = `; long-dated Kalshi window unavailable (${err instanceof Error ? err.message : "fetch failed"}), matched against the primary slice only`;
       }
       const pairs = matchEquivalentMarkets(kalshiPool, polyRows);
+      // every matched pair's same-run quotes go into the history, signal or
+      // not — trends need the quiet observations too
+      await recordPairObservations(pairs);
+      await pruneCrossVenuePairs();
       const signals = crossVenueSignals(pairs);
       const crossDigest = buildCrossVenueDigest(signals);
       const date = new Date().toISOString().slice(0, 10);

@@ -112,10 +112,21 @@ export function formatVideo(item: FeedItem, channel: string): string {
   return lines.join("\n");
 }
 
-const YT_CHANNELS = (process.env.SIGNAL_ROOM_YOUTUBE_CHANNELS ?? "")
-  .split(",")
-  .map((s) => s.trim())
-  .filter(Boolean);
+/** Parse a comma list of sources with optional "pillar:" prefixes, e.g.
+ *  "igaming:https://feed…, https://feed2" (no prefix = prediction_markets).
+ *  Pillar keys never collide with URL schemes, so plain URLs parse as-is. */
+export function parsePillarSources(raw: string | undefined): { source: string; pillar: string }[] {
+  return (raw ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .map((entry) => {
+      const m = entry.match(/^(prediction_markets|igaming|strait_up_growth):(.+)$/);
+      return m ? { pillar: m[1], source: m[2].trim() } : { pillar: "prediction_markets", source: entry };
+    });
+}
+
+const YT_CHANNELS = parsePillarSources(process.env.SIGNAL_ROOM_YOUTUBE_CHANNELS);
 
 export function youtubeCollector(): Collector {
   return {
@@ -127,36 +138,39 @@ export function youtubeCollector(): Collector {
         : { ok: false, reason: "set SIGNAL_ROOM_YOUTUBE_CHANNELS to a comma list of channel IDs" };
     },
     async collect(): Promise<CollectorOutput[]> {
-      const sections: string[] = [];
-      let total = 0;
-      for (const channelId of YT_CHANNELS) {
+      // one output per pillar so each drop lands in its own lane
+      const byPillar = new Map<string, { sections: string[]; total: number; channels: number }>();
+      for (const { source: channelId, pillar } of YT_CHANNELS) {
         const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
         const { feedTitle, items } = parseFeed(await fetchText(url));
         const cursor = await getCursor("youtube", channelId);
         const { fresh, nextCursor } = newItemsSince(items, cursor);
         if (nextCursor) await setCursor("youtube", channelId, nextCursor);
-        total += fresh.length;
-        sections.push(fresh.map((i) => formatVideo(i, feedTitle)).join("\n\n"));
+        const bucket = byPillar.get(pillar) ?? { sections: [], total: 0, channels: 0 };
+        bucket.total += fresh.length;
+        bucket.channels += 1;
+        bucket.sections.push(fresh.map((i) => formatVideo(i, feedTitle)).join("\n\n"));
+        byPillar.set(pillar, bucket);
       }
-      const text = sections.filter(Boolean).join("\n\n");
-      if (!text.trim() || total === 0) return [];
       const date = new Date().toISOString().slice(0, 10);
-      return [
-        {
-          title: `YouTube sweep, ${YT_CHANNELS.length} channel(s) (${date})`,
+      const outputs: CollectorOutput[] = [];
+      for (const [pillar, bucket] of byPillar) {
+        const text = bucket.sections.filter(Boolean).join("\n\n");
+        if (!text.trim() || bucket.total === 0) continue;
+        outputs.push({
+          title: `YouTube sweep, ${bucket.channels} channel(s) (${date})`,
           sourceType: "youtube",
+          pillar,
           text,
-          note: `${total} new video(s)`,
-        },
-      ];
+          note: `${bucket.total} new video(s)`,
+        });
+      }
+      return outputs;
     },
   };
 }
 
-const FEED_URLS = (process.env.SIGNAL_ROOM_FEEDS ?? "")
-  .split(",")
-  .map((s) => s.trim())
-  .filter(Boolean);
+const FEED_URLS = parsePillarSources(process.env.SIGNAL_ROOM_FEEDS);
 
 export function rssCollector(): Collector {
   return {
@@ -168,17 +182,19 @@ export function rssCollector(): Collector {
         : { ok: false, reason: "set SIGNAL_ROOM_FEEDS to a comma list of RSS/Atom URLs" };
     },
     async collect(): Promise<CollectorOutput[]> {
-      const sections: string[] = [];
+      const byPillar = new Map<string, { sections: string[]; total: number; feeds: number }>();
       const failures: string[] = [];
-      let total = 0;
-      for (const feedUrl of FEED_URLS) {
+      for (const { source: feedUrl, pillar } of FEED_URLS) {
         try {
           const { feedTitle, items } = parseFeed(await fetchText(feedUrl));
           const cursor = await getCursor("feeds", feedUrl);
           const { fresh, nextCursor } = newItemsSince(items, cursor);
           if (nextCursor) await setCursor("feeds", feedUrl, nextCursor);
-          total += fresh.length;
-          sections.push(fresh.map((i) => formatFeedItem(i, feedTitle)).join("\n\n"));
+          const bucket = byPillar.get(pillar) ?? { sections: [], total: 0, feeds: 0 };
+          bucket.total += fresh.length;
+          bucket.feeds += 1;
+          bucket.sections.push(fresh.map((i) => formatFeedItem(i, feedTitle)).join("\n\n"));
+          byPillar.set(pillar, bucket);
         } catch (err) {
           failures.push(`${feedUrl}: ${err instanceof Error ? err.message : err}`);
         }
@@ -186,17 +202,20 @@ export function rssCollector(): Collector {
       if (failures.length === FEED_URLS.length && FEED_URLS.length > 0) {
         throw new Error(`all feeds failed (${failures.join("; ")})`);
       }
-      const text = sections.filter(Boolean).join("\n\n");
-      if (!text.trim() || total === 0) return [];
       const date = new Date().toISOString().slice(0, 10);
-      return [
-        {
-          title: `Feed sweep, ${FEED_URLS.length} feed(s) (${date})`,
+      const outputs: CollectorOutput[] = [];
+      for (const [pillar, bucket] of byPillar) {
+        const text = bucket.sections.filter(Boolean).join("\n\n");
+        if (!text.trim() || bucket.total === 0) continue;
+        outputs.push({
+          title: `Feed sweep, ${bucket.feeds} feed(s) (${date})`,
           sourceType: "news",
+          pillar,
           text,
-          note: `${total} new item(s)${failures.length ? `; ${failures.length} feed(s) failed` : ""}`,
-        },
-      ];
+          note: `${bucket.total} new item(s)${failures.length ? `; ${failures.length} feed(s) failed` : ""}`,
+        });
+      }
+      return outputs;
     },
   };
 }

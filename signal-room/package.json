@@ -20,7 +20,9 @@
     "briefing": "tsx scripts/briefing.ts",
     "shakedown": "tsx scripts/shakedown.ts",
     "e2e": "playwright test",
-    "screenshots": "playwright test e2e/screenshots.spec.ts"
+    "screenshots": "playwright test e2e/screenshots.spec.ts",
+    "collect:inbox": "tsx scripts/inbox-collect.ts",
+    "ingest:inbox": "tsx scripts/ingest-inbox.ts"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.4",

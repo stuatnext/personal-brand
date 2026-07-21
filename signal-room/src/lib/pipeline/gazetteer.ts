@@ -80,6 +80,27 @@ export const GAZETTEER: GazetteerEntry[] = [
   { kind: "company", name: "OpenAI", flags: { category: "tech" } },
   { kind: "company", name: "xAI", flags: { category: "tech" } },
 
+  // iGaming pillar (NEXT.io lane): suppliers, studios, platforms.
+  // Operators (Flutter/Entain/bet365/DraftKings/FanDuel/…) are listed above.
+  { kind: "company", name: "Evolution", aliases: ["Evolution Gaming"], flags: { category: "igaming_supplier", prospectType: "sponsor" } },
+  { kind: "company", name: "Playtech", flags: { category: "igaming_supplier", prospectType: "sponsor" } },
+  { kind: "company", name: "Light & Wonder", aliases: ["Light and Wonder"], flags: { category: "igaming_supplier" } },
+  { kind: "company", name: "Pragmatic Play", flags: { category: "igaming_supplier" } },
+  { kind: "company", name: "Kindred", aliases: ["Kindred Group"], flags: { category: "igaming_operator" } },
+  { kind: "company", name: "Betsson", flags: { category: "igaming_operator" } },
+  { kind: "company", name: "evoke", aliases: ["888 Holdings"], flags: { category: "igaming_operator" } },
+  { kind: "publication", name: "EGR", aliases: ["EGR Global"], flags: { prospectType: "media" } },
+  { kind: "publication", name: "iGaming Business", aliases: ["iGB"], flags: { prospectType: "media" } },
+  { kind: "publication", name: "SBC News", aliases: ["SBC"], flags: { prospectType: "media" } },
+
+  // Strait Up Growth pillar: SEA tech + the commercial stack Stuart advises on.
+  { kind: "company", name: "Grab", flags: { category: "sea_tech" } },
+  { kind: "company", name: "Sea Group", aliases: ["Sea Limited", "Shopee", "Garena"], flags: { category: "sea_tech" } },
+  { kind: "company", name: "GoTo", aliases: ["Gojek", "Tokopedia"], flags: { category: "sea_tech" } },
+  { kind: "company", name: "Lazada", flags: { category: "sea_tech" } },
+  { kind: "company", name: "Salesforce", flags: { category: "martech" } },
+  { kind: "company", name: "HubSpot", flags: { category: "martech" } },
+
   // Regulators / official
   { kind: "regulator", name: "CFTC", aliases: ["Commodity Futures Trading Commission"] },
   { kind: "regulator", name: "SEC", aliases: ["Securities and Exchange Commission"] },
@@ -87,6 +108,7 @@ export const GAZETTEER: GazetteerEntry[] = [
   { kind: "regulator", name: "DOJ", aliases: ["Department of Justice"] },
   { kind: "regulator", name: "FCA", aliases: ["Financial Conduct Authority"] },
   { kind: "regulator", name: "Gambling Commission", aliases: ["UKGC"] },
+  { kind: "regulator", name: "MGA", aliases: ["Malta Gaming Authority"] },
   { kind: "regulator", name: "New Jersey DGE", aliases: ["NJ DGE", "Division of Gaming Enforcement"] },
   { kind: "regulator", name: "Nevada Gaming Control Board", aliases: ["NGCB"] },
 

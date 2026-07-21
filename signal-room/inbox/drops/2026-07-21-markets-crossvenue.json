@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-07-21)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Will Phil Murphy be the Democratic Presidential nominee in 2028?\" (KXPRESNOMD-28-PHI) and Polymarket lists \"Will Phil Murphy win the 2028 Democratic presidential nomination?\" (559680); these appear to be the same question. 99% of the $114k combined 24h volume is on Polymarket. It trades at 0.1c on Kalshi and 0.4c on Polymarket.\n\nCross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Will John Fetterman be the Democratic Presidential nominee in 2028?\" (KXPRESNOMD-28-JF) and Polymarket lists \"Will John Fetterman win the 2028 Democratic presidential nomination?\" (559673); these appear to be the same question. 96% of the $54k combined 24h volume is on Polymarket. It trades at 0.2c on Kalshi and 0.3c on Polymarket.\n\nCross-venue liquidity on Kalshi vs Polymarket: The market \"Will Yair Golan be the next Prime Minister of Israel?\" is listed on both venues (Kalshi KXNEXTISRAELPM-45JAN01-YGOL, Polymarket 682712). 100% of the $52k combined 24h volume is on Polymarket. It trades at 1.0c on Kalshi and 0.2c on Polymarket.",
+  "note": "3 signal(s) across 3 matched market pair(s)",
+  "capturedAt": "2026-07-21T01:05:30.918Z",
+  "sha256": "d642bbcd43d09bf5667674bb7ed4ea5746f3a1e7279d1c54f9ce25add262ffd7"
+}

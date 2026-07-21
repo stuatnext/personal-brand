@@ -9,6 +9,7 @@ export interface QueueEntry {
   opportunityId: string;
   title: string;
   action: string;
+  pillar: string;
   /** observation count of the story thread this opportunity continues (>1 = continuing story) */
   threadDay: number | null;
   overallScore: number;
@@ -50,7 +51,20 @@ export async function getTodayQueue(): Promise<QueueEntry[]> {
     .orderBy(desc(opportunities.overallScore))
     .limit(60);
   const open = rows.filter((r) => r.opp.status === "proposed");
-  const top = open.slice(0, 5);
+  // Pillar balance: when open recommendations span more than one pillar, no
+  // single pillar takes more than 3 of the 5 slots — core pillars never
+  // starve just because one drop was bigger.
+  const pillarsPresent = new Set(open.map((r) => r.opp.pillar));
+  const perPillarCap = pillarsPresent.size > 1 ? 3 : 5;
+  const perPillar = new Map<string, number>();
+  const top: typeof open = [];
+  for (const r of open) {
+    if (top.length >= 5) break;
+    const n = perPillar.get(r.opp.pillar) ?? 0;
+    if (n >= perPillarCap) continue;
+    top.push(r);
+    perPillar.set(r.opp.pillar, n + 1);
+  }
   if (!top.some((r) => LEAD_ACTIONS.has(r.rec.primaryAction))) {
     const bestLead = open.find((r) => LEAD_ACTIONS.has(r.rec.primaryAction));
     if (bestLead && top.length === 5) top[4] = bestLead;
@@ -61,6 +75,7 @@ export async function getTodayQueue(): Promise<QueueEntry[]> {
     opportunityId: r.opp.id,
     title: r.opp.title,
     action: r.rec.primaryAction,
+    pillar: r.opp.pillar,
     threadDay: r.threadObservations && r.threadObservations > 1 ? r.threadObservations : null,
     overallScore: r.opp.overallScore,
     urgency: r.opp.urgency,

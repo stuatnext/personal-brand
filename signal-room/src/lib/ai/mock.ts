@@ -1,4 +1,5 @@
 import type { DraftContext, LLMProvider } from "./provider";
+import { pillarConfig } from "@/lib/pillars";
 
 // Deterministic local provider (no API key). Drafts are honest skeletons:
 // they quote allowed evidence with hedged attribution and leave Stuart's
@@ -87,16 +88,19 @@ export class MockProvider implements LLMProvider {
           `[ONE CLEAR PRACTITIONER QUESTION, e.g. "What have you seen in practice?" or "Which risk gets underestimated here?"]`,
         ].join("\n");
 
-      case "dm":
+      case "dm": {
+        const pillar = pillarConfig(ctx.pillar);
         return [
           `[GREETING by first name]`,
           ``,
           `I saw your post on this (${ctx.opportunityTitle}). ${reaction ? reaction : "[STUART: the one genuine observation that made you want to reach out.]"}`,
           ``,
-          `I'm building NEXTPredict around the serious operating layer of the category and I'm still learning my way into parts of it. Would genuinely value hearing how you're seeing this space. 20 minutes over the next couple of weeks?`,
+          `${pillar.outreachPositioningLine} Would genuinely value hearing how you're seeing this space. 20 minutes over the next couple of weeks?`,
         ].join("\n");
+      }
 
-      case "email":
+      case "email": {
+        const pillar = pillarConfig(ctx.pillar);
         return [
           `Subject: [SPECIFIC OBSERVATION, not a pitch]`,
           ``,
@@ -104,14 +108,14 @@ export class MockProvider implements LLMProvider {
           ``,
           `${reaction ? reaction : `[OPENING OBSERVATION about the real category tension in this story, drawn only from the evidence: ${ctx.claimedSummary || ctx.confirmedSummary}]`}`,
           ``,
-          `I'm building NEXTPredict around the serious operating layer of the category, and I'm still learning my way into this corner of it. I'd genuinely love to jump on a call and hear how you're seeing it; I'd learn a great deal from you. Would you have 20 minutes over the next couple of weeks? If a sensible fit comes out of it, all the better, and if it's not for you, just say.`,
+          `${pillar.outreachPositioningLine} I'd genuinely love to jump on a call and hear how you're seeing it; I'd learn a great deal from you. Would you have 20 minutes over the next couple of weeks? If a sensible fit comes out of it, all the better, and if it's not for you, just say.`,
           ``,
           `All the best,`,
           `Stuart`,
           ``,
-          `Stuart Crowley`,
-          `Commercial Director, NEXTPredict`,
+          ...pillar.signoffLines,
         ].join("\n");
+      }
 
       case "video_script":
         return [

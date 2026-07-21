@@ -250,3 +250,77 @@ complete. Two venue quirks are load-bearing: Kalshi returns status
 "active" where its API filter says "open", and volume arrives in
 `_fp`-suffixed fields; multi-outcome candidate rows share one title, so
 `yes_sub_title` folds into the title to stop cross-candidate matches.
+
+## 22. The follow-up nudge reminds; it never chases
+
+A prospect in `sent` with no recorded reply past the window (a setting,
+default 5 days) surfaces on Today and in the Briefing sorted by days
+silent. Deliberate constraints: the nudge is computed from
+`state_updated_at`, so it clears itself the moment Stuart records a reply
+or a pass; it links to the person and the pipeline rather than generating
+anything, because a follow-up to silence is a judgement call; and the
+guidance it carries restates the outreach discipline (exploratory
+register, the same 20-minute ask, a clean out, no tickets or pricing to
+silence) instead of assuming a chase is wanted. Follow-ups and cross-venue
+trends are current-state sections, not since-gated like the rest of the
+briefing: due stays due across catch-up markers until acted on.
+
+## 23. Cross-venue history stores observations; trends are read, not kept
+
+Each matched pair accumulates its same-run quote comparisons in one row
+(rolling window of 90, pruned after 45 unobserved days). Trends are
+computed on read from those observations rather than stored, so the
+wording can never drift from the data: a gap that held in every
+observation, a gap that widened or narrowed 5+ points, a 20+ point shift
+in a venue's share of combined volume. Two quotes from the same day are a
+comparison, not a trend — spans under a day return nothing, which also
+means the rotation window's sparse re-sightings (a pair may only be
+re-quoted when the crawl comes back around) read honestly as "N
+observations over D days". Quiet observations are recorded too: a pair
+that never crosses a signal threshold can still hold a gap worth a
+briefing line.
+
+## 24. Pillars are data; the judgement engine is singular
+
+Extending to Stuart's other pillars (iGaming/NEXT.io, Strait Up Growth)
+did not fork the pipeline: one engine runs everywhere and the pillar is a
+column, chosen deliberately at ingest (drops are separate by his own
+workflow) and carried to opportunities and drafts. Everything
+pillar-shaped lives in one config module (`src/lib/pillars.ts`):
+relevance terms, edge-topic lanes, category-entry language, consulting
+lead signals, brand vocabulary bans, outreach positioning and sign-offs.
+The load-bearing honesty rules: Stuart-global voice rules are NOT
+per-pillar (no em dashes anywhere); the betting/gambling/sportsbook/
+casino ban applies only to NEXTPredict copy, mirroring the parent
+engine's per-brand voice; sign-off titles are facts, so only the
+confirmed NEXTPredict title is written and other brands carry a bracketed
+[YOUR TITLE] slot; and Strait Up Growth positioning is presented as
+current thinking, never with invented client results. The relevance score
+keeps its historical storage key (`nextpredict_relevance`) so learned
+weights and score history survive; the UI relabels it "pillar relevance".
+Gold cases assert BOTH routing directions (the same iGaming story queues
+in its lane and is ignored under prediction markets), and the queue caps
+any pillar at 3 of 5 slots when another pillar has open work. A related
+live find while smoking this horizon: the leak scanner flagged the
+outreach template's own stock phrase against a call transcript's small
+talk, so common-word-only shingles no longer count as fingerprints
+(distinctive words, figures and names still do).
+
+## 25. Scheduled collection commits drops; the database never leaves home
+
+The unattended-collection problem is that PGlite lives on Stuart's disk
+while a scheduled runner is ephemeral. The resolution is a split:
+`scripts/inbox-collect.ts` runs database-free on the daily GitHub Action,
+gathering with the SAME parsers/formatters/pure functions as the local
+collectors (shared exports, so the two paths cannot drift) and writing
+dated, lossless drop files plus a committed JSON state file (feed
+cursors, the market snapshot for diffing, the rotation cursor,
+cross-venue pair history). Git carries the drops home;
+`npm run ingest:inbox` feeds them through the normal pipeline, deduped on
+the raw text's sha256 so re-runs, reordered runs and local/scheduled
+overlap are all safe. Failures degrade per source and the job fails loudly
+only when every collector produced nothing. The feed roster
+(`config/feeds.json`) is committed and pillar-tagged, and every entry was
+verified through the real parser before shipping; SEA-native business
+press bot-blocks feed fetches today, so that lane still arrives mainly by
+hand and the config says so rather than pretending coverage.
