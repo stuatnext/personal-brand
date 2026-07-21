@@ -279,3 +279,29 @@ re-quoted when the crawl comes back around) read honestly as "N
 observations over D days". Quiet observations are recorded too: a pair
 that never crosses a signal threshold can still hold a gap worth a
 briefing line.
+
+## 24. Pillars are data; the judgement engine is singular
+
+Extending to Stuart's other pillars (iGaming/NEXT.io, Strait Up Growth)
+did not fork the pipeline: one engine runs everywhere and the pillar is a
+column, chosen deliberately at ingest (drops are separate by his own
+workflow) and carried to opportunities and drafts. Everything
+pillar-shaped lives in one config module (`src/lib/pillars.ts`):
+relevance terms, edge-topic lanes, category-entry language, consulting
+lead signals, brand vocabulary bans, outreach positioning and sign-offs.
+The load-bearing honesty rules: Stuart-global voice rules are NOT
+per-pillar (no em dashes anywhere); the betting/gambling/sportsbook/
+casino ban applies only to NEXTPredict copy, mirroring the parent
+engine's per-brand voice; sign-off titles are facts, so only the
+confirmed NEXTPredict title is written and other brands carry a bracketed
+[YOUR TITLE] slot; and Strait Up Growth positioning is presented as
+current thinking, never with invented client results. The relevance score
+keeps its historical storage key (`nextpredict_relevance`) so learned
+weights and score history survive; the UI relabels it "pillar relevance".
+Gold cases assert BOTH routing directions (the same iGaming story queues
+in its lane and is ignored under prediction markets), and the queue caps
+any pillar at 3 of 5 slots when another pillar has open work. A related
+live find while smoking this horizon: the leak scanner flagged the
+outreach template's own stock phrase against a call transcript's small
+talk, so common-word-only shingles no longer count as fingerprints
+(distinctive words, figures and names still do).

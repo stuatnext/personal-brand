@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getTodayQueue } from "@/lib/queue";
 import { getFollowUpsDue } from "@/lib/graph";
-import { ActionTag, EmptyState, Meter, PageHeader } from "@/components/ui";
+import { ActionTag, EmptyState, Meter, PageHeader, PillarTag } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
@@ -60,6 +60,7 @@ export default async function TodayPage() {
               <div className="min-w-0 flex-1">
                 <div className="mb-1.5 flex flex-wrap items-center gap-2">
                   <ActionTag action={r.action} />
+                  <PillarTag pillar={r.pillar} />
                   <span className="tag">{r.platform}</span>
                   {r.threadDay ? <span className="tag tag-info">continuing · obs {r.threadDay}</span> : null}
                   <span className="k-label">score {r.overallScore}</span>

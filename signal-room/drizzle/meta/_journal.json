@@ -36,6 +36,13 @@
       "when": 1784592637873,
       "tag": "0004_cross-venue-history",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1784593779081,
+      "tag": "0005_pillars",
+      "breakpoints": true
     }
   ]
 }

@@ -1,4 +1,5 @@
 import type { VoiceLintResult } from "@/lib/db/schema";
+import { pillarConfig } from "@/lib/pillars";
 
 // Stuart's voice rules as a linter, kept in lockstep with
 // personal-brand/data/voice/llm-voice-pack-2026-07-15/ (the newest canon)
@@ -29,15 +30,13 @@ const BANNED_PHRASES: { phrase: string; message?: string }[] = [
   { phrase: "let that sink in" },
 ];
 
-/** Additional bans for NEXTPredict-branded outreach (DM/email/forum): the
- *  engine's OFF_VOICE list + category-vocabulary rule. */
-const OUTREACH_BANNED: { phrase: string; message: string }[] = [
+/** Stuart-global outreach bans (all brands): phrases he has flagged as
+ *  off-voice in any outreach copy. Brand-specific VOCABULARY bans (betting/
+ *  gambling/sportsbook/casino for NEXTPredict; nothing for NEXT.io, where
+ *  that vocabulary is normal) come from the pillar config, mirroring the
+ *  parent engine's per-brand lib/voice.mjs. */
+const OUTREACH_GLOBAL_BANNED: { phrase: string; message: string }[] = [
   { phrase: "compare notes", message: "Stuart-flagged off-voice (2026-07-01); use 'hear how you are seeing it'" },
-  { phrase: "betting", message: "category vocabulary: never betting/gambling in NEXTPredict copy" },
-  { phrase: "gambling", message: "category vocabulary: never betting/gambling in NEXTPredict copy" },
-  { phrase: "sportsbook", message: "category vocabulary: banned in NEXTPredict copy" },
-  { phrase: "wagering", message: "category vocabulary: banned in NEXTPredict copy" },
-  { phrase: "casino", message: "category vocabulary: banned in NEXTPredict copy" },
 ];
 
 const NEGATIVE_PARALLELISM: RegExp[] = [
@@ -70,10 +69,13 @@ const HEDGE_MARKERS =
   /\b(appears? to|according to (?:the )?post|reported(?:ly)?|if (?:this|that|the) number is right|claims?|suggests?|seems?|apparently|unverified|reportedly)\b/i;
 
 export interface LintOptions {
-  /** outreach drafts (dm/email/forum) apply the NEXTPredict OFF_VOICE list */
+  /** outreach drafts (dm/email/forum) apply the outreach OFF_VOICE list
+   *  plus the pillar brand's vocabulary bans */
   outreach?: boolean;
   /** the draft references unverified claims; figures need hedging */
   hasUnverifiedClaims?: boolean;
+  /** which pillar's brand this copy is written under (default NEXTPredict) */
+  pillar?: string;
 }
 
 export function lintVoice(text: string, opts: LintOptions = {}): VoiceLintResult {
@@ -111,7 +113,8 @@ export function lintVoice(text: string, opts: LintOptions = {}): VoiceLintResult
   }
 
   if (opts.outreach) {
-    for (const { phrase, message } of OUTREACH_BANNED) {
+    const brandBans = pillarConfig(opts.pillar).outreachVocabularyBans;
+    for (const { phrase, message } of [...OUTREACH_GLOBAL_BANNED, ...brandBans]) {
       const re = new RegExp(`\\b${phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
       const m = text.match(re);
       if (m) errors.push({ rule: "outreach_banned", match: m[0], message });

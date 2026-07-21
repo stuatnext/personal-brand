@@ -40,10 +40,7 @@ function chooseAction(f: ClusterFeatures, scores: ScoreBreakdown[]): ActionChoic
     (m) => prospectFlags(m.entityKey)?.prospectType === "speaker" && m.role !== "author",
   );
   const mediaMention = f.mentions.find((m) => prospectFlags(m.entityKey)?.prospectType === "media");
-  const categoryEntry =
-    /\b(launch\w*|enter\w* the|expand\w* into|list\w* (?:event|prediction)|(?:exclusive|global|strategic) partnership|partner\w* (?:with|to build))\b/i.test(
-      f.allText,
-    );
+  const categoryEntry = f.pillar.categoryEntryTerms.test(f.allText);
   const execAuthor = f.members.find((m) =>
     /\b(CEO|chief executive|founder|co-founder|president|chief [a-z]+ officer)\b/i.test(m.authorMeta ?? ""),
   );
@@ -75,7 +72,7 @@ function chooseAction(f: ClusterFeatures, scores: ScoreBreakdown[]): ActionChoic
   if (f.offTopic) {
     return {
       action: "ignore",
-      why: "Generic content wearing category vocabulary; no prediction-market substance for Stuart to work with.",
+      why: `Generic content wearing category vocabulary; no ${f.pillar.label} substance for Stuart to work with.`,
       rejected: [
         { action: "comment", whyNot: "engaging drags Stuart's feed further off-lane" },
         { action: "monitor", whyNot: "nothing category-specific to watch" },
@@ -122,7 +119,23 @@ function chooseAction(f: ClusterFeatures, scores: ScoreBreakdown[]): ActionChoic
       why: `${speakerMention.canonicalName} is active in this story and is a credible voice for the room; a relationship-first approach fits better than public commentary.`,
       rejected: [
         { action: "comment", whyNot: "a public comment spends the moment; a direct conversation compounds it" },
-        { action: "dm", whyNot: "route via the NEXTPredict speaker process rather than an ad-hoc DM" },
+        { action: "dm", whyNot: `route via the ${f.pillar.brand} speaker process rather than an ad-hoc DM` },
+      ],
+    };
+  }
+
+  // Consulting-style lead (Strait Up Growth): a buying signal — SEA
+  // expansion, CRM pain, a fresh raise, a new commercial leader — attached
+  // to a named company is a conversation for the pipeline, not the feed
+  // (the parent engine's rule: buying signal + entity in the same drop).
+  const namedCompany = f.mentions.some((m) => m.kind === "company" || m.kind === "platform");
+  if (f.pillar.consultingLeadTerms && f.pillar.consultingLeadTerms.test(f.allText) && namedCompany) {
+    return {
+      action: "sales_handoff",
+      why: "A live buying signal for exactly the work Stuart's consultancy does; the scarce move is a direct conversation while the need is fresh, not commentary about it.",
+      rejected: [
+        { action: "linkedin_post", whyNot: "public commentary can follow; the commercial follow-up is the scarce move" },
+        { action: "ignore", whyNot: "buying signals with a named company are core consulting pipeline" },
       ],
     };
   }
@@ -316,7 +329,7 @@ function buildAngle(f: ClusterFeatures, privateContextNotes: string[]): string {
   const parts: string[] = [];
   if (f.edgeTopics.length) {
     parts.push(
-      `This sits in Stuart's ${f.edgeTopics.slice(0, 3).join(" / ")} lane, where he can read the commercial mechanics rather than repeat the headline.`,
+      `This sits in Stuart's ${f.edgeTopics.slice(0, 3).join(" / ")} lane, where ${f.pillar.angleFrame}.`,
     );
   }
   const senior = f.members.find((m) => /\b(CEO|founder|chief|head of|president)\b/i.test(m.authorMeta ?? ""));

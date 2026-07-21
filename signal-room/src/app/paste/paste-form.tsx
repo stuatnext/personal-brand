@@ -3,6 +3,13 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
+// Keep in lockstep with PILLARS in src/lib/db/schema.ts.
+const PILLAR_CHOICES: { value: string; label: string; hint: string }[] = [
+  { value: "prediction_markets", label: "Prediction markets", hint: "NEXTPredict voice; betting vocabulary banned in outreach" },
+  { value: "igaming", label: "iGaming & sports betting", hint: "NEXT.io voice; industry vocabulary is normal here" },
+  { value: "strait_up_growth", label: "Strait Up Growth", hint: "consultancy voice; AI, commercial strategy, Singapore & SEA" },
+];
+
 const SOURCES: { value: string; label: string }[] = [
   { value: "linkedin", label: "LinkedIn" },
   { value: "x", label: "X" },
@@ -21,6 +28,7 @@ export function PasteForm() {
   const [text, setText] = useState("");
   const [title, setTitle] = useState("");
   const [sourceType, setSourceType] = useState("linkedin");
+  const [pillar, setPillar] = useState("prediction_markets");
   const [files, setFiles] = useState<File[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -34,6 +42,7 @@ export function PasteForm() {
     try {
       const form = new FormData();
       form.set("sourceType", sourceType);
+      form.set("pillar", pillar);
       if (title.trim()) form.set("title", title.trim());
       if (text.trim()) form.set("text", text);
       for (const f of files) form.append("files", f);
@@ -67,6 +76,24 @@ export function PasteForm() {
 
       <aside className="space-y-5">
         <div className="panel space-y-4 p-4">
+          <div>
+            <div className="k-label mb-2">Pillar (which lane this drop belongs to)</div>
+            <select
+              data-testid="pillar-select"
+              value={pillar}
+              onChange={(e) => setPillar(e.target.value)}
+              className="w-full"
+            >
+              {PILLAR_CHOICES.map((p) => (
+                <option key={p.value} value={p.value}>
+                  {p.label}
+                </option>
+              ))}
+            </select>
+            <p className="mt-2 text-[11.5px] leading-snug text-[--color-mut]">
+              {PILLAR_CHOICES.find((p) => p.value === pillar)?.hint}
+            </p>
+          </div>
           <div>
             <div className="k-label mb-2">Probable source</div>
             <select

@@ -8,6 +8,7 @@ export async function GET(request: Request) {
   const q = (url.searchParams.get("q") ?? "").toLowerCase();
   const status = url.searchParams.get("status") ?? "";
   const action = url.searchParams.get("action") ?? "";
+  const pillar = url.searchParams.get("pillar") ?? "";
   const database = await db();
   let rows = await database
     .select({
@@ -29,11 +30,13 @@ export async function GET(request: Request) {
   }
   if (status) rows = rows.filter((r) => r.opportunity.status === status);
   if (action) rows = rows.filter((r) => r.opportunity.recommendedAction === action);
+  if (pillar) rows = rows.filter((r) => r.opportunity.pillar === pillar);
   return NextResponse.json({
     results: rows.slice(0, 200).map((r) => ({
       id: r.opportunity.id,
       title: r.opportunity.title,
       action: r.opportunity.recommendedAction,
+      pillar: r.opportunity.pillar,
       status: r.opportunity.status,
       overallScore: r.opportunity.overallScore,
       createdAt: r.opportunity.createdAt,

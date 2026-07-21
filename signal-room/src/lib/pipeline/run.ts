@@ -31,6 +31,7 @@ import { buildClusters } from "./cluster";
 import { extractClaims } from "./claims";
 import { collectFeatures, isAggregation, isOffTopic } from "./score";
 import { buildOpportunities } from "./recommend";
+import { pillarConfig } from "@/lib/pillars";
 import {
   buildClusterSignature,
   bestThreadMatch,
@@ -488,7 +489,7 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
           .map((id) => itemByTemp.get(id)?.originalText ?? "")
           .join("\n");
         const platform = itemByTemp.get(cluster.primaryTempId)?.platform;
-        if (platform === "market_site" || isAggregation(memberText) || isOffTopic(memberText)) continue;
+        if (platform === "market_site" || isAggregation(memberText) || isOffTopic(memberText, pillarConfig(ing.pillar))) continue;
         const sig = buildClusterSignature(cluster, itemByTemp, mentions, claimDrafts);
         if (sig.entities.length === 0) continue;
         const clusterDbId = clusterIdByKey.get(cluster.key)!;
@@ -663,6 +664,7 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
           !isPublishable(permissionLevel),
           threadInfoByCluster.get(cluster.key),
           knownEngagement,
+          pillarConfig(ing.pillar),
         ),
       );
       const weights = (owner?.settingsJson as { scoreWeights?: Record<string, number> } | null)?.scoreWeights;
@@ -718,6 +720,7 @@ export async function processIngestion(ingestionId: string, runId?: string): Pro
           ingestionId,
           storyClusterId: clusterIdByKey.get(d.clusterKey)!,
           title: d.title,
+          pillar: ing.pillar,
           recommendedAction: d.recommendedAction,
           actionAlternativesJson: d.actionAlternatives,
           rationale: d.rationale,

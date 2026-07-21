@@ -56,6 +56,27 @@ export function ActionTag({ action }: { action: string }) {
   return <span className={cls}>{label}</span>;
 }
 
+/** Display names for score dimensions. The stored key
+ *  `nextpredict_relevance` predates pillars and is kept stable so learned
+ *  weights and score history stay valid; it MEANS pillar relevance. */
+export function dimensionLabel(dimension: string): string {
+  if (dimension === "nextpredict_relevance") return "pillar relevance";
+  return dimension.replace(/_/g, " ");
+}
+
+export const PILLAR_LABELS: Record<string, string> = {
+  prediction_markets: "prediction markets",
+  igaming: "iGaming",
+  strait_up_growth: "Strait Up Growth",
+};
+
+/** Pillar chip; hidden for the default pillar unless `always` (single-pillar
+ *  days stay uncluttered, mixed days label everything). */
+export function PillarTag({ pillar, always = false }: { pillar: string; always?: boolean }) {
+  if (!always && pillar === "prediction_markets") return null;
+  return <span className="tag tag-info">{PILLAR_LABELS[pillar] ?? pillar.replace(/_/g, " ")}</span>;
+}
+
 export const STATUS_LABELS: Record<string, string> = {
   observed: "observed",
   social_claim_only: "social claim only",

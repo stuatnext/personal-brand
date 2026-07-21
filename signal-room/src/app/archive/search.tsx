@@ -16,6 +16,7 @@ interface Row {
 }
 
 const STATUSES = ["", "proposed", "used", "saved", "ignored", "wrong_angle"];
+const PILLAR_FILTERS = ["", "prediction_markets", "igaming", "strait_up_growth"];
 const ACTIONS = [
   "",
   "linkedin_post",
@@ -39,6 +40,7 @@ export function ArchiveSearch() {
   const [q, setQ] = useState("");
   const [status, setStatus] = useState("");
   const [action, setAction] = useState("");
+  const [pillar, setPillar] = useState("");
   const [rows, setRows] = useState<Row[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -49,13 +51,14 @@ export function ArchiveSearch() {
       if (q) params.set("q", q);
       if (status) params.set("status", status);
       if (action) params.set("action", action);
+      if (pillar) params.set("pillar", pillar);
       const res = await fetch(`/api/archive?${params}`, { cache: "no-store" });
       const data = await res.json();
       setRows(data.results ?? []);
       setLoading(false);
     }, 250);
     return () => clearTimeout(timer);
-  }, [q, status, action]);
+  }, [q, status, action, pillar]);
 
   return (
     <div className="space-y-4">
@@ -79,6 +82,13 @@ export function ArchiveSearch() {
           {ACTIONS.map((a) => (
             <option key={a} value={a}>
               {a ? `action: ${a.replace(/_/g, " ")}` : "any action"}
+            </option>
+          ))}
+        </select>
+        <select value={pillar} onChange={(e) => setPillar(e.target.value)} aria-label="pillar filter">
+          {PILLAR_FILTERS.map((p) => (
+            <option key={p} value={p}>
+              {p ? `pillar: ${p.replace(/_/g, " ")}` : "any pillar"}
             </option>
           ))}
         </select>

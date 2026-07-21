@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { dimensionLabel } from "@/components/ui";
 
 interface Settings {
   user: { name: string; email: string } | null;
@@ -69,7 +70,7 @@ export function SettingsForm() {
             {Object.entries(settings.defaultWeights).map(([dim, def]) => (
               <div key={dim} className="flex items-center gap-3">
                 <span className="w-[190px] font-mono text-[11px] uppercase tracking-wider text-[--color-mut]">
-                  {dim.replace(/_/g, " ")}
+                  {dimensionLabel(dim)}
                 </span>
                 <input
                   type="range"

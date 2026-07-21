@@ -150,6 +150,14 @@ export type DraftType = (typeof DRAFT_TYPES)[number];
 export const FEEDBACK_DECISIONS = ["use", "wrong_angle", "save", "ignore"] as const;
 export type FeedbackDecision = (typeof FEEDBACK_DECISIONS)[number];
 
+/** Stuart's three authority pillars. Every ingestion belongs to exactly one
+ *  (chosen at drop time — drops are deliberate), and the pillar drives
+ *  relevance terms, lead rules, voice vocabulary and outreach positioning.
+ *  Kept in lockstep with src/lib/pillars.ts. */
+export const PILLARS = ["prediction_markets", "igaming", "strait_up_growth"] as const;
+export type Pillar = (typeof PILLARS)[number];
+export const DEFAULT_PILLAR: Pillar = "prediction_markets";
+
 /** Outreach pipeline states for prospect edges on the relationship graph.
  *  The system only ever sets the first two (identified when the edge is
  *  created, drafted when a dm/email draft exists for the opportunity that
@@ -193,6 +201,9 @@ export const ingestions = pgTable(
       .notNull()
       .references(() => users.id),
     sourceType: text("source_type").notNull().default("mixed"),
+    // Which authority pillar this drop belongs to (drops are deliberate;
+    // Stuart picks at ingest, and can override via reprocess).
+    pillar: text("pillar").notNull().default("prediction_markets"),
     title: text("title").notNull(),
     // Raw input is the source of truth and is preserved verbatim.
     rawText: text("raw_text").notNull(),
@@ -498,6 +509,8 @@ export const opportunities = pgTable(
       .notNull()
       .references(() => storyClusters.id, { onDelete: "cascade" }),
     title: text("title").notNull(),
+    // denormalised from the ingestion so queue/archive filter cheaply
+    pillar: text("pillar").notNull().default("prediction_markets"),
     recommendedAction: text("recommended_action").notNull().default("monitor"),
     actionAlternativesJson: jsonb("action_alternatives_json")
       .$type<{ action: string; whyNot: string }[]>()

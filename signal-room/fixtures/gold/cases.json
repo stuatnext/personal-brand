@@ -4,285 +4,654 @@
     {
       "id": "li-extraction-coverage",
       "category": "extraction completeness",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
-      "expect": { "minContentItems": 28, "maxContentItems": 32 }
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
+      "expect": {
+        "minContentItems": 28,
+        "maxContentItems": 32
+      }
     },
     {
       "id": "li-nav-noise",
       "category": "interface noise",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
-      "expect": { "item": { "textContains": "My Network", "itemType": "platform_navigation", "isNoise": true } }
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
+      "expect": {
+        "item": {
+          "textContains": "My Network",
+          "itemType": "platform_navigation",
+          "isNoise": true
+        }
+      }
     },
     {
       "id": "li-goldman-original-post",
       "category": "strong original-post opportunity",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "item": { "authorContains": "Tim Ryan", "textContains": "Goldman just barred", "itemType": "original_post" },
-        "claim": { "textContains": "barred", "statusOneOf": ["social_claim_only", "reported"] },
-        "action": { "marker": "Goldman just barred", "oneOf": ["linkedin_post", "comment", "quote_post"] },
-        "queued": { "marker": "Goldman just barred", "is": true }
+        "item": {
+          "authorContains": "Tim Ryan",
+          "textContains": "Goldman just barred",
+          "itemType": "original_post"
+        },
+        "claim": {
+          "textContains": "barred",
+          "statusOneOf": [
+            "social_claim_only",
+            "reported"
+          ]
+        },
+        "action": {
+          "marker": "Goldman just barred",
+          "oneOf": [
+            "linkedin_post",
+            "comment",
+            "quote_post"
+          ]
+        },
+        "queued": {
+          "marker": "Goldman just barred",
+          "is": true
+        }
       }
     },
     {
       "id": "li-dazn-sponsor-lead",
       "category": "sponsor lead",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "item": { "authorContains": "Shay Segev", "textContains": "ADI PredictStreet" },
-        "claim": { "textContains": "DAZN and ADI Predictstreet", "statusOneOf": ["primary_source_found", "corroborated"] },
-        "action": { "marker": "exclusive global partnership", "oneOf": ["sponsor_lead"] },
-        "queued": { "marker": "exclusive global partnership", "is": true }
+        "item": {
+          "authorContains": "Shay Segev",
+          "textContains": "ADI PredictStreet"
+        },
+        "claim": {
+          "textContains": "DAZN and ADI Predictstreet",
+          "statusOneOf": [
+            "primary_source_found",
+            "corroborated"
+          ]
+        },
+        "action": {
+          "marker": "exclusive global partnership",
+          "oneOf": [
+            "sponsor_lead"
+          ]
+        },
+        "queued": {
+          "marker": "exclusive global partnership",
+          "is": true
+        }
       }
     },
     {
       "id": "li-pollak-duplicate-news",
       "category": "duplicate news story",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "clusterTogether": ["Base Creator Jesse Pollak Steps Back", "Social Momentum Lags"]
+        "clusterTogether": [
+          "Base Creator Jesse Pollak Steps Back",
+          "Social Momentum Lags"
+        ]
       }
     },
     {
       "id": "li-norway-regulatory",
       "category": "important regulatory signal",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "item": { "authorContains": "Shravan", "textContains": "Norway" },
-        "action": { "marker": "Norway Classifies", "oneOf": ["linkedin_post", "comment", "investigate", "x_post"] }
+        "item": {
+          "authorContains": "Shravan",
+          "textContains": "Norway"
+        },
+        "action": {
+          "marker": "Norway Classifies",
+          "oneOf": [
+            "linkedin_post",
+            "comment",
+            "investigate",
+            "x_post"
+          ]
+        }
       }
     },
     {
       "id": "li-runout-promo",
       "category": "coordinated promotional campaign",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "action": { "marker": "RunOut", "oneOf": ["ignore", "monitor", "save"] },
-        "queued": { "marker": "RunOut", "is": false }
+        "action": {
+          "marker": "RunOut",
+          "oneOf": [
+            "ignore",
+            "monitor",
+            "save"
+          ]
+        },
+        "queued": {
+          "marker": "RunOut",
+          "is": false
+        }
       }
     },
     {
       "id": "li-azure-digest-aggregation",
       "category": "duplicate news story",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "action": { "marker": "This Week in Crypto", "oneOf": ["save", "ignore", "monitor"] },
-        "queued": { "marker": "This Week in Crypto", "is": false }
+        "action": {
+          "marker": "This Week in Crypto",
+          "oneOf": [
+            "save",
+            "ignore",
+            "monitor"
+          ]
+        },
+        "queued": {
+          "marker": "This Week in Crypto",
+          "is": false
+        }
       }
     },
     {
       "id": "li-podcast-promo-aggregation",
       "category": "viral but commercially irrelevant post",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "action": { "marker": "Dealflow Podcast", "oneOf": ["save", "ignore", "monitor"] },
-        "queued": { "marker": "Dealflow Podcast", "is": false }
+        "action": {
+          "marker": "Dealflow Podcast",
+          "oneOf": [
+            "save",
+            "ignore",
+            "monitor"
+          ]
+        },
+        "queued": {
+          "marker": "Dealflow Podcast",
+          "is": false
+        }
       }
     },
     {
       "id": "li-zad-essay-no-queue",
       "category": "viral but commercially irrelevant post",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "queued": { "marker": "Korean livestreamer", "is": false }
+        "queued": {
+          "marker": "Korean livestreamer",
+          "is": false
+        }
       }
     },
     {
       "id": "li-real-estate-offtopic",
       "category": "useful post with no Stuart angle",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "action": { "marker": "Real Estate Development Over the Next Decade", "oneOf": ["ignore", "save", "monitor"] },
-        "queued": { "marker": "Real Estate Development Over the Next Decade", "is": false }
+        "action": {
+          "marker": "Real Estate Development Over the Next Decade",
+          "oneOf": [
+            "ignore",
+            "save",
+            "monitor"
+          ]
+        },
+        "queued": {
+          "marker": "Real Estate Development Over the Next Decade",
+          "is": false
+        }
       }
     },
     {
       "id": "li-functional-safety-offtopic",
       "category": "useful post with no Stuart angle",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "queued": { "marker": "Functional Safety Devices", "is": false }
+        "queued": {
+          "marker": "Functional Safety Devices",
+          "is": false
+        }
       }
     },
     {
       "id": "li-digital-footprint-no-angle",
       "category": "useful post with no Stuart angle",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "queued": { "marker": "digital footprint can sabotage", "is": false }
+        "queued": {
+          "marker": "digital footprint can sabotage",
+          "is": false
+        }
       }
     },
     {
       "id": "li-tribal-gaming-claim",
       "category": "important regulatory signal",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "claim": { "textContains": "tribal gaming revenue", "statusOneOf": ["social_claim_only", "reported"] },
-        "action": { "marker": "Tribal Gaming Revenue", "oneOf": ["investigate", "linkedin_post", "comment", "monitor"] }
+        "claim": {
+          "textContains": "tribal gaming revenue",
+          "statusOneOf": [
+            "social_claim_only",
+            "reported"
+          ]
+        },
+        "action": {
+          "marker": "Tribal Gaming Revenue",
+          "oneOf": [
+            "investigate",
+            "linkedin_post",
+            "comment",
+            "monitor"
+          ]
+        }
       }
     },
     {
       "id": "li-nifty-offtopic",
       "category": "low-quality crypto promotion",
-      "input": { "fixture": "linkedin-capture-2026-07-16.txt", "sourceType": "linkedin" },
+      "input": {
+        "fixture": "linkedin-capture-2026-07-16.txt",
+        "sourceType": "linkedin"
+      },
       "expect": {
-        "queued": { "marker": "Nifty Prediction", "is": false }
+        "queued": {
+          "marker": "Nifty Prediction",
+          "is": false
+        }
       }
     },
     {
       "id": "x-extraction-coverage",
       "category": "extraction completeness",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
-      "expect": { "minContentItems": 7, "maxContentItems": 10 }
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
+      "expect": {
+        "minContentItems": 7,
+        "maxContentItems": 10
+      }
     },
     {
       "id": "x-kalshi-quote-post",
       "category": "strong quote-post opportunity",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "item": { "authorContains": "Marcus Delaney", "textContains": "congressional trading contracts", "itemType": "original_post" },
-        "action": { "marker": "congressional trading contracts", "oneOf": ["quote_post", "comment", "x_post"] },
-        "queued": { "marker": "congressional trading contracts", "is": true }
+        "item": {
+          "authorContains": "Marcus Delaney",
+          "textContains": "congressional trading contracts",
+          "itemType": "original_post"
+        },
+        "action": {
+          "marker": "congressional trading contracts",
+          "oneOf": [
+            "quote_post",
+            "comment",
+            "x_post"
+          ]
+        },
+        "queued": {
+          "marker": "congressional trading contracts",
+          "is": true
+        }
       }
     },
     {
       "id": "x-quote-structure",
       "category": "strong comment opportunity",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "item": { "authorContains": "Sam Okafor", "textContains": "normalises the product", "itemType": "quote_post" }
+        "item": {
+          "authorContains": "Sam Okafor",
+          "textContains": "normalises the product",
+          "itemType": "quote_post"
+        }
       }
     },
     {
       "id": "x-robinhood-duplicates",
       "category": "duplicate news story",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "clusterTogether": ["expanded its event contracts hub", "BREAKING: Robinhood expands"],
-        "duplicates": { "marker": "Robinhood expands", "minCount": 1 }
+        "clusterTogether": [
+          "expanded its event contracts hub",
+          "BREAKING: Robinhood expands"
+        ],
+        "duplicates": {
+          "marker": "Robinhood expands",
+          "minCount": 1
+        }
       }
     },
     {
       "id": "x-degen-promo",
       "category": "low-quality crypto promotion",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "action": { "marker": "$PREDICT token presale", "oneOf": ["ignore"] },
-        "queued": { "marker": "$PREDICT token presale", "is": false }
+        "action": {
+          "marker": "$PREDICT token presale",
+          "oneOf": [
+            "ignore"
+          ]
+        },
+        "queued": {
+          "marker": "$PREDICT token presale",
+          "is": false
+        }
       }
     },
     {
       "id": "x-profit-brag",
       "category": "unverified screenshot",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "action": { "marker": "Turned $200 into $41,000", "oneOf": ["ignore", "monitor", "investigate"] },
-        "queued": { "marker": "Turned $200 into $41,000", "is": false }
+        "action": {
+          "marker": "Turned $200 into $41,000",
+          "oneOf": [
+            "ignore",
+            "monitor",
+            "investigate"
+          ]
+        },
+        "queued": {
+          "marker": "Turned $200 into $41,000",
+          "is": false
+        }
       }
     },
     {
       "id": "x-priya-quiet-signal",
       "category": "strong comment opportunity",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "claim": { "textContains": "advisory committee minutes", "statusOneOf": ["social_claim_only", "reported", "observed"] },
-        "action": { "marker": "advisory committee minutes", "oneOf": ["quote_post", "comment", "x_post", "linkedin_post", "investigate", "monitor"] }
+        "claim": {
+          "textContains": "advisory committee minutes",
+          "statusOneOf": [
+            "social_claim_only",
+            "reported",
+            "observed"
+          ]
+        },
+        "action": {
+          "marker": "advisory committee minutes",
+          "oneOf": [
+            "quote_post",
+            "comment",
+            "x_post",
+            "linkedin_post",
+            "investigate",
+            "monitor"
+          ]
+        }
       }
     },
     {
       "id": "x-robinhood-claim-hedged",
       "category": "misleading liquidity claim",
-      "input": { "fixture": "x-dump.txt", "sourceType": "x" },
+      "input": {
+        "fixture": "x-dump.txt",
+        "sourceType": "x"
+      },
       "expect": {
-        "claim": { "textContains": "12", "statusOneOf": ["social_claim_only", "reported"] },
-        "draft": { "marker": "BREAKING: Robinhood expands", "type": "x_post", "mustHedge": true }
+        "claim": {
+          "textContains": "12",
+          "statusOneOf": [
+            "social_claim_only",
+            "reported"
+          ]
+        },
+        "draft": {
+          "marker": "BREAKING: Robinhood expands",
+          "type": "x_post",
+          "mustHedge": true
+        }
       }
     },
     {
       "id": "news-extraction-jobs",
       "category": "recruitment signal",
-      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "input": {
+        "fixture": "news-jobs.txt",
+        "sourceType": "news"
+      },
       "expect": {
-        "item": { "textContains": "Market Surveillance Analyst", "itemType": "job_listing" }
+        "item": {
+          "textContains": "Market Surveillance Analyst",
+          "itemType": "job_listing"
+        }
       }
     },
     {
       "id": "news-draftkings-compliance-job",
       "category": "recruitment signal",
-      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "input": {
+        "fixture": "news-jobs.txt",
+        "sourceType": "news"
+      },
       "expect": {
-        "action": { "marker": "Head of Prediction Markets Compliance", "oneOf": ["investigate", "sales_handoff", "linkedin_post"] },
-        "queued": { "marker": "Head of Prediction Markets Compliance", "is": true }
+        "action": {
+          "marker": "Head of Prediction Markets Compliance",
+          "oneOf": [
+            "investigate",
+            "sales_handoff",
+            "linkedin_post"
+          ]
+        },
+        "queued": {
+          "marker": "Head of Prediction Markets Compliance",
+          "is": true
+        }
       }
     },
     {
       "id": "news-verity-infrastructure",
       "category": "market-infrastructure signal",
-      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "input": {
+        "fixture": "news-jobs.txt",
+        "sourceType": "news"
+      },
       "expect": {
-        "claim": { "textContains": "Series A", "statusOneOf": ["reported", "social_claim_only", "primary_source_found"] },
-        "action": { "marker": "Verity Markets raises", "oneOf": ["linkedin_post", "investigate", "comment", "x_post"] },
-        "queued": { "marker": "Verity Markets raises", "is": true }
+        "claim": {
+          "textContains": "Series A",
+          "statusOneOf": [
+            "reported",
+            "social_claim_only",
+            "primary_source_found"
+          ]
+        },
+        "action": {
+          "marker": "Verity Markets raises",
+          "oneOf": [
+            "linkedin_post",
+            "investigate",
+            "comment",
+            "x_post"
+          ]
+        },
+        "queued": {
+          "marker": "Verity Markets raises",
+          "is": true
+        }
       }
     },
     {
       "id": "news-cftc-advisory",
       "category": "important regulatory signal",
-      "input": { "fixture": "news-jobs.txt", "sourceType": "news" },
+      "input": {
+        "fixture": "news-jobs.txt",
+        "sourceType": "news"
+      },
       "expect": {
-        "action": { "marker": "advisory committee to review", "oneOf": ["linkedin_post", "comment", "investigate", "x_post", "monitor"] }
+        "action": {
+          "marker": "advisory committee to review",
+          "oneOf": [
+            "linkedin_post",
+            "comment",
+            "investigate",
+            "x_post",
+            "monitor"
+          ]
+        }
       }
     },
     {
       "id": "reddit-extraction",
       "category": "extraction completeness",
-      "input": { "fixture": "reddit-thread.txt", "sourceType": "reddit" },
+      "input": {
+        "fixture": "reddit-thread.txt",
+        "sourceType": "reddit"
+      },
       "expect": {
-        "item": { "authorContains": "u/quietsignal_9", "textContains": "Market Surveillance Analyst", "itemType": "original_post" },
+        "item": {
+          "authorContains": "u/quietsignal_9",
+          "textContains": "Market Surveillance Analyst",
+          "itemType": "original_post"
+        },
         "minContentItems": 4
       }
     },
     {
       "id": "reddit-comment-structure",
       "category": "strong comment opportunity",
-      "input": { "fixture": "reddit-thread.txt", "sourceType": "reddit" },
+      "input": {
+        "fixture": "reddit-thread.txt",
+        "sourceType": "reddit"
+      },
       "expect": {
-        "item": { "authorContains": "u/pm_liquidity_watch", "textContains": "cross-market manipulation", "itemType": "comment" }
+        "item": {
+          "authorContains": "u/pm_liquidity_watch",
+          "textContains": "cross-market manipulation",
+          "itemType": "comment"
+        }
       }
     },
     {
       "id": "reddit-moonshot-promo",
       "category": "low-quality crypto promotion",
-      "input": { "fixture": "reddit-thread.txt", "sourceType": "reddit" },
+      "input": {
+        "fixture": "reddit-thread.txt",
+        "sourceType": "reddit"
+      },
       "expect": {
-        "action": { "marker": "$ORACLE token", "oneOf": ["ignore"] },
-        "queued": { "marker": "$ORACLE token", "is": false }
+        "action": {
+          "marker": "$ORACLE token",
+          "oneOf": [
+            "ignore"
+          ]
+        },
+        "queued": {
+          "marker": "$ORACLE token",
+          "is": false
+        }
       }
     },
     {
       "id": "call-single-cluster",
       "category": "private information that must not enter public copy",
-      "input": { "fixture": "call-transcript.txt", "sourceType": "call_transcript" },
-      "expect": { "singleCluster": true }
+      "input": {
+        "fixture": "call-transcript.txt",
+        "sourceType": "call_transcript"
+      },
+      "expect": {
+        "singleCluster": true
+      }
     },
     {
       "id": "call-private-routing",
       "category": "private information that must not enter public copy",
-      "input": { "fixture": "call-transcript.txt", "sourceType": "call_transcript" },
+      "input": {
+        "fixture": "call-transcript.txt",
+        "sourceType": "call_transcript"
+      },
       "expect": {
-        "action": { "marker": "underinvesting in post-trade", "oneOf": ["sales_handoff", "save"] },
-        "permission": { "marker": "underinvesting in post-trade", "publishable": false }
+        "action": {
+          "marker": "underinvesting in post-trade",
+          "oneOf": [
+            "sales_handoff",
+            "save"
+          ]
+        },
+        "permission": {
+          "marker": "underinvesting in post-trade",
+          "publishable": false
+        }
       }
     },
     {
       "id": "call-leak-guard",
       "category": "private information that must not enter public copy",
-      "input": { "fixture": "call-transcript.txt", "sourceType": "call_transcript" },
+      "input": {
+        "fixture": "call-transcript.txt",
+        "sourceType": "call_transcript"
+      },
       "expect": {
         "draft": {
           "marker": "underinvesting in post-trade",
           "type": "linkedin_post",
-          "forbidden": ["85,000", "85000", "ninth of September", "Meridian"]
+          "forbidden": [
+            "85,000",
+            "85000",
+            "ninth of September",
+            "Meridian"
+          ]
         }
       }
     },
@@ -294,7 +663,14 @@
         "sourceType": "linkedin"
       },
       "expect": {
-        "action": { "marker": "Rebecca Kossnick", "oneOf": ["speaker_lead", "dm", "investigate"] }
+        "action": {
+          "marker": "Rebecca Kossnick",
+          "oneOf": [
+            "speaker_lead",
+            "dm",
+            "investigate"
+          ]
+        }
       }
     },
     {
@@ -305,8 +681,18 @@
         "sourceType": "linkedin"
       },
       "expect": {
-        "action": { "marker": "settlement disputes", "oneOf": ["dm", "comment", "speaker_lead"] },
-        "queued": { "marker": "settlement disputes", "is": true }
+        "action": {
+          "marker": "settlement disputes",
+          "oneOf": [
+            "dm",
+            "comment",
+            "speaker_lead"
+          ]
+        },
+        "queued": {
+          "marker": "settlement disputes",
+          "is": true
+        }
       }
     },
     {
@@ -317,7 +703,15 @@
         "sourceType": "linkedin"
       },
       "expect": {
-        "action": { "marker": "Vanity Fair", "oneOf": ["media_lead", "comment", "linkedin_post", "quote_post"] }
+        "action": {
+          "marker": "Vanity Fair",
+          "oneOf": [
+            "media_lead",
+            "comment",
+            "linkedin_post",
+            "quote_post"
+          ]
+        }
       }
     },
     {
@@ -328,9 +722,25 @@
         "sourceType": "x"
       },
       "expect": {
-        "claim": { "textContains": "$40M", "statusOneOf": ["social_claim_only"] },
-        "action": { "marker": "EventEdge", "oneOf": ["investigate", "ignore", "monitor"] },
-        "draft": { "marker": "EventEdge", "type": "x_post", "mustHedge": true }
+        "claim": {
+          "textContains": "$40M",
+          "statusOneOf": [
+            "social_claim_only"
+          ]
+        },
+        "action": {
+          "marker": "EventEdge",
+          "oneOf": [
+            "investigate",
+            "ignore",
+            "monitor"
+          ]
+        },
+        "draft": {
+          "marker": "EventEdge",
+          "type": "x_post",
+          "mustHedge": true
+        }
       }
     },
     {
@@ -341,8 +751,14 @@
         "sourceType": "x"
       },
       "expect": {
-        "duplicates": { "marker": "self-certify contracts", "minCount": 1 },
-        "clusterTogether": ["self-certify contracts", "self-certify contracts"]
+        "duplicates": {
+          "marker": "self-certify contracts",
+          "minCount": 1
+        },
+        "clusterTogether": [
+          "self-certify contracts",
+          "self-certify contracts"
+        ]
       }
     },
     {
@@ -353,7 +769,151 @@
         "sourceType": "x"
       },
       "expect": {
-        "claim": { "textContains": "market data distribution deal", "statusOneOf": ["social_claim_only", "reported"], "maxIndependent": 1 }
+        "claim": {
+          "textContains": "market data distribution deal",
+          "statusOneOf": [
+            "social_claim_only",
+            "reported"
+          ],
+          "maxIndependent": 1
+        }
+      }
+    },
+    {
+      "id": "ig-operator-market-entry",
+      "category": "iGaming pillar routing",
+      "input": {
+        "text": "Feed post\nView Mia Torres’s profile\nMia Torres\n • 2nd\niGaming M&A analyst\n2h • \nFollow\nFlutter Entertainment has launched its sportsbook and casino offering in Brazil under the new federal licensing regime, according to this morning's filing coverage. The regulated market entry puts pressure on every operator still waiting on a licence, and the affiliate acquisition costs in Brazil are already moving.\n\n214\n",
+        "sourceType": "linkedin",
+        "pillar": "igaming"
+      },
+      "expect": {
+        "item": {
+          "authorContains": "Mia Torres",
+          "textContains": "Flutter Entertainment"
+        },
+        "action": {
+          "marker": "launched its sportsbook",
+          "oneOf": [
+            "sponsor_lead",
+            "linkedin_post",
+            "comment",
+            "investigate"
+          ]
+        },
+        "queued": {
+          "marker": "launched its sportsbook",
+          "is": true
+        }
+      }
+    },
+    {
+      "id": "ig-vocabulary-allowed-in-outreach",
+      "category": "brand vocabulary (iGaming)",
+      "input": {
+        "text": "Feed post\nView Mia Torres’s profile\nMia Torres\n • 2nd\niGaming M&A analyst\n2h • \nFollow\nFlutter Entertainment has launched its sportsbook and casino offering in Brazil under the new federal licensing regime, according to this morning's filing coverage. The regulated market entry puts pressure on every operator still waiting on a licence, and the affiliate acquisition costs in Brazil are already moving.\n\n214\n",
+        "sourceType": "linkedin",
+        "pillar": "igaming"
+      },
+      "expect": {
+        "draft": {
+          "marker": "launched its sportsbook",
+          "type": "email",
+          "mustHedge": true
+        }
+      }
+    },
+    {
+      "id": "ig-content-offtopic-under-pm",
+      "category": "pillar routing (same text, wrong lane)",
+      "input": {
+        "text": "Feed post\nView Mia Torres’s profile\nMia Torres\n • 2nd\niGaming M&A analyst\n2h • \nFollow\nFlutter Entertainment has launched its sportsbook and casino offering in Brazil under the new federal licensing regime, according to this morning's filing coverage. The regulated market entry puts pressure on every operator still waiting on a licence, and the affiliate acquisition costs in Brazil are already moving.\n\n214\n",
+        "sourceType": "linkedin",
+        "pillar": "prediction_markets"
+      },
+      "expect": {
+        "action": {
+          "marker": "launched its sportsbook",
+          "oneOf": [
+            "ignore"
+          ]
+        },
+        "queued": {
+          "marker": "launched its sportsbook",
+          "is": false
+        }
+      }
+    },
+    {
+      "id": "sug-consulting-lead",
+      "category": "Strait Up Growth consulting lead",
+      "input": {
+        "text": "Feed post\nView Daniel Ong’s profile\nDaniel Ong\n • 2nd\nB2B SaaS growth operator\n3h • \nFollow\nGrab has reportedly signed a regional partnership to expand its financial services stack into Vietnam and the Philippines, and the go-to-market teams are being rebuilt around AI adoption first. Their CRM overhaul is the part most companies underestimate: Southeast Asia expansion fails on operations, not ambition.\n\n88\n",
+        "sourceType": "linkedin",
+        "pillar": "strait_up_growth"
+      },
+      "expect": {
+        "item": {
+          "authorContains": "Daniel Ong",
+          "textContains": "Grab"
+        },
+        "claim": {
+          "textContains": "reportedly signed",
+          "statusOneOf": [
+            "social_claim_only",
+            "reported"
+          ]
+        },
+        "action": {
+          "marker": "CRM overhaul",
+          "oneOf": [
+            "sales_handoff"
+          ]
+        },
+        "queued": {
+          "marker": "CRM overhaul",
+          "is": true
+        }
+      }
+    },
+    {
+      "id": "sug-content-offtopic-under-pm",
+      "category": "pillar routing (same text, wrong lane)",
+      "input": {
+        "text": "Feed post\nView Daniel Ong’s profile\nDaniel Ong\n • 2nd\nB2B SaaS growth operator\n3h • \nFollow\nGrab has reportedly signed a regional partnership to expand its financial services stack into Vietnam and the Philippines, and the go-to-market teams are being rebuilt around AI adoption first. Their CRM overhaul is the part most companies underestimate: Southeast Asia expansion fails on operations, not ambition.\n\n88\n",
+        "sourceType": "linkedin",
+        "pillar": "prediction_markets"
+      },
+      "expect": {
+        "action": {
+          "marker": "CRM overhaul",
+          "oneOf": [
+            "ignore"
+          ]
+        },
+        "queued": {
+          "marker": "CRM overhaul",
+          "is": false
+        }
+      }
+    },
+    {
+      "id": "sug-outreach-draft-hedged",
+      "category": "Strait Up Growth outreach voice",
+      "input": {
+        "text": "Feed post\nView Daniel Ong’s profile\nDaniel Ong\n • 2nd\nB2B SaaS growth operator\n3h • \nFollow\nGrab has reportedly signed a regional partnership to expand its financial services stack into Vietnam and the Philippines, and the go-to-market teams are being rebuilt around AI adoption first. Their CRM overhaul is the part most companies underestimate: Southeast Asia expansion fails on operations, not ambition.\n\n88\n",
+        "sourceType": "linkedin",
+        "pillar": "strait_up_growth"
+      },
+      "expect": {
+        "draft": {
+          "marker": "CRM overhaul",
+          "type": "email",
+          "mustHedge": true,
+          "forbidden": [
+            "Commercial Director, NEXTPredict"
+          ]
+        }
       }
     }
   ]

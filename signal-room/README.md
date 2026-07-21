@@ -1,6 +1,8 @@
 # Signal Room
 
-Stuart Crowley's private prediction-markets editorial intelligence system.
+Stuart Crowley's private editorial intelligence system, serving his three
+authority pillars: prediction markets (NEXTPredict), iGaming & sports
+betting (NEXT.io) and Strait Up Growth.
 
 > Signal Room turns industry noise, market activity and private context into
 > the few content moves worth making today.
@@ -17,6 +19,31 @@ public draft.
 
 The system **never sends or publishes anything**. Drafts end at `final`;
 Stuart acts by hand.
+
+## The three pillars
+
+One judgement engine serves all three of Stuart's authority pillars;
+the pillar is data, chosen deliberately per drop (drops are separate on
+purpose) and carried from the ingestion to its opportunities and drafts:
+
+| Pillar | Brand voice | What changes |
+| --- | --- | --- |
+| Prediction markets | NEXTPredict | betting/gambling/sportsbook/casino vocabulary banned in outreach; confirmed sign-off ("Commercial Director, NEXTPredict"); summit-shaped leads |
+| iGaming & sports betting | NEXT.io | industry vocabulary is normal working language; sign-off title stays a bracketed [YOUR TITLE] slot (never invented); operator/supplier/regulator lanes |
+| Strait Up Growth | Strait Up Growth | consulting leads (SEA expansion, CRM pain, fresh raises + a named company → sales_handoff); AI/CRM/GTM/SEA lanes; positioning presented as current thinking |
+
+Per pillar: relevance terms (the same iGaming story queues in its lane and
+is ignored as off-topic under prediction markets — both directions are
+gold-eval cases), edge-topic lanes, category-entry language, outreach
+positioning lines and sign-offs. Stuart-global voice rules (no em dashes,
+banned phrases, no negative parallelism) apply everywhere and are not
+per-pillar. The pillar is picked on Paste (or supplied by a collector; see
+the source prefix below), shows on Today/opportunity/archive, balances the
+queue (no pillar takes more than 3 of 5 slots when others have open work),
+and can be corrected per ingestion via Reprocess (audit-logged). The score
+dimension is stored under its historical key `nextpredict_relevance` so
+learned weights and history stay valid; it reads as "pillar relevance" in
+the UI and means relevance to the drop's own pillar.
 
 ## Quick start
 
@@ -48,8 +75,8 @@ npm run dev          # dev server on :4180
 npm run build        # production build
 npm run typecheck    # tsc --noEmit
 npm run lint         # eslint over src, scripts, tests, e2e
-npm test             # 121 vitest checks incl. hermetic DB round-trips + eval gates
-npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
+npm test             # 133 vitest checks incl. hermetic DB round-trips + eval gates
+npm run eval         # gold-set evaluation (45 cases, 126 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
 npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
 npm run learn        # nudge score weights from Use/Wrong-angle feedback; --dry-run
@@ -116,7 +143,10 @@ Two more collectors ride the same contract: **youtube** (keyless channel
 RSS, set `SIGNAL_ROOM_YOUTUBE_CHANNELS`) and **feeds** (any RSS 2.0/Atom
 feed, set `SIGNAL_ROOM_FEEDS` — the CFTC press-release feed and The Block
 both verified live). Both keep a persisted cursor per feed so only new
-items ingest.
+items ingest, and both accept a per-source pillar prefix
+(`igaming:https://…`) so an iGaming trade feed or a SEA business feed
+lands in its own lane; unprefixed sources stay on prediction markets.
+The markets/reddit/x collectors are prediction-markets by nature.
 
 ## Story continuity and theses
 
@@ -296,7 +326,7 @@ Private context still powers WHY STUART HAS AN ANGLE as guidance notes.
 
 ## Evaluation
 
-`npm run eval` runs 39 gold cases (curated from the real 2026-07-16 LinkedIn
+`npm run eval` runs 45 gold cases (curated from the real 2026-07-16 LinkedIn
 capture + synthetic fixtures covering every required category: comment /
 quote-post / original-post / DM / speaker / sponsor / media leads,
 regulatory, recruitment, infrastructure, misleading liquidity, unverified

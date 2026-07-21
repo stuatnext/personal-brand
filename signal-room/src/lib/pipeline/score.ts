@@ -2,6 +2,7 @@ import type { ClaimDraft, ClusterDraft, EntityMentionDraft, ExtractedItem, Score
 import { engagementTotal } from "./cluster";
 import { promoScore, looksLikeProfitBrag } from "./noise";
 import { prospectFlags } from "./entities";
+import { pillarConfig, type PillarConfig } from "@/lib/pillars";
 
 // Component scoring: every dimension is 0..100 with a stated reason, and the
 // overall number is a visible weighted blend — never one unexplained score.
@@ -24,25 +25,8 @@ export const DEFAULT_WEIGHTS: Record<string, number> = {
 
 const INVERTED = new Set(["saturation", "credibility_risk"]);
 
-/** Themes where Stuart genuinely has an angle (market architecture, not hype). */
-const EDGE_TOPICS: { pattern: RegExp; label: string }[] = [
-  { pattern: /\bregulat\w+|CFTC|SEC|FINRA|licen[cs]\w+|no-action|DCM\b/i, label: "regulation" },
-  { pattern: /\bmarket structure|microstructure|order book|matching engine|clearing\b/i, label: "market structure" },
-  { pattern: /\bdistribution|broker|brokerage|app store|super.?app|white.?label\b/i, label: "distribution" },
-  { pattern: /\bliquidity|market mak\w+|spread|depth|open interest|volume\b/i, label: "liquidity" },
-  { pattern: /\bfees?|take rate|rebate|pricing\b/i, label: "fees" },
-  { pattern: /\bexecution|slippage|settlement|resolution|oracle\b/i, label: "execution and settlement" },
-  { pattern: /\bcomplian\w+|surveillance|KYC|AML|MNPI|insider\b/i, label: "compliance and surveillance" },
-  { pattern: /\bhir\w+|recruit\w+|head of|joins? as|talent|appoint\w+\b/i, label: "talent" },
-  { pattern: /\binfrastructure|custody|API|data feed|market data\b/i, label: "infrastructure" },
-  { pattern: /\bmedia|journalis\w+|coverage|documentary|newsletter\b/i, label: "media" },
-  { pattern: /\bbrand risk|reputation\w*|advertis\w+|sponsor\w+\b/i, label: "brand risk" },
-  { pattern: /\bperception|mainstream|normali[sz]\w+|vanity fair|60 minutes\b/i, label: "category perception" },
-  { pattern: /\binstitution\w+|bank|hedge fund|asset manager|goldman|jpmorgan\b/i, label: "institutional adoption" },
-];
-
-const PM_TERMS =
-  /\b(prediction markets?|event contracts?|kalshi|polymarket|forecastex|binary options?|forecasting|probability market|contract market)\b/i;
+// Edge topics and relevance terms come from the ingestion's pillar
+// (src/lib/pillars.ts); the engine itself is pillar-agnostic.
 
 const RECENCY_STRONG = /\b(breaking|just (?:announced|launched|filed)|minutes? ago|hours? ago|today|this morning)\b/i;
 
@@ -70,6 +54,8 @@ export interface ClusterFeatures {
   thread?: import("./threads").ThreadInfo;
   /** lowercased canonical name -> engagement strength, from the relationship graph */
   knownEngagement?: Map<string, number>;
+  /** the authority pillar this ingestion was dropped into */
+  pillar: PillarConfig;
 }
 
 /** Multi-story digests and episode promos are mined for what they contain,
@@ -81,16 +67,17 @@ export function isAggregation(text: string): boolean {
   return false;
 }
 
-/** Crypto price roundups and generic markets content pattern-match Stuart's
- *  feed but are not category signal. */
-export function isOffTopic(allText: string): boolean {
-  const pmHits = (allText.match(new RegExp(PM_TERMS.source, "gi")) || []).length;
+/** Content with no substance on the drop's pillar. Crypto price roundups
+ *  and generic finance noise pattern-match Stuart's feed whatever the
+ *  pillar; they only survive when the pillar's own terms carry the text. */
+export function isOffTopic(allText: string, pillar: PillarConfig = pillarConfig()): boolean {
+  const hits = (allText.match(new RegExp(pillar.relevanceTerms.source, "gi")) || []).length;
   const cryptoPrice =
     /\b(bitcoin|btc|eth|ethereum|solana|xrp)\b[\s\S]{0,60}?(price|target|etf|inflows?|rally|breakout|\$\d)/i.test(
       allText,
     );
   const genericFinance = /\b(nifty|sensex|stock tips|real estate|functional safety|domain for sale)\b/i.test(allText);
-  return (cryptoPrice && pmHits <= 1) || (genericFinance && pmHits <= 1) || pmHits === 0;
+  return (cryptoPrice && hits <= 1) || (genericFinance && hits <= 1) || hits === 0;
 }
 
 export function collectFeatures(
@@ -103,11 +90,12 @@ export function collectFeatures(
   restricted = false,
   thread?: import("./threads").ThreadInfo,
   knownEngagement?: Map<string, number>,
+  pillar: PillarConfig = pillarConfig(),
 ): ClusterFeatures {
   const members = cluster.memberTempIds.map((id) => items.get(id)!).filter(Boolean);
   const primary = items.get(cluster.primaryTempId)!;
   const allText = members.map((m) => m.originalText + " " + (m.quotedText ?? "")).join("\n");
-  const edgeTopics = EDGE_TOPICS.filter((t) => t.pattern.test(allText)).map((t) => t.label);
+  const edgeTopics = pillar.edgeTopics.filter((t) => t.pattern.test(allText)).map((t) => t.label);
   const duplicateCount = [...cluster.roles.values()].filter((r) => r === "duplicate").length;
   return {
     cluster,
@@ -123,10 +111,11 @@ export function collectFeatures(
     previouslySeen,
     currentThemes,
     restricted,
-    offTopic: isOffTopic(allText),
+    offTopic: isOffTopic(allText, pillar),
     aggregation: isAggregation(allText),
     thread,
     knownEngagement,
+    pillar,
   };
 }
 
@@ -328,30 +317,32 @@ export function scoreCluster(f: ClusterFeatures): ScoreBreakdown[] {
       : `${good}/${f.claims.length} claims reported or corroborated`,
   );
 
-  // nextpredict_relevance: the category must be the SUBJECT, not a passing
-  // mention. Position of the first hit separates the two.
-  const pmRegex = new RegExp(PM_TERMS.source, "gi");
-  const pmHits = (f.allText.match(pmRegex) || []).length;
+  // Pillar relevance (stored under the historical key nextpredict_relevance
+  // so learned weights and score history stay valid): the pillar must be the
+  // SUBJECT, not a passing mention. Position of the first hit separates the
+  // two.
+  const termRegex = new RegExp(f.pillar.relevanceTerms.source, "gi");
+  const termHits = (f.allText.match(termRegex) || []).length;
   const primaryText = f.primary.originalText + " " + (f.primary.quotedText ?? "");
-  const firstHit = primaryText.search(new RegExp(PM_TERMS.source, "i"));
-  // Subject-level means the category appears in the opening (title/first
+  const firstHit = primaryText.search(new RegExp(f.pillar.relevanceTerms.source, "i"));
+  // Subject-level means the pillar appears in the opening (title/first
   // sentences), not somewhere deep inside an essay about something else.
   const subjectLevel = firstHit >= 0 && firstHit < 280;
-  const passingMention = pmHits <= 2 && !subjectLevel;
+  const passingMention = termHits <= 2 && !subjectLevel;
   push(
     "nextpredict_relevance",
     f.offTopic
-      ? Math.min(15, pmHits * 5)
+      ? Math.min(15, termHits * 5)
       : passingMention
-        ? Math.min(22, pmHits * 10)
-        : clamp(pmHits * 12 + (subjectLevel ? 25 : 0) + (f.edgeTopics.length > 0 ? 15 : 0)),
+        ? Math.min(22, termHits * 10)
+        : clamp(termHits * 12 + (subjectLevel ? 25 : 0) + (f.edgeTopics.length > 0 ? 15 : 0)),
     f.offTopic
-      ? "generic crypto/markets content wearing category vocabulary"
+      ? `generic content outside the ${f.pillar.label} lane`
       : passingMention
-        ? "prediction markets are a passing mention here, not the subject"
-        : pmHits
-          ? `${pmHits} prediction-market term hit(s)${subjectLevel ? "; category is the subject from the opening" : ""}`
-          : "peripheral to the category",
+        ? `${f.pillar.label} is a passing mention here, not the subject`
+        : termHits
+          ? `${termHits} ${f.pillar.termNoun} term hit(s)${subjectLevel ? "; the pillar is the subject from the opening" : ""}`
+          : "peripheral to the pillar",
   );
 
   // theme_relevance

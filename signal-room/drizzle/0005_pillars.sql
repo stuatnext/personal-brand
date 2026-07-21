@@ -1,0 +1,2 @@
+ALTER TABLE "ingestions" ADD COLUMN "pillar" text DEFAULT 'prediction_markets' NOT NULL;--> statement-breakpoint
+ALTER TABLE "opportunities" ADD COLUMN "pillar" text DEFAULT 'prediction_markets' NOT NULL;

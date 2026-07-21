@@ -10,6 +10,7 @@ import { extractClaims } from "./claims";
 import { collectFeatures, type ClusterFeatures } from "./score";
 import { buildOpportunities } from "./recommend";
 import { defaultPermissionForSource, isPublishable } from "@/lib/permissions";
+import { pillarConfig } from "@/lib/pillars";
 import type { ClaimDraft, ClusterDraft, DedupeResult, EntityMentionDraft, ExtractedItem, OpportunityDraft } from "./types";
 import type { DeclaredSource } from "./types";
 import type { DraftContext, AllowedEvidence } from "@/lib/ai/provider";
@@ -17,6 +18,7 @@ import type { DraftContext, AllowedEvidence } from "@/lib/ai/provider";
 export interface PureRun {
   raw: string;
   sourceType: string;
+  pillar: string;
   permissionLevel: string;
   items: ExtractedItem[];
   dupes: DedupeResult;
@@ -27,14 +29,20 @@ export interface PureRun {
   opportunities: OpportunityDraft[];
 }
 
-export function runPurePipeline(raw: string, sourceType: string, currentThemes: string[] = [
-  "market structure",
-  "regulation",
-  "distribution",
-  "liquidity",
-  "compliance",
-  "settlement",
-]): PureRun {
+export function runPurePipeline(
+  raw: string,
+  sourceType: string,
+  currentThemes: string[] = [
+    "market structure",
+    "regulation",
+    "distribution",
+    "liquidity",
+    "compliance",
+    "settlement",
+  ],
+  pillar?: string,
+): PureRun {
+  const pillarCfg = pillarConfig(pillar);
   const permissionLevel = defaultPermissionForSource(sourceType);
   const items = segment(raw, sourceType as DeclaredSource);
   const dupes = detectDuplicates(items);
@@ -43,10 +51,33 @@ export function runPurePipeline(raw: string, sourceType: string, currentThemes: 
   const claims = extractClaims(items, clusters, mentions, permissionLevel);
   const itemMap = new Map(items.map((i) => [i.tempId, i]));
   const features = clusters.map((c) =>
-    collectFeatures(c, itemMap, claims, mentions, false, currentThemes, !isPublishable(permissionLevel)),
+    collectFeatures(
+      c,
+      itemMap,
+      claims,
+      mentions,
+      false,
+      currentThemes,
+      !isPublishable(permissionLevel),
+      undefined,
+      undefined,
+      pillarCfg,
+    ),
   );
   const opportunities = buildOpportunities(features, { currentThemes });
-  return { raw, sourceType, permissionLevel, items, dupes, mentions, clusters, claims, features, opportunities };
+  return {
+    raw,
+    sourceType,
+    pillar: pillarCfg.key,
+    permissionLevel,
+    items,
+    dupes,
+    mentions,
+    clusters,
+    claims,
+    features,
+    opportunities,
+  };
 }
 
 /** Find the cluster whose member text contains the marker. */
@@ -113,5 +144,6 @@ export function draftContextFor(run: PureRun, marker: string, draftType: string)
     hasUnverifiedClaims: clusterClaims.some((c) =>
       ["social_claim_only", "disputed", "reported"].includes(c.status),
     ),
+    pillar: run.pillar,
   };
 }

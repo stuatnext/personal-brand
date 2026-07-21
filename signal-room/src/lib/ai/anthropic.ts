@@ -1,5 +1,5 @@
 import type { DraftContext, EditorialContext, LLMProvider } from "./provider";
-import { STUART_VOICE_SYSTEM, EDITORIAL_SYSTEM, draftUserPrompt } from "./prompts";
+import { stuartVoiceSystem, EDITORIAL_SYSTEM, draftUserPrompt } from "./prompts";
 import { lintVoice } from "@/lib/voice/lint";
 
 // Real provider. Only active when ANTHROPIC_API_KEY is set. The editorial
@@ -94,7 +94,7 @@ export class AnthropicProvider implements LLMProvider {
     const user = draftUserPrompt({ ...ctx, evidenceBlock });
     let draft = await callClaude({
       model: this.editorialModel,
-      system: STUART_VOICE_SYSTEM,
+      system: stuartVoiceSystem(ctx.pillar),
       user,
     });
 
@@ -102,12 +102,13 @@ export class AnthropicProvider implements LLMProvider {
     const lint = lintVoice(draft, {
       outreach: ["dm", "email", "forum_post"].includes(ctx.draftType),
       hasUnverifiedClaims: ctx.hasUnverifiedClaims,
+      pillar: ctx.pillar,
     });
     if (lint.errors.length > 0) {
       const problems = lint.errors.map((e) => `- ${e.rule}: "${e.match}" (${e.message})`).join("\n");
       draft = await callClaude({
         model: this.editorialModel,
-        system: STUART_VOICE_SYSTEM,
+        system: stuartVoiceSystem(ctx.pillar),
         user: `${user}\n\nYour previous attempt violated Stuart's voice rules:\n${problems}\n\nRewrite the draft fixing every violation. Return only the draft text.`,
       });
     }

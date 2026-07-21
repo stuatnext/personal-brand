@@ -26,6 +26,8 @@ import {
   PermissionTag,
   VerificationTag,
   ACTION_LABELS,
+  PillarTag,
+  dimensionLabel,
 } from "@/components/ui";
 import { OpportunityActions } from "./actions";
 
@@ -126,6 +128,7 @@ export default async function OpportunityPage({ params }: { params: Promise<{ id
         meta={`overall ${opp.overallScore} · status ${opp.status.replace(/_/g, " ")}`}
       >
         <ActionTag action={opp.recommendedAction} />
+        <PillarTag pillar={opp.pillar} always />
       </PageHeader>
 
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-[1fr_330px]">
@@ -266,7 +269,7 @@ export default async function OpportunityPage({ params }: { params: Promise<{ id
                 <div key={s.dimension} title={s.reason ?? ""}>
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-mono text-[11px] uppercase tracking-wider text-[--color-mut]">
-                      {s.dimension.replace(/_/g, " ")}
+                      {dimensionLabel(s.dimension)}
                     </span>
                     <span className="flex items-center gap-2">
                       <Meter value={s.score} inverted={INVERTED.has(s.dimension)} />
