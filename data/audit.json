@@ -4226,6 +4226,150 @@
       "action": "insert",
       "collection": "calendar",
       "summary": "Surveillance architecture, not surveillance debate"
+    },
+    {
+      "id": "cal-f15169e6",
+      "at": "2026-07-21T06:27:23.931Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-973a11c1",
+      "at": "2026-07-21T06:27:23.942Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-4ffb65bc",
+      "at": "2026-07-21T06:27:23.950Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-6b450ae8",
+      "at": "2026-07-21T06:27:23.959Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-3ca5ad44",
+      "at": "2026-07-21T06:27:23.967Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-b2d7b68f",
+      "at": "2026-07-21T06:27:23.982Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-f8752ecb",
+      "at": "2026-07-21T06:27:23.989Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-a6b1fc39",
+      "at": "2026-07-21T06:27:23.996Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-0885f78c",
+      "at": "2026-07-21T06:27:24.004Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-f15169e6",
+      "at": "2026-07-21T06:28:43.764Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-973a11c1",
+      "at": "2026-07-21T06:28:43.773Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-4ffb65bc",
+      "at": "2026-07-21T06:28:43.779Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-6b450ae8",
+      "at": "2026-07-21T06:28:43.784Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-3ca5ad44",
+      "at": "2026-07-21T06:28:43.790Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-b2d7b68f",
+      "at": "2026-07-21T06:28:43.799Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-f8752ecb",
+      "at": "2026-07-21T06:28:43.808Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-a6b1fc39",
+      "at": "2026-07-21T06:28:43.816Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
+    },
+    {
+      "id": "cal-0885f78c",
+      "at": "2026-07-21T06:28:43.820Z",
+      "actor": "claude-verification-2026-07-21",
+      "action": "update",
+      "collection": "calendar",
+      "summary": "verification"
     }
   ]
 }
