@@ -3,54 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-20T23:35:18.313Z",
-    "weekOf": "2026-07-20",
+    "generatedAt": "2026-07-21T02:37:03.533Z",
+    "weekOf": "2026-07-21",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-20",
-        "channel": "X",
-        "what": "World Cup numbers snapshot",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use original platform or reputable reporting and label reported figures."
-      },
-      {
-        "date": "2026-07-20",
-        "channel": "Prediction Markets Forum",
-        "what": "Prediction prices inside ordinary sports journalism",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Timestamp the quoted market price and note that transfer rumours remain unconfirmed."
-      },
-      {
-        "date": "2026-07-20",
-        "channel": "Stuart LinkedIn",
-        "what": "Daily Intel: what survives after the World Cup?",
-        "status": "scheduled",
-        "source": "master schedule",
-        "verification": "Check post-final data on the morning of publication; avoid unsupported retention claims."
-      },
-      {
-        "date": "2026-07-20",
-        "channel": "Stuart LinkedIn",
-        "what": "The World Cup final was an acquisition event. Monday is the product test.",
-        "status": "scheduled",
-        "source": "master schedule",
-        "verification": "Use only current post-final evidence and distinguish observed behaviour from the thesis."
-      },
-      {
-        "date": "2026-07-20",
-        "channel": "X",
-        "what": "Gopuff puts Polymarket in the shopping basket",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use Gopuff’s official terms. Do not imply the purchase executes a trade or that every entrant becomes a prediction-market user."
-      },
       {
         "date": "2026-07-21",
         "channel": "Stuart LinkedIn",
@@ -156,6 +116,54 @@
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       },
       {
+        "date": "2026-07-22",
+        "channel": "Stuart LinkedIn",
+        "what": "Retention is the missing World Cup number",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "All figures reported, not confirmed: 3m signups, 27% vs 9% share, $4.3bn winner market. Verify or keep \"reported\" labels before posting."
+      },
+      {
+        "date": "2026-07-22",
+        "channel": "Prediction Markets Forum",
+        "what": "Retention is the missing World Cup number",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "All figures reported, not confirmed: 3m signups, 27% vs 9% share, $4.3bn winner market. Verify or keep \"reported\" labels before posting."
+      },
+      {
+        "date": "2026-07-22",
+        "channel": "X",
+        "what": "Retention is the missing World Cup number",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "All figures reported, not confirmed: 3m signups, 27% vs 9% share, $4.3bn winner market. Verify or keep \"reported\" labels before posting."
+      },
+      {
+        "date": "2026-07-22",
+        "channel": "Stuart LinkedIn",
+        "what": "Surveillance architecture, not surveillance debate",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Witness list and hearing details reported in intel; check the official committee notice before naming witnesses publicly."
+      },
+      {
+        "date": "2026-07-22",
+        "channel": "Prediction Markets Forum",
+        "what": "Surveillance architecture, not surveillance debate",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Witness list and hearing details reported in intel; check the official committee notice before naming witnesses publicly."
+      },
+      {
+        "date": "2026-07-22",
+        "channel": "X",
+        "what": "Surveillance architecture, not surveillance debate",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Witness list and hearing details reported in intel; check the official committee notice before naming witnesses publicly."
+      },
+      {
         "date": "2026-07-23",
         "channel": "X",
         "what": "North Carolina chooses taxation",
@@ -218,6 +226,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "Stuart LinkedIn",
+        "what": "The World Cup was a payments stress test",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "The ~80% figure is from Zero Hash public posts as captured in intel; verify the primary post before citing."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "Prediction Markets Forum",
+        "what": "The World Cup was a payments stress test",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "The ~80% figure is from Zero Hash public posts as captured in intel; verify the primary post before citing."
+      },
+      {
+        "date": "2026-07-23",
+        "channel": "X",
+        "what": "The World Cup was a payments stress test",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "The ~80% figure is from Zero Hash public posts as captured in intel; verify the primary post before citing."
       },
       {
         "date": "2026-07-24",
@@ -322,6 +354,54 @@
         "status": "unverified-watch",
         "source": "master schedule",
         "verification": "Do not publish until the intervention filing or court docket is obtained directly. The current source is a secondary litigation tracker."
+      },
+      {
+        "date": "2026-07-27",
+        "channel": "X",
+        "what": "CFTC prediction-markets comment deadline",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm the docket is still open and use the official 27 July deadline."
+      },
+      {
+        "date": "2026-07-27",
+        "channel": "X",
+        "what": "24/7 energy derivatives and perpetuals deadline",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use RIN 3038-AF75 and keep the energy-contract scope clear."
+      },
+      {
+        "date": "2026-07-27",
+        "channel": "Stuart LinkedIn",
+        "what": "Polymarket’s fake-win marketing problem",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Review the original WSJ investigation, Polymarket response and any regulator or lawsuit documents. Attribute every number and allegation."
+      },
+      {
+        "date": "2026-07-27",
+        "channel": "Prediction Markets Forum",
+        "what": "Can a prop-trading model build sports-market liquidity?",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Use OddsON’s own challenge terms. State that the starter account is simulated and avoid endorsing performance claims."
+      },
+      {
+        "date": "2026-07-27",
+        "channel": "Prediction Markets Forum",
+        "what": "When the settlement source can be manipulated",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm the Spotify request, artificial-stream removal, market wording, volume and settlement source. Separate proven manipulation from suspicion."
+      },
+      {
+        "date": "2026-07-27",
+        "channel": "Stuart LinkedIn",
+        "what": "Most efficiency projects add work",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -331,6 +411,7 @@
       }
     ],
     "suggestions": [
+      "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Verification gate due 2026-07-22: \"Post-tournament behaviour signal\" must not run without a primary source (Verify the signal and compare like-for-like periods.).",
       "Verification gate due 2026-07-23: \"North Carolina chooses taxation\" must not run without a primary source (Confirm signature, effective date and exact tax treatment.).",
       "Verification gate due 2026-07-24: \"Blockchain.com embeds Polymarket\" must not run without a primary source (Do not publish until Blockchain.com, Polymarket or a regulatory/product document confirms the integration, eligible markets and launch date.).",
@@ -343,7 +424,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-20 (216 items)",
+      "window": "forward from 2026-07-21 (220 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -352,16 +433,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 189,
-          "pct": 0.875
+          "n": 193,
+          "pct": 0.877
         },
         "strait-up-growth": {
           "n": 18,
-          "pct": 0.083
+          "pct": 0.082
         },
         "igaming": {
           "n": 9,
-          "pct": 0.042
+          "pct": 0.041
         },
         "personal": {
           "n": 0,
