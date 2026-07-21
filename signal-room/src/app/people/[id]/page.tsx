@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { personProfile } from "@/lib/graph";
 import { PageHeader } from "@/components/ui";
+import { EdgeList, IntroductionForm } from "./outreach-controls";
 
 export const dynamic = "force-dynamic";
 
@@ -53,38 +54,15 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
         <aside className="space-y-4">
           <section className="panel p-4" data-testid="person-edges">
             <div className="k-label mb-3">Relationship edges</div>
-            {edges.length === 0 ? (
-              <div className="text-[12px] text-[--color-dim]">
-                None yet. Edges build when Stuart uses opportunities involving this {entity.kind}.
-              </div>
-            ) : (
-              <div className="space-y-2">
-                {edges.map((e, i) => (
-                  <div key={i}>
-                    <div className="flex items-center justify-between">
-                      <span
-                        className={`tag ${
-                          e.relationship === "stuart_engaged_with"
-                            ? "tag-signal"
-                            : e.relationship.endsWith("prospect") || e.relationship === "media_contact"
-                              ? "tag-ok"
-                              : ""
-                        }`}
-                      >
-                        {e.relationship.replace(/_/g, " ")}
-                        {e.withName && e.withName !== "Stuart" ? ` · ${e.withName}` : ""}
-                      </span>
-                      <span className="k-value !text-[11px]">{Math.round(e.strength * 100)}%</span>
-                    </div>
-                    {e.note ? <div className="mt-0.5 text-[11px] leading-snug text-[--color-dim]">{e.note}</div> : null}
-                  </div>
-                ))}
-              </div>
-            )}
+            <EdgeList edges={edges} entityKind={entity.kind} />
+          </section>
+          <section className="panel p-4">
+            <IntroductionForm entityId={entity.id} entityName={entity.name} />
           </section>
           <p className="px-1 text-[11.5px] leading-relaxed text-[--color-dim]">
             Engagement edges feed relationship scoring: when this {entity.kind} shows up in future
-            intelligence, the story ranks higher because the relationship already exists.
+            intelligence, the story ranks higher because the relationship already exists. Prospect
+            edges carry an outreach state; the system only ever records what Stuart did by hand.
           </p>
         </aside>
       </div>

@@ -209,3 +209,44 @@ workspace. The same material already lives in the sibling repo
 360KB raw LinkedIn capture) and `personal-brand/data/voice/`. Fixtures
 were curated from there with provenance notes — see `DATA-INVENTORY.md`.
 Private-looking material in fixtures is synthetic and marked fictional.
+
+## 20. Outreach states record reality; they never drive it
+
+Prospect edges carry a pipeline state (identified → drafted → sent →
+replied → meeting_booked → confirmed | passed), but the state machine is a
+LEDGER, not a workflow engine. The system may set exactly two states,
+because both are facts about the system itself: `identified` (the edge was
+created from a Use on a lead) and `drafted` (a dm/email draft exists for
+that opportunity — hooked into draft generation, works in either order of
+draft-vs-use). Everything from `sent` onward records an action Stuart took
+by hand outside the system, after the fact — mirroring the parent repo's
+mark-sent discipline; nothing here sends. Transitions are deliberately
+unconstrained (Stuart is correcting the record, and reality does not move
+monotonically), but every change is audit-logged with before/after and
+actor. Introductions are `introduced_by` edges whose introducer entity is
+found-or-created by name: a fact Stuart states is recorded, not invented.
+When a lead story's company is absent from the gazetteer (the live DAZN
+case: the only linked entity was the author), the prospect edge falls back
+to the author's organisation parsed verbatim from the captured headline —
+evidence-backed, and the entity carries its provenance in its description.
+
+## 21. Cross-venue equivalence is inferred conservatively, on fresh quotes only
+
+Matching the same question across Kalshi and Polymarket is a heuristic
+inference, so it is (a) hedged in the digest ("these appear to be the same
+question"), (b) conservative: token-jaccard ≥ 0.6, or ≥ 0.5 corroborated
+by a shared distinctive figure — where bare years never count, because a
+live run matched "Walz Democratic nominee 2028" to "Walz wins the 2028
+election" on the strength of "2028" alone — and clearly different close
+times veto; (c) one-to-one greedy, strongest pairing first. Prices are
+only ever compared within a single fetch: matching against stored
+snapshots would manufacture "divergence" out of staleness. Kalshi's
+unordered listing is ~100% auto-combo parlay legs for thousands of
+consecutive rows and its long-dated set (where cross-listed questions
+live) is 25k+ markets, so the matching pool reads a rotating cursor-window
+(~4k/run, persisted in collector_cursors, wraps at the end) — coverage
+converges across daily runs instead of pretending one bounded fetch is
+complete. Two venue quirks are load-bearing: Kalshi returns status
+"active" where its API filter says "open", and volume arrives in
+`_fp`-suffixed fields; multi-outcome candidate rows share one title, so
+`yes_sub_title` folds into the title to stop cross-candidate matches.

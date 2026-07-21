@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getBriefing } from "@/lib/briefing";
-import { ActionTag, EmptyState, PageHeader } from "@/components/ui";
+import { ActionTag, PageHeader } from "@/components/ui";
 import { CaughtUpButton } from "./caught-up";
 
 export const dynamic = "force-dynamic";

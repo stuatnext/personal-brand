@@ -150,6 +150,30 @@ export type DraftType = (typeof DRAFT_TYPES)[number];
 export const FEEDBACK_DECISIONS = ["use", "wrong_angle", "save", "ignore"] as const;
 export type FeedbackDecision = (typeof FEEDBACK_DECISIONS)[number];
 
+/** Outreach pipeline states for prospect edges on the relationship graph.
+ *  The system only ever sets the first two (identified when the edge is
+ *  created, drafted when a dm/email draft exists for the opportunity that
+ *  produced it). Everything from `sent` onwards records what Stuart did BY
+ *  HAND, after the fact — the system never sends or publishes. */
+export const OUTREACH_STATES = [
+  "identified",
+  "drafted",
+  "sent",
+  "replied",
+  "meeting_booked",
+  "confirmed",
+  "passed",
+] as const;
+export type OutreachState = (typeof OUTREACH_STATES)[number];
+
+/** Relationship kinds that participate in the outreach pipeline. */
+export const PROSPECT_RELATIONSHIPS = [
+  "speaker_prospect",
+  "sponsor_prospect",
+  "media_contact",
+  "sales_prospect",
+] as const;
+
 // --- Tables -----------------------------------------------------------------
 
 export const users = pgTable("users", {
@@ -630,12 +654,18 @@ export const relationships = pgTable(
       .notNull()
       .references(() => entities.id, { onDelete: "cascade" }),
     toEntityId: uuid("to_entity_id").references(() => entities.id, { onDelete: "cascade" }),
-    relationship: text("relationship").notNull(), // works_at|posts_about|stuart_engaged_with|speaker_prospect|sponsor_prospect|media_contact|covers|operates|lists_market
+    relationship: text("relationship").notNull(), // works_at|posts_about|stuart_engaged_with|speaker_prospect|sponsor_prospect|media_contact|sales_prospect|introduced_by|covers|operates|lists_market
     note: text("note"),
     strength: real("strength").notNull().default(0.5),
+    // Outreach pipeline state; meaningful on PROSPECT_RELATIONSHIPS edges only.
+    state: text("state").notNull().default("identified"),
+    stateUpdatedAt: timestamp("state_updated_at", { withTimezone: true }).notNull().defaultNow(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [index("relationships_from_idx").on(t.fromEntityId)],
+  (t) => [
+    index("relationships_from_idx").on(t.fromEntityId),
+    index("relationships_kind_idx").on(t.relationship),
+  ],
 );
 
 export const tags = pgTable(

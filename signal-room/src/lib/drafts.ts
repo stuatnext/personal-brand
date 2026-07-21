@@ -16,6 +16,7 @@ import { uid } from "@/lib/ids";
 import { getProvider, type AllowedEvidence } from "@/lib/ai/provider";
 import { lintVoice } from "@/lib/voice/lint";
 import { detectLeaks, isPublishable, type RestrictedSource } from "@/lib/permissions";
+import { markProspectsDrafted } from "@/lib/graph";
 
 const OUTREACH_TYPES = new Set(["dm", "email", "forum_post"]);
 
@@ -142,6 +143,11 @@ export async function generateDraft(
     scopeId: id,
     detailJson: { opportunityId, draftType, provider: provider.name },
   });
+
+  // A dm/email draft now exists, so any `identified` prospect edges on this
+  // opportunity advance to `drafted`. That is as far as the system ever
+  // moves an edge; `sent` is Stuart's to record by hand.
+  await markProspectsDrafted(opportunityId, draftType);
 
   return { id, content, provider: provider.name, voiceLint, permissionWarnings };
 }

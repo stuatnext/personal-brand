@@ -48,7 +48,7 @@ npm run dev          # dev server on :4180
 npm run build        # production build
 npm run typecheck    # tsc --noEmit
 npm run lint         # eslint over src, scripts, tests, e2e
-npm test             # 91 vitest checks incl. hermetic DB round-trips + eval gates
+npm test             # 111 vitest checks incl. hermetic DB round-trips + eval gates
 npm run eval         # gold-set evaluation (39 cases, 101 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
 npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
@@ -73,6 +73,19 @@ extraction, claims, scoring identical:
   auto-generated parlay combos are excluded as venue plumbing; the venue's
   own API counts as a primary source for its own listings. First run
   records a baseline only. *Live-verified against both public APIs.*
+- **cross-venue intelligence** (part of the markets run, baseline
+  included): detects the same question trading on both venues and emits a
+  second digest of price divergence (≥5 points with real volume) and
+  liquidity concentration (≥85% of meaningful combined volume on one
+  venue). Matching is deliberately conservative — wording overlap with
+  distinctive-figure or aligned-close-time corroboration, one-to-one
+  greedy, bare years never corroborate (a live "Walz nominee 2028" vs
+  "Walz wins 2028" false match is the reason) — and the Kalshi side reads a
+  rotating window over its 25k+ long-dated listings (cursor persisted, ~4k
+  per run) so coverage converges across runs while every compared price
+  stays fresh from the same fetch. *Live-verified: real cross-listed pairs
+  found on both venues, incl. a 64c-vs-60c pair with 98% of volume on one
+  venue.*
 - **reddit** (no credentials): sweeps `SIGNAL_ROOM_REDDIT_SUBS` via the
   public JSON API, formatted so the reddit segmenter parses it natively.
   Reddit refuses many datacenter IPs (fails loudly, never silently) — run
@@ -123,11 +136,28 @@ that have gone quiet. The marker is explicit: press *Mark caught up* (or
 **Relationship graph**: pressing **Use it** builds the graph. Authors of
 material Stuart acted on gain a `stuart_engaged_with` edge (strength grows
 with repetition); acting on a lead records the prospect edge
-(speaker/sponsor/media/sales). Those edges feed scoring: when someone
-Stuart has engaged with before reappears in fresh intelligence, the story's
-relationship value rises with a visible reason. Each person/company now has
-a profile page (`/people/[id]`): recent material, edges, works-at, links
+(speaker/sponsor/media/sales). When a lead story's company is one the
+gazetteer has never seen, the prospect edge falls back to the author's
+organisation taken verbatim from the captured headline ("Chief Executive
+Officer at DAZN Group" → company *DAZN Group*) — recorded evidence, never
+an invented name. Those edges feed scoring: when someone Stuart has
+engaged with before reappears in fresh intelligence, the story's
+relationship value rises with a visible reason. Each person/company has a
+profile page (`/people/[id]`): recent material, edges, works-at, links
 into the opportunities they carried.
+
+**Outreach pipeline** (`/pipeline`): every prospect edge carries an
+outreach state — `identified → drafted → sent → replied → meeting_booked →
+confirmed | passed`. The system only ever sets the first two (the edge
+exists; a DM/email draft exists for its opportunity). Everything from
+`sent` onwards is Stuart recording, by hand and after the fact, an action
+he took outside the system — the system never sends, and every state
+change is audit-logged with before/after. The pipeline page groups
+prospects into speaker/sponsor/media/sales lanes with inline state
+controls; the same controls live on each person page, next to an
+*Introduced by* form that records who made an introduction as an
+`introduced_by` edge (the introducer is found or created by name — a fact
+Stuart states, so recording it is not inventing it).
 
 **Live-provider shakedown** (`npm run shakedown`, needs
 `ANTHROPIC_API_KEY`): the first structured Claude run — generates live
@@ -271,15 +301,19 @@ private-information) — 101 checks with hard gates:
 `npm test` includes the eval as a gate plus unit suites for chunking,
 segmentation (against the real capture), dedupe, claims
 (repetition-vs-corroboration, self-sourced announcements), the voice
-linter, leak detection, and a hermetic DB round-trip (scratch PGlite,
-process → reprocess idempotency → private-draft safety → feedback).
+linter, leak detection, cross-venue matching (equivalence, thresholds,
+digest→claims round trip), hermetic DB round-trips (scratch PGlite,
+process → reprocess idempotency → private-draft safety → feedback), and
+the outreach state machine (both draft/use orderings, manual transitions,
+introductions, the pipeline view).
 
 ## Screens
 
 Screenshots in `docs/screenshots/`: Today (01), Paste (02), Intelligence
 (03), Processing report (04), Opportunity detail (05), Draft editor (06),
 Archive (07), People (08), Stories (09), Thesis detail (10), Story-so-far
-panel on a continuing opportunity (11), Briefing (12).
+panel on a continuing opportunity (11), Briefing (12), Outreach pipeline
+(13).
 
 ## What is mocked / local-only
 
@@ -312,19 +346,20 @@ panel on a continuing opportunity (11), Briefing (12).
 
 ## Next three integrations (recommended order)
 
-Three horizons are now built (collectors/market-data/learning/OCR;
-continuity/feeds/theses; briefing/graph/shakedown-harness). What comes
-after:
+Four horizons are now built (collectors/market-data/learning/OCR;
+continuity/feeds/theses; briefing/graph/shakedown-harness;
+outreach-pipeline/cross-venue). What comes after:
 
 1. **Run the live shakedown** — set `ANTHROPIC_API_KEY`, run
    `npm run shakedown`, and tune `src/lib/ai/prompts.ts` against the
    report. The harness exists; the tokens have not been spent yet.
-2. **Introductions and outreach states on the graph** — who introduced
-   whom, DM/email sent/replied states on prospect edges, and a pipeline
-   view over speaker/sponsor prospects.
-3. **Cross-venue market intelligence** — equivalent-market detection
-   across Kalshi/Polymarket snapshots (same event, both venues) surfacing
-   price/liquidity divergence as editorial signal.
+2. **Follow-up cadence on the pipeline** — a prospect sitting in `sent`
+   with no reply for N days should surface on Today/Briefing as a
+   follow-up nudge (exploratory register, never a chase with price
+   language), driven off `state_updated_at`.
+3. **Cross-venue history** — persist matched pairs across runs so the
+   briefing can say "this gap has held for a week" or "Kalshi's share of
+   this question doubled", turning one-shot comparisons into trends.
 
 ## Product decisions
 

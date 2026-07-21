@@ -9,7 +9,10 @@ import { jaccard, shingles } from "./dedupe";
 const CLAIM_VERBS =
   /\b(announc\w+|launch\w+|rais\w+|fil\w+|approv\w+|ban(?:s|ned)?|barr?\w+|block\w+|hir\w+|join\w+|leav\w+|left|depart\w+|acquir\w+|partner\w+|list\w+|delist\w+|settl\w+|fin(?:e|ed|es)|su(?:e|ed|es|ing)|invest\w+|expand\w+|shut\w+|halt\w+|suspend\w+|resign\w+|appoint\w+|steps? (?:back|down)|stepp(?:ed|ing) (?:back|down)|report\w+|confirm\w+|den(?:y|ies|ied)|warn\w+|order\w+|rule[sd]?|grant\w+|reject\w+|surpass\w+|hit|reach\w+|clear\w+|register\w+|volume|revenue)\b/i;
 
-const NUMBER_SIGNAL = /(\$\s?[\d,.]+\s?(?:k|m|b|bn|billion|million|thousand)?|\b\d{1,3}(?:,\d{3})+\b|\b\d+(?:\.\d+)?%|\b\d+(?:\.\d+)?x\b)/i;
+// …incl. cents-denominated contract prices ("62c"), the native unit of
+// prediction-market quotes in the collectors' digests.
+const NUMBER_SIGNAL =
+  /(\$\s?[\d,.]+\s?(?:k|m|b|bn|billion|million|thousand)?|\b\d{1,3}(?:,\d{3})+\b|\b\d+(?:\.\d+)?%|\b\d+(?:\.\d+)?x\b|\b\d{1,3}(?:\.\d+)?c\b)/i;
 
 const REGULATORY_TERMS =
   /\b(CFTC|SEC|FINRA|DOJ|FCA|regulat\w+|complian\w+|licen[cs]\w+|no-action|DCM|DCO|designation|subpoena|lawsuit|litigation|injunction|cease.and.desist|enforcement|MNPI|surveillance|KYC|AML)\b/;
