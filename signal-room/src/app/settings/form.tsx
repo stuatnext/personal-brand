@@ -10,12 +10,14 @@ interface Settings {
   currentThemes: string[];
   scoreWeights: Record<string, number>;
   defaultWeights: Record<string, number>;
+  followUpDays: number;
 }
 
 export function SettingsForm() {
   const [settings, setSettings] = useState<Settings | null>(null);
   const [themes, setThemes] = useState("");
   const [weights, setWeights] = useState<Record<string, number>>({});
+  const [followUpDays, setFollowUpDays] = useState(5);
   const [notice, setNotice] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
@@ -26,6 +28,7 @@ export function SettingsForm() {
         setSettings(data);
         setThemes(data.currentThemes.join(", "));
         setWeights(data.scoreWeights);
+        setFollowUpDays(data.followUpDays ?? 5);
       });
   }, []);
 
@@ -43,6 +46,7 @@ export function SettingsForm() {
           .map((t) => t.trim())
           .filter(Boolean),
         scoreWeights: weights,
+        followUpDays,
       }),
     });
     setNotice(res.ok ? "Saved. Applies to the next processing run." : "Save failed.");
@@ -80,6 +84,25 @@ export function SettingsForm() {
               </div>
             ))}
           </div>
+        </div>
+        <div>
+          <div className="k-label mb-2">Follow-up window (days)</div>
+          <div className="flex items-center gap-3">
+            <input
+              type="range"
+              min={1}
+              max={21}
+              step={1}
+              value={followUpDays}
+              onChange={(e) => setFollowUpDays(Number(e.target.value))}
+              className="flex-1 accent-[#FFCF33]"
+            />
+            <span className="k-value w-[34px] text-right">{followUpDays}d</span>
+          </div>
+          <p className="mt-1.5 text-[11.5px] text-[--color-dim]">
+            Sent outreach with no recorded reply for this many days surfaces on Today and the
+            Briefing as a follow-up nudge. The nudge is a reminder; sending stays yours.
+          </p>
         </div>
         <div className="flex items-center gap-3">
           <button className="btn btn-primary" disabled={busy} onClick={save}>

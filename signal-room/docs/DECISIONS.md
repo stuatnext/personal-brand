@@ -250,3 +250,32 @@ complete. Two venue quirks are load-bearing: Kalshi returns status
 "active" where its API filter says "open", and volume arrives in
 `_fp`-suffixed fields; multi-outcome candidate rows share one title, so
 `yes_sub_title` folds into the title to stop cross-candidate matches.
+
+## 22. The follow-up nudge reminds; it never chases
+
+A prospect in `sent` with no recorded reply past the window (a setting,
+default 5 days) surfaces on Today and in the Briefing sorted by days
+silent. Deliberate constraints: the nudge is computed from
+`state_updated_at`, so it clears itself the moment Stuart records a reply
+or a pass; it links to the person and the pipeline rather than generating
+anything, because a follow-up to silence is a judgement call; and the
+guidance it carries restates the outreach discipline (exploratory
+register, the same 20-minute ask, a clean out, no tickets or pricing to
+silence) instead of assuming a chase is wanted. Follow-ups and cross-venue
+trends are current-state sections, not since-gated like the rest of the
+briefing: due stays due across catch-up markers until acted on.
+
+## 23. Cross-venue history stores observations; trends are read, not kept
+
+Each matched pair accumulates its same-run quote comparisons in one row
+(rolling window of 90, pruned after 45 unobserved days). Trends are
+computed on read from those observations rather than stored, so the
+wording can never drift from the data: a gap that held in every
+observation, a gap that widened or narrowed 5+ points, a 20+ point shift
+in a venue's share of combined volume. Two quotes from the same day are a
+comparison, not a trend — spans under a day return nothing, which also
+means the rotation window's sparse re-sightings (a pair may only be
+re-quoted when the crawl comes back around) read honestly as "N
+observations over D days". Quiet observations are recorded too: a pair
+that never crosses a signal threshold can still hold a gap worth a
+briefing line.

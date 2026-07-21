@@ -701,6 +701,45 @@ export const marketSnapshots = pgTable(
   ],
 );
 
+/** One same-run quote comparison on a matched cross-venue pair. Prices and
+ *  volumes come verbatim from the two venue APIs in a single collection. */
+export interface CrossVenueObservation {
+  at: string; // ISO timestamp of the collection run
+  kalshiPrice: number;
+  polymarketPrice: number;
+  /** signed: kalshiPrice - polymarketPrice */
+  gap: number;
+  kalshiVolume24h: number | null;
+  polymarketVolume24h: number | null;
+}
+
+/** A question the matcher believes trades on both venues, accumulating
+ *  observations across collection runs so one-shot comparisons become
+ *  trends ("this gap has held for a week"). The equivalence itself stays
+ *  an inference; every observation's numbers are venue-API facts. */
+export const crossVenuePairs = pgTable(
+  "cross_venue_pairs",
+  {
+    id: uuid("id").primaryKey(),
+    kalshiMarketId: text("kalshi_market_id").notNull(),
+    polymarketMarketId: text("polymarket_market_id").notNull(),
+    kalshiTitle: text("kalshi_title").notNull(),
+    polymarketTitle: text("polymarket_title").notNull(),
+    similarity: real("similarity").notNull(),
+    observationsJson: jsonb("observations_json")
+      .$type<CrossVenueObservation[]>()
+      .notNull()
+      .default([]),
+    observationCount: integer("observation_count").notNull().default(0),
+    firstSeenAt: timestamp("first_seen_at", { withTimezone: true }).notNull().defaultNow(),
+    lastSeenAt: timestamp("last_seen_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("cross_venue_pair_idx").on(t.kalshiMarketId, t.polymarketMarketId),
+    index("cross_venue_last_seen_idx").on(t.lastSeenAt),
+  ],
+);
+
 /** Per-collector persisted cursors (e.g. last published timestamp per
  *  feed) so repeated collection runs ingest only what is new. */
 export const collectorCursors = pgTable(

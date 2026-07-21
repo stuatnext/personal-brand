@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { getTodayQueue } from "@/lib/queue";
+import { getFollowUpsDue } from "@/lib/graph";
 import { ActionTag, EmptyState, Meter, PageHeader } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
 export default async function TodayPage() {
-  const queue = await getTodayQueue();
+  const [queue, followUps] = await Promise.all([getTodayQueue(), getFollowUpsDue()]);
   const today = new Date().toISOString().slice(0, 10);
 
   return (
@@ -19,6 +20,28 @@ export default async function TodayPage() {
           + Process intelligence
         </Link>
       </PageHeader>
+
+      {followUps.length > 0 ? (
+        <div className="panel mb-5 border-l-2 border-l-[--color-signal] px-5 py-3.5" data-testid="followups-due">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <span className="k-label !text-[--color-signal]">Follow-ups due · {followUps.length}</span>
+            <Link href="/pipeline" className="k-value !text-[11.5px] text-[--color-info] hover:text-[--color-signal]">
+              → pipeline
+            </Link>
+          </div>
+          <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1">
+            {followUps.slice(0, 5).map((f) => (
+              <Link key={f.relationshipId} href={`/people/${f.entityId}`} className="text-[12.5px] hover:text-[--color-signal]">
+                <span className="font-medium">{f.name}</span>
+                <span className="text-[--color-dim]"> · {f.daysSilent}d silent · {f.relationship.replace(/_/g, " ")}</span>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-2 text-[11px] leading-relaxed text-[--color-dim]">
+            Sent, no reply. Follow-ups stay exploratory: same 20-minute ask, clean out, no tickets or pricing.
+          </p>
+        </div>
+      ) : null}
 
       {queue.length === 0 ? (
         <EmptyState

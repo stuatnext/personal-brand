@@ -35,6 +35,21 @@ async function main() {
   line(`\nOPEN LEADS (${b.openLeads.length})`);
   for (const l of b.openLeads) line(`  ${l.action.padEnd(14)} ${l.title.slice(0, 64)}`);
 
+  line(`\nFOLLOW-UPS DUE (${b.followUps.length}, window ${b.followUpWindowDays}d)`);
+  for (const f of b.followUps) {
+    line(`  ${String(f.daysSilent).padStart(3)}d silent · ${f.relationship.replace(/_/g, " ").padEnd(17)} ${f.name.slice(0, 46)}`);
+  }
+  if (!b.followUps.length) line("  nothing sent has sat silent past the window");
+  else line("  (exploratory register only: same 20-minute ask, clean out; no tickets, no pricing)");
+
+  if (b.crossVenue.length) {
+    line(`\nCROSS-VENUE TRENDS (${b.crossVenue.length})`);
+    for (const t of b.crossVenue) {
+      line(`  ${t.kind.replace(/_/g, " ").padEnd(14)} ${t.title.slice(0, 58)}`);
+      line(`    ${t.headline}`);
+    }
+  }
+
   if (b.goneQuiet.length) {
     line(`\nGONE QUIET (${b.goneQuiet.length})`);
     for (const t of b.goneQuiet) line(`  last ${t.lastObservedAt.slice(0, 10)} · ${t.title.slice(0, 66)}`);

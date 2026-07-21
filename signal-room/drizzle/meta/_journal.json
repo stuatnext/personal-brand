@@ -29,6 +29,13 @@
       "when": 1784516853732,
       "tag": "0003_outreach",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1784592637873,
+      "tag": "0004_cross-venue-history",
+      "breakpoints": true
     }
   ]
 }

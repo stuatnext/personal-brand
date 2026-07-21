@@ -21,12 +21,14 @@ export async function GET() {
     currentThemes: (settings.currentThemes as string[]) ?? [],
     scoreWeights: (settings.scoreWeights as Record<string, number>) ?? DEFAULT_WEIGHTS,
     defaultWeights: DEFAULT_WEIGHTS,
+    followUpDays: typeof settings.followUpDays === "number" ? settings.followUpDays : 5,
   });
 }
 
 const putSchema = z.object({
   currentThemes: z.array(z.string().max(60)).max(20).optional(),
   scoreWeights: z.record(z.number().min(0).max(5)).optional(),
+  followUpDays: z.number().int().min(1).max(60).optional(),
 });
 
 export async function PUT(request: Request) {
@@ -38,6 +40,7 @@ export async function PUT(request: Request) {
     const settings = { ...(owner.settingsJson as Record<string, unknown>) };
     if (body.currentThemes) settings.currentThemes = body.currentThemes;
     if (body.scoreWeights) settings.scoreWeights = body.scoreWeights;
+    if (body.followUpDays !== undefined) settings.followUpDays = body.followUpDays;
     await database.update(users).set({ settingsJson: settings }).where(eq(users.id, owner.id));
     return NextResponse.json({ ok: true });
   } catch (err) {
