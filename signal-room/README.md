@@ -79,6 +79,8 @@ npm test             # 133 vitest checks incl. hermetic DB round-trips + eval ga
 npm run eval         # gold-set evaluation (45 cases, 126 checks) -> eval-report.json
 npm run e2e          # Playwright: full browser workflow + screenshots
 npm run collect      # run collectors (markets/reddit/x/youtube/feeds); --list, --dry-run
+npm run collect:inbox # database-free collection into inbox/drops (the scheduled job)
+npm run ingest:inbox  # ingest committed inbox drops locally (sha-deduped, safe to re-run)
 npm run learn        # nudge score weights from Use/Wrong-angle feedback; --dry-run
 npm run briefing     # terminal "since you last sat down"; --mark sets the marker
 npm run shakedown    # live-provider draft evaluation (needs ANTHROPIC_API_KEY)
@@ -88,6 +90,20 @@ npm run db:reset     # wipe the LOCAL embedded database (refuses on DATABASE_URL
 ```
 
 ## Automated collection and learning
+
+Collection runs in two modes. **Local** (`npm run collect`) pulls straight
+into your database. **Scheduled** (`npm run collect:inbox`, run daily by the
+`signal-room-collect` GitHub Action at 05:30 SGT) is database-free: it
+gathers the same material with the same parsers, writes dated, lossless
+drop files under `inbox/drops/` and commits them — collector state (feed
+cursors, the market snapshot for diffing, the Kalshi rotation cursor,
+cross-venue pair history) lives in a committed JSON file, so an ephemeral
+runner can collect while PGlite never leaves your machine. When you sit
+down, `npm run ingest:inbox` feeds every drop you haven't seen through the
+normal pipeline (sha-deduped, so re-runs and overlaps are safe; stop the
+dev server first, PGlite is single-process). The feed roster is
+`config/feeds.json` — pillar-tagged and live-verified; add a feed by adding
+a line.
 
 **Collectors** (`npm run collect`) gather external intel and feed it through
 the exact same ingestion path as a manual paste — raw preservation,

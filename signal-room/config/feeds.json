@@ -1,0 +1,18 @@
+{
+  "description": "Feed roster for the scheduled inbox collector (scripts/inbox-collect.ts). Every entry was live-verified through parseFeed on the date noted; keep entries that parse and carry publish dates, drop ones that rot. Pillar keys: prediction_markets | igaming | strait_up_growth. SEA-native business press (CNA, Straits Times, e27, Tech in Asia) bot-blocks feed fetches, so SEA coverage still arrives mainly via Stuart's own drops; add a SEA feed here the day one opens up.",
+  "verified": "2026-07-21",
+  "feeds": [
+    { "url": "https://www.cftc.gov/RSS/RSSGP/rssgp.xml", "pillar": "prediction_markets", "note": "CFTC press releases; the regulatory primary source" },
+    { "url": "https://www.theblock.co/rss.xml", "pillar": "prediction_markets", "note": "The Block; PM-native desk" },
+    { "url": "https://decrypt.co/feed", "pillar": "prediction_markets", "note": "Decrypt; covers PM venues" },
+    { "url": "https://www.coindesk.com/arc/outboundfeeds/rss/", "pillar": "prediction_markets", "note": "CoinDesk; institutional/crypto-markets wire" },
+    { "url": "https://sbcnews.co.uk/feed/", "pillar": "igaming", "note": "SBC News; betting industry wire" },
+    { "url": "https://igamingbusiness.com/feed/", "pillar": "igaming", "note": "iGB; the trade paper" },
+    { "url": "https://egr.global/intel/feed/", "pillar": "igaming", "note": "EGR Intel; operator-side coverage" },
+    { "url": "https://casinobeats.com/feed/", "pillar": "igaming", "note": "CasinoBeats; content/studio side" },
+    { "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "pillar": "strait_up_growth", "note": "TechCrunch AI; adoption wire" },
+    { "url": "https://blog.hubspot.com/marketing/rss.xml", "pillar": "strait_up_growth", "note": "HubSpot marketing blog; CRM/GTM practice" },
+    { "url": "https://restofworld.org/feed/latest/", "pillar": "strait_up_growth", "note": "Rest of World; non-Western tech incl. SEA" }
+  ],
+  "youtubeChannels": []
+}

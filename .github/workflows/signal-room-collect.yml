@@ -1,0 +1,52 @@
+name: signal-room-collect
+# Daily source collection for Signal Room. Runs the database-free inbox
+# collector (feeds per pillar + market snapshots/diffs/cross-venue) and
+# commits the dated drop files plus the collector state to git. Stuart's
+# local Signal Room ingests them with `npm run ingest:inbox` (sha-deduped).
+# This job never touches the app database and only writes signal-room/inbox.
+
+on:
+  schedule:
+    - cron: '30 21 * * *'   # 21:30 UTC = 05:30 SGT, daily, before Stuart's morning
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: signal-room-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: signal-room
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: signal-room/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Collect into the inbox
+        run: npx tsx scripts/inbox-collect.ts
+
+      - name: Commit drops + collector state
+        run: |
+          cd ..
+          git add signal-room/inbox
+          if git diff --cached --quiet; then
+            echo "nothing new to commit"
+            exit 0
+          fi
+          git config user.name "signal-room-collect"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Signal Room inbox: daily collection $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin main

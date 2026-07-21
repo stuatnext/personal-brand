@@ -305,3 +305,22 @@ live find while smoking this horizon: the leak scanner flagged the
 outreach template's own stock phrase against a call transcript's small
 talk, so common-word-only shingles no longer count as fingerprints
 (distinctive words, figures and names still do).
+
+## 25. Scheduled collection commits drops; the database never leaves home
+
+The unattended-collection problem is that PGlite lives on Stuart's disk
+while a scheduled runner is ephemeral. The resolution is a split:
+`scripts/inbox-collect.ts` runs database-free on the daily GitHub Action,
+gathering with the SAME parsers/formatters/pure functions as the local
+collectors (shared exports, so the two paths cannot drift) and writing
+dated, lossless drop files plus a committed JSON state file (feed
+cursors, the market snapshot for diffing, the rotation cursor,
+cross-venue pair history). Git carries the drops home;
+`npm run ingest:inbox` feeds them through the normal pipeline, deduped on
+the raw text's sha256 so re-runs, reordered runs and local/scheduled
+overlap are all safe. Failures degrade per source and the job fails loudly
+only when every collector produced nothing. The feed roster
+(`config/feeds.json`) is committed and pillar-tagged, and every entry was
+verified through the real parser before shipping; SEA-native business
+press bot-blocks feed fetches today, so that lane still arrives mainly by
+hand and the config says so rather than pretending coverage.

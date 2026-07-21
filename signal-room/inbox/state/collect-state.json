@@ -1,0 +1,3680 @@
+{
+  "cursors": {
+    "feeds:https://www.cftc.gov/RSS/RSSGP/rssgp.xml": "2026-07-17T14:38:56.000Z",
+    "feeds:https://www.theblock.co/rss.xml": "2026-07-21T00:58:26.000Z",
+    "feeds:https://decrypt.co/feed": "2026-07-20T21:12:03.000Z",
+    "markets:longdated": "CgYI4P788AYSOUtYTVZFU1BPUlRTTVVMVElHQU1FRVhURU5ERUQtUzIwMjYyODIyMjk3OUIxNy0xRDlENEI0RUQwOA",
+    "feeds:https://www.coindesk.com/arc/outboundfeeds/rss/": "2026-07-20T14:31:23.000Z",
+    "feeds:https://sbcnews.co.uk/feed/": "2026-07-20T14:00:00.000Z",
+    "feeds:https://igamingbusiness.com/feed/": "2026-07-17T20:07:39.000Z",
+    "feeds:https://egr.global/intel/feed/": "2026-07-20T11:50:02.000Z",
+    "feeds:https://casinobeats.com/feed/": "2026-07-20T19:24:32.000Z",
+    "feeds:https://techcrunch.com/category/artificial-intelligence/feed/": "2026-07-21T00:12:24.000Z",
+    "feeds:https://blog.hubspot.com/marketing/rss.xml": "2026-07-20T11:00:03.000Z",
+    "feeds:https://restofworld.org/feed/latest/": "2026-07-20T10:00:00.000Z"
+  },
+  "market": {
+    "capturedAt": "2026-07-21T01:05:53.542Z",
+    "rows": [
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269169BDB1912-35F82DC42EE",
+        "title": "yes New York Y,yes Tampa Bay,yes Cleveland wins by over 7.5 runs,yes Over 13.5 runs scored,yes Over 7.5 runs scored,yes Over 10.5 runs scored,yes Over 6.5 runs scored,yes Over 5.5 runs scored,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F87D30B93EA-F4F7FA5A38B",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Over 16.5 runs scored,yes Over 9.5 runs scored,yes Over 7.5 runs scored,yes Over 5.5 runs scored,yes ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266E3234874E2-0BC6D86534A",
+        "title": "yes Gabby Williams: 10+,yes Kayla Thornton: 10+,no Golden State wins by over 9.5 points,yes Over 139.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F35326809B5-24BD50E26A4",
+        "title": "yes New York Y,yes Milwaukee,yes Detroit,yes Over 8.5 runs scored,yes Over 9.5 runs scored,yes Las Vegas",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202690E4FE94051-747C3C7D4DB",
+        "title": "yes Alex Bregman: 1+,yes Nico Hoerner: 1+,yes Pete Crow-Armstrong: 1+,yes Kevin McGonigle: 1+,yes Hunter Goodman: 1+,yes T.J. Rumfield: 1+,yes CJ Abrams: 1+,yes James Wood: 1+,yes Luis García: 1+,yes Jacob Wilson: 1+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B068025C7E5-EB6354EC64A",
+        "title": "yes Over 6.5 runs scored,yes Over 4.5 runs scored,yes Over 6.5 runs scored,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T22:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BBD81F2D5C2-6E772095E22",
+        "title": "yes New York Y,yes Austin Wells: 2+,yes José Caballero: 1+,yes Jasson Domínguez: 1+,yes Bryan Reynolds: 1+,yes Esmerlyn Valdez: 1+,yes Henry Davis: 1+,yes Jared Triolo: 1+,yes Marcell Ozuna: 1+,yes Nick Gonzales: 1+,yes Over 15.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FB91EEDCA5C-8EE192799E7",
+        "title": "yes Max Hans Rehberg,yes Maks Kasnikowski,yes Luka Pavlovic,yes Oliver Crawford,yes Nikolas Sanchez Izquierdo,yes Keegan Smith,yes Ilya Ivashka,yes Juan Manuel Cerundolo,yes Nuno Borges,yes Gonzalo Bueno,yes Barbora Krejcikova,yes Noma Noha Akugue,yes Yulia Pu",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T11:30:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269D4F5AE2CD1-66C8974DFB9",
+        "title": "yes Kyle Leahy: 2+,yes St. Louis wins by over 3.5 runs,yes Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E49DFB03846-56421E15F54",
+        "title": "yes Baltimore,yes Minnesota,yes Golden State,yes A'ja Wilson: 30+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202649290940DDC-8EFE0A2BC63",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Over 1.5 runs scored,yes Over 1.5 runs scored,yes Over 1.5 runs scored,yes Over 2.5 runs scored,yes O",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202660EAC41E1D2-F88A7FE60CF",
+        "title": "yes Boston,yes Atlanta,yes Texas,yes Washington,yes Milwaukee,no Over 10.5 runs scored,yes Vancouver,yes Columbus,yes New England",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-05T23:30:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BCA3F509F02-C932B1EF198",
+        "title": "yes Los Angeles D,yes Cleveland wins by over 9.5 runs,yes Milwaukee wins by over 4.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026CBB8A6D49F1-72C75A5C0AD",
+        "title": "yes New York Y,yes Tampa Bay,yes Boston,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington,yes Arizona",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026A2009B02029-F53DF63EF27",
+        "title": "yes New York Y,yes Tampa Bay,yes Boston,yes Los Angeles D,yes Atlanta,yes Milwaukee,yes Kansas City,yes New York,yes Las Vegas,yes Minnesota,yes Golden State,yes Over 183.5 points scored,yes Over 195.5 points scored,yes Over 175.5 points scored,yes Over 145.5 ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202699F6FBF6026-155EDB7113A",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Seattle,yes New York,yes Las Vegas,yes Minnesota",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20267124F42DD93-CB6498E801F",
+        "title": "yes Cruz Azul,yes Toluca,yes New York Y,yes Tampa Bay,yes Chicago WS,yes Washington,yes Sam Patterson,yes Las Vegas",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-08T13:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026285669D1F49-42DAA19A70D",
+        "title": "yes New York Y,yes Los Angeles D,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FD4D0FF09FE-C96569137F5",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Over 7.5 runs scored,yes Over 7.5 runs scored,yes Over 7.5 runs scored,no Over 10.5 runs scored,yes Over 7.5 runs scored,no Over 10.5 runs score",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026F7A94D69A87-B8683509D36",
+        "title": "no Jonathan Aranda: 4+,no Junior Caminero: 4+,no Vladimir Guerrero Jr.: 4+,no Pete Alonso: 5+,no Bryce Harper: 4+,no Kyle Schwarber: 4+,no Jackson Merrill: 5+,no Manny Machado: 5+,no Francisco Lindor: 4+,no Juan Soto: 4+,no Bobby Witt Jr.: 5+,no Vinnie Pasquan",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265C4A049176F-EDB1F2BE8BB",
+        "title": "yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,no Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20268022A951EAF-7D824462938",
+        "title": "yes Baltimore,yes Philadelphia,yes Atlanta,yes Chicago WS,yes Detroit",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026AC79B6447A6-9B10EE36243",
+        "title": "yes Cincinnati,yes St. Louis,no Over 6.5 runs scored,no Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202647B93F3CCEC-F579C80E9C3",
+        "title": "yes Juan Manuel Cerundolo,yes Nuno Borges,yes Alejandro Tabilo,yes MOUZ,yes G2,yes Team Falcons,yes Bilibili Gaming,yes Milwaukee,yes Texas,yes Detroit,yes Houston,yes Washington,yes Dylan Cease: 4+,yes Jacob deGrom: 5+,yes Over 7.5 runs scored,yes Reg Time: F",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-08T17:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266638DD25698-17676E664B1",
+        "title": "yes Detroit,yes Houston,yes Milwaukee wins by over 2.5 runs,yes Washington wins by over 2.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FC25FDD90EF-E31C223D43E",
+        "title": "yes New York Y,yes Baltimore,yes Philadelphia,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Arizona,yes Seattle",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202643C312507B7-8552180CFAD",
+        "title": "yes George Kirby: 5+,yes José Soriano: 5+,yes Kyle Leahy: 5+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202661502380830-D62DA549D28",
+        "title": "yes Paul Inchauspe,yes Luka Pavlovic,yes Oliver Crawford,yes Harold Mayot,yes Max Basing,yes Keegan Smith",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T10:20:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20267A93040F73A-7BA6136529A",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Los Angeles D,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Arizona,yes St. Louis,yes Over 10.5 runs scored,yes Over 6.5 runs scored,yes Over 7.5 runs scored,yes Over 5.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269AF0823F65B-2951FD40989",
+        "title": "yes Seattle,yes Jacob Wilson: 1+,yes Gabriel Moreno: 1+,yes Geraldo Perdomo: 1+,yes Ketel Marte: 1+,yes JJ Bleday: 1+,yes Sal Stewart: 1+,yes Cole Young: 1+,yes Over 6.5 runs scored,yes Over 5.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20267D4B0524F5C-5007813A3FE",
+        "title": "yes Los Angeles D,yes Washington,no Kyle Leahy: 6+,yes Over 13.5 runs scored,yes Over 5.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S202659F356825E8-28B96E6A4CA",
+        "title": "yes Philadelphia,yes Washington,yes Dallas,yes Courtney Williams: 10+,yes Kayla McBride: 20+,yes Natasha Howard: 10+,yes Olivia Miles: 15+,yes Flau'jae Johnson: 10+,yes Awa Fam: 6+,yes Dominique Malonga: 8+,yes Over 183.5 points scored,yes Over 163.5 points sc",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202623047E1DBBD-0E9FB928F8F",
+        "title": "yes Kansas City,yes Houston,yes Washington,yes Seattle,yes Over 15.5 runs scored,yes Over 8.5 runs scored,yes Over 10.5 runs scored,yes Over 9.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BE05D3ED647-175D492780F",
+        "title": "yes New York Y,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Cody Bellinger: 1+,yes Gunnar Henderson: 1+,yes Shohei Ohtani: 1+,yes Fernando Tatis Jr.: 1+,yes Pete Crow-Armstrong: 1+,yes Yordan Alvarez: 1+,yes James Wood: 1+,yes Jacob Wilson: 1+,ye",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266065627203A-5955A7AEB90",
+        "title": "yes Kayla Thornton: 10+,no Golden State wins by over 9.5 points,yes Over 139.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20262F53CA4510C-42B705F819C",
+        "title": "yes Ketel Marte: 3+,yes Over 7.5 runs scored,no Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F0F3B46A238-0FCE73017AE",
+        "title": "yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Detroit,no New York Y wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E78FA30D423-95BC5D63013",
+        "title": "yes Philadelphia,yes Over 195.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E8834C81859-6CF2424FF55",
+        "title": "yes Cleveland wins by over 9.5 runs,yes Los Angeles D wins by over 1.5 runs,yes Milwaukee wins by over 3.5 runs,yes Detroit wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20263F232AD13E4-A07B048CED1",
+        "title": "yes Las Vegas,yes Minnesota,yes A'ja Wilson: 20+,yes Natasha Howard: 10+,yes Olivia Miles: 10+,yes Dominique Malonga: 10+,yes Natisha Hiedeman: 10+,yes Natasha Howard: 6+,yes Dominique Malonga: 8+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026A00BD99CCE3-7783756C1F3",
+        "title": "yes Jacob Wilson: 2+,yes Shea Langeliers: 2+,yes Gabriel Moreno: 2+,yes Ketel Marte: 2+,yes Andrew Abbott: 6+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202619AF5034AD5-E1FC483414B",
+        "title": "yes Over 5.5 runs scored,yes Over 11.5 runs scored,yes Over 11.5 runs scored,yes Over 3.5 runs scored,yes Over 5.5 runs scored,yes Over 3.5 runs scored,yes Over 7.5 runs scored,yes Over 8.5 runs scored,yes Over 8.5 runs scored,yes Over 5.5 runs scored,yes Over",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265BDCCAE37E2-DE11D0C2DB3",
+        "title": "yes George Kirby: 5+,yes Kyle Leahy: 5+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202643640DAF1DB-41059254270",
+        "title": "yes Yu Hsiou Hsu,yes Milwaukee,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 6.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-03T20:30:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BF4BD01A613-0FBE289C76D",
+        "title": "yes Detroit,yes Houston,yes Washington,yes Over 14.5 runs scored,no Over 9.5 runs scored,yes Over 9.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored,no Over 12.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 6.5 runs sco",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202691DA51EF699-381C15BC2D1",
+        "title": "yes Baltimore,yes Philadelphia,yes Atlanta,yes Texas,yes Washington,no Over 12.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20267C842022B8D-85FC0B07183",
+        "title": "yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Detroit,yes New York,yes Las Vegas,yes Minnesota,yes Golden State",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026E22F4942D0A-5A676B62E85",
+        "title": "yes Shea Langeliers: 1+,yes Geraldo Perdomo: 1+,yes Nolan Arenado: 1+,yes JJ Bleday: 1+,yes Sal Stewart: 1+,yes Randy Arozarena: 1+,yes Mike Trout: 1+,yes Ivan Herrera: 2+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266DDC89A112F-3982F60E23F",
+        "title": "yes St. Louis wins by over 1.5 runs,no Over 13.5 runs scored,yes Over 5.5 runs scored,yes Over 7.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026543EC4FF2AF-1EF4BA65D82",
+        "title": "yes Over 183.5 points scored,yes Over 148.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265E9B9D5DAA5-1C41292D9DC",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Boston,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington,yes Arizona,yes Seattle,no Over 11.5 runs scored,no Over 12.5 runs scored,no Over 13.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-08T17:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269DDF6A5A697-54680BD832E",
+        "title": "yes Tommy Edman: 1+,yes Kyle Schwarber: 1+,yes Bryson Stott: 1+,yes Philadelphia wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F9F8763C9C8-E041BD4239B",
+        "title": "yes Luka Pavlovic,yes Keegan Smith,yes Daniel Merida,yes Alejandro Tabilo",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T12:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20261C9FEA2EF43-3B1FAA78FAD",
+        "title": "yes Boston,yes Atlanta,yes Texas,yes Colorado,yes Arizona",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20262E10D57CB5B-3BD8A14844A",
+        "title": "yes Boston,yes Chicago WS,no Detroit wins by over 3.5 runs,no Washington wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BA584855BDE-A41DD44C700",
+        "title": "yes Over 15.5 runs scored,yes Over 8.5 runs scored,yes Over 12.5 runs scored,yes Over 10.5 runs scored,yes Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DCDE6D3E2E0-01AC5C67C15",
+        "title": "yes Over 9.5 runs scored,yes Over 8.5 runs scored,yes Over 5.5 runs scored,yes Over 7.5 runs scored,yes Over 5.5 runs scored,yes Over 6.5 runs scored,yes Over 9.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026CA77D4D919D-8962ADD7425",
+        "title": "yes Colorado,no Houston wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B1DA125CA3F-BB1F31F9F70",
+        "title": "yes A'ja Wilson: 30+,yes Chelsea Gray: 15+,yes A'ja Wilson: 10+,yes Las Vegas wins by over 24.5 points,yes Over 195.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202638E5019358F-2900CEA7CBD",
+        "title": "yes Henry Bolte: 1+,yes Jacob Wilson: 1+,yes Shea Langeliers: 1+,yes Gabriel Moreno: 1+,yes Ketel Marte: 1+,yes Mike Trout: 1+,yes Alec Burleson: 1+,yes Jordan Walker: 1+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B09333DCE7D-FED85506B90",
+        "title": "yes Nikola Bartunkova,yes Diane Parry,yes Veronika Erjavec,yes Sinja Kraus,yes Aliaksandra Sasnovich,yes Yulia Putintseva",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T08:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EB903E36137-A852CA82FAC",
+        "title": "yes Boston,yes Los Angeles D,yes Kansas City,yes Cleveland wins by over 7.5 runs,yes Tampa Bay wins by over 2.5 runs,yes Over 13.5 runs scored,no Over 10.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202649B3197D220-7A2D9AF67BB",
+        "title": "yes Brayan Rocchio: 1+,yes Chase DeLauter: 1+,yes Byron Buxton: 1+,yes Brooks Lee: 1+,yes Brice Turang: 1+,yes William Contreras: 1+,yes Francisco Alvarez: 1+,yes Francisco Lindor: 1+,yes Alex Bregman: 1+,yes Pete Crow-Armstrong: 1+,yes Dillon Dingler: 1+,yes ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265127FE8250A-6004669E894",
+        "title": "yes Arizona,yes Seattle,yes St. Louis,yes Over 6.5 runs scored,yes New York,yes Minnesota",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20267D2F0F547F8-3530F981C1A",
+        "title": "yes Nuno Borges,yes Gonzalo Bueno,yes Alejandro Tabilo,yes NIP,yes Cruz Azul,yes America,yes Seattle,yes Los Angeles A,yes Magomed Ankalaev,yes Islam Dulatov,yes Sam Patterson,yes Magomed Tuchalov,yes Abubakar Vagaev,yes Magomed Zaynukov,yes Minnesota",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-08T17:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026A8F82D9BB7E-FA3D80CD8B0",
+        "title": "yes Ketel Marte: 1+,yes Elly De La Cruz: 1+,yes Sal Stewart: 1+,yes Mike Trout: 1+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20264157C24DF27-A95EB3805C5",
+        "title": "yes Atlanta,yes Arizona,yes Seattle,no Baltimore wins by over 1.5 runs,no Texas wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026E3CF8609017-5FC0F4ED3C0",
+        "title": "no Jonathan Aranda: 4+,no Junior Caminero: 4+,no Vladimir Guerrero Jr.: 4+,no Gunnar Henderson: 5+,no Pete Alonso: 5+,no Bryce Harper: 4+,no Kyle Schwarber: 4+,no Jackson Merrill: 5+,no Manny Machado: 5+,no Francisco Lindor: 4+,no Juan Soto: 4+,no Bobby Witt J",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F174036EF27-118BA1C2C8B",
+        "title": "yes Dallas,no Las Vegas wins by over 18.5 points,yes Over 183.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20260B26E24A7D5-662BB9C7F7F",
+        "title": "yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 4.5 runs scored,yes Over 4.5 runs scored,yes Over 4.5 runs scored,yes Over 2.5 runs scored,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T23:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E4AF57B9DCA-F82F813B414",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington,no Over 18.5 runs scored,no Over 20.5 runs scored,no Over 11.5 runs scored,no Over 12.5 runs sc",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F14D5D4B460-0F23881D46C",
+        "title": "yes New York Y,yes Baltimore,yes Philadelphia,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Seattle",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B7FD557EB81-39CCB76ECF3",
+        "title": "no Over 10.5 runs scored,yes Over 11.5 runs scored,no Over 10.5 runs scored,no Over 8.5 runs scored,no Over 11.5 runs scored,no Over 9.5 runs scored,no Over 8.5 runs scored,no Over 14.5 runs scored,no Over 10.5 runs scored,no Over 15.5 runs scored,no Over 11.5",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026AB7EC09253E-04ABD7D2CF8",
+        "title": "no Target Price: $65,537.21,yes Target Price: $0.0722529,yes Target Price: $1,913.84,yes Target Price: $78.0942,yes Target Price: $1.1157",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-21T01:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202669C11AEAB0F-E92A62E0D88",
+        "title": "yes Baltimore,yes Los Angeles D,yes Kansas City,yes Dallas",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-31T01:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026BDE22306F94-AF5EA39907D",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202605B1D8EC064-85D028A6055",
+        "title": "yes Cleveland wins by over 9.5 runs,yes New York Y wins by over 2.5 runs,yes Milwaukee wins by over 3.5 runs,no New York wins by over 3.5 points,yes Las Vegas wins by over 18.5 points",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S202650D16CFB314-6A34120B0D0",
+        "title": "yes Atlanta,yes Texas,yes Washington,yes Arizona,yes Seattle,yes Los Angeles A,yes New York Y wins by over 1.5 runs,yes Tampa Bay wins by over 4.5 runs,yes Detroit wins by over 1.5 runs,yes Houston wins by over 2.5 runs,yes Las Vegas",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026753AF3D2E78-EE590B3E56D",
+        "title": "yes Atlanta,yes Milwaukee,yes Texas,yes Houston,yes Arizona,yes Over 4.5 runs scored,yes Over 5.5 runs scored,yes Over 4.5 runs scored,yes Over 5.5 runs scored,yes Over 4.5 runs scored,yes Over 5.5 runs scored,yes Over 5.5 runs scored,yes Over 7.5 runs scored,",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-25T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S202633A5DC946E8-1C61B4B6D71",
+        "title": "no Target Price: $65,537.21,yes Target Price: $1.1157",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-21T01:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265807F6E236E-9D00953728A",
+        "title": "yes Cleveland,yes Baltimore,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Washington,yes Tampa Bay wins by over 4.5 runs,yes Detroit wins by over 1.5 runs,yes Houston wins by over 1.5 runs,yes Over 15.5 runs scored,yes Over 13.5 runs scored,yes Over ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265DA0681D09D-AE7F374251D",
+        "title": "yes Kayla McBride: 3+,yes New York,yes Minnesota,yes Golden State,yes Arike Ogunbowale: 15+,yes Sabrina Ionescu: 10+,yes Chelsea Gray: 10+,yes Natasha Howard: 10+,yes Gabby Williams: 10+,yes Sonia Citron: 10+,yes Shakira Austin: 8+,no New York wins by over 6.5",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20261C2AEFFFEDF-65A2367AF56",
+        "title": "yes Atlanta,yes Texas,yes A's,yes Milwaukee wins by over 3.5 runs,yes Detroit wins by over 1.5 runs,yes Houston wins by over 1.5 runs,no Washington wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202681E1528D785-A01D472C724",
+        "title": "yes Washington,yes Seattle,yes George Kirby: 4+,yes José Soriano: 3+,yes Kyle Leahy: 2+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202635D66A0D911-EF92D71BB15",
+        "title": "yes Ketel Marte: 5+,yes Sal Stewart: 3+,yes Randy Arozarena: 3+,yes Elly De La Cruz: 2+,yes Mike Trout: 2+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E9DE65E0408-9A8112EC5DF",
+        "title": "yes Max Hans Rehberg,yes Maks Kasnikowski,yes Diego Dedura-Palomero,yes Luka Pavlovic,yes Oliver Crawford,yes Max Basing,yes Franco Roncadelli,yes Nikolas Sanchez Izquierdo,yes Keegan Smith,yes Ilya Ivashka,yes Nuno Borges,yes Gonzalo Bueno,yes Nikola Bartunko",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T11:30:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266CF871F0C35-D6CA33CB26A",
+        "title": "yes New York Y,yes Philadelphia,yes Atlanta,yes Kansas City,yes Texas,yes Detroit,yes Washington,yes Arizona,yes Seattle,yes Cleveland wins by over 8.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026113B76AB885-E3E45F9105E",
+        "title": "yes Milwaukee wins by over 4.5 runs,yes Kansas City wins by over 1.5 runs,yes Houston wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20269138CFE1ACD-C70FE7ABA8A",
+        "title": "yes Los Angeles D,yes Atlanta,yes Detroit,yes Washington",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D6B0D4DFB31-C67CC64315F",
+        "title": "yes New York Y,yes Tampa Bay,yes Boston,yes Los Angeles D,yes Atlanta,yes Kansas City,yes New York,yes Las Vegas,yes Minnesota,yes Golden State,yes Over 183.5 points scored,yes Over 195.5 points scored,yes Over 175.5 points scored,yes Over 145.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026C35DFE1CDBC-4B1A6682D02",
+        "title": "yes Baltimore,yes Philadelphia,yes Atlanta,yes Detroit",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20264F5229550DC-53666A4E054",
+        "title": "yes José Soriano: 3+,yes Kyle Leahy: 2+,yes St. Louis wins by over 3.5 runs,yes Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BE64F5A1A64-F82AE89B7F3",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Milwaukee,yes Detroit,yes Houston,yes Magomed Ankalaev,yes Islam Dulatov,yes Magomed Tuchalov",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-08T17:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DB7CD9175D5-B2B7462D47B",
+        "title": "yes Jacob Wilson: 2+,yes Elly De La Cruz: 1+,yes George Kirby: 4+,yes Kyle Leahy: 3+,yes Over 10.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026722D68C1C15-4C11735007E",
+        "title": "yes Tampa Bay,yes Baltimore,yes Milwaukee,yes Los Angeles A,no Atlanta wins by over 2.5 runs,no A's wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026CB4F948B518-36B8BABEB02",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington,yes Over 4.5 runs scored,yes Over 3.5 runs scored,yes Over 3.5 runs scored,yes Dallas,yes Las Vegas",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202668A8BC4584C-9D89CB6499E",
+        "title": "yes Minnesota,yes Golden State,no New York wins by over 6.5 points,no Las Vegas wins by over 18.5 points",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026ACF1EF9A7A8-A4A65328346",
+        "title": "yes Cleveland,yes New York Y,yes Milwaukee,yes Over 4.5 runs scored,yes Over 3.5 runs scored,yes Over 6.5 runs scored,yes Over 5.5 runs scored,yes Over 3.5 runs scored,no Over 12.5 runs scored,no Over 11.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026356483561F2-F09884E8869",
+        "title": "yes Baltimore,yes Tampa Bay wins by over 4.5 runs,no Philadelphia wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026FFEB5B60C20-70B866D9404",
+        "title": "no Over 10.5 runs scored,no Over 13.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026CC2B684FD9B-2DD9D622A89",
+        "title": "yes Cleveland,yes Tampa Bay,yes Milwaukee,yes Detroit,yes Washington,no Mitch Bratt: 7+,no Andrew Abbott: 9+,no George Kirby: 10+,no José Soriano: 9+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E423DC18E1F-E041B95DCD1",
+        "title": "yes New York Y,yes Tampa Bay,yes Boston,yes Los Angeles D,yes San Diego,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Miami,yes Washington,yes Arizona,yes Cincinnati",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266F53994AEE1-6786F55C865",
+        "title": "yes Jeremy Peña: 2+,yes Yordan Alvarez: 3+,no Ronel Blanco: 7+,yes Houston wins by over 3.5 runs,no Over 16.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E0C7BB29677-1135C906320",
+        "title": "yes Philadelphia,yes Cleveland,yes New York,yes Indiana,yes Dallas,yes Las Vegas,yes Minnesota,yes Los Angeles",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-06T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20267BC84A3F8B8-9C501435EE0",
+        "title": "yes Boston,yes Philadelphia,yes Atlanta,yes New York Y wins by over 1.5 runs,yes Tampa Bay wins by over 1.5 runs,yes Milwaukee wins by over 1.5 runs,yes Kansas City wins by over 1.5 runs,yes Detroit wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269A83094047F-DFA6E4E20B3",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes New York,yes Las Vegas,yes Washington",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269327CC64B2B-30ACE141C3B",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington,yes Over 16.5 runs scored,yes Over 13.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20260E839522C21-B90313D852C",
+        "title": "yes Both Teams To Score,yes Both Teams To Score,yes Over 2.5 goals scored,yes Over 2.5 goals scored,yes Over 2.5 goals scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-06T00:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D5EB2FC81E2-E3B417E7107",
+        "title": "yes New York Y,yes Tampa Bay,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Washington,yes Seattle,yes Over 9.5 runs scored,yes Over 10.5 runs scored,yes Over 12.5 runs scored,yes Over 10.5 runs scored,yes Over 7.5 runs ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202603E78FDE0F0-541200B814A",
+        "title": "yes Milwaukee,yes Washington,yes New York,yes Minnesota,yes Over 145.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265CD96F4966D-BF96D2E91B0",
+        "title": "yes Jorge Soler: 1+,yes Nolan Schanuel: 1+,yes Over 4.5 runs scored,yes Over 3.5 runs scored,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026E22F4942D0A-87A94E32488",
+        "title": "yes Shea Langeliers: 1+,yes Geraldo Perdomo: 1+,yes Nolan Arenado: 1+,yes JJ Bleday: 1+,yes Sal Stewart: 1+,yes Randy Arozarena: 1+,yes Mike Trout: 1+,yes Ivan Herrera: 1+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E03E5B82A67-F309B48F22A",
+        "title": "yes Tampa Bay wins by over 4.5 runs,yes Kansas City wins by over 1.5 runs,yes Houston wins by over 4.5 runs,yes Over 11.5 runs scored,yes Over 13.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026CCF836C6423-8518DB3DB8C",
+        "title": "yes Los Angeles D,no Cleveland wins by over 7.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026B52F168D4E9-BE43AD2706C",
+        "title": "yes New York Y,yes Tampa Bay,yes San Francisco,yes Chicago WS,yes Detroit,yes Houston,yes Colorado",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20262DB846DC268-9B989CBDF41",
+        "title": "no Jonathan Aranda: 4+,no Junior Caminero: 4+,no Vladimir Guerrero Jr.: 4+,no Gunnar Henderson: 5+,no Pete Alonso: 5+,no Freddie Freeman: 4+,no Bryce Harper: 4+,no Kyle Schwarber: 4+,no Jackson Merrill: 5+,no Manny Machado: 5+,no Francisco Lindor: 4+,no Juan S",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DFD1663332A-FD33F16633E",
+        "title": "yes Philadelphia,yes Detroit,yes New York,yes Minnesota,yes Golden State,yes Sabrina Ionescu: 10+,yes Olivia Miles: 15+,yes Flau'jae Johnson: 10+,yes Gabby Williams: 10+,yes Sonia Citron: 10+,yes Las Vegas wins by over 12.5 points",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026EABC63E83A1-1B6176A493E",
+        "title": "yes A's,yes Seattle,yes Detroit wins by over 3.5 runs,yes Houston wins by over 3.5 runs,yes Washington wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202695F03D14C26-4302F7B2010",
+        "title": "yes Gonzalo Bueno,yes Cruz Azul,yes Toluca,yes Reg Time: Ararat-Armenia,yes Reg Time: Mjallby,yes New York,yes Minnesota,yes Phoenix",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-05T23:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BB835E9808C-29D48308307",
+        "title": "yes St. Louis,no Over 13.5 runs scored,yes Over 5.5 runs scored,yes Over 7.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202648AA0D1EC59-EBEA6969BC0",
+        "title": "yes Toluca,yes Tigres,yes Tijuana de Caliente,yes Guadalajara,yes Monterrey,yes Atlanta,yes Kansas City,yes Texas,yes Detroit,yes Vancouver,yes Miami,yes Nashville",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-09T23:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026FC7B62064EB-EEFE96FE98F",
+        "title": "yes Los Angeles A,yes Over 5.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266A0D0A09A42-3FB4CCE1B0E",
+        "title": "yes Tampa Bay,yes Baltimore,yes Milwaukee,yes Houston,yes Over 16.5 runs scored,yes Over 15.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20264192104C0DB-C91051699C0",
+        "title": "yes San Diego,yes Kansas City,yes Bryce Harper: 1+,yes New York Y wins by over 3.5 runs,yes Tampa Bay wins by over 4.5 runs,yes Philadelphia wins by over 3.5 runs,yes Milwaukee wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202606C52CB9315-A4226266168",
+        "title": "yes Detroit,yes Milwaukee wins by over 2.5 runs,yes Washington wins by over 2.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20267DB0EC67376-BEEC53A6A65",
+        "title": "yes New York Y,yes Tampa Bay,yes Boston,yes Los Angeles D,yes Atlanta,yes New York,yes Las Vegas,yes Minnesota,yes Golden State,yes Over 183.5 points scored,yes Over 195.5 points scored,yes Over 175.5 points scored,yes Over 145.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S202608D0FE12A5B-684B5D223EE",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Boston,yes Over 12.5 runs scored,yes Over 9.5 runs scored,no Over 9.5 runs scored,no Over 9.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202684218C66A1E-E2E7A67A758",
+        "title": "yes St. Louis,yes JJ Wetherholt: 1+,yes Jeffrey Springs: 4+,yes Kyle Leahy: 4+,no Seattle wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202618A44D11EFB-A3FB70D69EA",
+        "title": "no Over 10.5 runs scored,no Over 10.5 runs scored,yes New York wins by over 1.5 points,yes Las Vegas wins by over 9.5 points",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202685ACFA3BE80-CC82137C9B4",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Philadelphia,yes Milwaukee,no Over 18.5 runs scored,no Over 12.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026188588BD838-FF07BC88318",
+        "title": "yes New York wins by over 3.5 points,yes Over 186.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-31T01:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026476355EB386-423E3B05EEA",
+        "title": "yes Cleveland,yes New York Y,yes Boston,yes Los Angeles D,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Houston,yes Washington,yes Arizona,yes Seattle,yes Los Angeles A",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F8A6183D03D-81F25E7374A",
+        "title": "no Over 11.5 runs scored,no Over 10.5 runs scored,no Over 9.5 runs scored,no Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269274D2C70CE-C38A293FE22",
+        "title": "yes New York Y,yes Atlanta,yes Houston,yes Seattle,yes Over 7.5 runs scored,yes Over 7.5 runs scored,yes Over 7.5 runs scored,yes Over 8.5 runs scored,no Over 9.5 runs scored,yes Over 7.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20260AD2352755A-DA59BBDC716",
+        "title": "yes Baltimore,yes Philadelphia,yes Atlanta,yes Texas,yes Seattle",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20269D4F5AE2CD1-D9D2EF048E9",
+        "title": "yes José Soriano: 3+,yes St. Louis wins by over 3.5 runs,yes Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026865CE436F0B-934C335B976",
+        "title": "yes New York,yes Arike Ogunbowale: 15+,yes Breanna Stewart: 20+,yes Sabrina Ionescu: 15+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-31T01:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026F61F635D2CF-1BCB2B84808",
+        "title": "yes Kevin McGonigle: 2+,yes Ketel Marte: 2+,yes Elly De La Cruz: 2+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202687F07F8265C-22FD9C2F9EA",
+        "title": "yes Boston,yes Philadelphia,yes Atlanta,yes Kansas City,yes Texas,yes Houston,yes Washington,yes New York,yes Las Vegas,yes Minnesota,yes Golden State",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026CAFA68B6D0F-6BFF921240B",
+        "title": "yes Over 15.5 runs scored,no Over 17.5 runs scored,yes Over 7.5 runs scored,yes Over 10.5 runs scored,no Over 8.5 runs scored,no Over 13.5 runs scored,yes Over 7.5 runs scored,no Over 9.5 runs scored,yes Over 5.5 runs scored,yes Over 8.5 runs scored,no Over 13",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B1AA93D0986-1AD99FA42CC",
+        "title": "no Over 7.5 runs scored,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S202622184B715C4-4930F6F75AD",
+        "title": "yes New York Y,yes Philadelphia,yes Atlanta,yes Texas,yes Houston,yes Washington,yes A's",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202699090AB3BEF-B743ECB1AF5",
+        "title": "yes Elsa Jacquemot,yes Oleksandra Oliynykova,yes Diane Parry,yes Panna Udvardy",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T08:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202629F4CBE1FAF-22704E9B354",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Philadelphia,yes Milwaukee,yes Kansas City,yes Texas,yes Houston,yes Washington,yes Andrew Alvarez: 2+,yes Kyle Leahy: 2+,yes New York,yes Las Vegas,yes Minnesota,yes Golden State",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D11C285104D-CB6CA0914AA",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Houston,no Over 18.5 runs scored,yes Over 12.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202632FD1F27174-52DDD086A7C",
+        "title": "yes Marina Mabrey: 2+,yes A'ja Wilson: 3+,yes Marina Mabrey: 4+,yes A'ja Wilson: 25+,yes Jackie Young: 15+,yes A'ja Wilson: 8+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E308793EFBD-DEB55F62DD1",
+        "title": "yes Jeffrey Springs: 2+,yes Andrew Abbott: 3+,yes George Kirby: 4+,yes José Soriano: 3+,yes Kyle Leahy: 2+,yes Azzi Fudd: 10+,yes Arike Ogunbowale: 15+,yes Breanna Stewart: 20+,yes Sabrina Ionescu: 10+,yes A'ja Wilson: 20+,yes Jackie Young: 15+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026785523B375D-A3137B02387",
+        "title": "yes Cruz Azul,yes Toluca,yes Over 2.5 goals scored,yes Over 1.5 goals scored,yes Vancouver,yes Columbus,yes Miami",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-05T23:30:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E4A1FAE50C2-3E4BBF8553A",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Los Angeles D,yes San Diego,yes Milwaukee,yes Kansas City,yes Houston,yes Washington",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026F01BDDAF270-FAA1402714D",
+        "title": "yes Texas,yes Detroit,yes Houston,yes Washington,yes A's,yes Cincinnati,yes Los Angeles A",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202623C69E860F8-9A453DEE6B0",
+        "title": "yes Dallas,yes Las Vegas,yes Minnesota,yes Golden State,yes New York,yes Phoenix",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-05T23:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B9C46EEB7E2-5B5570EE172",
+        "title": "yes Cleveland,yes Tampa Bay,yes Philadelphia,yes Milwaukee,yes Texas,yes Detroit,yes Houston,yes Jeffrey Springs: 2+,yes Mitch Bratt: 2+,no José Soriano: 8+,yes Kyle Leahy: 3+,yes Arizona wins by over 2.5 runs,yes Seattle wins by over 2.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D2EA84F0677-3E5173EF328",
+        "title": "yes $65,400 or above,yes $0.08 or above,yes $1,915 or above,yes $78 or above,no $1.11991 or above",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-21T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026D63F8CD535C-B5B95C3D97B",
+        "title": "yes New York Y,yes Arizona,yes Seattle,yes Atlanta wins by over 1.5 runs,yes Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026C941EFE85C6-0F29D8ECF7C",
+        "title": "yes Cleveland wins by over 8.5 runs,yes New York Y wins by over 1.5 runs,yes Tampa Bay wins by over 2.5 runs,no Baltimore wins by over 1.5 runs,no Los Angeles D wins by over 1.5 runs,no Over 10.5 runs scored,no Over 10.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202684C6993A12B-682933136DC",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Over 6.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026C794F8392AF-F7F59503E15",
+        "title": "yes New York Y wins by over 2.5 runs,yes Tampa Bay wins by over 4.5 runs,yes Baltimore wins by over 1.5 runs,no Philadelphia wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026224382D27EE-550C742A337",
+        "title": "yes Cleveland,yes New York,yes Las Vegas,yes Minnesota,yes Golden State,yes Courtney Williams: 10+,yes Kayla McBride: 15+,yes Natasha Howard: 10+,yes Olivia Miles: 15+,yes Awa Fam: 10+,yes Dominique Malonga: 10+,yes Natisha Hiedeman: 10+,yes Gabby Williams: 10",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B20ABAC60BD-E34E6FCEFD9",
+        "title": "no New York Y wins by over 3.5 runs,no Over 7.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:15:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202610CC43787D4-73D6F6F7945",
+        "title": "yes Mitch Bratt: 3+,yes George Kirby: 5+,yes Over 5.5 runs scored,yes Over 4.5 runs scored,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026A3E6E3D6C08-5AEE262A4CA",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Atlanta,yes Milwaukee,yes Houston,yes Washington,yes Arizona,yes Seattle,yes St. Louis",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S202623B657B885F-1D47A944458",
+        "title": "yes Cleveland,yes Tampa Bay,yes Milwaukee,yes Washington,no Mitch Bratt: 7+,no Andrew Abbott: 9+,no George Kirby: 10+,no José Soriano: 9+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026646DE494479-3B651D39DA3",
+        "title": "yes Washington,yes Dallas,yes Gabby Williams: 2+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E7B457417A5-4D14C807D6B",
+        "title": "yes Corey Conners,yes Jake Knapp,yes Scottie Scheffler",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-23T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026BE07815179C-D9BCAF27EF1",
+        "title": "yes Over 14.5 runs scored,no Over 10.5 runs scored,no Over 10.5 runs scored,no Over 8.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20264D69436A025-910F0F7CBC7",
+        "title": "yes Arizona,yes St. Louis,yes Over 7.5 runs scored,no Over 9.5 runs scored,no Over 10.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026B701E536F3D-659C47F93DB",
+        "title": "no Jonathan Aranda: 4+,no Junior Caminero: 4+,no Vladimir Guerrero Jr.: 4+,no Gunnar Henderson: 5+,no Pete Alonso: 5+,no Freddie Freeman: 4+,no Bryce Harper: 4+,no Kyle Schwarber: 4+,no Jackson Merrill: 5+,no Manny Machado: 5+,no Francisco Lindor: 4+,no Juan S",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026E49DFB03846-9497579B037",
+        "title": "yes Boston,yes Minnesota,yes Golden State,yes A'ja Wilson: 30+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20264BA8305FA11-34BEB0FE743",
+        "title": "yes Tampa Bay wins by over 4.5 runs,no Boston wins by over 1.5 runs,no Over 16.5 runs scored,no Over 11.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20264C8659076FE-057F95CB4B1",
+        "title": "no Philadelphia wins by over 2.5 runs,yes Milwaukee wins by over 3.5 runs,yes Houston wins by over 4.5 runs,yes Over 8.5 runs scored,yes Over 9.5 runs scored,yes Over 12.5 runs scored,yes Over 11.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20260AB36F79850-7639736A5B3",
+        "title": "yes Jesper De Jong,yes Pablo Carreno Busta,yes Jan-Lennard Struff",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-02T11:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026A798F2533AA-6DCDCC71E0E",
+        "title": "no Over 9.5 runs scored,yes Minnesota wins by over 3.5 points",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265395BCF9CCE-E791A4798D1",
+        "title": "yes New York Y,yes Tampa Bay,yes Boston,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Houston,yes Colorado",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20261AC00B2D99E-C2BF00FF47D",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Philadelphia,yes Milwaukee,yes Kansas City,yes Detroit,yes Houston,yes Washington,no A's wins by over 2.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20266624DF879C0-FD4F96288FD",
+        "title": "yes Brayan Rocchio: 1+,yes Chase DeLauter: 1+,yes Byron Buxton: 1+,yes Brooks Lee: 1+,yes Brice Turang: 1+,yes William Contreras: 1+,yes Francisco Alvarez: 1+,yes Francisco Lindor: 1+,yes Alex Bregman: 1+,yes Pete Crow-Armstrong: 1+,yes Dillon Dingler: 1+,yes ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20268B709DDC79F-8C65F2F3AA1",
+        "title": "yes Cleveland,no Cleveland wins by over 9.5 runs,yes New York Y wins by over 3.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20261495FA7C9E4-66C8E269091",
+        "title": "yes Milwaukee,yes Houston,yes Washington,yes Arizona,yes Seattle,yes Los Angeles A,yes Over 4.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202625FC46036EC-AB820FD144D",
+        "title": "yes Kayla McBride: 2+,yes Minnesota,yes Awa Fam: 4+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20263DFE62A00CE-005FD26FBA6",
+        "title": "yes Cleveland,yes New York,yes Indiana,yes Dallas,yes Las Vegas,yes Minnesota,yes Los Angeles",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-06T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026635AB6E245D-936263C14E1",
+        "title": "yes Cleveland,yes Baltimore,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Washington,yes Tampa Bay wins by over 4.5 runs,yes Detroit wins by over 1.5 runs,yes Houston wins by over 1.5 runs,yes Over 15.5 runs scored,yes Over 13.5 runs scored,yes Over ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026B20AE9B2D44-DDF9F925377",
+        "title": "yes Pittsburgh,yes Boston,yes Los Angeles D,yes San Diego,yes San Francisco,yes Chicago WS,yes Cincinnati,yes New York,yes Las Vegas",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026A4DBAA56C9D-7AF6E168CDE",
+        "title": "yes New York Y,yes Philadelphia,yes Detroit,yes Washington,yes Arizona,yes Seattle,yes Milwaukee wins by over 2.5 runs,yes Houston wins by over 2.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026875ACD08FCF-00EF7628455",
+        "title": "yes Tampa Bay,yes Kansas City,yes Detroit,yes Houston,yes Washington",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026DD6EFD61976-BDD649A533E",
+        "title": "yes Jo Adell: 1+,yes José Soriano: 4+,yes Kyle Leahy: 3+,yes Yes,yes Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20267776A600FC0-0553FFFC376",
+        "title": "yes Baltimore,yes Philadelphia,yes Atlanta,yes Texas,yes Detroit,yes Houston,yes Washington,yes Seattle,yes Over 16.5 runs scored,no Over 10.5 runs scored,no Over 12.5 runs scored,no Over 12.5 runs scored,yes Over 7.5 runs scored,yes Over 11.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026CA832A03F71-784E30A10FD",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Boston,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Chicago C,yes Houston,yes Washington,yes Seattle,yes Over 6.5 runs scored,no Over 12.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202629596E208CA-F293587F855",
+        "title": "yes Over 16.5 runs scored,yes Over 14.5 runs scored,yes Over 7.5 runs scored,yes Over 11.5 runs scored,yes Over 7.5 runs scored,yes Over 6.5 runs scored,yes Over 6.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202610C0459A195-CD45CF291F3",
+        "title": "yes Henry Bolte: 1+,yes Shea Langeliers: 1+,yes Gabriel Moreno: 1+,yes Ketel Marte: 1+,yes Mike Trout: 1+,yes Alec Burleson: 1+,yes Jordan Walker: 1+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026B33A4319977-98298D58842",
+        "title": "yes Kansas City,yes New York Y wins by over 1.5 runs,no Chicago WS wins by over 1.5 runs,yes Detroit wins by over 1.5 runs,yes Over 7.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T00:05:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20263E5D816B7EB-56BCBAEBC5C",
+        "title": "yes Philadelphia,yes Milwaukee,yes Kansas City,yes Chicago WS,yes Detroit,yes Houston,yes Washington,yes Tampa Bay wins by over 3.5 runs,yes Azzi Fudd: 15+,yes Breanna Stewart: 20+,yes Jonquel Jones: 15+,yes Pauline Astier: 10+,yes Las Vegas wins by over 15.5 ",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T00:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026596A3CDAF7F-793D886C776",
+        "title": "yes Washington wins by over 1.5 runs,no Cincinnati wins by over 2.5 runs,no Over 10.5 runs scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T01:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026908524717B9-C4E65B7084F",
+        "title": "no Kyle Freeland: 8+,no Andrew Alvarez: 8+,yes Jeffrey Springs: 3+,yes Mitch Bratt: 2+,yes Andrew Abbott: 4+,yes George Kirby: 6+,yes José Soriano: 4+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-24T02:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202616F21DC5B78-C857122ACB9",
+        "title": "yes Dallas,yes Las Vegas,yes Minnesota,yes Golden State,no Las Vegas wins by over 21.5 points,no Over 186.5 points scored",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S2026722C4DA23A7-C29DA34539A",
+        "title": "yes Cleveland wins by over 9.5 runs,yes New York Y wins by over 3.5 runs,yes Tampa Bay wins by over 4.5 runs,yes Philadelphia wins by over 1.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:10:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026FF26FF05885-B51607B0B9E",
+        "title": "yes Nuno Borges,yes Cleveland,yes Tampa Bay,yes Detroit",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T11:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S20268DB0DDCEF91-6451DFCEC1B",
+        "title": "yes Cleveland,yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes Kansas City,yes Texas,yes Detroit,yes Houston,yes Washington,yes Over 3.5 runs scored,yes Over 2.5 runs scored,yes Over 2.5 runs scored,yes Las Vegas,no Dal",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVECROSSCATEGORY-S2026B8575E3548C-483BDCB7912",
+        "title": "yes New York Y,yes Tampa Bay,yes Baltimore,yes Philadelphia,yes Atlanta,yes Milwaukee,yes New York,yes Las Vegas,yes Minnesota,yes Golden State",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202650C24F189C0-4BCD94C69D4",
+        "title": "yes Cleveland wins by over 9.5 runs,yes Milwaukee wins by over 4.5 runs",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-07-23T23:40:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S202648196F9C20B-C02223C8A24",
+        "title": "yes Reg Time: Fenerbahce,yes Reg Time: Mjallby,yes Reg Time: Sabah Masazir,yes Reg Time: Sturm Graz,yes Reg Time: Over 1.5 goals scored,yes Reg Time: Over 1.5 goals scored,yes Reg Time: Over 1.5 goals scored,yes Reg Time: Over 1.5 goals scored,yes Reg Time: Ov",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T18:45:00Z"
+      },
+      {
+        "venue": "kalshi",
+        "marketId": "KXMVESPORTSMULTIGAMEEXTENDED-S20265DBE8F7BE12-016F5281866",
+        "title": "yes Ketel Marte: 1+,yes Dominic Canzone: 1+,yes Jordan Walker: 1+,yes Natisha Hiedeman: 2+",
+        "status": "active",
+        "volume24h": 0,
+        "lastPrice": 0,
+        "closeTime": "2026-08-04T02:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2470848",
+        "title": "Will Trump be in the WC Champions Photo?",
+        "status": "open",
+        "volume24h": 4460548.93553,
+        "lastPrice": 0.995,
+        "closeTime": "2026-07-20T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2063132",
+        "title": "Will Demeke Mekonnen be the next Prime Minister of Ethiopia?",
+        "status": "open",
+        "volume24h": 1770110.3156619999,
+        "lastPrice": 0.006,
+        "closeTime": "2026-06-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1654957",
+        "title": "Will the Fed decrease interest rates by 25 bps after the July 2026 meeting?",
+        "status": "open",
+        "volume24h": 1097988.3565100003,
+        "lastPrice": 0.004,
+        "closeTime": "2026-07-29T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922143",
+        "title": "San Diego Padres vs. Atlanta Braves",
+        "status": "open",
+        "volume24h": 897222.1278280009,
+        "lastPrice": 0.24,
+        "closeTime": "2026-07-27T23:15:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922135",
+        "title": "Pittsburgh Pirates vs. New York Yankees",
+        "status": "open",
+        "volume24h": 796597.6170619997,
+        "lastPrice": 0.11,
+        "closeTime": "2026-07-27T23:05:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "665374",
+        "title": "Will the U.S. invade Iran before 2027?",
+        "status": "open",
+        "volume24h": 760240.8520899992,
+        "lastPrice": 0.26,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922131",
+        "title": "Minnesota Twins vs. Cleveland Guardians",
+        "status": "open",
+        "volume24h": 754850.7316609996,
+        "lastPrice": 0.001,
+        "closeTime": "2026-07-27T22:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1654958",
+        "title": "Will there be no change in Fed interest rates after the July 2026 meeting?",
+        "status": "open",
+        "volume24h": 747000.4123029998,
+        "lastPrice": 0.927,
+        "closeTime": "2026-07-29T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1654959",
+        "title": "Will the Fed increase interest rates by 25 bps after the July 2026 meeting?",
+        "status": "open",
+        "volume24h": 681255.4509829945,
+        "lastPrice": 0.065,
+        "closeTime": "2026-07-29T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922137",
+        "title": "Tampa Bay Rays vs. Toronto Blue Jays",
+        "status": "open",
+        "volume24h": 616119.5013590003,
+        "lastPrice": 0.98,
+        "closeTime": "2026-07-27T23:07:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922141",
+        "title": "Los Angeles Dodgers vs. Philadelphia Phillies",
+        "status": "open",
+        "volume24h": 593159.3373059997,
+        "lastPrice": 0.33,
+        "closeTime": "2026-07-27T23:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922139",
+        "title": "Baltimore Orioles vs. Boston Red Sox",
+        "status": "open",
+        "volume24h": 568330.0389939994,
+        "lastPrice": 0.59,
+        "closeTime": "2026-07-27T23:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922147",
+        "title": "New York Mets vs. Milwaukee Brewers",
+        "status": "open",
+        "volume24h": 484956.96250299923,
+        "lastPrice": 0.09,
+        "closeTime": "2026-07-27T23:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1654960",
+        "title": "Will the Fed increase interest rates by 50+ bps after the July 2026 meeting?",
+        "status": "open",
+        "volume24h": 463220.96321900026,
+        "lastPrice": 0.003,
+        "closeTime": "2026-07-29T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2951720",
+        "title": "New York Liberty vs. Dallas Wings",
+        "status": "open",
+        "volume24h": 453770.54295300005,
+        "lastPrice": 0.67,
+        "closeTime": "2026-07-21T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2176262",
+        "title": "Strait of Hormuz traffic returns to normal by July 31?",
+        "status": "open",
+        "volume24h": 402585.08611500036,
+        "lastPrice": 0.014,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608547",
+        "title": "Will Harry Kane win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 380717.84821599943,
+        "lastPrice": 0.387,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608545",
+        "title": "Will Lamine Yamal win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 368038.57172599976,
+        "lastPrice": 0.326,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922151",
+        "title": "Chicago White Sox vs. Texas Rangers",
+        "status": "open",
+        "volume24h": 350408.699456,
+        "lastPrice": 0.29,
+        "closeTime": "2026-07-28T00:05:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1654956",
+        "title": "Will the Fed decrease interest rates by 50+ bps after the July 2026 meeting?",
+        "status": "open",
+        "volume24h": 331244.32700000005,
+        "lastPrice": 0.001,
+        "closeTime": "2026-07-29T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608565",
+        "title": "Will Lionel Messi win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 327785.9120310001,
+        "lastPrice": 0.048,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608566",
+        "title": "Will Rodri win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 310419.5740070001,
+        "lastPrice": 0.14,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608540",
+        "title": "Will Kylian Mbappé win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 294568.1974759999,
+        "lastPrice": 0.082,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2963603",
+        "title": "Counter-Strike: M80 vs NIP (BO3) - BLAST Bounty Qualifier",
+        "status": "open",
+        "volume24h": 291537.97837100003,
+        "lastPrice": 0.5,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931114",
+        "title": "Will LeBron James play for the Miami Heat in 2026-27?",
+        "status": "open",
+        "volume24h": 284334.3823040001,
+        "lastPrice": 0.489,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931108",
+        "title": "Will LeBron James play for the Golden State Warriors in 2026-27?",
+        "status": "open",
+        "volume24h": 280903.2977329999,
+        "lastPrice": 0.106,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2991893",
+        "title": "Baltimore Orioles vs. Boston Red Sox: O/U 9.5",
+        "status": "open",
+        "volume24h": 274220.4000970002,
+        "lastPrice": 0.8,
+        "closeTime": "2026-07-20T23:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922159",
+        "title": "Cincinnati Reds vs. Seattle Mariners",
+        "status": "open",
+        "volume24h": 261627.41409599993,
+        "lastPrice": 0.43,
+        "closeTime": "2026-07-28T01:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2989398",
+        "title": "Hamburg European Open: Katarzyna Kawa vs Paula Badosa",
+        "status": "open",
+        "volume24h": 258294.16249599995,
+        "lastPrice": 0.42,
+        "closeTime": "2026-07-28T08:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1469737",
+        "title": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+        "status": "open",
+        "volume24h": 242347.9904339992,
+        "lastPrice": 0.758,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608552",
+        "title": "Will Declan Rice win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 228860.388947,
+        "lastPrice": 0.002,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608541",
+        "title": "Will Erling Haaland win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 214714.30190200004,
+        "lastPrice": 0.004,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931112",
+        "title": "Will LeBron James play for the Los Angeles Lakers in 2026-27?",
+        "status": "open",
+        "volume24h": 205446.0043280021,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922145",
+        "title": "San Francisco Giants vs. Kansas City Royals",
+        "status": "open",
+        "volume24h": 201472.22477200002,
+        "lastPrice": 0.2,
+        "closeTime": "2026-07-27T23:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2993258",
+        "title": "San Francisco Giants vs. Kansas City Royals: O/U 10.5",
+        "status": "open",
+        "volume24h": 196351.99401399994,
+        "lastPrice": 0.3,
+        "closeTime": "2026-07-20T23:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "561247",
+        "title": "Will Tim Walz win the 2028 US Presidential Election?",
+        "status": "open",
+        "volume24h": 194920.2165,
+        "lastPrice": 0.002,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2467362",
+        "title": "Will Ethereum dip to $1,250 by December 31, 2026?",
+        "status": "open",
+        "volume24h": 194366.95961100003,
+        "lastPrice": 0.26,
+        "closeTime": "2027-01-01T05:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243296",
+        "title": "Will Atlanta Hawks win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 187374.01975,
+        "lastPrice": 0.009,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922812",
+        "title": "Will the price of Bitcoin be above $60,000 on July 21?",
+        "status": "open",
+        "volume24h": 183590.910845,
+        "lastPrice": 0.999,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931103",
+        "title": "Will LeBron James play for the Chicago Bulls in 2026-27?",
+        "status": "open",
+        "volume24h": 182135.09,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2507607",
+        "title": "Kharg Island no longer under Iranian control by July 31?",
+        "status": "open",
+        "volume24h": 182031.594749,
+        "lastPrice": 0.023,
+        "closeTime": "2026-06-30T23:55:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608543",
+        "title": "Will Ousmane Dembélé win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 180880.70823500073,
+        "lastPrice": 0.016,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2994424",
+        "title": "Chicago White Sox vs. Texas Rangers: O/U 7.5",
+        "status": "open",
+        "volume24h": 175864.07985899996,
+        "lastPrice": 0.51,
+        "closeTime": "2026-07-21T00:05:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2937524",
+        "title": "US x Iran Effective Ceasefire by July 24?",
+        "status": "open",
+        "volume24h": 175488.644664,
+        "lastPrice": 0.1,
+        "closeTime": "2026-07-24T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243302",
+        "title": "Will Detroit Pistons win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 175243.301264,
+        "lastPrice": 0.028,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931121",
+        "title": "Will LeBron James play for the Philadelphia 76ers in 2026-27?",
+        "status": "open",
+        "volume24h": 170527.08284899997,
+        "lastPrice": 0.163,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2774056",
+        "title": "Strait of Hormuz traffic returns to normal by August 31?",
+        "status": "open",
+        "volume24h": 167098.724191,
+        "lastPrice": 0.14,
+        "closeTime": "2026-08-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2977246",
+        "title": "Israel closes its airspace by July 24?",
+        "status": "open",
+        "volume24h": 164583.61591199998,
+        "lastPrice": 0.09,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608553",
+        "title": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 163416.39961000002,
+        "lastPrice": 0.009,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931107",
+        "title": "Will LeBron James play for the Detroit Pistons in 2026-27?",
+        "status": "open",
+        "volume24h": 160428.64,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608542",
+        "title": "Will Jude Bellingham win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 158262.31083600002,
+        "lastPrice": 0.003,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2555351",
+        "title": "Israel closes its airspace by July 31?",
+        "status": "open",
+        "volume24h": 153862.51862599992,
+        "lastPrice": 0.2,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931104",
+        "title": "Will LeBron James play for the Cleveland Cavaliers in 2026-27?",
+        "status": "open",
+        "volume24h": 152113.38045900004,
+        "lastPrice": 0.235,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243314",
+        "title": "Will Houston Rockets win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 146174.648098,
+        "lastPrice": 0.016,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931111",
+        "title": "Will LeBron James play for the Los Angeles Clippers in 2026-27?",
+        "status": "open",
+        "volume24h": 143679.68628499997,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931125",
+        "title": "Will LeBron James play for the San Antonio Spurs in 2026-27?",
+        "status": "open",
+        "volume24h": 141633.48641499996,
+        "lastPrice": 0.007,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2633429",
+        "title": "US-Iran Final Nuclear Deal by August 18, 2026?",
+        "status": "open",
+        "volume24h": 137568.006657,
+        "lastPrice": 0.043,
+        "closeTime": "2026-08-18T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2677863",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $90 in July?",
+        "status": "open",
+        "volume24h": 135274.11245800002,
+        "lastPrice": 0.363,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608551",
+        "title": "Will Michael Olise win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 131091.8548679999,
+        "lastPrice": 0.003,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559688",
+        "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
+        "status": "open",
+        "volume24h": 129966.210164,
+        "lastPrice": 0.002,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2996033",
+        "title": "Detroit Tigers vs. Chicago Cubs: O/U 11.5",
+        "status": "open",
+        "volume24h": 127634.3977219999,
+        "lastPrice": 0.78,
+        "closeTime": "2026-07-21T00:05:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243312",
+        "title": "Will Denver Nuggets win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 125947.699173,
+        "lastPrice": 0.035,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2730118",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $85 in July?",
+        "status": "open",
+        "volume24h": 120617.60013199996,
+        "lastPrice": 0.73,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2991917",
+        "title": "Los Angeles Dodgers vs. Philadelphia Phillies: O/U 8.5",
+        "status": "open",
+        "volume24h": 117710.79921599994,
+        "lastPrice": 0.69,
+        "closeTime": "2026-07-20T23:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2991947",
+        "title": "Spread: Milwaukee Brewers (-1.5)",
+        "status": "open",
+        "volume24h": 117516.96098699994,
+        "lastPrice": 0.69,
+        "closeTime": "2026-07-20T23:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2991933",
+        "title": "San Diego Padres vs. Atlanta Braves: O/U 9.5",
+        "status": "open",
+        "volume24h": 116904.13593499998,
+        "lastPrice": 0.11,
+        "closeTime": "2026-07-20T23:15:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559685",
+        "title": "Will MrBeast win the 2028 Democratic presidential nomination?",
+        "status": "open",
+        "volume24h": 115486.302493,
+        "lastPrice": 0.003,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922155",
+        "title": "Washington Nationals vs. Colorado Rockies",
+        "status": "open",
+        "volume24h": 114223.12343099999,
+        "lastPrice": 0.78,
+        "closeTime": "2026-07-28T00:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2686770",
+        "title": "Iran full airspace closure by July 31?",
+        "status": "open",
+        "volume24h": 113866.55306999997,
+        "lastPrice": 0.26,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2980615",
+        "title": "Winnipeg: Yosuke Watanuki vs Andre Ilagan",
+        "status": "open",
+        "volume24h": 113287.60732399998,
+        "lastPrice": 0.65,
+        "closeTime": "2026-07-27T15:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2987597",
+        "title": "LoL: Team Solid vs RMD Gaming (BO1) - Circuito Desafiante Regular Season",
+        "status": "open",
+        "volume24h": 113269.28488100004,
+        "lastPrice": 0.999,
+        "closeTime": "2026-07-21T04:30:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559680",
+        "title": "Will Phil Murphy win the 2028 Democratic presidential nomination?",
+        "status": "open",
+        "volume24h": 112969.0095,
+        "lastPrice": 0.004,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608548",
+        "title": "Will Pedri win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 111904.99738699998,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758337",
+        "title": "Will Bitcoin reach $72,500 in July?",
+        "status": "open",
+        "volume24h": 111726.404824,
+        "lastPrice": 0.084,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2155000",
+        "title": "Hantavirus pandemic in 2026?",
+        "status": "open",
+        "volume24h": 111316.710359,
+        "lastPrice": 0.036,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922149",
+        "title": "Detroit Tigers vs. Chicago Cubs",
+        "status": "open",
+        "volume24h": 111246.36879799995,
+        "lastPrice": 0.8,
+        "closeTime": "2026-07-28T00:05:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931122",
+        "title": "Will LeBron James play for the Phoenix Suns in 2026-27?",
+        "status": "open",
+        "volume24h": 109078.1,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931116",
+        "title": "Will LeBron James play for the Minnesota Timberwolves in 2026-27?",
+        "status": "open",
+        "volume24h": 107698.36128400001,
+        "lastPrice": 0.013,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "561991",
+        "title": "Will Matt Gaetz win the 2028 Republican presidential nomination?",
+        "status": "open",
+        "volume24h": 106924.014999,
+        "lastPrice": 0.002,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922153",
+        "title": "Miami Marlins vs. Houston Astros",
+        "status": "open",
+        "volume24h": 106396.92736700008,
+        "lastPrice": 0.11,
+        "closeTime": "2026-07-28T00:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2937525",
+        "title": "US x Iran Effective Ceasefire by July 31?",
+        "status": "open",
+        "volume24h": 106210.23134299999,
+        "lastPrice": 0.17,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2730676",
+        "title": "Iran leadership change by July 31?",
+        "status": "open",
+        "volume24h": 106000.62671100002,
+        "lastPrice": 0.044,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608555",
+        "title": "Will Federico Valverde win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 104984.80799999992,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608564",
+        "title": "Will Cristiano Ronaldo win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 104565.30299999999,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2698591",
+        "title": "Trump out as President by July 31?",
+        "status": "open",
+        "volume24h": 104381.11717799999,
+        "lastPrice": 0.004,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2980599",
+        "title": "Winnipeg: Rio Noguchi vs Braden Shick",
+        "status": "open",
+        "volume24h": 103662.75048000002,
+        "lastPrice": 0.641,
+        "closeTime": "2026-07-27T15:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931128",
+        "title": "Will LeBron James play for the Washington Wizards in 2026-27?",
+        "status": "open",
+        "volume24h": 103250.78195500001,
+        "lastPrice": 0.003,
+        "closeTime": "2026-11-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608559",
+        "title": "Will Achraf Hakimi win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 101745.17899999997,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608562",
+        "title": "Will Lautaro Martinez win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 101651.00299999998,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931106",
+        "title": "Will LeBron James play for the Denver Nuggets in 2026-27?",
+        "status": "open",
+        "volume24h": 100931.62880899999,
+        "lastPrice": 0.006,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "701501",
+        "title": "Will Bitcoin dip to $55,000 by December 31, 2026?",
+        "status": "open",
+        "volume24h": 100864.77006799998,
+        "lastPrice": 0.46,
+        "closeTime": "2027-01-01T05:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922832",
+        "title": "Will the price of Bitcoin be above $70,000 on July 21?",
+        "status": "open",
+        "volume24h": 100617.30479899999,
+        "lastPrice": 0.002,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2952467",
+        "title": "Israel x Iran ceasefire continues through July 20?",
+        "status": "open",
+        "volume24h": 100256.567706,
+        "lastPrice": 0.992,
+        "closeTime": "2026-07-20T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608546",
+        "title": "Will Vinícius Júnior win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 98638.16700000002,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2967835",
+        "title": "US announces halt in Iran offensive operations by July 21?",
+        "status": "open",
+        "volume24h": 98359.35973300003,
+        "lastPrice": 0.037,
+        "closeTime": "2026-08-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931118",
+        "title": "Will LeBron James play for the New York Knicks in 2026-27?",
+        "status": "open",
+        "volume24h": 98259.62927999996,
+        "lastPrice": 0.002,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931100",
+        "title": "Will LeBron James play for the Boston Celtics in 2026-27?",
+        "status": "open",
+        "volume24h": 95439.128,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1163699",
+        "title": "Clarity Act signed into law in 2026?",
+        "status": "open",
+        "volume24h": 94844.188801,
+        "lastPrice": 0.42,
+        "closeTime": "2027-01-01T05:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2507618",
+        "title": "Kharg Island no longer under Iranian control by August 31?",
+        "status": "open",
+        "volume24h": 94175.55452099998,
+        "lastPrice": 0.071,
+        "closeTime": "2026-06-30T23:55:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2952471",
+        "title": "Israel x Iran ceasefire continues through July 22?",
+        "status": "open",
+        "volume24h": 92775.97388100003,
+        "lastPrice": 0.95,
+        "closeTime": "2026-07-22T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2995138",
+        "title": "Washington Nationals vs. Colorado Rockies: O/U 12.5",
+        "status": "open",
+        "volume24h": 91522.024401,
+        "lastPrice": 0.73,
+        "closeTime": "2026-07-21T00:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2951847",
+        "title": "Will Oleksandr Syrskyi be out as Ukraine's Commander-in-Chief by July 31, 2026?",
+        "status": "open",
+        "volume24h": 91484.33429299995,
+        "lastPrice": 0.684,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931105",
+        "title": "Will LeBron James play for the Dallas Mavericks in 2026-27?",
+        "status": "open",
+        "volume24h": 89964.17999999998,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758339",
+        "title": "Will Bitcoin reach $67,500 in July?",
+        "status": "open",
+        "volume24h": 89927.45254700002,
+        "lastPrice": 0.58,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608557",
+        "title": "Will Desire Doue win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 88181.59799999998,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758343",
+        "title": "Will Bitcoin dip to $57,500 in July?",
+        "status": "open",
+        "volume24h": 87915.59071600002,
+        "lastPrice": 0.05,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608561",
+        "title": "Will Luis Diaz win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 87197.06499999999,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2643400",
+        "title": "Will Iran announce withdrawal from MOU negotiations by July 31?",
+        "status": "open",
+        "volume24h": 85665.817363,
+        "lastPrice": 0.11,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758336",
+        "title": "Will Bitcoin reach $75,000 in July?",
+        "status": "open",
+        "volume24h": 85150.96779800004,
+        "lastPrice": 0.033,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758332",
+        "title": "Will Bitcoin reach $100,000 in July?",
+        "status": "open",
+        "volume24h": 84726.747504,
+        "lastPrice": 0.001,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2975224",
+        "title": "Iran full airspace closure by July 21?",
+        "status": "open",
+        "volume24h": 83697.85649299998,
+        "lastPrice": 0.025,
+        "closeTime": "2026-07-21T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2911873",
+        "title": "Bab el-Mandeb Strait effectively closed by July 31?",
+        "status": "open",
+        "volume24h": 83219.89304200003,
+        "lastPrice": 0.076,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922828",
+        "title": "Will the price of Bitcoin be above $68,000 on July 21?",
+        "status": "open",
+        "volume24h": 82666.98323100002,
+        "lastPrice": 0.013,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2959998",
+        "title": "Valorant: Twisted Minds Orchid vs Karmine Corp GC (BO3) - VCT Game Changers EMEA Group Stage",
+        "status": "open",
+        "volume24h": 82656.38663499999,
+        "lastPrice": 0.001,
+        "closeTime": "2026-07-20T23:30:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608549",
+        "title": "Will Cole Palmer win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 81937.65099999998,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2673621",
+        "title": "Will NVIDIA be the largest company in the world by market cap on July 31?",
+        "status": "open",
+        "volume24h": 80406.08540499998,
+        "lastPrice": 0.69,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2677861",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in July?",
+        "status": "open",
+        "volume24h": 80214.833958,
+        "lastPrice": 0.026,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "561235",
+        "title": "Will Wes Moore win the 2028 US Presidential Election?",
+        "status": "open",
+        "volume24h": 80090.68292600002,
+        "lastPrice": 0.009,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243307",
+        "title": "Will Orlando Magic win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 80020.16125,
+        "lastPrice": 0.009,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758338",
+        "title": "Will Bitcoin reach $70,000 in July?",
+        "status": "open",
+        "volume24h": 78720.63458900002,
+        "lastPrice": 0.24,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2677860",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in July?",
+        "status": "open",
+        "volume24h": 77333.36668999998,
+        "lastPrice": 0.012,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2995356",
+        "title": "Bitcoin Up or Down - July 20, 9:00PM-9:05PM ET",
+        "status": "open",
+        "volume24h": 76987.17541500002,
+        "lastPrice": 0.18,
+        "closeTime": "2026-07-21T01:05:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1349167",
+        "title": "Will San Jose Earthquakes win the 2026 MLS Cup?",
+        "status": "open",
+        "volume24h": 76986.68471400002,
+        "lastPrice": 0.042,
+        "closeTime": "2026-12-19T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "677407",
+        "title": "China x Taiwan military clash before 2027?",
+        "status": "open",
+        "volume24h": 76936.86533999999,
+        "lastPrice": 0.073,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2877483",
+        "title": "Will Elon Musk post 220-239 tweets from July 14 to July 21, 2026?",
+        "status": "open",
+        "volume24h": 76233.481424,
+        "lastPrice": 0.001,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931119",
+        "title": "Will LeBron James play for the Oklahoma City Thunder in 2026-27?",
+        "status": "open",
+        "volume24h": 75694.995,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2995865",
+        "title": "Iran invades Kuwait by July 31?",
+        "status": "open",
+        "volume24h": 75314.958926,
+        "lastPrice": 0.032,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "679018",
+        "title": "Will Marine Le Pen win the 2027 French presidential election?",
+        "status": "open",
+        "volume24h": 74354.626283,
+        "lastPrice": 0.315,
+        "closeTime": "2027-04-30T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559690",
+        "title": "Will Kim Kardashian win the 2028 Democratic presidential nomination?",
+        "status": "open",
+        "volume24h": 73622.96608,
+        "lastPrice": 0.003,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2730119",
+        "title": "Will WTI Crude Oil (WTI) hit (LOW) $65 in July?",
+        "status": "open",
+        "volume24h": 72009.529251,
+        "lastPrice": 0.027,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2877463",
+        "title": "Will Elon Musk post 140-159 tweets from July 14 to July 21, 2026?",
+        "status": "open",
+        "volume24h": 71953.06499399999,
+        "lastPrice": 0.67,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2176270",
+        "title": "Strait of Hormuz traffic returns to normal by December 31?",
+        "status": "open",
+        "volume24h": 71902.82801999999,
+        "lastPrice": 0.55,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "567621",
+        "title": "Will China invade Taiwan by end of 2026?",
+        "status": "open",
+        "volume24h": 71174.97934599956,
+        "lastPrice": 0.044,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2986352",
+        "title": "Bloomfield Hills: Alexis Galarneau vs Pablo Llamas Ruiz",
+        "status": "open",
+        "volume24h": 70916.92317400016,
+        "lastPrice": 0.506,
+        "closeTime": "2026-07-27T14:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "3001030",
+        "title": "Spread: New York Liberty (-4.5)",
+        "status": "open",
+        "volume24h": 69877.78010900001,
+        "lastPrice": 0.56,
+        "closeTime": "2026-07-21T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2877474",
+        "title": "Will Elon Musk post 180-199 tweets from July 14 to July 21, 2026?",
+        "status": "open",
+        "volume24h": 69853.083595,
+        "lastPrice": 0.025,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1130018",
+        "title": "Will Civic Platform (GP) gain the most seats in the next Russian parliamentary election?",
+        "status": "open",
+        "volume24h": 69828.83200000001,
+        "lastPrice": 0.001,
+        "closeTime": "2026-09-30T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1130017",
+        "title": "Will Rodina gain the most seats in the next Russian parliamentary election?",
+        "status": "open",
+        "volume24h": 69651.76299999999,
+        "lastPrice": 0.001,
+        "closeTime": "2026-09-30T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2758345",
+        "title": "Will Bitcoin dip to $52,500 in July?",
+        "status": "open",
+        "volume24h": 69597.70798800001,
+        "lastPrice": 0.01,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2995866",
+        "title": "Iran invades Kuwait by August 31?",
+        "status": "open",
+        "volume24h": 69512.66779200002,
+        "lastPrice": 0.045,
+        "closeTime": "2026-08-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2937523",
+        "title": "US x Iran Effective Ceasefire by July 18?",
+        "status": "open",
+        "volume24h": 69365.380874,
+        "lastPrice": 0.003,
+        "closeTime": "2026-07-18T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2911874",
+        "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+        "status": "open",
+        "volume24h": 68442.927653,
+        "lastPrice": 0.16,
+        "closeTime": "2026-08-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "663583",
+        "title": "Will the Iranian regime fall before 2027?",
+        "status": "open",
+        "volume24h": 68270.95091599999,
+        "lastPrice": 0.11,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2952486",
+        "title": "Israel x Iran ceasefire continues through July 31?",
+        "status": "open",
+        "volume24h": 67468.536285,
+        "lastPrice": 0.67,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559692",
+        "title": "Will Jasmine Crockett win the 2028 Democratic presidential nomination?",
+        "status": "open",
+        "volume24h": 65781.30882499999,
+        "lastPrice": 0.006,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "666861",
+        "title": "Trump out as President before 2027?",
+        "status": "open",
+        "volume24h": 65065.53692999999,
+        "lastPrice": 0.08,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608556",
+        "title": "Will Julian Alvarez win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 63313.652999999984,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2686771",
+        "title": "Iran full airspace closure by August 31?",
+        "status": "open",
+        "volume24h": 62904.739091,
+        "lastPrice": 0.5,
+        "closeTime": "2026-08-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2853059",
+        "title": "Will Iran announce withdrawal from MOU negotiations by July 24?",
+        "status": "open",
+        "volume24h": 62833.97326699998,
+        "lastPrice": 0.043,
+        "closeTime": "2026-07-24T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2877479",
+        "title": "Will Elon Musk post 200-219 tweets from July 14 to July 21, 2026?",
+        "status": "open",
+        "volume24h": 62802.163842,
+        "lastPrice": 0.003,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2817896",
+        "title": "Will Bitcoin dip to $60,000 in July?",
+        "status": "open",
+        "volume24h": 62729.08424899998,
+        "lastPrice": 0.16,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2923467",
+        "title": "Will Bitcoin dip to $62,500 in July?",
+        "status": "open",
+        "volume24h": 62558.14795300002,
+        "lastPrice": 0.424,
+        "closeTime": "2026-08-01T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922161",
+        "title": "St. Louis Cardinals vs. Los Angeles Angels",
+        "status": "open",
+        "volume24h": 61425.315382999994,
+        "lastPrice": 0.51,
+        "closeTime": "2026-07-28T02:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2744060",
+        "title": "Will Samuel Alito announce his retirement by September 30, 2026?",
+        "status": "open",
+        "volume24h": 60952.551252,
+        "lastPrice": 0.08,
+        "closeTime": "2026-12-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2967836",
+        "title": "US announces halt in Iran offensive operations by July 24?",
+        "status": "open",
+        "volume24h": 60740.021942,
+        "lastPrice": 0.16,
+        "closeTime": "2026-08-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "1931110",
+        "title": "Will LeBron James play for the Indiana Pacers in 2026-27?",
+        "status": "open",
+        "volume24h": 59894.87,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T03:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "3001059",
+        "title": "Minnesota Lynx vs. Seattle Storm: O/U 175.5",
+        "status": "open",
+        "volume24h": 59525.524069,
+        "lastPrice": 0.49,
+        "closeTime": "2026-07-21T02:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608554",
+        "title": "Will Vitinha win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 59365.32499999998,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2951849",
+        "title": "Will Oleksandr Syrskyi be out as Ukraine's Commander-in-Chief by December 31, 2026?",
+        "status": "open",
+        "volume24h": 59200.82378900001,
+        "lastPrice": 0.9,
+        "closeTime": "2026-12-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2825538",
+        "title": "Las Vegas Aces vs. Toronto Tempo",
+        "status": "open",
+        "volume24h": 58849.539959,
+        "lastPrice": 0.96,
+        "closeTime": "2026-07-21T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608560",
+        "title": "Will Bruno Fernandes win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 58212.926999999974,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922815",
+        "title": "Will the price of Bitcoin be above $62,000 on July 21?",
+        "status": "open",
+        "volume24h": 57503.67334900001,
+        "lastPrice": 0.991,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "677366",
+        "title": "Will Russia capture Kostyantynivka by December 31, 2026?",
+        "status": "open",
+        "volume24h": 56969.60204,
+        "lastPrice": 0.871,
+        "closeTime": "2026-12-31T12:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "703257",
+        "title": "Will the US confirm that aliens exist before 2027?",
+        "status": "open",
+        "volume24h": 56511.69120499999,
+        "lastPrice": 0.05,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243310",
+        "title": "Will Washington Wizards win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 56241.7874,
+        "lastPrice": 0.014,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2952472",
+        "title": "Israel x Iran ceasefire continues through July 25?",
+        "status": "open",
+        "volume24h": 56199.97153700002,
+        "lastPrice": 0.82,
+        "closeTime": "2026-07-25T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243303",
+        "title": "Will Indiana Pacers win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 56120.372624,
+        "lastPrice": 0.017,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608544",
+        "title": "Will Mohamed Salah win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 56033.797999999995,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2430329",
+        "title": "Will Alibaba have the best AI model at the end of July 2026?",
+        "status": "open",
+        "volume24h": 55964.40900000001,
+        "lastPrice": 0.001,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243311",
+        "title": "Will Dallas Mavericks win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 53970.506,
+        "lastPrice": 0.005,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2832147",
+        "title": "Will Count Binface win the Clacton by-election?",
+        "status": "open",
+        "volume24h": 53930.921696,
+        "lastPrice": 0.047,
+        "closeTime": "2027-06-30T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2730116",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in July?",
+        "status": "open",
+        "volume24h": 53846.775249000006,
+        "lastPrice": 0.077,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "3006558",
+        "title": "LoL: HANJIN BRION vs Gen.G (BO1) - KeSPA Cup Group Stage",
+        "status": "open",
+        "volume24h": 53823.737005000025,
+        "lastPrice": 0.5,
+        "closeTime": "2026-07-21T15:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559651",
+        "title": "Xi Jinping out before 2027?",
+        "status": "open",
+        "volume24h": 53726.86469099999,
+        "lastPrice": 0.05,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2825565",
+        "title": "Minnesota Lynx vs. Seattle Storm",
+        "status": "open",
+        "volume24h": 53371.135351000004,
+        "lastPrice": 0.81,
+        "closeTime": "2026-07-21T02:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2243313",
+        "title": "Will Golden State Warriors win the 2027 NBA Finals?",
+        "status": "open",
+        "volume24h": 52721.042367999995,
+        "lastPrice": 0.019,
+        "closeTime": "2027-07-01T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "608558",
+        "title": "Will Raphinha win the 2026 Ballon d'Or?",
+        "status": "open",
+        "volume24h": 52512.349999999984,
+        "lastPrice": 0.001,
+        "closeTime": "2026-10-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2677862",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $100 in July?",
+        "status": "open",
+        "volume24h": 52401.99110799999,
+        "lastPrice": 0.092,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "682712",
+        "title": "Will Yair Golan be the next Prime Minister of Israel?",
+        "status": "open",
+        "volume24h": 52198.18881700001,
+        "lastPrice": 0.002,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2991932",
+        "title": "Spread: Atlanta Braves (-1.5)",
+        "status": "open",
+        "volume24h": 52152.83712499998,
+        "lastPrice": 0.28,
+        "closeTime": "2026-07-20T23:15:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2996343",
+        "title": "Will Bitcoin reach $66,000 on July 20?",
+        "status": "open",
+        "volume24h": 52088.331855000004,
+        "lastPrice": 0.207,
+        "closeTime": "2026-07-21T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922818",
+        "title": "Will the price of Bitcoin be above $64,000 on July 21?",
+        "status": "open",
+        "volume24h": 51704.319695,
+        "lastPrice": 0.96,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "562802",
+        "title": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+        "status": "open",
+        "volume24h": 51559.385187,
+        "lastPrice": 0.86,
+        "closeTime": "2026-11-03T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2991948",
+        "title": "New York Mets vs. Milwaukee Brewers: O/U 7.5",
+        "status": "open",
+        "volume24h": 51465.46726900002,
+        "lastPrice": 0.85,
+        "closeTime": "2026-07-20T23:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "559673",
+        "title": "Will John Fetterman win the 2028 Democratic presidential nomination?",
+        "status": "open",
+        "volume24h": 51399.966325,
+        "lastPrice": 0.003,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2333782",
+        "title": "Israel withdraws from Lebanon by July 31, 2026?",
+        "status": "open",
+        "volume24h": 51043.50772199999,
+        "lastPrice": 0.007,
+        "closeTime": "2026-07-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2673624",
+        "title": "Will Alphabet be the largest company in the world by market cap on July 31?",
+        "status": "open",
+        "volume24h": 50995.26053300001,
+        "lastPrice": 0.012,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2937527",
+        "title": "US x Iran Effective Ceasefire by August 31?",
+        "status": "open",
+        "volume24h": 50851.512,
+        "lastPrice": 0.54,
+        "closeTime": "2026-08-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "687642",
+        "title": "China x Japan military clash before 2027?",
+        "status": "open",
+        "volume24h": 50740.29519700001,
+        "lastPrice": 0.11,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2996340",
+        "title": "Will Bitcoin reach $67,000 on July 20?",
+        "status": "open",
+        "volume24h": 50702.483009,
+        "lastPrice": 0.003,
+        "closeTime": "2026-07-21T04:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2771335",
+        "title": "Will Manchester City win the 2026-27 English Premier League (EPL) Championship?",
+        "status": "open",
+        "volume24h": 50668.568311,
+        "lastPrice": 0.3,
+        "closeTime": "2027-05-30T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2992765",
+        "title": "Baltimore Orioles vs. Boston Red Sox: O/U 8.5",
+        "status": "open",
+        "volume24h": 50566.46094500001,
+        "lastPrice": 0.999,
+        "closeTime": "2026-07-20T23:10:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2922157",
+        "title": "Athletics vs. Arizona Diamondbacks",
+        "status": "open",
+        "volume24h": 50525.258725000014,
+        "lastPrice": 0.43,
+        "closeTime": "2026-07-28T01:40:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2910436",
+        "title": "US announces end of Iranian blockade by July 31, 2026?",
+        "status": "open",
+        "volume24h": 50002.218439000004,
+        "lastPrice": 0.13,
+        "closeTime": "2026-07-31T23:59:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2977598",
+        "title": "Spread: Las Vegas Aces (-10.5)",
+        "status": "open",
+        "volume24h": 49958.290622999986,
+        "lastPrice": 0.58,
+        "closeTime": "2026-07-21T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "616909",
+        "title": "Will 7 Fed rate cuts happen in 2026?",
+        "status": "open",
+        "volume24h": 49941.61409499997,
+        "lastPrice": 0.005,
+        "closeTime": "2026-12-31T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2877471",
+        "title": "Will Elon Musk post 160-179 tweets from July 14 to July 21, 2026?",
+        "status": "open",
+        "volume24h": 48901.09962999999,
+        "lastPrice": 0.31,
+        "closeTime": "2026-07-21T16:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "561248",
+        "title": "Will Vivek Ramaswamy win the 2028 US Presidential Election?",
+        "status": "open",
+        "volume24h": 48786.39,
+        "lastPrice": 0.002,
+        "closeTime": "2028-11-07T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2993351",
+        "title": "Spread: New York Liberty (-3.5)",
+        "status": "open",
+        "volume24h": 48524.490637999996,
+        "lastPrice": 0.58,
+        "closeTime": "2026-07-21T00:00:00Z"
+      },
+      {
+        "venue": "polymarket",
+        "marketId": "2730115",
+        "title": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in July?",
+        "status": "open",
+        "volume24h": 47921.91204999999,
+        "lastPrice": 0.014,
+        "closeTime": "2026-08-01T03:59:59.999Z"
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "kalshiMarketId": "KXNEXTISRAELPM-45JAN01-YGOL",
+      "polymarketMarketId": "682712",
+      "kalshiTitle": "Will Yair Golan be the next Prime Minister of Israel?",
+      "polymarketTitle": "Will Yair Golan be the next Prime Minister of Israel?",
+      "similarity": 1,
+      "observations": [
+        {
+          "at": "2026-07-21T01:05:30.918Z",
+          "kalshiPrice": 0.01,
+          "polymarketPrice": 0.002,
+          "gap": 0.008,
+          "kalshiVolume24h": 0,
+          "polymarketVolume24h": 52198.18881700001
+        }
+      ],
+      "firstSeenAt": "2026-07-21T01:05:30.918Z",
+      "lastSeenAt": "2026-07-21T01:05:30.918Z"
+    },
+    {
+      "kalshiMarketId": "KXPRESNOMD-28-PHI",
+      "polymarketMarketId": "559680",
+      "kalshiTitle": "Will Phil Murphy be the Democratic Presidential nominee in 2028?",
+      "polymarketTitle": "Will Phil Murphy win the 2028 Democratic presidential nomination?",
+      "similarity": 0.625,
+      "observations": [
+        {
+          "at": "2026-07-21T01:05:30.918Z",
+          "kalshiPrice": 0.001,
+          "polymarketPrice": 0.004,
+          "gap": -0.003,
+          "kalshiVolume24h": 1000,
+          "polymarketVolume24h": 112969.0095
+        }
+      ],
+      "firstSeenAt": "2026-07-21T01:05:30.918Z",
+      "lastSeenAt": "2026-07-21T01:05:30.918Z"
+    },
+    {
+      "kalshiMarketId": "KXPRESNOMD-28-JF",
+      "polymarketMarketId": "559673",
+      "kalshiTitle": "Will John Fetterman be the Democratic Presidential nominee in 2028?",
+      "polymarketTitle": "Will John Fetterman win the 2028 Democratic presidential nomination?",
+      "similarity": 0.625,
+      "observations": [
+        {
+          "at": "2026-07-21T01:05:30.918Z",
+          "kalshiPrice": 0.002,
+          "polymarketPrice": 0.003,
+          "gap": -0.001,
+          "kalshiVolume24h": 2333.2,
+          "polymarketVolume24h": 51399.966325
+        }
+      ],
+      "firstSeenAt": "2026-07-21T01:05:30.918Z",
+      "lastSeenAt": "2026-07-21T01:05:30.918Z"
+    }
+  ]
+}

@@ -365,7 +365,21 @@ export function buildCrossVenueDigest(signals: CrossVenueSignal[], cap = 8): str
 
 // --- Cross-venue history: pairs accumulate observations across runs ---------
 
-const MAX_PAIR_OBSERVATIONS = 90;
+export const MAX_PAIR_OBSERVATIONS = 90;
+
+/** One same-run quote comparison, shaped identically wherever the history
+ *  lives (the DB table locally, the committed state file in the scheduled
+ *  inbox job) so the two never drift. */
+export function observationFor(pair: EquivalentPair, at: Date): CrossVenueObservation {
+  return {
+    at: at.toISOString(),
+    kalshiPrice: pair.kalshi.lastPrice ?? 0,
+    polymarketPrice: pair.polymarket.lastPrice ?? 0,
+    gap: (pair.kalshi.lastPrice ?? 0) - (pair.polymarket.lastPrice ?? 0),
+    kalshiVolume24h: pair.kalshi.volume24h,
+    polymarketVolume24h: pair.polymarket.volume24h,
+  };
+}
 
 /** Record this run's quote comparison on every matched pair. Same-run
  *  numbers only; the rolling window keeps the table bounded. */
@@ -374,14 +388,7 @@ export async function recordPairObservations(pairs: EquivalentPair[], at = new D
   const database = await db();
   for (const pair of pairs) {
     if (!pair.kalshi.marketId || !pair.polymarket.marketId) continue;
-    const obs: CrossVenueObservation = {
-      at: at.toISOString(),
-      kalshiPrice: pair.kalshi.lastPrice ?? 0,
-      polymarketPrice: pair.polymarket.lastPrice ?? 0,
-      gap: (pair.kalshi.lastPrice ?? 0) - (pair.polymarket.lastPrice ?? 0),
-      kalshiVolume24h: pair.kalshi.volume24h,
-      polymarketVolume24h: pair.polymarket.volume24h,
-    };
+    const obs = observationFor(pair, at);
     const [existing] = await database
       .select()
       .from(crossVenuePairs)
@@ -610,9 +617,9 @@ export async function pruneSnapshots(days = 30): Promise<void> {
   await database.delete(marketSnapshots).where(lt(marketSnapshots.capturedAt, cutoff));
 }
 
-const KALSHI_URL = "https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open";
+export const KALSHI_URL = "https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open";
 // gamma serves at most 100 rows per call regardless of limit; page by offset
-const polymarketUrl = (offset: number) =>
+export const polymarketUrl = (offset: number) =>
   `https://gamma-api.polymarket.com/markets?limit=100&offset=${offset}&closed=false&order=volume24hr&ascending=false`;
 
 // Kalshi's unordered listing is dominated by auto-generated same-day sports
@@ -629,7 +636,7 @@ const polymarketUrl = (offset: number) =>
 const LONGDATED_CURSOR_KEY = "kalshi-longdated-cursor";
 const LONGDATED_PAGES_PER_RUN = 4; // 4k rows/run -> full rotation in ~a week of daily runs
 
-function kalshiLongDatedUrl(cursor: string): string {
+export function kalshiLongDatedUrl(cursor: string): string {
   const ts = Math.floor(Date.now() / 1000) + 5 * 86400;
   return (
     `https://api.elections.kalshi.com/trade-api/v2/markets?limit=1000&status=open&min_close_ts=${ts}` +
