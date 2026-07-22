@@ -3,70 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-21T23:36:21.734Z",
-    "weekOf": "2026-07-21",
+    "generatedAt": "2026-07-22T23:35:34.568Z",
+    "weekOf": "2026-07-22",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-21",
-        "channel": "Stuart LinkedIn",
-        "what": "The World Cup's real result comes after the final",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Refresh post-final data and avoid over-reading first-day movement."
-      },
-      {
-        "date": "2026-07-21",
-        "channel": "X",
-        "what": "Goldman Sachs draws a contract-specific compliance line",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Label this as a policy first reported before 13 July and recirculated during the 13-14 July news cycle. Attribute to the Financial Times/Bloomberg reporting."
-      },
-      {
-        "date": "2026-07-21",
-        "channel": "Stuart LinkedIn",
-        "what": "Coming Home GBA and the margin route into prediction markets",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm the NFA application and CFTC status directly. Separate application, rulebook amendment and approval. Use WuBlockchain only as the lead."
-      },
-      {
-        "date": "2026-07-21",
-        "channel": "Stuart LinkedIn",
-        "what": "Daily Intel: professional interfaces, margin and market structure",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Verify NFA/CFTC records; capture Kalshi Pro primary materials; tag Chris DeMuth Jr only against his published view."
-      },
-      {
-        "date": "2026-07-21",
-        "channel": "Stuart LinkedIn",
-        "what": "Kalshi Pro and the private-client signal",
-        "status": "scheduled",
-        "source": "master schedule",
-        "verification": "Confirm beta status, live functionality, the private-client division and Dillon Borgida’s role from primary company sources. Do not claim institutional adoption from product positioning alone."
-      },
-      {
-        "date": "2026-07-21",
-        "channel": "Stuart LinkedIn",
-        "what": "Prediction markets have entered the clinical-trial timeline",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use the official pilot announcement and rules. Confirm the 13-contract count, exact settlement sources and participant restrictions. AppliedXL provides intelligence; Kalshi remains responsible for market rules and final settlement."
-      },
-      {
-        "date": "2026-07-21",
-        "channel": "Stuart LinkedIn",
-        "what": "The revenue number nobody owns",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-07-22",
         "channel": "X",
@@ -402,6 +346,54 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-07-28",
+        "channel": "Stuart LinkedIn",
+        "what": "Polymarket can sit on Lazio's shirt while being blocked in Italy",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm the current Italian position, sponsorship status and any blocking measure."
+      },
+      {
+        "date": "2026-07-28",
+        "channel": "Stuart LinkedIn",
+        "what": "The Probability Citation Tracker",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Publish the rubric before scoring outlets. Give examples without implying bad faith where context was merely omitted."
+      },
+      {
+        "date": "2026-07-28",
+        "channel": "X",
+        "what": "FOMC market setup",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Confirm meeting timing and capture prices before the decision."
+      },
+      {
+        "date": "2026-07-28",
+        "channel": "X",
+        "what": "Kalshi wants to move beyond event contracts",
+        "status": "scheduled",
+        "source": "master schedule",
+        "verification": "Attribute the product plans to Reuters reporting and current discussions. Do not imply regulatory approval has been granted."
+      },
+      {
+        "date": "2026-07-28",
+        "channel": "Stuart LinkedIn",
+        "what": "Love Island and the spoiler supply chain",
+        "status": "conditional-/-reserve",
+        "source": "master schedule",
+        "verification": "Use only if fresh reporting or a new entertainment market makes the information-security angle timely again."
+      },
+      {
+        "date": "2026-07-28",
+        "channel": "X",
+        "what": "Marketing generates leads sales will not call. Here is the fix.",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -415,7 +407,7 @@
       "Verification gate due 2026-07-22: \"Post-tournament behaviour signal\" must not run without a primary source (Verify the signal and compare like-for-like periods.).",
       "Verification gate due 2026-07-23: \"North Carolina chooses taxation\" must not run without a primary source (Confirm signature, effective date and exact tax treatment.).",
       "Verification gate due 2026-07-24: \"Blockchain.com embeds Polymarket\" must not run without a primary source (Do not publish until Blockchain.com, Polymarket or a regulatory/product document confirms the integration, eligible markets and launch date.).",
-      "Verification gate due 2026-07-21: \"Daily Intel: professional interfaces, margin and market structure\" must not run without a primary source (Verify NFA/CFTC records; capture Kalshi Pro primary materials; tag Chris DeMuth Jr only against his published view.).",
+      "Verification gate due 2026-07-28: \"FOMC market setup\" must not run without a primary source (Confirm meeting timing and capture prices before the decision.).",
       "Verification gate due 2026-07-23: \"Daily Intel: the developer and infrastructure layer\" must not run without a primary source (Open and verify repositories, maintainers, supported platforms and recent activity before tagging.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
@@ -424,7 +416,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-21 (220 items)",
+      "window": "forward from 2026-07-22 (213 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -433,16 +425,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 193,
-          "pct": 0.877
+          "n": 187,
+          "pct": 0.878
         },
         "strait-up-growth": {
-          "n": 18,
-          "pct": 0.082
+          "n": 17,
+          "pct": 0.08
         },
         "igaming": {
           "n": 9,
-          "pct": 0.041
+          "pct": 0.042
         },
         "personal": {
           "n": 0,
