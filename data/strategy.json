@@ -3,110 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-22T23:35:34.568Z",
-    "weekOf": "2026-07-22",
+    "generatedAt": "2026-07-23T23:32:56.713Z",
+    "weekOf": "2026-07-23",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-22",
-        "channel": "X",
-        "what": "Post-tournament behaviour signal",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Verify the signal and compare like-for-like periods."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Prediction Markets Forum",
-        "what": "What would prove the World Cup created lasting users?",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Keep the prompt short and avoid leading members to one answer."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Stuart LinkedIn",
-        "what": "Daily Intel: compliance, education and category identity",
-        "status": "scheduled",
-        "source": "master schedule",
-        "verification": "Verify Austin’s identity before tagging; quote only published perspectives; check product and licensing claims."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Stuart LinkedIn",
-        "what": "Prediction markets are hiring a full operating stack",
-        "status": "scheduled",
-        "source": "master schedule",
-        "verification": "Refresh every cited role and remove closed vacancies."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Stuart LinkedIn",
-        "what": "Prediction markets have entered the restructuring slide",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Attribute the 500-role figure and competition wording to Reuters and Entain. Keep tax increases and broader cost reduction in the causal frame."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Stuart LinkedIn",
-        "what": "A CRM is a promise about how you sell. The database is the easy part.",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Stuart LinkedIn",
-        "what": "Retention is the missing World Cup number",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "All figures reported, not confirmed: 3m signups, 27% vs 9% share, $4.3bn winner market. Verify or keep \"reported\" labels before posting."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Prediction Markets Forum",
-        "what": "Retention is the missing World Cup number",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "All figures reported, not confirmed: 3m signups, 27% vs 9% share, $4.3bn winner market. Verify or keep \"reported\" labels before posting."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "X",
-        "what": "Retention is the missing World Cup number",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "All figures reported, not confirmed: 3m signups, 27% vs 9% share, $4.3bn winner market. Verify or keep \"reported\" labels before posting."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Stuart LinkedIn",
-        "what": "Surveillance architecture, not surveillance debate",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Witness list and hearing details reported in intel; check the official committee notice before naming witnesses publicly."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "Prediction Markets Forum",
-        "what": "Surveillance architecture, not surveillance debate",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Witness list and hearing details reported in intel; check the official committee notice before naming witnesses publicly."
-      },
-      {
-        "date": "2026-07-22",
-        "channel": "X",
-        "what": "Surveillance architecture, not surveillance debate",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Witness list and hearing details reported in intel; check the official committee notice before naming witnesses publicly."
-      },
       {
         "date": "2026-07-23",
         "channel": "X",
@@ -394,6 +298,54 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-07-29",
+        "channel": "X",
+        "what": "Cross-venue arbitrage dashboards",
+        "status": "unverified-watch",
+        "source": "master schedule",
+        "verification": "Verify the named service, timestamp both sides, align contract rules and prove both legs were executable before calling the trade guaranteed."
+      },
+      {
+        "date": "2026-07-29",
+        "channel": "Prediction Markets Forum",
+        "what": "What should an employee prediction-market policy contain?",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Refresh public examples of employer restrictions."
+      },
+      {
+        "date": "2026-07-29",
+        "channel": "X",
+        "what": "FOMC decision market reaction",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Use official Fed release time and timestamped prices."
+      },
+      {
+        "date": "2026-07-29",
+        "channel": "Stuart LinkedIn",
+        "what": "Rothera and the intermediary-owned exchange",
+        "status": "scheduled",
+        "source": "master schedule",
+        "verification": "Refresh public volume data immediately before publication and compare like-for-like. Confirm the ownership and regulatory structure from primary sources."
+      },
+      {
+        "date": "2026-07-29",
+        "channel": "X",
+        "what": "Regulatory clarity is becoming a distribution advantage",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm licences or approvals directly with the Gibraltar regulator and each company. Distinguish approval in principle from a live licence."
+      },
+      {
+        "date": "2026-07-29",
+        "channel": "Stuart LinkedIn",
+        "what": "A go-to-market plan that fits on one page",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -404,19 +356,19 @@
     ],
     "suggestions": [
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
-      "Verification gate due 2026-07-22: \"Post-tournament behaviour signal\" must not run without a primary source (Verify the signal and compare like-for-like periods.).",
       "Verification gate due 2026-07-23: \"North Carolina chooses taxation\" must not run without a primary source (Confirm signature, effective date and exact tax treatment.).",
       "Verification gate due 2026-07-24: \"Blockchain.com embeds Polymarket\" must not run without a primary source (Do not publish until Blockchain.com, Polymarket or a regulatory/product document confirms the integration, eligible markets and launch date.).",
       "Verification gate due 2026-07-28: \"FOMC market setup\" must not run without a primary source (Confirm meeting timing and capture prices before the decision.).",
-      "Verification gate due 2026-07-23: \"Daily Intel: the developer and infrastructure layer\" must not run without a primary source (Open and verify repositories, maintainers, supported platforms and recent activity before tagging.).",
+      "Verification gate due 2026-07-29: \"Cross-venue arbitrage dashboards\" must not run without a primary source (Verify the named service, timestamp both sides, align contract rules and prove both legs were executable before calling the trade guaranteed.).",
+      "Verification gate due 2026-07-29: \"FOMC decision market reaction\" must not run without a primary source (Use official Fed release time and timestamped prices.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 8% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 4% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 5% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-22 (213 items)",
+      "window": "forward from 2026-07-23 (201 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -425,16 +377,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 187,
-          "pct": 0.878
+          "n": 176,
+          "pct": 0.876
         },
         "strait-up-growth": {
-          "n": 17,
+          "n": 16,
           "pct": 0.08
         },
         "igaming": {
           "n": 9,
-          "pct": 0.042
+          "pct": 0.045
         },
         "personal": {
           "n": 0,
