@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-25T23:38:17.232Z",
-    "weekOf": "2026-07-25",
+    "generatedAt": "2026-07-26T23:35:48.982Z",
+    "weekOf": "2026-07-26",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-25",
-        "channel": "X",
-        "what": "CFTC comment-letter observations",
-        "status": "reactive",
-        "source": "master schedule",
-        "verification": "Read the original submission and separate commenter claims from Commission views."
-      },
-      {
-        "date": "2026-07-25",
-        "channel": "X",
-        "what": "AGA moves into the Wisconsin federal fight",
-        "status": "unverified-watch",
-        "source": "master schedule",
-        "verification": "Do not publish until the intervention filing or court docket is obtained directly. The current source is a secondary litigation tracker."
-      },
       {
         "date": "2026-07-27",
         "channel": "X",
@@ -250,6 +234,14 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-01",
+        "channel": "X",
+        "what": "Browser-extension distribution signal",
+        "status": "unverified-watch",
+        "source": "master schedule",
+        "verification": "Find an official Chrome Web Store policy notice or concrete product action."
       }
     ],
     "gaps": [
@@ -272,7 +264,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-25 (179 items)",
+      "window": "forward from 2026-07-26 (177 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -281,16 +273,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 156,
-          "pct": 0.872
+          "n": 154,
+          "pct": 0.87
         },
         "strait-up-growth": {
           "n": 14,
-          "pct": 0.078
+          "pct": 0.079
         },
         "igaming": {
           "n": 9,
-          "pct": 0.05
+          "pct": 0.051
         },
         "personal": {
           "n": 0,
