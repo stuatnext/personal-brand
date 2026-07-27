@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-07-27)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue divergence on Kalshi vs Polymarket: Kalshi lists \"Pandemic in 2026?\" (KXNEWOUTBREAK-P-26) and Polymarket lists \"New pandemic in 2026?\" (788518); these appear to be the same question. It trades at 5.0c on Kalshi and 10c on Polymarket, a 5 point gap. 24h volume $124 on Kalshi and $31k on Polymarket.",
+  "note": "1 signal(s) across 1 matched market pair(s)",
+  "capturedAt": "2026-07-27T08:14:24.731Z",
+  "sha256": "ce320817e4911431daa9981509c37470dfd3c3c8f1c5c977cdad554cc5a8a06c"
+}
