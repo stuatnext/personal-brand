@@ -3,8 +3,8 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-26T23:35:48.982Z",
-    "weekOf": "2026-07-26",
+    "generatedAt": "2026-07-27T23:41:02.997Z",
+    "weekOf": "2026-07-27",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
@@ -264,7 +264,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-26 (177 items)",
+      "window": "forward from 2026-07-27 (177 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
