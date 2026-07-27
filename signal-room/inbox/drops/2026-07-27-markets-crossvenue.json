@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-07-27)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Pandemic in 2026?\" (KXNEWOUTBREAK-P-26) and Polymarket lists \"Hantavirus pandemic in 2026?\" (2155000); these appear to be the same question. 98% of the $123k combined 24h volume is on Polymarket. It trades at 6.0c on Kalshi and 3.1c on Polymarket.",
+  "note": "1 signal(s) across 1 matched market pair(s)",
+  "capturedAt": "2026-07-27T22:33:11.441Z",
+  "sha256": "b193d8ebb2055496e10079da98cec36627cd0c812ddf81a117b6f2b832de5e8d"
+}
