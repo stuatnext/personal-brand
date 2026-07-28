@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-07-28)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Who will win the Ballon d'Or in 2026? (Michael Olise)\" (KXBALLONDOR-26-MOLI) and Polymarket lists \"Will Michael Olise win the 2026 Ballon d'Or?\" (608551); these appear to be the same question. 100% of the $49k combined 24h volume is on Polymarket. It trades at 1.0c on Kalshi and 0.3c on Polymarket.\n\nCross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Who will win the Ballon d'Or in 2026? (Khvicha Kvaratskhelia)\" (KXBALLONDOR-26-KKVA) and Polymarket lists \"Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?\" (608553); these appear to be the same question. 96% of the $37k combined 24h volume is on Polymarket. It trades at 1.0c on Kalshi and 0.8c on Polymarket.",
+  "note": "2 signal(s) across 5 matched market pair(s)",
+  "capturedAt": "2026-07-28T22:32:46.603Z",
+  "sha256": "aca58786ae5de2648d6ef1645c1d30e99ae6e94871779b0cd7bf53c7928b0752"
+}
