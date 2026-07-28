@@ -3,62 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-27T23:41:02.997Z",
-    "weekOf": "2026-07-27",
+    "generatedAt": "2026-07-28T23:35:06.724Z",
+    "weekOf": "2026-07-28",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-27",
-        "channel": "X",
-        "what": "CFTC prediction-markets comment deadline",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm the docket is still open and use the official 27 July deadline."
-      },
-      {
-        "date": "2026-07-27",
-        "channel": "X",
-        "what": "24/7 energy derivatives and perpetuals deadline",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use RIN 3038-AF75 and keep the energy-contract scope clear."
-      },
-      {
-        "date": "2026-07-27",
-        "channel": "Stuart LinkedIn",
-        "what": "Polymarket’s fake-win marketing problem",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Review the original WSJ investigation, Polymarket response and any regulator or lawsuit documents. Attribute every number and allegation."
-      },
-      {
-        "date": "2026-07-27",
-        "channel": "Prediction Markets Forum",
-        "what": "Can a prop-trading model build sports-market liquidity?",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Use OddsON’s own challenge terms. State that the starter account is simulated and avoid endorsing performance claims."
-      },
-      {
-        "date": "2026-07-27",
-        "channel": "Prediction Markets Forum",
-        "what": "When the settlement source can be manipulated",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm the Spotify request, artificial-stream removal, market wording, volume and settlement source. Separate proven manipulation from suspicion."
-      },
-      {
-        "date": "2026-07-27",
-        "channel": "Stuart LinkedIn",
-        "what": "Most efficiency projects add work",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-07-28",
         "channel": "Stuart LinkedIn",
@@ -242,6 +194,46 @@
         "status": "unverified-watch",
         "source": "master schedule",
         "verification": "Find an official Chrome Web Store policy notice or concrete product action."
+      },
+      {
+        "date": "2026-08-03",
+        "channel": "Stuart LinkedIn",
+        "what": "Prediction markets are becoming a browser layer over the internet",
+        "status": "conditional-/-backup",
+        "source": "master schedule",
+        "verification": "Verify the trigger. Do not cite an unconfirmed 1 August enforcement date."
+      },
+      {
+        "date": "2026-08-03",
+        "channel": "Stuart LinkedIn",
+        "what": "Trade surveillance becomes part of the product",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm the partnership and scope from Kalshi or Solidus Labs. Avoid implying the vendor guarantees market integrity."
+      },
+      {
+        "date": "2026-08-03",
+        "channel": "Stuart LinkedIn",
+        "what": "Kalshi probabilities inside ChatGPT’s answer layer",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Use the official OpenAI help article. Do not describe the display as in-chat trading or call it a commercial partnership unless either company confirms that language."
+      },
+      {
+        "date": "2026-08-03",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: 89% of June ADV came from sports",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Recheck the Jefferies definition of ADV, venue coverage, month and sports classification before publication."
+      },
+      {
+        "date": "2026-08-03",
+        "channel": "Stuart LinkedIn",
+        "what": "What Western playbooks get wrong about selling in SEA",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -264,7 +256,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-27 (177 items)",
+      "window": "forward from 2026-07-28 (171 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -273,16 +265,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 154,
-          "pct": 0.87
+          "n": 149,
+          "pct": 0.871
         },
         "strait-up-growth": {
-          "n": 14,
-          "pct": 0.079
+          "n": 13,
+          "pct": 0.076
         },
         "igaming": {
           "n": 9,
-          "pct": 0.051
+          "pct": 0.053
         },
         "personal": {
           "n": 0,
