@@ -3,62 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-07-29T23:37:50.485Z",
-    "weekOf": "2026-07-29",
+    "generatedAt": "2026-07-30T23:37:05.949Z",
+    "weekOf": "2026-07-30",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-07-29",
-        "channel": "X",
-        "what": "Cross-venue arbitrage dashboards",
-        "status": "unverified-watch",
-        "source": "master schedule",
-        "verification": "Verify the named service, timestamp both sides, align contract rules and prove both legs were executable before calling the trade guaranteed."
-      },
-      {
-        "date": "2026-07-29",
-        "channel": "Prediction Markets Forum",
-        "what": "What should an employee prediction-market policy contain?",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Refresh public examples of employer restrictions."
-      },
-      {
-        "date": "2026-07-29",
-        "channel": "X",
-        "what": "FOMC decision market reaction",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Use official Fed release time and timestamped prices."
-      },
-      {
-        "date": "2026-07-29",
-        "channel": "Stuart LinkedIn",
-        "what": "Rothera and the intermediary-owned exchange",
-        "status": "scheduled",
-        "source": "master schedule",
-        "verification": "Refresh public volume data immediately before publication and compare like-for-like. Confirm the ownership and regulatory structure from primary sources."
-      },
-      {
-        "date": "2026-07-29",
-        "channel": "X",
-        "what": "Regulatory clarity is becoming a distribution advantage",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm licences or approvals directly with the Gibraltar regulator and each company. Distinguish approval in principle from a live licence."
-      },
-      {
-        "date": "2026-07-29",
-        "channel": "Stuart LinkedIn",
-        "what": "A go-to-market plan that fits on one page",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-07-30",
         "channel": "X",
@@ -210,6 +162,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-05",
+        "channel": "Prediction Markets Forum",
+        "what": "Who should own prediction-market discovery?",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Make the prompt additive to the browser or intermediary post."
+      },
+      {
+        "date": "2026-08-05",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Roxanne Bras Petraeus and the employee-policy gap",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm current role, exact wording, relevant posts and any company-policy examples. Request a short comment if possible."
+      },
+      {
+        "date": "2026-08-05",
+        "channel": "Stuart LinkedIn",
+        "what": "The best negotiators give away the thing that costs them nothing",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -220,11 +196,11 @@
     ],
     "suggestions": [
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
-      "Verification gate due 2026-07-29: \"Cross-venue arbitrage dashboards\" must not run without a primary source (Verify the named service, timestamp both sides, align contract rules and prove both legs were executable before calling the trade guaranteed.).",
-      "Verification gate due 2026-07-29: \"FOMC decision market reaction\" must not run without a primary source (Use official Fed release time and timestamped prices.).",
+      "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
       "Verification gate due 2026-07-31: \"Growth forecasts and the Prospect / Foris DAX FCM lead\" must not run without a primary source (Locate the signed LOI, company filing or official release. Confirm entity names, scope, regulatory status and whether the agreement is binding.).",
       "Verification gate due 2026-07-31: \"Spider-Man and Ariana Grande release day\" must not run without a primary source (Confirm official 31 July releases and capture live market wording and liquidity.).",
       "Verification gate due 2026-08-01: \"Browser-extension distribution signal\" must not run without a primary source (Find an official Chrome Web Store policy notice or concrete product action.).",
+      "Verification gate due 2026-08-03: \"Prediction markets are becoming a browser layer over the internet\" must not run without a primary source (Verify the trigger. Do not cite an unconfirmed 1 August enforcement date.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 7% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
@@ -232,7 +208,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-07-29 (165 items)",
+      "window": "forward from 2026-07-30 (159 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -241,16 +217,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 144,
-          "pct": 0.873
+          "n": 139,
+          "pct": 0.874
         },
         "strait-up-growth": {
-          "n": 12,
-          "pct": 0.073
+          "n": 11,
+          "pct": 0.069
         },
         "igaming": {
           "n": 9,
-          "pct": 0.055
+          "pct": 0.057
         },
         "personal": {
           "n": 0,
