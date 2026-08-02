@@ -3,22 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-01T23:34:55.024Z",
-    "weekOf": "2026-08-01",
+    "generatedAt": "2026-08-02T23:36:14.526Z",
+    "weekOf": "2026-08-02",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-01",
-        "channel": "X",
-        "what": "Browser-extension distribution signal",
-        "status": "unverified-watch",
-        "source": "master schedule",
-        "verification": "Find an official Chrome Web Store policy notice or concrete product action."
-      },
       {
         "date": "2026-08-03",
         "channel": "Stuart LinkedIn",
@@ -186,6 +178,14 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-08",
+        "channel": "X",
+        "what": "ODD SPOT #01: Kalshi at an Austin comedy club",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Confirm the partnership, venue, timing and activation. Do not infer a broader sponsorship strategy from one placement."
       }
     ],
     "gaps": [
@@ -197,10 +197,10 @@
     "suggestions": [
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-08-01: \"Browser-extension distribution signal\" must not run without a primary source (Find an official Chrome Web Store policy notice or concrete product action.).",
       "Verification gate due 2026-08-03: \"Prediction markets are becoming a browser layer over the internet\" must not run without a primary source (Verify the trigger. Do not cite an unconfirmed 1 August enforcement date.).",
       "Verification gate due 2026-08-07: \"US jobs report\" must not run without a primary source (Confirm BLS release and capture prices.).",
       "Verification gate due 2026-08-06: \"THE TAPE #01: White Swan Data and Bernard Marantelli\" must not run without a primary source (Verify the founder role, company history, Texas lottery figure, Kalshi contest terms and image rights before publication.).",
+      "Verification gate due 2026-08-08: \"ODD SPOT #01: Kalshi at an Austin comedy club\" must not run without a primary source (Confirm the partnership, venue, timing and activation. Do not infer a broader sponsorship strategy from one placement.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 7% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
@@ -208,7 +208,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-01 (149 items)",
+      "window": "forward from 2026-08-02 (148 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -217,16 +217,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 130,
+          "n": 129,
           "pct": 0.872
         },
         "strait-up-growth": {
           "n": 10,
-          "pct": 0.067
+          "pct": 0.068
         },
         "igaming": {
           "n": 9,
-          "pct": 0.06
+          "pct": 0.061
         },
         "personal": {
           "n": 0,
