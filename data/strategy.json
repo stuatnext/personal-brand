@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-04T23:37:55.335Z",
-    "weekOf": "2026-08-04",
+    "generatedAt": "2026-08-05T23:33:33.719Z",
+    "weekOf": "2026-08-05",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-04",
-        "channel": "X",
-        "what": "AI crowds may still behave like one crowd",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Check the paper and avoid universal claims from a narrow study."
-      },
-      {
-        "date": "2026-08-04",
-        "channel": "X",
-        "what": "Prediction-market ETFs reach the SEC queue",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm the number of filings, issuers, product structures and SEC status directly in EDGAR or official notices."
-      },
-      {
-        "date": "2026-08-04",
-        "channel": "X",
-        "what": "Singapore is a hub, not the whole market",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-05",
         "channel": "Prediction Markets Forum",
@@ -170,6 +146,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-11",
+        "channel": "X",
+        "what": "The exchange may not own discovery",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use current product examples and avoid unverified adoption claims."
+      },
+      {
+        "date": "2026-08-11",
+        "channel": "Prediction Markets Forum",
+        "what": "What changes when only AI agents trade?",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm the projects are live, their rules, model families, capital and results. Clearly label demos and experiments."
       }
     ],
     "gaps": [
@@ -179,6 +171,7 @@
       }
     ],
     "suggestions": [
+      "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
       "Verification gate due 2026-08-07: \"US jobs report\" must not run without a primary source (Confirm BLS release and capture prices.).",
@@ -191,7 +184,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-04 (143 items)",
+      "window": "forward from 2026-08-05 (140 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -200,16 +193,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 125,
-          "pct": 0.874
+          "n": 123,
+          "pct": 0.879
         },
         "strait-up-growth": {
-          "n": 9,
-          "pct": 0.063
+          "n": 8,
+          "pct": 0.057
         },
         "igaming": {
           "n": 9,
-          "pct": 0.063
+          "pct": 0.064
         },
         "personal": {
           "n": 0,
