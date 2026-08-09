@@ -3,22 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-08T23:01:16.147Z",
-    "weekOf": "2026-08-08",
+    "generatedAt": "2026-08-09T23:02:50.297Z",
+    "weekOf": "2026-08-09",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-08",
-        "channel": "X",
-        "what": "ODD SPOT #01: Kalshi at an Austin comedy club",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Confirm the partnership, venue, timing and activation. Do not infer a broader sponsorship strategy from one placement."
-      },
       {
         "date": "2026-08-10",
         "channel": "Stuart LinkedIn",
@@ -176,7 +168,6 @@
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
       "Verification gate due 2026-08-12: \"US CPI market check\" must not run without a primary source (Confirm BLS release time and capture timestamped prices.).",
       "Verification gate due 2026-08-14: \"Post-World Cup retention check\" must not run without a primary source (Confirm methodology and compare equal periods.).",
-      "Verification gate due 2026-08-08: \"ODD SPOT #01: Kalshi at an Austin comedy club\" must not run without a primary source (Confirm the partnership, venue, timing and activation. Do not infer a broader sponsorship strategy from one placement.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 4% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
@@ -184,7 +175,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-08 (127 items)",
+      "window": "forward from 2026-08-09 (126 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -193,12 +184,12 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 113,
-          "pct": 0.89
+          "n": 112,
+          "pct": 0.889
         },
         "strait-up-growth": {
           "n": 5,
-          "pct": 0.039
+          "pct": 0.04
         },
         "igaming": {
           "n": 9,
