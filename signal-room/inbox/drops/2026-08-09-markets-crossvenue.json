@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-08-09)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Will Beau Hossler win the Wyndham Championship?\" (KXPGATOUR-WYC26-BHOS) and Polymarket lists \"Will Beau Hossler win the 2026 Wyndham Championship?\" (3263418); these appear to be the same question. 97% of the $2.6m combined 24h volume is on Kalshi. It trades at 0.1c on Kalshi and 3.8c on Polymarket.\n\nCross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Will Michael Brennan win the Wyndham Championship?\" (KXPGATOUR-WYC26-MBRE) and Polymarket lists \"Will Michael Brennan win the 2026 Wyndham Championship?\" (3262770); these appear to be the same question. 98% of the $2.5m combined 24h volume is on Kalshi. It trades at 100c on Kalshi and 98c on Polymarket.",
+  "note": "2 signal(s) across 2 matched market pair(s)",
+  "capturedAt": "2026-08-09T21:56:48.725Z",
+  "sha256": "70a658e73f10cc40262bc2c7d30b6dc3e4e4c834651d87b9cc778c0ad6d786c3"
+}
