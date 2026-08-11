@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-10T23:15:13.224Z",
-    "weekOf": "2026-08-10",
+    "generatedAt": "2026-08-11T23:21:16.688Z",
+    "weekOf": "2026-08-11",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-10",
-        "channel": "Stuart LinkedIn",
-        "what": "The next prediction-market trader may not be human",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Verify examples of live agents or clearly label experiments."
-      },
-      {
-        "date": "2026-08-10",
-        "channel": "X",
-        "what": "NUMBER OF THE WEEK: female weekly active users rose 106% around Love Island",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Verify period, platform definition, comparison base and whether 26% refers to users, traders or another cohort."
-      },
-      {
-        "date": "2026-08-10",
-        "channel": "Stuart LinkedIn",
-        "what": "Raise the price or narrow the offer. Doing neither is the trap.",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-11",
         "channel": "X",
@@ -154,6 +130,38 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-17",
+        "channel": "Stuart LinkedIn",
+        "what": "NEXTPredict Settlement Ambiguity Index",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Define a transparent scoring methodology and archive the exact rule version used."
+      },
+      {
+        "date": "2026-08-17",
+        "channel": "Stuart LinkedIn",
+        "what": "Who actually profits on a prediction-market exchange?",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact."
+      },
+      {
+        "date": "2026-08-17",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: roughly 2,000 markets visible in Kalshi Pro",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Refresh the visible market count immediately before publication and distinguish listed, open and actively liquid markets."
+      },
+      {
+        "date": "2026-08-17",
+        "channel": "X",
+        "what": "Launch small, on purpose",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -168,14 +176,15 @@
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
       "Verification gate due 2026-08-12: \"US CPI market check\" must not run without a primary source (Confirm BLS release time and capture timestamped prices.).",
       "Verification gate due 2026-08-14: \"Post-World Cup retention check\" must not run without a primary source (Confirm methodology and compare equal periods.).",
+      "Verification gate due 2026-08-17: \"Who actually profits on a prediction-market exchange?\" must not run without a primary source (Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
-      "Pillar mix off target: \"strait-up-growth\" is 4% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"strait-up-growth\" is 3% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"igaming\" is 7% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-10 (126 items)",
+      "window": "forward from 2026-08-11 (123 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -184,16 +193,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 112,
-          "pct": 0.889
+          "n": 110,
+          "pct": 0.894
         },
         "strait-up-growth": {
-          "n": 5,
-          "pct": 0.04
+          "n": 4,
+          "pct": 0.033
         },
         "igaming": {
           "n": 9,
-          "pct": 0.071
+          "pct": 0.073
         },
         "personal": {
           "n": 0,
