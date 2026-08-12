@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-11T23:21:16.688Z",
-    "weekOf": "2026-08-11",
+    "generatedAt": "2026-08-12T23:20:10.123Z",
+    "weekOf": "2026-08-12",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-11",
-        "channel": "X",
-        "what": "The exchange may not own discovery",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use current product examples and avoid unverified adoption claims."
-      },
-      {
-        "date": "2026-08-11",
-        "channel": "Prediction Markets Forum",
-        "what": "What changes when only AI agents trade?",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm the projects are live, their rules, model families, capital and results. Clearly label demos and experiments."
-      },
       {
         "date": "2026-08-12",
         "channel": "X",
@@ -162,6 +146,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-18",
+        "channel": "Stuart LinkedIn",
+        "what": "Prediction markets enter the public-health conversation",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Use reputable reporting and named clinical sources. Protect anonymous individuals and avoid treating forum anecdotes as prevalence data."
+      },
+      {
+        "date": "2026-08-18",
+        "channel": "X",
+        "what": "THE SIGNAL #01: latest verified company move",
+        "status": "reactive",
+        "source": "master schedule",
+        "verification": "Use a primary source and label the exact status: launched, beta, filed, approved, partnered or reported."
+      },
+      {
+        "date": "2026-08-18",
+        "channel": "Stuart LinkedIn",
+        "what": "In iGaming, retention is the product",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -184,7 +192,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-11 (123 items)",
+      "window": "forward from 2026-08-12 (121 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -193,8 +201,8 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 110,
-          "pct": 0.894
+          "n": 108,
+          "pct": 0.893
         },
         "strait-up-growth": {
           "n": 4,
@@ -202,7 +210,7 @@
         },
         "igaming": {
           "n": 9,
-          "pct": 0.073
+          "pct": 0.074
         },
         "personal": {
           "n": 0,
