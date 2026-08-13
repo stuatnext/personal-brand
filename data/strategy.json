@@ -3,54 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-12T23:20:10.123Z",
-    "weekOf": "2026-08-12",
+    "generatedAt": "2026-08-13T23:21:19.657Z",
+    "weekOf": "2026-08-13",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-12",
-        "channel": "X",
-        "what": "US CPI market check",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Confirm BLS release time and capture timestamped prices."
-      },
-      {
-        "date": "2026-08-12",
-        "channel": "Prediction Markets Forum",
-        "what": "LLM confidence is not trading skill",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Verify the underlying research and state limitations."
-      },
-      {
-        "date": "2026-08-12",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE: Neil Paine and prediction markets as editorial infrastructure",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm current role, examples used, attribution and whether the data is editorial, sponsored or both."
-      },
-      {
-        "date": "2026-08-12",
-        "channel": "Prediction Markets Forum",
-        "what": "HINDCAST: did the model forecast, or remember the future?",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use the paper’s actual protocol and avoid treating Reddit as a complete information environment."
-      },
-      {
-        "date": "2026-08-12",
-        "channel": "X",
-        "what": "The pipeline meeting that could be an email",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-13",
         "channel": "Stuart LinkedIn",
@@ -170,6 +130,38 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-19",
+        "channel": "X",
+        "what": "The Price of One Percentage Point",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use executable depth snapshots and state whether the move persisted."
+      },
+      {
+        "date": "2026-08-19",
+        "channel": "X",
+        "what": "When the market comment section becomes a trading tool",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Locate original reporting and preserved examples. Attribute platform response and avoid amplifying false material unnecessarily."
+      },
+      {
+        "date": "2026-08-19",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Udesh Jha and the risk function behind category expansion",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Verify current title, employment history, product remit and any public comments on expansion."
+      },
+      {
+        "date": "2026-08-19",
+        "channel": "Stuart LinkedIn",
+        "what": "Prediction markets are pulling the sharp money. Sportsbooks should be paying attention.",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -182,17 +174,16 @@
       "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-08-12: \"US CPI market check\" must not run without a primary source (Confirm BLS release time and capture timestamped prices.).",
       "Verification gate due 2026-08-14: \"Post-World Cup retention check\" must not run without a primary source (Confirm methodology and compare equal periods.).",
       "Verification gate due 2026-08-17: \"Who actually profits on a prediction-market exchange?\" must not run without a primary source (Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 3% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 7% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 8% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-12 (121 items)",
+      "window": "forward from 2026-08-13 (116 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -201,16 +192,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 108,
-          "pct": 0.893
+          "n": 104,
+          "pct": 0.897
         },
         "strait-up-growth": {
-          "n": 4,
-          "pct": 0.033
+          "n": 3,
+          "pct": 0.026
         },
         "igaming": {
           "n": 9,
-          "pct": 0.074
+          "pct": 0.078
         },
         "personal": {
           "n": 0,
