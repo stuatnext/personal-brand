@@ -3,54 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-13T23:21:19.657Z",
-    "weekOf": "2026-08-13",
+    "generatedAt": "2026-08-14T22:55:18.199Z",
+    "weekOf": "2026-08-14",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-13",
-        "channel": "Stuart LinkedIn",
-        "what": "The useful signal is the software appearing around the exchanges",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use credible current companies and confirm what each actually provides."
-      },
-      {
-        "date": "2026-08-13",
-        "channel": "Prediction Markets Forum",
-        "what": "AI forecasting accuracy is not live trading performance",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Read the paper and state the test period, capital, platform differences and limitations. Avoid ranking models beyond the reported experiment."
-      },
-      {
-        "date": "2026-08-13",
-        "channel": "Prediction Markets Forum",
-        "what": "AI forecasting benchmarks need a clock, not merely a score",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Keep each benchmark’s scope and date separate. Do not compare headline scores that use different datasets or execution assumptions."
-      },
-      {
-        "date": "2026-08-13",
-        "channel": "Stuart LinkedIn",
-        "what": "THE Q&A: Sarah Razaq Sallis",
-        "status": "planned / invite-gated",
-        "source": "master schedule",
-        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
-      },
-      {
-        "date": "2026-08-13",
-        "channel": "Stuart LinkedIn",
-        "what": "Data hygiene is a leadership habit. The cleanup project is the symptom.",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-14",
         "channel": "X",
@@ -162,6 +122,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-20",
+        "channel": "Stuart LinkedIn",
+        "what": "Prediction markets map what can be settled",
+        "status": "ready",
+        "source": "master schedule",
+        "verification": "Read the full paper, explain the dataset and validation limits, and avoid overgeneralising beyond Africa and Latin America."
+      },
+      {
+        "date": "2026-08-20",
+        "channel": "Stuart LinkedIn",
+        "what": "THE Q&A: Nicole Moran, Ph.D.",
+        "status": "planned / invite-gated",
+        "source": "master schedule",
+        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
+      },
+      {
+        "date": "2026-08-20",
+        "channel": "X",
+        "what": "Bonus abuse is a pricing problem wearing a fraud costume",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -178,12 +162,12 @@
       "Verification gate due 2026-08-17: \"Who actually profits on a prediction-market exchange?\" must not run without a primary source (Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
-      "Pillar mix off target: \"strait-up-growth\" is 3% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"strait-up-growth\" is 2% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"igaming\" is 8% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-13 (116 items)",
+      "window": "forward from 2026-08-14 (111 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -192,16 +176,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 104,
-          "pct": 0.897
+          "n": 100,
+          "pct": 0.901
         },
         "strait-up-growth": {
-          "n": 3,
-          "pct": 0.026
+          "n": 2,
+          "pct": 0.018
         },
         "igaming": {
           "n": 9,
-          "pct": 0.078
+          "pct": 0.081
         },
         "personal": {
           "n": 0,
