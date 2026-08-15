@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-14T22:55:18.199Z",
-    "weekOf": "2026-08-14",
+    "generatedAt": "2026-08-15T22:47:51.893Z",
+    "weekOf": "2026-08-15",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-14",
-        "channel": "X",
-        "what": "Post-World Cup retention check",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Confirm methodology and compare equal periods."
-      },
-      {
-        "date": "2026-08-14",
-        "channel": "Prediction Markets Forum",
-        "what": "Prediction-market volatility is its own thing",
-        "status": "ready",
-        "source": "master schedule",
-        "verification": "Read the full paper, reproduce only supported findings and clearly identify the Kalshi dataset and model limitations."
-      },
-      {
-        "date": "2026-08-14",
-        "channel": "Stuart LinkedIn",
-        "what": "Speed comes from removing decisions",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-17",
         "channel": "Stuart LinkedIn",
@@ -146,6 +122,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-21",
+        "channel": "Prediction Markets Forum",
+        "what": "The Reality Gap",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use only cases where the rule wording and official outcome are preserved."
+      },
+      {
+        "date": "2026-08-21",
+        "channel": "Prediction Markets Forum",
+        "what": "The 18-to-21 access gap",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm current venue age rules and cited medical or league proposals. Keep law, company policy and advocacy recommendations distinct."
+      },
+      {
+        "date": "2026-08-21",
+        "channel": "Stuart LinkedIn",
+        "what": "COMPANY FILE: UMA and the settlement layer behind Polymarket",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Archive UMA governance rules, Polymarket resolution wording, voting concentration and at least one completed dispute."
       }
     ],
     "gaps": [
@@ -158,16 +158,15 @@
       "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-08-14: \"Post-World Cup retention check\" must not run without a primary source (Confirm methodology and compare equal periods.).",
       "Verification gate due 2026-08-17: \"Who actually profits on a prediction-market exchange?\" must not run without a primary source (Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
-      "Pillar mix off target: \"strait-up-growth\" is 2% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"strait-up-growth\" is 1% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"igaming\" is 8% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-14 (111 items)",
+      "window": "forward from 2026-08-15 (108 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -176,16 +175,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 100,
-          "pct": 0.901
+          "n": 98,
+          "pct": 0.907
         },
         "strait-up-growth": {
-          "n": 2,
-          "pct": 0.018
+          "n": 1,
+          "pct": 0.009
         },
         "igaming": {
           "n": 9,
-          "pct": 0.081
+          "pct": 0.083
         },
         "personal": {
           "n": 0,
