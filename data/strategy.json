@@ -3,46 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-17T22:48:58.261Z",
-    "weekOf": "2026-08-17",
+    "generatedAt": "2026-08-18T22:49:04.738Z",
+    "weekOf": "2026-08-18",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-17",
-        "channel": "Stuart LinkedIn",
-        "what": "NEXTPredict Settlement Ambiguity Index",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Define a transparent scoring methodology and archive the exact rule version used."
-      },
-      {
-        "date": "2026-08-17",
-        "channel": "Stuart LinkedIn",
-        "what": "Who actually profits on a prediction-market exchange?",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact."
-      },
-      {
-        "date": "2026-08-17",
-        "channel": "X",
-        "what": "NUMBER OF THE WEEK: roughly 2,000 markets visible in Kalshi Pro",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Refresh the visible market count immediately before publication and distinguish listed, open and actively liquid markets."
-      },
-      {
-        "date": "2026-08-17",
-        "channel": "X",
-        "what": "Launch small, on purpose",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-18",
         "channel": "Stuart LinkedIn",
@@ -146,6 +114,38 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Archive UMA governance rules, Polymarket resolution wording, voting concentration and at least one completed dispute."
+      },
+      {
+        "date": "2026-08-24",
+        "channel": "Stuart LinkedIn",
+        "what": "Oracle Dependency Map",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm every source relationship from live market documentation."
+      },
+      {
+        "date": "2026-08-24",
+        "channel": "Stuart LinkedIn",
+        "what": "Prediction markets move inside the newsletter",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm the partnership, embed functionality and disclosure rules from Substack and Polymarket directly."
+      },
+      {
+        "date": "2026-08-24",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: how many jurisdictions now restrict prediction-market access?",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use regulator notices and platform help pages. Keep legal status, geoblocking and product withdrawal separate."
+      },
+      {
+        "date": "2026-08-24",
+        "channel": "Stuart LinkedIn",
+        "what": "The World Cup was an acquisition event. Autumn is the retention test.",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -158,15 +158,13 @@
       "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-08-17: \"Who actually profits on a prediction-market exchange?\" must not run without a primary source (Read the underlying report and Kalshi response. Attribute the $583.5m estimate and the methodological dispute; do not call it established fact.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
-      "Pillar mix off target: \"strait-up-growth\" is 1% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 8% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-17 (108 items)",
+      "window": "forward from 2026-08-18 (104 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -175,16 +173,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 98,
-          "pct": 0.907
+          "n": 95,
+          "pct": 0.913
         },
         "strait-up-growth": {
-          "n": 1,
-          "pct": 0.009
+          "n": 0,
+          "pct": 0
         },
         "igaming": {
           "n": 9,
-          "pct": 0.083
+          "pct": 0.087
         },
         "personal": {
           "n": 0,
@@ -193,7 +191,6 @@
       },
       "underweight": [
         "strait-up-growth",
-        "igaming",
         "personal"
       ]
     },
