@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-18T22:49:04.738Z",
-    "weekOf": "2026-08-18",
+    "generatedAt": "2026-08-19T22:49:09.035Z",
+    "weekOf": "2026-08-19",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-18",
-        "channel": "Stuart LinkedIn",
-        "what": "Prediction markets enter the public-health conversation",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Use reputable reporting and named clinical sources. Protect anonymous individuals and avoid treating forum anecdotes as prevalence data."
-      },
-      {
-        "date": "2026-08-18",
-        "channel": "X",
-        "what": "THE SIGNAL #01: latest verified company move",
-        "status": "reactive",
-        "source": "master schedule",
-        "verification": "Use a primary source and label the exact status: launched, beta, filed, approved, partnered or reported."
-      },
-      {
-        "date": "2026-08-18",
-        "channel": "Stuart LinkedIn",
-        "what": "In iGaming, retention is the product",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-19",
         "channel": "X",
@@ -146,6 +122,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-25",
+        "channel": "X",
+        "what": "The Kalshi Concourse",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Confirm the partnership, venue naming and duration from MSG or Kalshi."
+      },
+      {
+        "date": "2026-08-25",
+        "channel": "Stuart LinkedIn",
+        "what": "How to tell if an industry sponsorship actually worked",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -161,10 +153,11 @@
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 8% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-18 (104 items)",
+      "window": "forward from 2026-08-19 (101 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -173,16 +166,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 95,
-          "pct": 0.913
+          "n": 93,
+          "pct": 0.921
         },
         "strait-up-growth": {
           "n": 0,
           "pct": 0
         },
         "igaming": {
-          "n": 9,
-          "pct": 0.087
+          "n": 8,
+          "pct": 0.079
         },
         "personal": {
           "n": 0,
@@ -191,6 +184,7 @@
       },
       "underweight": [
         "strait-up-growth",
+        "igaming",
         "personal"
       ]
     },
