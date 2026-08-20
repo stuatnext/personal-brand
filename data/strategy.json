@@ -3,46 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-19T22:49:09.035Z",
-    "weekOf": "2026-08-19",
+    "generatedAt": "2026-08-20T22:50:31.833Z",
+    "weekOf": "2026-08-20",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-19",
-        "channel": "X",
-        "what": "The Price of One Percentage Point",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use executable depth snapshots and state whether the move persisted."
-      },
-      {
-        "date": "2026-08-19",
-        "channel": "X",
-        "what": "When the market comment section becomes a trading tool",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Locate original reporting and preserved examples. Attribute platform response and avoid amplifying false material unnecessarily."
-      },
-      {
-        "date": "2026-08-19",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE: Udesh Jha and the risk function behind category expansion",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Verify current title, employment history, product remit and any public comments on expansion."
-      },
-      {
-        "date": "2026-08-19",
-        "channel": "Stuart LinkedIn",
-        "what": "Prediction markets are pulling the sharp money. Sportsbooks should be paying attention.",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-20",
         "channel": "Stuart LinkedIn",
@@ -138,6 +106,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-26",
+        "channel": "X",
+        "what": "The Overtime Tax",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Align equivalent markets and preserve rule text before the event."
+      },
+      {
+        "date": "2026-08-26",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Szymon Pawica and the natural-language trading interface",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm funding, founders, live-product status, supported venues and how user intent is translated into orders."
+      },
+      {
+        "date": "2026-08-26",
+        "channel": "X",
+        "what": "The trade-media model is shifting",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -153,11 +145,11 @@
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 8% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 7% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-19 (101 items)",
+      "window": "forward from 2026-08-20 (97 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -166,16 +158,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 93,
-          "pct": 0.921
+          "n": 90,
+          "pct": 0.928
         },
         "strait-up-growth": {
           "n": 0,
           "pct": 0
         },
         "igaming": {
-          "n": 8,
-          "pct": 0.079
+          "n": 7,
+          "pct": 0.072
         },
         "personal": {
           "n": 0,
