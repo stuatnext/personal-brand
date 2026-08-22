@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-21T22:49:00.807Z",
-    "weekOf": "2026-08-21",
+    "generatedAt": "2026-08-22T22:48:22.316Z",
+    "weekOf": "2026-08-22",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-21",
-        "channel": "Prediction Markets Forum",
-        "what": "The Reality Gap",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use only cases where the rule wording and official outcome are preserved."
-      },
-      {
-        "date": "2026-08-21",
-        "channel": "Prediction Markets Forum",
-        "what": "The 18-to-21 access gap",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm current venue age rules and cited medical or league proposals. Keep law, company policy and advocacy recommendations distinct."
-      },
-      {
-        "date": "2026-08-21",
-        "channel": "Stuart LinkedIn",
-        "what": "COMPANY FILE: UMA and the settlement layer behind Polymarket",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Archive UMA governance rules, Polymarket resolution wording, voting concentration and at least one completed dispute."
-      },
       {
         "date": "2026-08-24",
         "channel": "Stuart LinkedIn",
@@ -138,6 +114,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-28",
+        "channel": "Prediction Markets Forum",
+        "what": "Contract Question DNA",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Publish the classifier and manually validate a sample."
+      },
+      {
+        "date": "2026-08-28",
+        "channel": "Prediction Markets Forum",
+        "what": "What should count as prohibited information?",
+        "status": "verification-gated",
+        "source": "master schedule",
+        "verification": "Use DOJ and CFTC filings directly. Keep allegations, charges and convictions distinct."
+      },
+      {
+        "date": "2026-08-28",
+        "channel": "Stuart LinkedIn",
+        "what": "Odds are content now",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -154,11 +154,11 @@
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 6% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 7% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-21 (94 items)",
+      "window": "forward from 2026-08-22 (91 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -167,8 +167,8 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 88,
-          "pct": 0.936
+          "n": 85,
+          "pct": 0.934
         },
         "strait-up-growth": {
           "n": 0,
@@ -176,7 +176,7 @@
         },
         "igaming": {
           "n": 6,
-          "pct": 0.064
+          "pct": 0.066
         },
         "personal": {
           "n": 0,
