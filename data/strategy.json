@@ -3,46 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-24T22:49:49.623Z",
-    "weekOf": "2026-08-24",
+    "generatedAt": "2026-08-25T22:50:29.080Z",
+    "weekOf": "2026-08-25",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-24",
-        "channel": "Stuart LinkedIn",
-        "what": "Oracle Dependency Map",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm every source relationship from live market documentation."
-      },
-      {
-        "date": "2026-08-24",
-        "channel": "Stuart LinkedIn",
-        "what": "Prediction markets move inside the newsletter",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm the partnership, embed functionality and disclosure rules from Substack and Polymarket directly."
-      },
-      {
-        "date": "2026-08-24",
-        "channel": "X",
-        "what": "NUMBER OF THE WEEK: how many jurisdictions now restrict prediction-market access?",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use regulator notices and platform help pages. Keep legal status, geoblocking and product withdrawal separate."
-      },
-      {
-        "date": "2026-08-24",
-        "channel": "Stuart LinkedIn",
-        "what": "The World Cup was an acquisition event. Autumn is the retention test.",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-25",
         "channel": "X",
@@ -138,6 +106,30 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-08-31",
+        "channel": "Stuart LinkedIn",
+        "what": "Weather Station Arbitrage Atlas",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use official station IDs and document historical comparison methodology."
+      },
+      {
+        "date": "2026-08-31",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: the settlement-source dependency count",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Define the sample and classify primary source, licensed data, public webpage, oracle and discretionary resolution consistently."
+      },
+      {
+        "date": "2026-08-31",
+        "channel": "X",
+        "what": "What sponsors actually pay for is the room",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
       }
     ],
     "gaps": [
@@ -154,11 +146,11 @@
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 7% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 6% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-24 (91 items)",
+      "window": "forward from 2026-08-25 (87 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -167,16 +159,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 85,
-          "pct": 0.934
+          "n": 82,
+          "pct": 0.943
         },
         "strait-up-growth": {
           "n": 0,
           "pct": 0
         },
         "igaming": {
-          "n": 6,
-          "pct": 0.066
+          "n": 5,
+          "pct": 0.057
         },
         "personal": {
           "n": 0,
