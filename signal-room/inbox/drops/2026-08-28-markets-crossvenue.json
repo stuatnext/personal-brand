@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-08-28)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue divergence on Kalshi vs Polymarket: Kalshi lists \"Will Luiz Inácio Lula da Silva be on the ballot in the next Brazilian presidential election?\" (KXBRBALLOT-26-LULA) and Polymarket lists \"Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?\" (601819); these appear to be the same question. It trades at 96c on Kalshi and 58c on Polymarket, a 38 point gap. 24h volume $0 on Kalshi and $131k on Polymarket.",
+  "note": "1 signal(s) across 1 matched market pair(s)",
+  "capturedAt": "2026-08-28T22:13:53.143Z",
+  "sha256": "8a045cde6b3689e8e9ea8dcaa0d20eacd0858aae8e0f8238875a3d9dd0fe63ce"
+}
