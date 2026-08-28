@@ -3,70 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-26T23:49:37.476Z",
-    "weekOf": "2026-08-26",
+    "generatedAt": "2026-08-28T01:28:02.437Z",
+    "weekOf": "2026-08-28",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-26",
-        "channel": "X",
-        "what": "The Overtime Tax",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Align equivalent markets and preserve rule text before the event."
-      },
-      {
-        "date": "2026-08-26",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE: Szymon Pawica and the natural-language trading interface",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm funding, founders, live-product status, supported venues and how user intent is translated into orders."
-      },
-      {
-        "date": "2026-08-26",
-        "channel": "X",
-        "what": "The trade-media model is shifting",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
-      {
-        "date": "2026-08-27",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE #02: River Markets",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Verify YC cohort, founders, supported venues, product status and any usage claims."
-      },
-      {
-        "date": "2026-08-27",
-        "channel": "X",
-        "what": "The prediction-market lobbying layer is forming",
-        "status": "verification-gated",
-        "source": "master schedule",
-        "verification": "Confirm funding, leadership and stated positions from organisation filings and official material. Attribute claims about astroturfing carefully."
-      },
-      {
-        "date": "2026-08-27",
-        "channel": "Stuart LinkedIn",
-        "what": "THE Q&A: Harry Crane",
-        "status": "planned / invite-gated",
-        "source": "master schedule",
-        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
-      },
-      {
-        "date": "2026-08-27",
-        "channel": "Stuart LinkedIn",
-        "what": "Regulation is a moat if you treat compliance as a product",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-08-28",
         "channel": "Prediction Markets Forum",
@@ -114,6 +58,38 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
+      },
+      {
+        "date": "2026-09-02",
+        "channel": "X",
+        "what": "Settlement Source Reliability League",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Separate source latency from platform settlement latency."
+      },
+      {
+        "date": "2026-09-02",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Taraneh Derayati and 24/7 clearing infrastructure",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm current role, client claims, product scope and which event-driven markets are live or announced."
+      },
+      {
+        "date": "2026-09-03",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE #03: Connamara Technologies and EP3",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Verify awards, customer deployments, company leadership and any claim about market share or number of venues."
+      },
+      {
+        "date": "2026-09-03",
+        "channel": "Stuart LinkedIn",
+        "what": "THE Q&A: Jacob Ward",
+        "status": "planned / invite-gated",
+        "source": "master schedule",
+        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
       }
     ],
     "gaps": [
@@ -126,15 +102,15 @@
       "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-08-27: \"THE TAPE #02: River Markets\" must not run without a primary source (Verify YC cohort, founders, supported venues, product status and any usage claims.).",
+      "Verification gate due 2026-09-03: \"THE TAPE #03: Connamara Technologies and EP3\" must not run without a primary source (Verify awards, customer deployments, company leadership and any claim about market share or number of venues.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 5% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 3% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-26 (85 items)",
+      "window": "forward from 2026-08-28 (78 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -143,16 +119,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 81,
-          "pct": 0.953
+          "n": 76,
+          "pct": 0.974
         },
         "strait-up-growth": {
           "n": 0,
           "pct": 0
         },
         "igaming": {
-          "n": 4,
-          "pct": 0.047
+          "n": 2,
+          "pct": 0.026
         },
         "personal": {
           "n": 0,
