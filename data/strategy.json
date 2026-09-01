@@ -3,38 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-08-31T22:43:47.499Z",
-    "weekOf": "2026-08-31",
+    "generatedAt": "2026-09-01T22:43:39.469Z",
+    "weekOf": "2026-09-01",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-08-31",
-        "channel": "Stuart LinkedIn",
-        "what": "Weather Station Arbitrage Atlas",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use official station IDs and document historical comparison methodology."
-      },
-      {
-        "date": "2026-08-31",
-        "channel": "X",
-        "what": "NUMBER OF THE WEEK: the settlement-source dependency count",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Define the sample and classify primary source, licensed data, public webpage, oracle and discretionary resolution consistently."
-      },
-      {
-        "date": "2026-08-31",
-        "channel": "X",
-        "what": "What sponsors actually pay for is the room",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Draft in Stuart's voice, then approve. No fabricated stats; use bracketed slots for any specific figure."
-      },
       {
         "date": "2026-09-02",
         "channel": "X",
@@ -82,6 +58,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Confirm founders, product availability, supported venues, matching logic and commercial model."
+      },
+      {
+        "date": "2026-09-07",
+        "channel": "Stuart LinkedIn",
+        "what": "The Prediction-Market Change Log",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Store timestamped snapshots and distinguish clerical edits from substantive changes."
+      },
+      {
+        "date": "2026-09-07",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: senior prediction-market hires in the past 90 days",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use public role announcements and dates. Exclude unverified titles, open jobs and ordinary team growth."
       }
     ],
     "gaps": [
@@ -98,11 +90,11 @@
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
-      "Pillar mix off target: \"igaming\" is 1% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
+      "Pillar mix off target: \"igaming\" is 0% of the forward schedule vs a 12% target. Add igaming content (see docs/growth-playbook.md).",
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-08-31 (75 items)",
+      "window": "forward from 2026-09-01 (72 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -111,16 +103,16 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 74,
-          "pct": 0.987
+          "n": 72,
+          "pct": 1
         },
         "strait-up-growth": {
           "n": 0,
           "pct": 0
         },
         "igaming": {
-          "n": 1,
-          "pct": 0.013
+          "n": 0,
+          "pct": 0
         },
         "personal": {
           "n": 0,
