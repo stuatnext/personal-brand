@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-02T22:44:13.169Z",
-    "weekOf": "2026-09-02",
+    "generatedAt": "2026-09-03T22:43:58.223Z",
+    "weekOf": "2026-09-03",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-02",
-        "channel": "X",
-        "what": "Settlement Source Reliability League",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Separate source latency from platform settlement latency."
-      },
-      {
-        "date": "2026-09-02",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE: Taraneh Derayati and 24/7 clearing infrastructure",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm current role, client claims, product scope and which event-driven markets are live or announced."
-      },
       {
         "date": "2026-09-03",
         "channel": "Stuart LinkedIn",
@@ -74,6 +58,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Use public role announcements and dates. Exclude unverified titles, open jobs and ordinary team growth."
+      },
+      {
+        "date": "2026-09-09",
+        "channel": "X",
+        "what": "The Market Graveyard",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Capture removal timestamps and distinguish voids from normal expiries."
+      },
+      {
+        "date": "2026-09-09",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Robin Hanson and the distance from forecasting to governance",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm current affiliation, original futarchy framing and any current prediction-market involvement."
       }
     ],
     "gaps": [
@@ -94,7 +94,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-02 (72 items)",
+      "window": "forward from 2026-09-03 (70 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -103,7 +103,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 72,
+          "n": 70,
           "pct": 1
         },
         "strait-up-growth": {
