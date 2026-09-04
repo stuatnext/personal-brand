@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-03T22:43:58.223Z",
-    "weekOf": "2026-09-03",
+    "generatedAt": "2026-09-04T22:43:43.869Z",
+    "weekOf": "2026-09-04",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-03",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE #03: Connamara Technologies and EP3",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Verify awards, customer deployments, company leadership and any claim about market share or number of venues."
-      },
-      {
-        "date": "2026-09-03",
-        "channel": "Stuart LinkedIn",
-        "what": "THE Q&A: Jacob Ward",
-        "status": "planned / invite-gated",
-        "source": "master schedule",
-        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
-      },
       {
         "date": "2026-09-04",
         "channel": "Prediction Markets Forum",
@@ -74,6 +58,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Confirm current affiliation, original futarchy framing and any current prediction-market involvement."
+      },
+      {
+        "date": "2026-09-10",
+        "channel": "Stuart LinkedIn",
+        "what": "I SPOKE TO #01: one useful industry conversation",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Obtain quote approval, confirm current role and verify every operational or numerical claim."
+      },
+      {
+        "date": "2026-09-10",
+        "channel": "Stuart LinkedIn",
+        "what": "THE Q&A: Paul Wicks",
+        "status": "planned / invite-gated",
+        "source": "master schedule",
+        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
       }
     ],
     "gaps": [
@@ -86,7 +86,7 @@
       "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-09-03: \"THE TAPE #03: Connamara Technologies and EP3\" must not run without a primary source (Verify awards, customer deployments, company leadership and any claim about market share or number of venues.).",
+      "Verification gate due 2026-09-10: \"I SPOKE TO #01: one useful industry conversation\" must not run without a primary source (Obtain quote approval, confirm current role and verify every operational or numerical claim.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
@@ -94,7 +94,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-03 (70 items)",
+      "window": "forward from 2026-09-04 (68 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -103,7 +103,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 70,
+          "n": 68,
           "pct": 1
         },
         "strait-up-growth": {
