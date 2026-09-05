@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-04T22:43:43.869Z",
-    "weekOf": "2026-09-04",
+    "generatedAt": "2026-09-05T22:43:34.006Z",
+    "weekOf": "2026-09-05",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-04",
-        "channel": "Prediction Markets Forum",
-        "what": "Payout Latency League Table",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Separate source delay, platform decision time and withdrawal time."
-      },
-      {
-        "date": "2026-09-04",
-        "channel": "Stuart LinkedIn",
-        "what": "COMPANY FILE: Dome and the unified API race",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm founders, product availability, supported venues, matching logic and commercial model."
-      },
       {
         "date": "2026-09-07",
         "channel": "Stuart LinkedIn",
@@ -74,6 +58,14 @@
         "status": "planned / invite-gated",
         "source": "master schedule",
         "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
+      },
+      {
+        "date": "2026-09-11",
+        "channel": "Prediction Markets Forum",
+        "what": "Probability Half-Life",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use the live market at the exact publication timestamp and document liquidity."
       }
     ],
     "gaps": [
@@ -94,7 +86,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-04 (68 items)",
+      "window": "forward from 2026-09-05 (66 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -103,7 +95,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 68,
+          "n": 66,
           "pct": 1
         },
         "strait-up-growth": {
