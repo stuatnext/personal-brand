@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-07T22:43:38.621Z",
-    "weekOf": "2026-09-07",
+    "generatedAt": "2026-09-08T22:43:54.256Z",
+    "weekOf": "2026-09-08",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-07",
-        "channel": "Stuart LinkedIn",
-        "what": "The Prediction-Market Change Log",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Store timestamped snapshots and distinguish clerical edits from substantive changes."
-      },
-      {
-        "date": "2026-09-07",
-        "channel": "X",
-        "what": "NUMBER OF THE WEEK: senior prediction-market hires in the past 90 days",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use public role announcements and dates. Exclude unverified titles, open jobs and ordinary team growth."
-      },
       {
         "date": "2026-09-09",
         "channel": "X",
@@ -66,6 +50,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Use the live market at the exact publication timestamp and document liquidity."
+      },
+      {
+        "date": "2026-09-14",
+        "channel": "Stuart LinkedIn",
+        "what": "Probability Laundering",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Timestamp every stage and distinguish correlation from causation."
+      },
+      {
+        "date": "2026-09-14",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: prediction-market distribution surfaces beyond native apps",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Count only live or officially announced integrations. Separate data display, account routing and actual trading access."
       }
     ],
     "gaps": [
@@ -86,7 +86,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-07 (66 items)",
+      "window": "forward from 2026-09-08 (64 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -95,7 +95,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 66,
+          "n": 64,
           "pct": 1
         },
         "strait-up-growth": {
