@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-09T22:43:49.912Z",
-    "weekOf": "2026-09-09",
+    "generatedAt": "2026-09-10T22:43:42.399Z",
+    "weekOf": "2026-09-10",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-09",
-        "channel": "X",
-        "what": "The Market Graveyard",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Capture removal timestamps and distinguish voids from normal expiries."
-      },
-      {
-        "date": "2026-09-09",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE: Robin Hanson and the distance from forecasting to governance",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Confirm current affiliation, original futarchy framing and any current prediction-market involvement."
-      },
       {
         "date": "2026-09-10",
         "channel": "Stuart LinkedIn",
@@ -66,6 +50,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Count only live or officially announced integrations. Separate data display, account routing and actual trading access."
+      },
+      {
+        "date": "2026-09-16",
+        "channel": "X",
+        "what": "The Media-Market Feedback Loop",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Avoid causal claims unless timing and counterfactual evidence support them."
+      },
+      {
+        "date": "2026-09-16",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Megan McGrath and the compliance rebuild at Polymarket",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Verify current role, start date, prior remit and any public description of the US compliance programme."
       }
     ],
     "gaps": [
@@ -86,7 +86,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-09 (64 items)",
+      "window": "forward from 2026-09-10 (62 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -95,7 +95,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 64,
+          "n": 62,
           "pct": 1
         },
         "strait-up-growth": {
