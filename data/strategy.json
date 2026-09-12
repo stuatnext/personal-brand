@@ -3,22 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-11T22:43:39.771Z",
-    "weekOf": "2026-09-11",
+    "generatedAt": "2026-09-12T22:43:59.761Z",
+    "weekOf": "2026-09-12",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-11",
-        "channel": "Prediction Markets Forum",
-        "what": "Probability Half-Life",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Use the live market at the exact publication timestamp and document liquidity."
-      },
       {
         "date": "2026-09-14",
         "channel": "Stuart LinkedIn",
@@ -66,6 +58,22 @@
         "status": "planned / invite-gated",
         "source": "master schedule",
         "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
+      },
+      {
+        "date": "2026-09-18",
+        "channel": "Prediction Markets Forum",
+        "what": "The Prediction-Market Journalism Audit",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Publish the scoring rubric and offer outlets a right of reply."
+      },
+      {
+        "date": "2026-09-18",
+        "channel": "Stuart LinkedIn",
+        "what": "COMPANY FILE: Vermiculus and the clearing engine for always-on markets",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Verify deployments, named customers, availability claims, resilience model and current prediction-market relevance."
       }
     ],
     "gaps": [
@@ -86,7 +94,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-11 (60 items)",
+      "window": "forward from 2026-09-12 (59 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -95,7 +103,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 60,
+          "n": 59,
           "pct": 1
         },
         "strait-up-growth": {
