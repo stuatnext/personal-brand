@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-14T22:43:47.660Z",
-    "weekOf": "2026-09-14",
+    "generatedAt": "2026-09-15T22:43:37.907Z",
+    "weekOf": "2026-09-15",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-14",
-        "channel": "Stuart LinkedIn",
-        "what": "Probability Laundering",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Timestamp every stage and distinguish correlation from causation."
-      },
-      {
-        "date": "2026-09-14",
-        "channel": "X",
-        "what": "NUMBER OF THE WEEK: prediction-market distribution surfaces beyond native apps",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Count only live or officially announced integrations. Separate data display, account routing and actual trading access."
-      },
       {
         "date": "2026-09-16",
         "channel": "X",
@@ -74,6 +58,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Verify deployments, named customers, availability claims, resilience model and current prediction-market relevance."
+      },
+      {
+        "date": "2026-09-21",
+        "channel": "Stuart LinkedIn",
+        "what": "The Whale Consensus Illusion",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Publish wallet-clustering assumptions and avoid naming individuals without proof."
+      },
+      {
+        "date": "2026-09-21",
+        "channel": "X",
+        "what": "NUMBER OF THE WEEK: how concentrated is “the market” in its ten largest positions?",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use public data only, disclose account-linkage limits and avoid identity claims. Distinguish volume, exposure and open interest."
       }
     ],
     "gaps": [
@@ -94,7 +94,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-14 (59 items)",
+      "window": "forward from 2026-09-15 (57 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -103,7 +103,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 59,
+          "n": 57,
           "pct": 1
         },
         "strait-up-growth": {
