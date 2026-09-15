@@ -1,0 +1,9 @@
+{
+  "title": "Cross-venue market comparison, Kalshi vs Polymarket (2026-09-15)",
+  "sourceType": "market_site",
+  "pillar": "prediction_markets",
+  "text": "Cross-venue liquidity on Kalshi vs Polymarket: The market \"Will Yossi Cohen be the next Prime Minister of Israel?\" is listed on both venues (Kalshi KXNEXTISRAELPM-45JAN01-YCOH, Polymarket 682711). 100% of the $89k combined 24h volume is on Polymarket. It trades at 1.0c on Kalshi and 0.2c on Polymarket.\n\nCross-venue liquidity on Kalshi vs Polymarket: Kalshi lists \"Will Ruben Gallego be the Democratic Presidential nominee in 2028?\" (KXPRESNOMD-28-RGAL) and Polymarket lists \"Will Ruben Gallego win the 2028 Democratic presidential nomination?\" (559693); these appear to be the same question. 96% of the $87k combined 24h volume is on Polymarket. It trades at 0.4c on Kalshi and 0.1c on Polymarket.\n\nCross-venue liquidity on Kalshi vs Polymarket: The market \"Will Marine Le Pen win the 2027 French presidential election?\" is listed on both venues (Kalshi KXFRENCHPRES-27-MLEP, Polymarket 679018). 97% of the $47k combined 24h volume is on Polymarket. It trades at 38c on Kalshi and 36c on Polymarket.",
+  "note": "3 signal(s) across 7 matched market pair(s)",
+  "capturedAt": "2026-09-15T21:33:04.253Z",
+  "sha256": "f70bbea7a6ebedd91efc3b1cfc86cff04ed71e0f8ce5428f86fece37fc335673"
+}
