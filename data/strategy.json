@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-16T22:43:45.411Z",
-    "weekOf": "2026-09-16",
+    "generatedAt": "2026-09-17T22:44:09.231Z",
+    "weekOf": "2026-09-17",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-16",
-        "channel": "X",
-        "what": "The Media-Market Feedback Loop",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Avoid causal claims unless timing and counterfactual evidence support them."
-      },
-      {
-        "date": "2026-09-16",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE: Megan McGrath and the compliance rebuild at Polymarket",
-        "status": "planned",
-        "source": "master schedule",
-        "verification": "Verify current role, start date, prior remit and any public description of the US compliance programme."
-      },
       {
         "date": "2026-09-17",
         "channel": "Stuart LinkedIn",
@@ -74,6 +58,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Use public data only, disclose account-linkage limits and avoid identity claims. Distinguish volume, exposure and open interest."
+      },
+      {
+        "date": "2026-09-23",
+        "channel": "X",
+        "what": "Market-Maker Dependency Score",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Use behavioural signatures carefully and avoid naming firms without confirmation."
+      },
+      {
+        "date": "2026-09-23",
+        "channel": "Stuart LinkedIn",
+        "what": "THE TAPE: Michael Ross and the new MNPI control surface",
+        "status": "planned",
+        "source": "master schedule",
+        "verification": "Confirm title, original argument, examples and the boundaries of StarCompliance product claims."
       }
     ],
     "gaps": [
@@ -94,7 +94,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-16 (57 items)",
+      "window": "forward from 2026-09-17 (55 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -103,7 +103,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 57,
+          "n": 55,
           "pct": 1
         },
         "strait-up-growth": {
