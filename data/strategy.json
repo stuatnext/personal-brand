@@ -3,30 +3,14 @@
     "note": "Posting strategy, regenerated in place by scripts/ideas-bank.mjs (+ the scheduled Claude layer). Suggestions, never verdicts."
   },
   "values": {
-    "generatedAt": "2026-09-17T22:44:09.231Z",
-    "weekOf": "2026-09-17",
+    "generatedAt": "2026-09-18T22:43:36.910Z",
+    "weekOf": "2026-09-18",
     "themeByPillar": {
       "strait-up-growth": "Practical AI implementation",
       "prediction-markets": "Prediction markets",
       "igaming": "B2B events and sponsorship"
     },
     "channelPlan": [
-      {
-        "date": "2026-09-17",
-        "channel": "Stuart LinkedIn",
-        "what": "THE TAPE #04: Elie Mishory and Novig",
-        "status": "conditional",
-        "source": "master schedule",
-        "verification": "Verify the employment timeline, exact titles, prior CFTC role and Novig regulatory status."
-      },
-      {
-        "date": "2026-09-17",
-        "channel": "Stuart LinkedIn",
-        "what": "THE Q&A: Roxanne Bras Petraeus",
-        "status": "planned / invite-gated",
-        "source": "master schedule",
-        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
-      },
       {
         "date": "2026-09-18",
         "channel": "Prediction Markets Forum",
@@ -74,6 +58,22 @@
         "status": "planned",
         "source": "master schedule",
         "verification": "Confirm title, original argument, examples and the boundaries of StarCompliance product claims."
+      },
+      {
+        "date": "2026-09-24",
+        "channel": "Stuart LinkedIn",
+        "what": "I SPOKE TO #02: founder, trader or market maker",
+        "status": "conditional",
+        "source": "master schedule",
+        "verification": "Guest approves the quote and description. Verify supporting documents and avoid implying endorsement."
+      },
+      {
+        "date": "2026-09-24",
+        "channel": "Stuart LinkedIn",
+        "what": "THE Q&A: Dustin Gouker",
+        "status": "planned / invite-gated",
+        "source": "master schedule",
+        "verification": "Subject approves every word before publication; no paraphrased quotes; questions reference only verified work."
       }
     ],
     "gaps": [
@@ -86,7 +86,7 @@
       "Pillar \"strait-up-growth\" is starving: nothing published in 30 days. This week's theme for it: Practical AI implementation.",
       "Pillar \"prediction-markets\" is starving: nothing published in 30 days. This week's theme for it: Prediction markets.",
       "Pillar \"igaming\" is starving: nothing published in 30 days. This week's theme for it: B2B events and sponsorship.",
-      "Verification gate due 2026-09-17: \"THE TAPE #04: Elie Mishory and Novig\" must not run without a primary source (Verify the employment timeline, exact titles, prior CFTC role and Novig regulatory status.).",
+      "Verification gate due 2026-09-24: \"I SPOKE TO #02: founder, trader or market maker\" must not run without a primary source (Guest approves the quote and description. Verify supporting documents and avoid implying endorsement.).",
       "Channel watch: LinkedIn newsletter. Adopt when: Adopt once the Substack cadence has held for 4 consecutive weeks.",
       "Channel watch: Podcast guesting circuit. Adopt when: Pitch 2 shows/month once 3 strong published pieces exist per target lane.",
       "Pillar mix off target: \"strait-up-growth\" is 0% of the forward schedule vs a 25% target. Add strait-up-growth content (see docs/growth-playbook.md).",
@@ -94,7 +94,7 @@
       "Pillar mix off target: \"personal\" is 0% of the forward schedule vs a 8% target. Add personal content (see docs/growth-playbook.md)."
     ],
     "pillarMix": {
-      "window": "forward from 2026-09-17 (55 items)",
+      "window": "forward from 2026-09-18 (53 items)",
       "target": {
         "prediction-markets": 0.55,
         "strait-up-growth": 0.25,
@@ -103,7 +103,7 @@
       },
       "actual": {
         "prediction-markets": {
-          "n": 55,
+          "n": 53,
           "pct": 1
         },
         "strait-up-growth": {
